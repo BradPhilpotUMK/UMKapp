@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T22:13Z",
+ "updated": "2026-11-02T06:09Z",
  "country": "eu",
  "series": [
   {
@@ -8,10 +8,10 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "FIAEC",
-   "note": "2027 calendar approved by WMSC (Sep 2026); some rounds subject to circuit homologation. Silverstone round (13-16 May, OK/Junior) omitted as UK.",
+   "note": "2027 calendar approved by WMSC (Sep 2026); some rounds subject to circuit homologation. Silverstone round (13-16 May) omitted as UK.",
    "book": "https://www.fiakarting.com/competition-list",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fia-karting-world",
@@ -19,10 +19,10 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "FIAWC",
-   "note": "Includes OK-N/OK-NJ World Cup. 2027 OK & Junior World Championship (Bahrain, Nov) omitted as outside Europe.",
+   "note": "2026 OK/Junior World Ch. La Conca confirmed; 2027 calendar published (Bahrain OK/Junior WCh, Nov, omitted as outside Europe).",
    "book": "https://www.fiakarting.com/competition-list",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fia-karting-academy-trophy",
@@ -30,10 +30,10 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "FIAAT",
-   "note": "Junior and Senior, 3 rounds each, run alongside FIA European/World events. Senior Round 1 at Silverstone (UK) omitted.",
+   "note": "2027 calendar published (3 rounds each Junior/Senior); Senior Round 1 at Silverstone (UK) omitted.",
    "book": "https://www.fiakarting.com/page/fia-karting-academy-trophy",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "wsk-super-master-series",
@@ -41,10 +41,10 @@
    "venue": "Italy, multiple venues",
    "kind": "national",
    "short": "WSKSM",
-   "note": "2027 provisional calendar V2 (pending ASN). Wed-Sun events. Official collective test La Conca 15-17 Jan 2027.",
+   "note": "2027 provisional calendar V2 (Oct 2026), pending ASN. Wed-Sun events.",
    "book": "https://www.wskarting.it/SERIES/WSK_SUPERMASTERSERIES",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "wsk-open-master-series",
@@ -52,10 +52,10 @@
    "venue": "Italy, multiple venues",
    "kind": "national",
    "short": "WSKOM",
-   "note": "New for 2027 (replaces WSK Euro Series): Mini, OK-N Junior, OK-N, KZ2. Provisional, pending ASN.",
+   "note": "New for 2027 (replaces WSK Euro Series); 3 rounds, provisional V2.",
    "book": "https://www.wskarting.it/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "wsk-final-cup",
@@ -63,10 +63,10 @@
    "venue": "Italy, multiple venues",
    "kind": "national",
    "short": "WSKFC",
-   "note": "Wed-Sun events. 2027 dates provisional, pending ASN.",
+   "note": "2026 Lonato (18-22 Nov) and Viterbo (25-29 Nov) confirmed; 2027 provisional V2 dates.",
    "book": "https://www.wskarting.it/SERIES/WSK_FINALCUP",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "wsk-euro-series",
@@ -74,10 +74,10 @@
    "venue": "Italy, multiple venues",
    "kind": "national",
    "short": "WSKES",
-   "note": "Not on the updated 2027 WSK calendar (V2, Oct 2026); replaced by WSK Open Master Series. Future of the series open.",
+   "note": "Not on the updated 2027 WSK calendar (V2, Oct 2026).",
    "book": "https://www.wskarting.it/SERIES/WSK_EUROSERIES",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "wsk-champions-cup",
@@ -85,10 +85,10 @@
    "venue": "Italy",
    "kind": "national",
    "short": "WSKCC",
-   "note": "Not on the 2027 WSK calendar as published Oct 2026.",
+   "note": "Not on the updated 2027 WSK calendar (V2, Oct 2026).",
    "book": "https://www.wskarting.it/SERIES/WSK_CHAMPIONSCUP",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "wsk-open-cup",
@@ -96,10 +96,10 @@
    "venue": "Italy",
    "kind": "national",
    "short": "WSKOC",
-   "note": "Not on the 2027 WSK calendar as published Oct 2026.",
+   "note": "Not on the updated 2027 WSK calendar (V2, Oct 2026).",
    "book": "https://www.wskarting.it/SERIES/WSK_OPENCUP",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rotax-max-euro-trophy",
@@ -107,10 +107,10 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "RMCET",
-   "note": "Organised by WSK Promotion. Organiser lists race (final) day only. Pending FIA/ASN confirmation.",
+   "note": "2027 calendar published Oct 2026 (Winter Cup + 4 rounds); race day only; pending FIA/ASN.",
    "book": "https://www.rotaxmaxchallenge-eurotrophy.com/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rotax-max-grand-finals",
@@ -118,10 +118,10 @@
    "venue": "Kartodromo Internacional do Algarve, Portimao, Portugal",
    "kind": "national",
    "short": "RMCGF",
-   "note": "2026 edition in Portugal. 2027 venue/dates not published yet.",
+   "note": "2026 edition Portimao 7-14 Nov confirmed. 2027 venue/dates not published yet.",
    "book": "https://grandfinals.rotax-racing.com/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rotax-max-challenge-switzerland",
@@ -129,10 +129,10 @@
    "venue": "Switzerland, multiple venues",
    "kind": "national",
    "short": "RMCCH",
-   "note": "6 championship rounds (incl. rounds in Italy and France) plus Wohlen cup races. Provisional V4; race day only.",
+   "note": "2027 provisional V4 (Bulletin 28 Oct 2026); 6 rounds incl. Italy/France plus Wohlen cups; race day only.",
    "book": "https://www.rotaxmax.ch/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rotax-max-challenge-germany",
@@ -143,7 +143,7 @@
    "note": "2027 calendar complete (Oct 2026). Two-day weekends.",
    "book": "https://www.rotax-racing.com/events",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rmc-central-europe",
@@ -151,10 +151,10 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "RMCCE",
-   "note": "Austria/Czech/Hungary/Italy. 2027 calendar not published yet.",
+   "note": "2026 season ended with Mojo Cup, Jesolo (23-25 Oct). 2027 calendar not published yet.",
    "book": "https://rmc-ce.com/calendar",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rotax-max-challenge-poland",
@@ -162,10 +162,10 @@
    "venue": "Poland, multiple venues",
    "kind": "national",
    "short": "RMCPL",
-   "note": "2027 calendar not published yet.",
+   "note": "2027 calendar not published yet (PZM calendar shows 2026 rounds only).",
    "book": "https://pzm.pl/kalendarz",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "bnl-karting-series",
@@ -173,10 +173,10 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "BNL",
-   "note": "Benelux Rotax series (Mini to DD2). Fri-Sun weekends.",
+   "note": "2027 calendar published (4 rounds), Fri-Sun weekends.",
    "book": "https://www.bnlkartingseries.com/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "iame-euro-series",
@@ -184,11 +184,11 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "IAMES",
-   "note": "RGMMC. Wed-Sat format. Genk dates per RGMMC release (25-28 Aug); check organiser site.",
+   "note": "2027 provisional calendar (Sep 2026), Wed-Sat format. Genk per RGMMC release 25-28 Aug (an Instagram post shows 26-29 Aug).",
    "book": "https://www.iameeuroseries.com/",
    "phone": "+41 81 302 74 48",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "iame-warriors-final",
@@ -196,10 +196,10 @@
    "venue": "Europe",
    "kind": "national",
    "short": "IWF",
-   "note": "2026 edition held at Viterbo in October. 2027 calendar not published yet.",
+   "note": "2026 edition held at Viterbo 20-24 Oct. 2027 date not published yet.",
    "book": "https://www.iame-motorsport.com/iwf",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "iame-final-games",
@@ -207,10 +207,10 @@
    "venue": "South Garda Karting, Lonato del Garda, Italy",
    "kind": "national",
    "short": "IAMEFG",
-   "note": "IAME Series Italy season finale.",
+   "note": "IAME Final Games 7-8 Nov 2026 confirmed on IAME calendar.",
    "book": "https://www.iame-motorsport.com/iame-series-italy",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "champions-of-the-future-academy",
@@ -218,11 +218,11 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "COTFA",
-   "note": "RGMMC arrive-and-drive style OK-N programme. 2027 European rounds not published yet (Macau round Jan 2027 is outside Europe).",
+   "note": "Round 5 Franciacorta (15 Nov race day) on circuit calendar. 2027 European rounds not published (Macau Jan 2027 and Abu Dhabi round outside Europe).",
    "book": "https://www.championskartingacademy.com/",
    "phone": "+41 81 302 74 48",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "champions-of-the-future-euro-series",
@@ -230,11 +230,11 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "COTF",
-   "note": "RGMMC. 2027 calendar not published yet.",
+   "note": "2027 calendar published (Oct 2026), OK & Junior. Round 2 Silverstone (5-8 May) omitted as UK.",
    "book": "https://www.rgmmc.com/",
    "phone": "+41 81 302 74 48",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rok-cup-superfinal",
@@ -245,7 +245,7 @@
    "note": "2026 edition held 13-17 Oct. 2027 date not published yet.",
    "book": "https://superfinal.rokcup.com/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rok-cup-italia",
@@ -253,10 +253,10 @@
    "venue": "Italy, multiple venues",
    "kind": "national",
    "short": "ROKIT",
-   "note": "2027 calendar not published yet. ROK Festival date as announced by Vortex (provisional).",
+   "note": "ROK Festival 28-29 Nov 2026 (provisional). 2027 calendar not published yet.",
    "book": "https://italy.rokcup.com/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "trofeo-delle-industrie",
@@ -264,10 +264,10 @@
    "venue": "South Garda Karting, Lonato del Garda, Italy",
    "kind": "national",
    "short": "TDI",
-   "note": "54th edition: Mini Gr.3, Mini U10, KZ2, OK-NJ, OK-N. Entries close 6 Nov 2026.",
+   "note": "54th edition 12-15 Nov 2026 confirmed (KZ2, OK-N, OK-NJ, Mini).",
    "book": "https://www.trofeodelleindustrie.it/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "trofeo-andrea-margutti",
@@ -275,10 +275,10 @@
    "venue": "Italy",
    "kind": "national",
    "short": "TAM",
-   "note": "2027 date not published yet.",
+   "note": "37th edition held 12-15 Mar 2026. 2027 date not published yet.",
    "book": "https://www.acisport.it/it/cik/home",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "aci-karting-italian-championship",
@@ -286,10 +286,10 @@
    "venue": "Italy, multiple venues",
    "kind": "national",
    "short": "CIK",
-   "note": "2027 calendar not published yet.",
+   "note": "2027 dates published by ACI (Oct 2026); circuits to be announced. Race-day dates.",
    "book": "https://www.acisport.it/en/cik/home",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "dkm",
@@ -297,10 +297,10 @@
    "venue": "Europe, multiple venues",
    "kind": "national",
    "short": "DKM",
-   "note": "German Kart Championship, Germany + Czech Republic. Subject to change.",
+   "note": "2027 calendar published by ADAC (Oct 2026), Germany + Czech Republic; subject to change.",
    "book": "https://www.adac-motorsport.de/en/deutsche-kart-meisterschaft/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "adac-kart-masters",
@@ -308,10 +308,10 @@
    "venue": "Germany, multiple venues",
    "kind": "national",
    "short": "AKM",
-   "note": "New ADAC Mini Academy class for 2027. Each event runs before the matching DKM round.",
+   "note": "2027 dates published (Oct 2026); new ADAC Mini Academy class.",
    "book": "https://www.adac-motorsport.de/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "sueddeutscher-adac-kart-cup",
@@ -319,10 +319,10 @@
    "venue": "Germany, multiple venues",
    "kind": "national",
    "short": "SAKC",
-   "note": "One-day events.",
+   "note": "2027 calendar published (Oct 2026). One-day events.",
    "book": "https://www.sakc.de/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "german-karting-series",
@@ -330,10 +330,10 @@
    "venue": "Germany, multiple venues",
    "kind": "national",
    "short": "GKS",
-   "note": "Light and Pro series merged into one championship for 2027.",
+   "note": "2027 calendar published (Oct 2026); Light and Pro merged into one series.",
    "book": "https://www.german-karting-series.de/",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ffsa-championnat-de-france",
@@ -341,10 +341,10 @@
    "venue": "France, multiple venues",
    "kind": "national",
    "short": "CDF",
-   "note": "Single-event titles per category group (2027 FFSA calendar).",
+   "note": "2027 FFSA calendar confirmed (Oct 2026); single-event titles per category group.",
    "book": "https://www.ffsakarting.org/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ffsa-championnat-de-france-junior",
@@ -352,10 +352,10 @@
    "venue": "France, multiple venues",
    "kind": "national",
    "short": "CDFJ",
-   "note": "5 rounds (2027 FFSA calendar).",
+   "note": "2027 FFSA calendar confirmed (Oct 2026); 5 rounds.",
    "book": "https://www.ffsakarting.org/",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ffsa-coupe-de-france",
@@ -363,10 +363,10 @@
    "venue": "France",
    "kind": "national",
    "short": "CDFR",
-   "note": "Single event (2027 FFSA calendar).",
+   "note": "2027 FFSA calendar confirmed (Oct 2026); single event.",
    "book": "https://www.ffsakarting.org/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "campeonato-espana-karting",
@@ -374,10 +374,10 @@
    "venue": "Spain, multiple venues",
    "kind": "national",
    "short": "CEK",
-   "note": "2027 calendar not published yet.",
+   "note": "2026 season ended at Aspar (Sep 2026). 2027 calendar not published yet.",
    "book": "https://cek.rfeda.es/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "portugal-karting",
@@ -385,10 +385,10 @@
    "venue": "Portugal, multiple venues",
    "kind": "national",
    "short": "CPK",
-   "note": "2027 calendar not published yet. Taca de Portugal 2026 organised by Clube Automovel do Minho (IAME lists start 20 Nov at Bombarral).",
+   "note": "Taca de Portugal 21-22 Nov 2026 confirmed on FPAK calendar. 2027 calendar not published yet.",
    "book": "https://www.fpak.pt/calendario",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "nk-iame-netherlands",
@@ -396,10 +396,10 @@
    "venue": "Karting des Fagnes, Mariembourg, Belgium",
    "kind": "national",
    "short": "NKIAM",
-   "note": "KNAF Dutch championship, single major event. 2027 date not published yet.",
+   "note": "2026 one-off held at Mariembourg 21-22 Mar. 2027 date not published yet.",
    "book": "https://www.nkiame.nl/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "iame-series-benelux",
@@ -407,10 +407,10 @@
    "venue": "Belgium, multiple venues",
    "kind": "national",
    "short": "IAMBX",
-   "note": "2027 calendar not published yet.",
+   "note": "2026 season (6 rounds) completed. 2027 calendar not published yet.",
    "book": "https://www.iame-motorsport.com/iame-series-benelux",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "dasu-dm-karting",
@@ -418,10 +418,10 @@
    "venue": "Denmark, multiple venues",
    "kind": "national",
    "short": "DM",
-   "note": "DASU 2027 calendar applications open; 2027 calendar not published yet.",
+   "note": "DASU Kartingkalender 2027 page has no dated DM events yet; 2027 calendar not published yet.",
    "book": "https://www.dasu.dk/sportsgrene/karting/kartingkalender-2027",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "sm-karting-sweden",
@@ -432,7 +432,7 @@
    "note": "2027 calendar not published yet.",
    "book": "https://www.sbf.se/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "nm-karting-norway",
@@ -440,10 +440,10 @@
    "venue": "Norway, multiple venues",
    "kind": "national",
    "short": "NM",
-   "note": "2027 calendar not published yet.",
+   "note": "2027 NM date listed by gokarting.no calendar (Andebu); not yet seen on NBF site.",
    "book": "https://bilsport.no/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "sm-karting-finland",
@@ -451,10 +451,10 @@
    "venue": "Finland, multiple venues",
    "kind": "national",
    "short": "SMFI",
-   "note": "AKK 2027 framework calendar does not yet include karting; 2027 calendar not published yet.",
+   "note": "AKK 2027 framework calendar (Oct 2026) still excludes karting pending FIA calendar; 2027 not published yet.",
    "book": "https://kartingsm.fi/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "mmcr-karting",
@@ -465,7 +465,7 @@
    "note": "2027 calendar not published yet.",
    "book": "https://www.autoklub.cz/",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "austria-kart-staatsmeisterschaft",
@@ -473,10 +473,10 @@
    "venue": "Austria, multiple venues",
    "kind": "national",
    "short": "AKSM",
-   "note": "2027 calendar not published yet.",
+   "note": "Austria Motorsport event calendar shows no 2027 karting dates yet; 2027 calendar not published yet.",
    "book": "https://www.austria-motorsport.at/events",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "swiss-kart-championship",
@@ -484,10 +484,10 @@
    "venue": "Switzerland, multiple venues",
    "kind": "national",
    "short": "SKM",
-   "note": "2027 calendar not published yet (registration for 2027 calendar open).",
+   "note": "ASS 2027 championship calendar (28 Oct 2026) does not yet include karting; 2027 calendar not published yet.",
    "book": "https://motorsport.ch/de/kartsport/rennkalender",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "hungary-karting",
@@ -498,7 +498,7 @@
    "note": "2027 calendar not published yet.",
    "book": "https://www.mnasz.hu/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "it-kartsport-circuit-ksc",
@@ -506,11 +506,11 @@
    "venue": "Franciacorta Karting Track, Castrezzato, Italy",
    "kind": "club",
    "short": "KSC",
-   "note": "Long-running Lombardy club championship (rounds also at 7 Laghi). Round 17 on 22 Nov is the Finalissima; 20 Dec round listed under 'Gare 2026' on circuit site. 2027 dates not yet published.",
+   "note": "Rounds 16 (8 Nov) and 17 Finalissima (22 Nov) on Franciacorta 2026 calendar; 20 Dec race on circuit site. 2027 dates not yet published.",
    "book": "https://www.franciacortakartingtrack.com/",
    "phone": "+39 030 7040677",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "it-franciacorta-winter-trophies",
@@ -518,11 +518,11 @@
    "venue": "Franciacorta Karting Track, Castrezzato, Italy",
    "kind": "club",
    "short": "FKT",
-   "note": "One-off national-permit (ENPEA) club trophies at Franciacorta: ROK Cup Festival and Easykart Rising Stars Trophy.",
+   "note": "Easykart Rising Stars Trophy 6 Dec 2026 on Franciacorta calendar (ROK Festival listed under ROK Cup Italia).",
    "book": "https://www.franciacortakartingtrack.com/",
    "phone": "+39 030 7040677",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "it-trofeo-di-primavera",
@@ -530,11 +530,11 @@
    "venue": "South Garda Karting, Lonato del Garda, Italy",
    "kind": "club",
    "short": "TDP",
-   "note": "Spring open trophy at Lonato (held 28-29 Mar in 2026). 2027 date not yet published.",
+   "note": "Held 28-29 Mar 2026. 2027 date not yet published.",
    "book": "https://racing.southgardakarting.it/calendario",
    "phone": "+39 0309919958",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "it-aci-coppa-italia-di-zona",
@@ -542,11 +542,11 @@
    "venue": "Various circuits, Italy",
    "kind": "club",
    "short": "CIZ",
-   "note": "ACI Sport regional zone cups; season closes with the Coppa dei Campioni at Sarno. 2027 zone calendar not yet published.",
+   "note": "2026 season closed with Coppa dei Campioni at Sarno (30 Oct-1 Nov). 2027 zone calendar not yet published.",
    "book": "https://circuitointernazionalenapoli.com/event/coppa-dei-campioni-aci-sport/",
    "phone": "+39 375 697 7160",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "it-trofeo-invernale-ayrton-senna",
@@ -554,11 +554,11 @@
    "venue": "Circuito Internazionale Napoli, Sarno, Italy",
    "kind": "club",
    "short": "TAS",
-   "note": "31st edition of the Sarno winter trophy (national karting).",
+   "note": "31st Sarno winter trophy confirmed for 10-13 Dec 2026 on circuit calendar.",
    "book": "https://circuitointernazionalenapoli.com/calendario-stagione-corse-2026/",
    "phone": "+39 375 697 7160",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "it-7-laghi-club-races",
@@ -566,10 +566,10 @@
    "venue": "7 Laghi Kart, Castelletto di Branduzzo, Italy",
    "kind": "club",
    "short": "7LK",
-   "note": "Club and regional races at 7 Laghi; 2026 programme ended in October. 2027 calendar not yet published.",
+   "note": "2026 programme ended in October. 2027 calendar not yet published.",
    "book": "https://7laghikartitalia.it/calendario-gare",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-kart-mag-organisation",
@@ -577,10 +577,10 @@
    "venue": "Various circuits, France",
    "kind": "club",
    "short": "KMO",
-   "note": "Open Kart (Salbris), Kart Cup (Anneville), Trophée Kart Mag (Varennes) and Kart Mag Festival. 2027 dates not yet published.",
+   "note": "2026 KMO season ended with Kart Mag Festival, Valence (31 Oct-1 Nov). 2027 dates not yet published.",
    "book": "https://www.kartmag.fr/epreuves-kmo-des-courses-de-reference",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-atlantic-trophee",
@@ -588,10 +588,10 @@
    "venue": "Various circuits, Nouvelle-Aquitaine, France",
    "kind": "club",
    "short": "ATK",
-   "note": "Ligue KNAS regional championship, 7 rounds; final at Layrac. 2027 calendar not yet published.",
+   "note": "Ligue KNAS regional championship; 2026 finale at Layrac 22 Nov. 2027 calendar not yet published.",
    "book": "https://karting-aquitaine.fr/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-seranne-trophy",
@@ -599,10 +599,10 @@
    "venue": "Brissac circuit, Brissac, France",
    "kind": "club",
    "short": "SER",
-   "note": "Occitanie club trophy; 2026 season closes at Brissac.",
+   "note": "Occitanie club trophy by ASK La Grande Motte; 2026 edition 29 Nov at Brissac. 2027 not yet published.",
    "book": "https://www.karting-sud.com/",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-trophee-mathieu-ruckebusch",
@@ -610,10 +610,10 @@
    "venue": "Circuit d'Arvillers, Arvillers, France",
    "kind": "club",
    "short": "TMR",
-   "note": "Hauts-de-France club trophy (date from Media-Kart calendar, last updated 01/06/2026 - confirm with organiser).",
+   "note": "2026 edition held 1 Nov at Arvillers. 2027 date not yet published.",
    "book": "https://media-kart.com/calendrier-2026-dates",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-endurance-relax-max-salbris",
@@ -621,10 +621,10 @@
    "venue": "Circuit de Salbris, Salbris, France",
    "kind": "club",
    "short": "ERM",
-   "note": "Rotax Relax Max endurance (date from Media-Kart calendar - confirm with organiser).",
+   "note": "Rotax Relax Max endurance at Salbris 28-29 Nov 2026 (Media-Kart calendar).",
    "book": "https://media-kart.com/calendrier-2026-dates",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-nsk-3mk",
@@ -632,11 +632,11 @@
    "venue": "Various circuits, France",
    "kind": "club",
    "short": "NSK",
-   "note": "Promoter series for owner-drivers; from 2027 finishes before summer. Also run by 3MK: RMCIT Le Mans 12-17 Jul and RMC France Val d'Argenton 16-19 Sep 2027.",
+   "note": "2027 calendar published (Salbris, Angerville, Laval); 3MK also runs RMCIT Le Mans and RMC France.",
    "book": "https://www.3mkevents.com/",
    "phone": "+33 240 384 388",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-roger-gaillard-trophy",
@@ -644,10 +644,10 @@
    "venue": "Circuit Roger Gaillard, Ancenis, France",
    "kind": "club",
    "short": "RGT",
-   "note": "Club race series (Mini 60, Nationale, Rotax, Relax Max); 2026 round 2 was moved to 25 Oct. 2027 dates not yet published.",
+   "note": "2026 round 2 was held 25 Oct (last race of the year). 2027 dates not yet published.",
    "book": "https://www.ask-ancenis.fr/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "fr-ligue-idf-championnat",
@@ -655,10 +655,10 @@
    "venue": "Angerville / Salbris / Aunay-les-Bois / Anneville, France",
    "kind": "club",
    "short": "IDF",
-   "note": "Ligue championship run at partner circuits in Centre & Normandy. 2027 calendar not yet published.",
+   "note": "2026 championship finished in June. 2027 calendar not yet published.",
    "book": "https://www.ligue-de-karting-idf.fr/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "es-campionat-catalunya-karting",
@@ -666,10 +666,10 @@
    "venue": "Various circuits, Catalonia, Spain",
    "kind": "club",
    "short": "CCK",
-   "note": "FCA regional championship (Mini K, Mini, Junior, Senior, KZ).",
+   "note": "FCA regional championship; final 2026 rounds at Sallent (14-15 Nov) and Vendrell (28-29 Nov). 2027 not yet published.",
    "book": "https://www.fca.cat/ca/karting",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "es-ckcv-comunitat-valenciana",
@@ -677,10 +677,10 @@
    "venue": "Various circuits, Spain",
    "kind": "club",
    "short": "CKCV",
-   "note": "FACV regional championship (Pre-Mini to KZ/DD2).",
+   "note": "2026 season closed at Recas (31 Oct-1 Nov). 2027 dates not yet published.",
    "book": "https://fedacv.com/karting/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "es-campeonato-andalucia-karting",
@@ -688,10 +688,10 @@
    "venue": "Various circuits, Andalusia, Spain",
    "kind": "club",
    "short": "CAK",
-   "note": "FAA regional championship; final round at Cartaya.",
+   "note": "FAA regional championship; final 2026 round at Cartaya 15 Nov. 2027 not yet published.",
    "book": "https://www.faa.net/karting/",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "es-campeonato-madrileno-karting",
@@ -699,10 +699,10 @@
    "venue": "Various circuits, Spain",
    "kind": "club",
    "short": "CMK",
-   "note": "FMA regional championship (incl. Rotax Max Challenge España); 2026 ended 10-11 Oct. 2027 dates not yet published.",
+   "note": "2026 ended 10-11 Oct at Recas. 2027 dates not yet published.",
    "book": "https://fmautomovilismo.com/karting",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "es-campeonato-castilla-leon-karting",
@@ -710,10 +710,10 @@
    "venue": "Various circuits, Spain",
    "kind": "club",
    "short": "CYL",
-   "note": "FACYL regional championship (Cabañas Raras, El Silvar, Kotarr). 2027 dates not yet published.",
+   "note": "2026 rounds ended Aug (Kotarr). 2027 dates not yet published.",
    "book": "https://facyl.com/campeonatos/karting",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "es-campionato-galego-karting",
@@ -721,10 +721,10 @@
    "venue": "Various circuits, Galicia, Spain",
    "kind": "club",
    "short": "GAL",
-   "note": "FGA regional championship; 2026 closed with Supercopa Outeiro de Rei (23-25 Oct). 2027 not yet published.",
+   "note": "2026 closed with Supercopa Outeiro de Rei (23-25 Oct). 2027 not yet published.",
    "book": "https://www.fga.es/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "pt-trofeu-easykart-portugal",
@@ -732,10 +732,10 @@
    "venue": "Various circuits, Portugal",
    "kind": "club",
    "short": "EKPT",
-   "note": "FPAK-sanctioned Easykart trophy.",
+   "note": "FPAK-sanctioned Easykart trophy; final 2026 round at Bombarral 8 Nov. 2027 not yet published.",
    "book": "https://www.fpak.pt/campeonatos/2026/karting/ekpt",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "pt-karting-madeira",
@@ -743,10 +743,10 @@
    "venue": "Kartódromo do Faial, Madeira, Portugal",
    "kind": "club",
    "short": "MAD",
-   "note": "Associação de Karting da Madeira regional trophy and cup.",
+   "note": "Trofeu 2026 ended 1 Nov (Faial 5); Taca da Madeira 13 Dec 2026. 2027 not yet published.",
    "book": "https://www.fpak.pt/campeonatos/2026/karting/tfkm",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "de-oakc",
@@ -754,10 +754,10 @@
    "venue": "Lohsa / Mülsen / Templin, Germany",
    "kind": "club",
    "short": "OAKC",
-   "note": "ADAC Sachsen & Berlin-Brandenburg regional clubsport series (with K-Wagen Classic Trophy). 2026 final was 18 Oct; 2027 not yet published.",
+   "note": "2026 final was 18 Oct at Lohsa; five 2027 events planned (start Mulsen, final Lohsa) but dates not yet published.",
    "book": "https://www.oakc.de/",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "de-wakc",
@@ -765,10 +765,10 @@
    "venue": "Various circuits, western Germany",
    "kind": "club",
    "short": "WAKC",
-   "note": "ADAC regional clubsport series. 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://www.adac-motorsport.de/adac-kart-clubsport",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "de-nakc",
@@ -776,10 +776,10 @@
    "venue": "Various circuits, northern Germany",
    "kind": "club",
    "short": "NAKC",
-   "note": "ADAC regional clubsport series. 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://www.nakc.de/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "de-eifel-erft-cup",
@@ -787,11 +787,11 @@
    "venue": "Erftlandring Kerpen / Dahlemer Binz, Germany",
    "kind": "club",
    "short": "EEC",
-   "note": "Club/grassroots series by KC Kerpen and KC Burg Brüggen; 2026 final was 24-25 Oct (KCK Memorial). 2027 not yet published.",
+   "note": "2026 final was 24-25 Oct at Kerpen. 2027 not yet published.",
    "book": "https://www.kcbb.de/index.php/meisterschaften/eifel-erft-cup-info",
    "phone": "+49 2275 913214",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "nl-united-karting-series",
@@ -799,11 +799,11 @@
    "venue": "Various circuits, Netherlands / Belgium",
    "kind": "club",
    "short": "UKS",
-   "note": "KNAF-sanctioned Dutch-Belgian club series.",
+   "note": "2026 season ended with round 7 at Genk (31 Oct-1 Nov). 2027 calendar not yet published.",
    "book": "https://www.chrono.nl/",
    "phone": "+31 6 53 81 44 37",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "nl-nk-4-takt-karting",
@@ -811,11 +811,11 @@
    "venue": "Various circuits, Netherlands",
    "kind": "club",
    "short": "NK4T",
-   "note": "Chrono/Formula Karting 4-stroke championship (club-level national title).",
+   "note": "Final 2026 round at Landsard 14-15 Nov. 2027 not yet published.",
    "book": "https://www.chrono.nl/nk-4-takt/",
    "phone": "+31 6 53 81 44 37",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "nl-chrono-open-winter-serie",
@@ -823,11 +823,11 @@
    "venue": "Circuit de Landsard, Eindhoven, Netherlands",
    "kind": "club",
    "short": "COW",
-   "note": "Winter club races for 2T and 4T classes; no upcoming dates published yet.",
+   "note": "No upcoming winter series dates published yet.",
    "book": "https://www.chrono.nl/nk-4-takt/winter-serie-4-takt/",
    "phone": "+31 6 53 81 44 37",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "be-gk4-kart-series",
@@ -835,10 +835,10 @@
    "venue": "Mariembourg / Genk / Kerpen / Spa-Francorchamps",
    "kind": "club",
    "short": "GK4",
-   "note": "Official Belgian-Dutch club championship (KNAF), 7 races, 2T and 4T. 2027 calendar not yet published.",
+   "note": "2026 season finale at Genk 14-15 Nov. 2027 calendar not yet published.",
    "book": "https://www.gk4-kartseries.com/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "be-bnl-karting-series",
@@ -846,10 +846,10 @@
    "venue": "Karting Genk, Genk, Belgium",
    "kind": "club",
    "short": "BNL",
-   "note": "Rotax Benelux regional series (Grand Finals tickets). 2027 calendar not yet published.",
+   "note": "2026 season ended with BNL #4 at Genk (2-4 Oct). 2027 calendar not yet published.",
    "book": "https://www.bnlkartingseries.com/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "be-karting-des-fagnes-club",
@@ -857,10 +857,10 @@
    "venue": "Karting des Fagnes, Mariembourg, Belgium",
    "kind": "club",
    "short": "KDF",
-   "note": "Club/historic events at Mariembourg (Legend Kart, KFT sprint/endurance).",
+   "note": "Track calendar shows no further club events (only GK4, listed under its own series). 2027 not yet published.",
    "book": "https://kartingdesfagnes.be/en/calendar/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "dk-danish-karting-league",
@@ -868,10 +868,10 @@
    "venue": "Ikast / Grindsted / Rødby, Denmark",
    "kind": "club",
    "short": "DKL",
-   "note": "DASU club series; DASU 2027 calendar applications currently open, dates not yet published.",
+   "note": "2026 DKL rounds were cancelled; 2027 dates not yet published.",
    "book": "https://danishkartingleague.dk",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "se-skcc",
@@ -879,10 +879,10 @@
    "venue": "Various circuits, southern Sweden",
    "kind": "club",
    "short": "SKCC",
-   "note": "District (SDF) series. 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://skcc.se/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "se-kart-cup-vast",
@@ -890,10 +890,10 @@
    "venue": "Various circuits, western Sweden",
    "kind": "club",
    "short": "KCV",
-   "note": "District series. 2027 dates not yet published.",
+   "note": "2026 season ended Sep. 2027 dates not yet published.",
    "book": "https://kcv.nu/",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "se-mkr",
@@ -901,10 +901,10 @@
    "venue": "Various circuits, central Sweden",
    "kind": "club",
    "short": "MKR",
-   "note": "District series. 2027 dates not yet published.",
+   "note": "2026 season ended (MKR 7 Katrineholm, Sep). 2027 dates not yet published.",
    "book": "https://mkr-karting.se/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "se-norrlandscupen",
@@ -912,10 +912,10 @@
    "venue": "Various circuits, northern Sweden",
    "kind": "club",
    "short": "NLC",
-   "note": "District series (7 rounds in 2026). 2027 dates not yet published.",
+   "note": "2026 final was 29 Aug at Umea. 2027 dates not yet published.",
    "book": "https://norrlandscup.se/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "no-vestlandsmesterskapet",
@@ -923,10 +923,10 @@
    "venue": "Various circuits, western Norway",
    "kind": "club",
    "short": "VLM",
-   "note": "Regional championship (NBF). 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://gokarting.no/series/vestlandsmesterskapet.html",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "cz-moravsky-pohar",
@@ -934,10 +934,10 @@
    "venue": "Třinec / Vysoké Mýto / Slovakiaring / Bruck",
    "kind": "club",
    "short": "MP",
-   "note": "Autoklub ČR regional cup (CZ, SK, AT rounds). 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://www.autoklub.cz/serial/moravsky-pohar-4/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "cz-pohar-acr-karting",
@@ -945,10 +945,10 @@
    "venue": "Cheb / Vysoké Mýto / Písek / Třinec, Czech Republic",
    "kind": "club",
    "short": "PACR",
-   "note": "Autoklub ČR cup series. 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://www.autoklub.cz/serial/pohar-acr-v-kartingu-6/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "at-amf-karting-pokal",
@@ -956,10 +956,10 @@
    "venue": "Various circuits, Austria / Hungary / Slovenia",
    "kind": "club",
    "short": "AMF",
-   "note": "Austrian national cup run with RMCA rounds. 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://austria-motorsport.at/events",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "eu-rmc-central-europe",
@@ -967,10 +967,10 @@
    "venue": "Jesolo / Třinec / Bruck / Kecskemét",
    "kind": "club",
    "short": "RMCE",
-   "note": "Cross-border regional Rotax series (IT, CZ, AT, HU). 2027 calendar not yet published.",
+   "note": "2026 season ended with Mojo Cup, Jesolo (23-25 Oct). 2027 calendar not yet published.",
    "book": "https://rmc-ce.com/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ch-swiss-kart-championship",
@@ -978,10 +978,10 @@
    "venue": "Various circuits (IT/FR/CH)",
    "kind": "club",
    "short": "CSK",
-   "note": "Swiss national championship run mostly abroad (Franciacorta, 7 Laghi, Levier, Cremona, Wohlen). 2027 calendar in preparation.",
+   "note": "2026 championship ended 10 Oct at Wohlen. 2027 calendar not yet published.",
    "book": "https://motorsport.ch/fr/karting/championnat-suisse",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "pl-rotax-max-challenge-poland",
@@ -989,10 +989,10 @@
    "venue": "Słomczyn and others, Poland",
    "kind": "club",
    "short": "RMCP",
-   "note": "PZM-sanctioned main owner-driver series in Poland. 2027 dates not yet published.",
+   "note": "2026 season over. 2027 dates not yet published.",
    "book": "https://pzm.pl/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "sws-international-finals",
@@ -1000,10 +1000,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "SWS",
-   "note": "2027: four separate finals. Sprint Finals (Gran Karting Club, Gran Canaria) and Endurance Finals (Circuito di Pomposa, 24H + 12H) dates not yet published. Qualify via SWS races at affiliated tracks.",
+   "note": "2027: four separate finals. E-Finals (Vantaa) and R-Sprint Finals (Septfontaines) dated; Sprint Finals (Gran Karting Club, Gran Canaria) and Endurance Finals (Pomposa) dates not yet published.",
    "book": "https://www.sodiwseries.com/en-gb",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kart-world-championship",
@@ -1011,10 +1011,10 @@
    "venue": "Kart Center Campillos, Campillos, Spain",
    "kind": "rental",
    "short": "KWC",
-   "note": "21st edition, ~220 drivers on equalised karts; qualify via national KWC qualifiers (e.g. SRKC, FRKC, Superpole World Cup). Nations Cup 27 Jul.",
+   "note": "21st edition at Kart Center Campillos, 26-31 Jul 2027; qualify via KWC qualifiers.",
    "book": "https://www.kartworldchampionship.com/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "24-hour-karting-championship",
@@ -1022,10 +1022,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "24HC",
-   "note": "Four-round 24h hire-kart championship, max 46 teams; mainland rounds listed (British round at Teesside excluded). Spa date marked TBC by organiser.",
+   "note": "2027 four-round 24h hire-kart championship, max 46 teams; mainland rounds listed (British round at Teesside excluded). Spa date marked TBC by organiser.",
    "book": "https://teessidemotorsports.co.uk/karting/24hr-karting/",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kce-wek-endurance",
@@ -1033,11 +1033,11 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "KCE",
-   "note": "KCE Racing long endurance calendar (24H/25H, SWS endurance), Sodi karts, teams of 3-10.",
+   "note": "KCE 2027 endurance calendar published (Int. Cup and 24H Jesolo Apr, 24H Spa and 10H Misanino Jun, 25H Jesolo Sep, 24H Viterbo 29-31 Oct); 6H Simoncelli Misanino 8 Nov 2026.",
    "book": "https://app.kce-racing.it/",
    "phone": "+39 335 6266636",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-events-bulgaria",
@@ -1049,7 +1049,7 @@
    "book": "https://app.karting-events.com/season-reservations",
    "phone": "+359 877 919 914",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-genk-endurance",
@@ -1057,10 +1057,10 @@
    "venue": "Karting Genk, Genk, Belgium",
    "kind": "rental",
    "short": "GNK",
-   "note": "24 Hours Endurance Race and 100 Miles races on the FIA Genk circuit.",
+   "note": "KGEC 2026 closes with 100 Miles on 21 Nov; 24 Hours Endurance Race 1-2 May 2027 confirmed. Rest of 2027 KGEC calendar not yet published.",
    "book": "https://www.kartinggenkendurance.be/en/race/24-hours-endurance-race~frfdpg4xw0",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kdf-24h-mariembourg",
@@ -1068,10 +1068,10 @@
    "venue": "Karting des Fagnes, Mariembourg, Belgium",
    "kind": "rental",
    "short": "KDF",
-   "note": "24-hour team race with Sodi RT10 390cc on one of Europe's largest outdoor layouts.",
+   "note": "24-hour team race with Sodi RT10 390cc; 2027 edition 24-25 Apr.",
    "book": "https://kartingdesfagnes.be/en/24h",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "belgian-karting-series",
@@ -1079,10 +1079,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "BKS",
-   "note": "9-round Belgian 6-hour rental endurance championship.",
+   "note": "R9 finale confirmed; 2027 dates not published yet",
    "book": "https://belgiankartingseries.com/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "dutch-24h-lelystad",
@@ -1090,10 +1090,10 @@
    "venue": "Kartcentrum Lelystad, Lelystad, Netherlands",
    "kind": "rental",
    "short": "D24",
-   "note": "Two editions per year (April and October) run with Dutch Racing Series; 2027 exact dates not yet published, pre-registration open.",
+   "note": "2027 April and October editions dated",
    "book": "https://www.kartcentrumlelystad.nl/en/dutch24h",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "drs-nationals",
@@ -1101,10 +1101,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "DRS",
-   "note": "Dutch rental sprint championship with 3H endurance races on GP weekends; 2027 calendar not yet published.",
+   "note": "GP9/GP10 confirmed; 2027 calendar not published yet",
    "book": "https://www.dutchracingseries.nl/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "formula-karting-nederland",
@@ -1112,10 +1112,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "FKN",
-   "note": "Dutch rental kart championship with Sodi karts.",
+   "note": "R8-R10 confirmed (season ends Dec 13); 2027 calendar not published yet",
    "book": "https://www.fknederland.nl/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "formula-karting-belgium",
@@ -1123,10 +1123,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "FKB",
-   "note": "Belgian rental championship, 65kg/85kg categories.",
+   "note": "Season finale Nov 21 (65kg) at Huizingen; 2027 dates not published yet",
    "book": "https://www.formulakarting.be/formula-karting-belgium/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "benelux-national-kart-championship",
@@ -1134,10 +1134,10 @@
    "venue": "Goodwill Karting, Olen, Belgium",
    "kind": "rental",
    "short": "BNKC",
-   "note": "Inaugural edition, 120 drivers, Sodi 270cc.",
+   "note": "2026 edition held 31 Oct-1 Nov; 2027 dates not published yet",
    "book": "https://www.bnkc-official.be/register/",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "nikc",
@@ -1145,10 +1145,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "NIKC",
-   "note": "Dutch indoor rental championship; Overall, Junior, Master, Ladies. Later rounds TBA.",
+   "note": "One-day championship 5 Dec 2026 confirmed; 2027 not published yet",
    "book": "https://nikc.nl/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "frkc",
@@ -1156,10 +1156,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "FRKC",
-   "note": "France's KWC-qualifying rental sprint championship; further 2027 rounds TBA.",
+   "note": "FRKC Indoor 5-7 Feb 2027 confirmed; further 2027 rounds TBA",
    "book": "https://docs.google.com/forms/d/e/1FAIpQLScVU0KiImPS5QY01NS0LFQV4knQF2JSY9Y1dn7dnT8LZW_ezA/viewform",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "srkc",
@@ -1167,10 +1167,10 @@
    "venue": "Racehall Stockholm, Stockholm, Sweden",
    "kind": "rental",
    "short": "SRKC",
-   "note": "KWC qualifier; winner gets free KWC 2027 ticket.",
+   "note": "2027 edition at Racehall Stockholm in March; no other dates",
    "book": "https://racehall.com/en/srkc-swedish-rental-kart-championship/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "slovak-rental-karting-championship",
@@ -1178,10 +1178,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "SVKRC",
-   "note": "2026-27 national rental championship by Slovakia Karting Club.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://www.instagram.com/msr_rentalkarting/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "superpole-campillos",
@@ -1189,10 +1189,10 @@
    "venue": "Kart Center Campillos, Campillos, Spain",
    "kind": "rental",
    "short": "SPL",
-   "note": "Superpole World Cup (KWC qualifier), Spanish Cup and endurance at Campillos.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://superpole.es/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "henakart-endurance",
@@ -1200,10 +1200,10 @@
    "venue": "Circuito Henakart, San Fernando de Henares, Spain",
    "kind": "rental",
    "short": "HNK",
-   "note": "Madrid Karting Championship and Henakart 11H endurance.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://www.henakart.com",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rkc-asi",
@@ -1211,10 +1211,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "RKC",
-   "note": "Italian national rental kart championship (ASI).",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://www.rkcasikarting.it/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "irk-the-finals",
@@ -1222,10 +1222,10 @@
    "venue": "Circuito Internazionale d'Abruzzo, Italy",
    "kind": "rental",
    "short": "IRK",
-   "note": "Sprint (TBKART R-MAX) and team endurance (R-ONE) season finale.",
+   "note": "The Finals 2026 confirmed; 2027 edition not dated yet",
    "book": "https://irkpromotion.com/en/subscriptions/the-finals-2026/",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "romagna-rental-karting-championship",
@@ -1233,10 +1233,10 @@
    "venue": "Europe, multiple venues",
    "kind": "rental",
    "short": "RRKC",
-   "note": "Italian regional rental championship, Elite/Pro/Am at 85kg.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://kartradar.eu/events/romagna-rental-karting-championship-2026-11-15-circuito-di-siena",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "grimma-rental-karting-series",
@@ -1244,10 +1244,10 @@
    "venue": "Grimma Kart Center, Grimma, Germany",
    "kind": "rental",
    "short": "GRKS",
-   "note": "SWS team endurance series and Singlesprint championship with Sodi SR5.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://linktr.ee/kartcentergrimma",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ouest-karting-winter-challenge",
@@ -1255,10 +1255,10 @@
    "venue": "Ouest Karting, Aunay-les-Bois, France",
    "kind": "rental",
    "short": "OWC",
-   "note": "2026-27 rental endurance championship (4H/7H rounds); 7H rounds listed.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://ouest-karting-normandie.com/les-courses/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "alcanede-endurance",
@@ -1266,10 +1266,10 @@
    "venue": "Kartódromo de Alcanede, Alcanede, Portugal",
    "kind": "rental",
    "short": "ALC",
-   "note": "26H (SWS Endurance Cup) and Endurance Cup 7H.",
+   "note": "26H (7-8 Nov) and 7H Endurance Cup R4 (12 Dec) confirmed; 2027 not published yet",
    "book": "https://www.kartalcanede.com/",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "25h-of-greece",
@@ -1277,10 +1277,10 @@
    "venue": "Go Kart Volan, Thessaloniki, Greece",
    "kind": "rental",
    "short": "GR25",
-   "note": "Sodi SR4 390cc, SWS endurance.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://kartvolan.gr/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "12h-kartbaan-oldenzaal",
@@ -1288,10 +1288,10 @@
    "venue": "Kartbaan Oldenzaal, Oldenzaal, Netherlands",
    "kind": "rental",
    "short": "OLD12",
-   "note": "Annual 12-hour team race.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://kartbaanoldenzaal.nl/en/races/12-hour-race-2026/",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "le-mans-karting-endurance",
@@ -1299,10 +1299,10 @@
    "venue": "Karting des 24 Heures, Le Mans, France",
    "kind": "rental",
    "short": "LM",
-   "note": "Open Kart endurance races at Le Mans.",
+   "note": "Open Kart endurance races through Dec 2026; 2027 dates not published yet",
    "book": "https://www.lemans-karting.com/karting/open-kart/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "7h-osona",
@@ -1310,10 +1310,10 @@
    "venue": "Circuit d'Osona, Catalonia, Spain",
    "kind": "rental",
    "short": "OSO",
-   "note": "7-hour team endurance.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://circuitosona.com",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "6h-beausoleil-laval",
@@ -1321,10 +1321,10 @@
    "venue": "Circuit Beausoleil, Laval, France",
    "kind": "rental",
    "short": "LAV",
-   "note": "6-hour team endurance.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://www.karting-laval.fr",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "25h-gran-canaria",
@@ -1332,10 +1332,10 @@
    "venue": "Parque del Motor, Gran Canaria, Spain",
    "kind": "rental",
    "short": "GC25",
-   "note": "International 25-hour SWS team endurance.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://parquedelmotor.com/producto/endurance-25h-sws-05-12-2026/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "13h-reverse-chorzow",
@@ -1343,10 +1343,10 @@
    "venue": "E1GOKART, Chorzów, Poland",
    "kind": "rental",
    "short": "CHO",
-   "note": "13-hour indoor team endurance.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://chorzow.e1gokart.pl/kup-bilet/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "vrs-endurance-cup",
@@ -1354,10 +1354,10 @@
    "venue": "Circuito de Villafranca, Villafranca de Córdoba, Spain",
    "kind": "rental",
    "short": "VRS",
-   "note": "3-round team endurance cup; 6H finale listed.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://kartingescaperoomcordoba.com/karting-villafranca/inicio.html",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "24h-la-conca",
@@ -1365,10 +1365,10 @@
    "venue": "World Circuit La Conca, Muro Leccese, Italy",
    "kind": "rental",
    "short": "LCO",
-   "note": "24-hour team race by Kartodromo Touch&Go.",
+   "note": "Stored dates unchanged (kartradar listing); 2027 not published yet",
    "book": "https://www.kartodromotouchandgo.it/post/24h-la-conca",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "24h-messina",
@@ -1376,10 +1376,10 @@
    "venue": "Karting Club Messina, Messina, Italy",
    "kind": "rental",
    "short": "MES",
-   "note": "8th edition, WEK 2027 National Series.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://www.kartingclubmessina.it/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "48h-iron-kart",
@@ -1387,10 +1387,10 @@
    "venue": "Karting Roussillon, Rivesaltes, France",
    "kind": "rental",
    "short": "IRON",
-   "note": "48-hour 390cc team race, teams of 6-12.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://www.kartingroussillon.com",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "events-karts-series",
@@ -1398,10 +1398,10 @@
    "venue": "Karting Cardedeu, Cardedeu, Spain",
    "kind": "rental",
    "short": "EKS",
-   "note": "Team endurance championship at Cardedeu and Empuriabrava; 24H date provisional.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://eventskartsseries.es",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "26h-saintes",
@@ -1409,10 +1409,10 @@
    "venue": "Karting de Saintes, Les Gonds, France",
    "kind": "rental",
    "short": "SAI",
-   "note": "7th edition, SWS endurance, 270cc.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://kartingdesaintes.com/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "25h-rkc-paris",
@@ -1420,10 +1420,10 @@
    "venue": "RKC Karting Paris, Grisy-les-Plâtres, France",
    "kind": "rental",
    "short": "RKC25",
-   "note": "Format/registration details to come.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://rkc-karting-paris.com/",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "13h-oriokart",
@@ -1431,10 +1431,10 @@
    "venue": "Oriokart, Orio, Spain",
    "kind": "rental",
    "short": "ORIO",
-   "note": "13h10 team endurance.",
+   "note": "Stored dates unchanged (kartradar listing incl. 2027 dates); nothing newer found",
    "book": "https://www.oriokart.com/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-genk",
@@ -1442,10 +1442,10 @@
    "venue": "Genk, Belgium",
    "kind": "rtrack",
    "short": "GNK",
-   "note": "Home of Champions; 100 Miles races and Karting Genk Endurance Championship (KGEC), kids Clubhouse races. 24H covered separately; 2027 calendar not yet published.",
+   "note": "Last 2026 100 Miles/KGEC and Clubhouse on 21 Nov; 2027 calendar not published yet",
    "book": "https://www.kartinggenk.be/en",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-des-fagnes",
@@ -1453,10 +1453,10 @@
    "venue": "Mariembourg, Belgium",
    "kind": "rtrack",
    "short": "KDF",
-   "note": "Belgium's largest outdoor track (1,366 m, Sodi RT8). Runs Kart Fun Trophy sprint/endurance; no dated own events published for the period (BKS rounds and 24H KDF covered separately).",
+   "note": "KFT season ended Oct/Nov 1; no dated own events published for the period (BKS and 24H KDF covered separately)",
    "book": "https://kartingdesfagnes.be/en/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-spa-francorchamps",
@@ -1464,11 +1464,11 @@
    "venue": "Stavelot, Belgium",
    "kind": "rtrack",
    "short": "SPA",
-   "note": "1,092 m track inside the Spa circuit; 4h endurances (Sodi RT10). DRS/FKN rounds and 24H Spa listed separately.",
+   "note": "BOKC 7 Nov remains; no further own endurances published",
    "book": "https://www.francorchamps-karting.be/",
    "phone": "+32 87 27 58 54",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "experience-factory-eupen",
@@ -1476,10 +1476,10 @@
    "venue": "Eupen, Belgium",
    "kind": "rtrack",
    "short": "EUP",
-   "note": "Indoor track; Tuesday-night Eupen Autumn Series sprint championship (Gold Licence required).",
+   "note": "Autumn Series R5-R12 and Grand Finale confirmed; 2027 series not published yet",
    "book": "https://www.experience-factory.com/eupen/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "jmk-liege",
@@ -1487,10 +1487,10 @@
    "venue": "Fléron, Belgium",
    "kind": "rtrack",
    "short": "JMK",
-   "note": "Indoor track; JMK sprint nights and 2x1h endurance.",
+   "note": "Stored sprint/endurance dates unchanged; 2027 not published yet",
    "book": "https://www.jmkarting.com/",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "goodwill-karting",
@@ -1498,10 +1498,10 @@
    "venue": "Olen, Belgium",
    "kind": "rtrack",
    "short": "GWK",
-   "note": "Indoor/outdoor track hosting BNKC and GP Snipez team endurance.",
+   "note": "GP Snipez R3 unchanged; BNKC covered separately; 2027 not published yet",
    "book": "https://www.goodwillkarting.be/en",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartcentrum-lelystad",
@@ -1509,11 +1509,11 @@
    "venue": "Lelystad, Netherlands",
    "kind": "rtrack",
    "short": "KCL",
-   "note": "Outdoor track; 1-hour, 2-hour and sprint races in season (Mar-Oct). No own races published after October; Dutch 24H and DRS/FKN rounds covered separately.",
+   "note": "Own 1h/2h/sprint races through Dec 2026; 2027 not published yet",
    "book": "https://www.kartcentrumlelystad.nl/en/race-calendar",
    "phone": "+31 320 284 021",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartbaan-oldenzaal",
@@ -1521,10 +1521,10 @@
    "venue": "Oldenzaal, Netherlands",
    "kind": "rtrack",
    "short": "OLD",
-   "note": "Outdoor track; annual 12-hour race.",
+   "note": "12H covered separately; KBO Cup 2026/2027 dates not published",
    "book": "https://kartbaanoldenzaal.nl/en/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "circuit-de-landsard",
@@ -1532,10 +1532,10 @@
    "venue": "Landgraaf, Netherlands",
    "kind": "rtrack",
    "short": "LDS",
-   "note": "Outdoor track; 2-hour Grand Prix races.",
+   "note": "Friday 2-hour Grand Prix races; no dated events published after October",
    "book": "https://outdoorkarting.nl/",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "euro-indoorkarting-swalmen",
@@ -1543,10 +1543,10 @@
    "venue": "Swalmen, Netherlands",
    "kind": "rtrack",
    "short": "SWA",
-   "note": "Indoor track; hosts the NIKC indoor championship.",
+   "note": "Euro Cup Championship evenings run but no future dates published; NIKC covered separately",
    "book": "https://kartcentrum.nl/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartbahn-ampfing",
@@ -1554,11 +1554,11 @@
    "venue": "Ampfing, Germany",
    "kind": "rtrack",
    "short": "AMP",
-   "note": "SWS-rated rental endurance (2h/4h/6h/12h) and 99-lap races. SWS 24h (10-11 Apr 2027) not listed here.",
+   "note": "99-lap race and 2027 SWS 4h/6h/12h races confirmed on booking page",
    "book": "https://kartshop-ampfing.de/pages/leihkart-kartbahn",
    "phone": "+49 8636 983190",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rs-kartcenter-bispingen",
@@ -1566,11 +1566,11 @@
    "venue": "Bispingen, Germany",
    "kind": "rtrack",
    "short": "RSK",
-   "note": "Indoor/outdoor 2,000 m combined; RS Zweistünder team series and Rookie Races. 2027 series dates not yet published.",
+   "note": "Rookie Race 3 Nov and RS Zweistuender finale 30 Dec; 2027 series dates not published yet",
    "book": "https://rs-kartcenter.de/",
    "phone": "+49 5194 982050",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartcenter-emsburen",
@@ -1578,10 +1578,10 @@
    "venue": "Emsbüren, Germany",
    "kind": "rtrack",
    "short": "KCE",
-   "note": "KCE Sprint Cup winter series; sister track of Lelystad/Zwolle.",
+   "note": "KCE SprintCup WinterCup rounds confirmed; 2027 not published yet",
    "book": "https://www.kartcenteremsbueren.de",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "daytona-essen",
@@ -1589,10 +1589,10 @@
    "venue": "Essen, Germany",
    "kind": "rtrack",
    "short": "DAY",
-   "note": "Indoor track; monthly Daytona Liga and 3h team races.",
+   "note": "Monthly Liga and 3H Team races through Dec 2026; 2027 not published yet",
    "book": "https://www.daytona-kartbahn.de",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "cockpit-kartarena-bocholt",
@@ -1600,10 +1600,10 @@
    "venue": "Bocholt, Germany",
    "kind": "rtrack",
    "short": "CKA",
-   "note": "Indoor track; CKA Team Cup 3h series.",
+   "note": "CKA Team Cup 3H R9/R10 remain; 2027 not published yet",
    "book": "https://www.cockpit-kartarena.de/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kart-center-grimma",
@@ -1611,10 +1611,10 @@
    "venue": "Grimma, Germany",
    "kind": "rtrack",
    "short": "GRM",
-   "note": "GRKS single-sprint championship and Grimma Rental Karting Series endurance.",
+   "note": "Christmas Race 25 Dec 2026; GRKS covered separately; 2027 dates not published yet",
    "book": "https://linktr.ee/kartcentergrimma",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartbahn-kirchlengern",
@@ -1622,10 +1622,10 @@
    "venue": "Kirchlengern, Germany",
    "kind": "rtrack",
    "short": "K2K",
-   "note": "Funraces, Sommercup and 4h team races.",
+   "note": "2026 season ends Nov; 2027 dates not published yet",
    "book": "https://www.kart2000-online.de/",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ms-kartcenter-hattingen",
@@ -1633,10 +1633,10 @@
    "venue": "Hattingen, Germany",
    "kind": "rtrack",
    "short": "MSH",
-   "note": "SWS-rated sprint and 4h team races.",
+   "note": "Open races and Junior Cup Nov-Dec 2026 listed",
    "book": "https://ms-kartcenter-hattingen.de/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartbahn-luneburg",
@@ -1644,10 +1644,10 @@
    "venue": "Embsen, Germany",
    "kind": "rtrack",
    "short": "LUN",
-   "note": "Fortnightly Thursday Community Race (individual sprint).",
+   "note": "Fortnightly Community Race (no dated list); 2027 Kart Masters Nord dates not published yet",
    "book": "https://www.kartbahn-lueneburg.de/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ms-kartcenter-kerpen",
@@ -1655,11 +1655,11 @@
    "venue": "Kerpen, Germany",
    "kind": "rtrack",
    "short": "MSK",
-   "note": "Indoor + 710 m outdoor; no dated public race series published for the period.",
+   "note": "No dated public race events published for the period",
    "book": "https://www.ms-kartcenter.de/en",
    "phone": "+49 2273 60190",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "erftlandring-kerpen",
@@ -1667,10 +1667,10 @@
    "venue": "Kerpen, Germany",
    "kind": "rtrack",
    "short": "ERF",
-   "note": "Historic Kerpen club circuit (own-kart racing; RMC Germany 18-19 Sep 2027); no rental-kart race series published.",
+   "note": "Club circuit; no rental-kart race events published for the period",
    "book": "https://www.kart-club-kerpen.de/dates",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "prokart-raceland-wackersdorf",
@@ -1678,11 +1678,11 @@
    "venue": "Wackersdorf, Germany",
    "kind": "rtrack",
    "short": "PKR",
-   "note": "Indoor + outdoor; KTWB rental team series ran to Oct 2026 - 2027 dates not yet published.",
+   "note": "KTWB series ended Oct 2026; 2027 dates not published yet",
    "book": "https://www.prokart-raceland.com/",
    "phone": "+49 9431 75520",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "racing-kart-jpr",
@@ -1690,11 +1690,11 @@
    "venue": "Ostricourt, France",
    "kind": "rtrack",
    "short": "JPR",
-   "note": "SWS-certified Open GP, Sprint Cup and endurance races (Sodi RT10 390cc).",
+   "note": "Open GP, Sprint Cup and endurance listed to Dec 2026; 2027 not published yet",
    "book": "https://karting-lille-jpr.fr/course-karting",
    "phone": "+33 3 27 89 90 50",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rkc-cormeilles",
@@ -1702,11 +1702,11 @@
    "venue": "Boissy-l'Aillerie, France",
    "kind": "rtrack",
    "short": "RKC",
-   "note": "Europe's biggest kart complex; SWS endurances (e.g. 13H). No further dated races published for the period; 25H RKC covered separately.",
+   "note": "Grand Prix du Pere Noel and 13H SWS announced without dates found; 25H RKC covered separately",
    "book": "https://rkc-karting-paris.com/reservation-courses/",
    "phone": "+33 1 30 73 28 00",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "rko-angerville",
@@ -1714,10 +1714,10 @@
    "venue": "Angerville, France",
    "kind": "rtrack",
    "short": "RKO",
-   "note": "RKO Sprint and Kid Cup championships plus Christmas GP.",
+   "note": "Sprint and Kid Cup R9-R10 plus Christmas GP listed; 2027 not published yet",
    "book": "https://www.rko.fr/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ouest-karting",
@@ -1725,11 +1725,11 @@
    "venue": "Aunay-les-Bois, France",
    "kind": "rtrack",
    "short": "OKN",
-   "note": "SWS endurances and sprints; Winter Challenge series Nov-Mar.",
+   "note": "Winter Challenge rounds to Feb 2027 listed (Winter Challenge series separate in file)",
    "book": "https://ouest-karting-normandie.com/les-courses/",
    "phone": "+33 2 33 27 65 87",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "circuit-de-l-europe",
@@ -1737,10 +1737,10 @@
    "venue": "Sotteville-sous-le-Val, France",
    "kind": "rtrack",
    "short": "CDE",
-   "note": "2-stroke rental Winter Series championship.",
+   "note": "2T Winter Series R1-R8 to Mar 2027 listed",
    "book": "https://www.circuit-europe.fr/calendrier-des-courses",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "solokart",
@@ -1748,10 +1748,10 @@
    "venue": "Plaisance-du-Touch, France",
    "kind": "rtrack",
    "short": "SOL",
-   "note": "Open Cup sprint championships and 4h endurance.",
+   "note": "Open Cup and 4H endurance listed to Dec 2026; 2027 not published yet",
    "book": "https://www.solokart.com/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "cap-karting",
@@ -1759,10 +1759,10 @@
    "venue": "Cap d'Agde, France",
    "kind": "rtrack",
    "short": "CAP",
-   "note": "100 Laps, OpenKart trophy and 2h races.",
+   "note": "100 Laps, OpenKart trophy and 2H listed to Dec 2026; 2027 not published yet",
    "book": "https://www.capkarting.com/evenements",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "brignoles-karting",
@@ -1770,10 +1770,10 @@
    "venue": "Brignoles, France",
    "kind": "rtrack",
    "short": "BKL",
-   "note": "Leisure challenges, Junior Trophy and 5h race (Scuderia Varoise rounds excluded).",
+   "note": "Leisure challenges, Junior Trophy and 5H listed to Dec 2026; 2027 not published yet",
    "book": "https://brignoleskartingloisir.com/challengesloisirs/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "circuit-beausoleil-laval",
@@ -1781,10 +1781,10 @@
    "venue": "Laval, France",
    "kind": "rtrack",
    "short": "LAV",
-   "note": "Sprint races and 4h/6h endurances.",
+   "note": "Sprint races and 4H listed to Dec 2026 (6H covered separately); 2027 not published yet",
    "book": "https://www.karting-laval.fr",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-du-bugey",
@@ -1792,10 +1792,10 @@
    "venue": "Bugey, France",
    "kind": "rtrack",
    "short": "BUG",
-   "note": "Sprint Cup championship and endurance.",
+   "note": "Endurance and Sprint Cup Grand Final listed; 2027 not published yet",
    "book": "https://www.kartingdubugey.com/",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-belval",
@@ -1803,10 +1803,10 @@
    "venue": "Belval, France",
    "kind": "rtrack",
    "short": "BEL",
-   "note": "Sprint Elite and Final Cup.",
+   "note": "Final Cup 13 Dec 2026 listed; 2027 not published yet",
    "book": "https://www.karting-belval.fr",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-de-rennes",
@@ -1814,10 +1814,10 @@
    "venue": "Rennes, France",
    "kind": "rtrack",
    "short": "REN",
-   "note": "Cup Malo championship season 2.",
+   "note": "Cup Malo season 2 rounds to May 2027 listed",
    "book": "https://karting-rennes.fr",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-plus-belmont",
@@ -1825,10 +1825,10 @@
    "venue": "Belmont, France",
    "kind": "rtrack",
    "short": "KPL",
-   "note": "Karting Plus Grand Prix series.",
+   "note": "Grand Prix GP9 6 Dec 2026 listed; 2027 not published yet",
    "book": "https://www.kartingplus.com",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-le-mans",
@@ -1836,10 +1836,10 @@
    "venue": "Le Mans, France",
    "kind": "rtrack",
    "short": "LMK",
-   "note": "Open Kart endurances at the Le Mans kart track.",
+   "note": "Open Kart sprint races listed to Dec 2026 (endurances under le-mans-karting-endurance); 2027 not published yet",
    "book": "https://www.lemans-karting.com/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kart-are-lavelanet",
@@ -1847,11 +1847,11 @@
    "venue": "Aigues-Vives (Lavelanet), France",
    "kind": "rtrack",
    "short": "KAR",
-   "note": "1,402 m circuit near Lavelanet; no dated rental competitions published for the period.",
+   "note": "No dated rental competitions published for the period",
    "book": "https://karting-ariege.fr/",
    "phone": "+33 5 61 01 31 89",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kart-and-go",
@@ -1859,10 +1859,10 @@
    "venue": "Italy",
    "kind": "rtrack",
    "short": "K&G",
-   "note": "SWS-rated Pork Cup, Draft Cup, Trofeo Kart&Go, Penta Karting and night endurances.",
+   "note": "Pork Cup, Draft Cup, Trofeo, Penta Karting and 7H Christmas listed to Dec 2026; 2027 not published yet",
    "book": "https://kartandgo.it/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "pista-ronco",
@@ -1870,10 +1870,10 @@
    "venue": "Italy",
    "kind": "rtrack",
    "short": "RON",
-   "note": "Rental championships for Baby, Under 15, Adults, Iron Man and 2h.",
+   "note": "Adults, Iron Man and 2H R8 listed for Nov 2026; 2027 not published yet",
    "book": "https://pistaronco.it/campionati/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "misanino",
@@ -1881,10 +1881,10 @@
    "venue": "Misano Adriatico, Italy",
    "kind": "rtrack",
    "short": "MIS",
-   "note": "Misanino Cup sprint nights and 6h Simoncelli Trophy.",
+   "note": "Sprint Night Cup 6 Nov 2026 listed; 2027 not published yet",
    "book": "https://www.misanino.it/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "lignano-circuit",
@@ -1892,10 +1892,10 @@
    "venue": "Lignano Sabbiadoro, Italy",
    "kind": "rtrack",
    "short": "LIG",
-   "note": "2h Endurance Winter Cup.",
+   "note": "2H Endurance Winter Cup R3-R4 listed; 2027 not published yet",
    "book": "https://www.lignanocircuit.com",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "south-milano-karting",
@@ -1903,10 +1903,10 @@
    "venue": "Ottobiano, Italy",
    "kind": "rtrack",
    "short": "SMK",
-   "note": "3h Endurance Karting Series and Iron K33.",
+   "note": "Lenovo 3H Endurance and Iron K33 R8 held 1 Nov 2026; no further dated rounds published",
    "book": "https://www.southmilanokarting.com/campionati-rental-kart",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "theway-vicenza",
@@ -1914,10 +1914,10 @@
    "venue": "Vicenza, Italy",
    "kind": "rtrack",
    "short": "TWV",
-   "note": "2h endurance series.",
+   "note": "2H endurances Nov-Dec 2026 listed; 2027 not published yet",
    "book": "https://www.thewaykart.com/",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "pista-azzurra-jesolo",
@@ -1925,10 +1925,10 @@
    "venue": "Jesolo, Italy",
    "kind": "rtrack",
    "short": "JES",
-   "note": "Rental endurance venue; 24H/25H Jesolo covered separately; no other dated rental races published.",
+   "note": "No dated rental races besides 24H/25H Jesolo (covered separately)",
    "book": "https://pista-azzurra.com/en/noleggio",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartcenter-campillos",
@@ -1936,11 +1936,11 @@
    "venue": "Campillos, Spain",
    "kind": "rtrack",
    "short": "CMP",
-   "note": "Superpole rental championships, Kart World Championship host; 30 Hours (Oct) covered separately.",
+   "note": "Superpole SAC 2027 rounds listed (Superpole events also covered by superpole-campillos)",
    "book": "https://kartingcampillos.com/en/",
    "phone": "+34 951 163 120",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "henakart",
@@ -1948,11 +1948,11 @@
    "venue": "San Fernando de Henares, Spain",
    "kind": "rtrack",
    "short": "HNK",
-   "note": "SWS-rated 3h endurance and 1h individual championships.",
+   "note": "2027 endurance and individual championship calendar published",
    "book": "https://www.henakart.com",
    "phone": "+34 606 150 066",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-angel-burgueno",
@@ -1960,11 +1960,11 @@
    "venue": "Pedrezuela, Spain",
    "kind": "rtrack",
    "short": "KAB",
-   "note": "1h/2h endurance series and 10h endurance.",
+   "note": "2027 endurance series calendar published",
    "book": "https://www.kartingangelburgueno.com/campeonatos/",
    "phone": "+34 918 433 571",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-sevilla",
@@ -1972,10 +1972,10 @@
    "venue": "Seville, Spain",
    "kind": "rtrack",
    "short": "SEV",
-   "note": "Paketes Cup and IRC Sprint Championship.",
+   "note": "IRC Sprint Championship R3-R5 listed; 2027 not published yet",
    "book": "https://www.kartingsevilla.com/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-villafranca",
@@ -1983,10 +1983,10 @@
    "venue": "Villafranca de Córdoba, Spain",
    "kind": "rtrack",
    "short": "VIL",
-   "note": "VRS Endurance Cup.",
+   "note": "VRS Endurance Cup R2 22 Nov 2026 (VRS also covered separately); 2027 not published yet",
    "book": "https://kartingescaperoomcordoba.com/karting-villafranca/inicio.html",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "ariza-racing",
@@ -1994,10 +1994,10 @@
    "venue": "Spain",
    "kind": "rtrack",
    "short": "ARZ",
-   "note": "4h endurance and Junior Cup.",
+   "note": "4H endurance and Junior Cup 21 Nov 2026 listed; 2027 not published yet",
    "book": "https://arizaracing.com/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "lucas-guerrero-chiva",
@@ -2005,10 +2005,10 @@
    "venue": "Chiva, Spain",
    "kind": "rtrack",
    "short": "CHV",
-   "note": "FIA circuit; no dated rental-kart races found for the period.",
+   "note": "No dated rental-kart races found for the period",
    "book": "https://kartodromovalencia.com/servicios/karts-de-alquiler/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartodromo-alcanede",
@@ -2016,10 +2016,10 @@
    "venue": "Alcanede, Portugal",
    "kind": "rtrack",
    "short": "ALC",
-   "note": "Stone Soup Trophy and Endurance Cup (26H covered separately).",
+   "note": "Stone Soup Trophy R3-R4 listed (26H covered separately); 2027 not published yet",
    "book": "https://www.kartalcanede.com/",
    "color": "#3BD16F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartodromo-abrantes",
@@ -2027,10 +2027,10 @@
    "venue": "Abrantes, Portugal",
    "kind": "rtrack",
    "short": "ABR",
-   "note": "Race of Champions and Joker Lap Trophy.",
+   "note": "Endurance Trophy R5 added; Race of Champions and Joker Lap R3 listed",
    "book": "https://kartodromo-abrantes.com/",
    "color": "#E040C8",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartodromo-baltar",
@@ -2038,10 +2038,10 @@
    "venue": "Baltar, Portugal",
    "kind": "rtrack",
    "short": "BAL",
-   "note": "Baltar Trophy rental championship.",
+   "note": "Baltar Trophy R4 14 Nov 2026 listed; 2027 not published yet",
    "book": "https://kartodromodebaltar.pt/",
    "color": "#4C8DFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartodromo-algarve",
@@ -2049,11 +2049,11 @@
    "venue": "Portimão, Portugal",
    "kind": "rtrack",
    "short": "KIA",
-   "note": "No dated rental competitions published for the period.",
+   "note": "No dated rental competitions published for the period",
    "book": "https://autodromodoalgarve.com/driving-experiences/go-kart-rental/",
    "phone": "+351 282 405 650",
    "color": "#F5A623",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "karting-vuiteboeuf",
@@ -2061,10 +2061,10 @@
    "venue": "Vuiteboeuf, Switzerland",
    "kind": "rtrack",
    "short": "VUI",
-   "note": "SWS Iron Championship and Junior Cup.",
+   "note": "Iron Championship and Junior Cup rounds to Dec 2026 confirmed; 2027 not published yet",
    "book": "https://www.kartingvuiteboeuf.ch",
    "color": "#16C5D9",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartbahn-lyss",
@@ -2072,10 +2072,10 @@
    "venue": "Kappelen, Switzerland",
    "kind": "rtrack",
    "short": "LYS",
-   "note": "Group Kart Grand Prix format only; no public dated championship found.",
+   "note": "No race events",
    "book": "https://kartbahnlyss.ch/",
    "color": "#F5C542",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "kartplanet-prague",
@@ -2083,10 +2083,10 @@
    "venue": "Prague, Czech Republic",
    "kind": "rtrack",
    "short": "KPP",
-   "note": "2H Series, Junior Cup and SWS Sprint Cup (autumn season).",
+   "note": "Autumn 2026 season ended 31 Oct; 2027 dates not published yet",
    "book": "https://www.kartplanet.cz/",
    "color": "#B36BFF",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "e1gokart-chorzow",
@@ -2094,10 +2094,10 @@
    "venue": "Chorzów, Poland",
    "kind": "rtrack",
    "short": "E1G",
-   "note": "Śląska Liga Kartingowa (Sodi) and 13h reverse endurance.",
+   "note": "Slaska Liga autumn rounds confirmed (13H Reverse covered separately); 2027 not published yet",
    "book": "https://chorzow.e1gokart.pl/",
    "color": "#FF6B6B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "racehall-stockholm",
@@ -2105,10 +2105,10 @@
    "venue": "Stockholm, Sweden",
    "kind": "rtrack",
    "short": "RHS",
-   "note": "Swedish Rental Kart Championship host.",
+   "note": "Hosts SRKC 2027 (19 Mar, covered under srkc); no other dated races",
    "book": "https://racehall.com/en/srkc-swedish-rental-kart-championship/",
    "color": "#9BD13B",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "lange-motokeskus",
@@ -2116,10 +2116,10 @@
    "venue": "Estonia",
    "kind": "rtrack",
    "short": "LAN",
-   "note": "Dual Power season series.",
+   "note": "Dual Power Series R11 held 1 Nov 2026; final round and 2027 dates not found",
    "book": "https://langemotokeskus.com/",
    "color": "#22C3B0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "racehall-copenhagen",
@@ -2127,10 +2127,10 @@
    "venue": "Copenhagen, Denmark",
    "kind": "rtrack",
    "short": "RHC",
-   "note": "Large indoor track; no public dated championship found for the period.",
+   "note": "No public dated championship found for the period",
    "book": "https://racehall.com/",
    "color": "#8B6CF0",
-   "checked": 1793225617955
+   "checked": 1793599755234
   },
   {
    "id": "speedarena-austria",
@@ -2138,10 +2138,10 @@
    "venue": "Rechnitz, Austria",
    "kind": "rtrack",
    "short": "SPD",
-   "note": "SWS-rated winter cup ran in Oct 2026; further dates not found.",
+   "note": "SWS winter cup ran Oct 2026; no further dated races found",
    "book": "https://www.speedarena.at/",
    "color": "#E3342F",
-   "checked": 1793225617955
+   "checked": 1793599755234
   }
  ],
  "events": [
@@ -2726,16 +2726,6 @@
    "source": "https://kartradar.eu/events/solokart-open-cup-racing-2026-11-08-solokart"
   },
   {
-   "id": "kartbahn-kirchlengern-2026-11-09-sommercup-kirchlengern",
-   "seriesId": "kartbahn-kirchlengern",
-   "title": "Sommercup Kirchlengern",
-   "start": "2026-11-09",
-   "end": "2026-11-09",
-   "location": "Kartbahn Kirchlengern (Kart 2000), Kirchlengern, Germany",
-   "kind": "race",
-   "source": "https://kartradar.eu/events/sommercup-kirchlengern-2026-11-09-kartbahn-kirchlengern-kart-2000"
-  },
-  {
    "id": "experience-factory-eupen-2026-11-10-eupen-autumn-series-r6",
    "seriesId": "experience-factory-eupen",
    "title": "Eupen Autumn Series / R6",
@@ -3061,9 +3051,9 @@
    "title": "Formula Karting Belgium GP11",
    "start": "2026-11-21",
    "end": "2026-11-21",
-   "location": "The District, Belgium",
+   "location": "Factory Kart Huizingen, Huizingen, Belgium",
    "kind": "race",
-   "source": "https://kartradar.eu/events/formula-karting-belgium-gp11-2026-11-21-the-district"
+   "source": "https://www.formulakarting.be/formula-karting-belgium/"
   },
   {
    "id": "karting-du-bugey-2026-11-21-karting-du-bugey-endurance",
@@ -5774,6 +5764,366 @@
    "location": "KartCenter Campillos, Campillos, Spain",
    "kind": "race",
    "source": "https://kartradar.eu/events/superpole-winter-cup-2027-12-19-kartcenter-campillos"
+  },
+  {
+   "id": "champions-of-the-future-euro-series-2027-03-24-round-1",
+   "seriesId": "champions-of-the-future-euro-series",
+   "title": "Round 1",
+   "start": "2027-03-24",
+   "end": "2027-03-27",
+   "location": "Circuito Internacional de Zuera, Zuera, Spain",
+   "kind": "race",
+   "source": "https://www.motorsport-xl.de/news/2026/Champions-of-the-Future/Champions-of-the-Future-Vier-Stationen-fuer-die-Euro-Series-2027-61074.html"
+  },
+  {
+   "id": "champions-of-the-future-euro-series-2027-06-02-round-3",
+   "seriesId": "champions-of-the-future-euro-series",
+   "title": "Round 3",
+   "start": "2027-06-02",
+   "end": "2027-06-05",
+   "location": "Karting Genk, Genk, Belgium",
+   "kind": "race",
+   "source": "https://www.motorsport-xl.de/news/2026/Champions-of-the-Future/Champions-of-the-Future-Vier-Stationen-fuer-die-Euro-Series-2027-61074.html"
+  },
+  {
+   "id": "champions-of-the-future-euro-series-2027-07-21-round-4",
+   "seriesId": "champions-of-the-future-euro-series",
+   "title": "Round 4",
+   "start": "2027-07-21",
+   "end": "2027-07-24",
+   "location": "Steel Ring, Trinec, Czech Republic",
+   "kind": "race",
+   "source": "https://www.motorsport-xl.de/news/2026/Champions-of-the-Future/Champions-of-the-Future-Vier-Stationen-fuer-die-Euro-Series-2027-61074.html"
+  },
+  {
+   "id": "aci-karting-italian-championship-2027-04-18-round-1",
+   "seriesId": "aci-karting-italian-championship",
+   "title": "Round 1",
+   "start": "2027-04-18",
+   "end": "2027-04-18",
+   "location": "Circuit TBA, Italy",
+   "kind": "race",
+   "source": "https://www.vroomkart.it/news/46745/le-date-del-campionato-italiano-aci-karting-2027-e-gare-titolate-aci"
+  },
+  {
+   "id": "aci-karting-italian-championship-2027-05-23-round-2",
+   "seriesId": "aci-karting-italian-championship",
+   "title": "Round 2",
+   "start": "2027-05-23",
+   "end": "2027-05-23",
+   "location": "Circuit TBA, Italy",
+   "kind": "race",
+   "source": "https://www.vroomkart.it/news/46745/le-date-del-campionato-italiano-aci-karting-2027-e-gare-titolate-aci"
+  },
+  {
+   "id": "aci-karting-italian-championship-2027-06-20-round-3",
+   "seriesId": "aci-karting-italian-championship",
+   "title": "Round 3",
+   "start": "2027-06-20",
+   "end": "2027-06-20",
+   "location": "Circuit TBA, Italy",
+   "kind": "race",
+   "source": "https://www.vroomkart.it/news/46745/le-date-del-campionato-italiano-aci-karting-2027-e-gare-titolate-aci"
+  },
+  {
+   "id": "aci-karting-italian-championship-2027-07-18-round-4",
+   "seriesId": "aci-karting-italian-championship",
+   "title": "Round 4",
+   "start": "2027-07-18",
+   "end": "2027-07-18",
+   "location": "Circuit TBA, Italy",
+   "kind": "race",
+   "source": "https://www.vroomkart.it/news/46745/le-date-del-campionato-italiano-aci-karting-2027-e-gare-titolate-aci"
+  },
+  {
+   "id": "aci-karting-italian-championship-2027-09-19-round-5",
+   "seriesId": "aci-karting-italian-championship",
+   "title": "Round 5",
+   "start": "2027-09-19",
+   "end": "2027-09-19",
+   "location": "Circuit TBA, Italy",
+   "kind": "race",
+   "source": "https://www.vroomkart.it/news/46745/le-date-del-campionato-italiano-aci-karting-2027-e-gare-titolate-aci"
+  },
+  {
+   "id": "aci-karting-italian-championship-2027-10-10-kzn---trofeo-naziona",
+   "seriesId": "aci-karting-italian-championship",
+   "title": "KZN + Trofeo Nazionale MINI Gr.3",
+   "start": "2027-10-10",
+   "end": "2027-10-10",
+   "location": "Circuit TBA, Italy",
+   "kind": "race",
+   "source": "https://www.vroomkart.it/news/46745/le-date-del-campionato-italiano-aci-karting-2027-e-gare-titolate-aci"
+  },
+  {
+   "id": "nm-karting-norway-2027-06-25-nm-i-karting-2027",
+   "seriesId": "nm-karting-norway",
+   "title": "NM i karting 2027",
+   "start": "2027-06-25",
+   "end": "2027-06-27",
+   "location": "NMK Andebu, Andebu, Norway",
+   "kind": "race",
+   "source": "https://gokarting.no/series/nmnorway.html"
+  },
+  {
+   "id": "be-gk4-kart-series-2026-11-14-race-7",
+   "seriesId": "be-gk4-kart-series",
+   "title": "Race 7",
+   "start": "2026-11-14",
+   "end": "2026-11-15",
+   "location": "Karting Genk, Genk, Belgium",
+   "kind": "race",
+   "source": "https://www.gk4-kartseries.com/inschrijvingen/"
+  },
+  {
+   "id": "dutch-24h-lelystad-2027-04-10-dutch-24h-april-2027",
+   "seriesId": "dutch-24h-lelystad",
+   "title": "Dutch 24H April 2027",
+   "start": "2027-04-10",
+   "end": "2027-04-11",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "dutch-24h-lelystad-2027-10-09-dutch-24h-october-20",
+   "seriesId": "dutch-24h-lelystad",
+   "title": "Dutch 24H October 2027",
+   "start": "2027-10-09",
+   "end": "2027-10-10",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "le-mans-karting-endurance-2026-11-07-2h-open-kart-junior",
+   "seriesId": "le-mans-karting-endurance",
+   "title": "2H Open Kart Junior",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "location": "Karting des 24 Heures, Le Mans, France",
+   "kind": "race",
+   "source": "https://www.lemans-karting.com/karting/open-kart/"
+  },
+  {
+   "id": "le-mans-karting-endurance-2026-11-08-6h-open-kart-270cc",
+   "seriesId": "le-mans-karting-endurance",
+   "title": "6H Open Kart 270cc",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "location": "Karting des 24 Heures, Le Mans, France",
+   "kind": "race",
+   "source": "https://www.lemans-karting.com/karting/open-kart/"
+  },
+  {
+   "id": "le-mans-karting-endurance-2026-12-05-3h-open-kart-270cc",
+   "seriesId": "le-mans-karting-endurance",
+   "title": "3H Open Kart 270cc",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "location": "Karting des 24 Heures, Le Mans, France",
+   "kind": "race",
+   "source": "https://www.lemans-karting.com/karting/open-kart/"
+  },
+  {
+   "id": "le-mans-karting-endurance-2026-12-12-4h-open-kart-390cc",
+   "seriesId": "le-mans-karting-endurance",
+   "title": "4H Open Kart 390cc",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "location": "Karting des 24 Heures, Le Mans, France",
+   "kind": "race",
+   "source": "https://www.lemans-karting.com/karting/open-kart/"
+  },
+  {
+   "id": "karting-genk-2026-11-21-100-miles--16--kgec-",
+   "seriesId": "karting-genk",
+   "title": "100 Miles #16 (KGEC finale)",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "location": "Karting Genk, Genk, Belgium",
+   "kind": "race",
+   "source": "https://www.kartinggenk.be/files/Eventkalender%202026.pdf"
+  },
+  {
+   "id": "karting-genk-2026-11-21-clubhouse-kids-race-",
+   "seriesId": "karting-genk",
+   "title": "Clubhouse Kids Race #9",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "location": "Karting Genk, Genk, Belgium",
+   "kind": "race",
+   "source": "https://www.kartinggenk.be/files/Eventkalender%202026.pdf"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-11-07-2-hour-race",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "2-Hour Race",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-11-08-sprint-races",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "Sprint Races",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-11-11-1-hour-race",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "1-Hour Race",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-11-15-1-hour-race",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "1-Hour Race",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-11-21-2-hour-race",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "2-Hour Race",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-11-28-1-hour-race",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "1-Hour Race",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-12-02-1-hour-race",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "1-Hour Race",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-12-12-2-hour-race",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "2-Hour Race",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-12-19-1-hour-oliebollen-ra",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "1-Hour Oliebollen Race",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartcentrum-lelystad-2026-12-19-2-hour-oliebollen-ra",
+   "seriesId": "kartcentrum-lelystad",
+   "title": "2-Hour Oliebollen Race",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "location": "Kartcentrum Lelystad, Lelystad, Netherlands",
+   "kind": "race",
+   "source": "https://www.dutchracingseries.nl/en/race-calendar"
+  },
+  {
+   "id": "kartbahn-kirchlengern-2026-11-09-sommercup-kirchlenge",
+   "seriesId": "kartbahn-kirchlengern",
+   "title": "Sommercup Kirchlengern",
+   "start": "2026-11-09",
+   "end": "2026-11-11",
+   "location": "Kartbahn Kirchlengern (Kart 2000), Kirchlengern, Germany",
+   "kind": "race",
+   "source": "https://kartradar.eu/events/sommercup-kirchlengern-2026-11-09-kartbahn-kirchlengern-kart-2000"
+  },
+  {
+   "id": "ms-kartcenter-hattingen-2026-11-06-open-race-90kg",
+   "seriesId": "ms-kartcenter-hattingen",
+   "title": "Open Race 90kg",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "location": "MS Kartcenter Hattingen, Hattingen, Germany",
+   "kind": "race",
+   "source": "https://ms-kartcenter-hattingen.de/offenerennen"
+  },
+  {
+   "id": "ms-kartcenter-hattingen-2026-11-12-junior-cup",
+   "seriesId": "ms-kartcenter-hattingen",
+   "title": "Junior Cup",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "location": "MS Kartcenter Hattingen, Hattingen, Germany",
+   "kind": "race",
+   "source": "https://ms-kartcenter-hattingen.de/offenerennen"
+  },
+  {
+   "id": "ms-kartcenter-hattingen-2026-12-03-open-race-90kg",
+   "seriesId": "ms-kartcenter-hattingen",
+   "title": "Open Race 90kg",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "location": "MS Kartcenter Hattingen, Hattingen, Germany",
+   "kind": "race",
+   "source": "https://ms-kartcenter-hattingen.de/offenerennen"
+  },
+  {
+   "id": "karting-le-mans-2026-11-14-open-kart-sprint",
+   "seriesId": "karting-le-mans",
+   "title": "Open Kart Sprint",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "location": "Karting des 24 Heures, Le Mans, France",
+   "kind": "race",
+   "source": "https://www.lemans-karting.com/evenements/openkart/open-kart-novembre-2026/"
+  },
+  {
+   "id": "karting-le-mans-2026-12-06-open-kart-sprint-sup",
+   "seriesId": "karting-le-mans",
+   "title": "Open Kart Sprint Super Finale",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "location": "Karting des 24 Heures, Le Mans, France",
+   "kind": "race",
+   "source": "https://www.lemans-karting.com/evenements/openkart/open-kart-decembre-2026/"
+  },
+  {
+   "id": "kartodromo-abrantes-2026-11-14-karting-endurance-tr",
+   "seriesId": "kartodromo-abrantes",
+   "title": "Karting Endurance Trophy 4H / R5",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "location": "Kartódromo de Abrantes, Abrantes, Portugal",
+   "kind": "race",
+   "source": "https://kartradar.eu/events/karting-endurance-trophy-4h-r5-2026-11-14-kartodromo-de-abrantes"
   }
  ]
 }

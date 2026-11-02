@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T19:29Z",
+ "updated": "2026-11-02T06:09Z",
  "country": "us",
  "series": [
   {
@@ -8,11 +8,11 @@
    "venue": "Las Vegas, NV",
    "kind": "national",
    "short": "SNATS",
-   "note": "Annual Superkarts! USA finale at LVMS; dates from SKUSA official schedule.",
+   "note": "SuperNats 29 and 30 confirmed on SKUSA schedule.",
    "book": "https://www.superkartsusa.com/national/skusa-supernationals.html",
    "phone": "(951) 491-0808",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "skusa-winter-series",
@@ -20,11 +20,11 @@
    "venue": "Orlando, FL",
    "kind": "national",
    "short": "SKWS",
-   "note": "IAME Series; 4 rounds over 2 weekends at Orlando Kart Center. EKN lists R1/2 as Jan 15-17 incl. practice; official page says Jan 16-17.",
+   "note": "2027 Winter Series confirmed at Orlando Kart Center (official schedule).",
    "book": "https://www.superkartsusa.com/national/skusa-winter-series.html",
    "phone": "(951) 491-0808",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "skusa-pro-tour",
@@ -32,11 +32,11 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "SKPT",
-   "note": "National IAME Series USA West / Rotax shifter tour; 2027 venues TBA.",
+   "note": "2027 dates published; venues still TBA.",
    "book": "https://www.superkartsusa.com/national/skusa-pro-tour.html",
    "phone": "(951) 491-0808",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "skusa-california-pkc",
@@ -44,11 +44,11 @@
    "venue": "US, multiple venues (CA/NV)",
    "kind": "national",
    "short": "PKC",
-   "note": "SKUSA West Coast regional (formerly SoCal/NorCal PKC); 2027 venues TBA.",
+   "note": "2027 dates published; venues still TBA.",
    "book": "https://www.superkartsusa.com/regional/california-pkc.html",
    "phone": "(951) 491-0808",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "texas-sprint-racing-series",
@@ -56,10 +56,10 @@
    "venue": "US, multiple venues (TX/LA)",
    "kind": "national",
    "short": "TSRS",
-   "note": "SKUSA/IKF-affiliated Texas regional (the Texas ProKart-type series); 2027 venues still being finalised.",
+   "note": "2027 calendar published; Rounds 1-4 venues now confirmed, Round 5 TBA.",
    "book": "https://raceselect.com/tsrs",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "rok-florida-winter-tour",
@@ -67,11 +67,11 @@
    "venue": "US, multiple venues (FL)",
    "kind": "national",
    "short": "FWT",
-   "note": "3-round ROK winter championship; Rounds 2 & 3 venues TBA.",
+   "note": "2027 dates confirmed; Rounds 2 & 3 venues still TBA.",
    "book": "https://fwt.rokcup.com/en",
    "phone": "(407) 476-5635",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "rok-vegas",
@@ -79,11 +79,11 @@
    "venue": "Las Vegas, NV",
    "kind": "national",
    "short": "ROKV",
-   "note": "ROK Cup USA's season finale in the Rio parking lot; 2027 date from USPKS/ROK partnership release.",
+   "note": "ROK Vegas 2027 Oct 27-31 at the Rio confirmed (USPKS/ROK partnership release).",
    "book": "https://rokcupusa.com/rok-vegas/",
    "phone": "(407) 476-5635",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "rok-sonoma",
@@ -91,11 +91,11 @@
    "venue": "Sonoma, CA",
    "kind": "national",
    "short": "ROKS",
-   "note": "Two 3-race Triple Crowns plus one-off ROK Fest West, all at Sonoma Raceway.",
+   "note": "Kept dates from Aug 2026 schedule release; ROK calendar/Sonoma pages show conflicting TC1 dates (Mar 20-21, Apr 16-18, May 1-2, Fest West Jun 5-6).",
    "book": "https://rokcupusa.com/rok-sonoma/",
    "phone": "(407) 476-5635",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "uspks",
@@ -103,11 +103,11 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "USPKS",
-   "note": "National series (also IAME Series USA East); Rio Las Vegas event is non-points, back-to-back with ROK Vegas.",
+   "note": "2027 schedule published on USPKS site; Rio event non-points.",
    "book": "https://www.uspks.com/schedule/",
    "phone": "217-652-6275",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "rotax-max-challenge-usa",
@@ -115,10 +115,10 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "RMC",
-   "note": "Race Rotax national program; America's Trophy and US Trophy Final venues TBA. Grand Finals tickets awarded.",
+   "note": "Oct 2026 Race Rotax update says April-announced 2027 dates unchanged; America's Trophy and US Trophy Final venues still TBA.",
    "book": "https://racerotax.com/",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "wka-manufacturers-cup",
@@ -126,11 +126,11 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "WKAMC",
-   "note": "2027 season opens at Daytona KartWeek (WKA site says Dec 27-30; RaceSelect sprint entry Dec 28-31). Rest of 2027 schedule not published yet.",
+   "note": "2027 season opens at Daytona KartWeek (WKA site Dec 27-30; RaceSelect sprint entry Dec 28-31). Rest of 2027 not published yet.",
    "book": "https://www.worldkarting.com/series/manufacturers-cup/",
    "phone": "704-455-1606",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "wka-road-racing",
@@ -138,11 +138,11 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "WKARR",
-   "note": "2027 season opens at Daytona KartWeek road course; further 2027 road-race dates not published yet.",
+   "note": "Daytona KartWeek road race opener confirmed on RaceSelect; further 2027 road-race dates not published yet.",
    "book": "https://www.worldkarting.com/series/road-racing/",
    "phone": "704-455-1606",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "wka-gold-cup",
@@ -154,7 +154,7 @@
    "book": "https://www.worldkarting.com/series/gold-cup/",
    "phone": "704-455-1606",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "cotf-america",
@@ -162,10 +162,10 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "COTFA",
-   "note": "RGMMC/K1 series; East & West divisions plus National Final. Registration opening soon.",
+   "note": "2027 East/West divisional calendar published; NC East round at Charlotte Motor Speedway. Separate COTF Club Series at K1 Circuits not listed here.",
    "book": "https://www.championskartingamerica.com/",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "route-66-sprint-series",
@@ -173,11 +173,11 @@
    "venue": "US, multiple venues (Midwest)",
    "kind": "national",
    "short": "R66",
-   "note": "Midwest regional sprint series (IN/WI/IL).",
+   "note": "2027 calendar published (Route 66 event timeline PDF).",
    "book": "https://www.route66kartracing.com/schedule/",
    "phone": "608-235-4761",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "cup-karts-north-america",
@@ -185,11 +185,11 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "CKNA",
-   "note": "Briggs LO206 national/divisional series; only the 2027 Winter Nationals is announced so far (Grand Nationals / SpringNationals 2027 dates not published).",
+   "note": "Only the 2027 Winter Nationals announced; rest of 2027 schedule due from November.",
    "book": "https://www.cupkarts.com/schedule/",
    "phone": "812-598-6704",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "cascadia-karting-cup",
@@ -197,10 +197,10 @@
    "venue": "US, multiple venues (Pacific Northwest)",
    "kind": "national",
    "short": "CKC",
-   "note": "FTK Promotions (Challenge of the Americas) PNW regional; June venue TBA.",
+   "note": "2027 three-event schedule announced (EKN Oct 2026); June venue TBA.",
    "book": "https://www.challengekarting.com/",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "challenge-of-the-americas",
@@ -211,7 +211,7 @@
    "note": "2027 dates not published yet.",
    "book": "https://www.challengekarting.com/",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "florida-karting-championship",
@@ -219,10 +219,10 @@
    "venue": "US, multiple venues (FL)",
    "kind": "national",
    "short": "FLKC",
-   "note": "Florida regional (T4 Series USA official event); 2027 dates not published yet.",
+   "note": "2026 Rounds 9 & 10 (Miami Grand Final) Dec 4-6 at AMR; 2027 dates not published yet (season pass on sale).",
    "book": "https://floridakarting.com/",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "t4-series-usa",
@@ -230,10 +230,10 @@
    "venue": "US, multiple venues",
    "kind": "national",
    "short": "T4",
-   "note": "Spec 4-stroke program; Night Shootout one-off listed. 2027 dates not published yet.",
+   "note": "T4 Night Shootout Dec 12, 2026 confirmed; 2027 dates not published yet.",
    "book": "https://t4seriesusa.com/",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "ikf-sprint-grand-nationals",
@@ -244,7 +244,7 @@
    "note": "2026 held Oct 16-18 at Spring Mountain; 2027 dates not published yet.",
    "book": "https://www.ikfkarting.com/ikf-sprint-grandnationals/",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "rock-island-grand-prix",
@@ -252,10 +252,10 @@
    "venue": "Rock Island, IL",
    "kind": "national",
    "short": "RIGP",
-   "note": "Street race; 2026 cancelled. A July 2026 news report said Sept 4-5, 2027 was being planned, but not confirmed on official site - 2027 dates not published yet.",
+   "note": "2026 suspended; organizers' release says Sept 4-5, 2027 race planned (format/location under review).",
    "book": "https://rockislandgrandprix.com/",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "pkra",
@@ -263,10 +263,10 @@
    "venue": "PKRA, Adobe Dam Regional Park, Glendale, AZ",
    "kind": "club",
    "short": "PKRA",
-   "note": "Member-owned club; 2026-27 Winter Championship (10 rounds + Cactus Cup), races on Sundays",
+   "note": "2026-27 Winter Championship schedule confirmed on PKRA site (rain date Apr 18, 2027).",
    "book": "https://pkra.com/racing-schedule/",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "mhc-kart-races",
@@ -278,7 +278,7 @@
    "book": "https://mhcircuit.com/race-karting",
    "phone": "520-245-5278",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "tri-c-karters",
@@ -286,10 +286,10 @@
    "venue": "Adams Motorsports Park, Riverside, CA / Apex Racing Center, Perris, CA",
    "kind": "club",
    "short": "TRIC",
-   "note": "SoCal club; 2026-27 Chill Challenge (Blizzard 1-3, venue TBC) and 2027 Club Series at Adams & Apex",
+   "note": "SoCal club; 2026-27 Chill Challenge (Blizzard 1-3, venue TBC) and 2027 Club Series at Adams & Apex confirmed on club site.",
    "book": "https://www.tri-ckarters.org/",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "smka",
@@ -297,10 +297,10 @@
    "venue": "SMKA Kart Track, Santa Maria, CA",
    "kind": "club",
    "short": "SMKA",
-   "note": "Non-profit club; 2026 season make-up race in November. 2027 schedule not published yet",
+   "note": "Nov 8 make-up race confirmed; 2027 schedule not published yet.",
    "book": "https://www.smka.org/club-schedule/",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "adams-amp-league",
@@ -308,11 +308,11 @@
    "venue": "Adams Motorsports Park, Riverside, CA",
    "kind": "club",
    "short": "AMPL",
-   "note": "Monthly owner-kart league on track calendar; future dates not yet published",
+   "note": "2026 SoCal Sprinters league ended Sep 19; 2027 dates not published yet (separate Winter League listed on timing site without year).",
    "book": "https://adamsmotorsportspark.com/calendar/791",
    "phone": "(951) 686-3826",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "all-star-karting",
@@ -320,11 +320,11 @@
    "venue": "Prairie City Kart Track, Rancho Cordova, CA",
    "kind": "club",
    "short": "ASK",
-   "note": "Club races at Prairie City SVRA. 2027 schedule not published yet",
+   "note": "Only 2026 schedule on track site; 2027 schedule not published yet.",
    "book": "https://pckarting.com/",
    "phone": "916-355-0116",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "blue-max-kart-club",
@@ -332,10 +332,10 @@
    "venue": "Blue Max Kart Club, Davis, CA",
    "kind": "club",
    "short": "BMKC",
-   "note": "6-7 club races a year; 2026 season complete. 2027 schedule not published yet",
+   "note": "2026 season complete (banquet Nov 15). 2027 schedule not published yet.",
    "book": "https://www.bluemaxkartclub.com/",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "kinsmen-kart-club",
@@ -343,10 +343,10 @@
    "venue": "Kinsmen Kart Club, Dixon, CA",
    "kind": "club",
    "short": "KKC",
-   "note": "Private club track, LO206 stronghold. 2027 schedule not published yet",
+   "note": "Club site shows only old dates; 2027 schedule not published yet.",
    "book": "https://kinsmenkartclub.net/",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "smk-race-series",
@@ -354,11 +354,11 @@
    "venue": "Spring Mountain Karting Complex, Pahrump, NV",
    "kind": "club",
    "short": "SMK",
-   "note": "Open club series, no membership needed; dates subject to change",
+   "note": "Only 2026 schedule PDF published; Nov 8 and Dec 13 club races kept. 2027 schedule not published yet.",
    "book": "https://springmountainkarting.com/racing-leagues/smk-race-series/",
    "phone": "775-727-3990",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "nnkc",
@@ -366,10 +366,10 @@
    "venue": "NNKC Track, Reno, NV",
    "kind": "club",
    "short": "NNKC",
-   "note": "Summer club season (Jun-Sep). 2027 schedule not published yet",
+   "note": "2026 season ended Sep 20. 2027 schedule not published yet.",
    "book": "https://www.nnkcreno.com/schedule",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "north-texas-karters",
@@ -377,10 +377,10 @@
    "venue": "NTK Track, Denton, TX",
    "kind": "club",
    "short": "NTK",
-   "note": "Member-owned; 18 club races a year in Spring/Summer/Fall series. 2027 schedule not published yet",
+   "note": "Fall Series Race 6 Nov 7 confirmed; Dec 5 winter endurance listed as tentative (not included). 2027 schedule not published yet.",
    "book": "https://www.ntkarters.com/",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "heart-of-texas-kart-club",
@@ -388,10 +388,10 @@
    "venue": "HOTKC Track, Waco, TX",
    "kind": "club",
    "short": "HOTKC",
-   "note": "Member-owned club racing since 1959; no racing in rain. 2027 schedule not published yet",
+   "note": "Races 17-18 (Nov 14-15) confirmed on 2026 schedule. 2027 schedule not published yet.",
    "book": "https://heartoftexaskartclub.com/2026-schedule",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "hill-country-kart-club",
@@ -399,10 +399,10 @@
    "venue": "HCKC Raceway, New Braunfels, TX",
    "kind": "club",
    "short": "HCKC",
-   "note": "Member-owned club; Spring/Summer/Fall series. 2027 schedule not published yet",
+   "note": "Kartoberfest Nov 7-8 and club races Nov 21 & Dec 5 confirmed on club site. 2027 schedule not published yet.",
    "book": "https://hillcountrykartclub.com/",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "dkc-club-racing",
@@ -410,11 +410,11 @@
    "venue": "Dallas Karting Complex, Caddo Mills, TX",
    "kind": "club",
    "short": "DKC",
-   "note": "Monthly multi-class owner club races; 2026 club season ended Oct. 2027 schedule not published yet",
+   "note": "2026 club season ended Oct 18. 2027 schedule not published yet.",
    "book": "https://dallaskartingcomplex.com/club-racing",
    "phone": "(903) 527-5278",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "gulf-coast-karters",
@@ -422,10 +422,10 @@
    "venue": "GCKI, Katy, TX",
    "kind": "club",
    "short": "GCKI",
-   "note": "Member-owned Houston-area club track. 2027 schedule not published yet",
+   "note": "No GCKI club dates published (track hosts GHRS/TKL series). 2027 schedule not published yet.",
    "book": "https://www.racekarts.com/",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "nfkc",
@@ -433,10 +433,10 @@
    "venue": "103rd Street Sports Complex, Jacksonville, FL",
    "kind": "club",
    "short": "NFKC",
-   "note": "12-race club championship (best 10 count). 2027 schedule not published yet",
+   "note": "Races #11 (Nov 21) and #12 (Nov 22) confirmed. 2027 schedule not published yet.",
    "book": "https://www.northflkarting.com/club-schedule/",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "amr-karting-challenge",
@@ -444,10 +444,10 @@
    "venue": "AMR Homestead-Miami Motorplex, Homestead, FL",
    "kind": "club",
    "short": "AMRKC",
-   "note": "In-house 11-round owner club championship. 2027 schedule not published yet",
+   "note": "Rounds 10 (Nov 22) and 11 (Dec 20) confirmed. 2027 schedule not published yet.",
    "book": "https://www.amrmotorplex.com/race-events/kart-owner-events/amr-motorplex-karting-challenge-2026",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "bushnell-cks",
@@ -455,11 +455,11 @@
    "venue": "Bushnell Motorsports Park, Bushnell, FL",
    "kind": "club",
    "short": "BCKS",
-   "note": "Florida's largest 206 classes; Saturday club races. 2027 schedule not published yet",
+   "note": "Nov 14 final confirmed on 2026 schedule. 2027 schedule not published yet.",
    "book": "https://bushnellmotorsportspark.com/championship-kart-series-2",
    "phone": "352-568-0778",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "orlando-cup",
@@ -467,11 +467,11 @@
    "venue": "Orlando Kart Center, Orlando, FL",
    "kind": "club",
    "short": "OKC",
-   "note": "One-day owner club race, all engines; future dates not published (check OKC calendar)",
+   "note": "No future dates published on OKC page.",
    "book": "https://orlandokartcenter.com/orlando-cup",
    "phone": "(407) 480-2477",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "trackhouse-karting-challenge",
@@ -479,11 +479,11 @@
    "venue": "Trackhouse Motorplex (ex-GoPro Motorplex), Mooresville, NC",
    "kind": "club",
    "short": "THKC",
-   "note": "12-round in-house owner club championship. 2027 schedule not published yet",
+   "note": "Rounds 11 & 12 (Dec 5-6) confirmed. 2027 schedule not published yet.",
    "book": "https://trackhousemotorplex.com/events/2026-karting-challenge",
    "phone": "704-696-2926",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "amp-kart-championship",
@@ -491,11 +491,11 @@
    "venue": "Atlanta Motorsports Park, Dawsonville, GA",
    "kind": "club",
    "short": "AMPK",
-   "note": "8-round Saturday owner championship (Mar-Oct); 2026 complete. 2027 schedule not published yet",
+   "note": "2026 complete; 2027 schedule not published yet.",
    "book": "https://www.atlantamotorsportspark.com/race-series",
    "phone": "(678) 941-1679",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "sandy-hook-club-kart",
@@ -503,11 +503,11 @@
    "venue": "Sandy Hook Speedway, Street, MD",
    "kind": "club",
    "short": "SHS",
-   "note": "Club kart series; season ends with Turkey Race. 2027 schedule not published yet",
+   "note": "Race #12 & Turkey Race Nov 8 confirmed. 2027 schedule due Jan 1.",
    "book": "https://www.sandyhookspeedway.com/",
    "phone": "717-615-1820",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "pittrace-prks",
@@ -515,11 +515,11 @@
    "venue": "Pittsburgh International Race Complex, Wampum, PA",
    "kind": "club",
    "short": "PRKS",
-   "note": "In-house LO206/KA owner leagues. 2027 schedule not published yet",
+   "note": "No future dates published. 2027 schedule not published yet.",
    "book": "https://www.pittrace.com/prks",
    "phone": "724-535-1000",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "oreville-kart-club",
@@ -527,11 +527,11 @@
    "venue": "Oreville Kart Club, Mertztown, PA",
    "kind": "club",
    "short": "OKC-PA",
-   "note": "Sunday racing on road course and oval; 2026 season over. 2027 schedule not published yet",
+   "note": "2026 season over. 2027 schedule not published yet.",
    "book": "https://orevillekartclub.org/",
    "phone": "610-381-3787",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "ovrp-kart-club",
@@ -539,11 +539,11 @@
    "venue": "Oakland Valley Race Park, Cuddebackville, NY",
    "kind": "club",
    "short": "OVRP",
-   "note": "Club kart racing at OVRP (season Mar-Nov). 2027 schedule not published yet",
+   "note": "No future dates published. 2027 schedule not published yet.",
    "book": "https://ovrp.net/kart-club-members/",
    "phone": "845-754-8500",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "kra-new-castle",
@@ -551,11 +551,11 @@
    "venue": "New Castle Motorsports Park, New Castle, IN",
    "kind": "club",
    "short": "KRA",
-   "note": "14-round club series; 2026 complete. 2027 schedule not published yet",
+   "note": "14-round 2026 series complete (finale Oct 25). 2027 schedule not published yet.",
    "book": "https://newcastlemotorsportspark.com/schedule",
    "phone": "765-987-8090",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "road-america-karting-club",
@@ -563,10 +563,10 @@
    "venue": "Briggs & Stratton Motorplex, Road America, Plymouth, WI",
    "kind": "club",
    "short": "RAKC",
-   "note": "Weekend & weeknight series May-Sep. 2027 schedule not published yet",
+   "note": "2026 season complete (banquet). 2027 schedule not published yet.",
    "book": "https://www.roadamerica.com/karting-club",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "badger-kart-club",
@@ -574,10 +574,10 @@
    "venue": "Badger Kart Club, Wisconsin",
    "kind": "club",
    "short": "BKC",
-   "note": "Grassroots WI club. 2027 schedule not published yet",
+   "note": "2026 season complete (banquet). 2027 schedule not published yet.",
    "book": "https://www.badgerkartclub.com/",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "kca-karting-challenge",
@@ -585,11 +585,11 @@
    "venue": "Kart Circuit Autobahn, Joliet, IL",
    "kind": "club",
    "short": "KCA",
-   "note": "6-round in-house owner series (May-Oct). 2027 schedule not published yet",
+   "note": "2026 season complete. 2027 schedule not published yet.",
    "book": "https://kartcircuitautobahn.com/karting-challenge/",
    "phone": "(833) 527-8222",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "mid-state-kart-club",
@@ -597,11 +597,11 @@
    "venue": "Mid-State Kart Club, Dawson, IL",
    "kind": "club",
    "short": "MSKC",
-   "note": "Central Illinois club. 2027 schedule not published yet",
+   "note": "Only 2026 schedule published. 2027 schedule not published yet.",
    "book": "https://www.midstatekartclub.com/",
    "phone": "(309) 241-0504",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "gateway-kartplex",
@@ -609,11 +609,11 @@
    "venue": "Gateway Kartplex, Madison, IL",
    "kind": "club",
    "short": "GKP",
-   "note": "iDrive / Ignite SuperComp series. 2027 schedule not published yet",
+   "note": "No dated future events published. 2027 schedule not published yet.",
    "book": "https://www.gatewaykartplex.com/schedule",
    "phone": "618-219-8515",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "black-river-kart-club",
@@ -621,10 +621,10 @@
    "venue": "Lorain Ohio KartPlex, Lorain, OH",
    "kind": "club",
    "short": "BRKC",
-   "note": "14-race club championship (best 10). 2027 schedule not published yet",
+   "note": "2026 season complete. 2027 schedule not published yet.",
    "book": "https://www.blackriverkartclub.com/",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "ignite-karting-nebraska",
@@ -632,10 +632,10 @@
    "venue": "Motorsport Park Hastings, Hastings, NE",
    "kind": "club",
    "short": "IKN",
-   "note": "Club series Apr-Oct. 2027 schedule not published yet",
+   "note": "2026 season complete (Apr-Oct). 2027 schedule not published yet",
    "book": "https://racemph.com/karting/",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "kart-idaho-racing-series",
@@ -643,11 +643,11 @@
    "venue": "Kart Idaho, Eagle, ID",
    "kind": "club",
    "short": "KID",
-   "note": "Club series + Sportsman & arrive-and-drive leagues. 2027 schedule not published yet",
+   "note": "2026 season complete. 2027 schedule not published yet",
    "book": "https://kartidaho.com/schedule/",
    "phone": "(208) 991-7231",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "ukc-umc",
@@ -655,11 +655,11 @@
    "venue": "Utah Motorsports Campus, Grantsville, UT",
    "kind": "club",
    "short": "UKC",
-   "note": "10-round Sunday club series Mar-Oct. 2027 schedule not published yet",
+   "note": "2026 10-round series complete. 2027 schedule not published yet",
    "book": "https://www.utahmotorsportscampus.com/ukc-at-umc/",
    "phone": "(435) 277-8575",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "colorado-karting-tour",
@@ -667,10 +667,10 @@
    "venue": "IMI Motorsports Complex, Dacono, CO / SBR Motorsports Park, Calhan, CO",
    "kind": "club",
    "short": "CKT",
-   "note": "Rocky Mountain club championship across CO tracks. 2027 schedule not published yet",
+   "note": "2026 schedule shows no further dated rounds. 2027 schedule not published yet",
    "book": "https://www.coloradokartingtour.com/championship-schedule",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "psgka",
@@ -678,10 +678,10 @@
    "venue": "PSGKA Track, Spanaway, WA",
    "kind": "club",
    "short": "PSGKA",
-   "note": "8 club races a year; 2026 complete. 2027 schedule not published yet",
+   "note": "2026 club races complete. 2027 schedule not published yet",
    "book": "https://www.motorsportreg.com/orgs/puget-sound-go-kart-assoc-psgka",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "oskcs",
@@ -689,11 +689,11 @@
    "venue": "Pat's Acres Racing Complex, Canby, OR",
    "kind": "club",
    "short": "OSKCS",
-   "note": "Club series at Pat's Acres and McMinnville. 2027 schedule not published yet",
+   "note": "2026 10-round series complete (Oct 25). 2027 schedule not published yet",
    "book": "https://patsacres.com/kart-racing/2025-oskcs-kart-racing/",
    "phone": "(503) 266-7287",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "endurance-karting",
@@ -701,10 +701,10 @@
    "venue": "US, multiple venues",
    "kind": "rental",
    "short": "EK",
-   "note": "Arrive-and-drive team enduros (2-6 h, plus 12 h and 24 Hours of America) in Honda-powered Dino karts across the East Coast; 2027 calendar not yet published.",
+   "note": "Remaining 2026 enduros confirmed; 2027 calendar not published yet",
    "book": "https://www.endurancekarting.com/events-1",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "amp-lo206-enduro",
@@ -712,11 +712,11 @@
    "venue": "Atlanta Motorsports Park, Dawsonville, GA",
    "kind": "rental",
    "short": "LO206",
-   "note": "Owner-kart (Briggs LO206) 4-hour team endurance series; no rental karts.",
+   "note": "Nov 20-21 and Dec 11-12 rounds confirmed; 2027 dates not published yet",
    "book": "https://www.motorsportreg.com/events/2026-amp-briggs-lo206-4-hour-enduro-series-atlanta-motorsports-park-events-803709",
    "phone": "(678) 329-8051",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "lvgp-leagues-enduros",
@@ -724,11 +724,11 @@
    "venue": "Lehigh Valley Grand Prix, Allentown, PA",
    "kind": "rtrack",
    "short": "LVGP",
-   "note": "Indoor rental kart leagues (junior Saturdays, adult Tuesdays) and team enduros incl. Turkey Bowl 4h and LVGP500 (500 laps, 2027 date TBA).",
+   "note": "Junior League Rounds 2-5 through May 2027 and Turkey Bowl published; LVGP500 2027 date TBA",
    "book": "https://www.lehighvalleygrandprix.com/racing/leagues-and-enduro-races",
    "phone": "(610) 432-7223",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "k1-speed-us-championship",
@@ -736,10 +736,10 @@
    "venue": "K1 Circuit, Winchester, CA",
    "kind": "rental",
    "short": "K1WC",
-   "note": "Challenge GP leagues at 100+ K1 Speed centres feed State Championships, then the US & World E-Karting Championships at K1 Circuit. 2027 dates TBD.",
+   "note": "2027 State and US/World E-Karting Championship dates TBD",
    "book": "https://www.k1speed.com/k1-world-championship.html",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "okc-endurance-championship",
@@ -747,11 +747,11 @@
    "venue": "Orlando Kart Center, Orlando, FL",
    "kind": "rental",
    "short": "OKCE",
-   "note": "4h/6h/12h team races in rental, Pro rental or owner karts; remaining dates TBD.",
+   "note": "12 Hour finale Dec 19, 2026; 2027 dates not published yet",
    "book": "https://orlandokartcenter.com/endurance-races/",
    "phone": "(407) 480-2477",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "sodi-world-series-usa",
@@ -759,10 +759,10 @@
    "venue": "US, multiple venues",
    "kind": "rental",
    "short": "SWS",
-   "note": "Worldwide Sodi rental-kart ranking; US tracks (e.g. Atlanta Motorsports Park) run SWS-counting races. No US-specific dated rounds published.",
+   "note": "No US-specific dated SWS rounds published (2027 international finals all in Europe)",
    "book": "https://www.sodiwseries.com/en-gb/",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "makes-kart-enduro",
@@ -770,10 +770,10 @@
    "venue": "Virginia International Raceway, Alton, VA",
    "kind": "rental",
    "short": "MAKES",
-   "note": "Cheap arrive-and-drive 2-hour enduros at VIR; 2027 dates not yet published.",
+   "note": "2026 races complete (Oct 17). 2027 dates not published yet",
    "book": "https://kartenduro.com/",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "k1-speed",
@@ -781,10 +781,10 @@
    "venue": "Nationwide (70+ US centers)",
    "kind": "rtrack",
    "short": "K1",
-   "note": "Monthly Adult/Teen/Junior Challenge GP at every center; top 3 go to 2027 State Champs (dates TBD)",
+   "note": "Remaining 2026 Challenge GP dates confirmed; 2027 league schedule not published yet",
    "book": "https://www.k1speed.com/racing-leagues.html",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "k1-canton",
@@ -792,10 +792,10 @@
    "venue": "Canton, OH",
    "kind": "rtrack",
    "short": "K1CAN",
-   "note": "Endurance Championship (Season Nine) and Fall Boost League exclusive to Canton",
+   "note": "Fall Boost League and Endurance Season Nine (Dec 2026-Feb 2027) confirmed",
    "book": "https://www.k1speed.com/canton-location/canton-leagues.html",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "k1-concord",
@@ -803,10 +803,10 @@
    "venue": "Concord, NC",
    "kind": "rtrack",
    "short": "K1CON",
-   "note": "Runs occasional 2-hour team endurance races; next date not published",
+   "note": "Last 2-hour endurance race Oct 20, 2026; next date not published",
    "book": "https://www.k1speed.com/endurance-race.html",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "k1-circuit",
@@ -814,10 +814,10 @@
    "venue": "Winchester, CA",
    "kind": "rtrack",
    "short": "K1C",
-   "note": "Outdoor electric rental circuit; hosts 2027 K1 US & World E-Karting Championships (dates TBD)",
+   "note": "Monthly Semi-Pro rental series (2026 final rounds in Nov); 2027 Semi-Pro calendar and K1 US/World Champs dates TBD",
    "book": "https://www.k1circuit.com/",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "andretti",
@@ -825,10 +825,10 @@
    "venue": "14 US locations (GA, AZ, NC, TX, OK, FL, KS, IL)",
    "kind": "rtrack",
    "short": "AIK",
-   "note": "Arrive-and-drive electric karting; no dated league/race series published",
+   "note": "No race events",
    "book": "https://andrettikarting.com/race",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "supercharged-nj",
@@ -836,11 +836,11 @@
    "venue": "Edison, NJ",
    "kind": "rtrack",
    "short": "SCNJ",
-   "note": "Six-week racing league sessions, multiple divisions",
+   "note": "Next six-week league session starts Nov 11, 2026",
    "book": "https://www.superchargednj.com/racing-league",
    "phone": "908-624-8242",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "supercharged-ct",
@@ -852,7 +852,7 @@
    "book": "https://superchargedracing.com/",
    "phone": "860-444-7700",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "supercharged-ma",
@@ -860,11 +860,11 @@
    "venue": "Wrentham, MA",
    "kind": "rtrack",
    "short": "SCMA",
-   "note": "Multi-level indoor tracks; league dates not published",
+   "note": "League dates not published",
    "book": "https://superchargedma.com/",
    "phone": "774-847-9010",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "rpm-raceway",
@@ -872,10 +872,10 @@
    "venue": "Farmingdale NY, Stamford CT & other locations",
    "kind": "rtrack",
    "short": "RPM",
-   "note": "Adult & youth racing leagues per location; dates via leagues@rpmraceway.com",
+   "note": "Leagues offered per location; no dated league schedule published",
    "book": "https://www.rpmraceway.com/leagues-lessons-and-camps",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "pole-position",
@@ -883,11 +883,11 @@
    "venue": "Las Vegas NV & other locations",
    "kind": "rtrack",
    "short": "PPR",
-   "note": "Indoor electric karting chain; league dates not published",
+   "note": "Indoor electric karting chain; no dated league/race events published",
    "book": "https://www.polepositionraceway.com/",
    "phone": "702-227-7223",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "mb2-raceway",
@@ -895,11 +895,11 @@
    "venue": "Sylmar, CA",
    "kind": "rtrack",
    "short": "MB2",
-   "note": "Tuesday Night Grand Prix (dates TBA)",
+   "note": "Tuesday Night Grand Prix listed but no dates published",
    "book": "https://mb2raceway.com/info",
    "phone": "818-364-8000",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "gpny",
@@ -907,10 +907,10 @@
    "venue": "Mount Kisco, NY",
    "kind": "rtrack",
    "short": "GPNY",
-   "note": "Racing leagues offered; dates not published",
+   "note": "Now part of K1 Speed (Mount Kisco); Challenge GP covered under K1 Speed series; no own dated events",
    "book": "https://www.gpny.com/",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "unser-karting",
@@ -922,7 +922,7 @@
    "book": "https://unserkarting.com/",
    "phone": "720-282-5000",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "octane-raceway",
@@ -930,11 +930,11 @@
    "venue": "Scottsdale, AZ",
    "kind": "rtrack",
    "short": "OCT",
-   "note": "Octane Champions Racing League (12-week seasons, monthly tournaments); next start not published",
+   "note": "12-week league started Feb 25, 2026 (ended); next season start not published",
    "book": "https://octaneraceway.com/leagues/",
    "phone": "602-302-7223",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "speed-factory",
@@ -942,11 +942,11 @@
    "venue": "Greenville, SC",
    "kind": "rtrack",
    "short": "SFK",
-   "note": "Championship, Masters, Youth & Women's leagues plus 200-lap endurance races",
+   "note": "Fall leagues and Nov 22 200-lap enduro confirmed; later dates not published yet",
    "book": "https://www.motorsportreg.com/orgs/speed-factory-indoor-karting",
    "phone": "864-412-3323",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "njmp-tempest",
@@ -954,11 +954,11 @@
    "venue": "Millville, NJ",
    "kind": "rtrack",
    "short": "NJMP",
-   "note": "Friday Rental Kart Leagues and 2/3-hour team endurance races",
+   "note": "League 6 and Nov 21 3-hour enduro confirmed; 2027 dates not published yet",
    "book": "https://www.motorsportreg.com/orgs/njmp/karting",
    "phone": "856-327-7223",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "amp-karting",
@@ -966,10 +966,10 @@
    "venue": "Dawsonville, GA",
    "kind": "rtrack",
    "short": "AMP",
-   "note": "Rental kart leagues, Ironman and 2-8 hour enduros in concession karts",
+   "note": "Rental league (Nov 12-Dec 3) and 8 Hour (Nov 14) confirmed; 2027 not published yet",
    "book": "https://www.atlantamotorsportspark.com/karting",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "bushnell-mp",
@@ -977,11 +977,11 @@
    "venue": "Bushnell, FL",
    "kind": "rtrack",
    "short": "BMP",
-   "note": "Thursday Night League (rental karts) and endurance races",
+   "note": "Fall 2026 Thursday Night League dates confirmed; 2027 not published yet",
    "book": "https://bushnellmotorsportspark.com/leagueracing",
    "phone": "352-568-0778",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "orlando-kart-center",
@@ -989,11 +989,11 @@
    "venue": "Orlando, FL",
    "kind": "rtrack",
    "short": "OKC",
-   "note": "OKC Pro League (Skip Barber) and rental-kart endurance championship",
+   "note": "Pro League Season 3 ended Oct 2026; endurance races listed under OKC Endurance Championship, Orlando Cup under its own series",
    "book": "https://orlandokartcenter.com/endurance-races",
    "phone": "407-480-2477",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "dallas-karting-complex",
@@ -1001,11 +1001,11 @@
    "venue": "Caddo Mills, TX",
    "kind": "rtrack",
    "short": "DKC",
-   "note": "Rental league races; next dates not published",
+   "note": "Rental league races; no dated events published",
    "book": "https://dallaskartingcomplex.com/kart-rentals",
    "phone": "903-527-5278",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "houston-karting-complex",
@@ -1013,11 +1013,11 @@
    "venue": "Conroe, TX",
    "kind": "rtrack",
    "short": "HKC",
-   "note": "4 league seasons a year (5 races each) plus season endurance race",
+   "note": "Season 4 (Fall 2026) league and endurance dates confirmed; 2027 seasons not published yet",
    "book": "https://www.houstonkartingcomplex.com/leagues",
    "phone": "936-494-1827",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "trackhouse-motorplex",
@@ -1025,11 +1025,11 @@
    "venue": "Mooresville, NC",
    "kind": "rtrack",
    "short": "THM",
-   "note": "Rental leagues and endurance races; dates not published",
+   "note": "Karting Challenge listed under its own series; no other dated rental race events published",
    "book": "https://trackhousemotorplex.com/events/",
    "phone": "704-696-2926",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "music-city-kartplex",
@@ -1037,11 +1037,11 @@
    "venue": "Shelbyville, TN",
    "kind": "rtrack",
    "short": "MCK",
-   "note": "Rental Class in Rhythm & Race championship, Wednesday rental league, Iron Man enduros",
+   "note": "Rental Class finale Nov 7 and Iron Man solo enduros Nov 13/20; 2027 schedule not published yet",
    "book": "https://musiccitykartplex.com/series/rental-class",
    "phone": "931-437-3225",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "carolina-mp",
@@ -1049,10 +1049,10 @@
    "venue": "Kershaw, SC",
    "kind": "rtrack",
    "short": "CMP",
-   "note": "Ironman 90-Minute Enduro (rental); dates not published",
+   "note": "Ironman 90-Minute Enduro (rental); no upcoming dates published",
    "book": "https://carolinamotorsportspark.com/karting/",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "vir-karting",
@@ -1060,10 +1060,10 @@
    "venue": "Alton, VA",
    "kind": "rtrack",
    "short": "VIR",
-   "note": "Mid Atlantic Kart Enduro Series; 2026 complete, 2027 dates not published",
+   "note": "MAKES enduros listed under their own series; no other dated race events published",
    "book": "https://kartenduro.com/",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "rushhour-karting",
@@ -1071,11 +1071,11 @@
    "venue": "Garner & Morrisville, NC",
    "kind": "rtrack",
    "short": "RHK",
-   "note": "Endurance league (1-hour team races) and invitational championship; dates not published",
+   "note": "2026 Champions League finished Oct 5; 2027 schedule not published yet",
    "book": "https://rushhourkarting.com/rush-hour-karting-league/",
    "phone": "919-662-9101",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "victory-lane",
@@ -1083,11 +1083,11 @@
    "venue": "Charlotte, NC",
    "kind": "rtrack",
    "short": "VLK",
-   "note": "Monday Night League, Youth League and Sunday LeMans endurance",
+   "note": "Youth League Nov 7/14 and Sunday LeMans Nov 15 confirmed; later dates not published yet",
    "book": "https://www.victorylanekarting.com/events",
    "phone": "704-377-3278",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "allrad-karting",
@@ -1095,11 +1095,11 @@
    "venue": "Augusta, GA",
    "kind": "rtrack",
    "short": "ARK",
-   "note": "Monthly leagues from first Friday of each month plus feature races",
+   "note": "Monthly leagues from first Friday of each month plus feature races; no dated rounds published",
    "book": "https://allradkarting.com/",
    "phone": "706-829-8211",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "monza-foxwoods",
@@ -1107,11 +1107,11 @@
    "venue": "Mashantucket, CT",
    "kind": "rtrack",
    "short": "MNZ",
-   "note": "Tuesday Night Open Race League (weekly, no dated rounds)",
+   "note": "Weekly Tuesday Night Open Race League (no dated rounds)",
    "book": "https://monzakarting.com/race-league-2",
    "phone": "860-396-7223",
    "color": "#E3342F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "gotime-karting",
@@ -1119,10 +1119,10 @@
    "venue": "Wallingford, CT",
    "kind": "rtrack",
    "short": "OTK",
-   "note": "Pro Karting race leagues; dates not published",
+   "note": "Pro Karting race leagues offered; dates not published",
    "book": "https://gotime.us/on-track-karting/",
    "color": "#3BD16F",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "prokart-indoor",
@@ -1130,11 +1130,11 @@
    "venue": "Burnsville, MN",
    "kind": "rtrack",
    "short": "PKI",
-   "note": "Methanol indoor karts; call for league/race schedule",
+   "note": "Methanol indoor karts; no dated league/race schedule published",
    "book": "https://prokartindoor.com/",
    "phone": "952-808-7223",
    "color": "#E040C8",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "high-voltage",
@@ -1146,7 +1146,7 @@
    "book": "https://www.highvoltagekarting.com/",
    "phone": "330-333-9000",
    "color": "#4C8DFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "lorain-kartplex",
@@ -1154,10 +1154,10 @@
    "venue": "Lorain, OH",
    "kind": "rtrack",
    "short": "LOK",
-   "note": "Rental kart leagues; 2026 wrapped, return in 2027 (dates TBA)",
+   "note": "Rental kart leagues; 2026 season wrapped, leagues return in 2027 (dates TBA)",
    "book": "https://www.lorainkartplex.com/outdoor-karting",
    "color": "#F5A623",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "kart-circuit-autobahn",
@@ -1165,10 +1165,10 @@
    "venue": "Joliet, IL",
    "kind": "rtrack",
    "short": "KCA",
-   "note": "Rental kart leagues and endurance racing (outdoor season)",
+   "note": "Fall 2026 rental league ended Oct 7; 2027 league/Ironman dates not published yet",
    "book": "https://kartcircuitautobahn.com/",
    "color": "#16C5D9",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "nitro-city",
@@ -1176,11 +1176,11 @@
    "venue": "Rohnert Park & Fairfield, CA",
    "kind": "rtrack",
    "short": "NCR",
-   "note": "League racing offered; dates not published",
+   "note": "League racing mentioned; no dated events published",
    "book": "https://www.nitrocityracing.com/",
    "phone": "707-800-4900",
    "color": "#F5C542",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "pgp-motorsport-park",
@@ -1192,7 +1192,7 @@
    "book": "https://pacificgp.com/racing",
    "phone": "253-639-7223",
    "color": "#B36BFF",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "pats-acres",
@@ -1204,7 +1204,7 @@
    "book": "https://patsacres.com/rental-kart-league-night",
    "phone": "503-266-7287",
    "color": "#FF6B6B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "kart-idaho",
@@ -1212,11 +1212,11 @@
    "venue": "Eagle, ID",
    "kind": "rtrack",
    "short": "KID",
-   "note": "Arrive & Drive league series and sprint endurance; 2026 complete, 2027 TBA",
+   "note": "Arrive & Drive leagues and Kart Idaho 100 enduro (Oct 24) complete for 2026; 2027 TBA",
    "book": "https://kartidaho.com/arrive-and-drive-schedule-and-pricing",
    "phone": "208-991-7231",
    "color": "#9BD13B",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "sykart-tigard",
@@ -1228,7 +1228,7 @@
    "book": "https://sykart.com/tigard/endurance-racing",
    "phone": "503-684-5060",
    "color": "#22C3B0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   },
   {
    "id": "eikr",
@@ -1239,7 +1239,7 @@
    "note": "Michigan's largest indoor track; leagues & special events, dates not published",
    "book": "https://eikr.net/racing-intro",
    "color": "#8B6CF0",
-   "checked": 1793215786896
+   "checked": 1793599755234
   }
  ],
  "events": [
@@ -2014,16 +2014,6 @@
    "source": "https://springmountainkarting.com/wp-content/uploads/2025/12/Karting-2026-Race-Schedule.pdf"
   },
   {
-   "id": "orlando-kart-center-2026-12-19-12-hours-endurance-race",
-   "seriesId": "orlando-kart-center",
-   "title": "12 Hours Endurance Race",
-   "start": "2026-12-19",
-   "end": "2026-12-19",
-   "location": "Orlando Kart Center, Orlando, FL",
-   "kind": "race",
-   "source": "https://orlandokartcenter.com/endurance-races"
-  },
-  {
    "id": "amr-karting-challenge-2026-12-20-round-11-ccw-old-school-banquet",
    "seriesId": "amr-karting-challenge",
    "title": "Round 11 (CCW Old School) + Banquet",
@@ -2249,7 +2239,7 @@
    "title": "Round 1",
    "start": "2027-02-26",
    "end": "2027-02-28",
-   "location": "Venue TBA, Texas",
+   "location": "Speedsportz Racing Park, New Caney, TX",
    "kind": "race",
    "source": "https://www.texassprintseries.com/"
   },
@@ -2339,7 +2329,7 @@
    "title": "East Round - North Carolina",
    "start": "2027-04-02",
    "end": "2027-04-04",
-   "location": "Track TBA, North Carolina",
+   "location": "Charlotte Motor Speedway, Concord, NC",
    "kind": "race",
    "source": "https://www.championskartingamerica.com/2027-championship/"
   },
@@ -2349,7 +2339,7 @@
    "title": "Round 2",
    "start": "2027-04-02",
    "end": "2027-04-04",
-   "location": "Venue TBA, Texas",
+   "location": "North Texas Karters, Denton, TX",
    "kind": "race",
    "source": "https://www.texassprintseries.com/"
   },
@@ -2431,7 +2421,7 @@
    "end": "2027-05-02",
    "location": "New Castle Motorsports Park, New Castle, IN",
    "kind": "race",
-   "source": "https://www.route66kartracing.com/schedule/"
+   "source": "https://www.route66kartracing.com/documents/2026/08/event-timeline-ra26.pdf"
   },
   {
    "id": "texas-sprint-racing-series-2027-04-30-round-3",
@@ -2439,7 +2429,7 @@
    "title": "Round 3",
    "start": "2027-04-30",
    "end": "2027-05-02",
-   "location": "Venue TBA, Texas",
+   "location": "Amarillo Motorsports Park, Panhandle, TX",
    "kind": "race",
    "source": "https://www.texassprintseries.com/"
   },
@@ -2541,7 +2531,7 @@
    "end": "2027-06-20",
    "location": "Mill-Rite Raceway, Dousman, WI",
    "kind": "race",
-   "source": "https://www.route66kartracing.com/schedule/"
+   "source": "https://www.route66kartracing.com/documents/2026/08/event-timeline-ra26.pdf"
   },
   {
    "id": "cascadia-karting-cup-2027-06-25-event-2",
@@ -2579,7 +2569,7 @@
    "title": "Round 4",
    "start": "2027-07-09",
    "end": "2027-07-11",
-   "location": "Venue TBA, Texas",
+   "location": "NOLA Motorsports Park, Avondale, LA",
    "kind": "race",
    "source": "https://www.texassprintseries.com/"
   },
@@ -2601,7 +2591,7 @@
    "end": "2027-07-18",
    "location": "USAIR Motorsports Raceway, Shawano, WI",
    "kind": "race",
-   "source": "https://www.route66kartracing.com/schedule/"
+   "source": "https://www.route66kartracing.com/documents/2026/08/event-timeline-ra26.pdf"
   },
   {
    "id": "rok-sonoma-2027-07-17-rok-fest-west",
@@ -2681,7 +2671,7 @@
    "end": "2027-08-15",
    "location": "Briggs & Stratton Motorplex (Road America), Plymouth, WI",
    "kind": "race",
-   "source": "https://www.route66kartracing.com/schedule/"
+   "source": "https://www.route66kartracing.com/documents/2026/08/event-timeline-ra26.pdf"
   },
   {
    "id": "skusa-california-pkc-2027-08-14-round-4",
@@ -2751,7 +2741,7 @@
    "end": "2027-09-19",
    "location": "Norway Motorsports Park, Sheridan, IL",
    "kind": "race",
-   "source": "https://www.route66kartracing.com/schedule/"
+   "source": "https://www.route66kartracing.com/documents/2026/08/event-timeline-ra26.pdf"
   },
   {
    "id": "rok-sonoma-2027-09-18-triple-crown-2-round-6",
@@ -2832,6 +2822,86 @@
    "location": "Las Vegas Motor Speedway, Las Vegas, NV",
    "kind": "race",
    "source": "https://www.superkartsusa.com/event-schedules.html"
+  },
+  {
+   "id": "rock-island-grand-prix-2027-09-04-xtream-rock-island-g",
+   "seriesId": "rock-island-grand-prix",
+   "title": "Xtream Rock Island Grand Prix 2027",
+   "start": "2027-09-04",
+   "end": "2027-09-05",
+   "location": "Downtown Rock Island, Rock Island, IL",
+   "kind": "race",
+   "source": "https://www.ekartingnews.com/2026/07/16/xtream-rock-island-grand-prix-suspends-31st-annual-race"
+  },
+  {
+   "id": "lvgp-leagues-enduros-2027-01-02-junior-league-round-",
+   "seriesId": "lvgp-leagues-enduros",
+   "title": "Junior League Round 3",
+   "start": "2027-01-02",
+   "end": "2027-02-13",
+   "location": "Lehigh Valley Grand Prix, Allentown, PA",
+   "kind": "race",
+   "source": "https://www.lehighvalleygrandprix.com/racing/leagues-and-enduro-races"
+  },
+  {
+   "id": "okc-endurance-championship-2026-12-19-12-hours-endurance-r",
+   "seriesId": "okc-endurance-championship",
+   "title": "12 Hours Endurance Race",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "location": "Orlando Kart Center, Orlando, FL",
+   "kind": "race",
+   "source": "https://orlandokartcenter.com/calendar"
+  },
+  {
+   "id": "k1-circuit-2026-11-13-semi-pro-senior-seri",
+   "seriesId": "k1-circuit",
+   "title": "Semi-Pro Senior Series H-Class Rd 11",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "location": "K1 Circuit, Winchester, CA",
+   "kind": "race",
+   "source": "https://www.k1circuit.com/semi-pro-senior"
+  },
+  {
+   "id": "k1-circuit-2026-11-15-semi-pro-junior---mi",
+   "seriesId": "k1-circuit",
+   "title": "Semi-Pro Junior & Mini Series Finale",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "location": "K1 Circuit, Winchester, CA",
+   "kind": "race",
+   "source": "https://www.k1circuit.com/semi-pro-junior"
+  },
+  {
+   "id": "k1-circuit-2026-11-20-semi-pro-senior-seri",
+   "seriesId": "k1-circuit",
+   "title": "Semi-Pro Senior Series L-Class Rd 11",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "location": "K1 Circuit, Winchester, CA",
+   "kind": "race",
+   "source": "https://www.k1circuit.com/semi-pro-senior"
+  },
+  {
+   "id": "music-city-kartplex-2026-11-13-iron-man-rd3--1h-sol",
+   "seriesId": "music-city-kartplex",
+   "title": "Iron Man RD3 (1h Solo Endurance)",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "location": "Music City Kartplex, Shelbyville, TN",
+   "kind": "race",
+   "source": "https://musiccitykartplex.com/"
+  },
+  {
+   "id": "music-city-kartplex-2026-11-20-iron-man--1h-solo-en",
+   "seriesId": "music-city-kartplex",
+   "title": "Iron Man (1h Solo Endurance)",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "location": "Music City Kartplex, Shelbyville, TN",
+   "kind": "race",
+   "source": "https://musiccitykartplex.com/"
   }
  ]
 }
