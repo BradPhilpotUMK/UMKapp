@@ -148,7 +148,7 @@ export default async (req) => {
     const member = extra || roles.some(r => allowed.includes(r));
     const days = Number(env("UMK_PASS_DAYS")) || 90;
     const exp = Date.now() + days * 864e5;
-    return finish({ token: sign({ u: userId, exp, m: member }), exp, name, m: member });
+    return finish({ token: sign({ u: userId, exp, m: member, n: String(name || "").slice(0, 60) }), exp, name, m: member });
   } catch (e) {
     return finish({ denied: "error" });
   }

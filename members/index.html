@@ -2,6 +2,33 @@
 <html lang="en-GB">
 <head>
 <style>html,body{background:#0b0b0c}.vid{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000;border:1px solid var(--line)}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.su .bar{height:10px;border-radius:6px;background:var(--surface2,#26272d);overflow:hidden;margin:12px 0 6px}
+.su .bar i{display:block;height:100%;background:linear-gradient(90deg,#8B6CF0,#E040C8);border-radius:6px}
+.su .cnt{font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between}
+.su .cnt b{color:var(--text)}
+.su .me{margin:14px 0 4px;padding:12px 14px;border-radius:14px;border:1px solid}
+.su .me.grid{border-color:rgba(59,209,111,.5);background:rgba(59,209,111,.08)}
+.su .me.waiting{border-color:rgba(245,197,66,.5);background:rgba(245,197,66,.08)}
+.su .me b{display:block;font-family:var(--display);font-size:17px}
+.su .me small{color:var(--muted);font-size:13.5px}
+.su .pay{margin:10px 0 0;padding:12px 14px;border-radius:14px;background:var(--surface2,#26272d);font-size:14px}
+.su .pay b{font-family:var(--display);font-size:16px;display:block;margin-bottom:4px}
+.su .pay .pb{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.su .pay .pb a{flex:1;min-width:120px;text-align:center;padding:10px;border-radius:10px;background:#8B6CF0;color:#fff;font-weight:700;text-decoration:none;font-size:14px}
+.su form{margin-top:12px}
+.su label{display:block;font-size:13px;color:var(--muted);margin:10px 0 4px}
+.su input{width:100%;box-sizing:border-box;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface2,#26272d);color:var(--text);font:inherit;font-size:16px}
+.su .row2{display:grid;grid-template-columns:1.5fr 1fr;gap:10px}
+.su .go{width:100%;margin-top:14px;padding:14px;border:0;border-radius:14px;background:#8B6CF0;color:#fff;font:inherit;font-weight:800;font-size:16px;cursor:pointer}
+.su .go:disabled{opacity:.6}
+.su .lnk{background:none;border:0;color:var(--muted);text-decoration:underline;font:inherit;font-size:13.5px;cursor:pointer;padding:6px 0;margin-top:6px}
+.su h3{font-family:var(--display);font-size:16px;margin:18px 0 8px}
+.su ol.names{margin:0;padding:0 0 0 0;list-style:none;columns:2;column-gap:14px;font-size:14px}
+.su ol.names li{padding:4px 0;break-inside:avoid;border-bottom:1px solid var(--line)}
+.su ol.names li span{color:var(--muted);display:inline-block;min-width:24px}
+.su table{width:100%;border-collapse:collapse;font-size:13.5px}
+.su th,.su td{text-align:left;padding:7px 4px;border-bottom:1px solid var(--line)}
+.su td.x button{background:none;border:0;color:#ff7a8a;font-size:18px;cursor:pointer}
 .su .ev b.t{display:block;font-family:var(--display);font-size:20px;line-height:1.15}
 .su .ev .when{color:#8B6CF0;font-weight:700;margin-top:4px}
 .su .ev ul{list-style:none;margin:10px 0 14px;padding:0;display:grid;gap:6px}
@@ -86,9 +113,9 @@ form .chk input{width:20px;height:20px;flex:none;margin-top:1px;accent-color:#8B
   <h2 class="sect">How it works</h2>
   <div class="card"><ol class="steps" id="mSteps">
     <li><span><b>Join Team Use More Kerb</b><small>A YouTube channel membership at £2.99 a month or higher.</small></span></li>
-    <li><span><b>Sign up in Discord</b><small>In #race-entry, tap <b>Sign Up</b> on the race (or <b>Waiting List</b> if it's full).</small></span></li>
-    <li><span><b>Enter your driver details</b><small>Tap <b>Enter Driver Details</b> and add your racing name and your weight in race kit.</small></span></li>
-    <li><span><b>Turn up and race</b><small>Practice, qualifying and the final. Pay on the day unless Brad says otherwise.</small></span></li>
+    <li><span><b>Sign up here in the app</b><small>Add your racing name and your weight in race kit. There are 30 places on the grid; after that you go on the waiting list and move up if someone drops out.</small></span></li>
+    <li><span><b>Pay the track by their deadline</b><small>Each track sets its own payment deadline. Contact them to pay; their details appear here once you're on the grid.</small></span></li>
+    <li><span><b>Turn up and race</b><small>Practice, qualifying and the final.</small></span></li>
     <li><span><b>Score points, top the table</b><small>Standings update here after every round.</small></span></li>
   </ol></div>
 
@@ -99,11 +126,9 @@ form .chk input{width:20px;height:20px;flex:none;margin-top:1px;accent-color:#8B
   <div class="card" id="mStand"><p class="tba">The table appears here after round 1.</p></div>
 
   <h2 class="sect" id="signup">Sign up</h2>
-  <div class="card su" id="suCard">
-    <div id="suNext"><p class="tba">Loading the next race…</p></div>
-    <a class="btn primary dcbtn" id="suBtn" href="https://discord.gg/DZDKW9fWmA" target="_blank" rel="noopener" data-ev="signup-discord">Sign up in Discord: #race-entry ›</a>
-    <p class="tba" style="margin:10px 2px 0;font-size:13px">Opens the Use More Kerb Discord. Tap <b>Sign Up</b> on the race, then <b>Enter Driver Details</b>. Your member role is checked automatically.</p>
-  </div>
+  <div class="card su" id="suCard"><p class="tba">Loading the next race…</p></div>
+  <div class="card su" id="adCard" hidden></div>
+  <p class="tba" style="margin:6px 2px 14px;font-size:13px">Questions? Chat in <a id="suChat" href="https://discord.gg/DZDKW9fWmA" target="_blank" rel="noopener" style="color:#8B6CF0">#race-entry on the Use More Kerb Discord</a>.</p>
   <a class="back" href="../">‹ Use More Kerb home</a>
 </div></div>
 <div class="toast" id="toast"></div>
@@ -116,13 +141,53 @@ if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostnam
 document.querySelectorAll("[data-ev]").forEach(a=>a.addEventListener("click",()=>gc("members-"+a.dataset.ev,"Members: "+a.dataset.ev)));
 const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const dt=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(Date.UTC(y,m-1,d))};
+/* ---------- race sign-ups (netlify/functions/race-entry.mjs) ---------- */
+const Entry={id:"",d:null,editing:false,
+  async call(method,body){const U=window.UMK||{};if(!U.token)throw {error:"signin"};
+    const r=await fetch(U.fn+"race-entry"+(method==="GET"?"?event="+encodeURIComponent(this.id)+"&admin=1":""),{method,headers:{"Authorization":"Bearer "+U.token,"Content-Type":"application/json"},body:body?JSON.stringify({event:this.id,admin:1,...body}):undefined,cache:"no-store"});
+    const j=await r.json().catch(()=>({error:"bad"}));if(!r.ok)throw j;return j},
+  async load(id){this.id=id;try{this.d=await this.call("GET");this.render()}catch(e){this.fail(e)}},
+  fail(e){const m={signin:"Sign in again to sign up.",members:"Race sign-ups are for Team Use More Kerb members.",closed:"Sign-ups for this race have closed.",name:"Add your racing name.",weight:"Add your weight in race kit, in kg.",busy:"Lots of people signing up at once. Try again in a moment.",noevent:"This race isn't open for sign-ups yet."}[e&&e.error]||"Couldn't reach the sign-up list. Check your signal and try again.";
+    if(this.d){toast(m);this.render()}else $("#suCard").innerHTML=`<p class="tba">${esc(m)}</p>`},
+  when(ev){const d=dt(ev.date);return `${DOW[d.getUTCDay()]} ${d.getUTCDate()} ${MON[d.getUTCMonth()]} ${d.getUTCFullYear()}${ev.time?" · "+esc(ev.time):""}`},
+  deadline(p){if(!p||!p.deadline)return "";const d=dt(p.deadline);return `${DOW[d.getUTCDay()]} ${d.getUTCDate()} ${MON[d.getUTCMonth()]}`},
+  render(){const d=this.d,ev=d.event,cap=ev.capacity,me=d.me;let h=`<div class="ev"><b class="t">${esc(ev.title)}</b><div class="when">${this.when(ev)}</div><ul>${ev.venue?`<li>${esc(ev.venue)}</li>`:""}${ev.format?`<li>${esc(ev.format)}</li>`:""}${ev.price?`<li>${esc(ev.price)}</li>`:""}</ul></div>`;
+    h+=`<div class="bar"><i style="width:${Math.min(100,d.onGrid/cap*100)}%"></i></div><div class="cnt"><span><b>${d.onGrid}</b> / ${cap} on the grid</span><span>${d.waiting?`<b>${d.waiting}</b> on the waiting list`:(cap-d.onGrid)+" places left"}</span></div>`;
+    if(me&&!this.editing){
+      h+=me.status==="grid"?`<div class="me grid"><b>You're on the grid</b><small>${esc(me.racingName)} · ${esc(String(me.weight))} kg in race kit</small></div>`
+        :`<div class="me waiting"><b>You're #${me.pos} on the waiting list</b><small>You'll move onto the grid automatically if someone drops out. ${esc(me.racingName)} · ${esc(String(me.weight))} kg</small></div>`;
+      const p=ev.payment;if(me.status==="grid"&&p)h+=`<div class="pay"><b>Pay ${esc(p.track||"the track")}: ${this.deadline(p)?"deadline "+esc(this.deadline(p)):"deadline TBA"}</b>Contact the track to pay${ev.price?" ("+esc(ev.price.replace(/, paid to the track/i,""))+")":""}. Tell them you're with the Use More Kerb Members' Championship.${p.note?"<br>"+esc(p.note):""}<div class="pb">${p.phone?`<a href="tel:${esc(p.phone.replace(/\s/g,""))}">Call ${esc(p.phone)}</a>`:""}${p.email?`<a href="mailto:${esc(p.email)}?subject=${encodeURIComponent("Use More Kerb Members' Championship: "+ev.title)}">Email the track</a>`:""}</div></div>`;
+      if(ev.open)h+=`<button class="lnk" data-edit type="button">Change my details</button> · <button class="lnk" data-out type="button">Withdraw</button>`}
+    else if(ev.open){let rn="",wt="";if(me){rn=me.racingName;wt=me.weight}else{try{rn=localStorage.getItem("umk-racing-name")||"";wt=localStorage.getItem("umk-race-weight")||""}catch(e){}}
+      h+=`<form id="suForm"><div class="row2"><div><label for="suName">Racing name</label><input id="suName" maxlength="40" autocomplete="name" required value="${esc(rn)}"></div><div><label for="suKg">Weight in race kit (kg)</label><input id="suKg" type="number" inputmode="decimal" min="25" max="200" step="0.1" required value="${esc(String(wt))}"></div></div>
+        <button class="go" type="submit">${me?"Save my details":(d.onGrid<cap?"Sign up":"Join the waiting list")}</button>${me?`<button class="lnk" data-cancel type="button">Cancel</button>`:""}</form>`}
+    else h+=`<p class="tba" style="margin-top:12px">Sign-ups for this race have closed.</p>`;
+    if(d.grid.length)h+=`<h3>On the grid</h3><ol class="names">${d.grid.map((n,i)=>`<li><span>${i+1}</span>${esc(n)}</li>`).join("")}</ol>`;
+    if(d.waitlist.length)h+=`<h3>Waiting list</h3><ol class="names">${d.waitlist.map((n,i)=>`<li><span>${i+1}</span>${esc(n)}</li>`).join("")}</ol>`;
+    $("#suCard").innerHTML=h;
+    const f=$("#suForm");if(f)f.onsubmit=e=>{e.preventDefault();const rn=$("#suName").value.trim(),kg=$("#suKg").value;try{localStorage.setItem("umk-racing-name",rn);localStorage.setItem("umk-race-weight",kg)}catch(x){}
+      const b=f.querySelector("button[type=submit]");b.disabled=true;b.textContent="Saving…";this.act({action:"signup",racingName:rn,weight:kg},me?"Details saved":"You're signed up!")};
+    const ed=document.querySelector("[data-edit]");if(ed)ed.onclick=()=>{this.editing=true;this.render()};
+    const cc=document.querySelector("[data-cancel]");if(cc)cc.onclick=()=>{this.editing=false;this.render()};
+    const out=document.querySelector("[data-out]");if(out)out.onclick=()=>{if(confirm("Withdraw from "+ev.title+"? If you're on the grid, your place goes to the first person on the waiting list."))this.act({action:"withdraw"},"You've withdrawn")};
+    this.renderAdmin()},
+  async act(body,ok){try{this.d=await this.call("POST",body);this.editing=false;gc("members-"+body.action,"Members: "+body.action);toast(ok);this.render()}catch(e){this.fail(e)}},
+  renderAdmin(){const a=this.d.admin,el=$("#adCard");if(!a){el.hidden=true;return}el.hidden=false;
+    const paid=a.filter(x=>x.status==="grid"&&x.paid).length,onGrid=a.filter(x=>x.status==="grid").length;
+    el.innerHTML=`<b class="t" style="font-family:var(--display);font-size:18px">Organiser view</b><p class="tba" style="margin:4px 0 10px">Only you can see this. ${onGrid} on the grid, ${paid} paid.</p>
+      <table><tr><th>#</th><th>Driver</th><th>kg</th><th>Paid</th><th></th></tr>${a.map((x,i)=>`<tr${x.status==="waiting"?' style="opacity:.6"':""}><td>${x.status==="grid"?i+1:"W"}</td><td>${esc(x.racingName)}<br><small style="color:var(--muted)">${esc(x.discordName||"")}</small></td><td>${esc(String(x.weight))}</td><td><input type="checkbox" data-paid="${esc(x.u)}"${x.paid?" checked":""}></td><td class="x"><button data-rm="${esc(x.u)}" aria-label="Remove ${esc(x.racingName)}">×</button></td></tr>`).join("")}</table>
+      <button class="go" type="button" data-copy style="background:var(--surface2,#26272d);border:1px solid var(--line)">Copy driver list for the track</button>`;
+    el.querySelectorAll("[data-paid]").forEach(c=>c.onchange=()=>this.act({action:"paid",u:c.dataset.paid,paid:c.checked},c.checked?"Marked paid":"Marked unpaid"));
+    el.querySelectorAll("[data-rm]").forEach(b=>b.onclick=()=>{const x=a.find(y=>y.u===b.dataset.rm);if(confirm("Remove "+(x?x.racingName:"this driver")+" from the list?"))this.act({action:"remove",u:b.dataset.rm},"Removed")});
+    el.querySelector("[data-copy]").onclick=async()=>{const t=a.filter(x=>x.status==="grid").map((x,i)=>`${i+1}. ${x.racingName} (${x.weight} kg)${x.paid?" - paid":""}`).join("\n");let ok=false;try{await navigator.clipboard.writeText(t);ok=true}catch(e){}toast(ok?"Driver list copied":"Couldn't copy")}}
+};
 (async()=>{try{const r=await fetch("../data/members.json",{cache:"no-cache"});if(!r.ok)return;const M=await r.json();
   if(M.status)$("#mStatus").textContent=M.status;if(M.intro)$("#mIntro").textContent=M.intro;
   if(Array.isArray(M.steps)&&M.steps.length)$("#mSteps").innerHTML=M.steps.map(s=>`<li><span><b>${esc(s.title)}</b><small>${esc(s.text||"")}</small></span></li>`).join("");
   if(Array.isArray(M.rounds)&&M.rounds.length)$("#mCal").innerHTML=M.rounds.map((r,i)=>{const d=r.date?dt(r.date):null;return `<div class="rnd"><span class="d"><b>${d?d.getUTCDate():"TBA"}</b><span>${d?MON[d.getUTCMonth()]+" "+String(d.getUTCFullYear()).slice(2):""}</span></span><span><b>${esc(r.title||"Round "+(i+1))}</b><br><small style="color:var(--muted)">${esc(r.venue||"Venue TBA")}${r.note?" · "+esc(r.note):""}</small></span></div>`}).join("");
-  if(M.signup&&M.signup.url)$("#suBtn").href=M.signup.url;
-  {const now=new Date();now.setUTCHours(0,0,0,0);const nx=(M.rounds||[]).filter(r=>r.date&&dt(r.date)>=now).sort((a,b)=>dt(a.date)-dt(b.date))[0];
-   $("#suNext").innerHTML=nx?`<div class="ev"><b class="t">${esc(nx.title)}</b><div class="when">${DOW[dt(nx.date).getUTCDay()]} ${dt(nx.date).getUTCDate()} ${MON[dt(nx.date).getUTCMonth()]} ${dt(nx.date).getUTCFullYear()}${nx.time?" · "+esc(nx.time):""}</div><ul>${nx.venue?`<li>${esc(nx.venue)}</li>`:""}${nx.format?`<li>${esc(nx.format)}</li>`:""}${nx.price?`<li>${esc(nx.price)}</li>`:""}</ul></div>`:`<p class="tba">The next race will appear here when it's announced.</p>`}
+  if(M.signup&&M.signup.url)$("#suChat").href=M.signup.url;
+  {const now=new Date();now.setUTCHours(0,0,0,0);const nx=(M.rounds||[]).filter(r=>r.id&&r.date&&dt(r.date)>=now).sort((a,b)=>dt(a.date)-dt(b.date))[0];
+   if(nx)Entry.load(nx.id);else $("#suCard").innerHTML=`<p class="tba">The next race will appear here when it's announced.</p>`}
   if(Array.isArray(M.standings)&&M.standings.length)$("#mStand").innerHTML=`<table><tr><th>Pos</th><th>Driver</th><th style="text-align:right">Pts</th></tr>${M.standings.map(r=>`<tr><td>${r.pos}</td><td>${esc(r.driver)}</td><td class="n">${r.points??""}</td></tr>`).join("")}</table>${M.standingsNote?`<p class="tba" style="margin:10px 0 0">${esc(M.standingsNote)}</p>`:""}`;
 }catch(e){}})();
 </script>

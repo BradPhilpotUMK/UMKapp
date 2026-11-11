@@ -45,3 +45,11 @@ To switch it on:
 4. **gate.js:** set `enabled: true`, `netlify` to the Netlify address (so the GitHub Pages copy can sign in too) and `discordInvite` to the server invite link.
 
 Sign-in results are handed back to the app through Netlify Blobs (`@netlify/blobs`), so it works from the installed iPhone and Android apps as well as the browser.
+
+## Members' Championship sign-ups
+
+Members sign up for each race on the Members' Championship page (`netlify/functions/race-entry.mjs`, entries stored in Netlify Blobs). Each race in `data/members.json` `rounds[]` needs an `id`, `date`, `time` and `capacity` (grid size; extra sign-ups go on a waiting list and move up automatically). `payment` holds the track's name, phone, email and `deadline` (YYYY-MM-DD, leave empty for TBA); drivers on the grid see it with call and email buttons. Sign-ups close an hour before the start, or set `signupOpen: false`.
+
+Organisers (anyone on `DISCORD_EXTRA_USER_IDS`) see an organiser view on that page with weights, Discord names, a paid tick, remove buttons and a "copy driver list" button.
+
+Optional: add `DISCORD_WEBHOOK_URL` on Netlify (a webhook for #race-entry: Edit Channel › Integrations › Webhooks › New Webhook › Copy Webhook URL) to post each sign-up and withdrawal in Discord.

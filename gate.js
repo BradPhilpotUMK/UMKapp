@@ -42,7 +42,8 @@
   var api = (/github\.io$/.test(location.hostname) && CFG.netlify ? CFG.netlify.replace(/\/$/, "") : location.origin) + "/.netlify/functions/discord-auth";
 
   var P = ON ? pass() : { m: true };
-  var UMK = window.UMK = { on: ON, signedIn: !!P, member: !!(P && P.m), upgrade: function () { sheet("modal"); }, signIn: function () { signIn(); } };
+  var UMK = window.UMK = { on: ON, signedIn: !!P, member: !!(P && P.m), upgrade: function () { sheet("modal"); }, signIn: function () { signIn(); },
+    fn: api.replace(/discord-auth$/, ""), token: P && P.t ? P.t : "" };
 
   /* ---------- styles ---------- */
   var css = D.createElement("style");
