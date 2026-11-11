@@ -28,3 +28,16 @@ Tap the flag next to the logo to switch between UK, Europe and USA. The Europe v
 - `members/` is the Use More Kerb Members' Championship page. Edit `data/members.json` to add rounds and standings. The interest form uses Netlify Forms (submissions appear in the Netlify dashboard under Forms; only works on the Netlify address).
 - `store/` links to the Xenduri collection, Helmet28 and YouTube membership.
 - `hub.css` holds the shared look for these pages.
+
+## Members-only lock (Discord)
+
+The whole app can be locked to Team Use More Kerb members. `gate.js` loads first on every page and shows a lock screen (sign in with Discord, the BUT WHY trailer and a Join on YouTube button) until the visitor has a valid members' pass. The pass is issued by `netlify/functions/discord-auth.mjs`, which checks the person is in the Use More Kerb Discord server with one of the member roles that YouTube's Discord link hands out. Passes last 30 days, then they sign in again (one tap), so lapsed members drop off.
+
+To switch it on:
+
+1. **Discord server:** Server Settings › Integrations › YouTube, connect the channel, and choose the member roles (one per membership level). Turn on Developer Mode (User Settings › Advanced), then right-click the server for its ID and each member role for its ID.
+2. **Discord app:** at discord.com/developers, New Application › OAuth2. Copy the Client ID and Client Secret, and add the redirect `https://<your-netlify-site>/.netlify/functions/discord-auth`.
+3. **Netlify environment variables:** `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_GUILD_ID`, `DISCORD_ROLE_IDS` (comma separated), `UMK_PASS_SECRET` (any long random text). Optional: `DISCORD_EXTRA_USER_IDS` (people always let in, e.g. Brad), `UMK_PASS_DAYS`, `UMK_ALLOWED_HOSTS`.
+4. **gate.js:** set `enabled: true`, `netlify` to the Netlify address (so the GitHub Pages copy can sign in too) and `discordInvite` to the server invite link.
+
+Sign-in results are handed back to the app through Netlify Blobs (`@netlify/blobs`), so it works from the installed iPhone and Android apps as well as the browser.
