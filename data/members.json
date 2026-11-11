@@ -18,35 +18,45 @@
     "phone": "01908 904111",
     "email": "sales@formulafast.co.uk",
     "note": ""
-   }
+   },
+   "location": "Milton Keynes",
+   "track": "Formula Fast (indoor)"
   },
   {
-   "title": "Round 2: Brighton Karting",
+   "title": "Round 2: Brighton",
    "date": "2027-03-14",
    "venue": "Brighton Karting",
    "note": "Provisional · price TBC",
-   "provisional": true
+   "provisional": true,
+   "location": "Brighton",
+   "track": "Brighton Karting (Albourne)"
   },
   {
-   "title": "Round 3: Herefordshire Raceway",
+   "title": "Round 3: Hereford",
    "date": "2027-07-25",
    "venue": "Herefordshire Raceway",
    "note": "Provisional · price TBC",
-   "provisional": true
+   "provisional": true,
+   "location": "Hereford",
+   "track": "Herefordshire Raceway (Weobley)"
   },
   {
-   "title": "Round 4: Surbiton Raceway",
+   "title": "Round 4: Worcester Park",
    "date": "2027-10-24",
    "venue": "Surbiton Raceway",
    "note": "Provisional · price TBC",
-   "provisional": true
+   "provisional": true,
+   "location": "Worcester Park",
+   "track": "Surbiton Raceway"
   },
   {
-   "title": "Round 5: TeamSport Leeds",
+   "title": "Round 5: Leeds",
    "date": "2027-12-12",
    "venue": "TeamSport Leeds",
    "note": "Provisional · price TBC",
-   "provisional": true
+   "provisional": true,
+   "location": "Leeds",
+   "track": "TeamSport Leeds"
   }
  ],
  "standings": [],
