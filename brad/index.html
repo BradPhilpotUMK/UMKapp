@@ -37,10 +37,10 @@
 <link rel="stylesheet" href="../hub.css">
 <style>
 .next{position:relative;overflow:hidden;border-radius:20px;padding:18px 18px 18px;margin-bottom:16px;border:1px solid color-mix(in srgb,#F5C542 45%,var(--line));background:radial-gradient(110% 90% at 100% 0%,rgba(245,197,66,.22),transparent 60%),var(--surface)}
-.next .st{position:absolute;right:-8px;top:-6px;width:118px;height:118px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
+.next .st{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:min(30vw,124px);height:auto;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
 .next .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#F5C542;font-weight:700}
-.next .cd{font-family:var(--display);font-weight:700;font-size:40px;line-height:1;margin:8px 0 6px;color:#F5C542}
-.next b{display:block;font-family:var(--display);font-size:22px;line-height:1.15;max-width:calc(100% - 110px)}
+.next .cd{max-width:calc(100% - min(30vw,124px) - 6px);font-family:var(--display);font-weight:700;font-size:clamp(28px,8.6vw,40px);white-space:nowrap;line-height:1;margin:8px 0 6px;color:#F5C542}
+.next b{display:block;font-family:var(--display);font-size:22px;line-height:1.15;max-width:calc(100% - min(30vw,124px) - 10px)}
 .next p{margin:6px 0 0;color:var(--muted);font-size:14.5px}
 .mon{font-family:var(--display);font-size:19px;margin:20px 2px 8px}
 .rc{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:8px}
