@@ -52,6 +52,19 @@
 .code svg{width:18px;height:18px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .yt{background:linear-gradient(135deg,rgba(255,0,0,.18),var(--surface) 60%);border-color:rgba(255,60,60,.4)}
 .yt .go{background:#FF0033;color:#fff}
+
+/* neat, centred page heading */
+header.top .brand{text-align:center}
+header.top .brand .r{position:relative;justify-content:center;min-height:30px;margin-bottom:8px}
+header.top .brand .r .homechip{position:absolute;left:0;top:50%;transform:translateY(-50%);margin:0}
+header.top .brand .r img{height:16px}
+header.top .brand h1{font-size:clamp(30px,9vw,40px);letter-spacing:.02em;overflow:visible}
+.hint{text-align:center;max-width:34ch;margin:4px auto 18px;font-size:14.5px;line-height:1.5}
+/* store card backgrounds: brand colours, splats and glows, darkened behind the words */
+.big{isolation:isolate;padding-bottom:20px}
+.big.cf{border-color:rgba(255,0,116,.35);background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,.15) 40%,rgba(0,0,0,.82) 78%),url(../img/splat-pink.png) left -70px top -50px/62% no-repeat,url(../img/splat-green.png) right -80px top 10px/58% no-repeat,#050506 url(../img/camo.png) center/520px}
+.big.asp{border-color:rgba(0,190,0,.4);background:linear-gradient(180deg,rgba(0,0,0,0) 38%,rgba(0,0,0,.8) 80%),radial-gradient(48% 42% at 30% 26%,rgba(0,190,0,.5),transparent 72%),radial-gradient(40% 38% at 74% 28%,rgba(255,0,116,.42),transparent 72%),repeating-linear-gradient(118deg,rgba(255,255,255,.04) 0 2px,transparent 2px 16px),linear-gradient(160deg,#10301a,#0a0b0d 55%)}
+.big.kkc{border-color:rgba(110,90,255,.45);background:linear-gradient(180deg,rgba(0,0,0,0) 38%,rgba(0,0,0,.8) 80%),radial-gradient(50% 44% at 30% 28%,rgba(124,58,237,.55),transparent 72%),radial-gradient(42% 40% at 76% 30%,rgba(255,0,116,.45),transparent 72%),repeating-linear-gradient(118deg,rgba(255,255,255,.04) 0 2px,transparent 2px 16px),linear-gradient(160deg,#1c1660,#0a0a12 58%)}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
