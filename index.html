@@ -58,20 +58,25 @@ button{font:inherit;color:inherit;cursor:pointer}
 .top img{display:block;width:min(230px,58vw);height:auto}
 .top .app{font-family:var(--display);font-weight:900;font-style:italic;font-size:min(21px,5.3vw);line-height:1;letter-spacing:.01em;color:#F1F0EC;white-space:nowrap;transform:translateY(1px)}
 /* next race strip */
-.nextrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
-.nx{display:block;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:11px 12px;min-width:0}
-.nx .l{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:6px}
-.nx .l i{width:7px;height:7px;border-radius:50%;background:var(--c,var(--accent))}
-.nx b{display:block;font-family:var(--display);font-size:15.5px;line-height:1.2;margin-top:4px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.nx small{display:block;color:var(--muted);font-size:12.5px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nextrow{margin-bottom:14px}
 .nxw{position:relative;min-width:0}
-.nxw .nx{height:100%}.nxw .nx b,.nxw .nx small{margin-right:40px}
-.av{position:absolute;top:29px;right:10px;width:36px;height:36px;border-radius:50%;padding:0;border:2px solid var(--c);background:var(--surface2,#26272d);overflow:hidden;display:grid;place-items:center;color:var(--c);cursor:pointer}
+.nx{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:112px;overflow:hidden;border-radius:18px;padding:14px 112px 14px 74px;border:1px solid color-mix(in srgb,#E040C8 40%,var(--line));
+  background:radial-gradient(90% 140% at 100% 50%,rgba(224,64,200,.26),transparent 62%),var(--surface)}
+.nx::after{content:"";position:absolute;right:-14px;top:0;bottom:0;width:62px;opacity:.09;pointer-events:none;
+  background:conic-gradient(#fff 25%,transparent 0 50%,#fff 0 75%,transparent 0) 0 0/16px 16px;-webkit-mask:linear-gradient(90deg,transparent,#000);mask:linear-gradient(90deg,transparent,#000)}
+.nx .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:6px;font-weight:700}
+.nx .l i{width:7px;height:7px;border-radius:50%;background:#E040C8}
+.nx b{display:block;font-family:var(--display);font-size:21px;line-height:1.15;margin-top:4px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.nx small{display:block;color:var(--muted);font-size:13px;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nx .dial{position:absolute;right:14px;top:50%;width:84px;height:84px;transform:translateY(-50%);z-index:1}
+.nx .dial svg{width:100%;height:100%;transform:rotate(-90deg);overflow:visible}
+.nx .dial .n{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.nx .dial .n b{margin:0;font-size:30px;-webkit-line-clamp:1;color:#fff;display:flex;align-items:center;justify-content:center}
+.nx .dial .n span{font-size:9.5px;letter-spacing:.14em;font-weight:800;color:#E040C8;margin-top:3px;text-transform:uppercase}
+.av{position:absolute;left:14px;top:50%;width:48px;height:48px;margin-top:-24px;border-radius:50%;padding:0;border:2px solid #E040C8;background:var(--surface2,#26272d);overflow:hidden;display:grid;place-items:center;color:#E040C8;cursor:pointer;z-index:2;box-shadow:0 0 0 4px rgba(224,64,200,.12)}
 .av img{width:100%;height:100%;object-fit:cover;display:block}
-.av.add{border-style:dashed;background:color-mix(in srgb,var(--c) 14%,transparent)}
-.av.add svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.av.brad{border:none;background:none;border-radius:0;overflow:visible;width:44px;height:44px;top:24px;right:6px;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))}.av.brad img{object-fit:contain}
-.nx .d{color:var(--c,var(--accent));font-weight:700}
+.av.add{border-style:dashed;background:color-mix(in srgb,#E040C8 14%,transparent)}
+.av.add svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 /* tool tiles */
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .tile{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:188px;border-radius:18px;padding:14px;overflow:hidden;border:1px solid color-mix(in srgb,var(--c) 40%,var(--line));background:radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--c) 32%,transparent),transparent 62%),var(--surface);transition:transform .12s}
@@ -264,15 +269,18 @@ function nextMine(){
     const S=JSON.parse(localStorage.getItem(key)||"{}");const ev=(S.events||[]).filter(e=>dn(e.end||e.start)>=TODAY&&(e.racing===true||(e.racing===undefined&&(S.series||[]).some(s=>s.id===e.seriesId&&s.racing)))).sort((a,b)=>dn(a.start)-dn(b.start));
     return ev[0]||null}catch(e){return null}}
 async function renderNext(){
-  const mine=nextMine();let brad=null;
-  try{const r=await fetch("data/brad.json",{cache:"no-cache"});if(r.ok){const B=await r.json();brad=(B.races||[]).filter(r=>dn(r.end||r.start)>=TODAY).sort((a,b)=>dn(a.start)-dn(b.start))[0]||null}}catch(e){}
-  const box=(lbl,c,ev,href,empty)=>ev?`<a class="nx" href="${href}" style="--c:${c}"><span class="l"><i></i>${lbl}</span><b>${esc(ev.series&&ev.series!==ev.title?ev.series+": "+ev.title:ev.title)}</b><small><span class="d">${until(ev.start)}</span> · ${esc(fmt(ev.start))}${ev.location?" · "+esc(ev.location):""}</small></a>`
-    :`<a class="nx" href="${href}" style="--c:${c}"><span class="l"><i></i>${lbl}</span><b>${empty}</b><small>Open the Season Planner</small></a>`;
+  const ev=nextMine();
+  const R=2*Math.PI*36;
+  const dial=(num,unit,frac)=>`<span class="dial" aria-hidden="true"><svg viewBox="0 0 84 84"><circle cx="42" cy="42" r="36" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="6"/><circle cx="42" cy="42" r="36" fill="none" stroke="#E040C8" stroke-width="6" stroke-linecap="round" stroke-dasharray="${(R*frac).toFixed(1)} ${R.toFixed(1)}" opacity="${frac?1:0}"/></svg><span class="n"><b>${num}</b><span>${unit}</span></span></span>`;
+  let card;
+  if(ev){const n=dn(ev.start)-TODAY,now=n<=0;
+    const d=now?dial("GO","Race day",1):dial(n,n===1?"Day":"Days",Math.max(.04,1-Math.min(n,60)/60));
+    card=`<a class="nx" href="planner/"><span class="l"><i></i>Your next race</span><b>${esc(ev.series&&ev.series!==ev.title?ev.series+": "+ev.title:ev.title)}</b><small>${esc(fmt(ev.start))}${ev.location?" · "+esc(ev.location):""}</small>${d}</a>`}
+  else card=`<a class="nx" href="planner/"><span class="l"><i></i>Your next race</span><b>Tick your races</b><small>Open the Season Planner</small>${dial('<svg viewBox="0 0 24 24" style="width:30px;height:30px;transform:none"><rect x="5" y="3" width="1.8" height="19" rx=".9" fill="#ccc"/><path d="M6.8 4h13v9h-13z" fill="#fff"/><path d="M6.8 4h3.25v3h-3.25zM13.3 4h3.25v3H13.3zM10.05 7h3.25v3h-3.25zM16.55 7h3.25v3h-3.25zM6.8 10h3.25v3H6.8zM13.3 10h3.25v3H13.3z" fill="#111"/></svg>',"Start",0)}</a>`;
   let me="";try{me=localStorage.getItem("umk-avatar")||""}catch(e){}
-  const myAv=me?`<button class="av" id="avBtn" style="--c:#E040C8" aria-label="Change your profile picture"><img alt="" src="${me}"></button>`
-    :`<button class="av add" id="avBtn" style="--c:#E040C8" aria-label="Add a profile picture"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>`;
-  $("#nextRow").innerHTML=`<div class="nxw">${box("Your next race","#E040C8",mine,"planner/","Tick your races")}${myAv}</div>`
-    +`<div class="nxw">${box("Brad's next race","#F5C542",brad,"brad/","No race booked yet")}<span class="av brad"><img alt="Brad" src="brad-logo.png"></span></div>`;
+  const myAv=me?`<button class="av" id="avBtn" aria-label="Change your profile picture"><img alt="" src="${me}"></button>`
+    :`<button class="av add" id="avBtn" aria-label="Add a profile picture, like your helmet"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>`;
+  $("#nextRow").innerHTML=`<div class="nxw">${card}${myAv}</div>`;
   $("#avBtn").onclick=()=>$("#avFile").click();
 }
 $("#avFile").onchange=e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const img=new Image();const u=URL.createObjectURL(f);
@@ -408,7 +416,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794413931";
+const BUILD="1794414062";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
