@@ -199,9 +199,9 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
   <h2 class="tsec">Your apps</h2>
   <nav class="tiles apps" aria-label="Use More Kerb apps">
     <a class="tile" data-m href="planner/" style="--c:#FF0074">
-      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
-        <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#FF0074" stroke-opacity=".35" stroke-width="14" stroke-linejoin="round"/>
-        <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 6"/>
+      <svg class="art" style="overflow:visible" viewBox="0 0 200 170" aria-hidden="true">
+        <path transform="translate(22 40) scale(.8)" d="M-52 132 C-78 128 -80 98 -56 90 L-18 78 C-2 72 -2 54 -18 46 C-38 36 -34 8 -8 8 L36 8 C60 8 66 30 50 42 C36 52 48 70 66 62 L92 50 C116 40 128 66 112 82 C98 96 112 114 94 126 L64 146 C44 158 14 156 -6 146 C-22 138 -32 135 -52 132Z" fill="none" stroke="#FF0074" stroke-opacity=".35" stroke-width="14" stroke-linejoin="round"/>
+        <path transform="translate(22 40) scale(.8)" d="M-52 132 C-78 128 -80 98 -56 90 L-18 78 C-2 72 -2 54 -18 46 C-38 36 -34 8 -8 8 L36 8 C60 8 66 30 50 42 C36 52 48 70 66 62 L92 50 C116 40 128 66 112 82 C98 96 112 114 94 126 L64 146 C44 158 14 156 -6 146 C-22 138 -32 135 -52 132Z" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 6"/>
         <g transform="rotate(-8 120 80)">
           <rect x="62" y="22" width="118" height="110" rx="12" fill="#2f2a33" stroke="#FF0074" stroke-opacity=".7" stroke-width="2"/>
           <rect x="62" y="22" width="118" height="26" rx="12" fill="#FF0074"/><rect x="62" y="36" width="118" height="12" fill="#FF0074"/>
@@ -542,7 +542,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794437379";
+const BUILD="1794437550";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
