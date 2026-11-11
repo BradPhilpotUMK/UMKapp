@@ -375,14 +375,20 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794410204";
-async function checkUpdate(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=String((await r.json()).build);
-  if(v&&v!==BUILD&&Number(v)>Number(BUILD)){let tried="";try{tried=sessionStorage.getItem("umk-upd")||""}catch(e){}
-    if(tried===v)return;try{sessionStorage.setItem("umk-upd",v)}catch(e){}
-    try{const r2=await navigator.serviceWorker.getRegistration();if(r2)await r2.update()}catch(e){}
-    location.reload()}}catch(e){}}
-checkUpdate();
-document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")checkUpdate()});
+const BUILD="1794412310";
+/* a newer version has been saved in the background: switch to it when the app is next put away,
+   or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
+let newer=false;
+async function checkUpdate(resumed){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=String((await r.json()).build);
+  if(!(v&&v!==BUILD&&Number(v)>Number(BUILD)))return;
+  let tried="";try{tried=sessionStorage.getItem("umk-upd")||""}catch(e){}
+  if(tried===v)return;
+  try{fetch(location.pathname,{cache:"no-store"})}catch(e){}
+  if(resumed){try{sessionStorage.setItem("umk-upd",v)}catch(e){}location.reload()}else newer=v}catch(e){}}
+checkUpdate(false);
+document.addEventListener("visibilitychange",()=>{
+  if(document.visibilityState==="hidden"&&newer){try{sessionStorage.setItem("umk-upd",newer)}catch(e){}location.reload()}
+  else if(document.visibilityState==="visible")checkUpdate(true)});
 if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 </script>
 </body>

@@ -1,7 +1,7 @@
 /* Season Planner offline support.
    Pages and race data: try the network first (so updates show straight away), fall back to the saved copy when offline.
    Logos, icons and fonts: use the saved copy, refresh it in the background. */
-const CACHE = "umk-planner-v8";
+const CACHE = "umk-planner-v9";
 const CORE = [
   "./", "index.html", "manifest.webmanifest", "version.json",
   "data/races.json", "data/brad.json",
@@ -34,16 +34,15 @@ function fresh(req, key) {
 }
 
 function page(req, key) {
-  /* pages: newest version from the network (so updates always show), the saved copy if the signal is slow or offline */
-  return new Promise(resolve => {
-    let done = false;
-    const finish = r => { if (!done && r) { done = true; resolve(r); } };
-    const t = setTimeout(() => caches.match(key, {ignoreSearch: true}).then(finish), 2500);
-    fetch(req.url, {cache: "no-store", credentials: "same-origin"}).then(res => {
+  /* pages open instantly from the saved copy (so the opening animation starts straight away, even on poor signal);
+     the newest version is fetched in the background and used next time. First visit: straight from the network. */
+  return caches.match(key, {ignoreSearch: true}).then(hit => {
+    const net = fetch(req.url, {cache: "no-store", credentials: "same-origin"}).then(res => {
       if (res && res.redirected) res = new Response(res.body, {status: res.status, statusText: res.statusText, headers: res.headers});
-      if (res && res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(key, copy)); clearTimeout(t); finish(res); }
-      else caches.match(key, {ignoreSearch: true}).then(h => { clearTimeout(t); finish(h || res); });
-    }).catch(() => caches.match(key, {ignoreSearch: true}).then(h => { clearTimeout(t); finish(h || Response.error()); }));
+      if (res && res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(key, copy)); }
+      return res;
+    }).catch(() => hit || Response.error());
+    return hit || net;
   });
 }
 
