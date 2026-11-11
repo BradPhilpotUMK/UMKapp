@@ -19,6 +19,34 @@
     "email": "sales@formulafast.co.uk",
     "note": ""
    }
+  },
+  {
+   "title": "Round 2: Brighton Karting",
+   "date": "2027-03-14",
+   "venue": "Brighton Karting",
+   "note": "Provisional · price TBC",
+   "provisional": true
+  },
+  {
+   "title": "Round 3: Herefordshire Raceway",
+   "date": "2027-07-25",
+   "venue": "Herefordshire Raceway",
+   "note": "Provisional · price TBC",
+   "provisional": true
+  },
+  {
+   "title": "Round 4: Surbiton Raceway",
+   "date": "2027-10-24",
+   "venue": "Surbiton Raceway",
+   "note": "Provisional · price TBC",
+   "provisional": true
+  },
+  {
+   "title": "Round 5: TeamSport Leeds",
+   "date": "2027-12-12",
+   "venue": "TeamSport Leeds",
+   "note": "Provisional · price TBC",
+   "provisional": true
   }
  ],
  "standings": [],
