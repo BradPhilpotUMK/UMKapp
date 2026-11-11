@@ -11,7 +11,7 @@
    Optional:
      DISCORD_EXTRA_USER_IDS  Discord user IDs always let in (e.g. Brad, moderators), comma separated
      UMK_ALLOWED_HOSTS       other sites allowed to use this sign-in, default "bradphilpotumk.github.io"
-     UMK_PASS_DAYS           how long a pass lasts before signing in again, default 30
+     UMK_PASS_DAYS           how long a pass lasts before signing in again, default 90
 
    Discord redirect URL to register: https://<your-netlify-site>/.netlify/functions/discord-auth */
 import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
@@ -132,7 +132,7 @@ export default async (req) => {
     if (!extra && !mr.ok) return finish({ denied: mr.status === 404 ? "notinserver" : "error" });
     const allowed = list("DISCORD_ROLE_IDS");
     if (!extra && !roles.some(r => allowed.includes(r))) return finish({ denied: "norole" });
-    const days = Number(env("UMK_PASS_DAYS")) || 30;
+    const days = Number(env("UMK_PASS_DAYS")) || 90;
     const exp = Date.now() + days * 864e5;
     return finish({ token: sign({ u: userId, exp }), exp, name });
   } catch (e) {

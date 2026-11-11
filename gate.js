@@ -22,7 +22,7 @@
     try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
   }
   function savePass(t, exp) {
-    if (!exp) { try { exp = JSON.parse(atob(t.split(".")[0].replace(/-/g, "+").replace(/_/g, "/"))).exp; } catch (e) { exp = Date.now() + 30 * 864e5; } }
+    if (!exp) { try { exp = JSON.parse(atob(t.split(".")[0].replace(/-/g, "+").replace(/_/g, "/"))).exp; } catch (e) { exp = Date.now() + 90 * 864e5; } }
     ls(KEY, JSON.stringify({ t: t, exp: exp, checked: Date.now() }));
   }
   function pass() { try { var p = JSON.parse(ls(KEY) || "null"); return p && p.t && p.exp > Date.now() ? p : null; } catch (e) { return null; } }

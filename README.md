@@ -31,7 +31,7 @@ Tap the flag next to the logo to switch between UK, Europe and USA. The Europe v
 
 ## Members-only lock (Discord)
 
-The whole app can be locked to Team Use More Kerb members. `gate.js` loads first on every page and shows a lock screen (sign in with Discord, the BUT WHY trailer and a Join on YouTube button) until the visitor has a valid members' pass. The pass is issued by `netlify/functions/discord-auth.mjs`, which checks the person is in the Use More Kerb Discord server with one of the member roles that YouTube's Discord link hands out. Passes last 30 days, then they sign in again (one tap), so lapsed members drop off.
+The whole app can be locked to Team Use More Kerb members. `gate.js` loads first on every page and shows a lock screen (sign in with Discord, the BUT WHY trailer and a Join on YouTube button) until the visitor has a valid members' pass. The pass is issued by `netlify/functions/discord-auth.mjs`, which checks the person is in the Use More Kerb Discord server with one of the member roles that YouTube's Discord link hands out. Passes last 90 days, then they sign in again (one tap), so lapsed members drop off within three months. Change it with `UMK_PASS_DAYS`.
 
 To switch it on:
 
