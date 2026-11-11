@@ -180,7 +180,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.shop .slogos img:nth-child(3){height:22px}
 .tile.shop .sbar{position:relative;z-index:2;display:flex;align-items:center;gap:12px;padding:14px 14px 12px;background:rgba(0,0,0,.72);border-bottom:1px solid rgba(255,255,255,.1)}
 .tile.shop .stxt{flex:1;min-width:0}
-.tile.shop .stxt b{display:block;font-size:clamp(30px,9vw,40px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
+.tile.shop .stxt b{display:block;white-space:nowrap;font-size:clamp(26px,7.8vw,38px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
 .tile.shop .stxt small{margin-top:4px;color:#cfd0d6}
 .tile.shop .sgo{flex:none;font-weight:800;font-size:15px;color:#111;background:#fff;border-radius:999px;padding:10px 16px;box-shadow:0 3px 0 #FF0074,0 6px 14px rgba(0,0,0,.5)}
 .tile.shop .sbadge{display:inline-block;margin-top:8px;white-space:nowrap;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
@@ -217,19 +217,6 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       </svg>
       <b>Season Planner</b><small>Every race, every weekend, no clashes</small></a>
 
-    <a class="tile" href="standings/" style="--c:#00BE00">
-      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
-        <g fill="#FF0074" opacity=".8"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
-        <g fill="#00BE00" opacity=".8"><rect x="100" y="12" width="6" height="3" rx="1.5" transform="rotate(50 103 13)"/><circle cx="168" cy="36" r="2.5"/><circle cx="52" cy="48" r="2"/></g>
-        <path d="M86 48h40v10a20 20 0 0 1-40 0z" fill="#F1F0EC"/><path d="M86 52H76a12 12 0 0 0 14 14M126 52h10a12 12 0 0 1-14 14" fill="none" stroke="#F1F0EC" stroke-width="4"/>
-        <rect x="102" y="76" width="8" height="12" fill="#BFC1C7"/><rect x="92" y="86" width="28" height="7" rx="2" fill="#F1F0EC"/>
-        <rect x="80" y="96" width="52" height="74" rx="4" fill="#00BE00"/><rect x="28" y="116" width="52" height="54" rx="4" fill="#FF0074"/><rect x="132" y="128" width="52" height="42" rx="4" fill="#3a3b42"/>
-        <text x="106" y="138" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="30" font-weight="900" fill="#fff">1</text>
-        <text x="54" y="150" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="24" font-weight="900" fill="#fff" fill-opacity=".85">2</text>
-        <text x="158" y="157" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="22" font-weight="900" fill="#fff" fill-opacity=".75">3</text>
-      </svg>
-      <b>Standings</b><small>Latest tables, UK and international</small></a>
-
     <a class="tile" data-m href="setup/" style="--c:#00BE00">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
         <g stroke="#00BE00" stroke-opacity=".25" stroke-width="1"><path d="M0 20h200M0 50h200M0 80h200M0 110h200M0 140h200M30 0v170M70 0v170M110 0v170M150 0v170M190 0v170"/></g>
@@ -244,6 +231,19 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
         <path d="M182 106a14 14 0 0 0-17 17l-32 32a6 6 0 0 0 8.5 8.5l32-32a14 14 0 0 0 17-17l-8 8-7.5-2-2-7.5z" fill="#00BE00"/>
       </svg>
       <b>Setup Coach</b><small>Tell it what the kart's doing, get the fix</small></a>
+
+    <a class="tile" href="standings/" style="--c:#00BE00">
+      <svg class="art" viewBox="0 0 200 170" aria-hidden="true"><g transform="translate(26 4) scale(.84)">
+        <g fill="#FF0074" opacity=".8"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
+        <g fill="#00BE00" opacity=".8"><rect x="100" y="12" width="6" height="3" rx="1.5" transform="rotate(50 103 13)"/><circle cx="168" cy="36" r="2.5"/><circle cx="52" cy="48" r="2"/></g>
+        <path d="M86 48h40v10a20 20 0 0 1-40 0z" fill="#F1F0EC"/><path d="M86 52H76a12 12 0 0 0 14 14M126 52h10a12 12 0 0 1-14 14" fill="none" stroke="#F1F0EC" stroke-width="4"/>
+        <rect x="102" y="76" width="8" height="12" fill="#BFC1C7"/><rect x="92" y="86" width="28" height="7" rx="2" fill="#F1F0EC"/>
+        <rect x="80" y="96" width="52" height="74" rx="4" fill="#00BE00"/><rect x="28" y="116" width="52" height="54" rx="4" fill="#FF0074"/><rect x="132" y="128" width="52" height="42" rx="4" fill="#3a3b42"/>
+        <text x="106" y="138" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="30" font-weight="900" fill="#fff">1</text>
+        <text x="54" y="150" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="24" font-weight="900" fill="#fff" fill-opacity=".85">2</text>
+        <text x="158" y="157" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="22" font-weight="900" fill="#fff" fill-opacity=".75">3</text>
+      </g></svg>
+      <b>Standings</b><small>Latest tables, UK and international</small></a>
 
     <a class="tile" data-m href="team/" style="--c:#FF0074">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
@@ -366,7 +366,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>USE MORE KERB Championship</b><small>The race series for Team UMK members</small></a>
 
     <a class="tile wide shop" href="store/" style="--c:#FF0074">
-      <span class="sbar"><span class="stxt"><b>Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
+      <span class="sbar"><span class="stxt"><b>UMK Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
       <span class="shelf"><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
       <span class="slogos"><img src="logos/sponsors/xenduri.png" alt="Xenduri"><img src="logos/sponsors/helmet28.png" alt="Helmet28"><img src="logos/sponsors/kkc.png" alt="KKC"></span></a>
 
@@ -542,7 +542,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794437550";
+const BUILD="1794437718";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
