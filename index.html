@@ -183,6 +183,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.shop .sbar::after{content:"";position:absolute;left:0;right:0;top:100%;height:40px;background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,0));pointer-events:none}
 .tile.shop .stxt{flex:1;min-width:0}
 .tile.shop .stxt b{display:block;white-space:nowrap;font-size:clamp(26px,7.8vw,38px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
+.tile.shop .stxt b .umk{display:inline-block;height:.74em;width:auto;vertical-align:baseline;transform:skewX(8deg);margin-right:.06em}
 .tile.shop .stxt small{margin-top:4px;color:#cfd0d6}
 .tile.shop .sgo{flex:none;font-weight:800;font-size:15px;color:#111;background:#fff;border-radius:999px;padding:10px 16px;box-shadow:0 3px 0 #FF0074,0 6px 14px rgba(0,0,0,.5)}
 .tile.shop .sbadge{display:inline-block;margin-top:8px;white-space:nowrap;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
@@ -235,7 +236,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>Setup Coach</b><small>Tell it what the kart's doing, get the fix</small></a>
 
     <a class="tile" href="standings/" style="--c:#00BE00">
-      <svg class="art" viewBox="0 0 200 170" aria-hidden="true"><g transform="translate(26 4) scale(.84)">
+      <svg class="art" style="width:100%;max-width:240px;right:-12px;top:-14px" viewBox="0 0 200 170" aria-hidden="true"><g transform="translate(-22 -14) scale(.82)">
         <g fill="#FF0074" opacity=".8"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
         <g fill="#00BE00" opacity=".8"><rect x="100" y="12" width="6" height="3" rx="1.5" transform="rotate(50 103 13)"/><circle cx="168" cy="36" r="2.5"/><circle cx="52" cy="48" r="2"/></g>
         <path d="M86 48h40v10a20 20 0 0 1-40 0z" fill="#F1F0EC"/><path d="M86 52H76a12 12 0 0 0 14 14M126 52h10a12 12 0 0 1-14 14" fill="none" stroke="#F1F0EC" stroke-width="4"/>
@@ -248,7 +249,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>Standings</b><small>Latest tables, UK and international</small></a>
 
     <a class="tile" data-m href="team/" style="--c:#FF0074">
-      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
+      <svg class="art" style="width:100%;max-width:240px;right:-14px;top:-12px" viewBox="0 0 200 170" aria-hidden="true">
         <rect x="132" y="20" width="8" height="150" fill="#555"/>
         <g transform="rotate(-6 110 70)">
           <rect x="58" y="24" width="112" height="92" rx="6" fill="#111" stroke="#FF0074" stroke-width="3"/>
@@ -256,7 +257,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
           <text x="114" y="98" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="22" font-weight="900" fill="#fff">+2.4</text>
           <rect x="66" y="104" width="96" height="5" rx="2" fill="#FF0074"/>
         </g>
-        <g transform="translate(24 98) scale(1.5)"><path d="M9 21.5v-4.5a11 11 0 0 1 22 0v4.5" fill="none" stroke="#F1F0EC" stroke-width="4.4" stroke-linecap="round"/><rect x="2.5" y="17" width="12" height="15.5" rx="4.5" fill="#FF0074"/><rect x="25.5" y="17" width="12" height="15.5" rx="4.5" fill="#FF0074"/><path d="M8.5 32.5c0 3.4 2.8 5 6.8 5h3.6" fill="none" stroke="#F1F0EC" stroke-width="3.2" stroke-linecap="round"/><rect x="18" y="34" width="9" height="6" rx="3" fill="#FF0074"/></g>
+        <g transform="translate(4 62) scale(1.25)"><path d="M9 21.5v-4.5a11 11 0 0 1 22 0v4.5" fill="none" stroke="#F1F0EC" stroke-width="4.4" stroke-linecap="round"/><rect x="2.5" y="17" width="12" height="15.5" rx="4.5" fill="#FF0074"/><rect x="25.5" y="17" width="12" height="15.5" rx="4.5" fill="#FF0074"/><path d="M8.5 32.5c0 3.4 2.8 5 6.8 5h3.6" fill="none" stroke="#F1F0EC" stroke-width="3.2" stroke-linecap="round"/><rect x="18" y="34" width="9" height="6" rx="3" fill="#FF0074"/></g>
       </svg>
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
@@ -368,7 +369,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>USE MORE KERB Championship</b><small>The race series for Team UMK members</small></a>
 
     <a class="tile wide shop" href="store/" style="--c:#FF0074">
-      <span class="sbar"><span class="stxt"><b>UMK Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
+      <span class="sbar"><span class="stxt"><b><img class="umk" src="img/umk.png" alt="UMK" width="541" height="154"> Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
       <span class="shelf"><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
       <span class="slogos"><img src="logos/sponsors/xenduri.png" alt="Xenduri"><img src="logos/sponsors/helmet28.png" alt="Helmet28"><img src="logos/sponsors/kkc.png" alt="KKC"></span></a>
 
@@ -544,7 +545,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794437989";
+const BUILD="1794438188";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
