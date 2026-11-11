@@ -178,7 +178,8 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.shop .slogos img{height:18px;width:auto;opacity:.92}
 .tile.shop .slogos img:nth-child(1){height:12px}
 .tile.shop .slogos img:nth-child(3){height:22px}
-.tile.shop .sbar{position:relative;z-index:2;display:flex;align-items:center;gap:12px;padding:14px 14px 12px;background:rgba(0,0,0,.72);border-bottom:1px solid rgba(255,255,255,.1)}
+.tile.shop .sbar{position:relative;z-index:2;display:flex;align-items:center;gap:12px;padding:14px 14px 12px;background:rgba(0,0,0,.72)}
+.tile.shop .sbar::after{content:"";position:absolute;left:0;right:0;top:100%;height:40px;background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,0));pointer-events:none}
 .tile.shop .stxt{flex:1;min-width:0}
 .tile.shop .stxt b{display:block;white-space:nowrap;font-size:clamp(26px,7.8vw,38px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
 .tile.shop .stxt small{margin-top:4px;color:#cfd0d6}
@@ -542,7 +543,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794437718";
+const BUILD="1794437857";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
