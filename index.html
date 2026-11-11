@@ -160,6 +160,8 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 @media (hover:hover){.tile:hover,.nx:hover{transform:translateY(-1px);filter:brightness(1.06)}}
 .tile.wide .art.karts{width:55%;max-width:320px;right:0;top:auto;bottom:-2px;transform:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.45))}
 .tile.mc{background:radial-gradient(60% 90% at 78% 70%,rgba(0,190,0,.22),transparent 70%),radial-gradient(50% 80% at 60% 30%,rgba(255,0,116,.2),transparent 70%),radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--c) 30%,transparent),transparent 62%),var(--surface)}
+.tile.st b{font-size:clamp(28px,8.4vw,40px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.03em;color:#fff;transform:rotate(-8deg) skewX(-8deg);transform-origin:left bottom;margin:10px 0 10px 0;text-shadow:2px 2px 0 #FF0074,4px 4px 0 #00BE00,0 6px 18px rgba(0,0,0,.7)}
+.tile.st small{margin-top:2px;max-width:9.5em}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -337,7 +339,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       </svg>
       <b>Members' Championship</b><small>The Use More Kerb race series for Team UMK members</small></a>
 
-    <a class="tile wide cf" href="store/" style="--c:#F1F0EC">
+    <a class="tile wide cf st" href="store/" style="--c:#F1F0EC">
       <img class="art merch" src="img/store-merch.png" alt="" width="600" height="330">
       <b>Store</b><small>Merch, helmets and race kit</small></a>
 
@@ -513,7 +515,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794435452";
+const BUILD="1794435597";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
