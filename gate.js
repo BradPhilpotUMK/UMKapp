@@ -78,7 +78,8 @@
     ".umkG ol{text-align:left;margin:0;padding:0;list-style:none;counter-reset:s}" +
     ".umkG ol li{counter-increment:s;position:relative;padding:12px 12px 12px 48px;margin-bottom:8px;background:#17181c;border:1px solid #2a2b30;border-radius:14px;font-size:14.5px;color:#d8d7d2}" +
     ".umkG ol li:before{content:counter(s);position:absolute;left:12px;top:11px;width:26px;height:26px;border-radius:50%;background:#2a2b30;color:#F1F0EC;display:grid;place-items:center;font-weight:800;font-size:13px}" +
-    ".umkG ol li b{color:#F1F0EC}.umkG a.lnk{color:#22F522}";
+    ".umkG ol li b{color:#F1F0EC}.umkG a.lnk{color:#22F522}" +
+    ".umkG .btn.conn{margin-top:10px;padding:11px 14px;font-size:14.5px;border-color:#5865F2;color:#c9cdfb}";
   (D.head || H).appendChild(css);
 
   var REASON = {
@@ -120,6 +121,11 @@
     if (denied) sayFn(REASON[denied] || REASON.error, denied !== "cancelled");
     var b = root.querySelector("[data-signin]"); if (b) b.onclick = signIn;
     var j = root.querySelector("[data-join]"); if (j) j.onclick = function () { track("gate-join", "Gate: join on YouTube"); };
+    root.querySelectorAll("[data-conn]").forEach(function (c) { c.onclick = function () {
+      track("gate-connections", "Gate: open Discord connections");
+      /* opens the Discord app on the Connections page; if Discord isn't installed nothing happens, so say where to go */
+      setTimeout(function () { if (D.visibilityState === "visible") sayFn("If Discord didn't open, open it yourself and go to Settings \u203a Connections \u203a YouTube."); }, 1500);
+    }; });
     if (sid) { startPolling(); poll(); }
     try { navigator.serviceWorker && navigator.serviceWorker.getRegistration().then(function (r) { r && r.update(); }); } catch (e) {}
   }
@@ -151,7 +157,7 @@
       '<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/' + CFG.trailer + '?rel=0&amp;playsinline=1" title="BUT WHY: Team Use More Kerb members trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>' +
       '<a class="btn yt" data-join href="' + CFG.join + '" target="_blank" rel="noopener">Join on YouTube from £2.99 a month</a>' +
       '<h2>Already a member?</h2><ol>' +
-      '<li><b>Link YouTube to Discord:</b> in Discord, go to Settings › Connections › YouTube and connect the account you joined with.</li>' +
+      '<li><b>Link YouTube to Discord:</b> in Discord, go to Settings › Connections › YouTube and connect the account you joined with.<a class="btn ghost conn" data-conn href="discord://-/settings/connections">Open Discord › Connections</a></li>' +
       '<li>Your member role in the ' + invite + ' is added automatically (it can take up to an hour).</li>' +
       '<li>Then tap below to check again.</li></ol>' +
       '<button class="btn ghost" type="button" data-signin>I’m a member, check again</button>' +
@@ -192,7 +198,7 @@
     '<h2>How to get in</h2><ol>' +
     '<li><b>Join the ' + invite + '</b> (it’s free).</li>' +
     '<li><b>Tap Sign in with Discord</b> above and approve it.</li>' +
-    '<li><b>Want every tool?</b> Become a channel member on YouTube and link YouTube to Discord (Settings › Connections). Your member role unlocks everything.</li></ol>' +
+    '<li><b>Want every tool?</b> Become a channel member on YouTube and link YouTube to Discord (Settings › Connections). Your member role unlocks everything.<a class="btn ghost conn" data-conn href="discord://-/settings/connections">Open Discord › Connections</a></li></ol>' +
     '<a class="btn yt" data-join href="' + CFG.join + '" target="_blank" rel="noopener">Become a member on YouTube</a>' +
     '</div>';
   mount(g, true);

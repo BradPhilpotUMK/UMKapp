@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <style>html,body{background:#0b0b0c}</style>
-<script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
+<script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app");try{if(sessionStorage.getItem("umk-hub-intro")!=="1"){document.documentElement.classList.add("intro");setTimeout(function(){document.documentElement.classList.remove("intro")},6000)}}catch(e){}</script>
 <meta charset="utf-8">
 <script src="gate.js" data-need="any"></script>
 <meta name="color-scheme" content="dark">
@@ -12,20 +12,20 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="apple-mobile-web-app-title" content="Use More Kerb">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/640x1136.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/750x1334.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1242x2208.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1125x2436.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/828x1792.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1242x2688.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1170x2532.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1284x2778.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1179x2556.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1290x2796.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1206x2622.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1320x2868.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1080x2340.png?v=2">
-<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1260x2736.png?v=2">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1284x2778.png">
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1179x2556.png">
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1290x2796.png">
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1206x2622.png">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1320x2868.png">
+<link rel="apple-touch-startup-image" media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1080x2340.png">
+<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="startup/1260x2736.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -137,11 +137,17 @@ button{font:inherit;color:inherit;cursor:pointer}
 @keyframes pop{from{opacity:0;transform:skewX(8deg) scale(.6)}to{opacity:1;transform:skewX(8deg) scale(1)}}
 @keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(-5%,3%)}50%{transform:translate(4%,-4%)}75%{transform:translate(-3%,-2%)}}
 #splash:not(.go),#splash:not(.go) *{animation-play-state:paused!important}
-/* installed app: the iPhone launch screen is this settled frame, so start from it (logo and title already in place) */
-html.ios-app #splash .lock img{animation:none!important;opacity:1;transform:skewX(8deg)}
+/* installed app: the iPhone shows its launch screen (black, logo at 55% width, dead centre) first.
+   Start from exactly that frame: logo in the same place and size, then fade the track and title in around it. */
+html.ios-app #splash .lock img{animation:none!important;opacity:1;transform:skewX(8deg);width:55vw!important;max-width:none;margin:0 auto}
+html.ios-app #splash .lock{padding:0;filter:none}
+html.ios-app #splash .ttl{position:absolute;left:50%;top:100%;margin-top:22px;transform:translateX(-50%)}
 html.ios-app #splash .w{animation:none!important;opacity:1;transform:none}
-@media (display-mode: standalone){#splash .lock img{animation:none!important;opacity:1;transform:skewX(8deg)}#splash .w{animation:none!important;opacity:1;transform:none}}
-
+html.ios-app #splash .bg,html.ios-app #splash .shade,html.ios-app #splash .grain,html.ios-app #splash .lock::before{transition:opacity .8s ease .05s}
+html.ios-app #splash .ttl{transition:opacity .6s ease .35s}
+html.ios-app #splash:not(.go) .bg,html.ios-app #splash:not(.go) .shade,html.ios-app #splash:not(.go) .grain,html.ios-app #splash:not(.go) .lock::before,html.ios-app #splash:not(.go) .ttl{opacity:0}
+/* the home screen stays hidden underneath until the opening has finished */
+html.intro #scroller{visibility:hidden}
 #splash .lock img{width:min(62vw,300px)}
 #splash:not(.go),#splash:not(.go) *{animation-play-state:paused!important}
 @media (prefers-reduced-motion: reduce){.tile{transition:none}}
@@ -379,9 +385,9 @@ function liveKZ(){
   const end=kzGraph(C);setTimeout(()=>{try{C.close()}catch(e){}},(end+0.5)*1000);
 }
 prepKZ();
-function hideSplash(){const sp=$("#splash");clearTimeout(sp._t);sp.classList.add("out");setTimeout(()=>{if(sp.classList.contains("out"))sp.style.display="none"},800)}
+function hideSplash(){const sp=$("#splash");clearTimeout(sp._t);sp.classList.add("out");document.documentElement.classList.remove("intro");setTimeout(()=>{if(sp.classList.contains("out"))sp.style.display="none"},800)}
 (function(){const sp=$("#splash");let seen=false;try{seen=sessionStorage.getItem("umk-hub-intro")==="1";sessionStorage.setItem("umk-hub-intro","1")}catch(e){}
-  if(seen){sp.remove();return}
+  if(seen){sp.remove();document.documentElement.classList.remove("intro");return}
   try{drawTrack($("#splashCv"))}catch(e){}
   sp.onclick=()=>{if(!sp.classList.contains("out"))kzShift();hideSplash()};
   const go=()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{sp.classList.add("go");sp._t=setTimeout(hideSplash,2600)}));
@@ -402,7 +408,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794413475";
+const BUILD="1794413931";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
