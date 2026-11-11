@@ -279,12 +279,13 @@ function search(text,via){
     html+=`<h2 class="sect" style="margin-top:4px">Most likely</h2>`+card(top[0].p,true);
     if(rest.length)html+=`<h2 class="sect">Could also be</h2>`+rest.map(x=>card(x.p,false)).join("");
   }else if(ST.mode==="rental"&&/\b(engine|starter|crank|rotax|carb|spark|clutch|won'?t start)\b/i.test(text))html+=`<p class="none">Engine problems on a rental kart are for the track staff: tell a marshal or the pits. Switch to Owner for engine troubleshooting on your own kart.</p>`;
-  else html+=`<p class="none">I couldn't match that to a problem in the guide. Try describing where in the corner it happens (turn-in, mid-corner or exit) and what the kart does (pushes wide, rear steps out, hops, bogs down), or ask the AI coach below.</p>`;
+  else html+=`<p class="none">I couldn't match that to a problem in the guide. Try describing where in the corner it happens (turn-in, mid-corner or exit) and what the kart does (pushes wide, rear steps out, hops, bogs down).</p>`;
   html+=aiBox();
   $("#results").innerHTML=html;$("#home").hidden=true;
   $("#results").scrollIntoView({behavior:"smooth",block:"start"});
 }
-function aiBox(){return `<div class="ai" id="aiBox"><div class="row"><b>Not quite right?<small>Ask the AI coach about your exact situation${ST.mode==="rental"?" (driving only)":""}.</small></b><button class="btn" id="aiGo">Ask the AI</button></div><div class="aitext" id="aiText" hidden></div></div>`}
+const AI_ON=false; /* Ask the AI switched off until Netlify credits are sorted; set true to bring it back */
+function aiBox(){if(!AI_ON)return "";return `<div class="ai" id="aiBox"><div class="row"><b>Not quite right?<small>Ask the AI coach about your exact situation${ST.mode==="rental"?" (driving only)":""}.</small></b><button class="btn" id="aiGo">Ask the AI</button></div><div class="aitext" id="aiText" hidden></div></div>`}
 async function askAI(){
   const out=$("#aiText"),btn=$("#aiGo");if(!lastQ)return;
   out.hidden=false;out.textContent="Thinking…";btn.disabled=true;gc("ask-ai","Asked the AI coach");
