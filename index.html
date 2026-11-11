@@ -172,18 +172,18 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 
 /* Store tile: a lit shop window */
 .tile.shop{padding:0;min-height:0;justify-content:flex-start;border-color:rgba(255,0,116,.5);background:radial-gradient(60% 70% at 22% 30%,rgba(255,0,116,.38),transparent 70%),radial-gradient(55% 70% at 80% 30%,rgba(0,190,0,.3),transparent 70%),linear-gradient(180deg,#17171c,#0b0b0d)}
-.tile.shop .shelf{display:block;padding:30px 0 0}
+.tile.shop .shelf{position:relative;display:block;padding:6px 0 0}
 .tile.shop .shelf img{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 14px rgba(0,0,0,.6))}
 .tile.shop .slogos{display:flex;align-items:center;justify-content:space-evenly;gap:12px;padding:8px 14px 12px}
 .tile.shop .slogos img{height:18px;width:auto;opacity:.92}
 .tile.shop .slogos img:nth-child(1){height:12px}
 .tile.shop .slogos img:nth-child(3){height:22px}
-.tile.shop .sbar{display:flex;align-items:center;gap:12px;padding:12px 14px 14px;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.65));border-top:1px solid rgba(255,255,255,.08)}
+.tile.shop .sbar{position:relative;z-index:2;display:flex;align-items:center;gap:12px;padding:14px 14px 12px;background:linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,.6));border-bottom:1px solid rgba(255,255,255,.08)}
 .tile.shop .stxt{flex:1;min-width:0}
 .tile.shop .stxt b{display:block;font-size:clamp(30px,9vw,40px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
 .tile.shop .stxt small{margin-top:4px;color:#cfd0d6}
 .tile.shop .sgo{flex:none;font-weight:800;font-size:15px;color:#111;background:#fff;border-radius:999px;padding:10px 16px;box-shadow:0 3px 0 #FF0074,0 6px 14px rgba(0,0,0,.5)}
-.tile.shop .sbadge{position:absolute;top:10px;left:10px;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+.tile.shop .sbadge{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);white-space:nowrap;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -366,10 +366,9 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>USE MORE KERB Championship</b><small>The race series for Team UMK members</small></a>
 
     <a class="tile wide shop" href="store/" style="--c:#FF0074">
-      <span class="shelf"><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
-      <span class="slogos"><img src="logos/sponsors/xenduri.png" alt="Xenduri"><img src="logos/sponsors/helmet28.png" alt="Helmet28"><img src="logos/sponsors/kkc.png" alt="KKC"></span>
-      <span class="sbar"><span class="stxt"><b>Store</b><small>Merch, helmets, race kit and kart parts</small></span><span class="sgo">Shop now ›</span></span>
-      <span class="sbadge">Discount codes inside</span></a>
+      <span class="sbar"><span class="stxt"><b>Store</b><small>Merch, race kit and kart parts</small></span><span class="sgo">Shop now ›</span></span>
+      <span class="shelf"><span class="sbadge">Discount codes inside</span><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
+      <span class="slogos"><img src="logos/sponsors/xenduri.png" alt="Xenduri"><img src="logos/sponsors/helmet28.png" alt="Helmet28"><img src="logos/sponsors/kkc.png" alt="KKC"></span></a>
 
     <a class="tile wide brad" href="brad/" style="--c:#F5C542">
       <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
@@ -543,7 +542,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794436616";
+const BUILD="1794436983";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
