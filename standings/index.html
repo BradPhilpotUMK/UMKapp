@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<style>html,body{background:#0b0b0c}</style>
+<style>html,body{background:#0b0b0c}.part{margin:8px 2px 0;color:var(--muted);font-size:13px;line-height:1.35}
+</style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
 <meta name="color-scheme" content="dark">
@@ -92,7 +93,8 @@ function render(){
     return `<div class="ch${open?" open":""}"><button data-ch="${c.id}"><b>${esc(c.name)}<small>${esc(c.season||"")}${c.classes.length?" · "+c.classes.length+" class"+(c.classes.length>1?"es":""):""}</small></b>${badge(c.status)}<i>›</i></button>
       <div class="body">${c.classes.length?`<div class="cls">${c.classes.map((x,i)=>`<button data-cl="${c.id}|${i}" class="${x===k?"on":""}">${esc(x.name)}</button>`).join("")}</div>
       <table><tr><th>Pos</th><th>Driver</th><th style="text-align:right">${k.rows.some(r=>r.points!=null)?"Pts":""}</th></tr>${k.rows.map(r=>`<tr><td class="p">${r.pos}</td><td>${esc(r.driver)}${r.team?`<small>${esc(r.team)}</small>`:""}</td><td class="n">${r.points??""}</td></tr>`).join("")}</table>
-      <div class="meta"><span>${esc(k.status||c.status||"")}</span>${k.source?`<a href="${esc(k.source)}" target="_blank" rel="noopener">Full results ›</a>`:""}</div>`
+      ${k.rows.length<3?`<p class="part">${k.rows.length===1?"Only the winner has been published so far.":"Only the top "+k.rows.length+" have been published so far."} Check the official site for the full results.</p>`:""}
+      <div class="meta"><span>${esc(k.status||c.status||"")}</span>${(()=>{const social=/instagram\.com|facebook\.com|tiktok\.com|x\.com|twitter\.com/i.test(k.source||"");const u=(!k.source||social||k.rows.length<3)&&c.url?c.url:k.source;return u?`<a href="${esc(u)}" target="_blank" rel="noopener">${u===c.url&&(u!==k.source||k.rows.length<3)?"Official site":"Full results"} ›</a>`:""})()}</div>`
       :`<p class="none">${esc(c.note||"Standings coming soon.")}</p>${c.url?`<div class="meta"><span></span><a href="${esc(c.url)}" target="_blank" rel="noopener">Official site ›</a></div>`:""}`}</div></div>`}).join(""):`<p class="none">No championships match.</p>`;
 }
 document.addEventListener("click",e=>{const t=e.target.closest("[data-c],[data-ch],[data-cl]");if(!t)return;const d=t.dataset;

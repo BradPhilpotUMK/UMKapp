@@ -69,7 +69,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .av img{width:100%;height:100%;object-fit:cover;display:block}
 .av.add{border-style:dashed;background:color-mix(in srgb,var(--c) 14%,transparent)}
 .av.add svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.av.brad{border-color:#F5C542;background:#fff;pointer-events:none}
+.av.brad{border:none;background:none;border-radius:0;overflow:visible;width:44px;height:44px;top:24px;right:6px;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))}.av.brad img{object-fit:contain}
 .nx .d{color:var(--c,var(--accent));font-weight:700}
 /* tool tiles */
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -78,6 +78,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .tile.wide{grid-column:1/-1;min-height:132px;padding-right:48%;justify-content:center}
 .tile.wide .tag{position:relative;top:auto;right:auto;align-self:flex-start;margin-bottom:6px}
 .tile .art{position:absolute;right:-16px;top:-10px;width:78%;max-width:190px;pointer-events:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.45))}
+.tile.wide .art.merch{width:60%;max-width:310px;height:auto;right:-2px;filter:none}
 .tile.wide .art{right:-6px;top:50%;transform:translateY(-50%);width:50%;max-width:250px}
 .tile b,.tile small{position:relative;text-shadow:0 1px 8px rgba(0,0,0,.7)}
 .tile:not(.wide)::after{content:"";position:absolute;inset:auto 0 0 0;height:62%;background:linear-gradient(transparent,color-mix(in srgb,var(--surface) 92%,transparent) 55%);pointer-events:none}
@@ -202,21 +203,7 @@ button{font:inherit;color:inherit;cursor:pointer}
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
     <a class="tile wide cf" href="store/" style="--c:#F1F0EC">
-      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
-        <g transform="rotate(-8 80 80)">
-          <path d="M44 34 L66 22 C72 32 92 32 98 22 L120 34 L134 62 L116 70 L112 60 L112 134 L52 134 L52 60 L48 70 L30 62Z" fill="#17181b" stroke="#F1F0EC" stroke-opacity=".5" stroke-width="2"/>
-          <text x="82" y="78" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#22F522">USE.</text>
-          <text x="82" y="92" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#FF1CE8">MORE.</text>
-          <text x="82" y="106" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#fff">KERB.</text>
-        </g>
-        <g transform="translate(130 36)">
-          <path d="M10 70 C4 30 30 4 62 4 C92 4 106 26 106 52 L106 80 C106 92 98 98 86 98 L30 98 C18 98 12 88 10 70Z" fill="#F1F0EC"/>
-          <path d="M44 34 C60 26 98 28 106 44 L106 64 C88 70 58 70 40 62 C34 52 36 40 44 34Z" fill="#1b1d22"/>
-          <path d="M48 40 C62 34 92 36 100 46" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
-          <path d="M12 76 C40 84 80 84 106 78" fill="none" stroke="#E040C8" stroke-width="6"/>
-          <circle cx="24" cy="54" r="10" fill="#111"/><text x="24" y="58.5" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-size="12" font-weight="800" fill="#fff">28</text>
-        </g>
-      </svg>
+      <img class="art merch" src="img/store-merch.png" alt="" width="600" height="330">
       <b>Store</b><small>Merch, helmets and race kit</small></a>
 
     <a class="tile wide" href="members/" style="--c:#8B6CF0"><span class="tag">New</span>
@@ -388,7 +375,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794408931";
+const BUILD="1794409311";
 async function checkUpdate(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=String((await r.json()).build);
   if(v&&v!==BUILD&&Number(v)>Number(BUILD)){let tried="";try{tried=sessionStorage.getItem("umk-upd")||""}catch(e){}
     if(tried===v)return;try{sessionStorage.setItem("umk-upd",v)}catch(e){}
