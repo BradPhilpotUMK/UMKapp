@@ -4,7 +4,8 @@
 
    Environment variables (Netlify: Site configuration > Environment variables):
      DISCORD_CLIENT_ID       from the Discord Developer Portal (your application > OAuth2)
-     DISCORD_CLIENT_SECRET   same page
+     DISCORD_CLIENT_SECRET   same page (optional: leave it out if "Public Client" is switched on in the Discord app,
+                             the sign-in then uses PKCE and needs no secret)
      DISCORD_GUILD_ID        your Discord server ID
      DISCORD_ROLE_IDS        member role IDs that unlock the app, comma separated
      UMK_PASS_SECRET         any long random text (keeps passes from being forged)
@@ -14,7 +15,7 @@
      UMK_PASS_DAYS           how long a pass lasts before signing in again, default 90
 
    Discord redirect URL to register: https://<your-netlify-site>/.netlify/functions/discord-auth */
-import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
+import { createHash, createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import { getStore } from "@netlify/blobs";
 
 const env = k => (process.env[k] || "").trim();
@@ -73,7 +74,7 @@ export default async (req) => {
   const origin = req.headers.get("origin");
   if (req.method === "OPTIONS") return new Response(null, { headers: { ...cors(origin), "Access-Control-Allow-Methods": "GET", "Access-Control-Allow-Headers": "Content-Type" } });
 
-  const ready = ["DISCORD_CLIENT_ID", "DISCORD_CLIENT_SECRET", "DISCORD_GUILD_ID", "DISCORD_ROLE_IDS", "UMK_PASS_SECRET"].every(env);
+  const ready = ["DISCORD_CLIENT_ID", "DISCORD_GUILD_ID", "DISCORD_ROLE_IDS", "UMK_PASS_SECRET"].every(env);
   if (!ready) return q.has("poll") || q.has("verify") ? json({ error: "not-configured" }, 503, origin)
     : page("Not switched on yet", "Members sign-in hasn't been set up yet.", "", "");
 
@@ -100,8 +101,12 @@ export default async (req) => {
     const sid = q.get("sid") || "", ret = q.get("ret") || "";
     if (!/^[A-Za-z0-9_-]{16,64}$/.test(sid) || !okReturn(ret, self)) return page("Something went wrong", "That sign-in link isn't valid.", "", "");
     const state = sign({ sid, ret, ts: Date.now(), n: randomBytes(6).toString("hex") });
+    /* PKCE: the verifier stays on the server, only its hash goes to Discord */
+    const verifier = randomBytes(48).toString("base64url");
+    await store.setJSON("v/" + sid, { verifier, at: Date.now() });
+    const challenge = createHash("sha256").update(verifier).digest("base64url");
     const d = new URL("https://discord.com/oauth2/authorize");
-    d.search = new URLSearchParams({ client_id: env("DISCORD_CLIENT_ID"), response_type: "code", redirect_uri: self.href, scope: "identify guilds.members.read", state, prompt: "none" });
+    d.search = new URLSearchParams({ client_id: env("DISCORD_CLIENT_ID"), response_type: "code", redirect_uri: self.href, scope: "identify guilds.members.read", state, prompt: "none", code_challenge: challenge, code_challenge_method: "S256" });
     return Response.redirect(d.href, 302);
   }
 
@@ -118,9 +123,14 @@ export default async (req) => {
   if (q.get("error")) return finish({ denied: "cancelled" });
 
   try {
+    const v = await store.get("v/" + st.sid, { type: "json" });
+    await store.delete("v/" + st.sid);
+    const form = { client_id: env("DISCORD_CLIENT_ID"), grant_type: "authorization_code", code: q.get("code") || "", redirect_uri: self.href };
+    if (v && v.verifier) form.code_verifier = v.verifier;
+    if (env("DISCORD_CLIENT_SECRET")) form.client_secret = env("DISCORD_CLIENT_SECRET");
     const tok = await fetch("https://discord.com/api/oauth2/token", {
       method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({ client_id: env("DISCORD_CLIENT_ID"), client_secret: env("DISCORD_CLIENT_SECRET"), grant_type: "authorization_code", code: q.get("code") || "", redirect_uri: self.href })
+      body: new URLSearchParams(form)
     }).then(r => r.json());
     if (!tok.access_token) return finish({ denied: "error" });
     const auth = { Authorization: "Bearer " + tok.access_token };

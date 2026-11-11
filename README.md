@@ -36,8 +36,8 @@ The whole app can be locked to Team Use More Kerb members. `gate.js` loads first
 To switch it on:
 
 1. **Discord server:** Server Settings › Integrations › YouTube, connect the channel, and choose the member roles (one per membership level). Turn on Developer Mode (User Settings › Advanced), then right-click the server for its ID and each member role for its ID.
-2. **Discord app:** at discord.com/developers, New Application › OAuth2. Copy the Client ID and Client Secret, and add the redirect `https://<your-netlify-site>/.netlify/functions/discord-auth`.
-3. **Netlify environment variables:** `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_GUILD_ID`, `DISCORD_ROLE_IDS` (comma separated), `UMK_PASS_SECRET` (any long random text). Optional: `DISCORD_EXTRA_USER_IDS` (people always let in, e.g. Brad), `UMK_PASS_DAYS`, `UMK_ALLOWED_HOSTS`.
+2. **Discord app:** at discord.com/developers, New Application › OAuth2. Copy the Client ID, switch on **Public Client** (so no client secret is needed; the sign-in uses PKCE), and add the redirect `https://umkseasonplanner.netlify.app/.netlify/functions/discord-auth`.
+3. **Netlify environment variables:** `DISCORD_CLIENT_ID`, `DISCORD_GUILD_ID`, `DISCORD_ROLE_IDS` (comma separated), `UMK_PASS_SECRET` (any long random text). Optional: `DISCORD_CLIENT_SECRET` (only if Public Client is off), `DISCORD_EXTRA_USER_IDS` (people always let in, e.g. Brad), `UMK_PASS_DAYS`, `UMK_ALLOWED_HOSTS`.
 4. **gate.js:** set `enabled: true`, `netlify` to the Netlify address (so the GitHub Pages copy can sign in too) and `discordInvite` to the server invite link.
 
 Sign-in results are handed back to the app through Netlify Blobs (`@netlify/blobs`), so it works from the installed iPhone and Android apps as well as the browser.
