@@ -3,7 +3,7 @@
    once the Discord sign-in is set up on Netlify (see netlify/functions/discord-auth.mjs). */
 (function () {
   var CFG = {
-    enabled: false,
+    enabled: true,
     netlify: "https://umkseasonplanner.netlify.app",              /* the Netlify address, e.g. "https://use-more-kerb.netlify.app" (used when the app is opened from GitHub Pages) */
     discordInvite: "https://discord.gg/DZDKW9fWmA",        /* invite link to the Use More Kerb Discord server */
     join: "https://www.youtube.com/@BradPhilpot/join",
