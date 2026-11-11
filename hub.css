@@ -18,8 +18,8 @@ header.top{position:sticky;top:0;z-index:20;background:var(--bg);padding:calc(12
 .brand .r{display:flex;align-items:center;gap:8px;margin-bottom:5px}
 .brand .r img{display:block;height:15px;width:auto}
 .brand h1{font-family:var(--display);font-weight:700;font-size:clamp(20px,6.4vw,28px);line-height:1.1;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.homechip{flex:none;display:grid;place-items:center;width:24px;height:24px;margin-left:-4px;border-radius:8px;background:var(--surface);border:1px solid var(--line);color:var(--text)}
-.homechip svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.homechip{flex:none;display:inline-flex;align-items:center;gap:2px;height:30px;padding:0 11px 0 6px;margin-left:-2px;border-radius:999px;background:var(--surface2,#26272d);border:1px solid color-mix(in srgb,var(--text,#fff) 22%,transparent);color:var(--text,#fff);font:700 13.5px/1 var(--body,system-ui),system-ui,sans-serif;text-decoration:none;letter-spacing:0;-webkit-tap-highlight-color:transparent}.homechip:active{transform:scale(.95)}
+.homechip svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 .sect{font-family:var(--display);font-size:18px;font-weight:700;margin:24px 0 8px}
 .hint{font-size:14px;color:var(--muted);margin:0 0 12px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}

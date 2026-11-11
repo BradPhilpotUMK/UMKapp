@@ -56,10 +56,10 @@ button{cursor:pointer}
 .wrap{max-width:560px;margin:0 auto;padding:0 14px 28px}
 header.top{position:sticky;top:0;z-index:20;background:var(--bg);padding:calc(12px + env(safe-area-inset-top,0px)) 0 10px;display:flex;align-items:center;gap:10px}
 .brand{flex:1;min-width:0}
-.homechip{flex:none;display:grid;place-items:center;width:24px;height:24px;margin-left:-4px;border-radius:8px;background:var(--surface);border:1px solid var(--line);color:var(--text)}
-.homechip svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.homechip{flex:none;display:inline-flex;align-items:center;gap:2px;height:30px;padding:0 11px 0 6px;margin-left:-2px;border-radius:999px;background:var(--surface2,#26272d);border:1px solid color-mix(in srgb,var(--text,#fff) 22%,transparent);color:var(--text,#fff);font:700 13.5px/1 var(--body,system-ui),system-ui,sans-serif;text-decoration:none;letter-spacing:0;-webkit-tap-highlight-color:transparent}.homechip:active{transform:scale(.95)}
+.homechip svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 
-.brand img{display:block;height:15px;width:auto;margin-bottom:5px}
+.brand img{display:block;height:15px;width:auto;margin-bottom:5px}.brand .homechip+img{height:auto;width:min(150px,36vw);min-width:0}
 .brand h1{font-family:var(--display);font-weight:700;font-size:clamp(20px,6.4vw,28px);line-height:1.1;margin:0;white-space:nowrap;display:flex;align-items:center;gap:.3em}
 .brand h1 span{overflow:hidden;text-overflow:ellipsis;min-width:0}
 .brand h1 .hs{width:1.4em;height:1.4em;flex:none;margin:-.12em 0}
@@ -287,7 +287,7 @@ nav.tabs .inst svg{width:18px;height:18px;fill:none;stroke:var(--accent);stroke-
 </div>
 <div id="scroller"><div class="wrap">
   <header class="top">
-    <div class="brand"><div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></a><img style="margin:0" src="wm.png" alt="Use More Kerb"></div><h1><svg class="hs" viewBox="0 0 40 40" aria-hidden="true"><path d="M9 21.5v-4.5a11 11 0 0 1 22 0v4.5" fill="none" stroke="#F1F0EC" stroke-width="4.4" stroke-linecap="round"/><path d="M14.6 7.4a11 11 0 0 1 10.8 0" fill="none" stroke="#F5C542" stroke-width="4.4" stroke-linecap="round"/><rect x="2.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><rect x="25.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><rect x="6" y="20.5" width="5" height="8.5" rx="2.2" fill="#15161A" opacity=".3"/><rect x="29" y="20.5" width="5" height="8.5" rx="2.2" fill="#15161A" opacity=".3"/><path d="M8.5 32.5c0 3.4 2.8 5 6.8 5h3.6" fill="none" stroke="#F1F0EC" stroke-width="3.2" stroke-linecap="round"/><rect x="18" y="34" width="9" height="6" rx="3" fill="#E040C8"/></svg><span>Team manager</span></h1></div>
+    <div class="brand"><div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img style="margin:0" src="wm.png" alt="Use More Kerb"></div><h1><svg class="hs" viewBox="0 0 40 40" aria-hidden="true"><path d="M9 21.5v-4.5a11 11 0 0 1 22 0v4.5" fill="none" stroke="#F1F0EC" stroke-width="4.4" stroke-linecap="round"/><path d="M14.6 7.4a11 11 0 0 1 10.8 0" fill="none" stroke="#F5C542" stroke-width="4.4" stroke-linecap="round"/><rect x="2.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><rect x="25.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><rect x="6" y="20.5" width="5" height="8.5" rx="2.2" fill="#15161A" opacity=".3"/><rect x="29" y="20.5" width="5" height="8.5" rx="2.2" fill="#15161A" opacity=".3"/><path d="M8.5 32.5c0 3.4 2.8 5 6.8 5h3.6" fill="none" stroke="#F1F0EC" stroke-width="3.2" stroke-linecap="round"/><rect x="18" y="34" width="9" height="6" rx="3" fill="#E040C8"/></svg><span>Team manager</span></h1></div>
     <button class="iconbtn" id="dataBtn" aria-label="Back up or restore your team"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 17v3h16v-3"/></svg></button>
     <button class="iconbtn" id="addBtn" aria-label="Add">+</button>
   </header>

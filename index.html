@@ -63,16 +63,25 @@ button{font:inherit;color:inherit;cursor:pointer}
 .nx .l i{width:7px;height:7px;border-radius:50%;background:var(--c,var(--accent))}
 .nx b{display:block;font-family:var(--display);font-size:15.5px;line-height:1.2;margin-top:4px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .nx small{display:block;color:var(--muted);font-size:12.5px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nxw{position:relative;min-width:0}
+.nxw .nx{height:100%}.nxw .nx b,.nxw .nx small{margin-right:40px}
+.av{position:absolute;top:29px;right:10px;width:36px;height:36px;border-radius:50%;padding:0;border:2px solid var(--c);background:var(--surface2,#26272d);overflow:hidden;display:grid;place-items:center;color:var(--c);cursor:pointer}
+.av img{width:100%;height:100%;object-fit:cover;display:block}
+.av.add{border-style:dashed;background:color-mix(in srgb,var(--c) 14%,transparent)}
+.av.add svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.av.brad{border-color:#F5C542;background:#fff;pointer-events:none}
 .nx .d{color:var(--c,var(--accent));font-weight:700}
 /* tool tiles */
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.tile{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:156px;border-radius:18px;padding:14px;overflow:hidden;border:1px solid color-mix(in srgb,var(--c) 40%,var(--line));background:radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--c) 32%,transparent),transparent 62%),var(--surface);transition:transform .12s}
+.tile{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:188px;border-radius:18px;padding:14px;overflow:hidden;border:1px solid color-mix(in srgb,var(--c) 40%,var(--line));background:radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--c) 32%,transparent),transparent 62%),var(--surface);transition:transform .12s}
 .tile:active{transform:scale(.97)}
-.tile.wide{grid-column:1/-1;min-height:118px;padding-left:68px;justify-content:center}
-.tile.wide .ic{top:50%;transform:translateY(-50%)}
-.tile.wide .tag{top:auto;bottom:12px}
-.tile .ic{position:absolute;top:13px;left:13px;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 22%,var(--surface2));color:var(--c)}
-.tile .ic svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tile.wide{grid-column:1/-1;min-height:132px;padding-right:48%;justify-content:center}
+.tile.wide .tag{position:relative;top:auto;right:auto;align-self:flex-start;margin-bottom:6px}
+.tile .art{position:absolute;right:-16px;top:-10px;width:78%;max-width:190px;pointer-events:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.45))}
+.tile.wide .art{right:-6px;top:50%;transform:translateY(-50%);width:50%;max-width:250px}
+.tile b,.tile small{position:relative;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.tile:not(.wide)::after{content:"";position:absolute;inset:auto 0 0 0;height:62%;background:linear-gradient(transparent,color-mix(in srgb,var(--surface) 92%,transparent) 55%);pointer-events:none}
+.tile:not(.wide)>b,.tile:not(.wide)>small{z-index:1}
 .tile b{font-family:var(--display);font-size:19px;line-height:1.1;font-weight:700}
 .tile small{display:block;color:var(--muted);font-size:13px;margin-top:4px;line-height:1.3}
 .tile .tag{position:absolute;top:14px;right:13px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#14051A;background:var(--c);border-radius:999px;padding:3px 8px}
@@ -130,14 +139,96 @@ button{font:inherit;color:inherit;cursor:pointer}
 
 <div id="scroller"><div class="wrap">
   <div class="top"><img src="data:image/png;base64,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" alt="Use More Kerb"><span class="hi" id="hi"></span></div>
-  <div class="nextrow" id="nextRow"></div>
+  <div class="nextrow" id="nextRow"></div><input type="file" id="avFile" accept="image/*" hidden>
   <nav class="tiles" aria-label="Use More Kerb tools">
-    <a class="tile" href="planner/" style="--c:#E040C8"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><b>Season Planner</b><small>Every race, every weekend, no clashes</small></a>
-    <a class="tile" href="standings/" style="--c:#4C8DFF"><span class="ic"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span><b>Standings</b><small>Latest tables, UK and international</small></a>
-    <a class="tile wide" href="members/" style="--c:#8B6CF0"><span class="tag">New</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 21V4M4 4h12l-2 4 2 4H4"/><circle cx="18" cy="18" r="3"/></svg></span><b>Members Championship</b><small>The Use More Kerb race series for Team UMK members</small></a>
-    <a class="tile" href="setup/" style="--c:#3BD16F"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><b>Setup Coach</b><small>Tell it what the kart's doing, get the fix</small></a>
-    <a class="tile" href="team/" style="--c:#F5C542"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 14v-2a7 7 0 0 1 14 0v2"/><rect x="2.5" y="13" width="5" height="7" rx="2"/><rect x="16.5" y="13" width="5" height="7" rx="2"/><path d="M5 20c0 1.5 1.5 2 3 2h3"/></svg></span><b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
-    <a class="tile wide cf" href="store/" style="--c:#F1F0EC"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg></span><b>Store</b><small>Merch, helmets and race kit</small></a>
+    <a class="tile" href="planner/" style="--c:#E040C8">
+      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
+        <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#E040C8" stroke-opacity=".35" stroke-width="14" stroke-linejoin="round"/>
+        <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 6"/>
+        <g transform="rotate(-8 120 80)">
+          <rect x="62" y="22" width="118" height="110" rx="12" fill="#2f2a33" stroke="#E040C8" stroke-opacity=".7" stroke-width="2"/>
+          <rect x="62" y="22" width="118" height="26" rx="12" fill="#E040C8"/><rect x="62" y="36" width="118" height="12" fill="#E040C8"/>
+          <circle cx="86" cy="22" r="4" fill="#fff"/><circle cx="156" cy="22" r="4" fill="#fff"/>
+          <g fill="#ffffff" fill-opacity=".14">
+            <rect x="72" y="58" width="16" height="14" rx="3"/><rect x="94" y="58" width="16" height="14" rx="3"/><rect x="116" y="58" width="16" height="14" rx="3"/><rect x="138" y="58" width="16" height="14" rx="3"/><rect x="160" y="58" width="12" height="14" rx="3"/>
+            <rect x="72" y="80" width="16" height="14" rx="3"/><rect x="94" y="80" width="16" height="14" rx="3"/><rect x="138" y="80" width="16" height="14" rx="3"/><rect x="160" y="80" width="12" height="14" rx="3"/>
+            <rect x="72" y="102" width="16" height="14" rx="3"/><rect x="116" y="102" width="16" height="14" rx="3"/><rect x="138" y="102" width="16" height="14" rx="3"/><rect x="160" y="102" width="12" height="14" rx="3"/>
+          </g>
+          <rect x="116" y="80" width="16" height="14" rx="3" fill="#E040C8"/><rect x="94" y="102" width="16" height="14" rx="3" fill="#3BD16F"/><rect x="160" y="58" width="12" height="14" rx="3" fill="#F5C542"/>
+          <g transform="translate(130 112)"><rect width="34" height="22" rx="3" fill="#fff"/><path d="M0 0h8.5v5.5H0zM17 0h8.5v5.5H17zM8.5 5.5H17V11H8.5zM25.5 5.5H34V11h-8.5zM0 11h8.5v5.5H0zM17 11h8.5v5.5H17zM8.5 16.5H17V22H8.5zM25.5 16.5H34V22h-8.5z" fill="#111"/><rect x="-3" y="-4" width="3" height="40" rx="1.5" fill="#ccc"/></g>
+        </g>
+      </svg>
+      <b>Season Planner</b><small>Every race, every weekend, no clashes</small></a>
+
+    <a class="tile" href="standings/" style="--c:#4C8DFF">
+      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
+        <g fill="#4C8DFF" opacity=".7"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
+        <g fill="#F5C542" opacity=".8"><rect x="100" y="12" width="6" height="3" rx="1.5" transform="rotate(50 103 13)"/><circle cx="168" cy="36" r="2.5"/><circle cx="52" cy="48" r="2"/></g>
+        <path d="M86 48h40v10a20 20 0 0 1-40 0z" fill="#F5C542"/><path d="M86 52H76a12 12 0 0 0 14 14M126 52h10a12 12 0 0 1-14 14" fill="none" stroke="#F5C542" stroke-width="4"/>
+        <rect x="102" y="76" width="8" height="12" fill="#E2B33A"/><rect x="92" y="86" width="28" height="7" rx="2" fill="#F5C542"/>
+        <rect x="80" y="96" width="52" height="74" rx="4" fill="#4C8DFF"/><rect x="28" y="116" width="52" height="54" rx="4" fill="#3A6FD0"/><rect x="132" y="128" width="52" height="42" rx="4" fill="#2C58A8"/>
+        <text x="106" y="138" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="30" font-weight="900" fill="#fff">1</text>
+        <text x="54" y="150" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="24" font-weight="900" fill="#fff" fill-opacity=".85">2</text>
+        <text x="158" y="157" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="22" font-weight="900" fill="#fff" fill-opacity=".75">3</text>
+      </svg>
+      <b>Standings</b><small>Latest tables, UK and international</small></a>
+
+    <a class="tile" href="setup/" style="--c:#3BD16F">
+      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
+        <g stroke="#3BD16F" stroke-opacity=".25" stroke-width="1"><path d="M0 20h200M0 50h200M0 80h200M0 110h200M0 140h200M30 0v170M70 0v170M110 0v170M150 0v170M190 0v170"/></g>
+        <g transform="rotate(-12 110 90)">
+          <rect x="62" y="38" width="22" height="34" rx="6" fill="#151816" stroke="#3BD16F" stroke-width="2"/><rect x="148" y="38" width="22" height="34" rx="6" fill="#151816" stroke="#3BD16F" stroke-width="2"/>
+          <rect x="56" y="112" width="28" height="40" rx="7" fill="#151816" stroke="#3BD16F" stroke-width="2"/><rect x="148" y="112" width="28" height="40" rx="7" fill="#151816" stroke="#3BD16F" stroke-width="2"/>
+          <path d="M84 55h64M84 132h64M96 44l-6 100M136 44l6 100M96 44h40" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="116" cy="70" r="11" fill="none" stroke="#fff" stroke-width="3"/><rect x="100" y="92" width="32" height="30" rx="6" fill="#E040C8" opacity=".85"/>
+          <path d="M60 26v-8h112v8M48 112h-10v40h10" fill="none" stroke="#3BD16F" stroke-dasharray="3 3" stroke-width="1.5"/>
+          <text x="116" y="14" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-size="11" fill="#3BD16F" font-weight="700">TRACK WIDTH</text>
+        </g>
+        <path d="M182 106a14 14 0 0 0-17 17l-32 32a6 6 0 0 0 8.5 8.5l32-32a14 14 0 0 0 17-17l-8 8-7.5-2-2-7.5z" fill="#3BD16F"/>
+      </svg>
+      <b>Setup Coach</b><small>Tell it what the kart's doing, get the fix</small></a>
+
+    <a class="tile" href="team/" style="--c:#F5C542">
+      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="132" y="20" width="8" height="150" fill="#555"/>
+        <g transform="rotate(-6 110 70)">
+          <rect x="58" y="24" width="112" height="92" rx="6" fill="#111" stroke="#F5C542" stroke-width="3"/>
+          <text x="114" y="62" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="34" font-weight="900" fill="#F5C542">P1</text>
+          <text x="114" y="98" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="22" font-weight="900" fill="#fff">+2.4</text>
+          <rect x="66" y="104" width="96" height="5" rx="2" fill="#3BD16F"/>
+        </g>
+        <g transform="translate(24 98) scale(1.5)"><path d="M9 21.5v-4.5a11 11 0 0 1 22 0v4.5" fill="none" stroke="#F1F0EC" stroke-width="4.4" stroke-linecap="round"/><rect x="2.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><rect x="25.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><path d="M8.5 32.5c0 3.4 2.8 5 6.8 5h3.6" fill="none" stroke="#F1F0EC" stroke-width="3.2" stroke-linecap="round"/><rect x="18" y="34" width="9" height="6" rx="3" fill="#E040C8"/></g>
+      </svg>
+      <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
+
+    <a class="tile wide cf" href="store/" style="--c:#F1F0EC">
+      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
+        <g transform="rotate(-8 80 80)">
+          <path d="M44 34 L66 22 C72 32 92 32 98 22 L120 34 L134 62 L116 70 L112 60 L112 134 L52 134 L52 60 L48 70 L30 62Z" fill="#17181b" stroke="#F1F0EC" stroke-opacity=".5" stroke-width="2"/>
+          <text x="82" y="78" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#22F522">USE.</text>
+          <text x="82" y="92" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#FF1CE8">MORE.</text>
+          <text x="82" y="106" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#fff">KERB.</text>
+        </g>
+        <g transform="translate(130 36)">
+          <path d="M10 70 C4 30 30 4 62 4 C92 4 106 26 106 52 L106 80 C106 92 98 98 86 98 L30 98 C18 98 12 88 10 70Z" fill="#F1F0EC"/>
+          <path d="M44 34 C60 26 98 28 106 44 L106 64 C88 70 58 70 40 62 C34 52 36 40 44 34Z" fill="#1b1d22"/>
+          <path d="M48 40 C62 34 92 36 100 46" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
+          <path d="M12 76 C40 84 80 84 106 78" fill="none" stroke="#E040C8" stroke-width="6"/>
+          <circle cx="24" cy="54" r="10" fill="#111"/><text x="24" y="58.5" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-size="12" font-weight="800" fill="#fff">28</text>
+        </g>
+      </svg>
+      <b>Store</b><small>Merch, helmets and race kit</small></a>
+
+    <a class="tile wide" href="members/" style="--c:#8B6CF0"><span class="tag">New</span>
+      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
+        <g transform="translate(150 12)"><rect x="0" y="0" width="4" height="120" fill="#bbb"/>
+          <path d="M4 4h64v40H4z" fill="#fff"/><path d="M4 4h8v8H4zM20 4h8v8h-8zM36 4h8v8h-8zM52 4h8v8h-8zM12 12h8v8h-8zM28 12h8v8h-8zM44 12h8v8h-8zM60 12h8v8h-8zM4 20h8v8H4zM20 20h8v8h-8zM36 20h8v8h-8zM52 20h8v8h-8zM12 28h8v8h-8zM28 28h8v8h-8zM44 28h8v8h-8zM60 28h8v8h-8zM4 36h8v8H4zM20 36h8v8h-8zM36 36h8v8h-8zM52 36h8v8h-8z" fill="#111"/></g>
+        <defs><g id="hm"><path d="M6 40 C2 18 18 2 38 2 C56 2 66 16 66 32 L66 48 C66 55 61 59 54 59 L20 59 C12 59 8 52 6 40Z"/><path d="M28 21 C38 16 60 17 66 27 L66 39 C55 43 37 43 26 38 C22 32 23 25 28 21Z" fill="#15131c"/></g></defs>
+        <use href="#hm" transform="translate(96 66)" fill="#8B6CF0"/>
+        <use href="#hm" transform="translate(40 76) scale(.9)" fill="#E040C8"/>
+        <use href="#hm" transform="translate(148 86) scale(.85)" fill="#3BD16F"/>
+      </svg>
+      <b>Members Championship</b><small>The Use More Kerb race series for Team UMK members</small></a>
   </nav>
   <button class="inst" id="instBar" hidden><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>Add the Use More Kerb app to your Home Screen</button>
   <p class="foot">Made by <a href="https://www.youtube.com/@BradPhilpot" target="_blank" rel="noopener">Brad Philpot · Use More Kerb</a> on YouTube</p>
@@ -166,8 +257,19 @@ async function renderNext(){
   try{const r=await fetch("data/brad.json",{cache:"no-cache"});if(r.ok){const B=await r.json();brad=(B.races||[]).filter(r=>dn(r.end||r.start)>=TODAY).sort((a,b)=>dn(a.start)-dn(b.start))[0]||null}}catch(e){}
   const box=(lbl,c,ev,href,empty)=>ev?`<a class="nx" href="${href}" style="--c:${c}"><span class="l"><i></i>${lbl}</span><b>${esc(ev.series&&ev.series!==ev.title?ev.series+": "+ev.title:ev.title)}</b><small><span class="d">${until(ev.start)}</span> · ${esc(fmt(ev.start))}${ev.location?" · "+esc(ev.location):""}</small></a>`
     :`<a class="nx" href="${href}" style="--c:${c}"><span class="l"><i></i>${lbl}</span><b>${empty}</b><small>Open the Season Planner</small></a>`;
-  $("#nextRow").innerHTML=box("Your next race","#E040C8",mine,"planner/","Tick your races")+box("Brad's next race","#F5C542",brad,"planner/","No race booked yet");
+  let me="";try{me=localStorage.getItem("umk-avatar")||""}catch(e){}
+  const myAv=me?`<button class="av" id="avBtn" style="--c:#E040C8" aria-label="Change your profile picture"><img alt="" src="${me}"></button>`
+    :`<button class="av add" id="avBtn" style="--c:#E040C8" aria-label="Add a profile picture"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>`;
+  $("#nextRow").innerHTML=`<div class="nxw">${box("Your next race","#E040C8",mine,"planner/","Tick your races")}${myAv}</div>`
+    +`<div class="nxw">${box("Brad's next race","#F5C542",brad,"planner/","No race booked yet")}<span class="av brad"><img alt="Brad" src="brad-logo.png"></span></div>`;
+  $("#avBtn").onclick=()=>$("#avFile").click();
 }
+$("#avFile").onchange=e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const img=new Image();const u=URL.createObjectURL(f);
+  img.onload=()=>{const S=200,c=document.createElement("canvas");c.width=c.height=S;const x=c.getContext("2d");const m=Math.min(img.width,img.height);
+    x.drawImage(img,(img.width-m)/2,(img.height-m)/2,m,m,0,0,S,S);URL.revokeObjectURL(u);
+    try{localStorage.setItem("umk-avatar",c.toDataURL("image/jpeg",.85))}catch(err){}
+    e.target.value="";renderNext();gc("hub-avatar","Added profile picture")};
+  img.src=u};
 renderNext();
 
 /* ---------- opening screen ---------- */
