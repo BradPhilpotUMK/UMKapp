@@ -148,6 +148,11 @@ html.fx #bgfx img{animation:splat .6s var(--d,0s) cubic-bezier(.2,1.5,.35,1) for
 html{background:#000}
 body{background:#000 url(img/camo.png) center/cover no-repeat}
 header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+
+/* dark frosted panel behind the tiles so they stand out from the camo */
+.tiles,.nextrow{position:relative;isolation:isolate}
+.tiles::before,.nextrow::before{content:"";position:absolute;inset:-8px;z-index:-1;border-radius:24px;background:rgba(0,0,0,.6);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 0 30px 10px rgba(0,0,0,.45);pointer-events:none}
+.nextrow:empty::before{display:none}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -408,7 +413,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794433995";
+const BUILD="1794434129";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
