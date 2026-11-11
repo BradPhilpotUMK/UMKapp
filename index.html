@@ -374,7 +374,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794409446";
+const BUILD="1794409569";
 async function checkUpdate(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=String((await r.json()).build);
   if(v&&v!==BUILD&&Number(v)>Number(BUILD)){let tried="";try{tried=sessionStorage.getItem("umk-upd")||""}catch(e){}
     if(tried===v)return;try{sessionStorage.setItem("umk-upd",v)}catch(e){}
