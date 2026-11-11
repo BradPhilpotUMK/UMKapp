@@ -186,6 +186,25 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.shop .stxt small{margin-top:4px;color:#cfd0d6}
 .tile.shop .sgo{flex:none;font-weight:800;font-size:15px;color:#111;background:#fff;border-radius:999px;padding:10px 16px;box-shadow:0 3px 0 #FF0074,0 6px 14px rgba(0,0,0,.5)}
 .tile.shop .sbadge{display:inline-block;margin-top:8px;white-space:nowrap;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+
+/* YouTube section */
+.tsec.yts{margin-top:40px}
+.ytc{position:relative;z-index:1;border-radius:18px;overflow:hidden;border:1px solid rgba(255,0,116,.45);background:#0b0b0d;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 10px 22px rgba(0,0,0,.5);margin-bottom:16px}
+.ytv{position:relative;aspect-ratio:16/9;background:#000;cursor:pointer}
+.ytv img,.ytv iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.ytv .ytp{position:absolute;left:50%;top:50%;width:68px;height:48px;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}
+.ytv .ytl{position:absolute;left:10px;top:10px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px}
+.ytb{padding:12px 14px 14px}
+.ytb b{display:block;font-family:var(--display);font-size:18px;line-height:1.2}
+.ytb small{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+.ytbtns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.ytgo,.ytsub{display:inline-flex;align-items:center;font-weight:800;font-size:14px;border-radius:999px;padding:9px 14px;text-decoration:none}
+.ytgo{background:#fff;color:#111}.ytsub{background:#FF0074;color:#fff}
+.ytmore{display:flex;gap:10px;overflow-x:auto;padding:0 14px 14px;scrollbar-width:none}
+.ytmore::-webkit-scrollbar{display:none}
+.ytmore a{flex:none;width:150px;text-decoration:none;color:var(--text)}
+.ytmore img{display:block;width:150px;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.1)}
+.ytmore span{display:block;font-size:12.5px;line-height:1.25;margin-top:5px;color:#d6d7dc;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -376,6 +395,13 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
       <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
   </nav>
+  <h2 class="tsec yts">YouTube</h2>
+  <div class="ytc" id="ytCard" hidden>
+    <div class="ytv" id="ytV"><img id="ytThumb" alt="" loading="lazy"><span class="ytp" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#FF0074"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span><span class="ytl">Latest video</span></div>
+    <div class="ytb"><b id="ytTitle"></b><small id="ytDate"></small>
+      <div class="ytbtns"><a class="ytgo" id="ytCm" target="_blank" rel="noopener">Like &amp; comment on YouTube ›</a><a class="ytsub" href="https://www.youtube.com/@BradPhilpot?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a></div></div>
+    <div class="ytmore" id="ytMore"></div>
+  </div>
   <button class="inst" id="instBar" hidden><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>Add the Use More Kerb app to your Home Screen</button>
   <p class="foot">Made by <a href="https://www.youtube.com/@BradPhilpot" target="_blank" rel="noopener">Brad Philpot · Use More Kerb</a> on YouTube</p>
 </div></div>
@@ -530,6 +556,16 @@ function hideSplash(){document.documentElement.classList.add("fx");const sp=$("#
   if(document.visibilityState==="visible")go();else document.addEventListener("visibilitychange",function v(){if(document.visibilityState==="visible"){document.removeEventListener("visibilitychange",v);go()}});
 })();
 
+
+/* ---------- YouTube: latest long-form video (data/youtube.json, refreshed hourly by a GitHub job) ---------- */
+(async()=>{try{const r=await fetch("data/youtube.json",{cache:"no-cache"});if(!r.ok)return;const Y=await r.json();const v=(Y.videos||[])[0];if(!v)return;
+  const card=$("#ytCard"),box=$("#ytV"),watch="https://www.youtube.com/watch?v="+v.id;
+  $("#ytThumb").src="https://i.ytimg.com/vi/"+v.id+"/maxresdefault.jpg";$("#ytThumb").onerror=function(){this.onerror=null;this.src="https://i.ytimg.com/vi/"+v.id+"/hqdefault.jpg"};
+  $("#ytTitle").textContent=v.title;$("#ytCm").href=watch;
+  try{const d=new Date(v.published),days=Math.floor((Date.now()-d)/864e5);$("#ytDate").textContent="Brad Philpot · "+(days<1?"Today":days===1?"Yesterday":days<7?days+" days ago":d.toLocaleDateString("en-GB",{day:"numeric",month:"short"}))}catch(e){}
+  box.onclick=()=>{if(box.querySelector("iframe"))return;box.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.id+'?autoplay=1&playsinline=1&rel=0" title="'+esc(v.title)+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';gc("yt-play","Played latest video")};
+  $("#ytMore").innerHTML=(Y.videos||[]).slice(1,6).map(x=>`<a href="https://www.youtube.com/watch?v=${esc(x.id)}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/${esc(x.id)}/mqdefault.jpg" alt="" loading="lazy"><span>${esc(x.title)}</span></a>`).join("");
+  card.hidden=false}catch(e){}})();
 /* ---------- install ---------- */
 const IS_APP=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
 const IS_IOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
@@ -544,7 +580,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794438332";
+const BUILD="1794438525";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;

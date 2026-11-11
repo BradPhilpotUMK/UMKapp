@@ -1,0 +1,31 @@
+# Home page YouTube section: latest long-form video (no Shorts) into data/youtube.json every hour.
+name: YouTube latest video
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-latest
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/youtube_latest.py
+      - name: Publish if anything changed
+        run: |
+          if git diff --quiet -- data/youtube.json; then exit 0; fi
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+          git add data/youtube.json
+          git commit -m "YouTube: latest video"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
