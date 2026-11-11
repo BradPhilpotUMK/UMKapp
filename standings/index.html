@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<style>html,body{background:#0b0b0c}</style>
+<script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Use More Kerb Standings</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta name="apple-mobile-web-app-title" content="Use More Kerb">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1284x2778.png">
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1179x2556.png">
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1290x2796.png">
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1206x2622.png">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1320x2868.png">
+<link rel="apple-touch-startup-image" media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1080x2340.png">
+<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1260x2736.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Latest karting championship standings: UK owner-driver, UK rental and international.">
+<meta name="theme-color" content="#1F2126">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../hub.css">
+<style>
+.search{width:100%;background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:11px 12px;font-size:16px;margin-bottom:12px}
+.ch{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden}
+.ch>button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:none;padding:13px 14px}
+.ch>button b{flex:1;min-width:0;font-weight:700;font-size:15.5px;line-height:1.25}
+.ch>button small{display:block;font-weight:500;color:var(--muted);font-size:12.5px;margin-top:2px}
+.ch>button i{font-style:normal;color:var(--muted);transition:transform .2s}
+.ch.open>button i{transform:rotate(90deg)}
+.badge{flex:none;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:3px 8px;background:var(--surface2);color:var(--muted)}
+.badge.final{background:rgba(59,209,111,.16);color:#3BD16F}
+.badge.live{background:rgba(245,197,66,.16);color:#F5C542}
+.body{display:none;padding:0 14px 14px}
+.ch.open .body{display:block}
+.cls{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:8px}
+.cls button{flex:none;border:1px solid var(--line);background:var(--surface2);border-radius:999px;padding:6px 11px;font-size:13px;font-weight:600;color:var(--muted)}
+.cls button.on{background:#4C8DFF;border-color:#4C8DFF;color:#fff}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+td,th{padding:7px 4px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;border-top:none;padding-top:2px}
+td.p{width:32px;color:var(--muted);font-variant-numeric:tabular-nums}
+tr:nth-child(2) td.p{color:#F5C542;font-weight:800}
+tr:nth-child(3) td.p{color:#C9CDD3;font-weight:800}
+tr:nth-child(4) td.p{color:#D08B4C;font-weight:800}
+td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;width:60px}
+td small{display:block;color:var(--muted);font-size:12.5px}
+.meta{font-size:12.5px;color:var(--muted);margin-top:10px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.meta a{color:#4C8DFF}
+.none{color:var(--muted);font-size:14px;padding:4px 0 2px}
+</style>
+<script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div id="scroller"><div class="wrap">
+  <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Standings</h1></div></header>
+
+  <div class="seg" id="cats"><button class="on" data-c="uk-national">UK owner</button><button data-c="uk-rental">UK rental</button><button data-c="international">International</button></div>
+  <input class="search" id="q" placeholder="Search a championship, class or driver" autocomplete="off" enterkeyhint="search">
+  <div id="list"><p class="none">Loading standings…</p></div>
+  <p class="hint" id="upd" style="margin-top:14px"></p>
+  <a class="back" href="../">‹ Use More Kerb home</a>
+</div></div>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2200)}
+function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path,title:title||path,event:true})}catch(e){}}
+if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
+let D={championships:[]},cat="uk-national",openId=null;const pick={};
+const badge=s=>{s=String(s||"");const cl=/^final/i.test(s)||/event result/i.test(s)?"final":/not found|coming/i.test(s)?"":"live";return `<span class="badge ${cl}">${esc(/not found/i.test(s)?"Coming soon":s.length>22?s.replace(/\s*\(.*\)$/,"").slice(0,22):s)}</span>`};
+function render(){
+  const q=($("#q").value||"").trim().toLowerCase();
+  let L=D.championships.filter(c=>q?JSON.stringify([c.name,c.classes.map(x=>[x.name,x.rows.map(r=>r.driver)])]).toLowerCase().includes(q):c.category===cat);
+  $("#list").innerHTML=L.length?L.map(c=>{const open=openId===c.id||(q&&L.length<=3);const ci=Math.min(pick[c.id]||0,Math.max(0,c.classes.length-1));let k=c.classes[ci];
+    if(q&&!pick[c.id]){const f=c.classes.findIndex(x=>(x.name+" "+x.rows.map(r=>r.driver).join(" ")).toLowerCase().includes(q));if(f>=0)k=c.classes[f]}
+    return `<div class="ch${open?" open":""}"><button data-ch="${c.id}"><b>${esc(c.name)}<small>${esc(c.season||"")}${c.classes.length?" · "+c.classes.length+" class"+(c.classes.length>1?"es":""):""}</small></b>${badge(c.status)}<i>›</i></button>
+      <div class="body">${c.classes.length?`<div class="cls">${c.classes.map((x,i)=>`<button data-cl="${c.id}|${i}" class="${x===k?"on":""}">${esc(x.name)}</button>`).join("")}</div>
+      <table><tr><th>Pos</th><th>Driver</th><th style="text-align:right">${k.rows.some(r=>r.points!=null)?"Pts":""}</th></tr>${k.rows.map(r=>`<tr><td class="p">${r.pos}</td><td>${esc(r.driver)}${r.team?`<small>${esc(r.team)}</small>`:""}</td><td class="n">${r.points??""}</td></tr>`).join("")}</table>
+      <div class="meta"><span>${esc(k.status||c.status||"")}</span>${k.source?`<a href="${esc(k.source)}" target="_blank" rel="noopener">Full results ›</a>`:""}</div>`
+      :`<p class="none">${esc(c.note||"Standings coming soon.")}</p>${c.url?`<div class="meta"><span></span><a href="${esc(c.url)}" target="_blank" rel="noopener">Official site ›</a></div>`:""}`}</div></div>`}).join(""):`<p class="none">No championships match.</p>`;
+}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-c],[data-ch],[data-cl]");if(!t)return;const d=t.dataset;
+  if(d.c){cat=d.c;openId=null;$("#q").value="";document.querySelectorAll("#cats button").forEach(b=>b.classList.toggle("on",b===t));render();return}
+  if(d.ch){openId=openId===d.ch?null:d.ch;render();if(openId)gc("standings-"+d.ch,"Standings: "+d.ch);return}
+  if(d.cl){const [id,i]=d.cl.split("|");pick[id]=+i;openId=id;render();return}});
+$("#q").addEventListener("input",render);
+(async()=>{try{const r=await fetch("../data/standings.json",{cache:"no-cache"});D=await r.json();
+  $("#upd").textContent="Tables are taken from each championship's official results and checked every week. Updated "+new Date(D.updated).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"})+".";render()}
+  catch(e){$("#list").innerHTML=`<p class="none">Couldn't load the standings. Check your signal.</p>`}})();
+</script>
+</body>
+</html>

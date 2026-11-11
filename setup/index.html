@@ -56,6 +56,9 @@ button{cursor:pointer}
 .wrap{max-width:560px;margin:0 auto;padding:0 14px 28px}
 header.top{position:sticky;top:0;z-index:20;background:var(--bg);padding:calc(12px + env(safe-area-inset-top,0px)) 0 10px;display:flex;align-items:center;gap:10px}
 .brand{flex:1;min-width:0}
+.homechip{flex:none;display:grid;place-items:center;width:24px;height:24px;margin-left:-4px;border-radius:8px;background:var(--surface);border:1px solid var(--line);color:var(--text)}
+.homechip svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+
 .brand img{display:block;height:15px;width:auto;margin-bottom:5px}
 .brand h1{font-family:var(--display);font-weight:700;font-size:clamp(20px,6.4vw,28px);line-height:1.1;margin:0;white-space:nowrap;display:flex;align-items:center;gap:.3em}
 .brand h1 svg{width:1.15em;height:1.15em;flex:none}
@@ -164,7 +167,7 @@ html.rental .setuponly{display:none!important}
 
 <div id="scroller"><div class="wrap">
   <header class="top">
-    <div class="brand"><img src="../team/wm.png" alt="Use More Kerb"><h1><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M26.5 5.5a8 8 0 0 0-9.8 10.2L5.6 26.8a3.6 3.6 0 0 0 5.1 5.1l11.1-11.1A8 8 0 0 0 32 11l-4.8 4.8-4.4-1.2-1.2-4.4z" fill="#3BD16F"/><circle cx="8.2" cy="29.3" r="1.5" fill="#121614"/></svg><span>Setup coach</span></h1></div>
+    <div class="brand"><div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></a><img style="margin:0" src="../team/wm.png" alt="Use More Kerb"></div><h1><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M26.5 5.5a8 8 0 0 0-9.8 10.2L5.6 26.8a3.6 3.6 0 0 0 5.1 5.1l11.1-11.1A8 8 0 0 0 32 11l-4.8 4.8-4.4-1.2-1.2-4.4z" fill="#3BD16F"/><circle cx="8.2" cy="29.3" r="1.5" fill="#121614"/></svg><span>Setup coach</span></h1></div>
     <div class="mode" role="group" aria-label="Kart type"><button data-mode="owner" class="on">Owner</button><button data-mode="rental">Rental</button></div>
   </header>
 
@@ -193,7 +196,7 @@ html.rental .setuponly{display:none!important}
   </div>
 
   <p class="disclaim">General advice for CIK-style sprint karts and rental karts. Chassis makers differ, so change one thing at a time, note what it did, and check your chassis maker's setup guide. Always check the kart is safe before going out.</p>
-  <a class="back" href="../">‹ Use More Kerb Season Planner</a>
+  <a class="back" href="../">‹ Use More Kerb home</a>
 </div></div>
 <div class="toast" id="toast"></div>
 
@@ -343,7 +346,8 @@ $("#mic").onclick=()=>{
 /* ---------- opening screen ---------- */
 (function(){const sp=$("#splash");let skip=false;try{skip=sessionStorage.getItem("umk-setup-splash")==="1";sessionStorage.setItem("umk-setup-splash","1")}catch(e){}
   const app=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
-  if(skip&&!app){sp.remove();return}
+  let hub=false;try{hub=sessionStorage.getItem("umk-hub")==="1"}catch(e){}
+  if(hub||(skip&&!app)){sp.remove();return}
   const hide=()=>{sp.classList.add("out");setTimeout(()=>sp.remove(),700)};
   sp.onclick=hide;requestAnimationFrame(()=>requestAnimationFrame(()=>{sp.classList.add("go");setTimeout(hide,2600)}))})();
 if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));

@@ -1,0 +1,9285 @@
+{
+ "updated": "2026-11-11T14:01Z",
+ "championships": [
+  {
+   "id": "super-one-series",
+   "name": "HWE BIM Services Super One Series",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "12 rounds (6 double-header weekends), final round Shenington 29-30 Aug 2026. 2026 classes were Comer C50, MightE (Bambino/Cadet/Super Cadet), IAME M1, Honda Cadet, IAME Waterswift Restricted, Micro Max, Inter Max, Junior Rotax and Senior Rotax; no X30, TKM, KZ2 or OK standings were published for 2026. Points shown are after dropped scores. Team not listed (Alpha shows chassis only). Waterswift Restricted table has only 6 drivers.",
+   "url": "https://superoneseries.com/",
+   "classes": [
+    {
+     "name": "Comer C50",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5400",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Matthew Pearson",
+       "points": 1269
+      },
+      {
+       "pos": 2,
+       "driver": "Jace Hannon",
+       "points": 1224
+      },
+      {
+       "pos": 3,
+       "driver": "Noah Gallagher",
+       "points": 1166
+      },
+      {
+       "pos": 4,
+       "driver": "Logan Grassi",
+       "points": 1140
+      },
+      {
+       "pos": 5,
+       "driver": "Dalton Dyke-Whitfield",
+       "points": 1116
+      },
+      {
+       "pos": 6,
+       "driver": "River De Giorgio-Miller",
+       "points": 1098
+      },
+      {
+       "pos": 7,
+       "driver": "Reggie Rhodes",
+       "points": 1070
+      },
+      {
+       "pos": 8,
+       "driver": "Robert Hanley",
+       "points": 1062
+      },
+      {
+       "pos": 9,
+       "driver": "Aidan Hughes",
+       "points": 1061
+      },
+      {
+       "pos": 10,
+       "driver": "Regan Abercrombie",
+       "points": 1040
+      }
+     ]
+    },
+    {
+     "name": "MightE",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5408",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Luka Pead",
+       "points": 1234
+      },
+      {
+       "pos": 2,
+       "driver": "Aidan Castleman",
+       "points": 1202
+      },
+      {
+       "pos": 3,
+       "driver": "Max Tetlow",
+       "points": 1183
+      },
+      {
+       "pos": 4,
+       "driver": "Eli Parkhouse",
+       "points": 1183
+      },
+      {
+       "pos": 5,
+       "driver": "Oliver Reynolds",
+       "points": 1171
+      },
+      {
+       "pos": 6,
+       "driver": "Ej Dera",
+       "points": 1153
+      },
+      {
+       "pos": 7,
+       "driver": "Joshua Chung",
+       "points": 1106
+      },
+      {
+       "pos": 8,
+       "driver": "Teddy Wesolowski",
+       "points": 1069
+      },
+      {
+       "pos": 9,
+       "driver": "Artyn Aujla",
+       "points": 1036
+      },
+      {
+       "pos": 10,
+       "driver": "Archie Watkins",
+       "points": 922
+      }
+     ]
+    },
+    {
+     "name": "MightE Cadet",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5409",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Daniel Stangerean",
+       "points": 1248
+      },
+      {
+       "pos": 2,
+       "driver": "Jax Wong",
+       "points": 1190
+      },
+      {
+       "pos": 3,
+       "driver": "Jacob Amis",
+       "points": 1177
+      },
+      {
+       "pos": 4,
+       "driver": "Harry Wos",
+       "points": 1126
+      },
+      {
+       "pos": 5,
+       "driver": "Frank Pearson",
+       "points": 1123
+      },
+      {
+       "pos": 6,
+       "driver": "Freddie Howell",
+       "points": 1109
+      },
+      {
+       "pos": 7,
+       "driver": "Gianluca Hudson",
+       "points": 1057
+      },
+      {
+       "pos": 8,
+       "driver": "Emilie Christie",
+       "points": 1038
+      },
+      {
+       "pos": 9,
+       "driver": "Samuel Kenny",
+       "points": 1019
+      },
+      {
+       "pos": 10,
+       "driver": "Junior Wright",
+       "points": 750
+      }
+     ]
+    },
+    {
+     "name": "MightE Super Cadet",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5407",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Harry Stinson",
+       "points": 1252
+      },
+      {
+       "pos": 2,
+       "driver": "Ansel .",
+       "points": 1222
+      },
+      {
+       "pos": 3,
+       "driver": "Will Beattie",
+       "points": 1204
+      },
+      {
+       "pos": 4,
+       "driver": "Logan Jackson",
+       "points": 1201
+      },
+      {
+       "pos": 5,
+       "driver": "Casey Baker",
+       "points": 1158
+      },
+      {
+       "pos": 6,
+       "driver": "Jacob Hutchinson",
+       "points": 1131
+      },
+      {
+       "pos": 7,
+       "driver": "Harry Watkinson",
+       "points": 1083
+      },
+      {
+       "pos": 8,
+       "driver": "Zachary Parr",
+       "points": 1040
+      },
+      {
+       "pos": 9,
+       "driver": "Brandon Hartley",
+       "points": 1038
+      },
+      {
+       "pos": 10,
+       "driver": "Oscar Dudley",
+       "points": 1031
+      }
+     ]
+    },
+    {
+     "name": "IAME M1",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5401",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Presley Knight",
+       "points": 1229
+      },
+      {
+       "pos": 2,
+       "driver": "Jack rossi Minot",
+       "points": 1187
+      },
+      {
+       "pos": 3,
+       "driver": "Jules Nash",
+       "points": 1181
+      },
+      {
+       "pos": 4,
+       "driver": "Shay Downey",
+       "points": 1176
+      },
+      {
+       "pos": 5,
+       "driver": "Teddy Smith",
+       "points": 1136
+      },
+      {
+       "pos": 6,
+       "driver": "Oakley Rudman",
+       "points": 1133
+      },
+      {
+       "pos": 7,
+       "driver": "Stanley Thurston",
+       "points": 1041
+      },
+      {
+       "pos": 8,
+       "driver": "George Miller",
+       "points": 1037
+      },
+      {
+       "pos": 9,
+       "driver": "Henry Exton",
+       "points": 1034
+      },
+      {
+       "pos": 10,
+       "driver": "Frank Tingle",
+       "points": 985
+      }
+     ]
+    },
+    {
+     "name": "Honda Cadet GX200",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5402",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Henry Colbourne",
+       "points": 1235
+      },
+      {
+       "pos": 2,
+       "driver": "Reggie Dufficy",
+       "points": 1177
+      },
+      {
+       "pos": 3,
+       "driver": "Phoebe Shelton",
+       "points": 1176
+      },
+      {
+       "pos": 4,
+       "driver": "Nico Wesolowski",
+       "points": 1175
+      },
+      {
+       "pos": 5,
+       "driver": "Alfie Bi",
+       "points": 654
+      },
+      {
+       "pos": 6,
+       "driver": "George Lilly",
+       "points": 622
+      },
+      {
+       "pos": 7,
+       "driver": "Aubrey Harrington-Evans",
+       "points": 617
+      },
+      {
+       "pos": 8,
+       "driver": "Freddie Williams",
+       "points": 607
+      },
+      {
+       "pos": 9,
+       "driver": "Oliver Wratten",
+       "points": 487
+      },
+      {
+       "pos": 10,
+       "driver": "Jesse Bailie",
+       "points": 474
+      }
+     ]
+    },
+    {
+     "name": "IAME Waterswift (Restricted)",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5399",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Santo Amico",
+       "points": 1269
+      },
+      {
+       "pos": 2,
+       "driver": "Archie Johnson",
+       "points": 740
+      },
+      {
+       "pos": 3,
+       "driver": "Archie Ashworth",
+       "points": 726
+      },
+      {
+       "pos": 4,
+       "driver": "Harley Bebb",
+       "points": 450
+      },
+      {
+       "pos": 5,
+       "driver": "Arthur Rhodes",
+       "points": 255
+      },
+      {
+       "pos": 6,
+       "driver": "Cole Parrish",
+       "points": 253
+      }
+     ]
+    },
+    {
+     "name": "Micro Max",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5403",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Zayn Sofuoglu",
+       "points": 1229
+      },
+      {
+       "pos": 2,
+       "driver": "Ralph Ewer",
+       "points": 1152
+      },
+      {
+       "pos": 3,
+       "driver": "Charlie Cale",
+       "points": 1129
+      },
+      {
+       "pos": 4,
+       "driver": "Jenson Drummond",
+       "points": 1088
+      },
+      {
+       "pos": 5,
+       "driver": "Ellis Holt",
+       "points": 1072
+      },
+      {
+       "pos": 6,
+       "driver": "Cooper Galloway",
+       "points": 1055
+      },
+      {
+       "pos": 7,
+       "driver": "Buster Scott",
+       "points": 1052
+      },
+      {
+       "pos": 8,
+       "driver": "Alfie Ward",
+       "points": 960
+      },
+      {
+       "pos": 9,
+       "driver": "James Hudson",
+       "points": 945
+      },
+      {
+       "pos": 10,
+       "driver": "Tommy Delaney",
+       "points": 918
+      }
+     ]
+    },
+    {
+     "name": "Inter Max",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5404",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Charlie Gregg",
+       "points": 1253
+      },
+      {
+       "pos": 2,
+       "driver": "Tj Mcleish",
+       "points": 1161
+      },
+      {
+       "pos": 3,
+       "driver": "Leyland Bradnum",
+       "points": 1109
+      },
+      {
+       "pos": 4,
+       "driver": "Zavier Davidson",
+       "points": 1063
+      },
+      {
+       "pos": 5,
+       "driver": "Charlie Ford",
+       "points": 1044
+      },
+      {
+       "pos": 6,
+       "driver": "Eli Romalho",
+       "points": 993
+      },
+      {
+       "pos": 7,
+       "driver": "Calvin Sherlock",
+       "points": 984
+      },
+      {
+       "pos": 8,
+       "driver": "Arlo Attwood",
+       "points": 974
+      },
+      {
+       "pos": 9,
+       "driver": "Evan Dearden",
+       "points": 948
+      },
+      {
+       "pos": 10,
+       "driver": "Finley Fawkes",
+       "points": 941
+      }
+     ]
+    },
+    {
+     "name": "Junior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5405",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jake Cossey",
+       "points": 1138
+      },
+      {
+       "pos": 2,
+       "driver": "Warwick Mylum",
+       "points": 1111
+      },
+      {
+       "pos": 3,
+       "driver": "Jude Puddefoot",
+       "points": 1105
+      },
+      {
+       "pos": 4,
+       "driver": "Laurie Mcveigh",
+       "points": 1096
+      },
+      {
+       "pos": 5,
+       "driver": "Ami Peacock",
+       "points": 1059
+      },
+      {
+       "pos": 6,
+       "driver": "Alex Mccullagh",
+       "points": 1052
+      },
+      {
+       "pos": 7,
+       "driver": "Elijah Hartley",
+       "points": 1003
+      },
+      {
+       "pos": 8,
+       "driver": "Zak Jennings",
+       "points": 965
+      },
+      {
+       "pos": 9,
+       "driver": "Nelson Taylor",
+       "points": 964
+      },
+      {
+       "pos": 10,
+       "driver": "Nathan Rond",
+       "points": 946
+      }
+     ]
+    },
+    {
+     "name": "Senior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/superone/c/5406",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jarick Metters",
+       "points": 1251
+      },
+      {
+       "pos": 2,
+       "driver": "George Cole",
+       "points": 1183
+      },
+      {
+       "pos": 3,
+       "driver": "Morgan Hudson Brown",
+       "points": 1123
+      },
+      {
+       "pos": 4,
+       "driver": "Rory Hinckley",
+       "points": 1103
+      },
+      {
+       "pos": 5,
+       "driver": "Ronnie Smith",
+       "points": 1081
+      },
+      {
+       "pos": 6,
+       "driver": "Kieran Denyer",
+       "points": 1041
+      },
+      {
+       "pos": 7,
+       "driver": "Caiden Welch",
+       "points": 994
+      },
+      {
+       "pos": 8,
+       "driver": "Isaac Parkinson",
+       "points": 992
+      },
+      {
+       "pos": 9,
+       "driver": "Billy Edgecombe",
+       "points": 962
+      },
+      {
+       "pos": 10,
+       "driver": "Max Chown",
+       "points": 960
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "british-kart-championships",
+   "name": "Wera Tools British Kart Championships (Motorsport UK)",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "Official Motorsport UK British titles across the Rotax, IAME, KZ2 and Honda championships; season ended at Silverstone 8-10 Oct 2026. Points are after dropped scores, and team is the entrant. The E Plate tables are sub-classifications within the Rotax classes. No OK/OKJ British championship ran in 2026.",
+   "url": "https://britishkartchampionships.org/",
+   "classes": [
+    {
+     "name": "Junior Rotax",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Charlie Woolfitt",
+       "points": 612,
+       "team": "DHR"
+      },
+      {
+       "pos": 2,
+       "driver": "Kian Burnard",
+       "points": 604,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Blake Southan",
+       "points": 587,
+       "team": "DHR"
+      },
+      {
+       "pos": 4,
+       "driver": "Zach Turner",
+       "points": 559,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Finlay Lines",
+       "points": 559,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 6,
+       "driver": "Ellis Bell",
+       "points": 559,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 7,
+       "driver": "Sebastian Chauhan Clark",
+       "points": 531,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 8,
+       "driver": "Harry Taylor",
+       "points": 530,
+       "team": "DHR"
+      },
+      {
+       "pos": 9,
+       "driver": "Louis Radcliffe",
+       "points": 528,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Fletcher Jamieson",
+       "points": 523,
+       "team": "JAXX Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "Senior Rotax",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Freddie Lloyd",
+       "points": 629,
+       "team": "Evolution Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Mattie Hingeley",
+       "points": 618,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 3,
+       "driver": "Macauley Bishop",
+       "points": 581,
+       "team": "Privateer"
+      },
+      {
+       "pos": 4,
+       "driver": "Ewan Charman",
+       "points": 566,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Joshua Graham",
+       "points": 553,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 6,
+       "driver": "Leon Hastie",
+       "points": 551,
+       "team": "Kraft Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Harrison Crowther",
+       "points": 529,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Guy Cunnington",
+       "points": 521,
+       "team": "Guy Cunnington Racing"
+      },
+      {
+       "pos": 9,
+       "driver": "Joshua Turnbull",
+       "points": 521,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Noah Barham",
+       "points": 508,
+       "team": "DHR"
+      }
+     ]
+    },
+    {
+     "name": "MicroMax UK",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Albert Pharoah",
+       "points": 616,
+       "team": "Privateer"
+      },
+      {
+       "pos": 2,
+       "driver": "Jayan Prakash",
+       "points": 603,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Freddie Baker",
+       "points": 578,
+       "team": "RCE"
+      },
+      {
+       "pos": 4,
+       "driver": "Arthur Rhodes",
+       "points": 569,
+       "team": "DHR"
+      },
+      {
+       "pos": 5,
+       "driver": "Lenny Barton",
+       "points": 567,
+       "team": "Privateer"
+      },
+      {
+       "pos": 6,
+       "driver": "Kaiden Hanley",
+       "points": 563,
+       "team": "RCE"
+      },
+      {
+       "pos": 7,
+       "driver": "Sebastian Crawford",
+       "points": 557,
+       "team": "Origin Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Arlo Gamble",
+       "points": 555,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 9,
+       "driver": "Hendrix Falat",
+       "points": 543,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Benjamin Sljivar",
+       "points": 530,
+       "team": "Privateer"
+      }
+     ]
+    },
+    {
+     "name": "MiniMax 950",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Joshua Cooke",
+       "points": 624,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 2,
+       "driver": "Austin Oman",
+       "points": 622,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Otis Cleary",
+       "points": 600,
+       "team": "DHR"
+      },
+      {
+       "pos": 4,
+       "driver": "James Roots",
+       "points": 598,
+       "team": "DHR"
+      },
+      {
+       "pos": 5,
+       "driver": "Oscar Kenney",
+       "points": 588,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 6,
+       "driver": "Charlie Page",
+       "points": 562,
+       "team": "Privateer"
+      },
+      {
+       "pos": 7,
+       "driver": "Teddy Murphy",
+       "points": 551,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Logan Rolfe",
+       "points": 544,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 9,
+       "driver": "Jack Fulbrook-Harmer",
+       "points": 538,
+       "team": "MLC Motorsport"
+      },
+      {
+       "pos": 10,
+       "driver": "Maximilian Abrahart",
+       "points": 529,
+       "team": "Hunter Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "E10 Cadet",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ansel Murray",
+       "points": 325,
+       "team": "RCE"
+      },
+      {
+       "pos": 2,
+       "driver": "Buddy Hugo",
+       "points": 308,
+       "team": "RCE"
+      },
+      {
+       "pos": 3,
+       "driver": "Heath Smith",
+       "points": 300,
+       "team": "RCE"
+      },
+      {
+       "pos": 4,
+       "driver": "Jamal Pumuram",
+       "points": 293,
+       "team": "JDR"
+      },
+      {
+       "pos": 5,
+       "driver": "Stanley Gill",
+       "points": 292,
+       "team": "R1 Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Arthur Thompson",
+       "points": 288,
+       "team": "Privateer"
+      },
+      {
+       "pos": 7,
+       "driver": "Leo Hartley",
+       "points": 276,
+       "team": "R1 Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Caleb Hiles",
+       "points": 263,
+       "team": "R1 Racing"
+      },
+      {
+       "pos": 9,
+       "driver": "Cairo Zubaida",
+       "points": 262,
+       "team": "R1 Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Zach Andrew",
+       "points": 235,
+       "team": "R1 Racing"
+      }
+     ]
+    },
+    {
+     "name": "Micro E Plate",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Albert Pharoah",
+       "points": 311,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Arthur Rhodes",
+       "points": 299,
+       "team": "DHR"
+      },
+      {
+       "pos": 3,
+       "driver": "Freddie Baker",
+       "points": 295,
+       "team": "RCE"
+      },
+      {
+       "pos": 4,
+       "driver": "Lenny Barton",
+       "points": 292,
+       "team": "Strawberry Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Jayan Prakash",
+       "points": 290,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Caio Vieira",
+       "points": 286,
+       "team": "Evolution Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Sebastian Crawford",
+       "points": 286,
+       "team": "Origin Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Arlo Gamble",
+       "points": 281,
+       "team": "DHR"
+      },
+      {
+       "pos": 9,
+       "driver": "Bobby Slater",
+       "points": 268,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 10,
+       "driver": "Oliver Woodhall",
+       "points": 267,
+       "team": "Sam Pollitt Racing"
+      }
+     ]
+    },
+    {
+     "name": "Mini E Plate",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Joshua Cooke",
+       "points": 317,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 2,
+       "driver": "Austin Oman",
+       "points": 305,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Otis Cleary",
+       "points": 302,
+       "team": "DHR"
+      },
+      {
+       "pos": 4,
+       "driver": "Teddy Murphy",
+       "points": 299,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "James Roots",
+       "points": 292,
+       "team": "DHR"
+      },
+      {
+       "pos": 6,
+       "driver": "Oscar Kenney",
+       "points": 291,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Charlie Page",
+       "points": 284,
+       "team": "Privateer"
+      },
+      {
+       "pos": 8,
+       "driver": "Flynn Grantham",
+       "points": 271,
+       "team": "Tooley Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Logan Rolfe",
+       "points": 270,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 10,
+       "driver": "Dhian Singh Pahal",
+       "points": 269,
+       "team": "DHR"
+      }
+     ]
+    },
+    {
+     "name": "Junior E Plate",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Emerson Macandrew-Uren",
+       "points": 319,
+       "team": "DHR"
+      },
+      {
+       "pos": 2,
+       "driver": "Kian Burnard",
+       "points": 313,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Blake Southan",
+       "points": 302,
+       "team": "DHR"
+      },
+      {
+       "pos": 4,
+       "driver": "Zach Turner",
+       "points": 290,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Charlie Woolfitt",
+       "points": 290,
+       "team": "DHR"
+      },
+      {
+       "pos": 6,
+       "driver": "Luca Holmes-Balac",
+       "points": 283,
+       "team": "DHR"
+      },
+      {
+       "pos": 7,
+       "driver": "Finlay Lines",
+       "points": 279,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 8,
+       "driver": "Harry Taylor",
+       "points": 275,
+       "team": "DHR"
+      },
+      {
+       "pos": 9,
+       "driver": "Lucien Smith",
+       "points": 272,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 10,
+       "driver": "Tom Read",
+       "points": 261,
+       "team": "Tooley Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "Senior E Plate",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Freddie Lloyd",
+       "points": 311,
+       "team": "Evolution Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Mattie Hingeley",
+       "points": 309,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 3,
+       "driver": "Joshua Graham",
+       "points": 292,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 4,
+       "driver": "Ewan Charman",
+       "points": 292,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Macauley Bishop",
+       "points": 292,
+       "team": "DHR"
+      },
+      {
+       "pos": 6,
+       "driver": "Harrison Crowther",
+       "points": 286,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Noah Barham",
+       "points": 278,
+       "team": "DHR"
+      },
+      {
+       "pos": 8,
+       "driver": "Guy Cunnington",
+       "points": 272,
+       "team": "Guy Cunnington Racing"
+      },
+      {
+       "pos": 9,
+       "driver": "Harry Freeman",
+       "points": 261,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 10,
+       "driver": "Leon Hastie",
+       "points": 258,
+       "team": "Kraft Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "Junior X30",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jorge Edgar",
+       "points": 948,
+       "team": "Mick Barrett Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Aaron Richardson",
+       "points": 922,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Finlay Lines",
+       "points": 896,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 4,
+       "driver": "Freddie Wood",
+       "points": 887,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Sukhmani Khera",
+       "points": 882,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 6,
+       "driver": "Max Endacott",
+       "points": 874,
+       "team": "BMR"
+      },
+      {
+       "pos": 7,
+       "driver": "George House",
+       "points": 835,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Jacob Bachler",
+       "points": 827,
+       "team": "BMR"
+      },
+      {
+       "pos": 9,
+       "driver": "George Clarke",
+       "points": 824,
+       "team": "BMR"
+      },
+      {
+       "pos": 10,
+       "driver": "Archie Rogers-Tyler",
+       "points": 820,
+       "team": "Mick Barrett Racing"
+      }
+     ]
+    },
+    {
+     "name": "Senior X30",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Freddie Lloyd",
+       "points": 926,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 2,
+       "driver": "Lewis Bird",
+       "points": 916,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 3,
+       "driver": "Arron Browne",
+       "points": 890,
+       "team": "PF International Ltd"
+      },
+      {
+       "pos": 4,
+       "driver": "Harrison Whitticombe",
+       "points": 888,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 5,
+       "driver": "Nat Johnstone",
+       "points": 870,
+       "team": "Mick Barrett Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Max Yuill",
+       "points": 860,
+       "team": "Mick Barrett Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Joey Brown",
+       "points": 845,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Sam Lewis",
+       "points": 836,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 9,
+       "driver": "Morgan Moore",
+       "points": 813,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 10,
+       "driver": "Scott Reilly",
+       "points": 802,
+       "team": "Xcel Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "IAME Water Swift Restricted",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Arthur Bowers",
+       "points": 937,
+       "team": "BMR"
+      },
+      {
+       "pos": 2,
+       "driver": "Hendrix Falat",
+       "points": 923,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Ollie West",
+       "points": 901,
+       "team": "Privateer"
+      },
+      {
+       "pos": 4,
+       "driver": "Benjamin Sljivar",
+       "points": 892,
+       "team": "Privateer"
+      },
+      {
+       "pos": 5,
+       "driver": "Patrick Wood",
+       "points": 890,
+       "team": "Privateer"
+      },
+      {
+       "pos": 6,
+       "driver": "Oliver Woodhall",
+       "points": 888,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Freddie Baker",
+       "points": 883,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Kaiden Hakoura",
+       "points": 837,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Bobby Slater",
+       "points": 836,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 10,
+       "driver": "Louis Wilson",
+       "points": 815,
+       "team": "Privateer"
+      }
+     ]
+    },
+    {
+     "name": "IAME Water Swift",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Alfie Davidson",
+       "points": 942,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 2,
+       "driver": "Mayson Hibbert",
+       "points": 936,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Chester Forkes",
+       "points": 913,
+       "team": "DK Academy"
+      },
+      {
+       "pos": 4,
+       "driver": "Dimitar Uzunov",
+       "points": 894,
+       "team": "Jade Racing Team"
+      },
+      {
+       "pos": 5,
+       "driver": "Ilyas Sami",
+       "points": 883,
+       "team": "DK Academy"
+      },
+      {
+       "pos": 6,
+       "driver": "Efan Owen",
+       "points": 864,
+       "team": "DK Academy"
+      },
+      {
+       "pos": 7,
+       "driver": "Hiro Tse",
+       "points": 848,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Bodhi Batch",
+       "points": 839,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Harry Chapman",
+       "points": 832,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 10,
+       "driver": "Albi-Jay Stubbs",
+       "points": 829,
+       "team": "Xcel Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "IAME M1 Bambino",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Presley Knight",
+       "points": 756,
+       "team": "Privateer"
+      },
+      {
+       "pos": 2,
+       "driver": "Jules Nash",
+       "points": 738,
+       "team": "RCE"
+      },
+      {
+       "pos": 3,
+       "driver": "Shay Downey",
+       "points": 736,
+       "team": "Privateer"
+      },
+      {
+       "pos": 4,
+       "driver": "Teddy Smith",
+       "points": 730,
+       "team": "RCE"
+      },
+      {
+       "pos": 5,
+       "driver": "Stanley Thurston",
+       "points": 706,
+       "team": "RCE"
+      },
+      {
+       "pos": 6,
+       "driver": "George Miller",
+       "points": 700,
+       "team": "737 Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Henry Exton",
+       "points": 695,
+       "team": "Privateer"
+      },
+      {
+       "pos": 8,
+       "driver": "Jack Minot",
+       "points": 678,
+       "team": "737 Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Bryella Stephens",
+       "points": 656,
+       "team": "RCE"
+      },
+      {
+       "pos": 10,
+       "driver": "Aidan Castleman",
+       "points": 437,
+       "team": "RCE"
+      }
+     ]
+    },
+    {
+     "name": "KZ2",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Noah Wolfe",
+       "points": 771,
+       "team": "Jade Racing Team"
+      },
+      {
+       "pos": 2,
+       "driver": "Charlie Turner",
+       "points": 729,
+       "team": "Rush Performance"
+      },
+      {
+       "pos": 3,
+       "driver": "Miles Murphy",
+       "points": 711,
+       "team": "Moore Racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Jessica Edgar",
+       "points": 694,
+       "team": "Jade Racing Team"
+      },
+      {
+       "pos": 5,
+       "driver": "Josh Price",
+       "points": 690,
+       "team": "Moore Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Ralf Jungling",
+       "points": 681,
+       "team": "Sodi Vitesse"
+      },
+      {
+       "pos": 7,
+       "driver": "Ashley Lewis",
+       "points": 674,
+       "team": "Rush Performance"
+      },
+      {
+       "pos": 8,
+       "driver": "Harry Walsh",
+       "points": 660,
+       "team": "Jade Racing Team"
+      },
+      {
+       "pos": 9,
+       "driver": "Lee Ward",
+       "points": 654,
+       "team": "Privateer"
+      },
+      {
+       "pos": 10,
+       "driver": "Ryan Green",
+       "points": 650,
+       "team": "Privateer"
+      }
+     ]
+    },
+    {
+     "name": "Honda Cadet GX200",
+     "status": "Final",
+     "source": "https://britishkartchampionships.org/championship-standing",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Sawyer Henderson",
+       "points": 735,
+       "team": "MJR Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Archie Loveridge",
+       "points": 727,
+       "team": "Stealth Driver Development"
+      },
+      {
+       "pos": 3,
+       "driver": "Mason Becker",
+       "points": 719,
+       "team": "Project One Racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Shaylan Sreekantan",
+       "points": 709,
+       "team": "Privateer"
+      },
+      {
+       "pos": 5,
+       "driver": "Archie Cannon",
+       "points": 706,
+       "team": "Privateer"
+      },
+      {
+       "pos": 6,
+       "driver": "Marcus Cooper",
+       "points": 691,
+       "team": "Project One Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Luca Bicocchi",
+       "points": 685,
+       "team": "Apollo Karts"
+      },
+      {
+       "pos": 8,
+       "driver": "Jenson Kulla",
+       "points": 679,
+       "team": "Privateer"
+      },
+      {
+       "pos": 9,
+       "driver": "Henry Colbourne",
+       "points": 677,
+       "team": "Privateer"
+      },
+      {
+       "pos": 10,
+       "driver": "Harry Grant",
+       "points": 666,
+       "team": "Privateer"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kartmasters-british-grand-prix",
+   "name": "Uptonsteel Motorsport UK Kartmasters British Kart Grand Prix",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "A single event at PF International, 30 Jul to 2 Aug 2026, so there are no points. Rows are the Grand Prix final classification (top 10), and P1 wins the GP plate. Mini X30 replaced Waterswift at this event.",
+   "url": "https://tvkc.co.uk/2026-kartmasters-gp",
+   "classes": [
+    {
+     "name": "MicroMax UK",
+     "status": "Final (Grand Prix race result, Race 53 - Grand Prix)",
+     "source": "https://www.apex-timing.com/goracing/results.php?path=/tvkc/2026/20260802",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jayan Prakash",
+       "points": null,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Oliver Woodhall",
+       "points": null,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Caio Vieira",
+       "points": null,
+       "team": "Team Evolution"
+      },
+      {
+       "pos": 4,
+       "driver": "Hendrix Falat",
+       "points": null,
+       "team": "TW Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Lenny Barton",
+       "points": null,
+       "team": "Strawberry Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Wraith Owen",
+       "points": null,
+       "team": "Tooley Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Arthur Rhodes",
+       "points": null,
+       "team": "Dan Holland Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Arthur Bowers",
+       "points": null,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 9,
+       "driver": "Will Wainwright",
+       "points": null,
+       "team": "Tooley Motorsport"
+      },
+      {
+       "pos": 10,
+       "driver": "Ronnie Allan",
+       "points": null,
+       "team": "Dan Holland Racing"
+      }
+     ]
+    },
+    {
+     "name": "IAME Mini X30",
+     "status": "Final (Grand Prix race result, Race 54 - Grand Prix)",
+     "source": "https://www.apex-timing.com/goracing/results.php?path=/tvkc/2026/20260802",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Alfie Davidson",
+       "points": null,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 2,
+       "driver": "Chester Forkes",
+       "points": null,
+       "team": "DK Academy"
+      },
+      {
+       "pos": 3,
+       "driver": "Bodhi Batch",
+       "points": null,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 4,
+       "driver": "Harry Chapman",
+       "points": null,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Ethan Robinson",
+       "points": null,
+       "team": "DMS"
+      },
+      {
+       "pos": 6,
+       "driver": "Dimitar Uzunov",
+       "points": null,
+       "team": "Jade Racing Team"
+      },
+      {
+       "pos": 7,
+       "driver": "Ivans Voronins",
+       "points": null,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Mayson Hibbert",
+       "points": null,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Efan Owen",
+       "points": null,
+       "team": "DK Academy"
+      },
+      {
+       "pos": 10,
+       "driver": "Kaiden Hakoura",
+       "points": null,
+       "team": "Fusion Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "MiniMax 950",
+     "status": "Final (Grand Prix race result, Race 52 - Grand Prix)",
+     "source": "https://www.apex-timing.com/goracing/results.php?path=/tvkc/2026/20260802",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jackson Hilton",
+       "points": null,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 2,
+       "driver": "Sebastian Bearman",
+       "points": null,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Otis Cleary",
+       "points": null,
+       "team": "Dan Holland Racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Logan Rolfe",
+       "points": null,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 5,
+       "driver": "James Roots",
+       "points": null,
+       "team": "Dan Holland Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Eddy Duncan",
+       "points": null,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Austin Oman",
+       "points": null,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Luke Milward",
+       "points": null,
+       "team": "XKart"
+      },
+      {
+       "pos": 9,
+       "driver": "Mik Klinkers",
+       "points": null,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Alfie Garrett",
+       "points": null,
+       "team": "Privateer"
+      }
+     ]
+    },
+    {
+     "name": "Junior Rotax",
+     "status": "Final (Grand Prix race result, Race 57 - Grand Prix)",
+     "source": "https://www.apex-timing.com/goracing/results.php?path=/tvkc/2026/20260802",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Albert Friend",
+       "points": null,
+       "team": "Dan Holland Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Fletcher Jamieson",
+       "points": null,
+       "team": "JAXX Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Zach Turner",
+       "points": null,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Ellis Bell",
+       "points": null,
+       "team": "Ultimate R"
+      },
+      {
+       "pos": 5,
+       "driver": "Finlay Lines",
+       "points": null,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 6,
+       "driver": "Sebastian Clark",
+       "points": null,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 7,
+       "driver": "Blake Southan",
+       "points": null,
+       "team": "Dan Holland Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Euan House",
+       "points": null,
+       "team": "JAXX Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "John Richardson",
+       "points": null,
+       "team": "Global Karting"
+      },
+      {
+       "pos": 10,
+       "driver": "Tom Read",
+       "points": null,
+       "team": "Tooley Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "Junior X30",
+     "status": "Final (Grand Prix race result, Race 55 - Grand Prix)",
+     "source": "https://www.apex-timing.com/goracing/results.php?path=/tvkc/2026/20260802",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jorge Edgar",
+       "points": null,
+       "team": "Mick Barrett Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Sukhmani Khera",
+       "points": null,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Freddie Wood",
+       "points": null,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 4,
+       "driver": "Charlie Woolfitt",
+       "points": null,
+       "team": "Dan Holland Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Henry Clarke",
+       "points": null,
+       "team": "BMR"
+      },
+      {
+       "pos": 6,
+       "driver": "Finlay Lines",
+       "points": null,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 7,
+       "driver": "George House",
+       "points": null,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Colbe Pattison",
+       "points": null,
+       "team": "Xcel Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Louis Radcliffe",
+       "points": null,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Rocco-Leon Shenton",
+       "points": null,
+       "team": "Privateer"
+      }
+     ]
+    },
+    {
+     "name": "Senior Rotax",
+     "status": "Final (Grand Prix race result, Race 58 - Grand Prix)",
+     "source": "https://www.apex-timing.com/goracing/results.php?path=/tvkc/2026/20260802",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Freddie Lloyd",
+       "points": null,
+       "team": "Team Evolution"
+      },
+      {
+       "pos": 2,
+       "driver": "Jared Fox-Whiteley",
+       "points": null,
+       "team": "JAXX Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Joshua Graham",
+       "points": null,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 4,
+       "driver": "Ewan Charman",
+       "points": null,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Macauley Bishop",
+       "points": null,
+       "team": "Dan Holland Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Guy Cunnington",
+       "points": null,
+       "team": "Guy Cunnington Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Joshua Smith",
+       "points": null,
+       "team": "KIDIX UK"
+      },
+      {
+       "pos": 8,
+       "driver": "Matteo Palazzo",
+       "points": null,
+       "team": "Guy Cunnington Racing"
+      },
+      {
+       "pos": 9,
+       "driver": "Joshua Turnbull",
+       "points": null,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Finley Jones",
+       "points": null,
+       "team": "LAR"
+      }
+     ]
+    },
+    {
+     "name": "Senior X30",
+     "status": "Final (Grand Prix race result, Race 56 - Grand Prix)",
+     "source": "https://www.apex-timing.com/goracing/results.php?path=/tvkc/2026/20260802",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Freddie Lloyd",
+       "points": null,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 2,
+       "driver": "Arron Browne",
+       "points": null,
+       "team": "PF International"
+      },
+      {
+       "pos": 3,
+       "driver": "Noah Wolfe",
+       "points": null,
+       "team": "Jade Racing Team"
+      },
+      {
+       "pos": 4,
+       "driver": "Nat Johnstone",
+       "points": null,
+       "team": "Mick Barrett Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Gabriel Stilp",
+       "points": null,
+       "team": "Croc Promotion"
+      },
+      {
+       "pos": 6,
+       "driver": "Caden Mcqueen",
+       "points": null,
+       "team": "Fusion Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Archie Owen",
+       "points": null,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 8,
+       "driver": "Joshua Smith",
+       "points": null,
+       "team": "KIDIX UK"
+      },
+      {
+       "pos": 9,
+       "driver": "Sam Lewis",
+       "points": null,
+       "team": "Premium Karting"
+      },
+      {
+       "pos": 10,
+       "driver": "Scott Reilly",
+       "points": null,
+       "team": "Xcel Motorsport"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rmc-ultimate-karting-championship",
+   "name": "R.M.C Ultimate Karting Championship (UKC) - Rotax MAX Challenge UK",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "The UK Rotax MAX Challenge series, run with JAG Rotax UK and a qualifier for the RMC Grand Finals. Six rounds, ending at Dunkeswell 26-27 Sep 2026. The separate Rotax Trophy at Silverstone (Oct 2026) and the RMC Grand Finals (Portimao, Nov 2026) are not included.",
+   "url": "https://www.alpharacehub.com/ukc",
+   "classes": [
+    {
+     "name": "Micro Max",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukc/c/5397",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jayan Prakash",
+       "points": 726,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Sebastian Crawford",
+       "points": 712,
+       "team": "Origin Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Lenny Barton",
+       "points": 711,
+       "team": "Strawberry Racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Arlo Gamble",
+       "points": 654,
+       "team": "DHR"
+      },
+      {
+       "pos": 5,
+       "driver": "Kai Suri",
+       "points": 592,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Kaiden Hanley",
+       "points": 475,
+       "team": "Privateer"
+      },
+      {
+       "pos": 7,
+       "driver": "Arshi Gupta",
+       "points": 428,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Jenson Kelly",
+       "points": 398,
+       "team": "MLC Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Anson Gao",
+       "points": 390,
+       "team": "LMMOTORSPORT"
+      },
+      {
+       "pos": 10,
+       "driver": "Arthur Rhodes",
+       "points": 361,
+       "team": "DHR"
+      }
+     ]
+    },
+    {
+     "name": "Mini Inter",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukc/c/5396",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Austin Oman",
+       "points": 729,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Maximilian Abrahart",
+       "points": 709,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Logan Rolfe",
+       "points": 656,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 4,
+       "driver": "Otis Cleary",
+       "points": 639,
+       "team": "DHR"
+      },
+      {
+       "pos": 5,
+       "driver": "Eddy Duncan",
+       "points": 633,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Jackson Hilton",
+       "points": 613,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Lewis Herbertson",
+       "points": 531,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 8,
+       "driver": "Riley Blakemore",
+       "points": 530,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Khloe Mcgill",
+       "points": 506,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Teddy Murphy",
+       "points": 487,
+       "team": "Sam Pollitt Racing"
+      }
+     ]
+    },
+    {
+     "name": "Junior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukc/c/5394",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Charlie Woolfitt",
+       "points": 739,
+       "team": "DHR"
+      },
+      {
+       "pos": 2,
+       "driver": "Kian Burnard",
+       "points": 680,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Blake Southan",
+       "points": 673,
+       "team": "DHR"
+      },
+      {
+       "pos": 4,
+       "driver": "Ellis Bell",
+       "points": 659,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 5,
+       "driver": "Sebastian chauhan Clark",
+       "points": 621,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 6,
+       "driver": "Jenson Chalk",
+       "points": 593,
+       "team": "MLC Motorsport"
+      },
+      {
+       "pos": 7,
+       "driver": "Luca Holmes-Balac",
+       "points": 583,
+       "team": "DHR"
+      },
+      {
+       "pos": 8,
+       "driver": "Riley Murro",
+       "points": 564,
+       "team": "Sam Pollitt Racing"
+      },
+      {
+       "pos": 9,
+       "driver": "Connor Large",
+       "points": 522,
+       "team": "Privateer"
+      },
+      {
+       "pos": 10,
+       "driver": "Braith Murdock",
+       "points": 515,
+       "team": "Ultimate-R"
+      }
+     ]
+    },
+    {
+     "name": "Senior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukc/c/5395",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Mattie Hingeley",
+       "points": 733,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 2,
+       "driver": "Macauley Bishop",
+       "points": 683,
+       "team": "DHR"
+      },
+      {
+       "pos": 3,
+       "driver": "Jack Lilley",
+       "points": 660,
+       "team": "Strawberry Racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Harry Freeman",
+       "points": 645,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 5,
+       "driver": "Jack West",
+       "points": 587,
+       "team": "Strawberry Racing"
+      },
+      {
+       "pos": 6,
+       "driver": "Joshua Graham",
+       "points": 582,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 7,
+       "driver": "Lewie Weaver",
+       "points": 578,
+       "team": "GMS Kart Team"
+      },
+      {
+       "pos": 8,
+       "driver": "James Kell",
+       "points": 561,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 9,
+       "driver": "Will Archer",
+       "points": 548,
+       "team": "KR-Sport"
+      },
+      {
+       "pos": 10,
+       "driver": "Harrison Whitticombe",
+       "points": 528,
+       "team": "Racing Perfection"
+      }
+     ]
+    },
+    {
+     "name": "Rotax 177",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukc/c/5398",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Harrison Crook",
+       "points": 712,
+       "team": "TH Corse"
+      },
+      {
+       "pos": 2,
+       "driver": "Taylor Bellini",
+       "points": 693,
+       "team": "Evolution Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Nathan Chafer",
+       "points": 644,
+       "team": "Privateer"
+      },
+      {
+       "pos": 4,
+       "driver": "David Mitchell",
+       "points": 631,
+       "team": "Kraft Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Ryan Taylor-Trueman",
+       "points": 629,
+       "team": "TT Motorsport"
+      },
+      {
+       "pos": 6,
+       "driver": "Reg Heywood",
+       "points": 593,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Joshua Gollin",
+       "points": 559,
+       "team": "Privateer"
+      },
+      {
+       "pos": 8,
+       "driver": "Jake Davis",
+       "points": 550,
+       "team": "TT Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Samuel Cornwell",
+       "points": 533,
+       "team": "MLC Motorsport"
+      },
+      {
+       "pos": 10,
+       "driver": "Rob Ellis",
+       "points": 519,
+       "team": "Coles Racing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "national-kart-cup",
+   "name": "National Kart Cup (NKC)",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "Six rounds, ending at Clay Pigeon 12-13 Sep 2026. Only Rotax and Senior TKM classes ran; no IAME/X30 standings were published for 2026. Points are after dropped scores. Team not shown.",
+   "url": "https://kartcup.co.uk/",
+   "classes": [
+    {
+     "name": "Inter Max",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/nkc/c/5358",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jack Daniels",
+       "points": 1206
+      },
+      {
+       "pos": 2,
+       "driver": "Zane Williams",
+       "points": 1163
+      },
+      {
+       "pos": 3,
+       "driver": "Bradley Beggs",
+       "points": 1126
+      },
+      {
+       "pos": 4,
+       "driver": "Ethan Mcnally-Roberts",
+       "points": 1102
+      },
+      {
+       "pos": 5,
+       "driver": "Freya Bond",
+       "points": 1072
+      },
+      {
+       "pos": 6,
+       "driver": "Callum Miller",
+       "points": 1070
+      },
+      {
+       "pos": 7,
+       "driver": "Oscar Tarsey",
+       "points": 1063
+      },
+      {
+       "pos": 8,
+       "driver": "Kiaan Khosla",
+       "points": 1062
+      },
+      {
+       "pos": 9,
+       "driver": "Rishaan Khosla",
+       "points": 1061
+      },
+      {
+       "pos": 10,
+       "driver": "Harrison Parkin",
+       "points": 1034
+      }
+     ]
+    },
+    {
+     "name": "Junior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/nkc/c/5359",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jenson Hookey",
+       "points": 1174
+      },
+      {
+       "pos": 2,
+       "driver": "Benjamin Lorne",
+       "points": 1155
+      },
+      {
+       "pos": 3,
+       "driver": "Hector Sadlowski",
+       "points": 1105
+      },
+      {
+       "pos": 4,
+       "driver": "Jesse Whitmore",
+       "points": 1083
+      },
+      {
+       "pos": 5,
+       "driver": "Ethan Hunt",
+       "points": 1057
+      },
+      {
+       "pos": 6,
+       "driver": "Jack Dimbleby",
+       "points": 1042
+      },
+      {
+       "pos": 7,
+       "driver": "Ewan Scott",
+       "points": 1041
+      },
+      {
+       "pos": 8,
+       "driver": "Logan Hartshorne",
+       "points": 1033
+      },
+      {
+       "pos": 9,
+       "driver": "Sam Green gomez",
+       "points": 998
+      },
+      {
+       "pos": 10,
+       "driver": "Freddie Wall",
+       "points": 990
+      }
+     ]
+    },
+    {
+     "name": "Senior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/nkc/c/5360",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Bobby Rosier",
+       "points": 1163
+      },
+      {
+       "pos": 2,
+       "driver": "Kieran Gifford",
+       "points": 1162
+      },
+      {
+       "pos": 3,
+       "driver": "Blake Ticehurst",
+       "points": 1157
+      },
+      {
+       "pos": 4,
+       "driver": "Ollie Varney",
+       "points": 1140
+      },
+      {
+       "pos": 5,
+       "driver": "Ben Baloo",
+       "points": 1090
+      },
+      {
+       "pos": 6,
+       "driver": "Riley Thatcher",
+       "points": 1088
+      },
+      {
+       "pos": 7,
+       "driver": "Ksawery Wieczorek",
+       "points": 1037
+      },
+      {
+       "pos": 8,
+       "driver": "Samuel Wyatt",
+       "points": 1027
+      },
+      {
+       "pos": 9,
+       "driver": "Taylor Dixon",
+       "points": 990
+      },
+      {
+       "pos": 10,
+       "driver": "Rhys Green",
+       "points": 985
+      }
+     ]
+    },
+    {
+     "name": "Rotax 177",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/nkc/c/5361",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Will Murdoch",
+       "points": 1145
+      },
+      {
+       "pos": 2,
+       "driver": "Scott Smith",
+       "points": 1121
+      },
+      {
+       "pos": 3,
+       "driver": "Cole Edwards",
+       "points": 1101
+      },
+      {
+       "pos": 4,
+       "driver": "Archie Elliott",
+       "points": 1082
+      },
+      {
+       "pos": 5,
+       "driver": "Lincoln Bailey-Arnison",
+       "points": 1056
+      },
+      {
+       "pos": 6,
+       "driver": "George Walker",
+       "points": 1037
+      },
+      {
+       "pos": 7,
+       "driver": "Joshua Pickford",
+       "points": 1022
+      },
+      {
+       "pos": 8,
+       "driver": "Jack Taylor",
+       "points": 1018
+      },
+      {
+       "pos": 9,
+       "driver": "Ste Gilly",
+       "points": 960
+      },
+      {
+       "pos": 10,
+       "driver": "Ethan Wyatt",
+       "points": 951
+      }
+     ]
+    },
+    {
+     "name": "Senior TKM",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/nkc/c/5362",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Charlie King",
+       "points": 1181
+      },
+      {
+       "pos": 2,
+       "driver": "Michael Cornell",
+       "points": 1164
+      },
+      {
+       "pos": 3,
+       "driver": "Al Paterson",
+       "points": 1154
+      },
+      {
+       "pos": 4,
+       "driver": "Mitchell Ball",
+       "points": 1147
+      },
+      {
+       "pos": 5,
+       "driver": "Ben Watson",
+       "points": 1123
+      },
+      {
+       "pos": 6,
+       "driver": "Joseph Booth",
+       "points": 1106
+      },
+      {
+       "pos": 7,
+       "driver": "Tom Johnson",
+       "points": 1080
+      },
+      {
+       "pos": 8,
+       "driver": "Jamie Scott",
+       "points": 1042
+      },
+      {
+       "pos": 9,
+       "driver": "Samuel King",
+       "points": 1031
+      },
+      {
+       "pos": 10,
+       "driver": "Matthew Harris",
+       "points": 1011
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "the-kart-championship",
+   "name": "The Kart Championship (TKC)",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "Six rounds, ending at Whilton Mill 12-13 Sep 2026. The TKC Winter Cup and Autumn Cup are separate events and are not included. Points are after dropped scores. On Alpha Timing it is listed under the 'bkc' slug.",
+   "url": "https://thekartchampionship.co.uk/",
+   "classes": [
+    {
+     "name": "MightE Bambino",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5346",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Luka Pead",
+       "points": 954,
+       "team": "Ambition Motorsport"
+      },
+      {
+       "pos": 2,
+       "driver": "Eli Parkhouse",
+       "points": 921,
+       "team": "Privateer"
+      },
+      {
+       "pos": 3,
+       "driver": "Jules Nash",
+       "points": 906,
+       "team": "Privateer"
+      },
+      {
+       "pos": 4,
+       "driver": "Ej Dera",
+       "points": 887,
+       "team": "Msport Karting"
+      },
+      {
+       "pos": 5,
+       "driver": "Oliver Reynolds",
+       "points": 880,
+       "team": "Privateer"
+      },
+      {
+       "pos": 6,
+       "driver": "Aidan Castleman",
+       "points": 879,
+       "team": "RCE"
+      },
+      {
+       "pos": 7,
+       "driver": "Max Tetlow",
+       "points": 841,
+       "team": "Privateer"
+      },
+      {
+       "pos": 8,
+       "driver": "Artyn Aujla",
+       "points": 818,
+       "team": "Msport Karting"
+      },
+      {
+       "pos": 9,
+       "driver": "Bryella Stephens",
+       "points": 813
+      },
+      {
+       "pos": 10,
+       "driver": "Raef Virdee",
+       "points": 791,
+       "team": "Team17"
+      }
+     ]
+    },
+    {
+     "name": "MightE Cadet",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5345",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Harry Stinson",
+       "points": 971,
+       "team": "Privateer"
+      },
+      {
+       "pos": 2,
+       "driver": "Heath Smith",
+       "points": 920
+      },
+      {
+       "pos": 3,
+       "driver": "Freddie Dye",
+       "points": 886,
+       "team": "Privateer"
+      },
+      {
+       "pos": 4,
+       "driver": "Henry Hales",
+       "points": 881,
+       "team": "Ambition Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Junior Wright",
+       "points": 874,
+       "team": "RCE"
+      },
+      {
+       "pos": 6,
+       "driver": "Elliot Hitch",
+       "points": 862
+      },
+      {
+       "pos": 7,
+       "driver": "Jax Wong",
+       "points": 861,
+       "team": "Privateer"
+      },
+      {
+       "pos": 8,
+       "driver": "Arthur Thompson",
+       "points": 847,
+       "team": "Privateer"
+      },
+      {
+       "pos": 9,
+       "driver": "Jacob Amis",
+       "points": 808,
+       "team": "Privateer"
+      },
+      {
+       "pos": 10,
+       "driver": "Frank Pearson",
+       "points": 778,
+       "team": "Privateer"
+      }
+     ]
+    },
+    {
+     "name": "Honda Cadet",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5340",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Archie Cannon",
+       "points": 942,
+       "team": "Tim Parrott Motorsport"
+      },
+      {
+       "pos": 2,
+       "driver": "Archie Loveridge",
+       "points": 906,
+       "team": "Ambition Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Joshua Bailey",
+       "points": 880,
+       "team": "Project One Racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Sawyer Henderson",
+       "points": 879,
+       "team": "MJR Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Luca Bicocchi",
+       "points": 876,
+       "team": "Apollo Karts"
+      },
+      {
+       "pos": 6,
+       "driver": "Mason Becker",
+       "points": 870,
+       "team": "Project One Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Marcus Cooper",
+       "points": 868,
+       "team": "Project One Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Jenson Kulla",
+       "points": 822,
+       "team": "SRT"
+      },
+      {
+       "pos": 9,
+       "driver": "Freddie Drury",
+       "points": 809,
+       "team": "Apollo Karts"
+      },
+      {
+       "pos": 10,
+       "driver": "Henry Colbourne",
+       "points": 797
+      }
+     ]
+    },
+    {
+     "name": "Micro Max",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5341",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Sebastian Crawford",
+       "points": 965,
+       "team": "Origin Motorsport"
+      },
+      {
+       "pos": 2,
+       "driver": "Jenson Darlow",
+       "points": 926,
+       "team": "Jaxx Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Freddie Baker",
+       "points": 916,
+       "team": "RCE"
+      },
+      {
+       "pos": 4,
+       "driver": "Milo Taylor",
+       "points": 862,
+       "team": "Ben Folland Motorsport"
+      },
+      {
+       "pos": 5,
+       "driver": "Will Hatton",
+       "points": 857,
+       "team": "Kraft Motorsport"
+      },
+      {
+       "pos": 6,
+       "driver": "Jenson Drummond",
+       "points": 854
+      },
+      {
+       "pos": 7,
+       "driver": "Benjamin Finlay",
+       "points": 837,
+       "team": "Kraft Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Sebastian Talbot",
+       "points": 817,
+       "team": "737 Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Lani Edun",
+       "points": 778,
+       "team": "Jaxx Motorsport"
+      },
+      {
+       "pos": 10,
+       "driver": "Seth Stayt-Mackey",
+       "points": 765,
+       "team": "737 Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "Inter Max",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5342",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Maximilian Abrahart",
+       "points": 963,
+       "team": "Hunter Motorsport"
+      },
+      {
+       "pos": 2,
+       "driver": "Jenson Sayell",
+       "points": 949,
+       "team": "Privateer"
+      },
+      {
+       "pos": 3,
+       "driver": "Ethan Lloyd",
+       "points": 868,
+       "team": "RCE"
+      },
+      {
+       "pos": 4,
+       "driver": "Alfie Filippsen",
+       "points": 854,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Lewis Kirkaldy",
+       "points": 825,
+       "team": "Privateer"
+      },
+      {
+       "pos": 6,
+       "driver": "Hamish Gordon",
+       "points": 818,
+       "team": "Privateer"
+      },
+      {
+       "pos": 7,
+       "driver": "Ethan Manzi",
+       "points": 805,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Jay Birmingham",
+       "points": 788,
+       "team": "Maxim Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Adam Bhatt",
+       "points": 783,
+       "team": "Kato Motor Sport"
+      },
+      {
+       "pos": 10,
+       "driver": "Finlay Rhodes",
+       "points": 765,
+       "team": "Maxim Motorsport"
+      }
+     ]
+    },
+    {
+     "name": "Junior Primo",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5343",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jude Puddefoot",
+       "points": 942,
+       "team": "X Kart"
+      },
+      {
+       "pos": 2,
+       "driver": "Liam Dooling",
+       "points": 915,
+       "team": "Maxim Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Zayn Perry",
+       "points": 884,
+       "team": "JDR"
+      },
+      {
+       "pos": 4,
+       "driver": "Jaxson Heath",
+       "points": 854,
+       "team": "Privateer"
+      },
+      {
+       "pos": 5,
+       "driver": "Harry Myatt-Waldron",
+       "points": 818,
+       "team": "JAXX"
+      },
+      {
+       "pos": 6,
+       "driver": "Toby Wortley",
+       "points": 802,
+       "team": "KIDIX UK"
+      },
+      {
+       "pos": 7,
+       "driver": "Jacob Underhill",
+       "points": 791,
+       "team": "JDR"
+      },
+      {
+       "pos": 8,
+       "driver": "Morgan Cooney",
+       "points": 789,
+       "team": "Kato Motor Sport"
+      },
+      {
+       "pos": 9,
+       "driver": "Odysseas Hole",
+       "points": 777,
+       "team": "Dave Edwards Racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Lucas Esser",
+       "points": 770,
+       "team": "Privateer"
+      }
+     ]
+    },
+    {
+     "name": "Junior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5344",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Zach Turner",
+       "points": 916,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Euan House",
+       "points": 899,
+       "team": "Jaxx Motorsport"
+      },
+      {
+       "pos": 3,
+       "driver": "Ryan Rappini",
+       "points": 870,
+       "team": "KIDIX UK"
+      },
+      {
+       "pos": 4,
+       "driver": "Charlie Vairy",
+       "points": 833,
+       "team": "ST Racing"
+      },
+      {
+       "pos": 5,
+       "driver": "Teddie Cooper",
+       "points": 832,
+       "team": "KIDIX UK"
+      },
+      {
+       "pos": 6,
+       "driver": "Laurie Mcveigh",
+       "points": 797,
+       "team": "Project One Racing"
+      },
+      {
+       "pos": 7,
+       "driver": "Noah Moulton",
+       "points": 779,
+       "team": "Maxim Motorsport"
+      },
+      {
+       "pos": 8,
+       "driver": "Jackson Lane",
+       "points": 741,
+       "team": "KIDIX UK"
+      },
+      {
+       "pos": 9,
+       "driver": "Kevin Ivanov",
+       "points": 724,
+       "team": "Kato Motor Sport"
+      },
+      {
+       "pos": 10,
+       "driver": "Jayjay Plowman",
+       "points": 721,
+       "team": "ST Racing"
+      }
+     ]
+    },
+    {
+     "name": "Senior Rotax",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/bkc/c/5339",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Joshua Smith",
+       "points": 938,
+       "team": "KIDIX UK"
+      },
+      {
+       "pos": 2,
+       "driver": "Harrison Crowther",
+       "points": 934,
+       "team": "Coles Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Riley Bishop",
+       "points": 887,
+       "team": "X Kart"
+      },
+      {
+       "pos": 4,
+       "driver": "Kai Newman",
+       "points": 867,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 5,
+       "driver": "Lewis Sumner",
+       "points": 866,
+       "team": "X Kart"
+      },
+      {
+       "pos": 6,
+       "driver": "Elliot Dalton-Ayres",
+       "points": 829,
+       "team": "Ultimate-R"
+      },
+      {
+       "pos": 7,
+       "driver": "George Cole",
+       "points": 801,
+       "team": "Project One Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Ross Tyler",
+       "points": 792,
+       "team": "Jaxx Motorsport"
+      },
+      {
+       "pos": 9,
+       "driver": "Rory Hinckley",
+       "points": 784,
+       "team": "JWR"
+      },
+      {
+       "pos": 10,
+       "driver": "Drew Preisner",
+       "points": 783,
+       "team": "KIDIX UK"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "access-karting",
+   "name": "Access Karting National Karting Series",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "An independent (IKR) low-cost national series. Six rounds, ending with the Dragon Cup at Llandow 17-18 Oct 2026. Points are after dropped scores.",
+   "url": "https://www.accesskarting-uk.com/",
+   "classes": [
+    {
+     "name": "GX-UK Cadet",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/accesskarting/c/5542",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Noah Millar",
+       "points": 570
+      },
+      {
+       "pos": 2,
+       "driver": "Ellis Kuras",
+       "points": 550
+      },
+      {
+       "pos": 3,
+       "driver": "Jesse Purchase",
+       "points": 515
+      },
+      {
+       "pos": 4,
+       "driver": "Deacon Williams",
+       "points": 500
+      },
+      {
+       "pos": 5,
+       "driver": "Noel O'dea",
+       "points": 445
+      },
+      {
+       "pos": 6,
+       "driver": "Jenson Still",
+       "points": 370
+      },
+      {
+       "pos": 7,
+       "driver": "Darwin Mordawski",
+       "points": 355
+      },
+      {
+       "pos": 8,
+       "driver": "Harry Horne",
+       "points": 345
+      },
+      {
+       "pos": 9,
+       "driver": "Newton-Bea Mordawski",
+       "points": 280
+      },
+      {
+       "pos": 10,
+       "driver": "Maxxi Thomas",
+       "points": 275
+      }
+     ]
+    },
+    {
+     "name": "GX-UK Junior",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/accesskarting/c/5545",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Sam Blamey",
+       "points": 674
+      },
+      {
+       "pos": 2,
+       "driver": "Morgan Potts",
+       "points": 662
+      },
+      {
+       "pos": 3,
+       "driver": "Riley Potts",
+       "points": 655
+      },
+      {
+       "pos": 4,
+       "driver": "Angus Langley",
+       "points": 631
+      },
+      {
+       "pos": 5,
+       "driver": "Charlie Wiltshire",
+       "points": 629
+      },
+      {
+       "pos": 6,
+       "driver": "Leonardo Palagi",
+       "points": 582
+      },
+      {
+       "pos": 7,
+       "driver": "Ollie Chandler",
+       "points": 582
+      },
+      {
+       "pos": 8,
+       "driver": "Jack Griggs",
+       "points": 567
+      },
+      {
+       "pos": 9,
+       "driver": "Aiden Mcgeown",
+       "points": 551
+      },
+      {
+       "pos": 10,
+       "driver": "Evan Withington",
+       "points": 541
+      }
+     ]
+    },
+    {
+     "name": "GX-UK Senior",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/accesskarting/c/5544",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jacob Sharrock",
+       "points": 695
+      },
+      {
+       "pos": 2,
+       "driver": "Ross Deal",
+       "points": 692
+      },
+      {
+       "pos": 3,
+       "driver": "Matthew Roberts",
+       "points": 672
+      },
+      {
+       "pos": 4,
+       "driver": "Henry Alp-Williams",
+       "points": 649
+      },
+      {
+       "pos": 5,
+       "driver": "Jack Langford",
+       "points": 646
+      },
+      {
+       "pos": 6,
+       "driver": "Philip Richardson",
+       "points": 635
+      },
+      {
+       "pos": 7,
+       "driver": "Oscar Proietti",
+       "points": 622
+      },
+      {
+       "pos": 8,
+       "driver": "Harvey Still",
+       "points": 619
+      },
+      {
+       "pos": 9,
+       "driver": "Brad Philpot",
+       "points": 587
+      },
+      {
+       "pos": 10,
+       "driver": "Alex Warnaby",
+       "points": 576
+      }
+     ]
+    },
+    {
+     "name": "GX-UK Prokart",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/accesskarting/c/5543",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ewan Rayner",
+       "points": 724
+      },
+      {
+       "pos": 2,
+       "driver": "Christian Bellaby",
+       "points": 719
+      },
+      {
+       "pos": 3,
+       "driver": "Alex Mayes",
+       "points": 650
+      },
+      {
+       "pos": 4,
+       "driver": "Tom Angier",
+       "points": 645
+      },
+      {
+       "pos": 5,
+       "driver": "Rob Mcgeown",
+       "points": 581
+      },
+      {
+       "pos": 6,
+       "driver": "Liam Pedge",
+       "points": 566
+      },
+      {
+       "pos": 7,
+       "driver": "Michaela Pothas",
+       "points": 538
+      },
+      {
+       "pos": 8,
+       "driver": "Peter Stott",
+       "points": 533
+      },
+      {
+       "pos": 9,
+       "driver": "Nick Williams",
+       "points": 492
+      },
+      {
+       "pos": 10,
+       "driver": "Gary Evans",
+       "points": 452
+      }
+     ]
+    },
+    {
+     "name": "100-UK Junior",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/accesskarting/c/5546",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Kye Turner",
+       "points": 676
+      },
+      {
+       "pos": 2,
+       "driver": "Lucas Kelly",
+       "points": 668
+      },
+      {
+       "pos": 3,
+       "driver": "Jack Scott",
+       "points": 653
+      },
+      {
+       "pos": 4,
+       "driver": "Seth Jones",
+       "points": 645
+      },
+      {
+       "pos": 5,
+       "driver": "Thomas Platten",
+       "points": 609
+      },
+      {
+       "pos": 6,
+       "driver": "Jaiden Solo",
+       "points": 577
+      },
+      {
+       "pos": 7,
+       "driver": "Yelena Osbahr-Scott",
+       "points": 562
+      },
+      {
+       "pos": 8,
+       "driver": "Jessica Williams",
+       "points": 544
+      },
+      {
+       "pos": 9,
+       "driver": "Devon Giles",
+       "points": 521
+      },
+      {
+       "pos": 10,
+       "driver": "Logan Pedge",
+       "points": 515
+      }
+     ]
+    },
+    {
+     "name": "100-UK Senior",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/accesskarting/c/5541",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Scott Williams",
+       "points": 706
+      },
+      {
+       "pos": 2,
+       "driver": "Dominic Pyne",
+       "points": 674
+      },
+      {
+       "pos": 3,
+       "driver": "James Phillips",
+       "points": 642
+      },
+      {
+       "pos": 4,
+       "driver": "Paul Streather",
+       "points": 640
+      },
+      {
+       "pos": 5,
+       "driver": "Tom Scott",
+       "points": 603
+      },
+      {
+       "pos": 6,
+       "driver": "Joe Taylor",
+       "points": 596
+      },
+      {
+       "pos": 7,
+       "driver": "Brendon Williams",
+       "points": 591
+      },
+      {
+       "pos": 8,
+       "driver": "Ryan Gill",
+       "points": 560
+      },
+      {
+       "pos": 9,
+       "driver": "Matthew Lawrence",
+       "points": 555
+      },
+      {
+       "pos": 10,
+       "driver": "Joshua Cope",
+       "points": 449
+      }
+     ]
+    },
+    {
+     "name": "115-UK Senior",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/accesskarting/c/5540",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ash Robinson",
+       "points": 710
+      },
+      {
+       "pos": 2,
+       "driver": "Pete Newman",
+       "points": 699
+      },
+      {
+       "pos": 3,
+       "driver": "Gordon Smith",
+       "points": 644
+      },
+      {
+       "pos": 4,
+       "driver": "Ben Jessup",
+       "points": 637
+      },
+      {
+       "pos": 5,
+       "driver": "Sam Taylor",
+       "points": 634
+      },
+      {
+       "pos": 6,
+       "driver": "Alex Thomas",
+       "points": 624
+      },
+      {
+       "pos": 7,
+       "driver": "Charlie Machin",
+       "points": 614
+      },
+      {
+       "pos": 8,
+       "driver": "Lee Harrison",
+       "points": 548
+      },
+      {
+       "pos": 9,
+       "driver": "Sam Cope",
+       "points": 516
+      },
+      {
+       "pos": 10,
+       "driver": "James King",
+       "points": 507
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "uk-kart-series",
+   "name": "UK Kart Series (UKKS)",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Final",
+   "note": "A national series for cadet and junior/Pro Kart classes. Nine rounds, ending at Shenington 31 Oct to 1 Nov 2026. The Senior Pro Kart, Formula Blue and T4 tables were not extracted. The Comer and IAME Bambino tables are short.",
+   "url": "https://www.alpharacehub.com/ukks",
+   "classes": [
+    {
+     "name": "Comer Bambino",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukks/c/5088",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jax Woolmington",
+       "points": 906
+      },
+      {
+       "pos": 2,
+       "driver": "Logan Grassi",
+       "points": 776
+      },
+      {
+       "pos": 3,
+       "driver": "Reggie Rhodes",
+       "points": 574
+      },
+      {
+       "pos": 4,
+       "driver": "Dalton Dyke-Whitfield",
+       "points": 569
+      },
+      {
+       "pos": 5,
+       "driver": "Matthew Pearson",
+       "points": 496
+      },
+      {
+       "pos": 6,
+       "driver": "Jace Hannon",
+       "points": 463
+      },
+      {
+       "pos": 7,
+       "driver": "Noah Gallagher",
+       "points": 371
+      },
+      {
+       "pos": 8,
+       "driver": "Bobby Maddock",
+       "points": 165
+      }
+     ]
+    },
+    {
+     "name": "IAME Bambino",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukks/c/5089",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jack rossi Minot",
+       "points": 514
+      },
+      {
+       "pos": 2,
+       "driver": "Harper Newman",
+       "points": 508
+      },
+      {
+       "pos": 3,
+       "driver": "Isaac Taylor",
+       "points": 473
+      },
+      {
+       "pos": 4,
+       "driver": "Rex Everard",
+       "points": 328
+      },
+      {
+       "pos": 5,
+       "driver": "Henry Exton",
+       "points": 326
+      },
+      {
+       "pos": 6,
+       "driver": "Jed Evans",
+       "points": 70
+      },
+      {
+       "pos": 7,
+       "driver": "Presley Knight",
+       "points": 0
+      }
+     ]
+    },
+    {
+     "name": "MightE Bambino",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukks/c/5092",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Oliver Reynolds",
+       "points": 1159
+      },
+      {
+       "pos": 2,
+       "driver": "Raef Virdee",
+       "points": 1157
+      },
+      {
+       "pos": 3,
+       "driver": "Max West",
+       "points": 1016
+      },
+      {
+       "pos": 4,
+       "driver": "Theo Abraham",
+       "points": 1010
+      },
+      {
+       "pos": 5,
+       "driver": "Cruz Rodgers",
+       "points": 999
+      },
+      {
+       "pos": 6,
+       "driver": "Archie Watkins",
+       "points": 735
+      },
+      {
+       "pos": 7,
+       "driver": "Oliver Mullen",
+       "points": 719
+      },
+      {
+       "pos": 8,
+       "driver": "Oscar Osborne",
+       "points": 531
+      },
+      {
+       "pos": 9,
+       "driver": "Thomas Willford",
+       "points": 530
+      },
+      {
+       "pos": 10,
+       "driver": "Harri Foley",
+       "points": 413
+      }
+     ]
+    },
+    {
+     "name": "Honda Cadet GX200",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukks/c/5090",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Deno Rowlands",
+       "points": 1154
+      },
+      {
+       "pos": 2,
+       "driver": "Bradley Sutton",
+       "points": 1042
+      },
+      {
+       "pos": 3,
+       "driver": "Oscar Somerset",
+       "points": 1002
+      },
+      {
+       "pos": 4,
+       "driver": "Olly Knox",
+       "points": 860
+      },
+      {
+       "pos": 5,
+       "driver": "Archie Rutter",
+       "points": 837
+      },
+      {
+       "pos": 6,
+       "driver": "David Cioaca",
+       "points": 795
+      },
+      {
+       "pos": 7,
+       "driver": "Callum Bradford",
+       "points": 765
+      },
+      {
+       "pos": 8,
+       "driver": "Louie Dawson",
+       "points": 759
+      },
+      {
+       "pos": 9,
+       "driver": "Oscar Wills",
+       "points": 690
+      },
+      {
+       "pos": 10,
+       "driver": "Archie Loveridge",
+       "points": 667
+      }
+     ]
+    },
+    {
+     "name": "Honda R200 Inter",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukks/c/5095",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jj Allen",
+       "points": 1172
+      },
+      {
+       "pos": 2,
+       "driver": "Jake Barnett",
+       "points": 1133
+      },
+      {
+       "pos": 3,
+       "driver": "Hallie Findlater",
+       "points": 1042
+      },
+      {
+       "pos": 4,
+       "driver": "Maddi Horsepool",
+       "points": 1017
+      },
+      {
+       "pos": 5,
+       "driver": "Alfie Facer",
+       "points": 881
+      },
+      {
+       "pos": 6,
+       "driver": "Jack Clarke",
+       "points": 850
+      },
+      {
+       "pos": 7,
+       "driver": "Jenson Charity",
+       "points": 815
+      },
+      {
+       "pos": 8,
+       "driver": "William Hossack",
+       "points": 437
+      },
+      {
+       "pos": 9,
+       "driver": "Ethan Pearson",
+       "points": 375
+      },
+      {
+       "pos": 10,
+       "driver": "Carter Lundie",
+       "points": 316
+      }
+     ]
+    },
+    {
+     "name": "Junior Pro Kart",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/ukks/c/5093",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ashton Horspool",
+       "points": 1189
+      },
+      {
+       "pos": 2,
+       "driver": "Sebastian Thompson",
+       "points": 1028
+      },
+      {
+       "pos": 3,
+       "driver": "Harry Pennington",
+       "points": 1014
+      },
+      {
+       "pos": 4,
+       "driver": "Lewis Dean",
+       "points": 994
+      },
+      {
+       "pos": 5,
+       "driver": "Lorenzo Martin",
+       "points": 970
+      },
+      {
+       "pos": 6,
+       "driver": "Peter Webster",
+       "points": 922
+      },
+      {
+       "pos": 7,
+       "driver": "Rowan Marshall",
+       "points": 893
+      },
+      {
+       "pos": 8,
+       "driver": "Joseph East",
+       "points": 722
+      },
+      {
+       "pos": 9,
+       "driver": "Archie Young",
+       "points": 719
+      },
+      {
+       "pos": 10,
+       "driver": "Finley Worthy",
+       "points": 718
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tkm-festival",
+   "name": "TKM Festival",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Not found",
+   "note": "No 2026 TKM Festival results were found online. Senior TKM is covered under the National Kart Cup.",
+   "url": "https://www.tal-ko.com/",
+   "classes": []
+  },
+  {
+   "id": "lgm-series",
+   "name": "LGM Series",
+   "category": "uk-national",
+   "season": "2026",
+   "status": "Not found",
+   "note": "No 2026 LGM Series standings were found. The series may not have run in 2026.",
+   "classes": []
+  },
+  {
+   "id": "club100",
+   "name": "Club100 Racing (Sprint Championships)",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "Final (Sprint North 7/7, Sprint South 8/8)",
+   "note": "Pts = counting points after dropped scores (Total column = gross). Sprint South R7 Dunkeswell cancelled; R8 Silverstone 8 Nov included. Southern tables only partially captured (non-contiguous rows read). SP60/SP40/Experience given as leader only from the Racehub index (may predate final rounds). Club100 runs no separate 2026 senior endurance championship; SP60 is its long-race format.",
+   "url": "https://club100.co.uk/",
+   "classes": [
+    {
+     "name": "Heavyweight Sprint – Northern",
+     "status": "Final (7 of 7)",
+     "source": "https://alpharacehub.com/club100/c/5102",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Joe Holmes",
+       "points": 1084
+      },
+      {
+       "pos": 2,
+       "driver": "James Small",
+       "points": 1078
+      },
+      {
+       "pos": 3,
+       "driver": "Adam Wright",
+       "points": 1025
+      },
+      {
+       "pos": 4,
+       "driver": "Alex Pritchard",
+       "points": 1022
+      },
+      {
+       "pos": 5,
+       "driver": "Curt Holmes",
+       "points": 1009
+      },
+      {
+       "pos": 6,
+       "driver": "Ross Sandwell",
+       "points": 967
+      },
+      {
+       "pos": 7,
+       "driver": "Tom Walwyn",
+       "points": 953
+      },
+      {
+       "pos": 8,
+       "driver": "James Whitaker",
+       "points": 948
+      },
+      {
+       "pos": 9,
+       "driver": "Cameron Maxwell",
+       "points": 895
+      },
+      {
+       "pos": 10,
+       "driver": "Matthew Cockerham",
+       "points": 883
+      }
+     ]
+    },
+    {
+     "name": "Lightweight Sprint – Northern",
+     "status": "Final (7 of 7)",
+     "source": "https://alpharacehub.com/club100/c/5103",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Max Chapman",
+       "points": 1060
+      },
+      {
+       "pos": 2,
+       "driver": "Tommy Lee",
+       "points": 1029
+      },
+      {
+       "pos": 3,
+       "driver": "Jake Chapman",
+       "points": 1024
+      },
+      {
+       "pos": 4,
+       "driver": "Jamie Tiley-gooden",
+       "points": 1006
+      },
+      {
+       "pos": 5,
+       "driver": "Joseph Simcock",
+       "points": 996
+      },
+      {
+       "pos": 6,
+       "driver": "Thomas Northcott",
+       "points": 992
+      },
+      {
+       "pos": 7,
+       "driver": "Jayden Giles",
+       "points": 981
+      },
+      {
+       "pos": 8,
+       "driver": "Alfie Slater",
+       "points": 963
+      },
+      {
+       "pos": 9,
+       "driver": "John Boulter",
+       "points": 940
+      },
+      {
+       "pos": 10,
+       "driver": "Alex Forward",
+       "points": 940
+      }
+     ]
+    },
+    {
+     "name": "Heavyweight Sprint – Southern",
+     "status": "Final (8 rounds, R7 cancelled) – partial rows (P3,P4,P7,P8,P10 not captured)",
+     "source": "https://alpharacehub.com/club100/c/5005",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Andrew O'neill",
+       "points": 1123
+      },
+      {
+       "pos": 2,
+       "driver": "Sam Pooley",
+       "points": 1066
+      },
+      {
+       "pos": 5,
+       "driver": "Sam Iddles",
+       "points": 1020
+      },
+      {
+       "pos": 6,
+       "driver": "Elliot Alt",
+       "points": 963
+      },
+      {
+       "pos": 9,
+       "driver": "Sam Pike",
+       "points": 944
+      }
+     ]
+    },
+    {
+     "name": "Lightweight Sprint – Southern",
+     "status": "Final (8 rounds, R7 cancelled) – champion only captured",
+     "source": "https://alpharacehub.com/club100/c/5006",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jack O’neill",
+       "points": 1108
+      }
+     ]
+    },
+    {
+     "name": "Middleweight Sprint",
+     "status": "Final (8 rounds, R7 cancelled) – partial rows",
+     "source": "https://alpharacehub.com/club100/c/5004",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ethan Saunders-wilks",
+       "points": 1102
+      },
+      {
+       "pos": 7,
+       "driver": "George Lawlor",
+       "points": 972
+      }
+     ]
+    },
+    {
+     "name": "Heavyweight SP60",
+     "status": "Leader only (index cached 6 Nov, may predate R8 on 7 Nov)",
+     "source": "https://alpharacehub.com/club100/c/5025",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Andrew O'Neill",
+       "points": 400
+      }
+     ]
+    },
+    {
+     "name": "Lightweight SP60",
+     "status": "Leader only (index cached 6 Nov, may predate R8 on 7 Nov)",
+     "source": "https://alpharacehub.com/club100/c/5024",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jack O'Neill",
+       "points": 400
+      }
+     ]
+    },
+    {
+     "name": "Heavyweight SP40 – Northern",
+     "status": "Final (7 of 7) – leader only",
+     "source": "https://alpharacehub.com/club100/c/5098",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Alex Pritchard",
+       "points": 486
+      }
+     ]
+    },
+    {
+     "name": "Lightweight SP40 – Northern",
+     "status": "Final (7 of 7) – leader only",
+     "source": "https://alpharacehub.com/club100/c/5097",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Christian Hill",
+       "points": 474
+      }
+     ]
+    },
+    {
+     "name": "Experience Lightweight",
+     "status": "After round 5 of 6 – leader only",
+     "source": "https://alpharacehub.com/club100/c/5020",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Blaise Turnstill",
+       "points": 375
+      }
+     ]
+    },
+    {
+     "name": "Experience Heavyweight",
+     "status": "After round 5 of 6 – leader only",
+     "source": "https://alpharacehub.com/club100/c/5021",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Justin Elliott",
+       "points": 374
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "brkc",
+   "name": "British Rental Kart Championship (BRKC)",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "Final",
+   "note": "Single-weekend event at Formula Fast, Milton Keynes (early 2026). No points table; Grand Final order = championship top 10. Only the champion was confirmed (Formula Fast/BRKC social post 'Bernadowski BRKC Champion 2026'; first name from KWC ranking). Full Grand Final classification not found on brkc.co.uk. BRKC 2027 is 26–28 Feb 2027.",
+   "url": "https://brkc.co.uk/",
+   "classes": [
+    {
+     "name": "Overall (Grand Final)",
+     "status": "Final",
+     "source": "https://www.instagram.com/formulafastkarting/",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Tomek Bernadowski",
+       "points": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bikc",
+   "name": "British Indoor Karting Championship (BIKC)",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "Regional Finals complete; National Final 14–15 Nov 2026",
+   "note": "Knockout format (qualifying → local → regional → national final), no points table. 2026 champions not yet decided. 2025 National Final results at https://bikc.co.uk/2025-results/ (e.g. HW Antony Wypych, MW Gabriel Quinta).",
+   "url": "https://bikc.co.uk/",
+   "classes": []
+  },
+  {
+   "id": "bukc",
+   "name": "British Universities Karting Championship (BUKC)",
+   "category": "uk-rental",
+   "season": "2025/26",
+   "status": "Final",
+   "note": "Team championship (Club100 karts). Pts = counting score after drops; Southampton A champion on countback over Bath A (both 414). 2026/27 season starts with qualifiers 13–15 Nov 2026 at Whilton Mill.",
+   "url": "https://www.bukc.co.uk/",
+   "classes": [
+    {
+     "name": "Premier / Clubman (Mains)",
+     "status": "Final (8 of 8)",
+     "source": "https://alpharacehub.com/bukc/c/4921",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Southampton A",
+       "points": 414
+      },
+      {
+       "pos": 2,
+       "driver": "Bath A",
+       "points": 414
+      },
+      {
+       "pos": 3,
+       "driver": "Loughborough B",
+       "points": 400
+      },
+      {
+       "pos": 4,
+       "driver": "Reading A",
+       "points": 394
+      },
+      {
+       "pos": 5,
+       "driver": "Oxford Brookes A",
+       "points": 381
+      },
+      {
+       "pos": 6,
+       "driver": "Edinburgh A",
+       "points": 380
+      },
+      {
+       "pos": 7,
+       "driver": "Leeds A",
+       "points": 357
+      },
+      {
+       "pos": 8,
+       "driver": "Coventry B",
+       "points": 347
+      },
+      {
+       "pos": 9,
+       "driver": "Loughborough A",
+       "points": 345
+      },
+      {
+       "pos": 10,
+       "driver": "Exeter A",
+       "points": 336
+      }
+     ]
+    },
+    {
+     "name": "Intermediate (Inters)",
+     "status": "Final (4 of 4)",
+     "source": "https://alpharacehub.com/bukc/c/4923",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Surrey C",
+       "points": 176
+      },
+      {
+       "pos": 2,
+       "driver": "Leeds Beckett A",
+       "points": 174
+      },
+      {
+       "pos": 3,
+       "driver": "Coventry C",
+       "points": 174
+      },
+      {
+       "pos": 4,
+       "driver": "Sheffield B",
+       "points": 173
+      },
+      {
+       "pos": 5,
+       "driver": "Liverpool A",
+       "points": 171
+      },
+      {
+       "pos": 6,
+       "driver": "Cambridge A",
+       "points": 161
+      },
+      {
+       "pos": 7,
+       "driver": "Surrey D",
+       "points": 158
+      },
+      {
+       "pos": 8,
+       "driver": "Coventry E",
+       "points": 154
+      },
+      {
+       "pos": 9,
+       "driver": "Imperial A",
+       "points": 152
+      },
+      {
+       "pos": 10,
+       "driver": "Portsmouth B",
+       "points": 151
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sws-uk",
+   "name": "Sodi World Series – UK national ranking",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "Not found",
+   "note": "SWS rankings pages (sodiwseries.com/en-gb/rankings/) are behind reCAPTCHA; UK national Sprint Cup ranking could not be read. Ranking runs 1 Jan–31 Dec 2026.",
+   "url": "https://www.sodiwseries.com/en-gb",
+   "classes": []
+  },
+  {
+   "id": "drs-uk",
+   "name": "Daniel Ricciardo Series (DRS) UK",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "Final (8 of 8) for DRS125; other classes leader only",
+   "note": "DRS100/DRS125 are owner-driver Ricciardo karts; DRS40/DRS50 cadets are arrive-and-drive. Leader-only rows come from the Racehub index (after R7, before R8 at Silverstone 1 Nov).",
+   "url": "https://danielricciardoseries.com/",
+   "classes": [
+    {
+     "name": "DRS125",
+     "status": "Final (8 of 8)",
+     "source": "https://alpharacehub.com/drs/c/5527",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Sam Faulkner",
+       "points": 2271
+      },
+      {
+       "pos": 2,
+       "driver": "Jack Clayton",
+       "points": 2097
+      },
+      {
+       "pos": 3,
+       "driver": "Xander Hughes",
+       "points": 2045
+      },
+      {
+       "pos": 4,
+       "driver": "Mark Lawrence",
+       "points": 1993
+      },
+      {
+       "pos": 5,
+       "driver": "Ethan Rawcliffe",
+       "points": 1973
+      },
+      {
+       "pos": 6,
+       "driver": "Dorian Malek",
+       "points": 1908
+      },
+      {
+       "pos": 7,
+       "driver": "Damien Hodge",
+       "points": 1690
+      },
+      {
+       "pos": 8,
+       "driver": "Gary Bumford",
+       "points": 1403
+      },
+      {
+       "pos": 9,
+       "driver": "Firas Bilbeisi",
+       "points": 1158
+      },
+      {
+       "pos": 10,
+       "driver": "Scott Rixon",
+       "points": 875
+      }
+     ]
+    },
+    {
+     "name": "DRS100",
+     "status": "After round 7 of 8 – leader only",
+     "source": "https://alpharacehub.com/drs/c/5517",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jakub Milczarski",
+       "points": 1836
+      }
+     ]
+    },
+    {
+     "name": "DRS50 (cadet)",
+     "status": "After round 7 of 8 – leader only",
+     "source": "https://alpharacehub.com/drs/c/5533",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ronnie Deacon",
+       "points": 1543
+      }
+     ]
+    },
+    {
+     "name": "DRS40 (cadet)",
+     "status": "After round 7 of 8 – leader only",
+     "source": "https://alpharacehub.com/drs/c/5501",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Senna Khosrowpanah",
+       "points": 1560
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eks",
+   "name": "Elite Karting Series (EKS)",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "After round 12 of 13 (seniors); juniors after 9 of 10",
+   "note": "National championships shown (Northern/Southern/Silverstone tables also in the sheet). Final round Kart Silverstone GP 28 Nov 2026. Pts = best-rounds total with drops.",
+   "url": "https://elitekartingseries.co.uk/standings",
+   "classes": [
+    {
+     "name": "National Lightweight",
+     "status": "After round 12 of 13",
+     "source": "https://docs.google.com/spreadsheets/d/1PEl2hJtTFkHKy38riUQ8hAwNr33WbeMlJqyL8Nu9bcI/edit",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Olly Smith",
+       "points": 850
+      },
+      {
+       "pos": 2,
+       "driver": "Ben Paines",
+       "points": 777
+      },
+      {
+       "pos": 3,
+       "driver": "Callum Bendelow",
+       "points": 686
+      },
+      {
+       "pos": 4,
+       "driver": "John Boulter",
+       "points": 644
+      },
+      {
+       "pos": 5,
+       "driver": "Tom Fox",
+       "points": 609
+      },
+      {
+       "pos": 6,
+       "driver": "Barry Lakes",
+       "points": 567
+      },
+      {
+       "pos": 7,
+       "driver": "Joel Metcalfe",
+       "points": 551
+      },
+      {
+       "pos": 8,
+       "driver": "Matias Maddox",
+       "points": 547
+      },
+      {
+       "pos": 9,
+       "driver": "Ross Honeyman",
+       "points": 494
+      },
+      {
+       "pos": 10,
+       "driver": "Robbie Petchey",
+       "points": 464
+      }
+     ]
+    },
+    {
+     "name": "National Heavyweight",
+     "status": "After round 12 of 13",
+     "source": "https://docs.google.com/spreadsheets/d/1PEl2hJtTFkHKy38riUQ8hAwNr33WbeMlJqyL8Nu9bcI/edit",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Dom Hughes-Clarey",
+       "points": 760
+      },
+      {
+       "pos": 2,
+       "driver": "Jockey Wilson",
+       "points": 677
+      },
+      {
+       "pos": 3,
+       "driver": "Ben Pickard",
+       "points": 650
+      },
+      {
+       "pos": 4,
+       "driver": "Saul Gregory",
+       "points": 649
+      },
+      {
+       "pos": 5,
+       "driver": "James Clare",
+       "points": 583
+      },
+      {
+       "pos": 6,
+       "driver": "Alex Cowley",
+       "points": 546
+      },
+      {
+       "pos": 7,
+       "driver": "Scott Woosey",
+       "points": 504
+      },
+      {
+       "pos": 8,
+       "driver": "Lewis Ashforth",
+       "points": 478
+      },
+      {
+       "pos": 9,
+       "driver": "Robert Southworth",
+       "points": 433
+      },
+      {
+       "pos": 10,
+       "driver": "Michael Bowles",
+       "points": 397
+      }
+     ]
+    },
+    {
+     "name": "National Junior",
+     "status": "After round 9 of 10",
+     "source": "https://docs.google.com/spreadsheets/d/1PEl2hJtTFkHKy38riUQ8hAwNr33WbeMlJqyL8Nu9bcI/edit",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Christian Hill",
+       "points": 596
+      },
+      {
+       "pos": 2,
+       "driver": "Lewis Brooks",
+       "points": 527
+      },
+      {
+       "pos": 3,
+       "driver": "Josh Melling",
+       "points": 505
+      },
+      {
+       "pos": 4,
+       "driver": "Jack Redfern",
+       "points": 502
+      },
+      {
+       "pos": 5,
+       "driver": "Blake Hutton",
+       "points": 420
+      },
+      {
+       "pos": 6,
+       "driver": "Leo Jackson",
+       "points": 408
+      },
+      {
+       "pos": 7,
+       "driver": "George Beauchamp",
+       "points": 397
+      },
+      {
+       "pos": 8,
+       "driver": "Jack Rogan",
+       "points": 334
+      },
+      {
+       "pos": 9,
+       "driver": "Oli Kite",
+       "points": 311
+      },
+      {
+       "pos": 10,
+       "driver": "Fin Ions",
+       "points": 307
+      }
+     ]
+    },
+    {
+     "name": "National Team",
+     "status": "After round 12 of 13",
+     "source": "https://docs.google.com/spreadsheets/d/1PEl2hJtTFkHKy38riUQ8hAwNr33WbeMlJqyL8Nu9bcI/edit",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Kinetica Racing Team",
+       "points": 1581
+      },
+      {
+       "pos": 2,
+       "driver": "Red Monster Racing",
+       "points": 1280
+      },
+      {
+       "pos": 3,
+       "driver": "YAWT Motorsport",
+       "points": 1226
+      },
+      {
+       "pos": 4,
+       "driver": "Paragon Racing",
+       "points": 1182
+      },
+      {
+       "pos": 5,
+       "driver": "Indoor Merchants",
+       "points": 1134
+      },
+      {
+       "pos": 6,
+       "driver": "Apex Nova Racing",
+       "points": 949
+      },
+      {
+       "pos": 7,
+       "driver": "Exemplar Racing",
+       "points": 883
+      },
+      {
+       "pos": 8,
+       "driver": "XLR8 Kent Brewery Racing",
+       "points": 849
+      },
+      {
+       "pos": 9,
+       "driver": "Quick Finishers Racing",
+       "points": 848
+      },
+      {
+       "pos": 10,
+       "driver": "APJC",
+       "points": 709
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "srk",
+   "name": "Southern Rental Kart Championship (SRK)",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "Not found",
+   "note": "srkchampionship.com (Wix) exposes no readable 2026 standings table; results posted mainly on Facebook. 2025 champions: Sprint Gabriel Quinta, Teams Bradley Sheppard Racing.",
+   "url": "https://www.srkchampionship.com/",
+   "classes": []
+  },
+  {
+   "id": "club73",
+   "name": "Club73 Karting Championships",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "After round 8 of 11 (Weekend), 8 of 10 (Midweek)",
+   "note": "Read from the official image PDFs on the standings page. Overall/Super Pro tables include all classes. Endurance PDF only shows 2 rounds (as published; may be out of date).",
+   "url": "https://www.club73karting.co.uk/standings",
+   "classes": [
+    {
+     "name": "Weekend Series – Overall / Super Pro",
+     "status": "After round 8 of 11",
+     "source": "https://www.club73karting.co.uk/_files/ugd/fd4530_3221641ad5324a269fedcb7b472265b5.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Reggie Moseley",
+       "points": 158
+      },
+      {
+       "pos": 2,
+       "driver": "Samuel Essery",
+       "points": 146
+      },
+      {
+       "pos": 3,
+       "driver": "Tom Webster",
+       "points": 136
+      },
+      {
+       "pos": 4,
+       "driver": "Blaise Turnstill",
+       "points": 136
+      },
+      {
+       "pos": 5,
+       "driver": "Scott Lawrence",
+       "points": 136
+      },
+      {
+       "pos": 6,
+       "driver": "Ashleigh Gough",
+       "points": 131
+      },
+      {
+       "pos": 7,
+       "driver": "Ben Johnson",
+       "points": 130
+      },
+      {
+       "pos": 8,
+       "driver": "Jack Fray",
+       "points": 121
+      },
+      {
+       "pos": 9,
+       "driver": "James Bracey",
+       "points": 121
+      },
+      {
+       "pos": 10,
+       "driver": "Adam Sheargold",
+       "points": 119
+      }
+     ]
+    },
+    {
+     "name": "Midweek Series – Overall / Super Pro",
+     "status": "After round 8 of 10",
+     "source": "https://www.club73karting.co.uk/_files/ugd/fd4530_9c6d47199a544b77aeafc480b466ae6d.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Bobby McGirr",
+       "points": 194
+      },
+      {
+       "pos": 2,
+       "driver": "Callum Bendelow",
+       "points": 150
+      },
+      {
+       "pos": 3,
+       "driver": "Jack Bailey",
+       "points": 143
+      },
+      {
+       "pos": 4,
+       "driver": "Warren Turvey",
+       "points": 130
+      },
+      {
+       "pos": 5,
+       "driver": "Jack Lead",
+       "points": 128
+      },
+      {
+       "pos": 6,
+       "driver": "Samuel Essery",
+       "points": 126
+      },
+      {
+       "pos": 7,
+       "driver": "Connor Ambrose",
+       "points": 124
+      },
+      {
+       "pos": 8,
+       "driver": "Taylor Jarrett",
+       "points": 123
+      },
+      {
+       "pos": 9,
+       "driver": "David Harvey",
+       "points": 122
+      },
+      {
+       "pos": 10,
+       "driver": "Marcio Firmino",
+       "points": 119
+      }
+     ]
+    },
+    {
+     "name": "Endurance (teams)",
+     "status": "After round 2 of 9 (as published)",
+     "source": "https://www.club73karting.co.uk/_files/ugd/fd4530_c4a4a748a46d4518a48ad7b26f82282c.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "S Club Karty with Maple Motorsport",
+       "points": 45
+      },
+      {
+       "pos": 2,
+       "driver": "Buckmore Bandits",
+       "points": 44
+      },
+      {
+       "pos": 3,
+       "driver": "Race for Others",
+       "points": 32
+      },
+      {
+       "pos": 4,
+       "driver": "Maple Motorsport Alpha",
+       "points": 31
+      },
+      {
+       "pos": 5,
+       "driver": "Mike Krack",
+       "points": 31
+      },
+      {
+       "pos": 6,
+       "driver": "Racing Snakes",
+       "points": 29
+      },
+      {
+       "pos": 7,
+       "driver": "Benny No Mates",
+       "points": 28
+      },
+      {
+       "pos": 8,
+       "driver": "PRR",
+       "points": 25
+      },
+      {
+       "pos": 9,
+       "driver": "VR Motorsport",
+       "points": 25
+      },
+      {
+       "pos": 10,
+       "driver": "Kinetica Racing Team",
+       "points": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fat-karting-league-uk",
+   "name": "FAT Karting League UK",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "After round 8 of 9 (Pro)",
+   "note": "Electric arrive-and-drive league for ages 5–17. Junior/Cadet Pro tables cached 14 Oct (before Pro R9 Whilton Mill 7–8 Nov). Other Pro classes leader only from index cached 17 Sep (after R7).",
+   "url": "https://fat-kartingleague.com/",
+   "classes": [
+    {
+     "name": "Junior Pro",
+     "status": "After round 8 of 9",
+     "source": "https://alpharacehub.com/fatkl/c/5415",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "William Sparrow",
+       "points": 159
+      },
+      {
+       "pos": 2,
+       "driver": "Bobby Mcgirr",
+       "points": 117
+      },
+      {
+       "pos": 3,
+       "driver": "Finley Dunleavy",
+       "points": 115
+      },
+      {
+       "pos": 4,
+       "driver": "Ethan Taylor",
+       "points": 108
+      },
+      {
+       "pos": 5,
+       "driver": "Max Fallon",
+       "points": 96
+      },
+      {
+       "pos": 6,
+       "driver": "Cody Trace",
+       "points": 88
+      },
+      {
+       "pos": 7,
+       "driver": "Xavier Rawlings",
+       "points": 57
+      },
+      {
+       "pos": 8,
+       "driver": "Keelan Arnold",
+       "points": 56
+      },
+      {
+       "pos": 9,
+       "driver": "Isaac Jameson",
+       "points": 51
+      },
+      {
+       "pos": 10,
+       "driver": "Leonidas Platanopoulos",
+       "points": 46
+      }
+     ]
+    },
+    {
+     "name": "Cadet Pro",
+     "status": "After round 8 of 9",
+     "source": "https://alpharacehub.com/fatkl/c/5413",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "William Robinson",
+       "points": 186
+      },
+      {
+       "pos": 2,
+       "driver": "Thomas Rathbone",
+       "points": 181
+      },
+      {
+       "pos": 3,
+       "driver": "Katia Guseinova",
+       "points": 116
+      },
+      {
+       "pos": 4,
+       "driver": "Sebastian Cruickshank",
+       "points": 115
+      },
+      {
+       "pos": 5,
+       "driver": "Nico Smith",
+       "points": 49
+      },
+      {
+       "pos": 6,
+       "driver": "Cristiano Guedes",
+       "points": 42
+      },
+      {
+       "pos": 7,
+       "driver": "Tobias Hunt",
+       "points": 26
+      },
+      {
+       "pos": 8,
+       "driver": "Leo Hartley",
+       "points": 19
+      },
+      {
+       "pos": 9,
+       "driver": "Noah Howe",
+       "points": 11
+      },
+      {
+       "pos": 10,
+       "driver": "Dexter Jerwood",
+       "points": 11
+      }
+     ]
+    },
+    {
+     "name": "Junior Light Pro",
+     "status": "After round 7 of 9 – leader only",
+     "source": "https://alpharacehub.com/fatkl/c/5414",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ellis Mckenzie",
+       "points": 156
+      }
+     ]
+    },
+    {
+     "name": "Cadet Light Pro",
+     "status": "After round 7 of 9 – leader only",
+     "source": "https://alpharacehub.com/fatkl/c/5412",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jenson Quy",
+       "points": 161
+      }
+     ]
+    },
+    {
+     "name": "Bambino A Pro",
+     "status": "After round 7 of 9 – leader only",
+     "source": "https://alpharacehub.com/fatkl/c/5741",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Breno Baptista",
+       "points": 158
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "teesside-24h-winter-enduro",
+   "name": "Teesside Motorsports 24 Hour Championship / Winter Enduro",
+   "category": "uk-rental",
+   "season": "2026/27",
+   "status": "Not found",
+   "note": "Winter Enduro 2026/27 (4 rounds, owner + hire Pro Karts) starts 22 Nov 2026, so no standings yet. No published 2026 24-Hour Championship points table found (Alpha Racehub 'teesside' shows no standings).",
+   "url": "https://teessidemotorsports.co.uk/winter-enduro-2026-27-race-all-winter-at-teesside-motorsports",
+   "classes": []
+  },
+  {
+   "id": "rhpk",
+   "name": "Rye House ProKart Endurance (RHPK)",
+   "category": "uk-rental",
+   "season": "2026",
+   "status": "After round 9",
+   "note": "Team endurance on Honda Pro Karts at Rye House; classes SP (Super Pro), P (Pro), C (Clubman). Pts = counting score after drops; R9 7 Nov included.",
+   "url": "https://alpharacehub.com/rhkc",
+   "classes": [
+    {
+     "name": "Class SP",
+     "status": "After round 9",
+     "source": "https://alpharacehub.com/rhkc/c/5123",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Purple Racing",
+       "points": 387
+      },
+      {
+       "pos": 2,
+       "driver": "GKD Racing",
+       "points": 344
+      },
+      {
+       "pos": 3,
+       "driver": "Helicopter Services",
+       "points": 340
+      },
+      {
+       "pos": 4,
+       "driver": "Alessia Prime",
+       "points": 336
+      },
+      {
+       "pos": 5,
+       "driver": "Kamtech",
+       "points": 294
+      },
+      {
+       "pos": 6,
+       "driver": "D.A.D",
+       "points": 278
+      },
+      {
+       "pos": 7,
+       "driver": "Project.D",
+       "points": 253
+      },
+      {
+       "pos": 8,
+       "driver": "Monkey Monkey",
+       "points": 249
+      },
+      {
+       "pos": 9,
+       "driver": "Spectre",
+       "points": 32
+      }
+     ]
+    },
+    {
+     "name": "Class P",
+     "status": "After round 9",
+     "source": "https://alpharacehub.com/rhkc/c/5123",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Thirty6 Motorsport",
+       "points": 330
+      },
+      {
+       "pos": 2,
+       "driver": "Brentwood Karting",
+       "points": 317
+      },
+      {
+       "pos": 3,
+       "driver": "D.R. Autos",
+       "points": 287
+      },
+      {
+       "pos": 4,
+       "driver": "March Racing",
+       "points": 276
+      },
+      {
+       "pos": 5,
+       "driver": "Alessia",
+       "points": 275
+      },
+      {
+       "pos": 6,
+       "driver": "Going Bananas",
+       "points": 267
+      },
+      {
+       "pos": 7,
+       "driver": "Wraith Racing",
+       "points": 238
+      },
+      {
+       "pos": 8,
+       "driver": "MPS Performance",
+       "points": 220
+      },
+      {
+       "pos": 9,
+       "driver": "Alverstone Autos",
+       "points": 178
+      },
+      {
+       "pos": 10,
+       "driver": "207 Orange Tree Racing",
+       "points": 173
+      }
+     ]
+    },
+    {
+     "name": "Class C",
+     "status": "After round 9",
+     "source": "https://alpharacehub.com/rhkc/c/5123",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "BAAD Racing",
+       "points": 278
+      },
+      {
+       "pos": 2,
+       "driver": "Shadow Racing",
+       "points": 250
+      },
+      {
+       "pos": 3,
+       "driver": "Red Spider Racing",
+       "points": 242
+      },
+      {
+       "pos": 4,
+       "driver": "Slippery Bananas",
+       "points": 204
+      },
+      {
+       "pos": 5,
+       "driver": "KTM",
+       "points": 128
+      },
+      {
+       "pos": 6,
+       "driver": "JZ Racing Clubman",
+       "points": 85
+      },
+      {
+       "pos": 7,
+       "driver": "Beauty & the beast racing",
+       "points": 51
+      },
+      {
+       "pos": 8,
+       "driver": "Purple 33",
+       "points": 33
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fia-karting-european-championship",
+   "name": "Mondokart.com FIA Karting European Championship",
+   "category": "international",
+   "season": "2026",
+   "status": "Final",
+   "note": "OK/Junior over 4 rounds (La Conca, Valencia, Mülsen, Kristianstad); KZ/KZ2 over 2 rounds (Genk, Sarno). Hoogendoorn and Drummond tied on 221 in OK. 'team' = nationality code.",
+   "url": "https://www.fiakarting.com/championship-standings",
+   "classes": [
+    {
+     "name": "OK",
+     "status": "Final",
+     "source": "https://www.fiakarting.com/championshipstandings/mondokartcom-2026-fia-karting-european-championship-standings-ok",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Noah Baglin",
+       "points": 316,
+       "team": "GBR"
+      },
+      {
+       "pos": 2,
+       "driver": "Zac Drummond",
+       "points": 221,
+       "team": "GBR"
+      },
+      {
+       "pos": 3,
+       "driver": "Dean Hoogendoorn",
+       "points": 221,
+       "team": "NED"
+      },
+      {
+       "pos": 4,
+       "driver": "William Calleja",
+       "points": 206,
+       "team": "AUS"
+      },
+      {
+       "pos": 5,
+       "driver": "Niklas Schaufler",
+       "points": 167,
+       "team": "AUT"
+      },
+      {
+       "pos": 6,
+       "driver": "Henry Domain",
+       "points": 152,
+       "team": "GBR"
+      },
+      {
+       "pos": 7,
+       "driver": "Lev Krutoholov",
+       "points": 126,
+       "team": "UKR"
+      },
+      {
+       "pos": 8,
+       "driver": "Benjamin Manach",
+       "points": 102,
+       "team": "ESP"
+      },
+      {
+       "pos": 9,
+       "driver": "Oliver Kinnmark",
+       "points": 100,
+       "team": "SWE"
+      },
+      {
+       "pos": 10,
+       "driver": "Luke Kornder",
+       "points": 95,
+       "team": "GER"
+      }
+     ]
+    },
+    {
+     "name": "OK-Junior",
+     "status": "Final",
+     "source": "https://www.fiakarting.com/championshipstandings/mondokartcom-2026-fia-karting-european-championship-standings-junior",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Will Green",
+       "points": 305,
+       "team": "GBR"
+      },
+      {
+       "pos": 2,
+       "driver": "Daniel Miron Lorente",
+       "points": 234,
+       "team": "ESP"
+      },
+      {
+       "pos": 3,
+       "driver": "Many Nuvolini",
+       "points": 208,
+       "team": "FRA"
+      },
+      {
+       "pos": 4,
+       "driver": "Gioele Girardello",
+       "points": 181,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Priam Bruno",
+       "points": 149,
+       "team": "BEL"
+      },
+      {
+       "pos": 6,
+       "driver": "Oskari Walle",
+       "points": 135,
+       "team": "FIN"
+      },
+      {
+       "pos": 7,
+       "driver": "Zdenek Babicek",
+       "points": 134,
+       "team": "CZE"
+      },
+      {
+       "pos": 8,
+       "driver": "Julian Frasnelli",
+       "points": 131,
+       "team": "ITA"
+      },
+      {
+       "pos": 9,
+       "driver": "Antonio Pizzonia",
+       "points": 116,
+       "team": "ITA"
+      },
+      {
+       "pos": 10,
+       "driver": "Emerson MacAndrew-Uren",
+       "points": 114,
+       "team": "GBR"
+      }
+     ]
+    },
+    {
+     "name": "KZ",
+     "status": "Final",
+     "source": "https://www.fiakarting.com/championshipstandings/mondokartcom-2026-fia-karting-european-championship-standings-kz",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Emilien Denner",
+       "points": 133,
+       "team": "FRA"
+      },
+      {
+       "pos": 2,
+       "driver": "Danilo Albanese",
+       "points": 122,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Viktor Gustafsson",
+       "points": 121,
+       "team": "SWE"
+      },
+      {
+       "pos": 4,
+       "driver": "Stan Pex",
+       "points": 103,
+       "team": "NED"
+      },
+      {
+       "pos": 5,
+       "driver": "Daniel Vasile",
+       "points": 92,
+       "team": "ROU"
+      },
+      {
+       "pos": 6,
+       "driver": "Adrian Malheiro Suñe",
+       "points": 90,
+       "team": "ESP"
+      },
+      {
+       "pos": 7,
+       "driver": "Giuseppe Palomba",
+       "points": 89,
+       "team": "ITA"
+      },
+      {
+       "pos": 8,
+       "driver": "Matteo Spirgel",
+       "points": 86,
+       "team": "FRA"
+      },
+      {
+       "pos": 9,
+       "driver": "Jean Nomblot",
+       "points": 72,
+       "team": "FRA"
+      },
+      {
+       "pos": 10,
+       "driver": "Tom Leuillet",
+       "points": 71,
+       "team": "FRA"
+      }
+     ]
+    },
+    {
+     "name": "KZ2",
+     "status": "Final",
+     "source": "https://nocache.fiakarting.com/sites/default/files/xml_folder/2026/Championships/2026_Championship_KZ2.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Kimi Tani",
+       "points": 161,
+       "team": "FIN"
+      },
+      {
+       "pos": 2,
+       "driver": "Matheus Morgatto",
+       "points": 148,
+       "team": "BRA"
+      },
+      {
+       "pos": 3,
+       "driver": "Maximilian Schleimer",
+       "points": 135,
+       "team": "GER"
+      },
+      {
+       "pos": 4,
+       "driver": "Genis Civico Espona",
+       "points": 124,
+       "team": "ESP"
+      },
+      {
+       "pos": 5,
+       "driver": "Elie Goldstein",
+       "points": 98,
+       "team": "BEL"
+      },
+      {
+       "pos": 6,
+       "driver": "Daniel Maciá",
+       "points": 83,
+       "team": "ESP"
+      },
+      {
+       "pos": 7,
+       "driver": "Arthur Lehouck",
+       "points": 81,
+       "team": "FRA"
+      },
+      {
+       "pos": 8,
+       "driver": "Sem Knopjes",
+       "points": 68,
+       "team": "NED"
+      },
+      {
+       "pos": 9,
+       "driver": "Alois Girardet",
+       "points": 57,
+       "team": "FRA"
+      },
+      {
+       "pos": 10,
+       "driver": "Noah Wolfe",
+       "points": 52,
+       "team": "GBR"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fia-karting-world-championship",
+   "name": "Mondokart.com FIA Karting World Championship / FIA Karting World Cup",
+   "category": "international",
+   "season": "2026",
+   "status": "Event result",
+   "note": "Final race classifications. OK & Junior at La Conca (ITA, 5-8 Nov 2026); KZ World Championship and KZ2 World Cup at Le Mans (FRA, 17-20 Sep 2026); OK-N World Cup at Viterbo (ITA, 11 Oct 2026). OK-N Junior winner was Niccolò Perico (FIA results page empty, not included). KZ 'team' = competitor team (nationality not shown in PDF).",
+   "url": "https://www.fiakarting.com/competition-list",
+   "classes": [
+    {
+     "name": "OK",
+     "status": "Event result",
+     "source": "https://www.fiakarting.com/event/2026-world-circuit-la-conca-muro-leccese-wkc/OK",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Dean Hoogendoorn",
+       "points": null,
+       "team": "NED"
+      },
+      {
+       "pos": 2,
+       "driver": "Henry Domain",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 3,
+       "driver": "Ilie Tristan Crisan",
+       "points": null,
+       "team": "CAN"
+      },
+      {
+       "pos": 4,
+       "driver": "Bosco Arias",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 5,
+       "driver": "Lev Krutoholov",
+       "points": null,
+       "team": "UKR"
+      },
+      {
+       "pos": 6,
+       "driver": "Matthias Vandekerckhove",
+       "points": null,
+       "team": "BEL"
+      },
+      {
+       "pos": 7,
+       "driver": "Zac Drummond",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 8,
+       "driver": "Joe Turney",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 9,
+       "driver": "Niklas Schaufler",
+       "points": null,
+       "team": "AUT"
+      },
+      {
+       "pos": 10,
+       "driver": "Gilles Herman",
+       "points": null,
+       "team": "BEL"
+      }
+     ]
+    },
+    {
+     "name": "OK-Junior",
+     "status": "Event result",
+     "source": "https://www.fiakarting.com/event/2026-world-circuit-la-conca-muro-leccese-wkc/Junior",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Antoine Sylva Venant",
+       "points": null,
+       "team": "BEL"
+      },
+      {
+       "pos": 2,
+       "driver": "Daniel Miron Lorente",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 3,
+       "driver": "Miguel Manzano",
+       "points": null,
+       "team": "MEX"
+      },
+      {
+       "pos": 4,
+       "driver": "Julian Frasnelli",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Niccolò Perico",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 6,
+       "driver": "Gioele Girardello",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 7,
+       "driver": "Antonio Pizzonia",
+       "points": null,
+       "team": "BRA"
+      },
+      {
+       "pos": 8,
+       "driver": "Mason Robertson",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 9,
+       "driver": "Emerson MacAndrew-Uren",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 10,
+       "driver": "Orlando Rovelli",
+       "points": null,
+       "team": "ITA"
+      }
+     ]
+    },
+    {
+     "name": "KZ",
+     "status": "Event result",
+     "source": "https://nocache.fiakarting.com/sites/default/files/xml_folder/2026/Championships/2026_Championship_World_KZ.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Viktor Gustafsson",
+       "points": null,
+       "team": "CRG Racing Team"
+      },
+      {
+       "pos": 2,
+       "driver": "Emilien Denner",
+       "points": null,
+       "team": "Formula K SRP Factory Team"
+      },
+      {
+       "pos": 3,
+       "driver": "Daniel Vasile",
+       "points": null,
+       "team": "Maranello Kart Srl"
+      },
+      {
+       "pos": 4,
+       "driver": "Maksim Orlov",
+       "points": null,
+       "team": "Sodikart"
+      },
+      {
+       "pos": 5,
+       "driver": "Danilo Albanese",
+       "points": null,
+       "team": "KR Motorsport"
+      },
+      {
+       "pos": 6,
+       "driver": "Cristian Bertuca",
+       "points": null,
+       "team": "Tony Kart Racing Team"
+      },
+      {
+       "pos": 7,
+       "driver": "Riccardo Longhi",
+       "points": null,
+       "team": "Birel Art Racing"
+      },
+      {
+       "pos": 8,
+       "driver": "Arthur Carbonnel",
+       "points": null,
+       "team": "CRG Racing Team"
+      },
+      {
+       "pos": 9,
+       "driver": "Lorenzo Camplese",
+       "points": null,
+       "team": "Tony Kart Racing Team"
+      },
+      {
+       "pos": 10,
+       "driver": "David Trefilov",
+       "points": null,
+       "team": "IPK Factory Team"
+      }
+     ]
+    },
+    {
+     "name": "KZ2 (World Cup)",
+     "status": "Event result",
+     "source": "https://www.fiakarting.com/championshipstandings/2026-fia-karting-world-cup-kz2",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Markus Kajak",
+       "points": null,
+       "team": "EST"
+      },
+      {
+       "pos": 2,
+       "driver": "Arthur Lehouck",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 3,
+       "driver": "Alois Girardet",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 4,
+       "driver": "Kimi Tani",
+       "points": null,
+       "team": "FIN"
+      },
+      {
+       "pos": 5,
+       "driver": "Matej Preuss",
+       "points": null,
+       "team": "CZE"
+      },
+      {
+       "pos": 6,
+       "driver": "Elie Goldstein",
+       "points": null,
+       "team": "BEL"
+      },
+      {
+       "pos": 7,
+       "driver": "Marek Skrivan",
+       "points": null,
+       "team": "CZE"
+      },
+      {
+       "pos": 8,
+       "driver": "Genis Civico Espona",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 9,
+       "driver": "Daniel Maciá",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 10,
+       "driver": "Sem Knopjes",
+       "points": null,
+       "team": "NED"
+      }
+     ]
+    },
+    {
+     "name": "OK-N (World Cup)",
+     "status": "Event result",
+     "source": "https://www.fiakarting.com/event/2026-leopard-circuit-viterbo/OK-N",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Yuri Morelli",
+       "points": null,
+       "team": "BRA"
+      },
+      {
+       "pos": 2,
+       "driver": "Manuel Scognamiglio",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Lamberto Ferrari",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Cristian Blandino",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Aaron Garcia Lopez",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 6,
+       "driver": "Sebastiano Pavan",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 7,
+       "driver": "Ioan Tudor Jercan",
+       "points": null,
+       "team": "ROU"
+      },
+      {
+       "pos": 8,
+       "driver": "Federico Rossi",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 9,
+       "driver": "Nikolaos Karagiannis",
+       "points": null,
+       "team": "GRE"
+      },
+      {
+       "pos": 10,
+       "driver": "Riccardo Ferrari",
+       "points": null,
+       "team": "ITA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fia-karting-academy-trophy",
+   "name": "FIA Karting Academy Trophy",
+   "category": "international",
+   "season": "2026",
+   "status": "Final",
+   "note": "Junior: Genk, Sarno, final round Viterbo (11 Oct). Senior: Valencia, Mülsen, Kristianstad. 'team' = nationality where shown.",
+   "url": "https://www.fiakarting.com/championship-standings",
+   "classes": [
+    {
+     "name": "Academy Junior",
+     "status": "Final",
+     "source": "https://nocache.fiakarting.com/sites/default/files/xml_folder/2026/Championships/2026_Championship_ACA_Junior.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "John Han",
+       "points": 208,
+       "team": "HKG"
+      },
+      {
+       "pos": 2,
+       "driver": "Domenico Coco",
+       "points": 157,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Takeru Shimbashi",
+       "points": 109,
+       "team": "JPN"
+      },
+      {
+       "pos": 4,
+       "driver": "Joaquin Gorlero Pizarro",
+       "points": 92,
+       "team": "ARG"
+      },
+      {
+       "pos": 5,
+       "driver": "Zoltan Coigny",
+       "points": 88,
+       "team": "SUI"
+      },
+      {
+       "pos": 6,
+       "driver": "Max Sulin",
+       "points": 83,
+       "team": "FIN"
+      },
+      {
+       "pos": 7,
+       "driver": "Kevin Pentell",
+       "points": 78,
+       "team": "SWE"
+      },
+      {
+       "pos": 8,
+       "driver": "Jindrich Svoboda",
+       "points": 71,
+       "team": "CZE"
+      },
+      {
+       "pos": 9,
+       "driver": "Sebastián Galeano Grinó",
+       "points": 63
+      },
+      {
+       "pos": 10,
+       "driver": "Georgios Psaroudakis",
+       "points": 53,
+       "team": "GRE"
+      }
+     ]
+    },
+    {
+     "name": "Academy Senior",
+     "status": "Final",
+     "source": "https://nocache.fiakarting.com/sites/default/files/xml_folder/2026/Championships/2026_Championship_ACA_Senior.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Albert Lapper",
+       "points": 198,
+       "team": "GBR"
+      },
+      {
+       "pos": 2,
+       "driver": "Alexis Genolet",
+       "points": 121,
+       "team": "SUI"
+      },
+      {
+       "pos": 3,
+       "driver": "Filip Planeta",
+       "points": 111,
+       "team": "CZE"
+      },
+      {
+       "pos": 4,
+       "driver": "Alex Desario",
+       "points": 111,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Liam Carr",
+       "points": 103,
+       "team": "AUS"
+      },
+      {
+       "pos": 6,
+       "driver": "Michal Zajac",
+       "points": 88
+      },
+      {
+       "pos": 7,
+       "driver": "Jose Bautista Delich",
+       "points": 77
+      },
+      {
+       "pos": 8,
+       "driver": "Ioan Tudor Jercan",
+       "points": 75,
+       "team": "ROU"
+      },
+      {
+       "pos": 9,
+       "driver": "Oliver Kurg",
+       "points": 67
+      },
+      {
+       "pos": 10,
+       "driver": "Vanesa Silkunaite",
+       "points": 66,
+       "team": "LTU"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wsk-super-master-series",
+   "name": "WSK Super Master Series",
+   "category": "international",
+   "season": "2026",
+   "status": "Final",
+   "note": "5 rounds, 21 Jan - 22 Mar 2026 (final round Franciacorta). Names are surname-first as printed by WSK; nationality not shown in PDF.",
+   "url": "https://www.wskarting.it/results.asp?yy=2026&r=5&c=16&s=wsk_supermasterseries",
+   "classes": [
+    {
+     "name": "KZ2",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/MS/2026/Round5/StandingsKZ2.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Orlov Max",
+       "points": 499
+      },
+      {
+       "pos": 2,
+       "driver": "Van Walstijn Senna",
+       "points": 439
+      },
+      {
+       "pos": 3,
+       "driver": "Skrivan Marek",
+       "points": 216
+      },
+      {
+       "pos": 4,
+       "driver": "Bertuca Cristian",
+       "points": 194
+      },
+      {
+       "pos": 5,
+       "driver": "Denner Emilien",
+       "points": 193
+      },
+      {
+       "pos": 6,
+       "driver": "Albanese Danilo",
+       "points": 191
+      },
+      {
+       "pos": 7,
+       "driver": "Gustafsson Viktor",
+       "points": 139
+      },
+      {
+       "pos": 8,
+       "driver": "Thien Jayden",
+       "points": 133
+      },
+      {
+       "pos": 9,
+       "driver": "Van Werven Dion",
+       "points": 132
+      },
+      {
+       "pos": 10,
+       "driver": "Hiltbrand Pedro",
+       "points": 127
+      }
+     ]
+    },
+    {
+     "name": "OK",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/MS/2026/Round5/StandingsOK.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Krutogolov Lev",
+       "points": 419
+      },
+      {
+       "pos": 2,
+       "driver": "Drummond Zac",
+       "points": 345
+      },
+      {
+       "pos": 3,
+       "driver": "Manach Benjamin",
+       "points": 308
+      },
+      {
+       "pos": 4,
+       "driver": "Kornder Luke",
+       "points": 276
+      },
+      {
+       "pos": 5,
+       "driver": "Pesl Jindrich",
+       "points": 264
+      },
+      {
+       "pos": 6,
+       "driver": "Hoogendoorn Dean",
+       "points": 219
+      },
+      {
+       "pos": 7,
+       "driver": "Calleja William",
+       "points": 172
+      },
+      {
+       "pos": 8,
+       "driver": "Firhand Qarrar",
+       "points": 168
+      },
+      {
+       "pos": 9,
+       "driver": "Walz Devin",
+       "points": 152
+      },
+      {
+       "pos": 10,
+       "driver": "Manni Andrea",
+       "points": 150
+      }
+     ]
+    },
+    {
+     "name": "OK-Junior",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/MS/2026/Round5/StandingsOKJ.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Pizzonia Antonio",
+       "points": 317
+      },
+      {
+       "pos": 2,
+       "driver": "Green Will",
+       "points": 271
+      },
+      {
+       "pos": 3,
+       "driver": "Miron Lorente Daniel",
+       "points": 251
+      },
+      {
+       "pos": 4,
+       "driver": "Sayer Jarlath",
+       "points": 229
+      },
+      {
+       "pos": 5,
+       "driver": "Di Pietrantonio Lorenzo",
+       "points": 217
+      },
+      {
+       "pos": 6,
+       "driver": "Girardello Gioele",
+       "points": 182
+      },
+      {
+       "pos": 7,
+       "driver": "Babicek Zdenek",
+       "points": 169
+      },
+      {
+       "pos": 8,
+       "driver": "Dergunov Matvei",
+       "points": 161
+      },
+      {
+       "pos": 9,
+       "driver": "Kumpen Henri-constant",
+       "points": 142
+      },
+      {
+       "pos": 10,
+       "driver": "Truchot Alessandro",
+       "points": 133
+      }
+     ]
+    },
+    {
+     "name": "OK-N Junior",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/MS/2026/Round5/StandingsOKNJ.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Perico Niccolo'",
+       "points": 573
+      },
+      {
+       "pos": 2,
+       "driver": "D'Ascoli Luigi",
+       "points": 337
+      },
+      {
+       "pos": 3,
+       "driver": "Hedfors Elton",
+       "points": 278
+      },
+      {
+       "pos": 4,
+       "driver": "Laitinen Leo",
+       "points": 250
+      },
+      {
+       "pos": 5,
+       "driver": "Carrer Gioele",
+       "points": 235
+      },
+      {
+       "pos": 6,
+       "driver": "Riedel Sebastian",
+       "points": 174
+      },
+      {
+       "pos": 7,
+       "driver": "Moehring Henri",
+       "points": 150
+      },
+      {
+       "pos": 8,
+       "driver": "Kolovos Ioannis",
+       "points": 137
+      },
+      {
+       "pos": 9,
+       "driver": "Schniegenberg Colton",
+       "points": 131
+      },
+      {
+       "pos": 10,
+       "driver": "Gorun Victor Thomas",
+       "points": 124
+      }
+     ]
+    },
+    {
+     "name": "MINI Gr.3",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/MS/2026/Round5/StandingsGR3.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Pace Zane",
+       "points": 367
+      },
+      {
+       "pos": 2,
+       "driver": "El Gahoudi Nahyl",
+       "points": 344
+      },
+      {
+       "pos": 3,
+       "driver": "Ferguson Daniel",
+       "points": 336
+      },
+      {
+       "pos": 4,
+       "driver": "Godschalk Wynn",
+       "points": 335
+      },
+      {
+       "pos": 5,
+       "driver": "Frigerio Filippo",
+       "points": 260
+      },
+      {
+       "pos": 6,
+       "driver": "Steindal Theo",
+       "points": 215
+      },
+      {
+       "pos": 7,
+       "driver": "Schelvis Moron Abraham",
+       "points": 168
+      },
+      {
+       "pos": 8,
+       "driver": "Mair Alfie Richard",
+       "points": 166
+      },
+      {
+       "pos": 9,
+       "driver": "Papageorgiou Andreas",
+       "points": 144
+      },
+      {
+       "pos": 10,
+       "driver": "Titz Devin",
+       "points": 143
+      }
+     ]
+    },
+    {
+     "name": "MINI U10",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/MS/2026/Round5/StandingsU10.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Burgess Zayne",
+       "points": 531
+      },
+      {
+       "pos": 2,
+       "driver": "Miras Y Munoz Sasha",
+       "points": 341
+      },
+      {
+       "pos": 3,
+       "driver": "Hsueh Blake",
+       "points": 276
+      },
+      {
+       "pos": 4,
+       "driver": "Francisco Jayden",
+       "points": 215
+      },
+      {
+       "pos": 5,
+       "driver": "Wolff Jack Fynn",
+       "points": 212
+      },
+      {
+       "pos": 6,
+       "driver": "Bos Denver",
+       "points": 211
+      },
+      {
+       "pos": 7,
+       "driver": "Zvarich Max",
+       "points": 205
+      },
+      {
+       "pos": 8,
+       "driver": "Ventorino Giovanni",
+       "points": 178
+      },
+      {
+       "pos": 9,
+       "driver": "Weytjens Oliver",
+       "points": 176
+      },
+      {
+       "pos": 10,
+       "driver": "Simone Leo",
+       "points": 145
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wsk-euro-series",
+   "name": "WSK Euro Series",
+   "category": "international",
+   "season": "2026",
+   "status": "Final",
+   "note": "3 rounds (Viterbo, Lonato, Cremona 11 Jul 2026). MINI U10 title to Miras y Munoz is sub-judice per WSK. Names surname-first as printed by WSK.",
+   "url": "https://www.wskarting.it/results.asp?yy=2026&r=3&c=17&s=wsk_euroseries",
+   "classes": [
+    {
+     "name": "KZ2",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/ES/2026/Round3/StandingsKZ21.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Orlov Max",
+       "points": 330
+      },
+      {
+       "pos": 2,
+       "driver": "Van Werven Dion",
+       "points": 249
+      },
+      {
+       "pos": 3,
+       "driver": "Graham Jenson",
+       "points": 188
+      },
+      {
+       "pos": 4,
+       "driver": "Houzai Jiang",
+       "points": 115
+      },
+      {
+       "pos": 5,
+       "driver": "Schleimer Max",
+       "points": 100
+      },
+      {
+       "pos": 6,
+       "driver": "Zvarich Mark",
+       "points": 99
+      },
+      {
+       "pos": 7,
+       "driver": "Vigano' Matteo",
+       "points": 69
+      },
+      {
+       "pos": 8,
+       "driver": "Van Walstijn Senna",
+       "points": 64
+      },
+      {
+       "pos": 9,
+       "driver": "Longhi Riccardo",
+       "points": 54
+      },
+      {
+       "pos": 10,
+       "driver": "Spagni Luca",
+       "points": 51
+      }
+     ]
+    },
+    {
+     "name": "OK",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/ES/2026/Round3/StandingsOK.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Firhand Qarrar",
+       "points": 345
+      },
+      {
+       "pos": 2,
+       "driver": "Domain Henri",
+       "points": 142
+      },
+      {
+       "pos": 3,
+       "driver": "Zulfikari Iskender",
+       "points": 130
+      },
+      {
+       "pos": 4,
+       "driver": "Arias Chavarri Bosco",
+       "points": 129
+      },
+      {
+       "pos": 5,
+       "driver": "Kornder Luke",
+       "points": 109
+      },
+      {
+       "pos": 6,
+       "driver": "Manach Benjamin",
+       "points": 104
+      },
+      {
+       "pos": 7,
+       "driver": "Rumlenova Martina",
+       "points": 103
+      },
+      {
+       "pos": 8,
+       "driver": "Rocha Francisco",
+       "points": 89
+      },
+      {
+       "pos": 9,
+       "driver": "Stanley Nicola",
+       "points": 69
+      },
+      {
+       "pos": 10,
+       "driver": "Dudkowski Ksawery",
+       "points": 63
+      }
+     ]
+    },
+    {
+     "name": "OK-Junior",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/ES/2026/Round3/StandingsOKJ.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Babicek Zdenek",
+       "points": 297
+      },
+      {
+       "pos": 2,
+       "driver": "Osadchyi-suslovskyi Vsevolod",
+       "points": 173
+      },
+      {
+       "pos": 3,
+       "driver": "Gorski Leo",
+       "points": 172
+      },
+      {
+       "pos": 4,
+       "driver": "Dergunov Matvei",
+       "points": 153
+      },
+      {
+       "pos": 5,
+       "driver": "Pizzonia Antonio",
+       "points": 148
+      },
+      {
+       "pos": 6,
+       "driver": "Molota Alex",
+       "points": 141
+      },
+      {
+       "pos": 7,
+       "driver": "Samczyk Remigiusz",
+       "points": 136
+      },
+      {
+       "pos": 8,
+       "driver": "Orlando Michele",
+       "points": 92
+      },
+      {
+       "pos": 9,
+       "driver": "Newstead Austin",
+       "points": 77
+      },
+      {
+       "pos": 10,
+       "driver": "Pelfrene Teo",
+       "points": 61
+      }
+     ]
+    },
+    {
+     "name": "OK-N",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/ES/2026/Round3/StandingsOKN.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Giudice Andrea",
+       "points": 302
+      },
+      {
+       "pos": 2,
+       "driver": "Marchesi Nicolas",
+       "points": 279
+      },
+      {
+       "pos": 3,
+       "driver": "Scognamiglio Manuel",
+       "points": 277
+      },
+      {
+       "pos": 4,
+       "driver": "Ferrari Lamberto",
+       "points": 213
+      },
+      {
+       "pos": 5,
+       "driver": "Bonhomme Lucas",
+       "points": 130
+      },
+      {
+       "pos": 6,
+       "driver": "Blandino Cristian",
+       "points": 123
+      },
+      {
+       "pos": 7,
+       "driver": "Barbieri Andrea",
+       "points": 108
+      },
+      {
+       "pos": 8,
+       "driver": "Rasmussen Oliver",
+       "points": 89
+      },
+      {
+       "pos": 9,
+       "driver": "Jercan Tudor",
+       "points": 80
+      },
+      {
+       "pos": 10,
+       "driver": "Martinez Saenz Amador",
+       "points": 77
+      }
+     ]
+    },
+    {
+     "name": "OK-N Junior",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/ES/2026/Round3/StandingsOKNJ.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Hedfors Elton",
+       "points": 294
+      },
+      {
+       "pos": 2,
+       "driver": "Schniegenberg Colton",
+       "points": 215
+      },
+      {
+       "pos": 3,
+       "driver": "D'Ascoli Luigi",
+       "points": 182
+      },
+      {
+       "pos": 4,
+       "driver": "Pezzutto Enea",
+       "points": 176
+      },
+      {
+       "pos": 5,
+       "driver": "Carrer Gioele",
+       "points": 165
+      },
+      {
+       "pos": 6,
+       "driver": "Verde Marco",
+       "points": 127
+      },
+      {
+       "pos": 7,
+       "driver": "Costea Calin",
+       "points": 110
+      },
+      {
+       "pos": 8,
+       "driver": "Kolovos Ioannis",
+       "points": 92
+      },
+      {
+       "pos": 9,
+       "driver": "Riedel Sebastian",
+       "points": 88
+      },
+      {
+       "pos": 10,
+       "driver": "Han John",
+       "points": 86
+      }
+     ]
+    },
+    {
+     "name": "MINI Gr.3",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/ES/2026/Round3/StandingsGR3.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Mair Alfie Richard",
+       "points": 296
+      },
+      {
+       "pos": 2,
+       "driver": "El Gahoudi Nahyl",
+       "points": 257
+      },
+      {
+       "pos": 3,
+       "driver": "Pace Zane",
+       "points": 213
+      },
+      {
+       "pos": 4,
+       "driver": "Godschalk Wynn",
+       "points": 188
+      },
+      {
+       "pos": 5,
+       "driver": "Warakitsupachok Phawin",
+       "points": 173
+      },
+      {
+       "pos": 6,
+       "driver": "Steindal Theo",
+       "points": 92
+      },
+      {
+       "pos": 7,
+       "driver": "Titz Devin",
+       "points": 92
+      },
+      {
+       "pos": 8,
+       "driver": "Buffo Andrea",
+       "points": 89
+      },
+      {
+       "pos": 9,
+       "driver": "Cueto Doets Pedro",
+       "points": 84
+      },
+      {
+       "pos": 10,
+       "driver": "Di Munno Ryan",
+       "points": 82
+      }
+     ]
+    },
+    {
+     "name": "MINI U10",
+     "status": "Final",
+     "source": "https://www.wskarting.it/results/ES/2026/Round3/StandingsU10.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Miras Y Munoz Sasha Stephane",
+       "points": 261
+      },
+      {
+       "pos": 2,
+       "driver": "Burgess Zayne",
+       "points": 217
+      },
+      {
+       "pos": 3,
+       "driver": "Francisco Jayden",
+       "points": 206
+      },
+      {
+       "pos": 4,
+       "driver": "Wolff Jack",
+       "points": 172
+      },
+      {
+       "pos": 5,
+       "driver": "Hsueh Blake",
+       "points": 164
+      },
+      {
+       "pos": 6,
+       "driver": "Weytjens Oliver",
+       "points": 136
+      },
+      {
+       "pos": 7,
+       "driver": "Bos Denver",
+       "points": 127
+      },
+      {
+       "pos": 8,
+       "driver": "Berger Johan",
+       "points": 127
+      },
+      {
+       "pos": 9,
+       "driver": "El Haouti Isaac",
+       "points": 122
+      },
+      {
+       "pos": 10,
+       "driver": "Godschalk Zev",
+       "points": 108
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wsk-final-cup",
+   "name": "WSK Final Cup",
+   "category": "international",
+   "season": "2026",
+   "status": "After round 1 of 3",
+   "note": "Rd1 Franciacorta (30 Aug) done; Rd2 Lonato 18-22 Nov and Rd3 Viterbo 25-29 Nov still to run. KZ2 only contests Rd2 and Rd3 (no KZ2 standings yet).",
+   "url": "https://www.wskarting.it/results.asp?yy=2026&r=1&c=16&s=WSK_Finalcup",
+   "classes": [
+    {
+     "name": "OK",
+     "status": "After round 1 of 3",
+     "source": "https://www.wskarting.it/results/FC/2026/Round1/StandingsOK.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Krutogolov Lev",
+       "points": 111
+      },
+      {
+       "pos": 2,
+       "driver": "Crisan Ilie Tristan",
+       "points": 77
+      },
+      {
+       "pos": 3,
+       "driver": "Manach Benjamin",
+       "points": 59
+      },
+      {
+       "pos": 4,
+       "driver": "Viapiana Valerio",
+       "points": 35
+      },
+      {
+       "pos": 5,
+       "driver": "Ferrari Lamberto",
+       "points": 35
+      },
+      {
+       "pos": 6,
+       "driver": "Berezkin Ilia",
+       "points": 22
+      },
+      {
+       "pos": 7,
+       "driver": "Purcell Evan",
+       "points": 18
+      },
+      {
+       "pos": 8,
+       "driver": "Endo Arata",
+       "points": 13
+      },
+      {
+       "pos": 9,
+       "driver": "Taal Luuk",
+       "points": 12
+      },
+      {
+       "pos": 10,
+       "driver": "Rost Kristian-aleksander",
+       "points": 9
+      }
+     ]
+    },
+    {
+     "name": "OK-Junior",
+     "status": "After round 1 of 3",
+     "source": "https://www.wskarting.it/results/FC/2026/Round1/StandingsOKJ.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Perico Niccolo'",
+       "points": 97
+      },
+      {
+       "pos": 2,
+       "driver": "Miron Lorente Daniel",
+       "points": 83
+      },
+      {
+       "pos": 3,
+       "driver": "Sayer Jarlath",
+       "points": 50
+      },
+      {
+       "pos": 4,
+       "driver": "Frasnelli Julian",
+       "points": 50
+      },
+      {
+       "pos": 5,
+       "driver": "Pizzonia Antonio",
+       "points": 46
+      },
+      {
+       "pos": 6,
+       "driver": "Babicek Zdenek",
+       "points": 36
+      },
+      {
+       "pos": 7,
+       "driver": "Kumpen Henri-constant",
+       "points": 26
+      },
+      {
+       "pos": 8,
+       "driver": "Manzano Suarez Miguel",
+       "points": 22
+      },
+      {
+       "pos": 9,
+       "driver": "Chelidze Leon",
+       "points": 19
+      },
+      {
+       "pos": 10,
+       "driver": "Pelfrene Teo",
+       "points": 19
+      }
+     ]
+    },
+    {
+     "name": "OK-N",
+     "status": "After round 1 of 3",
+     "source": "https://www.wskarting.it/results/FC/2026/Round1/StandingsOKN.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Burns Jenson Eric",
+       "points": 110
+      },
+      {
+       "pos": 2,
+       "driver": "Peruccio Matteo",
+       "points": 56
+      },
+      {
+       "pos": 3,
+       "driver": "Jercan Tudor",
+       "points": 54
+      },
+      {
+       "pos": 4,
+       "driver": "Ammann Iven",
+       "points": 47
+      },
+      {
+       "pos": 5,
+       "driver": "Carre Rayan",
+       "points": 25
+      },
+      {
+       "pos": 6,
+       "driver": "D'Amico Lorenzo",
+       "points": 25
+      },
+      {
+       "pos": 7,
+       "driver": "Marchesi Nicolas",
+       "points": 23
+      },
+      {
+       "pos": 8,
+       "driver": "Bonhomme Lucas",
+       "points": 22
+      },
+      {
+       "pos": 9,
+       "driver": "Blandino Cristian",
+       "points": 19
+      },
+      {
+       "pos": 10,
+       "driver": "Melis Matteo",
+       "points": 16
+      }
+     ]
+    },
+    {
+     "name": "OK-N Junior",
+     "status": "After round 1 of 3",
+     "source": "https://www.wskarting.it/results/FC/2026/Round1/StandingsOKNJ.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Moehring Henri",
+       "points": 90
+      },
+      {
+       "pos": 2,
+       "driver": "Schelvis Moron Abraham",
+       "points": 78
+      },
+      {
+       "pos": 3,
+       "driver": "D'Ascoli Luigi",
+       "points": 59
+      },
+      {
+       "pos": 4,
+       "driver": "Gorun Victor",
+       "points": 59
+      },
+      {
+       "pos": 5,
+       "driver": "Pulbere Robert",
+       "points": 56
+      },
+      {
+       "pos": 6,
+       "driver": "Brageot Mattis",
+       "points": 45
+      },
+      {
+       "pos": 7,
+       "driver": "Pezzutto Enea Daniele",
+       "points": 24
+      },
+      {
+       "pos": 8,
+       "driver": "Bergman Josh",
+       "points": 22
+      },
+      {
+       "pos": 9,
+       "driver": "Ociepa Antoni",
+       "points": 20
+      },
+      {
+       "pos": 10,
+       "driver": "Rodriguez De La Fuen Hernan",
+       "points": 18
+      }
+     ]
+    },
+    {
+     "name": "MINI Gr.3",
+     "status": "After round 1 of 3",
+     "source": "https://www.wskarting.it/results/FC/2026/Round1/StandingsGR3.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "El Gahoudi Nahyl",
+       "points": 111
+      },
+      {
+       "pos": 2,
+       "driver": "Steindal Theo",
+       "points": 72
+      },
+      {
+       "pos": 3,
+       "driver": "Lockhart Lenox",
+       "points": 51
+      },
+      {
+       "pos": 4,
+       "driver": "Mair Alfie Richard",
+       "points": 46
+      },
+      {
+       "pos": 5,
+       "driver": "Muijs Cees",
+       "points": 41
+      },
+      {
+       "pos": 6,
+       "driver": "Aagten David Johannes",
+       "points": 35
+      },
+      {
+       "pos": 7,
+       "driver": "Almekdad Ghazi",
+       "points": 27
+      },
+      {
+       "pos": 8,
+       "driver": "Machac Alexandr",
+       "points": 23
+      },
+      {
+       "pos": 9,
+       "driver": "Cueto Pedro",
+       "points": 21
+      },
+      {
+       "pos": 10,
+       "driver": "Buffo Andrea",
+       "points": 20
+      }
+     ]
+    },
+    {
+     "name": "MINI U10",
+     "status": "After round 1 of 3",
+     "source": "https://www.wskarting.it/results/FC/2026/Round1/StandingsU10.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Miras Y Munoz Sasha Stephane",
+       "points": 100
+      },
+      {
+       "pos": 2,
+       "driver": "Simone Leo",
+       "points": 58
+      },
+      {
+       "pos": 3,
+       "driver": "Brody Mason",
+       "points": 49
+      },
+      {
+       "pos": 4,
+       "driver": "Zvarich Max",
+       "points": 45
+      },
+      {
+       "pos": 5,
+       "driver": "Weytjens Oliver",
+       "points": 43
+      },
+      {
+       "pos": 6,
+       "driver": "Ventorino Giovanni",
+       "points": 37
+      },
+      {
+       "pos": 7,
+       "driver": "Francisco Jayden",
+       "points": 33
+      },
+      {
+       "pos": 8,
+       "driver": "Burgess Zayne",
+       "points": 31
+      },
+      {
+       "pos": 9,
+       "driver": "Timotin Ilan",
+       "points": 28
+      },
+      {
+       "pos": 10,
+       "driver": "Ferrante Romeo",
+       "points": 22
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "champions-of-the-future-euro-series",
+   "name": "Champions of the Future Euro Series",
+   "category": "international",
+   "season": "2026",
+   "status": "Final",
+   "note": "5 rounds, finale Sarno 9-12 Sep 2026. Full official table not reachable (official site down); only the top of the standings as reported in the race report. OK 4th: Lev Krutoholov, 3 points behind Drummond.",
+   "url": "https://www.kartcom.com/en/competitions/2026/1784583-champions-of-the-future/results",
+   "classes": [
+    {
+     "name": "OK",
+     "status": "Final",
+     "source": "https://www.motorsport-xl.de/news/2026/Champions-of-the-Future/Champions-of-the-Future-Doppelte-Freude-fuer-die-neuen-Meister-in-Sarno-60731.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Noah Baglin",
+       "points": 351,
+       "team": "GBR"
+      },
+      {
+       "pos": 2,
+       "driver": "Benjamin Manach",
+       "points": 268,
+       "team": "ESP"
+      },
+      {
+       "pos": 3,
+       "driver": "Zac Drummond",
+       "points": 234,
+       "team": "GBR"
+      },
+      {
+       "pos": 4,
+       "driver": "Lev Krutoholov",
+       "points": null,
+       "team": "UKR"
+      }
+     ]
+    },
+    {
+     "name": "OK-Junior",
+     "status": "Final",
+     "source": "https://www.motorsport-xl.de/news/2026/Champions-of-the-Future/Champions-of-the-Future-Doppelte-Freude-fuer-die-neuen-Meister-in-Sarno-60731.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Daniel Miron Lorente",
+       "points": 324,
+       "team": "ESP"
+      },
+      {
+       "pos": 2,
+       "driver": "Will Green",
+       "points": 296,
+       "team": "GBR"
+      },
+      {
+       "pos": 3,
+       "driver": "Priam Bruno",
+       "points": 272,
+       "team": "BEL"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "champions-of-the-future-academy",
+   "name": "Champions of the Future Academy Program",
+   "category": "international",
+   "season": "2026",
+   "status": "After round 4 of 5",
+   "note": "OK-N, OK-N Junior, Mini 60. Round 4 Aspar (Sep) done; final Round 5 Franciacorta 13-15 Nov 2026. No standings table found online.",
+   "url": "https://www.championskartingacademy.com/",
+   "classes": []
+  },
+  {
+   "id": "rotax-max-euro-trophy",
+   "name": "Rotax MAX Challenge Euro Trophy",
+   "category": "international",
+   "season": "2026",
+   "status": "Final",
+   "note": "4 rounds, finale Trinec (CZE) 13 Sep 2026. Official site already switched to 2027 and lists no 2026 standings; top 3 with points from the season-final report. Senior: Reuvers and Gilbert tied on 557, Reuvers champion.",
+   "url": "https://www.rotaxmaxchallenge-eurotrophy.com/news/champions-crowned-as-rmc-euro-trophy-season-concludes-at-trinec",
+   "classes": [
+    {
+     "name": "Junior MAX",
+     "status": "Final",
+     "source": "https://www.motorsport-xl.de/news/2026/ROTAX-MAX-Euro-Trophy/RMC-Euro-Trophy-2026-Titelentscheidungen-beim-Saisonfinale-in-Trinec-60751.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Zdenek Babicek",
+       "points": 625,
+       "team": "CZE"
+      },
+      {
+       "pos": 2,
+       "driver": "Martin Soltys",
+       "points": 560,
+       "team": "SVK"
+      },
+      {
+       "pos": 3,
+       "driver": "Sebastian Clark",
+       "points": 544,
+       "team": "GBR"
+      }
+     ]
+    },
+    {
+     "name": "Senior MAX",
+     "status": "Final",
+     "source": "https://www.motorsport-xl.de/news/2026/ROTAX-MAX-Euro-Trophy/RMC-Euro-Trophy-2026-Titelentscheidungen-beim-Saisonfinale-in-Trinec-60751.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jeremy Reuvers",
+       "points": 557,
+       "team": "ESP"
+      },
+      {
+       "pos": 2,
+       "driver": "Lewis Gilbert",
+       "points": 557,
+       "team": "GBR"
+      },
+      {
+       "pos": 3,
+       "driver": "Freddie Lloyd",
+       "points": 546,
+       "team": "GBR"
+      }
+     ]
+    },
+    {
+     "name": "DD2",
+     "status": "Final",
+     "source": "https://www.motorsport-xl.de/news/2026/ROTAX-MAX-Euro-Trophy/RMC-Euro-Trophy-2026-Titelentscheidungen-beim-Saisonfinale-in-Trinec-60751.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jakub Bezel",
+       "points": 634,
+       "team": "CZE"
+      },
+      {
+       "pos": 2,
+       "driver": "Leonardo Baccaglini",
+       "points": 593,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Patryk Donica",
+       "points": 584,
+       "team": "POL"
+      }
+     ]
+    },
+    {
+     "name": "DD2 Masters",
+     "status": "Final",
+     "source": "https://www.motorsport-xl.de/news/2026/ROTAX-MAX-Euro-Trophy/RMC-Euro-Trophy-2026-Titelentscheidungen-beim-Saisonfinale-in-Trinec-60751.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Nicolas Picot",
+       "points": 654,
+       "team": "FRA"
+      },
+      {
+       "pos": 2,
+       "driver": "Dimo Notarfrancesco",
+       "points": 616,
+       "team": "SUI"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rotax-max-challenge-grand-finals",
+   "name": "Rotax MAX Challenge Grand Finals",
+   "category": "international",
+   "season": "2026",
+   "status": "Not found",
+   "note": "In progress at Portimão (7-14 Nov 2026). Wednesday 11 Nov cancelled for severe weather; qualifying moved to Thu 12 Nov, finals 14 Nov. No results yet.",
+   "url": "https://grandfinals.rotax-racing.com/",
+   "classes": []
+  },
+  {
+   "id": "iame-euro-series",
+   "name": "IAME Euro Series",
+   "category": "international",
+   "season": "2026",
+   "status": "Final",
+   "note": "4 rounds (Zuera, Franciacorta, Wackersdorf, Genk 26-29 Aug 2026). Championship page of the Genk results booklet (4 rounds x 3 scores, drop results applied).",
+   "url": "https://www.iameeuroseries.com/results/",
+   "classes": [
+    {
+     "name": "X30 Senior",
+     "status": "Final",
+     "source": "https://www.iameeuroseries.com/wp-content/uploads/2026/08/Booklet-X30-SENIOR.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Aaron Garcia",
+       "points": 215
+      },
+      {
+       "pos": 2,
+       "driver": "Danny Carenini",
+       "points": 206
+      },
+      {
+       "pos": 3,
+       "driver": "Otto Pyykönen",
+       "points": 174
+      },
+      {
+       "pos": 4,
+       "driver": "Dan Allemann",
+       "points": 161
+      },
+      {
+       "pos": 5,
+       "driver": "Rubén Moya",
+       "points": 154
+      },
+      {
+       "pos": 6,
+       "driver": "Javier Broasca",
+       "points": 143
+      },
+      {
+       "pos": 7,
+       "driver": "Freddie Lloyd",
+       "points": 97
+      },
+      {
+       "pos": 8,
+       "driver": "Emmanouil Lioudakis",
+       "points": 95
+      },
+      {
+       "pos": 9,
+       "driver": "Mateo Rivals",
+       "points": 95
+      },
+      {
+       "pos": 10,
+       "driver": "Roxanne Lantinga",
+       "points": 95
+      }
+     ]
+    },
+    {
+     "name": "X30 Junior",
+     "status": "Final",
+     "source": "https://www.iameeuroseries.com/wp-content/uploads/2026/08/Booklet-X30-JUNIOR.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ivan Luis Gonzalez Ellul",
+       "points": 231
+      },
+      {
+       "pos": 2,
+       "driver": "Max Endacott",
+       "points": 210
+      },
+      {
+       "pos": 3,
+       "driver": "Teo Policand",
+       "points": 204
+      },
+      {
+       "pos": 4,
+       "driver": "Sukhmani Khera",
+       "points": 152
+      },
+      {
+       "pos": 5,
+       "driver": "George Clarke",
+       "points": 136
+      },
+      {
+       "pos": 6,
+       "driver": "Aurelio Longhitano",
+       "points": 105
+      },
+      {
+       "pos": 7,
+       "driver": "Priam Bruno",
+       "points": 103
+      },
+      {
+       "pos": 8,
+       "driver": "Daniel Miron Lorente",
+       "points": 100
+      },
+      {
+       "pos": 9,
+       "driver": "Nilas Malik",
+       "points": 94
+      },
+      {
+       "pos": 10,
+       "driver": "Zoltan Coigny",
+       "points": 89
+      }
+     ]
+    },
+    {
+     "name": "X30 Mini",
+     "status": "Final",
+     "source": "https://www.iameeuroseries.com/wp-content/uploads/2026/08/Booklet-X30-MINI.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ilyas Sami",
+       "points": 273
+      },
+      {
+       "pos": 2,
+       "driver": "Chester Forkes",
+       "points": 269
+      },
+      {
+       "pos": 3,
+       "driver": "Mayson Hibbert",
+       "points": 240
+      },
+      {
+       "pos": 4,
+       "driver": "Alfie Davidson",
+       "points": 221
+      },
+      {
+       "pos": 5,
+       "driver": "Bodhi Batch",
+       "points": 141
+      },
+      {
+       "pos": 6,
+       "driver": "Charles Clough",
+       "points": 132
+      },
+      {
+       "pos": 7,
+       "driver": "Dimitar Uzunov",
+       "points": 120
+      },
+      {
+       "pos": 8,
+       "driver": "Leo Devahive Garcia",
+       "points": 113
+      },
+      {
+       "pos": 9,
+       "driver": "Aaron Bordanova",
+       "points": 109
+      },
+      {
+       "pos": 10,
+       "driver": "Albi-Jay Stubbs",
+       "points": 71
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "iame-warriors-final",
+   "name": "IAME Warriors Final (IWF26)",
+   "category": "international",
+   "season": "2026",
+   "status": "Event result",
+   "note": "Leopard Circuit Viterbo (ITA), 19-24 Oct 2026, 361 drivers. Final race top 10 from the official IAME/RGMMC press release.",
+   "url": "https://www.iame-motorsport.com/it/news_dett.php?id=574",
+   "classes": [
+    {
+     "name": "X30 Senior",
+     "status": "Event result",
+     "source": "https://www.mondial-karting.com/articles651/Sixtitles.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Bran Vanderveken",
+       "points": null,
+       "team": "BEL"
+      },
+      {
+       "pos": 2,
+       "driver": "Benjamin Westwood",
+       "points": null,
+       "team": "MLT"
+      },
+      {
+       "pos": 3,
+       "driver": "Mateo Rivals",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 4,
+       "driver": "Toby Gale",
+       "points": null,
+       "team": "THA"
+      },
+      {
+       "pos": 5,
+       "driver": "Ruben Moya",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 6,
+       "driver": "Jesse Saarinen",
+       "points": null,
+       "team": "FIN"
+      },
+      {
+       "pos": 7,
+       "driver": "Otto Pyykönen",
+       "points": null,
+       "team": "FIN"
+      },
+      {
+       "pos": 8,
+       "driver": "Dan Allemann",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 9,
+       "driver": "Vivien Guyonnet",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 10,
+       "driver": "Jorge Edgar",
+       "points": null,
+       "team": "GBR"
+      }
+     ]
+    },
+    {
+     "name": "X30 Junior",
+     "status": "Event result",
+     "source": "https://www.mondial-karting.com/articles651/Sixtitles.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "George House",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 2,
+       "driver": "Niccolò Perico",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Téo Policand",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 4,
+       "driver": "Oleksandr Legenkyi",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Aaron Buhofer",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 6,
+       "driver": "Rares Pascu",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 7,
+       "driver": "Aurelio Longhitano",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 8,
+       "driver": "Ludwig Granquist",
+       "points": null,
+       "team": "SWE"
+      },
+      {
+       "pos": 9,
+       "driver": "Marat Zvarich",
+       "points": null,
+       "team": "HKG"
+      },
+      {
+       "pos": 10,
+       "driver": "Priam Bruno",
+       "points": null,
+       "team": "BEL"
+      }
+     ]
+    },
+    {
+     "name": "X30 Mini",
+     "status": "Event result",
+     "source": "https://www.mondial-karting.com/articles651/Sixtitles.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Mayson Hibbert",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 2,
+       "driver": "Zayne Burgess",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 3,
+       "driver": "Dimitar Uzunov",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 4,
+       "driver": "Bodhi Batch",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 5,
+       "driver": "Theo Steindal",
+       "points": null,
+       "team": "NOR"
+      },
+      {
+       "pos": 6,
+       "driver": "Leo Devahive Garcia",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 7,
+       "driver": "Alfie Davidson",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 8,
+       "driver": "Harry Chapman",
+       "points": null,
+       "team": "GBR"
+      },
+      {
+       "pos": 9,
+       "driver": "Muhammad Wibowo",
+       "points": null,
+       "team": "THA"
+      },
+      {
+       "pos": 10,
+       "driver": "Max Zvarich",
+       "points": null,
+       "team": "THA"
+      }
+     ]
+    },
+    {
+     "name": "X30 Master",
+     "status": "Event result",
+     "source": "https://www.mondial-karting.com/articles651/Sixtitles.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Franco Crivelli",
+       "points": null,
+       "team": "ARG"
+      },
+      {
+       "pos": 2,
+       "driver": "John Norris",
+       "points": null,
+       "team": "IRL"
+      },
+      {
+       "pos": 3,
+       "driver": "Lucca Croce",
+       "points": null,
+       "team": "BRA"
+      },
+      {
+       "pos": 4,
+       "driver": "Gary Edwards",
+       "points": null,
+       "team": "IRL"
+      },
+      {
+       "pos": 5,
+       "driver": "Antti Ollikainen",
+       "points": null,
+       "team": "FIN"
+      },
+      {
+       "pos": 6,
+       "driver": "Thierry Delré",
+       "points": null,
+       "team": "BEL"
+      },
+      {
+       "pos": 7,
+       "driver": "Toni Vilander",
+       "points": null,
+       "team": "FIN"
+      },
+      {
+       "pos": 8,
+       "driver": "Takeharu Nakamori",
+       "points": null,
+       "team": "JPN"
+      },
+      {
+       "pos": 9,
+       "driver": "Chris Wehrheim",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 10,
+       "driver": "Jari Malila",
+       "points": null,
+       "team": "FIN"
+      }
+     ]
+    },
+    {
+     "name": "S125 Senior",
+     "status": "Event result",
+     "source": "https://www.mondial-karting.com/articles651/Sixtitles.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Michael Barbaro Paparo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 2,
+       "driver": "Sofia Povazhnaia",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Matteo Zanchi",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Gauthier Sanjuan",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 5,
+       "driver": "Elvis Krasauskas",
+       "points": null,
+       "team": "LTU"
+      },
+      {
+       "pos": 6,
+       "driver": "Leopold Maier",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 7,
+       "driver": "Rayan Koreishi",
+       "points": null,
+       "team": "UAE"
+      },
+      {
+       "pos": 8,
+       "driver": "Mohammed Mneimneh",
+       "points": null,
+       "team": "UAE"
+      },
+      {
+       "pos": 9,
+       "driver": "Gustavo Marques Da Silva",
+       "points": null,
+       "team": "POR"
+      },
+      {
+       "pos": 10,
+       "driver": "Matis Barbe",
+       "points": null,
+       "team": "FRA"
+      }
+     ]
+    },
+    {
+     "name": "S125 Junior",
+     "status": "Event result",
+     "source": "https://www.mondial-karting.com/articles651/Sixtitles.pdf",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Roslan Sryer Aissa",
+       "points": null,
+       "team": "ALG"
+      },
+      {
+       "pos": 2,
+       "driver": "Alonso Gonzalez",
+       "points": null,
+       "team": "DOM"
+      },
+      {
+       "pos": 3,
+       "driver": "Elia Nützi",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 4,
+       "driver": "Leonidas Peruzzi",
+       "points": null,
+       "team": "UAE"
+      },
+      {
+       "pos": 5,
+       "driver": "Mitansh Jain",
+       "points": null,
+       "team": "UAE"
+      },
+      {
+       "pos": 6,
+       "driver": "Zack Zhu",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 7,
+       "driver": "Evan Achard",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 8,
+       "driver": "Dilan Roman Fricker",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 9,
+       "driver": "Milan Smulders",
+       "points": null,
+       "team": "NED"
+      },
+      {
+       "pos": 10,
+       "driver": "Leonardo Lanza",
+       "points": null,
+       "team": "ITA"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rok-cup-superfinal",
+   "name": "ROK Cup Superfinal",
+   "category": "international",
+   "season": "2026",
+   "status": "Event result",
+   "note": "South Garda Karting, Lonato (ITA), 13-17 Oct 2026. Final race top 10; names surname-first as published.",
+   "url": "https://superfinal.rokcup.com/risultati_en.php",
+   "classes": [
+    {
+     "name": "ROK Mini U10",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Westbrook Bret",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 2,
+       "driver": "Godschalk Zev",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 3,
+       "driver": "Ramirez Leandro",
+       "points": null,
+       "team": "CRI"
+      },
+      {
+       "pos": 4,
+       "driver": "Ventorino Giovanni",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Giudicelli Leon",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 6,
+       "driver": "Francisco Jayden",
+       "points": null,
+       "team": "CAN"
+      },
+      {
+       "pos": 7,
+       "driver": "Diaconu Adam",
+       "points": null,
+       "team": "ROU"
+      },
+      {
+       "pos": 8,
+       "driver": "Kotowski Jack",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 9,
+       "driver": "Hejnar Hugo",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 10,
+       "driver": "Mara Varon Gabriel",
+       "points": null,
+       "team": "ITA"
+      }
+     ]
+    },
+    {
+     "name": "ROK Mini",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Frigerio Filippo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 2,
+       "driver": "Drexler Mathias",
+       "points": null,
+       "team": "AUT"
+      },
+      {
+       "pos": 3,
+       "driver": "Pellin Mattia",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Almekdad Ghazi",
+       "points": null,
+       "team": "AUT"
+      },
+      {
+       "pos": 5,
+       "driver": "Pelikanski Aleksander",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 6,
+       "driver": "Kralev Leo",
+       "points": null,
+       "team": "BUL"
+      },
+      {
+       "pos": 7,
+       "driver": "Spence Iver",
+       "points": null,
+       "team": "NZL"
+      },
+      {
+       "pos": 8,
+       "driver": "Chaverri Samuel",
+       "points": null,
+       "team": "CRI"
+      },
+      {
+       "pos": 9,
+       "driver": "Dal Pozzo Samuel",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 10,
+       "driver": "Ometto Thomas",
+       "points": null,
+       "team": "ITA"
+      }
+     ]
+    },
+    {
+     "name": "ROK Junior",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ammann Iven",
+       "points": null,
+       "team": "CHE"
+      },
+      {
+       "pos": 2,
+       "driver": "Moscardi David",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Pozzoni Marco",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Potepa Adrian",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 5,
+       "driver": "De Grandi Leonardo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 6,
+       "driver": "Cera Kayo",
+       "points": null,
+       "team": "MOZ"
+      },
+      {
+       "pos": 7,
+       "driver": "Zanki Mia",
+       "points": null,
+       "team": "AUT"
+      },
+      {
+       "pos": 8,
+       "driver": "Stec Filip",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 9,
+       "driver": "Lawrence Ava",
+       "points": null,
+       "team": "ARE"
+      },
+      {
+       "pos": 10,
+       "driver": "Fu Hanzhi",
+       "points": null,
+       "team": "CHN"
+      }
+     ]
+    },
+    {
+     "name": "ROK Senior",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Isambard Alan",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 2,
+       "driver": "Barbieri Andrea",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Salemi Riccardo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Hildebranski Oskar",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 5,
+       "driver": "Samczyk Remigiusz",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 6,
+       "driver": "D'Erme Mattia",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 7,
+       "driver": "Perelli Luca",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 8,
+       "driver": "Protasiewicz Piotr",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 9,
+       "driver": "Coppotelli Nicolò",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 10,
+       "driver": "Becker Maxim",
+       "points": null,
+       "team": "DEU"
+      }
+     ]
+    },
+    {
+     "name": "ROK Expert",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Massironi Marco",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 2,
+       "driver": "Kocka Ondrej",
+       "points": null,
+       "team": "CZE"
+      },
+      {
+       "pos": 3,
+       "driver": "Nemecek Jiri",
+       "points": null,
+       "team": "CZE"
+      },
+      {
+       "pos": 4,
+       "driver": "Sorbello Andrea",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Zajac Daniel",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 6,
+       "driver": "Baselli Paolo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 7,
+       "driver": "Nowak Marcel",
+       "points": null,
+       "team": "DEU"
+      },
+      {
+       "pos": 8,
+       "driver": "Marcinkiewicz Adrian",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 9,
+       "driver": "Nannavecchia Marco",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 10,
+       "driver": "Xiao Wenhan",
+       "points": null,
+       "team": "SGP"
+      }
+     ]
+    },
+    {
+     "name": "ROK Expert Plus",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Donadei Tino",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 2,
+       "driver": "Zotta Paolo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Filizola Raphael",
+       "points": null,
+       "team": "BRA"
+      },
+      {
+       "pos": 4,
+       "driver": "Todeschini Gianluca",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "De Lucca Gabriel",
+       "points": null,
+       "team": "ARG"
+      },
+      {
+       "pos": 6,
+       "driver": "Rubiolini Gianluca",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 7,
+       "driver": "Pedrola Riccardo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 8,
+       "driver": "Yik Ka Chun Francis",
+       "points": null,
+       "team": "HKG"
+      },
+      {
+       "pos": 9,
+       "driver": "Mantovani Cristiano",
+       "points": null,
+       "team": "BRA"
+      },
+      {
+       "pos": 10,
+       "driver": "Guissi Gustavo",
+       "points": null,
+       "team": "BRA"
+      }
+     ]
+    },
+    {
+     "name": "ROK Super",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Gaglianò Giuseppe",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 2,
+       "driver": "Koci Francesco",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 3,
+       "driver": "Peruccio Matteo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Ferrari Riccardo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Reino Nicholas",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 6,
+       "driver": "D'Abramo Mattia",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 7,
+       "driver": "Carrè Rayan",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 8,
+       "driver": "Lazzarotto Matteo",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 9,
+       "driver": "Teliyski Plamen",
+       "points": null,
+       "team": "BUL"
+      },
+      {
+       "pos": 10,
+       "driver": "Zanetti Federico",
+       "points": null,
+       "team": "ITA"
+      }
+     ]
+    },
+    {
+     "name": "ROK Shifter",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Chiarello Marco",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 2,
+       "driver": "Janczewski Sebastian",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 3,
+       "driver": "Rossini Nicola",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Bensi Gabriele",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Knudsen Morgan",
+       "points": null,
+       "team": "DNK"
+      },
+      {
+       "pos": 6,
+       "driver": "Moni Mateo",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 7,
+       "driver": "Karai Dominik",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 8,
+       "driver": "Rajpold Kacper",
+       "points": null,
+       "team": "POL"
+      },
+      {
+       "pos": 9,
+       "driver": "Owada Kaito",
+       "points": null,
+       "team": "JPN"
+      },
+      {
+       "pos": 10,
+       "driver": "Jojko Jakub",
+       "points": null,
+       "team": "POL"
+      }
+     ]
+    },
+    {
+     "name": "VLR Junior ROK",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Miron Daniel",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 2,
+       "driver": "Alonso Izko",
+       "points": null,
+       "team": "CHL"
+      },
+      {
+       "pos": 3,
+       "driver": "Di Filippo Davide",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 4,
+       "driver": "Pinheiro Dominguez Matias",
+       "points": null,
+       "team": "BRA"
+      },
+      {
+       "pos": 5,
+       "driver": "Peremen Lawrence",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 6,
+       "driver": "San Martin Alonso",
+       "points": null,
+       "team": "CHL"
+      },
+      {
+       "pos": 7,
+       "driver": "Calderon Sofia",
+       "points": null,
+       "team": "CRI"
+      },
+      {
+       "pos": 8,
+       "driver": "Schniegenberg Colton",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 9,
+       "driver": "Cino Carlos",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 10,
+       "driver": "Mueller Tiberius",
+       "points": null,
+       "team": "ITA"
+      }
+     ]
+    },
+    {
+     "name": "VLR ROK",
+     "status": "Event result",
+     "source": "https://superfinal.rokcup.com/risultati_en.php",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ardiles Diego",
+       "points": null,
+       "team": "CRI"
+      },
+      {
+       "pos": 2,
+       "driver": "Vidmontiene Enzo",
+       "points": null,
+       "team": "USA"
+      },
+      {
+       "pos": 3,
+       "driver": "Suarez Xavier",
+       "points": null,
+       "team": "CHL"
+      },
+      {
+       "pos": 4,
+       "driver": "Albanese Federico",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "Gorlero Pizarro Joaquin",
+       "points": null,
+       "team": "ARG"
+      },
+      {
+       "pos": 6,
+       "driver": "Doria Roman",
+       "points": null,
+       "team": "CAN"
+      },
+      {
+       "pos": 7,
+       "driver": "Moreno Gerardo",
+       "points": null,
+       "team": "CRI"
+      },
+      {
+       "pos": 8,
+       "driver": "Li Mingyang",
+       "points": null,
+       "team": "CHN"
+      },
+      {
+       "pos": 9,
+       "driver": "Castro Samuel",
+       "points": null,
+       "team": "CRI"
+      },
+      {
+       "pos": 10,
+       "driver": "Fonseca Carlos",
+       "points": null,
+       "team": "CRI"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kart-world-championship-kwc",
+   "name": "Kart World Championship (KWC) World Final",
+   "category": "international",
+   "season": "2026",
+   "status": "Event result",
+   "note": "Rental-kart world final at Vandel Kart (DEN), 28 Jul - 1 Aug 2026. Final event points standings (after drop result/bonus).",
+   "url": "https://brasilkart.com.br/kwc/",
+   "classes": [
+    {
+     "name": "Driver Championship",
+     "status": "Event result",
+     "source": "https://brasilkart.com.br/kwc/classificacao",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Jon Del Valle",
+       "points": 466
+      },
+      {
+       "pos": 2,
+       "driver": "Joeri Potters",
+       "points": 413
+      },
+      {
+       "pos": 3,
+       "driver": "Eliano De Vos",
+       "points": 411
+      },
+      {
+       "pos": 4,
+       "driver": "Jules Vanhulle",
+       "points": 402
+      },
+      {
+       "pos": 5,
+       "driver": "Noah Weichel",
+       "points": 398
+      },
+      {
+       "pos": 6,
+       "driver": "Tomek Bernadowski",
+       "points": 396
+      },
+      {
+       "pos": 7,
+       "driver": "Ian Lepelaar",
+       "points": 396
+      },
+      {
+       "pos": 8,
+       "driver": "Nikolaj Marsengo",
+       "points": 379
+      },
+      {
+       "pos": 9,
+       "driver": "Max Op Den Kamp",
+       "points": 342
+      },
+      {
+       "pos": 10,
+       "driver": "Valdemar Andersen",
+       "points": 338
+      }
+     ]
+    },
+    {
+     "name": "Women",
+     "status": "Event result",
+     "source": "https://brasilkart.com.br/kwc/classificacao",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Juliana Petruschky",
+       "points": 225
+      },
+      {
+       "pos": 2,
+       "driver": "Selina Balneger",
+       "points": 183
+      },
+      {
+       "pos": 3,
+       "driver": "Flo Maudrich",
+       "points": 170
+      },
+      {
+       "pos": 4,
+       "driver": "Sandra Gómez",
+       "points": 132
+      },
+      {
+       "pos": 5,
+       "driver": "Emma Schmitz",
+       "points": 98
+      },
+      {
+       "pos": 6,
+       "driver": "Sarah Kranz",
+       "points": 96
+      }
+     ]
+    },
+    {
+     "name": "Masters (40+)",
+     "status": "Event result",
+     "source": "https://brasilkart.com.br/kwc/classificacao",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Ian Andersen",
+       "points": 242
+      },
+      {
+       "pos": 2,
+       "driver": "Ali Nouranian",
+       "points": 200
+      },
+      {
+       "pos": 3,
+       "driver": "Jose Burillo",
+       "points": 195
+      },
+      {
+       "pos": 4,
+       "driver": "Jesper Jyde",
+       "points": 188
+      },
+      {
+       "pos": 5,
+       "driver": "Rafael Santini",
+       "points": 176
+      },
+      {
+       "pos": 6,
+       "driver": "Luiz Sena Jr",
+       "points": 168
+      },
+      {
+       "pos": 7,
+       "driver": "André Andrade",
+       "points": 148
+      },
+      {
+       "pos": 8,
+       "driver": "Rodrigo Cvv",
+       "points": 138
+      },
+      {
+       "pos": 9,
+       "driver": "Germano Pedroso",
+       "points": 136
+      },
+      {
+       "pos": 10,
+       "driver": "Carsten Sparholt",
+       "points": 124
+      }
+     ]
+    },
+    {
+     "name": "Junior",
+     "status": "Event result",
+     "source": "https://brasilkart.com.br/kwc/classificacao",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Joeri Potters",
+       "points": 413
+      },
+      {
+       "pos": 2,
+       "driver": "Tomek Bernadowski",
+       "points": 396
+      },
+      {
+       "pos": 3,
+       "driver": "Ziemo Werra",
+       "points": 337
+      },
+      {
+       "pos": 4,
+       "driver": "Kuba Dwernicki",
+       "points": 335
+      },
+      {
+       "pos": 5,
+       "driver": "Tibor Sajgó",
+       "points": 285
+      },
+      {
+       "pos": 6,
+       "driver": "Levi Blockx",
+       "points": 282
+      },
+      {
+       "pos": 7,
+       "driver": "Bobby",
+       "points": 282
+      },
+      {
+       "pos": 8,
+       "driver": "Lennox Langnickel",
+       "points": 279
+      },
+      {
+       "pos": 9,
+       "driver": "Bertil",
+       "points": 265
+      },
+      {
+       "pos": 10,
+       "driver": "Igor Tworek",
+       "points": 258
+      }
+     ]
+    },
+    {
+     "name": "Cadet",
+     "status": "Event result",
+     "source": "https://brasilkart.com.br/kwc/classificacao",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Samuel Erdelt",
+       "points": 237
+      },
+      {
+       "pos": 2,
+       "driver": "Mati Bernadowski",
+       "points": 218
+      },
+      {
+       "pos": 3,
+       "driver": "Maks Klonowski",
+       "points": 197
+      },
+      {
+       "pos": 4,
+       "driver": "Jayden Poelvoorde",
+       "points": 164
+      },
+      {
+       "pos": 5,
+       "driver": "Esteban Vochten",
+       "points": 160
+      },
+      {
+       "pos": 6,
+       "driver": "Paul Erhard",
+       "points": 142
+      },
+      {
+       "pos": 7,
+       "driver": "Kevin Have",
+       "points": 140
+      },
+      {
+       "pos": 8,
+       "driver": "Kacper Falkowski",
+       "points": 120
+      },
+      {
+       "pos": 9,
+       "driver": "Kenneth Blevins Jr",
+       "points": 112
+      },
+      {
+       "pos": 10,
+       "driver": "Storm Sanderhoff",
+       "points": 96
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sodi-world-series-international-finals",
+   "name": "SWS (Sodi World Series) International Finals",
+   "category": "international",
+   "season": "2026",
+   "status": "Event result",
+   "note": "Le Mans (FRA), 20-23 May 2026. Overall classification top 5 per category as given in the official Sodikart press release (no full table published). 2nd place in Master Cup (Laurençon) and Junior Cup (Huter) is implied by the report wording rather than stated. Separate SWS E-Finals (Sicily, June) not included.",
+   "url": "https://www.sodiwseries.com/",
+   "classes": [
+    {
+     "name": "Sprint Cup",
+     "status": "Event result",
+     "source": "https://www.sodikart.com/it-it/news/press-release/sws-international-finals-2026-190.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Horion van Waes",
+       "points": null,
+       "team": "BEL"
+      },
+      {
+       "pos": 2,
+       "driver": "Jules Vanhulle",
+       "points": null,
+       "team": "BEL"
+      },
+      {
+       "pos": 3,
+       "driver": "Diego Perez Lara",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 4,
+       "driver": "Alejandro Florido",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 5,
+       "driver": "Matteo Agassis",
+       "points": null,
+       "team": "SUI"
+      }
+     ]
+    },
+    {
+     "name": "Women's Cup",
+     "status": "Event result",
+     "source": "https://www.sodikart.com/it-it/news/press-release/sws-international-finals-2026-190.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Sandra Gomez",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 2,
+       "driver": "Karla Fadet",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 3,
+       "driver": "Alise Stolcermane",
+       "points": null,
+       "team": "LAT"
+      },
+      {
+       "pos": 4,
+       "driver": "Sofiia Tsymbal",
+       "points": null,
+       "team": "UKR"
+      },
+      {
+       "pos": 5,
+       "driver": "Yulia Shpychak",
+       "points": null,
+       "team": "UKR"
+      }
+     ]
+    },
+    {
+     "name": "Master Cup",
+     "status": "Event result",
+     "source": "https://www.sodikart.com/it-it/news/press-release/sws-international-finals-2026-190.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Kenny Robles",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 2,
+       "driver": "Olivier Laurençon",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 3,
+       "driver": "Laurent Carirer",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 4,
+       "driver": "Virgile Monamy",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 5,
+       "driver": "Geoffroy Galichet",
+       "points": null,
+       "team": "FRA"
+      }
+     ]
+    },
+    {
+     "name": "Junior Cup",
+     "status": "Event result",
+     "source": "https://www.sodikart.com/it-it/news/press-release/sws-international-finals-2026-190.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Christopher Giustizieri",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 2,
+       "driver": "Louis Huter",
+       "points": null,
+       "team": "SUI"
+      },
+      {
+       "pos": 3,
+       "driver": "Tymofii Kushniruk",
+       "points": null,
+       "team": "UKR"
+      },
+      {
+       "pos": 4,
+       "driver": "Juraj Mikos",
+       "points": null,
+       "team": "SVK"
+      },
+      {
+       "pos": 5,
+       "driver": "Tobias Schwieren",
+       "points": null,
+       "team": "GER"
+      }
+     ]
+    },
+    {
+     "name": "Kids Cup",
+     "status": "Event result",
+     "source": "https://www.sodikart.com/it-it/news/press-release/sws-international-finals-2026-190.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Livio Innocenti",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 2,
+       "driver": "Matisse-Aïta Raguet-Cheng",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 3,
+       "driver": "Samuel Edelt",
+       "points": null,
+       "team": "GER"
+      },
+      {
+       "pos": 4,
+       "driver": "Sam Nygren",
+       "points": null,
+       "team": "SWE"
+      },
+      {
+       "pos": 5,
+       "driver": "Jack Thompson",
+       "points": null,
+       "team": "GBR"
+      }
+     ]
+    },
+    {
+     "name": "Endurance Cup (24h, teams)",
+     "status": "Event result",
+     "source": "https://www.sodikart.com/it-it/news/press-release/sws-international-finals-2026-190.html",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "PF Racing",
+       "points": null,
+       "team": "GER"
+      },
+      {
+       "pos": 2,
+       "driver": "Joker Team",
+       "points": null,
+       "team": "FRA"
+      },
+      {
+       "pos": 3,
+       "driver": "Neo GKOC",
+       "points": null,
+       "team": "ESP"
+      },
+      {
+       "pos": 4,
+       "driver": "RED Racing",
+       "points": null,
+       "team": "ITA"
+      },
+      {
+       "pos": 5,
+       "driver": "ASK Performance 360",
+       "points": null,
+       "team": "FRA"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
