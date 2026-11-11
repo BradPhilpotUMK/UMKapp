@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Members' Championship: copy the Discord sign-ups into the app.
 
-Reads the race event posts in #race-entry (the "Signed up" list, and a waiting list if the post has one)
-and the driver details forms in #race-form-logs (racing names), then writes data/members-entries.json,
-which the Members' Championship page shows as "On the grid" and "Waiting list".
+Reads #race-form-logs only (the bot has no access to #race-entry): each driver details form puts that driver
+on the list for the next race, in the order the forms were sent; denied forms and cancellation/withdrawal
+logs take them off. Writes data/members-entries.json, which the Members' Championship page shows as
+"On the grid" (first 30) and "Waiting list".
 
 Only racing names go into the file: no Discord IDs, weights or roles (the file is public).
 Runs from .github/workflows/discord-entries.yml every 10 minutes. Needs the DISCORD_BOT_TOKEN secret.
@@ -103,22 +104,52 @@ def display_name(uid, cache={}):
     return cache[uid]
 
 
+DENIED = re.compile(r"\b(denied|declined|rejected)\b|❌", re.I)
+WITHDRAWN = re.compile(r"\b(cancel+ed|cancel+ation|withdr[ae]w\w*|left the event|removed)\b", re.I)
+
+
+def from_logs(msgs, rounds):
+    """Entries per round from #race-form-logs only, in the order drivers sent their details.
+    Each driver details form counts for the next race on or after the day it was sent.
+    A denied form, or a cancellation/withdrawal/removal log for that driver, takes them off the list."""
+    lists = {r["date"]: [] for r in rounds}   # date -> [user ids] in order
+    names = {}
+    upcoming = sorted(r["date"] for r in rounds if r.get("id"))
+    for msg in sorted(msgs, key=lambda m: m["timestamp"]):  # oldest first
+        day = datetime.fromisoformat(msg["timestamp"]).astimezone(UK).strftime("%Y-%m-%d")
+        race = next((d for d in upcoming if d >= day), None)
+        if not race: continue
+        for emb in msg.get("embeds") or []:
+            fields = emb.get("fields") or []
+            text = " ".join([emb.get("title") or "", emb.get("description") or "", (emb.get("footer") or {}).get("text") or ""] + [(f.get("name") or "") + " " + (f.get("value") or "") for f in fields])
+            who = MENTION.search(emb.get("description") or "") or MENTION.search(text)
+            if not who: continue
+            uid, lst = who.group(1), lists[race]
+            if re.search(r"application", emb.get("title") or "", re.I):
+                if DENIED.search((emb.get("footer") or {}).get("text") or ""):
+                    if uid in lst: lst.remove(uid)
+                    continue
+                name = next(((f.get("value") or "").strip() for f in fields if re.search(r"name.*racing", f.get("name") or "", re.I)), "")
+                name = re.sub(r"[*_`<>]", "", name).strip()[:40]
+                if name: names[uid] = name
+                if uid not in lst: lst.append(uid)
+            elif WITHDRAWN.search(text) and uid in lst:
+                lst.remove(uid)
+    return lists, names
+
+
 def main():
     if not TOKEN:
         print("DISCORD_BOT_TOKEN is not set yet: nothing to do"); return
     rounds = [r for r in json.load(open(MEMBERS)).get("rounds", []) if r.get("date")]
-    evs = events(messages(ENTRY_CH, 300))
-    names = racing_names(messages(LOGS_CH, 1000))
+    lists, names = from_logs(messages(LOGS_CH, 2000), rounds)
     out = {}
     for r in rounds:
-        ev = evs.get(r["date"])
-        if not ev: continue
+        ids = lists.get(r["date"]) or []
+        if not ids: continue
         cap = int(r.get("capacity") or 30)
-        signed = list(dict.fromkeys(ev["signed"]))
-        if ev["waiting"] is None: grid, waiting = signed[:cap], signed[cap:]
-        else: grid, waiting = signed, [u for u in dict.fromkeys(ev["waiting"]) if u not in signed]
         nm = lambda u: names.get(u) or display_name(u)
-        out[r["date"]] = {"title": ev["title"], "capacity": cap, "grid": [nm(u) for u in grid], "waitlist": [nm(u) for u in waiting]}
+        out[r["date"]] = {"title": r.get("title") or "", "capacity": cap, "grid": [nm(u) for u in ids[:cap]], "waitlist": [nm(u) for u in ids[cap:]]}
     old = {}
     try: old = json.load(open(OUT))
     except Exception: pass
