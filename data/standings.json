@@ -4387,18 +4387,128 @@
    "category": "uk-rental",
    "season": "2026",
    "status": "Final",
-   "note": "Single-weekend event at Formula Fast, Milton Keynes (early 2026). No points table; Grand Final order = championship top 10. Only the champion was confirmed (Formula Fast/BRKC social post 'Bernadowski BRKC Champion 2026'; first name from KWC ranking). Full Grand Final classification not found on brkc.co.uk. BRKC 2027 is 26–28 Feb 2027.",
-   "url": "https://brkc.co.uk/",
+   "note": "Single-weekend event at Formula Fast, Milton Keynes, 17–18 Jan 2026. Grand Final order (60 laps) is the championship result; Sam Slater classified 10th after a +4 place penalty for missing a required pit stop. BRKC 2027 is 26–28 Feb 2027.",
+   "url": "https://brkc.co.uk/past-results/",
    "classes": [
     {
-     "name": "Overall (Grand Final)",
+     "name": "Grand Final",
      "status": "Final",
-     "source": "https://brkc.co.uk/",
+     "source": "https://www.alpharacehub.com/formulafast/e/346153/s/722781/result",
      "rows": [
       {
        "pos": 1,
-       "driver": "Tomek Bernadowski",
+       "driver": "Tomasz Bernadowski",
+       "points": null,
+       "team": "Bluestar racing"
+      },
+      {
+       "pos": 2,
+       "driver": "Ziemowit Werra",
+       "points": null,
+       "team": "Dymovee Racing"
+      },
+      {
+       "pos": 3,
+       "driver": "Eliano de Vos",
+       "points": null,
+       "team": "Bluestar racing"
+      },
+      {
+       "pos": 4,
+       "driver": "Sebastian Miller",
+       "points": null,
+       "team": "BSR Orange"
+      },
+      {
+       "pos": 5,
+       "driver": "Matt Bartsch",
+       "points": null,
+       "team": "BSR Black"
+      },
+      {
+       "pos": 6,
+       "driver": "Ruben Boutens",
        "points": null
+      },
+      {
+       "pos": 7,
+       "driver": "Ivan Szana",
+       "points": null
+      },
+      {
+       "pos": 8,
+       "driver": "Mason Brown",
+       "points": null,
+       "team": "Rasio Draig"
+      },
+      {
+       "pos": 9,
+       "driver": "Vica Schledz",
+       "points": null,
+       "team": "Bluestar racing"
+      },
+      {
+       "pos": 10,
+       "driver": "Sam Slater",
+       "points": null,
+       "team": "BSR Orange"
+      }
+     ]
+    },
+    {
+     "name": "Team Championship",
+     "status": "Final",
+     "source": "https://www.alpharacehub.com/formulafast/e/346153/m/5632",
+     "rows": [
+      {
+       "pos": 1,
+       "driver": "Bluestar racing",
+       "points": 177
+      },
+      {
+       "pos": 2,
+       "driver": "BSR Orange",
+       "points": 156
+      },
+      {
+       "pos": 3,
+       "driver": "BSR Black",
+       "points": 151
+      },
+      {
+       "pos": 4,
+       "driver": "Rasio Draig",
+       "points": 132
+      },
+      {
+       "pos": 5,
+       "driver": "BSR White",
+       "points": 127
+      },
+      {
+       "pos": 6,
+       "driver": "Talent Factory",
+       "points": 123
+      },
+      {
+       "pos": 7,
+       "driver": "FISO Racing is Life",
+       "points": 118
+      },
+      {
+       "pos": 8,
+       "driver": "BSR Grey",
+       "points": 109
+      },
+      {
+       "pos": 9,
+       "driver": "Rasio Draig Blue",
+       "points": 94
+      },
+      {
+       "pos": 10,
+       "driver": "Blue Steel Racing",
+       "points": 94
       }
      ]
     }

@@ -25,6 +25,6 @@ Tap the flag next to the logo to switch between UK, Europe and USA. The Europe v
 ## Hub pages
 
 - `standings/` reads `data/standings.json` (top 10 per class, refreshed weekly).
-- `members/` is the Use More Kerb Members Championship page. Edit `data/members.json` to add rounds and standings. The interest form uses Netlify Forms (submissions appear in the Netlify dashboard under Forms; only works on the Netlify address).
+- `members/` is the Use More Kerb Members' Championship page. Edit `data/members.json` to add rounds and standings. The interest form uses Netlify Forms (submissions appear in the Netlify dashboard under Forms; only works on the Netlify address).
 - `store/` links to the Xenduri collection, Helmet28 and YouTube membership.
 - `hub.css` holds the shared look for these pages.

@@ -215,7 +215,7 @@ button{font:inherit;color:inherit;cursor:pointer}
         <use href="#hm" transform="translate(40 76) scale(.9)" fill="#E040C8"/>
         <use href="#hm" transform="translate(148 86) scale(.85)" fill="#3BD16F"/>
       </svg>
-      <b>Members Championship</b><small>The Use More Kerb race series for Team UMK members</small></a>
+      <b>Members' Championship</b><small>The Use More Kerb race series for Team UMK members</small></a>
   </nav>
   <button class="inst" id="instBar" hidden><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>Add the Use More Kerb app to your Home Screen</button>
   <p class="foot">Made by <a href="https://www.youtube.com/@BradPhilpot" target="_blank" rel="noopener">Brad Philpot · Use More Kerb</a> on YouTube</p>
@@ -374,7 +374,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794409352";
+const BUILD="1794409446";
 async function checkUpdate(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=String((await r.json()).build);
   if(v&&v!==BUILD&&Number(v)>Number(BUILD)){let tried="";try{tried=sessionStorage.getItem("umk-upd")||""}catch(e){}
     if(tried===v)return;try{sessionStorage.setItem("umk-upd",v)}catch(e){}
