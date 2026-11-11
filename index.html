@@ -153,6 +153,11 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tiles,.nextrow{position:relative;isolation:isolate}
 .tiles::before,.nextrow::before{content:"";position:absolute;inset:-8px;z-index:-1;border-radius:24px;background:rgba(0,0,0,.6);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 0 30px 10px rgba(0,0,0,.45);pointer-events:none}
 .nextrow:empty::before{display:none}
+
+/* slightly 3D, pressable tiles: lit top edge, shaded bottom lip and a soft drop shadow; they sink when tapped */
+.tile,.nx{box-shadow:inset 0 1px 0 rgba(255,255,255,.13),inset 0 -2px 0 rgba(0,0,0,.35),0 4px 0 -1px rgba(0,0,0,.6),0 10px 22px rgba(0,0,0,.45);transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
+.tile:active,.nx:active{transform:translateY(3px) scale(.985);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),inset 0 -1px 0 rgba(0,0,0,.3),0 1px 0 -1px rgba(0,0,0,.6),0 4px 10px rgba(0,0,0,.4);filter:brightness(.93)}
+@media (hover:hover){.tile:hover,.nx:hover{transform:translateY(-1px);filter:brightness(1.06)}}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -413,7 +418,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794434129";
+const BUILD="1794434518";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
