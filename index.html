@@ -229,10 +229,6 @@ html.intro #scroller{visibility:hidden}
       </svg>
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
-    <a class="tile wide brad" href="brad/" style="--c:#F5C542">
-      <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
-      <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
-
     <a class="tile wide cf" href="store/" style="--c:#F1F0EC">
       <img class="art merch" src="img/store-merch.png" alt="" width="600" height="330">
       <b>Store</b><small>Merch, helmets and race kit</small></a>
@@ -247,6 +243,10 @@ html.intro #scroller{visibility:hidden}
         <use href="#hm" transform="translate(148 86) scale(.85)" fill="#3BD16F"/>
       </svg>
       <b>Members' Championship</b><small>The Use More Kerb race series for Team UMK members</small></a>
+
+    <a class="tile wide brad" href="brad/" style="--c:#F5C542">
+      <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
+      <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
   </nav>
   <button class="inst" id="instBar" hidden><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>Add the Use More Kerb app to your Home Screen</button>
   <p class="foot">Made by <a href="https://www.youtube.com/@BradPhilpot" target="_blank" rel="noopener">Brad Philpot · Use More Kerb</a> on YouTube</p>
@@ -417,7 +417,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794415196";
+const BUILD="1794417251";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
