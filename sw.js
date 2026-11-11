@@ -1,7 +1,7 @@
 /* Season Planner offline support.
    Pages and race data: try the network first (so updates show straight away), fall back to the saved copy when offline.
    Logos, icons and fonts: use the saved copy, refresh it in the background. */
-const CACHE = "umk-planner-v7";
+const CACHE = "umk-planner-v8";
 const CORE = [
   "./", "index.html", "manifest.webmanifest", "version.json",
   "data/races.json", "data/brad.json",
@@ -64,6 +64,7 @@ self.addEventListener("fetch", e => {
   const url = new URL(req.url);
   if (url.origin === location.origin) {
     if (url.pathname.startsWith("/_blob/")) return;
+    if (url.pathname.startsWith("/.netlify/")) return; /* sign-in and AI: always straight to the server, never cached */
     const p = url.pathname.replace(/^\/+/, "");
     /* each page (the planner at /, the team manager at /team/) is saved under its own name */
     const isPage = req.mode === "navigate" || p === "" || p.endsWith("/") || p.endsWith("index.html");

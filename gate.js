@@ -116,6 +116,7 @@
     if (sid) { startPolling(); poll(); }
     D.addEventListener("visibilitychange", function () { if (D.visibilityState === "visible") poll(); });
 
+    try { navigator.serviceWorker && navigator.serviceWorker.getRegistration().then(function (r) { r && r.update(); }); } catch (e) {}
     D.getElementById("umkSignIn").onclick = function () {
       if (navigator.onLine === false) { say("You're offline. Connect to the internet to sign in.", true); return; }
       var a = new Uint8Array(18); (window.crypto || window.msCrypto).getRandomValues(a);
