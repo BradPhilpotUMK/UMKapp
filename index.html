@@ -172,11 +172,12 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 
 /* Store tile: a lit shop window */
 .tile.shop{padding:0;min-height:0;justify-content:flex-start;border-color:rgba(255,0,116,.5);background:radial-gradient(60% 70% at 22% 30%,rgba(255,0,116,.38),transparent 70%),radial-gradient(55% 70% at 80% 30%,rgba(0,190,0,.3),transparent 70%),linear-gradient(180deg,#17171c,#0b0b0d)}
-.tile.shop .shelf{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:0;padding:34px 0 0;height:clamp(150px,44vw,200px)}
-.tile.shop .shelf::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:14px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.75),transparent);z-index:0}
-.tile.shop .shelf img{position:relative;z-index:1;height:100%;width:auto;max-width:44%;object-fit:contain;filter:drop-shadow(0 8px 10px rgba(0,0,0,.6))}
-.tile.shop .shelf img:nth-child(1){max-width:46%;margin-right:-8%;z-index:2}
-.tile.shop .shelf img:nth-child(2){z-index:3;margin-right:-8%}
+.tile.shop .shelf{display:block;padding:30px 0 0}
+.tile.shop .shelf img{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 14px rgba(0,0,0,.6))}
+.tile.shop .slogos{display:flex;align-items:center;justify-content:space-evenly;gap:12px;padding:8px 14px 12px}
+.tile.shop .slogos img{height:18px;width:auto;opacity:.92}
+.tile.shop .slogos img:nth-child(1){height:12px}
+.tile.shop .slogos img:nth-child(3){height:22px}
 .tile.shop .sbar{display:flex;align-items:center;gap:12px;padding:12px 14px 14px;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.65));border-top:1px solid rgba(255,255,255,.08)}
 .tile.shop .stxt{flex:1;min-width:0}
 .tile.shop .stxt b{display:block;font-size:clamp(30px,9vw,40px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
@@ -365,7 +366,8 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>USE MORE KERB Championship</b><small>The race series for Team UMK members</small></a>
 
     <a class="tile wide shop" href="store/" style="--c:#FF0074">
-      <span class="shelf"><img src="img/store-merch.png" alt="" width="600" height="330"><img src="img/store-helmet28.png" alt="" width="600" height="330" loading="lazy"><img src="img/store-kkc.png" alt="" width="600" height="330" loading="lazy"></span>
+      <span class="shelf"><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
+      <span class="slogos"><img src="logos/sponsors/xenduri.png" alt="Xenduri"><img src="logos/sponsors/helmet28.png" alt="Helmet28"><img src="logos/sponsors/kkc.png" alt="KKC"></span>
       <span class="sbar"><span class="stxt"><b>Store</b><small>Merch, helmets, race kit and kart parts</small></span><span class="sgo">Shop now ›</span></span>
       <span class="sbadge">Discount codes inside</span></a>
 
@@ -541,7 +543,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794436290";
+const BUILD="1794436616";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
