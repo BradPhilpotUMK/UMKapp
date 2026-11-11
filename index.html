@@ -40,7 +40,7 @@
 :root{
   color-scheme:dark;
   --bg:#131417; --surface:#2A2D33; --surface2:#33363D; --line:#3D4149;
-  --text:#F1F0EC; --muted:#9EA3AD; --accent:#E040C8; --go:#3BD16F; --kerb:#E3342F; --kerbW:#F4F2EE; --gold:#F5C542;
+  --text:#F1F0EC; --muted:#9EA3AD; --accent:#FF0074; --go:#00BE00; --kerb:#E3342F; --kerbW:#F4F2EE; --gold:#F5C542;
   --display:"F1","Barlow Condensed","Arial Narrow",Arial,sans-serif;
   --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
   box-sizing:border-box;
@@ -60,22 +60,22 @@ button{font:inherit;color:inherit;cursor:pointer}
 /* next race strip */
 .nextrow{margin-bottom:14px}
 .nxw{position:relative;min-width:0}
-.nx{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:112px;overflow:hidden;border-radius:18px;padding:14px 112px 14px 74px;border:1px solid color-mix(in srgb,#E040C8 40%,var(--line));
+.nx{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:112px;overflow:hidden;border-radius:18px;padding:14px 112px 14px 74px;border:1px solid color-mix(in srgb,#FF0074 40%,var(--line));
   background:radial-gradient(90% 140% at 100% 50%,rgba(224,64,200,.26),transparent 62%),var(--surface)}
 .nx::after{content:"";position:absolute;right:-14px;top:0;bottom:0;width:62px;opacity:.09;pointer-events:none;
   background:conic-gradient(#fff 25%,transparent 0 50%,#fff 0 75%,transparent 0) 0 0/16px 16px;-webkit-mask:linear-gradient(90deg,transparent,#000);mask:linear-gradient(90deg,transparent,#000)}
 .nx .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:6px;font-weight:700}
-.nx .l i{width:7px;height:7px;border-radius:50%;background:#E040C8}
+.nx .l i{width:7px;height:7px;border-radius:50%;background:#FF0074}
 .nx b{display:block;font-family:var(--display);font-size:21px;line-height:1.15;margin-top:4px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .nx small{display:block;color:var(--muted);font-size:13px;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .nx .dial{position:absolute;right:14px;top:50%;width:84px;height:84px;transform:translateY(-50%);z-index:1}
 .nx .dial svg{width:100%;height:100%;transform:rotate(-90deg);overflow:visible}
 .nx .dial .n{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
 .nx .dial .n b{margin:0;font-size:30px;-webkit-line-clamp:1;color:#fff;display:flex;align-items:center;justify-content:center}
-.nx .dial .n span{font-size:9.5px;letter-spacing:.14em;font-weight:800;color:#E040C8;margin-top:3px;text-transform:uppercase}
-.av{position:absolute;left:14px;top:50%;width:48px;height:48px;margin-top:-24px;border-radius:50%;padding:0;border:2px solid #E040C8;background:var(--surface2,#26272d);overflow:hidden;display:grid;place-items:center;color:#E040C8;cursor:pointer;z-index:2;box-shadow:0 0 0 4px rgba(224,64,200,.12)}
+.nx .dial .n span{font-size:9.5px;letter-spacing:.14em;font-weight:800;color:#FF0074;margin-top:3px;text-transform:uppercase}
+.av{position:absolute;left:14px;top:50%;width:48px;height:48px;margin-top:-24px;border-radius:50%;padding:0;border:2px solid #FF0074;background:var(--surface2,#26272d);overflow:hidden;display:grid;place-items:center;color:#FF0074;cursor:pointer;z-index:2;box-shadow:0 0 0 4px rgba(224,64,200,.12)}
 .av img{width:100%;height:100%;object-fit:cover;display:block}
-.av.add{border-style:dashed;background:color-mix(in srgb,#E040C8 14%,transparent)}
+.av.add{border-style:dashed;background:color-mix(in srgb,#FF0074 14%,transparent)}
 .av.add svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 /* tool tiles */
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -93,14 +93,14 @@ button{font:inherit;color:inherit;cursor:pointer}
 .tile small{display:block;color:var(--muted);font-size:13px;margin-top:4px;line-height:1.3}
 .tile.wide .art.bradart{width:118px;height:118px;max-width:none;right:10px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
 .tile.locked{filter:grayscale(1);opacity:.5}
-.tile.locked::before,.nxw.locked::before{content:"";position:absolute;z-index:3;top:10px;right:10px;width:30px;height:30px;border-radius:50%;background:#F5C542 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314051A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V8a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E") center/16px no-repeat;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+.tile.locked::before,.nxw.locked::before{content:"";position:absolute;z-index:3;top:10px;right:10px;width:30px;height:30px;border-radius:50%;background:#FF0074 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314051A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V8a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E") center/16px no-repeat;box-shadow:0 2px 8px rgba(0,0,0,.5)}
 .tile.locked .tag{display:none}
 .nxw.locked .nx,.nxw.locked .av{filter:grayscale(1);opacity:.5}
-.upbar{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin:0 0 14px;padding:12px 14px;border-radius:14px;border:1px solid rgba(245,197,66,.45);background:linear-gradient(135deg,rgba(245,197,66,.16),var(--surface) 70%);color:var(--text);font:inherit;cursor:pointer}
+.upbar{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin:0 0 14px;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,0,116,.5);background:linear-gradient(135deg,rgba(255,0,116,.16),var(--surface) 70%);color:var(--text);font:inherit;cursor:pointer}
 .upbar b{display:block;font-family:var(--display);font-size:16px}
 .upbar small{display:block;color:var(--muted);font-size:13px}
-.upbar em{margin-left:auto;font-style:normal;color:#F5C542;font-size:22px}
-.tile .tag{position:absolute;top:14px;right:13px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#14051A;background:var(--c);border-radius:999px;padding:3px 8px}
+.upbar em{margin-left:auto;font-style:normal;color:#FF0074;font-size:22px}
+.tile .tag{position:absolute;top:14px;right:13px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--c);border-radius:999px;padding:3px 8px}
 .tile .ar{position:absolute;right:14px;bottom:14px;color:var(--c);font-size:20px}
 .tile.cf{background-color:#0e0f11;background-image:linear-gradient(115deg,rgba(255,255,255,.07),rgba(255,255,255,0) 45%,rgba(255,255,255,.04) 70%,rgba(255,255,255,0)),linear-gradient(27deg,#141518 2.5px,transparent 2.5px),linear-gradient(207deg,#141518 2.5px,transparent 2.5px),linear-gradient(27deg,#1b1c20 2.5px,transparent 2.5px),linear-gradient(207deg,#1b1c20 2.5px,transparent 2.5px),linear-gradient(90deg,#16171a 5px,transparent 5px),linear-gradient(#17181b 25%,#131417 25%,#131417 50%,transparent 50%,transparent 75%,#1c1d21 75%,#1c1d21);background-size:100% 100%,10px 10px,10px 10px,10px 10px,10px 10px,10px 10px,10px 10px;background-position:0 0,0 2.5px,5px 0,0 5px,5px 2.5px,0 0,0 0}
 .foot{margin-top:18px;text-align:center;color:var(--muted);font-size:12.5px}
@@ -183,7 +183,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.shop .stxt b{display:block;font-size:clamp(30px,9vw,40px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
 .tile.shop .stxt small{margin-top:4px;color:#cfd0d6}
 .tile.shop .sgo{flex:none;font-weight:800;font-size:15px;color:#111;background:#fff;border-radius:999px;padding:10px 16px;box-shadow:0 3px 0 #FF0074,0 6px 14px rgba(0,0,0,.5)}
-.tile.shop .sbadge{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);white-space:nowrap;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+.tile.shop .sbadge{display:inline-block;margin-top:8px;white-space:nowrap;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -198,70 +198,70 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
   <div class="nextrow" id="nextRow"></div><input type="file" id="avFile" accept="image/*" hidden>
   <h2 class="tsec">Your apps</h2>
   <nav class="tiles apps" aria-label="Use More Kerb apps">
-    <a class="tile" data-m href="planner/" style="--c:#E040C8">
+    <a class="tile" data-m href="planner/" style="--c:#FF0074">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
-        <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#E040C8" stroke-opacity=".35" stroke-width="14" stroke-linejoin="round"/>
+        <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#FF0074" stroke-opacity=".35" stroke-width="14" stroke-linejoin="round"/>
         <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 6"/>
         <g transform="rotate(-8 120 80)">
-          <rect x="62" y="22" width="118" height="110" rx="12" fill="#2f2a33" stroke="#E040C8" stroke-opacity=".7" stroke-width="2"/>
-          <rect x="62" y="22" width="118" height="26" rx="12" fill="#E040C8"/><rect x="62" y="36" width="118" height="12" fill="#E040C8"/>
+          <rect x="62" y="22" width="118" height="110" rx="12" fill="#2f2a33" stroke="#FF0074" stroke-opacity=".7" stroke-width="2"/>
+          <rect x="62" y="22" width="118" height="26" rx="12" fill="#FF0074"/><rect x="62" y="36" width="118" height="12" fill="#FF0074"/>
           <circle cx="86" cy="22" r="4" fill="#fff"/><circle cx="156" cy="22" r="4" fill="#fff"/>
           <g fill="#ffffff" fill-opacity=".14">
             <rect x="72" y="58" width="16" height="14" rx="3"/><rect x="94" y="58" width="16" height="14" rx="3"/><rect x="116" y="58" width="16" height="14" rx="3"/><rect x="138" y="58" width="16" height="14" rx="3"/><rect x="160" y="58" width="12" height="14" rx="3"/>
             <rect x="72" y="80" width="16" height="14" rx="3"/><rect x="94" y="80" width="16" height="14" rx="3"/><rect x="138" y="80" width="16" height="14" rx="3"/><rect x="160" y="80" width="12" height="14" rx="3"/>
             <rect x="72" y="102" width="16" height="14" rx="3"/><rect x="116" y="102" width="16" height="14" rx="3"/><rect x="138" y="102" width="16" height="14" rx="3"/><rect x="160" y="102" width="12" height="14" rx="3"/>
           </g>
-          <rect x="116" y="80" width="16" height="14" rx="3" fill="#E040C8"/><rect x="94" y="102" width="16" height="14" rx="3" fill="#3BD16F"/><rect x="160" y="58" width="12" height="14" rx="3" fill="#F5C542"/>
+          <rect x="116" y="80" width="16" height="14" rx="3" fill="#FF0074"/><rect x="94" y="102" width="16" height="14" rx="3" fill="#00BE00"/><rect x="160" y="58" width="12" height="14" rx="3" fill="#F1F0EC"/>
           <g transform="translate(130 112)"><rect width="34" height="22" rx="3" fill="#fff"/><path d="M0 0h8.5v5.5H0zM17 0h8.5v5.5H17zM8.5 5.5H17V11H8.5zM25.5 5.5H34V11h-8.5zM0 11h8.5v5.5H0zM17 11h8.5v5.5H17zM8.5 16.5H17V22H8.5zM25.5 16.5H34V22h-8.5z" fill="#111"/><rect x="-3" y="-4" width="3" height="40" rx="1.5" fill="#ccc"/></g>
         </g>
       </svg>
       <b>Season Planner</b><small>Every race, every weekend, no clashes</small></a>
 
-    <a class="tile" href="standings/" style="--c:#4C8DFF">
+    <a class="tile" href="standings/" style="--c:#00BE00">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
-        <g fill="#4C8DFF" opacity=".7"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
-        <g fill="#F5C542" opacity=".8"><rect x="100" y="12" width="6" height="3" rx="1.5" transform="rotate(50 103 13)"/><circle cx="168" cy="36" r="2.5"/><circle cx="52" cy="48" r="2"/></g>
-        <path d="M86 48h40v10a20 20 0 0 1-40 0z" fill="#F5C542"/><path d="M86 52H76a12 12 0 0 0 14 14M126 52h10a12 12 0 0 1-14 14" fill="none" stroke="#F5C542" stroke-width="4"/>
-        <rect x="102" y="76" width="8" height="12" fill="#E2B33A"/><rect x="92" y="86" width="28" height="7" rx="2" fill="#F5C542"/>
-        <rect x="80" y="96" width="52" height="74" rx="4" fill="#4C8DFF"/><rect x="28" y="116" width="52" height="54" rx="4" fill="#3A6FD0"/><rect x="132" y="128" width="52" height="42" rx="4" fill="#2C58A8"/>
+        <g fill="#FF0074" opacity=".8"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
+        <g fill="#00BE00" opacity=".8"><rect x="100" y="12" width="6" height="3" rx="1.5" transform="rotate(50 103 13)"/><circle cx="168" cy="36" r="2.5"/><circle cx="52" cy="48" r="2"/></g>
+        <path d="M86 48h40v10a20 20 0 0 1-40 0z" fill="#F1F0EC"/><path d="M86 52H76a12 12 0 0 0 14 14M126 52h10a12 12 0 0 1-14 14" fill="none" stroke="#F1F0EC" stroke-width="4"/>
+        <rect x="102" y="76" width="8" height="12" fill="#BFC1C7"/><rect x="92" y="86" width="28" height="7" rx="2" fill="#F1F0EC"/>
+        <rect x="80" y="96" width="52" height="74" rx="4" fill="#00BE00"/><rect x="28" y="116" width="52" height="54" rx="4" fill="#FF0074"/><rect x="132" y="128" width="52" height="42" rx="4" fill="#3a3b42"/>
         <text x="106" y="138" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="30" font-weight="900" fill="#fff">1</text>
         <text x="54" y="150" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="24" font-weight="900" fill="#fff" fill-opacity=".85">2</text>
         <text x="158" y="157" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="22" font-weight="900" fill="#fff" fill-opacity=".75">3</text>
       </svg>
       <b>Standings</b><small>Latest tables, UK and international</small></a>
 
-    <a class="tile" data-m href="setup/" style="--c:#3BD16F">
+    <a class="tile" data-m href="setup/" style="--c:#00BE00">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
-        <g stroke="#3BD16F" stroke-opacity=".25" stroke-width="1"><path d="M0 20h200M0 50h200M0 80h200M0 110h200M0 140h200M30 0v170M70 0v170M110 0v170M150 0v170M190 0v170"/></g>
+        <g stroke="#00BE00" stroke-opacity=".25" stroke-width="1"><path d="M0 20h200M0 50h200M0 80h200M0 110h200M0 140h200M30 0v170M70 0v170M110 0v170M150 0v170M190 0v170"/></g>
         <g transform="rotate(-12 110 90)">
-          <rect x="62" y="38" width="22" height="34" rx="6" fill="#151816" stroke="#3BD16F" stroke-width="2"/><rect x="148" y="38" width="22" height="34" rx="6" fill="#151816" stroke="#3BD16F" stroke-width="2"/>
-          <rect x="56" y="112" width="28" height="40" rx="7" fill="#151816" stroke="#3BD16F" stroke-width="2"/><rect x="148" y="112" width="28" height="40" rx="7" fill="#151816" stroke="#3BD16F" stroke-width="2"/>
+          <rect x="62" y="38" width="22" height="34" rx="6" fill="#151816" stroke="#00BE00" stroke-width="2"/><rect x="148" y="38" width="22" height="34" rx="6" fill="#151816" stroke="#00BE00" stroke-width="2"/>
+          <rect x="56" y="112" width="28" height="40" rx="7" fill="#151816" stroke="#00BE00" stroke-width="2"/><rect x="148" y="112" width="28" height="40" rx="7" fill="#151816" stroke="#00BE00" stroke-width="2"/>
           <path d="M84 55h64M84 132h64M96 44l-6 100M136 44l6 100M96 44h40" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="116" cy="70" r="11" fill="none" stroke="#fff" stroke-width="3"/><rect x="100" y="92" width="32" height="30" rx="6" fill="#E040C8" opacity=".85"/>
-          <path d="M60 26v-8h112v8M48 112h-10v40h10" fill="none" stroke="#3BD16F" stroke-dasharray="3 3" stroke-width="1.5"/>
-          <text x="116" y="14" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-size="11" fill="#3BD16F" font-weight="700">TRACK WIDTH</text>
+          <circle cx="116" cy="70" r="11" fill="none" stroke="#fff" stroke-width="3"/><rect x="100" y="92" width="32" height="30" rx="6" fill="#FF0074" opacity=".85"/>
+          <path d="M60 26v-8h112v8M48 112h-10v40h10" fill="none" stroke="#00BE00" stroke-dasharray="3 3" stroke-width="1.5"/>
+          <text x="116" y="14" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-size="11" fill="#00BE00" font-weight="700">TRACK WIDTH</text>
         </g>
-        <path d="M182 106a14 14 0 0 0-17 17l-32 32a6 6 0 0 0 8.5 8.5l32-32a14 14 0 0 0 17-17l-8 8-7.5-2-2-7.5z" fill="#3BD16F"/>
+        <path d="M182 106a14 14 0 0 0-17 17l-32 32a6 6 0 0 0 8.5 8.5l32-32a14 14 0 0 0 17-17l-8 8-7.5-2-2-7.5z" fill="#00BE00"/>
       </svg>
       <b>Setup Coach</b><small>Tell it what the kart's doing, get the fix</small></a>
 
-    <a class="tile" data-m href="team/" style="--c:#F5C542">
+    <a class="tile" data-m href="team/" style="--c:#FF0074">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
         <rect x="132" y="20" width="8" height="150" fill="#555"/>
         <g transform="rotate(-6 110 70)">
-          <rect x="58" y="24" width="112" height="92" rx="6" fill="#111" stroke="#F5C542" stroke-width="3"/>
-          <text x="114" y="62" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="34" font-weight="900" fill="#F5C542">P1</text>
+          <rect x="58" y="24" width="112" height="92" rx="6" fill="#111" stroke="#FF0074" stroke-width="3"/>
+          <text x="114" y="62" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="34" font-weight="900" fill="#00BE00">P1</text>
           <text x="114" y="98" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="22" font-weight="900" fill="#fff">+2.4</text>
-          <rect x="66" y="104" width="96" height="5" rx="2" fill="#3BD16F"/>
+          <rect x="66" y="104" width="96" height="5" rx="2" fill="#FF0074"/>
         </g>
-        <g transform="translate(24 98) scale(1.5)"><path d="M9 21.5v-4.5a11 11 0 0 1 22 0v4.5" fill="none" stroke="#F1F0EC" stroke-width="4.4" stroke-linecap="round"/><rect x="2.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><rect x="25.5" y="17" width="12" height="15.5" rx="4.5" fill="#F5C542"/><path d="M8.5 32.5c0 3.4 2.8 5 6.8 5h3.6" fill="none" stroke="#F1F0EC" stroke-width="3.2" stroke-linecap="round"/><rect x="18" y="34" width="9" height="6" rx="3" fill="#E040C8"/></g>
+        <g transform="translate(24 98) scale(1.5)"><path d="M9 21.5v-4.5a11 11 0 0 1 22 0v4.5" fill="none" stroke="#F1F0EC" stroke-width="4.4" stroke-linecap="round"/><rect x="2.5" y="17" width="12" height="15.5" rx="4.5" fill="#FF0074"/><rect x="25.5" y="17" width="12" height="15.5" rx="4.5" fill="#FF0074"/><path d="M8.5 32.5c0 3.4 2.8 5 6.8 5h3.6" fill="none" stroke="#F1F0EC" stroke-width="3.2" stroke-linecap="round"/><rect x="18" y="34" width="9" height="6" rx="3" fill="#FF0074"/></g>
       </svg>
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
   </nav>
   <h2 class="tsec">More from Use More Kerb</h2>
   <nav class="tiles extras" aria-label="More from Use More Kerb">
-    <a class="tile wide mc" data-m href="members/" style="--c:#8B6CF0"><span class="tag">New</span>
+    <a class="tile wide mc" data-m href="members/" style="--c:#FF0074"><span class="tag">New</span>
       <svg class="art karts" viewBox="0 0 300 190" aria-hidden="true">
         <defs><linearGradient id="sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".25"/><stop offset=".45" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient>
 <radialGradient id="hl" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></radialGradient>
@@ -366,11 +366,11 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>USE MORE KERB Championship</b><small>The race series for Team UMK members</small></a>
 
     <a class="tile wide shop" href="store/" style="--c:#FF0074">
-      <span class="sbar"><span class="stxt"><b>Store</b><small>Merch, race kit and kart parts</small></span><span class="sgo">Shop now ›</span></span>
-      <span class="shelf"><span class="sbadge">Discount codes inside</span><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
+      <span class="sbar"><span class="stxt"><b>Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
+      <span class="shelf"><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
       <span class="slogos"><img src="logos/sponsors/xenduri.png" alt="Xenduri"><img src="logos/sponsors/helmet28.png" alt="Helmet28"><img src="logos/sponsors/kkc.png" alt="KKC"></span></a>
 
-    <a class="tile wide brad" href="brad/" style="--c:#F5C542">
+    <a class="tile wide brad" href="brad/" style="--c:#FF0074">
       <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
       <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
   </nav>
@@ -398,7 +398,7 @@ function nextMine(){
 async function renderNext(){
   const ev=nextMine();
   const R=2*Math.PI*36;
-  const dial=(num,unit,frac)=>`<span class="dial" aria-hidden="true"><svg viewBox="0 0 84 84"><circle cx="42" cy="42" r="36" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="6"/><circle cx="42" cy="42" r="36" fill="none" stroke="#E040C8" stroke-width="6" stroke-linecap="round" stroke-dasharray="${(R*frac).toFixed(1)} ${R.toFixed(1)}" opacity="${frac?1:0}"/></svg><span class="n"><b>${num}</b><span>${unit}</span></span></span>`;
+  const dial=(num,unit,frac)=>`<span class="dial" aria-hidden="true"><svg viewBox="0 0 84 84"><circle cx="42" cy="42" r="36" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="6"/><circle cx="42" cy="42" r="36" fill="none" stroke="#FF0074" stroke-width="6" stroke-linecap="round" stroke-dasharray="${(R*frac).toFixed(1)} ${R.toFixed(1)}" opacity="${frac?1:0}"/></svg><span class="n"><b>${num}</b><span>${unit}</span></span></span>`;
   let card;
   if(ev){const n=dn(ev.start)-TODAY,now=n<=0;
     const d=now?dial("GO","Race day",1):dial(n,n===1?"Day":"Days",Math.max(.04,1-Math.min(n,60)/60));
@@ -542,7 +542,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794437220";
+const BUILD="1794437379";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
