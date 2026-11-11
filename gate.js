@@ -4,8 +4,8 @@
 (function () {
   var CFG = {
     enabled: false,
-    netlify: "",              /* the Netlify address, e.g. "https://use-more-kerb.netlify.app" (used when the app is opened from GitHub Pages) */
-    discordInvite: "",        /* invite link to the Use More Kerb Discord server */
+    netlify: "https://umkseasonplanner.netlify.app",              /* the Netlify address, e.g. "https://use-more-kerb.netlify.app" (used when the app is opened from GitHub Pages) */
+    discordInvite: "https://discord.gg/DZDKW9fWmA",        /* invite link to the Use More Kerb Discord server */
     join: "https://www.youtube.com/@BradPhilpot/join",
     trailer: "JAPL-rYNekY"
   };
@@ -27,7 +27,10 @@
   }
   function pass() { try { var p = JSON.parse(ls(KEY) || "null"); return p && p.t && p.exp > Date.now() ? p : null; } catch (e) { return null; } }
 
-  if (!CFG.enabled) return;
+  /* private test: open any page with ?gatetest=1 to try the lock before it's on for everyone (?gatetest=0 to stop) */
+  var tq = location.search.match(/[?&]gatetest=([01])/);
+  if (tq) ls("umk-gate-test", tq[1] === "1" ? "1" : null);
+  if (!CFG.enabled && ls("umk-gate-test") !== "1") return;
   var api = (/github\.io$/.test(location.hostname) && CFG.netlify ? CFG.netlify.replace(/\/$/, "") : location.origin) + "/.netlify/functions/discord-auth";
 
   var p = pass();
