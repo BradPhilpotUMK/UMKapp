@@ -1,0 +1,36 @@
+# Members' Championship: copy the Discord sign-ups (#race-entry) and racing names (#race-form-logs)
+# into data/members-entries.json every 10 minutes. Only commits when the lists change.
+# Needs the repository secret DISCORD_BOT_TOKEN (Settings > Secrets and variables > Actions).
+name: Discord sign-ups
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discord-entries
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the sign-ups from Discord
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: python3 tools/discord_entries.py
+      - name: Publish if anything changed
+        run: |
+          if git diff --quiet -- data/members-entries.json && [ -z "$(git ls-files --others -- data/members-entries.json)" ]; then exit 0; fi
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+          git add data/members-entries.json
+          git commit -m "Members' Championship: update sign-ups from Discord"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
