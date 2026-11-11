@@ -25,8 +25,13 @@ const cors = origin => ({ "Access-Control-Allow-Origin": origin || "*", "Access-
 const json = (obj, status, origin) => new Response(JSON.stringify(obj), { status: status || 200, headers: { "Content-Type": "application/json", ...cors(origin) } });
 const clean = (s, n) => String(s || "").replace(/[\u0000-\u001f<>]/g, "").replace(/\s+/g, " ").trim().slice(0, n);
 
+/* race details come from the main app address (GitHub Pages), so editing data/members.json never needs a Netlify publish */
+const ROUNDS_URL = env("UMK_ROUNDS_URL") || "https://bradphilpotumk.github.io/season-planner/data/members.json";
 async function rounds(origin) {
-  try { const r = await fetch(origin + "/data/members.json", { cache: "no-store" }); const d = await r.json(); return d.rounds || []; } catch { return []; }
+  for (const u of [ROUNDS_URL + "?t=" + Date.now(), origin + "/data/members.json"]) {
+    try { const r = await fetch(u, { cache: "no-store" }); if (r.ok) { const d = await r.json(); if (Array.isArray(d.rounds)) return d.rounds; } } catch {}
+  }
+  return [];
 }
 
 async function post(text) {

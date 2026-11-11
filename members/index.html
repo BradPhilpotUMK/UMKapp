@@ -148,7 +148,11 @@ const Entry={id:"",d:null,editing:false,
     const j=await r.json().catch(()=>({error:"bad"}));if(!r.ok)throw j;return j},
   async load(id){this.id=id;try{this.d=await this.call("GET");this.render()}catch(e){this.fail(e)}},
   fail(e){const m={signin:"Sign in again to sign up.",members:"Race sign-ups are for Team Use More Kerb members.",closed:"Sign-ups for this race have closed.",name:"Add your racing name.",weight:"Add your weight in race kit, in kg.",busy:"Lots of people signing up at once. Try again in a moment.",noevent:"This race isn't open for sign-ups yet."}[e&&e.error]||"Couldn't reach the sign-up list. Check your signal and try again.";
-    if(this.d){toast(m);this.render()}else $("#suCard").innerHTML=`<p class="tba">${esc(m)}</p>`},
+    if(this.d){toast(m);this.render();return}
+    if(["members","noevent","signin"].includes(e&&e.error)){$("#suCard").innerHTML=`<p class="tba">${esc(m)}</p>`;return}
+    /* sign-up service unreachable: don't leave people stuck, send them to Discord instead */
+    const r=this.round||{};$("#suCard").innerHTML=`<div class="ev"><b class="t">${esc(r.title||"Next race")}</b>${r.date?`<div class="when">${this.when(r)}</div>`:""}<ul>${r.venue?`<li>${esc(r.venue)}</li>`:""}${r.format?`<li>${esc(r.format)}</li>`:""}${r.price?`<li>${esc(r.price)}</li>`:""}</ul></div>
+      <a class="go" style="display:block;text-align:center;text-decoration:none;background:#5865F2" href="${esc($("#suChat").href)}" target="_blank" rel="noopener">Sign up in Discord: #race-entry ›</a><p class="tba" style="margin:10px 2px 0;font-size:13px">In-app sign-up isn't available right now, so sign up in #race-entry instead.</p>`},
   when(ev){const d=dt(ev.date);return `${DOW[d.getUTCDay()]} ${d.getUTCDate()} ${MON[d.getUTCMonth()]} ${d.getUTCFullYear()}${ev.time?" · "+esc(ev.time):""}`},
   deadline(p){if(!p||!p.deadline)return "";const d=dt(p.deadline);return `${DOW[d.getUTCDay()]} ${d.getUTCDate()} ${MON[d.getUTCMonth()]}`},
   render(){const d=this.d,ev=d.event,cap=ev.capacity,me=d.me;let h=`<div class="ev"><b class="t">${esc(ev.title)}</b><div class="when">${this.when(ev)}</div><ul>${ev.venue?`<li>${esc(ev.venue)}</li>`:""}${ev.format?`<li>${esc(ev.format)}</li>`:""}${ev.price?`<li>${esc(ev.price)}</li>`:""}</ul></div>`;
@@ -187,7 +191,7 @@ const Entry={id:"",d:null,editing:false,
   if(Array.isArray(M.rounds)&&M.rounds.length)$("#mCal").innerHTML=M.rounds.map((r,i)=>{const d=r.date?dt(r.date):null;return `<div class="rnd"><span class="d"><b>${d?d.getUTCDate():"TBA"}</b><span>${d?MON[d.getUTCMonth()]+" "+String(d.getUTCFullYear()).slice(2):""}</span></span><span><b>${esc(r.title||"Round "+(i+1))}</b><br><small style="color:var(--muted)">${esc(r.venue||"Venue TBA")}${r.note?" · "+esc(r.note):""}</small></span></div>`}).join("");
   if(M.signup&&M.signup.url)$("#suChat").href=M.signup.url;
   {const now=new Date();now.setUTCHours(0,0,0,0);const nx=(M.rounds||[]).filter(r=>r.id&&r.date&&dt(r.date)>=now).sort((a,b)=>dt(a.date)-dt(b.date))[0];
-   if(nx)Entry.load(nx.id);else $("#suCard").innerHTML=`<p class="tba">The next race will appear here when it's announced.</p>`}
+   if(nx){Entry.round=nx;Entry.load(nx.id)}else $("#suCard").innerHTML=`<p class="tba">The next race will appear here when it's announced.</p>`}
   if(Array.isArray(M.standings)&&M.standings.length)$("#mStand").innerHTML=`<table><tr><th>Pos</th><th>Driver</th><th style="text-align:right">Pts</th></tr>${M.standings.map(r=>`<tr><td>${r.pos}</td><td>${esc(r.driver)}</td><td class="n">${r.points??""}</td></tr>`).join("")}</table>${M.standingsNote?`<p class="tba" style="margin:10px 0 0">${esc(M.standingsNote)}</p>`:""}`;
 }catch(e){}})();
 </script>
