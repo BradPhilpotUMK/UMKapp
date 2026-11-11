@@ -1,7 +1,21 @@
 {
- "status": "Coming soon · Season 1",
+ "status": "Entries open · Season 1",
  "intro": "A championship run by Brad for members of the channel. Real races, real points, and bragging rights on the channel.",
- "rounds": [],
+ "rounds": [
+  {
+   "title": "Round 1: UMK 2027 Race Event",
+   "date": "2027-01-17",
+   "time": "12:00",
+   "venue": "Formula Fast, Milton Keynes (indoor)",
+   "price": "£20 per driver",
+   "format": "Practice, 1-lap qualifying, final with a pit stop",
+   "note": "12:00 · £20"
+  }
+ ],
  "standings": [],
- "standingsNote": ""
+ "standingsNote": "",
+ "signup": {
+  "channel": "#race-entry",
+  "url": "https://discord.gg/DZDKW9fWmA"
+ }
 }

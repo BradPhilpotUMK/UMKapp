@@ -2,6 +2,12 @@
 <html lang="en-GB">
 <head>
 <style>html,body{background:#0b0b0c}.vid{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000;border:1px solid var(--line)}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.su .ev b.t{display:block;font-family:var(--display);font-size:20px;line-height:1.15}
+.su .ev .when{color:#8B6CF0;font-weight:700;margin-top:4px}
+.su .ev ul{list-style:none;margin:10px 0 14px;padding:0;display:grid;gap:6px}
+.su .ev li{font-size:14px;color:var(--muted);padding-left:16px;position:relative}
+.su .ev li:before{content:"";position:absolute;left:2px;top:7px;width:6px;height:6px;border-radius:50%;background:#8B6CF0}
+.dcbtn{display:flex;justify-content:center;width:100%;background:#5865F2!important;border-color:#5865F2!important;color:#fff!important;font-weight:800}
 </style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
@@ -75,13 +81,14 @@ form .chk input{width:20px;height:20px;flex:none;margin-top:1px;accent-color:#8B
   </div>
 
   <h2 class="sect">Who can race</h2>
-  <div class="card"><b>Members of Team Use More Kerb and above</b><p class="tba" style="margin:4px 0 0">Every Team Use More Kerb member (the £2.99 tier and above) can race. Register your interest below so Brad can contact you when entries open.</p></div>
+  <div class="card"><b>Members of Team Use More Kerb and above</b><p class="tba" style="margin:4px 0 0">Every Team Use More Kerb member (the £2.99 tier and above) can race. You sign up for each race in the #race-entry channel on the Use More Kerb Discord.</p></div>
 
   <h2 class="sect">How it works</h2>
   <div class="card"><ol class="steps" id="mSteps">
     <li><span><b>Join Team Use More Kerb</b><small>A YouTube channel membership at £2.99 a month or higher.</small></span></li>
-    <li><span><b>Register your interest</b><small>Fill in the form below so you're first to hear when entries open.</small></span></li>
-    <li><span><b>Enter the rounds</b><small>Format, venues and dates are being finalised and will appear here.</small></span></li>
+    <li><span><b>Sign up in Discord</b><small>In #race-entry, tap <b>Sign Up</b> on the race (or <b>Waiting List</b> if it's full).</small></span></li>
+    <li><span><b>Enter your driver details</b><small>Tap <b>Enter Driver Details</b> and add your racing name and your weight in race kit.</small></span></li>
+    <li><span><b>Turn up and race</b><small>Practice, qualifying and the final. Pay on the day unless Brad says otherwise.</small></span></li>
     <li><span><b>Score points, top the table</b><small>Standings update here after every round.</small></span></li>
   </ol></div>
 
@@ -91,20 +98,11 @@ form .chk input{width:20px;height:20px;flex:none;margin-top:1px;accent-color:#8B
   <h2 class="sect">Standings</h2>
   <div class="card" id="mStand"><p class="tba">The table appears here after round 1.</p></div>
 
-  <h2 class="sect" id="register">Register your interest</h2>
-  <div class="card" id="regCard">
-    <form name="members-interest" method="POST" data-netlify="true" netlify-honeypot="company" id="regForm">
-      <input type="hidden" name="form-name" value="members-interest">
-      <p hidden><label>Leave this empty <input name="company"></label></p>
-      <div class="row2"><div><label for="fName">Name</label><input id="fName" name="name" autocomplete="name" required></div>
-      <div><label for="fYt">YouTube name</label><input id="fYt" name="youtube" placeholder="@yourname" required></div></div>
-      <label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email" required>
-      <div class="row2"><div><label for="fWhere">Where you race</label><select id="fWhere" name="region"><option>UK</option><option>Europe</option><option>USA</option><option>Elsewhere</option></select></div>
-      <div><label for="fExp">Experience</label><select id="fExp" name="experience"><option>Rental karts</option><option>Owner karts</option><option>Both</option><option>New to karting</option></select></div></div>
-      <label class="chk"><input type="checkbox" name="member" value="yes"> I'm already a Team Use More Kerb member</label>
-      <label class="chk"><input type="checkbox" name="consent" value="yes" required> Brad can email me about the Members' Championship. Your details are only used for the championship and you can ask for them to be deleted at any time.</label>
-      <button class="btn primary" type="submit" style="margin-top:16px;width:100%;background:#8B6CF0;border-color:#8B6CF0">Register interest</button>
-    </form>
+  <h2 class="sect" id="signup">Sign up</h2>
+  <div class="card su" id="suCard">
+    <div id="suNext"><p class="tba">Loading the next race…</p></div>
+    <a class="btn primary dcbtn" id="suBtn" href="https://discord.gg/DZDKW9fWmA" target="_blank" rel="noopener" data-ev="signup-discord">Sign up in Discord: #race-entry ›</a>
+    <p class="tba" style="margin:10px 2px 0;font-size:13px">Opens the Use More Kerb Discord. Tap <b>Sign Up</b> on the race, then <b>Enter Driver Details</b>. Your member role is checked automatically.</p>
   </div>
   <a class="back" href="../">‹ Use More Kerb home</a>
 </div></div>
@@ -122,12 +120,11 @@ const dt=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(Date.UTC(y,m
   if(M.status)$("#mStatus").textContent=M.status;if(M.intro)$("#mIntro").textContent=M.intro;
   if(Array.isArray(M.steps)&&M.steps.length)$("#mSteps").innerHTML=M.steps.map(s=>`<li><span><b>${esc(s.title)}</b><small>${esc(s.text||"")}</small></span></li>`).join("");
   if(Array.isArray(M.rounds)&&M.rounds.length)$("#mCal").innerHTML=M.rounds.map((r,i)=>{const d=r.date?dt(r.date):null;return `<div class="rnd"><span class="d"><b>${d?d.getUTCDate():"TBA"}</b><span>${d?MON[d.getUTCMonth()]+" "+String(d.getUTCFullYear()).slice(2):""}</span></span><span><b>${esc(r.title||"Round "+(i+1))}</b><br><small style="color:var(--muted)">${esc(r.venue||"Venue TBA")}${r.note?" · "+esc(r.note):""}</small></span></div>`}).join("");
+  if(M.signup&&M.signup.url)$("#suBtn").href=M.signup.url;
+  {const now=new Date();now.setUTCHours(0,0,0,0);const nx=(M.rounds||[]).filter(r=>r.date&&dt(r.date)>=now).sort((a,b)=>dt(a.date)-dt(b.date))[0];
+   $("#suNext").innerHTML=nx?`<div class="ev"><b class="t">${esc(nx.title)}</b><div class="when">${DOW[dt(nx.date).getUTCDay()]} ${dt(nx.date).getUTCDate()} ${MON[dt(nx.date).getUTCMonth()]} ${dt(nx.date).getUTCFullYear()}${nx.time?" · "+esc(nx.time):""}</div><ul>${nx.venue?`<li>${esc(nx.venue)}</li>`:""}${nx.format?`<li>${esc(nx.format)}</li>`:""}${nx.price?`<li>${esc(nx.price)}</li>`:""}</ul></div>`:`<p class="tba">The next race will appear here when it's announced.</p>`}
   if(Array.isArray(M.standings)&&M.standings.length)$("#mStand").innerHTML=`<table><tr><th>Pos</th><th>Driver</th><th style="text-align:right">Pts</th></tr>${M.standings.map(r=>`<tr><td>${r.pos}</td><td>${esc(r.driver)}</td><td class="n">${r.points??""}</td></tr>`).join("")}</table>${M.standingsNote?`<p class="tba" style="margin:10px 0 0">${esc(M.standingsNote)}</p>`:""}`;
 }catch(e){}})();
-$("#regForm").addEventListener("submit",async e=>{e.preventDefault();const f=e.target,btn=f.querySelector("button[type=submit]");btn.disabled=true;btn.textContent="Sending…";
-  try{const r=await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()});
-    if(!r.ok)throw 0;gc("members-register","Registered interest");$("#regCard").innerHTML=`<div class="done"><b>You're on the list</b><span class="tba">Thanks! Brad will be in touch when entries open.</span></div>`}
-  catch(x){btn.disabled=false;btn.textContent="Register interest";toast("Couldn't send. Check your signal and try again")}});
 </script>
 </body>
 </html>
