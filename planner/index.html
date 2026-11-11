@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <base href="../">
-<style>html,body{background:#0b0b0c}</style>
+<style>html,body{background:#000}</style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
 <script src="gate.js"></script>
@@ -31,7 +31,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="description" content="Plan your karting season: UK club rounds, rental championships, free weekends and clashes.">
-<meta name="theme-color" content="#1F2126">
+<meta name="theme-color" content="#000000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -450,6 +450,12 @@ button.wsum{display:block;width:100%;text-align:left;color:inherit;font:inherit;
 @media (prefers-reduced-motion: reduce){#splash *{animation-duration:.01s!important;animation-delay:0s!important}}
 @media (prefers-reduced-motion: reduce){.sheet,.toast{transition:none}}
 #splash:not(.go),#splash:not(.go) *{animation-play-state:paused!important}
+
+/* 2027 brand pack: black background with the black/dark grey pixel camo on every page */
+:root{--bg:#000}
+html{background:#000}
+body{background:#000 url(../img/camo.png) center/cover no-repeat}
+header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
 </style>
 <!-- visitor counts: usemorekerb.goatcounter.com -->
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -633,7 +639,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD="1794430587";
+const BUILD="1794433089";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,
@@ -1818,7 +1824,7 @@ async function uploadSplash(){
   inp.click();
 }
 
-function applySkin(){S.skin="";document.documentElement.dataset.skin="";const m=document.querySelector('meta[name="theme-color"]');if(m)m.content=S.skin==="pink"?"#D8159E":"#1F2126"}
+function applySkin(){S.skin="";document.documentElement.dataset.skin="";const m=document.querySelector('meta[name="theme-color"]');if(m)m.content=S.skin==="pink"?"#D8159E":"#000000"}
 
 try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}
 (function applyRegion(){

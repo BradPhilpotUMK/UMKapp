@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<style>html,body{background:#0b0b0c}</style>
+<style>html,body{background:#000}</style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
 <script src="../gate.js"></script>
@@ -30,7 +30,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="description" content="For endurance karting team managers: which drivers are racing where, their coaches and mechanics, and who has been paid.">
-<meta name="theme-color" content="#15161A">
+<meta name="theme-color" content="#000000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -278,6 +278,12 @@ nav.tabs .inst svg{width:18px;height:18px;fill:none;stroke:var(--accent);stroke-
 @media (prefers-reduced-motion: reduce){#splash *{animation-duration:.01s!important;animation-delay:0s!important;animation-iteration-count:1!important}}
 
 #splash:not(.go),#splash:not(.go) *{animation-play-state:paused!important}
+
+/* 2027 brand pack: black background with the black/dark grey pixel camo on every page */
+:root{--bg:#000}
+html{background:#000}
+body{background:#000 url(../img/camo.png) center/cover no-repeat}
+header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
