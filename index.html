@@ -194,6 +194,12 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .ytv img,.ytv iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
 .ytv .ytp{position:absolute;left:50%;top:50%;width:68px;height:48px;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}
 .ytv .ytl{position:absolute;left:10px;top:10px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px}
+.ytpost{padding:14px}
+.ytpost .yph{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--muted);font-size:12.5px}
+.ytpost .ytl{position:static}
+.ytpost p{margin:10px 0 12px;font-size:15px;line-height:1.45;white-space:pre-line;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.ytpost img{display:block;width:100%;border-radius:12px;margin:0 0 12px}
+.ytpost .ytl{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px}
 .ytb{padding:12px 14px 14px}
 .ytb b{display:block;font-family:var(--display);font-size:18px;line-height:1.2}
 .ytb small{display:block;color:var(--muted);font-size:13px;margin-top:4px}
@@ -396,6 +402,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
   </nav>
   <h2 class="tsec yts">YouTube</h2>
+  <div class="ytc ytpost" id="ytPost" hidden><a class="yph" id="ypLink" target="_blank" rel="noopener"><span class="ytl">Latest post</span><small id="ypWhen"></small></a><p id="ypText"></p><img id="ypImg" alt="" loading="lazy" hidden><a class="ytgo" id="ypGo" target="_blank" rel="noopener">View &amp; comment on YouTube ›</a></div>
   <div class="ytc" id="ytCard" hidden>
     <div class="ytv" id="ytV"><img id="ytThumb" alt="" loading="lazy"><span class="ytp" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#FF0074"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span><span class="ytl">Latest video</span></div>
     <div class="ytb"><b id="ytTitle"></b><small id="ytDate"></small>
@@ -565,6 +572,7 @@ function hideSplash(){document.documentElement.classList.add("fx");const sp=$("#
   try{const d=new Date(v.published),days=Math.floor((Date.now()-d)/864e5);$("#ytDate").textContent="Brad Philpot · "+(days<1?"Today":days===1?"Yesterday":days<7?days+" days ago":d.toLocaleDateString("en-GB",{day:"numeric",month:"short"}))}catch(e){}
   box.onclick=()=>{if(box.querySelector("iframe"))return;box.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.id+'?autoplay=1&playsinline=1&rel=0" title="'+esc(v.title)+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';gc("yt-play","Played latest video")};
   $("#ytMore").innerHTML=(Y.videos||[]).slice(1,6).map(x=>`<a href="https://www.youtube.com/watch?v=${esc(x.id)}" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/${esc(x.id)}/mqdefault.jpg" alt="" loading="lazy"><span>${esc(x.title)}</span></a>`).join("");
+  const P=Y.post;if(P&&P.text){const u="https://www.youtube.com/post/"+P.id;$("#ypText").textContent=P.text;$("#ypWhen").textContent=P.when||"";$("#ypLink").href=u;$("#ypGo").href=P.video?"https://www.youtube.com/watch?v="+P.video:u;if(P.image){const im=$("#ypImg");im.src=P.image;im.hidden=false}$("#ytPost").hidden=false}
   card.hidden=false}catch(e){}})();
 /* ---------- install ---------- */
 const IS_APP=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
@@ -580,7 +588,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794438525";
+const BUILD="1794438999";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
