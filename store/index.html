@@ -68,7 +68,11 @@ header.top .brand h1{font-size:clamp(30px,9vw,40px);letter-spacing:.02em;overflo
 .big.crw{border-color:rgba(255,255,255,.28);background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.8) 82%),radial-gradient(50% 45% at 50% 30%,rgba(255,255,255,.16),transparent 72%),radial-gradient(40% 40% at 20% 20%,rgba(255,0,116,.3),transparent 72%),radial-gradient(40% 40% at 82% 26%,rgba(0,190,0,.28),transparent 72%),repeating-linear-gradient(118deg,rgba(255,255,255,.04) 0 2px,transparent 2px 16px),linear-gradient(160deg,#1d1e24,#09090b 60%)}
 .big.crw .crwpic{position:relative;display:block;margin:-22px -18px 14px}
 .big.crw .crwpic .suits{display:block;width:100%;height:auto}
-.big.crw .crwlogo{display:block;width:84px;height:auto;margin:2px 0 14px}
+.big.crw .crwlogos{display:flex;align-items:center;gap:14px;margin:2px 0 14px}
+.big.crw .crwlogo{display:block;width:76px;height:auto;margin:0}
+.big.crw .crwx{color:rgba(255,255,255,.55);font-size:22px;font-weight:300}
+.big.crw .dar{display:flex;flex-direction:column;gap:8px}
+.big.crw .dar img{display:block;width:118px;height:auto}
 
 /* store page backdrop: camo with brand colour glows and paint splats */
 body{background:#000 url(../img/camo.png) center/cover no-repeat}
@@ -94,7 +98,7 @@ header.top h1{text-shadow:0 4px 18px rgba(0,0,0,.8)}
   <button class="code" id="code" aria-label="Copy discount code USEMOREKERB"><span>10% off with code</span><b>USEMOREKERB</b><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg></button>
   <a class="big kkc" href="https://kkckartshop.co.uk/BradPhilpot" target="_blank" rel="noopener sponsored" data-shop="kkc"><img class="pic" src="../img/store-kkc-3.webp" alt="Brad racing his KKC-liveried kart, and the Use More Kerb steering wheel" width="900" height="465" loading="lazy"><img class="lg" src="../logos/sponsors/kkc.png" alt="KKC Karting Components" style="height:58px"><b>Kart parts and spares</b><p>Wheels, sprockets, Alfano data loggers, steering wheels, parts and spares for your kart from KKC Kart Shop.</p><span class="go">Shop KKC ›</span></a>
   <button class="code" id="codeKkc" aria-label="Copy KKC discount code USEMOREKERB"><span>KKC discount code<small>One use per customer</small></span><b>USEMOREKERB</b><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg></button>
-  <a class="big crw" href="https://www.customracewear.co.uk/" target="_blank" rel="noopener" data-shop="customracewear"><span class="crwpic"><img class="suits" src="../img/store-crw-2.webp" alt="Brad in his USE. MORE. KERB. Custom Racewear suit, and the suit design" loading="lazy"></span><img class="crwlogo" src="../logos/sponsors/customracewear.png" alt="Custom Racewear" width="300" height="300"><b>Custom Racewear</b><p>Custom race suits and team kit designed and made to your own livery.</p><span class="go">Shop Custom Racewear ›</span></a>
+  <a class="big crw" href="https://www.customracewear.co.uk/" target="_blank" rel="noopener" data-shop="customracewear"><span class="crwpic"><img class="suits" src="../img/store-crw-3.webp" alt="Brad in his USE. MORE. KERB. Custom Racewear suit, and the suit design" loading="lazy"></span><span class="crwlogos"><img class="crwlogo" src="../logos/sponsors/customracewear.png" alt="Custom Racewear" width="300" height="300"><span class="crwx">×</span><span class="dar"><img src="../logos/sponsors/danrow.png" alt="Danrow"><img src="../logos/sponsors/aerosuit.png" alt="AeroSuit"></span></span><b>Custom Racewear × Danrow AeroSuit</b><p>Custom race suits and team kit designed and made to your own livery, including the Danrow AeroSuit Brad races in.</p><span class="go">Shop Custom Racewear ›</span></a>
   <a class="back" href="../">‹ Use More Kerb home</a>
 </div></div>
 <div class="toast" id="toast"></div>
