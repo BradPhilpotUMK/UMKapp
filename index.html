@@ -183,7 +183,6 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.shop .sbar::after{content:"";position:absolute;left:0;right:0;top:100%;height:40px;background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,0));pointer-events:none}
 .tile.shop .stxt{flex:1;min-width:0}
 .tile.shop .stxt b{display:block;white-space:nowrap;font-size:clamp(26px,7.8vw,38px);line-height:.95;text-transform:uppercase;font-style:italic;letter-spacing:.02em;color:#fff;transform:skewX(-8deg)}
-.tile.shop .stxt b .umk{display:inline-block;height:.74em;width:auto;vertical-align:baseline;transform:skewX(8deg);margin-right:.06em}
 .tile.shop .stxt small{margin-top:4px;color:#cfd0d6}
 .tile.shop .sgo{flex:none;font-weight:800;font-size:15px;color:#111;background:#fff;border-radius:999px;padding:10px 16px;box-shadow:0 3px 0 #FF0074,0 6px 14px rgba(0,0,0,.5)}
 .tile.shop .sbadge{display:inline-block;margin-top:8px;white-space:nowrap;z-index:2;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:4px 9px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
@@ -369,7 +368,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>USE MORE KERB Championship</b><small>The race series for Team UMK members</small></a>
 
     <a class="tile wide shop" href="store/" style="--c:#FF0074">
-      <span class="sbar"><span class="stxt"><b><img class="umk" src="img/umk.png" alt="UMK" width="541" height="154"> Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
+      <span class="sbar"><span class="stxt"><b>UMK Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
       <span class="shelf"><img src="img/store-window.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
       <span class="slogos"><img src="logos/sponsors/xenduri.png" alt="Xenduri"><img src="logos/sponsors/helmet28.png" alt="Helmet28"><img src="logos/sponsors/kkc.png" alt="KKC"></span></a>
 
@@ -545,7 +544,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794438188";
+const BUILD="1794438332";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
