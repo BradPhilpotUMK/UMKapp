@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<style>html,body{background:#0b0b0c}</style>
+<script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
+<meta charset="utf-8">
+<script src="../gate.js" data-need="any"></script>
+<meta name="color-scheme" content="dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Where's Brad racing? · Use More Kerb</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta name="apple-mobile-web-app-title" content="Use More Kerb">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1284x2778.png">
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1179x2556.png">
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1290x2796.png">
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1206x2622.png">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1320x2868.png">
+<link rel="apple-touch-startup-image" media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1080x2340.png">
+<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1260x2736.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Brad Philpot's upcoming kart races: dates, tracks and countdowns.">
+<meta name="theme-color" content="#1F2126">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../hub.css">
+<style>
+.next{position:relative;overflow:hidden;border-radius:20px;padding:18px 18px 18px;margin-bottom:16px;border:1px solid color-mix(in srgb,#F5C542 45%,var(--line));background:radial-gradient(110% 90% at 100% 0%,rgba(245,197,66,.22),transparent 60%),var(--surface)}
+.next .st{position:absolute;right:-8px;top:-6px;width:118px;height:118px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
+.next .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#F5C542;font-weight:700}
+.next .cd{font-family:var(--display);font-weight:700;font-size:40px;line-height:1;margin:8px 0 6px;color:#F5C542}
+.next b{display:block;font-family:var(--display);font-size:22px;line-height:1.15;max-width:calc(100% - 110px)}
+.next p{margin:6px 0 0;color:var(--muted);font-size:14.5px}
+.mon{font-family:var(--display);font-size:19px;margin:20px 2px 8px}
+.rc{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:8px}
+.rc .dt{flex:none;width:52px;text-align:center;border-radius:10px;padding:6px 0;background:color-mix(in srgb,var(--c,#F5C542) 18%,var(--surface2,#26272d))}
+.rc .dt i{display:block;font-style:normal;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.rc .dt b{display:block;font-family:var(--display);font-size:22px;line-height:1.05}
+.rc .tx{min-width:0;flex:1}
+.rc .tx b{display:block;font-weight:700;font-size:15.5px;line-height:1.25}
+.rc .tx small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.rc .in{flex:none;font-size:12.5px;font-weight:700;color:#F5C542;white-space:nowrap}
+.up{display:block;width:100%;text-align:left;margin-top:16px;padding:14px;border-radius:14px;border:1px dashed rgba(245,197,66,.5);background:rgba(245,197,66,.06);color:var(--text);font:inherit;cursor:pointer;text-decoration:none}
+.up b{display:block;font-family:var(--display);font-size:16px}
+.up small{color:var(--muted);font-size:13.5px}
+.none{color:var(--muted)}
+</style>
+<script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div id="scroller"><div class="wrap">
+  <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Where's Brad racing?</h1></div></header>
+  <div id="list"><p class="none">Loading Brad's races…</p></div>
+  <div id="more"></div>
+  <a class="back" href="../">‹ Use More Kerb home</a>
+</div></div>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path,title:title||path,event:true})}catch(e){}}
+const dn=s=>{const [y,m,d]=String(s).split("-").map(Number);return Math.floor(Date.UTC(y,m-1,d)/864e5)};
+const TODAY=(()=>{const n=new Date();return Math.floor(Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())/864e5)})();
+const D=s=>new Date(dn(s)*864e5);
+const f=(s,o)=>D(s).toLocaleDateString("en-GB",{timeZone:"UTC",...o});
+const until=(a,b)=>{const n=dn(a)-TODAY;if(n<=0&&dn(b||a)>=TODAY)return"Racing now";return n===1?"Tomorrow":"In "+n+" days"};
+const range=r=>r.end&&r.end!==r.start?(f(r.start,{month:"short"})===f(r.end,{month:"short"})?f(r.start,{day:"numeric"})+"–"+f(r.end,{day:"numeric",month:"short"}):f(r.start,{day:"numeric",month:"short"})+" – "+f(r.end,{day:"numeric",month:"short"})):f(r.start,{weekday:"short",day:"numeric",month:"short"});
+const name=r=>r.series&&r.series!==r.title?r.series+": "+r.title:r.title;
+(async()=>{
+  let R=[];try{const r=await fetch("../data/brad.json",{cache:"no-cache"});R=(await r.json()).races||[]}catch(e){}
+  R=R.filter(r=>dn(r.end||r.start)>=TODAY).sort((a,b)=>dn(a.start)-dn(b.start));
+  if(!R.length){$("#list").innerHTML=`<p class="none">No races booked right now. Check back soon.</p>`;return}
+  const n=R[0];let h=`<div class="next"><img class="st" src="../brad-logo.png" alt=""><span class="l">Brad's next race</span><div class="cd">${until(n.start,n.end)}</div><b>${esc(name(n))}</b><p>${esc(range(n))}${n.location?" · "+esc(n.location):""}</p></div>`;
+  let last="";R.slice(1).forEach(r=>{const m=f(r.start,{month:"long",year:"numeric"});if(m!==last){h+=`<div class="mon">${esc(m)}</div>`;last=m}
+    h+=`<div class="rc" style="--c:${esc(r.color||"#F5C542")}"><div class="dt"><i>${esc(f(r.start,{weekday:"short"}))}</i><b>${esc(f(r.start,{day:"numeric"}))}</b></div><div class="tx"><b>${esc(name(r))}</b><small>${esc(range(r))}${r.location?" · "+esc(r.location):""}</small></div><span class="in">${esc(until(r.start,r.end).replace("In ",""))}</span></div>`});
+  $("#list").innerHTML=h;
+  const U=window.UMK||{};
+  $("#more").innerHTML=U.member?`<a class="up" href="../planner/" data-pl><b>See them on your calendar ›</b><small>Open the Season Planner and tap “Where's Brad racing?” to highlight Brad's races next to yours.</small></a>`
+    :`<button class="up" type="button" data-upg><b>Members: plan your own season too ›</b><small>Channel members can see Brad's races alongside their own in the full Season Planner.</small></button>`;
+  const u=document.querySelector("[data-upg]");if(u)u.onclick=()=>U.upgrade&&U.upgrade();
+})();
+if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
+</script>
+</body>
+</html>

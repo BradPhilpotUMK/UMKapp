@@ -4,7 +4,7 @@
 <style>html,body{background:#0b0b0c}</style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
-<script src="gate.js"></script>
+<script src="gate.js" data-need="any"></script>
 <meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Use More Kerb</title>
@@ -86,6 +86,15 @@ button{font:inherit;color:inherit;cursor:pointer}
 .tile:not(.wide)>b,.tile:not(.wide)>small{z-index:1}
 .tile b{font-family:var(--display);font-size:19px;line-height:1.1;font-weight:700}
 .tile small{display:block;color:var(--muted);font-size:13px;margin-top:4px;line-height:1.3}
+.tile.wide .art.bradart{width:118px;height:118px;max-width:none;right:10px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
+.tile.locked{filter:grayscale(1);opacity:.5}
+.tile.locked::before,.nxw.locked::before{content:"";position:absolute;z-index:3;top:10px;right:10px;width:30px;height:30px;border-radius:50%;background:#F5C542 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314051A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V8a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E") center/16px no-repeat;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+.tile.locked .tag{display:none}
+.nxw.locked .nx,.nxw.locked .av{filter:grayscale(1);opacity:.5}
+.upbar{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin:0 0 14px;padding:12px 14px;border-radius:14px;border:1px solid rgba(245,197,66,.45);background:linear-gradient(135deg,rgba(245,197,66,.16),var(--surface) 70%);color:var(--text);font:inherit;cursor:pointer}
+.upbar b{display:block;font-family:var(--display);font-size:16px}
+.upbar small{display:block;color:var(--muted);font-size:13px}
+.upbar em{margin-left:auto;font-style:normal;color:#F5C542;font-size:22px}
 .tile .tag{position:absolute;top:14px;right:13px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#14051A;background:var(--c);border-radius:999px;padding:3px 8px}
 .tile .ar{position:absolute;right:14px;bottom:14px;color:var(--c);font-size:20px}
 .tile.cf{background-color:#0e0f11;background-image:linear-gradient(115deg,rgba(255,255,255,.07),rgba(255,255,255,0) 45%,rgba(255,255,255,.04) 70%,rgba(255,255,255,0)),linear-gradient(27deg,#141518 2.5px,transparent 2.5px),linear-gradient(207deg,#141518 2.5px,transparent 2.5px),linear-gradient(27deg,#1b1c20 2.5px,transparent 2.5px),linear-gradient(207deg,#1b1c20 2.5px,transparent 2.5px),linear-gradient(90deg,#16171a 5px,transparent 5px),linear-gradient(#17181b 25%,#131417 25%,#131417 50%,transparent 50%,transparent 75%,#1c1d21 75%,#1c1d21);background-size:100% 100%,10px 10px,10px 10px,10px 10px,10px 10px,10px 10px,10px 10px;background-position:0 0,0 2.5px,5px 0,0 5px,5px 2.5px,0 0,0 0}
@@ -143,7 +152,7 @@ button{font:inherit;color:inherit;cursor:pointer}
   <div class="top"><img src="data:image/png;base64,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" alt="Use More Kerb"><span class="app">THE APP</span></div>
   <div class="nextrow" id="nextRow"></div><input type="file" id="avFile" accept="image/*" hidden>
   <nav class="tiles" aria-label="Use More Kerb tools">
-    <a class="tile" href="planner/" style="--c:#E040C8">
+    <a class="tile" data-m href="planner/" style="--c:#E040C8">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
         <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#E040C8" stroke-opacity=".35" stroke-width="14" stroke-linejoin="round"/>
         <path d="M30 150 C-10 120 10 70 55 78 C95 85 90 40 130 30 C175 20 205 60 180 95 C160 125 120 110 110 140 C100 168 60 172 30 150Z" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="4 6"/>
@@ -175,7 +184,7 @@ button{font:inherit;color:inherit;cursor:pointer}
       </svg>
       <b>Standings</b><small>Latest tables, UK and international</small></a>
 
-    <a class="tile" href="setup/" style="--c:#3BD16F">
+    <a class="tile" data-m href="setup/" style="--c:#3BD16F">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
         <g stroke="#3BD16F" stroke-opacity=".25" stroke-width="1"><path d="M0 20h200M0 50h200M0 80h200M0 110h200M0 140h200M30 0v170M70 0v170M110 0v170M150 0v170M190 0v170"/></g>
         <g transform="rotate(-12 110 90)">
@@ -190,7 +199,7 @@ button{font:inherit;color:inherit;cursor:pointer}
       </svg>
       <b>Setup Coach</b><small>Tell it what the kart's doing, get the fix</small></a>
 
-    <a class="tile" href="team/" style="--c:#F5C542">
+    <a class="tile" data-m href="team/" style="--c:#F5C542">
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
         <rect x="132" y="20" width="8" height="150" fill="#555"/>
         <g transform="rotate(-6 110 70)">
@@ -203,11 +212,15 @@ button{font:inherit;color:inherit;cursor:pointer}
       </svg>
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
+    <a class="tile wide brad" href="brad/" style="--c:#F5C542">
+      <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
+      <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
+
     <a class="tile wide cf" href="store/" style="--c:#F1F0EC">
       <img class="art merch" src="img/store-merch.png" alt="" width="600" height="330">
       <b>Store</b><small>Merch, helmets and race kit</small></a>
 
-    <a class="tile wide" href="members/" style="--c:#8B6CF0"><span class="tag">New</span>
+    <a class="tile wide" data-m href="members/" style="--c:#8B6CF0"><span class="tag">New</span>
       <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
         <g transform="translate(150 12)"><rect x="0" y="0" width="4" height="120" fill="#bbb"/>
           <path d="M4 4h64v40H4z" fill="#fff"/><path d="M4 4h8v8H4zM20 4h8v8h-8zM36 4h8v8h-8zM52 4h8v8h-8zM12 12h8v8h-8zM28 12h8v8h-8zM44 12h8v8h-8zM60 12h8v8h-8zM4 20h8v8H4zM20 20h8v8h-8zM36 20h8v8h-8zM52 20h8v8h-8zM12 28h8v8h-8zM28 28h8v8h-8zM44 28h8v8h-8zM60 28h8v8h-8zM4 36h8v8H4zM20 36h8v8h-8zM36 36h8v8h-8zM52 36h8v8h-8z" fill="#111"/></g>
@@ -248,16 +261,25 @@ async function renderNext(){
   const myAv=me?`<button class="av" id="avBtn" style="--c:#E040C8" aria-label="Change your profile picture"><img alt="" src="${me}"></button>`
     :`<button class="av add" id="avBtn" style="--c:#E040C8" aria-label="Add a profile picture"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>`;
   $("#nextRow").innerHTML=`<div class="nxw">${box("Your next race","#E040C8",mine,"planner/","Tick your races")}${myAv}</div>`
-    +`<div class="nxw">${box("Brad's next race","#F5C542",brad,"planner/","No race booked yet")}<span class="av brad"><img alt="Brad" src="brad-logo.png"></span></div>`;
+    +`<div class="nxw">${box("Brad's next race","#F5C542",brad,"brad/","No race booked yet")}<span class="av brad"><img alt="Brad" src="brad-logo.png"></span></div>`;
   $("#avBtn").onclick=()=>$("#avFile").click();
 }
 $("#avFile").onchange=e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const img=new Image();const u=URL.createObjectURL(f);
   img.onload=()=>{const S=200,c=document.createElement("canvas");c.width=c.height=S;const x=c.getContext("2d");const m=Math.min(img.width,img.height);
     x.drawImage(img,(img.width-m)/2,(img.height-m)/2,m,m,0,0,S,S);URL.revokeObjectURL(u);
     try{localStorage.setItem("umk-avatar",c.toDataURL("image/jpeg",.85))}catch(err){}
-    e.target.value="";renderNext();gc("hub-avatar","Added profile picture")};
+    e.target.value="";renderNext().then(applyLocks);
+gc("hub-avatar","Added profile picture")};
   img.src=u};
-renderNext();
+renderNext().then(applyLocks);
+/* ---------- members' features: grey out and prompt non-members ---------- */
+function applyLocks(){const U=window.UMK;if(!U||!U.on||!U.signedIn||U.member)return;
+  document.querySelectorAll(".tile[data-m]").forEach(t=>{t.classList.add("locked");t.setAttribute("aria-label",t.querySelector("b").textContent+" (members only)")});
+  const mine=document.querySelector("#nextRow .nxw");if(mine){mine.classList.add("locked");const b=mine.querySelector("#avBtn");if(b)b.remove()}
+  if(!document.querySelector(".upbar")){const u=document.createElement("button");u.className="upbar";u.type="button";
+    u.innerHTML="<span><b>Unlock the full app</b><small>Season Planner, Setup Coach, Team Manager and the Members\u2019 Championship are for channel members</small></span><em>\u203a</em>";
+    u.onclick=()=>U.upgrade();document.querySelector(".tiles").before(u)}}
+document.addEventListener("click",e=>{const t=e.target.closest(".tile.locked,.nxw.locked");if(!t)return;e.preventDefault();e.stopPropagation();window.UMK&&window.UMK.upgrade()},true);
 
 /* ---------- opening screen ---------- */
 function drawTrack(cv){
@@ -375,7 +397,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794412404";
+const BUILD="1794413031";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;

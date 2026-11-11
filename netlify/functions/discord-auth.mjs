@@ -1,6 +1,7 @@
 /* Members-only sign-in with Discord. Runs on Netlify only.
-   Checks that the person is in the Use More Kerb Discord server and has one of the
-   Team Use More Kerb member roles (given automatically by YouTube's Discord link).
+   Anyone in the Use More Kerb Discord server can sign in. The pass records whether they are a member:
+   one of the Team Use More Kerb member roles (given automatically by YouTube's Discord link),
+   or on DISCORD_EXTRA_USER_IDS.
 
    Environment variables (Netlify: Site configuration > Environment variables):
      DISCORD_CLIENT_ID       from the Discord Developer Portal (your application > OAuth2)
@@ -83,7 +84,8 @@ export default async (req) => {
   /* the app checks a pass is still valid */
   if (q.has("verify")) {
     const p = unsign(q.get("verify"));
-    return json({ ok: !!(p && p.exp > Date.now()) }, 200, origin);
+    const ok = !!(p && p.exp > Date.now());
+    return json({ ok, m: ok ? p.m !== false : false }, 200, origin);
   }
 
   /* the app waits for the result of a sign-in that finished in another window */
@@ -116,7 +118,7 @@ export default async (req) => {
   const finish = async (result) => {
     await store.setJSON("s/" + st.sid, { ...result, at: Date.now() });
     const back = st.ret + "#" + (result.token ? "umkpass=" + result.token : "umkdenied=" + result.denied);
-    if (result.token) return page("You're in!", "Welcome to the Use More Kerb app. Head back to it and it'll be unlocked.", back, "Open the app");
+    if (result.token) return page("You're in!", result.m ? "Welcome, Team Use More Kerb member. Head back to the app and everything's unlocked." : "Head back to the app. Where's Brad racing, Standings and the Store are open to you; channel members unlock everything else.", back, "Open the app");
     const [t, m] = DENIED[result.denied] || DENIED.error;
     return page(t, m, back, "Back to the app");
   };
@@ -138,13 +140,15 @@ export default async (req) => {
     let userId = "", name = "", roles = [];
     if (mr.ok) { const m = await mr.json(); userId = m.user?.id || ""; name = m.nick || m.user?.global_name || m.user?.username || ""; roles = m.roles || []; }
     else { const u = await fetch("https://discord.com/api/users/@me", { headers: auth }).then(r => r.ok ? r.json() : {}); userId = u.id || ""; name = u.global_name || u.username || ""; }
+    if (!userId) return finish({ denied: "error" });
+    /* anyone in the Use More Kerb Discord server gets in; members (or people on the extra list) unlock everything */
     const extra = list("DISCORD_EXTRA_USER_IDS").includes(userId);
     if (!extra && !mr.ok) return finish({ denied: mr.status === 404 ? "notinserver" : "error" });
     const allowed = list("DISCORD_ROLE_IDS");
-    if (!extra && !roles.some(r => allowed.includes(r))) return finish({ denied: "norole" });
+    const member = extra || roles.some(r => allowed.includes(r));
     const days = Number(env("UMK_PASS_DAYS")) || 90;
     const exp = Date.now() + days * 864e5;
-    return finish({ token: sign({ u: userId, exp }), exp, name });
+    return finish({ token: sign({ u: userId, exp, m: member }), exp, name, m: member });
   } catch (e) {
     return finish({ denied: "error" });
   }

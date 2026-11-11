@@ -29,9 +29,13 @@ Tap the flag next to the logo to switch between UK, Europe and USA. The Europe v
 - `store/` links to the Xenduri collection, Helmet28 and YouTube membership.
 - `hub.css` holds the shared look for these pages.
 
-## Members-only lock (Discord)
+## Sign-in and members' features (Discord)
 
-The whole app can be locked to Team Use More Kerb members. `gate.js` loads first on every page and shows a lock screen (sign in with Discord, the BUT WHY trailer and a Join on YouTube button) until the visitor has a valid members' pass. The pass is issued by `netlify/functions/discord-auth.mjs`, which checks the person is in the Use More Kerb Discord server with one of the member roles that YouTube's Discord link hands out. Passes last 90 days, then they sign in again (one tap), so lapsed members drop off within three months. Change it with `UMK_PASS_DAYS`.
+Everyone signs in with Discord and must be in the Use More Kerb Discord server. `gate.js` loads first on every page.
+- **Free to anyone signed in:** the home screen, Where's Brad racing? (`brad/`), Standings and the Store (pages load `gate.js` with `data-need="any"`).
+- **Members only** (the YouTube Member role, or anyone on `DISCORD_EXTRA_USER_IDS`): Season Planner, Setup Coach, Team Manager and the Members' Championship. Non-members see these greyed out with a padlock, and tapping one shows the "Unlock the full app" sheet (trailer, Join on YouTube, and "I'm a member, check again").
+
+The pass is issued by `netlify/functions/discord-auth.mjs` and lasts 90 days. Open any page with `?gatetest=1` to test the lock in one browser while it's switched off for everyone.
 
 To switch it on:
 
