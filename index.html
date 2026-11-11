@@ -402,13 +402,13 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
   </nav>
   <h2 class="tsec yts">YouTube</h2>
-  <div class="ytc ytpost" id="ytPost" hidden><a class="yph" id="ypLink" target="_blank" rel="noopener"><span class="ytl">Latest post</span><small id="ypWhen"></small></a><p id="ypText"></p><img id="ypImg" alt="" loading="lazy" hidden><a class="ytgo" id="ypGo" target="_blank" rel="noopener">View &amp; comment on YouTube ›</a></div>
   <div class="ytc" id="ytCard" hidden>
     <div class="ytv" id="ytV"><img id="ytThumb" alt="" loading="lazy"><span class="ytp" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#FF0074"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span><span class="ytl">Latest video</span></div>
     <div class="ytb"><b id="ytTitle"></b><small id="ytDate"></small>
       <div class="ytbtns"><a class="ytgo" id="ytCm" target="_blank" rel="noopener">Like &amp; comment on YouTube ›</a><a class="ytsub" href="https://www.youtube.com/@BradPhilpot?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a></div></div>
     <div class="ytmore" id="ytMore"></div>
   </div>
+  <div class="ytc ytpost" id="ytPost" hidden><a class="yph" id="ypLink" target="_blank" rel="noopener"><span class="ytl">Latest post</span><small id="ypWhen"></small></a><p id="ypText"></p><img id="ypImg" alt="" loading="lazy" hidden><a class="ytgo" id="ypGo" target="_blank" rel="noopener">View &amp; comment on YouTube ›</a></div>
   <button class="inst" id="instBar" hidden><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>Add the Use More Kerb app to your Home Screen</button>
   <p class="foot">Made by <a href="https://www.youtube.com/@BradPhilpot" target="_blank" rel="noopener">Brad Philpot · Use More Kerb</a> on YouTube</p>
 </div></div>
@@ -588,7 +588,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794438999";
+const BUILD="1794439261";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
