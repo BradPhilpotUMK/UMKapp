@@ -76,6 +76,10 @@ body{background:#000 url(../img/camo.png) center/cover no-repeat}
 .stbg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:radial-gradient(70% 45% at 0% 20%,rgba(255,0,116,.22),transparent 70%),radial-gradient(70% 45% at 100% 55%,rgba(0,190,0,.18),transparent 70%),radial-gradient(60% 40% at 10% 95%,rgba(255,0,116,.16),transparent 70%)}
 .stbg img{position:absolute;width:72vw;max-width:460px;opacity:.38;filter:blur(.5px)}
 .stbg::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(118deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px)}
+
+/* heading sits straight on the backdrop (no dark box) */
+header.top{position:relative;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+header.top h1{text-shadow:0 4px 18px rgba(0,0,0,.8)}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -86,7 +90,7 @@ body{background:#000 url(../img/camo.png) center/cover no-repeat}
 
   <p class="hint">Official Use More Kerb merch and kit from the channel's partners. Every order helps keep the videos (and this app) going.</p>
   <a class="big cf" href="https://xenduri.com/collections/bradphilpotmotorsport" target="_blank" rel="noopener" data-shop="xenduri"><img class="pic" src="../img/store-merch.png" alt="Use More Kerb tee, jacket and beanie" width="600" height="330" loading="lazy"><img class="lg" src="../logos/sponsors/xenduri.png" alt="Xenduri" style="height:18px;margin:6px 0 20px"><b>Use More Kerb merch</b><p>Replica driver tees, caps, hoodies and visor stickers, made by Xenduri Sport.</p><span class="go">Shop the collection ›</span></a>
-  <a class="big asp" href="https://www.helmet28.com/" target="_blank" rel="noopener" data-shop="helmet28"><img class="pic" src="../img/store-helmet28.png" alt="Zamp RZ-70F helmet and USE.MORE.KERB x 32Five gloves" width="600" height="330" loading="lazy"><img class="lg" src="../logos/sponsors/helmet28.png" alt="Helmet28"><b>Helmets and race kit</b><p>Zamp helmets, the USE.MORE.KERB x 32Five gloves, bundles and race kit from Helmet28.</p><span class="go">Shop Helmet28 ›</span></a>
+  <a class="big asp" href="https://www.helmet28.com/" target="_blank" rel="noopener" data-shop="helmet28"><img class="pic" src="../img/store-helmet28.webp" alt="Zamp helmet, USE.MORE.KERB x 32Five gloves and 32Five Hyperlace boots" width="900" height="465" loading="lazy"><img class="lg" src="../logos/sponsors/helmet28.png" alt="Helmet28"><b>Helmets and race kit</b><p>Zamp helmets, the USE.MORE.KERB x 32Five gloves, the new 32Five Hyperlace boots and race kit from Helmet28.</p><span class="go">Shop Helmet28 ›</span></a>
   <button class="code" id="code" aria-label="Copy discount code USEMOREKERB"><span>10% off with code</span><b>USEMOREKERB</b><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg></button>
   <a class="big kkc" href="https://kkckartshop.co.uk/BradPhilpot" target="_blank" rel="noopener sponsored" data-shop="kkc"><img class="pic" src="../img/store-kkc.png" alt="Brad's KKC-liveried kart and the Use More Kerb KG M7 steering wheel" width="600" height="330" loading="lazy"><img class="lg" src="../logos/sponsors/kkc.png" alt="KKC Karting Components" style="height:34px"><b>Kart parts and spares</b><p>Parts, spares and accessories for your kart from KKC Kart Shop.</p><span class="go">Shop KKC ›</span></a>
   <button class="code" id="codeKkc" aria-label="Copy KKC discount code USEMOREKERB"><span>KKC discount code<small>One use per customer</small></span><b>USEMOREKERB</b><svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg></button>
