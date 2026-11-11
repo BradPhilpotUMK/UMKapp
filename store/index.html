@@ -69,10 +69,18 @@ header.top .brand h1{font-size:clamp(30px,9vw,40px);letter-spacing:.02em;overflo
 .big.crw .crwpic{position:relative;display:block;margin:-22px -18px 14px}
 .big.crw .crwpic .suits{display:block;width:100%;height:auto}
 .big.crw .crwlogo{display:block;width:54px;height:auto;margin:0 0 10px}
+
+/* store page backdrop: camo with brand colour glows and paint splats */
+body{background:#000 url(../img/camo.png) center/cover no-repeat}
+#scroller{position:relative;z-index:1}
+.stbg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:radial-gradient(70% 45% at 0% 20%,rgba(255,0,116,.22),transparent 70%),radial-gradient(70% 45% at 100% 55%,rgba(0,190,0,.18),transparent 70%),radial-gradient(60% 40% at 10% 95%,rgba(255,0,116,.16),transparent 70%)}
+.stbg img{position:absolute;width:72vw;max-width:460px;opacity:.38;filter:blur(.5px)}
+.stbg::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(118deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px)}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
+<div class="stbg" aria-hidden="true"><img src="../img/splat-pink.png" alt="" style="left:-28vw;top:6%;transform:rotate(-18deg)"><img src="../img/splat-green.png" alt="" style="right:-30vw;top:42%;transform:rotate(22deg)"><img src="../img/splat-pink.png" alt="" style="left:-24vw;bottom:-8%;transform:rotate(30deg)"></div>
 <div id="scroller"><div class="wrap">
   <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Store</h1></div></header>
 
