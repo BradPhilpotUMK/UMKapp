@@ -229,10 +229,6 @@ html.intro #scroller{visibility:hidden}
       </svg>
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
-    <a class="tile wide cf" href="store/" style="--c:#F1F0EC">
-      <img class="art merch" src="img/store-merch.png" alt="" width="600" height="330">
-      <b>Store</b><small>Merch, helmets and race kit</small></a>
-
     <a class="tile wide" data-m href="members/" style="--c:#8B6CF0"><span class="tag">New</span>
       <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
         <g transform="translate(150 12)"><rect x="0" y="0" width="4" height="120" fill="#bbb"/>
@@ -243,6 +239,10 @@ html.intro #scroller{visibility:hidden}
         <use href="#hm" transform="translate(148 86) scale(.85)" fill="#3BD16F"/>
       </svg>
       <b>Members' Championship</b><small>The Use More Kerb race series for Team UMK members</small></a>
+
+    <a class="tile wide cf" href="store/" style="--c:#F1F0EC">
+      <img class="art merch" src="img/store-merch.png" alt="" width="600" height="330">
+      <b>Store</b><small>Merch, helmets and race kit</small></a>
 
     <a class="tile wide brad" href="brad/" style="--c:#F5C542">
       <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
@@ -417,7 +417,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794417251";
+const BUILD="1794417497";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
