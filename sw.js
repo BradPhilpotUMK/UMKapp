@@ -1,7 +1,7 @@
 /* Season Planner offline support.
    Pages and race data: try the network first (so updates show straight away), fall back to the saved copy when offline.
    Logos, icons and fonts: use the saved copy, refresh it in the background. */
-const CACHE = "umk-planner-v21";
+const CACHE = "umk-planner-v22";
 const CORE = [
   "./", "index.html", "manifest.webmanifest", "version.json",
   "data/races.json", "data/brad.json",
