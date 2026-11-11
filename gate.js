@@ -60,8 +60,8 @@
     ".umkG .wm{width:min(230px,62vw);height:auto;display:block;margin:0 auto 18px}" +
     ".umkG .wm.sm{width:min(150px,40vw);margin-top:6px}" +
     ".umkG .st{width:112px;height:112px;display:block;margin:0 auto 10px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.6))}" +
-    ".umkG .pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#FF1CE8;color:#14051A;border-radius:999px;padding:4px 10px;margin-bottom:10px}" +
-    ".umkG .pill.lock{background:#F5C542}" +
+    ".umkG .pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#FF0074;color:#fff;border-radius:999px;padding:4px 10px;margin-bottom:10px}" +
+    ".umkG .pill.lock{background:#FF0074;color:#fff}" +
     ".umkG h1{font:900 26px/1.15 F1,'Arial Black',sans-serif;margin:0 0 10px;letter-spacing:-.01em}" +
     ".umkG p{color:#b9b8b3;margin:0 0 16px;font-size:15px}" +
     ".umkG .btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:16px;padding:15px 18px;font-weight:800;font-size:16.5px;line-height:1;font-family:inherit;text-decoration:none;cursor:pointer}" +
@@ -71,7 +71,8 @@
     ".umkG .msg{min-height:22px;margin:12px 0 0;font-size:14px;color:#F5C542}.umkG .msg.bad{color:#ff7a8a}" +
     ".umkG h2{font:800 18px/1.2 F1,'Arial Black',sans-serif;margin:28px 0 10px;text-align:left}" +
     ".umkG .vid{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000;border:1px solid #2a2b30}" +
-    ".umkG .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}" +
+    ".umkG .vid iframe,.umkG .vid img{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}" +
+    ".umkG .vid{cursor:pointer}.umkG .vid .vplay{position:absolute;left:50%;top:50%;width:68px;height:48px;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}" +
     ".umkG ul.get{list-style:none;margin:0 0 18px;padding:0;text-align:left;display:grid;gap:6px}" +
     ".umkG ul.get li{padding:9px 12px 9px 36px;position:relative;background:#17181c;border:1px solid #2a2b30;border-radius:12px;font-size:14.5px;color:#d8d7d2}" +
     ".umkG ul.get li:before{content:'';position:absolute;left:13px;top:50%;width:9px;height:9px;margin-top:-5px;border-radius:50%;background:#22F522}" +
@@ -154,8 +155,8 @@
       '<ul class="get"><li><b>Season Planner</b>: every UK, European and US race in one calendar</li>' +
       '<li><b>Setup Coach</b>: tell it what the kart’s doing, get the fix</li>' +
       '<li><b>Team Manager</b> for endurance teams, staff and payments</li>' +
-      '<li><b>Members’ Championship</b>: race against the community</li></ul>' +
-      '<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/' + CFG.trailer + '?rel=0&amp;playsinline=1" title="BUT WHY: Team Use More Kerb members trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>' +
+      '<li><b>USE MORE KERB Championship</b>: race against the community</li></ul>' +
+      '<div class="vid" data-v="' + CFG.trailer + '" role="button" aria-label="Play the Team Use More Kerb members trailer"><img src="https://i.ytimg.com/vi/' + CFG.trailer + '/hqdefault.jpg" alt=""><span class="vplay"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#FF0074"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span></div>' +
       '<a class="btn yt" data-join href="' + CFG.join + '" target="_blank" rel="noopener">Join on YouTube from £2.99 a month</a>' +
       '<h2>Already a member?</h2><ol>' +
       '<li><b>Link YouTube to Discord:</b> in Discord, go to Settings › Connections › YouTube and connect the account you joined with.<a class="btn ghost conn" data-conn href="discord://-/settings/connections">Open Discord › Connections</a></li>' +
@@ -168,6 +169,8 @@
       D.documentElement.style.overflow = "hidden";
       track("gate-upgrade", "Gate: members-only prompt");
     }
+    var vd = g.querySelector(".vid[data-v]");
+    if (vd) vd.onclick = function () { if (vd.querySelector("iframe")) return; vd.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + CFG.trailer + '?autoplay=1&rel=0&playsinline=1" title="Team Use More Kerb members trailer" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>'; track("gate-trailer", "Gate: played members trailer"); };
     mount(g, kind !== "modal");
   }
 

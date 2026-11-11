@@ -459,7 +459,7 @@ function applyLocks(){const U=window.UMK;if(!U||!U.on||!U.signedIn||U.member)ret
   document.querySelectorAll(".tile[data-m]").forEach(t=>{t.classList.add("locked");t.setAttribute("aria-label",t.querySelector("b").textContent+" (members only)")});
   const mine=document.querySelector("#nextRow .nxw");if(mine){mine.classList.add("locked");const b=mine.querySelector("#avBtn");if(b)b.remove()}
   if(!document.querySelector(".upbar")){const u=document.createElement("button");u.className="upbar";u.type="button";
-    u.innerHTML="<span><b>Unlock the full app</b><small>Season Planner, Setup Coach, Team Manager and the Members\u2019 Championship are for channel members</small></span><em>\u203a</em>";
+    u.innerHTML="<span><b>Unlock the full app</b><small>Season Planner, Setup Coach, Team Manager and the USE MORE KERB Championship are for channel members</small></span><em>\u203a</em>";
     u.onclick=()=>U.upgrade();(document.querySelector(".tsec")||document.querySelector(".tiles")).before(u)}}
 document.addEventListener("click",e=>{const t=e.target.closest(".tile.locked,.nxw.locked");if(!t)return;e.preventDefault();e.stopPropagation();window.UMK&&window.UMK.upgrade()},true);
 
@@ -589,7 +589,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794440403";
+const BUILD="1794441103";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
