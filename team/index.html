@@ -733,7 +733,7 @@ $("#addBtn").onclick=()=>{if(tab==="teams")teamSheet();else if(tab==="drivers")d
 
 /* ---------- install ---------- */
 const IS_APP=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
-const IS_IOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+const IS_IOS=!navigator.userAgentData&&!/android/i.test(navigator.userAgent)&&(/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1));
 let instEv=null;
 addEventListener("beforeinstallprompt",e=>{e.preventDefault();instEv=e});
 async function doInstall(){if(!instEv)return;const e=instEv;instEv=null;e.prompt();try{const r=await e.userChoice;gc("install-"+r.outcome)}catch(x){}closeSheet()}

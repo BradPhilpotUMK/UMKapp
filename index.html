@@ -689,7 +689,7 @@ function hideSplash(){document.documentElement.classList.add("fx");const sp=$("#
   card.hidden=false}catch(e){}})();
 /* ---------- install ---------- */
 const IS_APP=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
-const IS_IOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+const IS_IOS=!navigator.userAgentData&&!/android/i.test(navigator.userAgent)&&(/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1));
 let instEv=null;addEventListener("beforeinstallprompt",e=>{e.preventDefault();instEv=e});
 function instShow(){
   if(window.UMKInstall){UMKInstall.show();return}
@@ -702,7 +702,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794493668";
+const BUILD="1794493728";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;

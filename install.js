@@ -10,9 +10,13 @@
   var D = document, H = D.documentElement, ua = navigator.userAgent;
   var IS_APP = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
   if (IS_APP) return;
-  var IOS = /iphone|ipad|ipod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-  var IPAD = /ipad/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-  var ANDROID = /android/i.test(ua);
+  /* Apple devices never send userAgentData (only Chrome-based browsers do), so its presence rules out iPhone/iPad.
+     Android tablets and "desktop site" mode can pretend to be a Mac with a touchscreen, which used to look like an iPad. */
+  var UAD = navigator.userAgentData, UADP = (UAD && UAD.platform) || "";
+  var ANDROID = /android/i.test(ua) || /android/i.test(UADP);
+  var MACTOUCH = !UAD && !ANDROID && navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+  var IOS = !ANDROID && !UAD && (/iphone|ipad|ipod/i.test(ua) || MACTOUCH);
+  var IPAD = IOS && (/ipad/i.test(ua) || MACTOUCH);
   var INAPP = /Instagram|FBAN|FBAV|FB_IAB|musical_ly|BytedanceWebview|TikTok|Discord|Snapchat|Twitter|LinkedInApp|Line\/|GSA\//i.test(ua) || (ANDROID && /; wv\)/.test(ua));
   var CRIOS = /CriOS|FxiOS|EdgiOS/i.test(ua);
   var SAFARI_V = +((ua.match(/Version\/(\d+)/) || [])[1] || 0);
@@ -76,9 +80,9 @@
     var html = "", top = false, pt = null;
     if (INAPP && (IOS || ANDROID)) {
       var url = location.href.split("#")[0];
-      var go = IOS ? "x-safari-" + url : "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=" + encodeURIComponent(url) + ";end";
+      var go = IOS ? "x-safari-" + url : "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;S.browser_fallback_url=" + encodeURIComponent(url) + ";end";
       html = head("You're in another app's browser, which can't add apps to your home screen.") +
-        '<a class="go" id="umkIgo" href="' + go + '">Open in ' + (IOS ? "Safari" : "Chrome") + '</a>' +
+        '<a class="go" id="umkIgo" href="' + go + '">' + (IOS ? "Open in Safari" : "Open in your browser") + '</a>' +
         '<p style="color:#a4a5ad;font-size:13px;margin:10px 0 0;text-align:center">If nothing happens, tap ' + '<span class="ic d">' + DOTS + '</span> and choose <b>Open in ' + (IOS ? "Safari" : "browser") + '</b>.</p>';
     } else if (ev) {
       html = head("One tap and it's on your home screen.") + '<button class="go" id="umkIgo">Install the app</button>';
@@ -125,7 +129,7 @@
       "#umkIbar svg{flex:none;width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}#umkIbar:active{transform:scale(.98)}";
     D.head.appendChild(st);
     var b = D.createElement("button"); b.id = "umkIbar"; b.type = "button";
-    b.innerHTML = PLUS + "<span>" + (INAPP ? "Open in " + (IOS ? "Safari" : "Chrome") + " to get the app" : "Add the app to your Home Screen") + "</span>";
+    b.innerHTML = PLUS + "<span>" + (INAPP ? (IOS ? "Open in Safari" : "Open in your browser") + " to get the app" : "Add the app to your Home Screen") + "</span>";
     b.onclick = function () { gc("install-bar", "Install bar tapped"); show(true); };
     hd.parentNode.insertBefore(b, hd.nextSibling);
   }
