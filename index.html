@@ -239,6 +239,8 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tiles .tile:not(.wide)::after{background:linear-gradient(transparent,rgba(16,17,20,.75) 60%)!important;border-radius:0 0 26px 26px}
 .tiles .tile.soon{border-style:dashed!important}
 .tiles .tile{padding-top:16px!important;padding-bottom:16px!important;padding-left:16px!important}.tiles .tile:not(.wide){padding-right:16px!important}
+.tiles .tile.shop{padding:0!important}.tiles .tile.shop .sbar{background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0))!important;padding:16px 16px 6px!important}
+.tiles .tile.shop .shelf img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 14%);mask-image:linear-gradient(180deg,transparent,#000 14%)}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -680,7 +682,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794492828";
+const BUILD="1794492888";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
