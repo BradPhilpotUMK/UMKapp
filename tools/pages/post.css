@@ -1,0 +1,9 @@
+.pick{display:flex;align-items:center;justify-content:center;min-height:64px;margin:0;border:2px dashed rgba(255,0,116,.6);border-radius:14px;background:rgba(255,0,116,.08);font-weight:800;font-size:16px;color:#fff;cursor:pointer;text-align:center;padding:10px}
+.seg{background:rgba(13,13,16,.95)}
+.seg button.on{background:#FF0074;color:#fff}
+.stage{position:relative;margin:4px auto 6px;max-width:330px;touch-action:none}
+.stage canvas{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.6);background:#111;cursor:grab}
+.drag{position:absolute;left:0;right:0;bottom:10px;margin:0;text-align:center;font-size:12px;color:#fff;text-shadow:0 1px 4px #000;pointer-events:none;opacity:.85}
+input[type=range]{padding:0;accent-color:#FF0074;background:none;border:0}
+.tog{display:flex;align-items:center;gap:8px;font-weight:600}
+.tog input{width:auto;accent-color:#FF0074}

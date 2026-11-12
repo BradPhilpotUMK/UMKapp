@@ -1,0 +1,20 @@
+  <p class="lead">Add a photo from your race and your result. Get an image ready for your Instagram Story, TikTok or a post.</p>
+
+  <section class="card">
+    <label class="pick" id="pick"><input type="file" id="photo" accept="image/*" hidden><span id="pickTxt">📷 Choose a race photo</span></label>
+    <div class="row2" style="margin-top:6px"><div><label for="pos">Finishing position</label><select id="pos"></select></div><div><label for="start">Started from (optional)</label><select id="start"><option value="">–</option></select></div></div>
+    <label for="event">Event or round</label><input id="event" maxlength="40" placeholder="e.g. Club Championship Round 4">
+    <div class="row2"><div><label for="track">Track</label><input id="track" maxlength="30" placeholder="e.g. Whilton Mill"></div><div><label for="cls">Class</label><input id="cls" maxlength="24" placeholder="e.g. Rotax Junior"></div></div>
+    <label for="extra">Highlight (optional)</label><input id="extra" maxlength="40" placeholder="e.g. Fastest lap 42.318s">
+    <div class="row2"><div><label for="name">Your name</label><input id="name" maxlength="28" autocomplete="name"></div><div><label for="handle">@handle (optional)</label><input id="handle" maxlength="28" placeholder="@yourname"></div></div>
+  </section>
+
+  <section class="card">
+    <div class="seg" id="fmt"><button data-f="story" class="on">Story / TikTok 9:16</button><button data-f="post">Post 4:5</button></div>
+    <div class="seg" id="style"><button data-s="splat" class="on">Paint splat</button><button data-s="bold">Bold</button><button data-s="clean">Clean</button></div>
+    <div class="stage" id="stage"><canvas id="cv"></canvas><p class="drag" id="dragHint">Drag the photo to move it</p></div>
+    <label for="zoom">Zoom</label><input type="range" id="zoom" min="1" max="3" step="0.01" value="1">
+    <label class="tog" id="tagRow" hidden><input type="checkbox" id="hideTag"> Hide the "Made with the USE MORE KERB app" tag <span class="tag">Members</span></label>
+    <div class="btns"><button class="btn primary" id="share">Share</button><button class="btn" id="save">Save image</button></div>
+    <p class="note">On iPhone, Share lets you post straight to Instagram or TikTok, or Save Image to your photos.</p>
+  </section>

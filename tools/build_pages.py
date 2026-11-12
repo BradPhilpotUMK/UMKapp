@@ -10,7 +10,9 @@ PAGES = {
     "sponsor": ("Sponsorship Builder", "Build a sponsorship proposal that gets read: who to ask, what to offer, and the mistakes to avoid."),
     "budget": ("Budget Calculator", "Work out what a karting season really costs, per race and per year."),
     "teams": ("Team Finder", "Find a team for an endurance or team race, or find drivers for your team."),
+    "post": ("Race Post Maker", "Turn your race photo and result into a shareable post for Instagram Stories and TikTok."),
 }
+OPEN_TO_ALL = {"post"}  # signed in via Discord is enough; everything else is members only
 
 store = open(os.path.join(ROOT, "store", "index.html"), encoding="utf-8").read()
 head = store[:store.index('<link rel="stylesheet" href="../hub.css">') + len('<link rel="stylesheet" href="../hub.css">')]
@@ -50,7 +52,8 @@ for name, (title, desc) in PAGES.items():
     body = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()
     css = open(os.path.join(SRC, name + ".css"), encoding="utf-8").read()
     js = open(os.path.join(SRC, name + ".js"), encoding="utf-8").read()
-    h = head.replace("<title>Use More Kerb Store</title>", f"<title>Use More Kerb {title}</title>")
+    h = head if name not in OPEN_TO_ALL else head.replace('<script src="../gate.js"></script>', '<script src="../gate.js" data-need="any"></script>')
+    h = h.replace("<title>Use More Kerb Store</title>", f"<title>Use More Kerb {title}</title>")
     h = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{desc}">', h)
     page = (h + "\n<style>" + COMMON_CSS + css + "</style>\n"
             '<script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n'

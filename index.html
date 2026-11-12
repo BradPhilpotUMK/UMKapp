@@ -225,6 +225,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.soon{cursor:default;filter:grayscale(.85);opacity:.6;background:linear-gradient(120deg,rgba(255,255,255,.05),rgba(255,255,255,0) 55%),#16171b!important;border-style:dashed}
 .tile.soon .tag{background:#3a3b42;color:#e6e6ea}
 .tile.wide .art.valor{width:44%;max-width:230px;height:auto;right:14px;filter:none}
+.tile.wide.pm .art{width:50%;max-width:250px}
 .tile.wide.tf .art{width:50%;max-width:250px}
 .tile .tag{z-index:2}
 </style>
@@ -301,6 +302,20 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       </svg>
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
+
+    <a class="tile wide pm" href="post/" style="--c:#00BE00"><span class="tag">New · Free</span>
+      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
+        <g transform="rotate(8 170 75)"><rect x="128" y="6" width="84" height="140" rx="14" fill="#0d0d10" stroke="#f1f0ec" stroke-width="4"/>
+          <rect x="135" y="14" width="70" height="124" rx="9" fill="#2a2b31"/>
+          <path d="M135 96c18-14 30-6 44-18s20-8 26-6v57a9 9 0 0 1-9 9h-52a9 9 0 0 1-9-9z" fill="#3a3b42"/>
+          <path d="M140 70c14-22 40-26 58-12-6 10-24 22-42 20-8-1-14-3-16-8z" fill="#FF0074" opacity=".9"/>
+          <text x="144" y="112" font-family="F1,Arial Black,sans-serif" font-style="italic" font-size="30" font-weight="900" fill="#fff">P1</text>
+          <rect x="144" y="120" width="44" height="7" rx="3.5" fill="#00BE00"/></g>
+        <g transform="rotate(-10 92 80)"><rect x="62" y="30" width="64" height="104" rx="11" fill="#0d0d10" stroke="#f1f0ec" stroke-width="3" opacity=".9"/>
+          <rect x="68" y="37" width="52" height="90" rx="7" fill="#22232a"/><text x="74" y="104" font-family="F1,Arial Black,sans-serif" font-style="italic" font-size="22" font-weight="900" fill="#FF0074">P3</text></g>
+        <path d="M216 26l6 -12M226 36l12 -4M220 48l12 4" stroke="#00BE00" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <b>Race Post Maker</b><small>Your photo and result, ready for Stories and TikTok</small></a>
 
     <a class="tile" data-m href="sponsor/" style="--c:#FF0074"><span class="tag">New</span>
       <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
@@ -645,7 +660,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794486080";
+const BUILD="1794487425";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
