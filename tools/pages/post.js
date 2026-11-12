@@ -1,5 +1,5 @@
 const cv=$("#cv"),g=cv.getContext("2d"),KEY="umk-post-v1";
-const S=Object.assign({fmt:"story",style:"splat",pos:"1",start:"",event:"",track:"",cls:"",extra:"",name:"",handle:"",hideTag:false},store.get(KEY,{}));
+const S=Object.assign({fmt:"story",style:"splat",pos:"1",start:"",event:"",track:"",cls:"",extra:"",name:"",handle:"",hideTag:false,pcol:"#ffffff",stroke:7,scol:"#000000"},store.get(KEY,{}));
 let photo=null,zoom=1,ox=0,oy=0;
 const IMG=src=>new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=src});
 const A={};
@@ -14,6 +14,12 @@ stSel.innerHTML+=[...Array(40)].map((_,i)=>`<option value="${i+1}">P${i+1}</opti
 ["pos","start","event","track","cls","extra","name","handle"].forEach(k=>{const el=$("#"+k);el.value=S[k];el.addEventListener("input",()=>{S[k]=el.value.trim();save();draw()})});
 $("#hideTag").checked=!!S.hideTag;$("#hideTag").onchange=e=>{S.hideTag=e.target.checked;save();draw()};
 if(window.UMK&&window.UMK.member)$("#tagRow").hidden=false;
+function swatch(id,key,pick){const set=()=>{let hit=false;$$("#"+id+" button").forEach(b=>{const on=b.dataset.c.toLowerCase()===S[key].toLowerCase();b.classList.toggle("on",on);hit=hit||on});if(pick){$("#"+id+" .cust").classList.toggle("on",!hit);$("#"+pick).value=S[key]}};
+  $$("#"+id+" button").forEach(b=>b.onclick=()=>{S[key]=b.dataset.c;set();save();draw()});
+  if(pick)$("#"+pick).addEventListener("input",e=>{S[key]=e.target.value;set();save();draw()});set()}
+swatch("pcol","pcol","pcolPick");swatch("scol","scol");
+const strokeTxt=()=>$("#strokeVal").textContent=S.stroke==0?"(none)":"";
+$("#stroke").value=S.stroke;strokeTxt();$("#stroke").oninput=e=>{S.stroke=+e.target.value;strokeTxt();save();draw()};
 function save(){const c={...S};store.set(KEY,c)}
 $$("#fmt button").forEach(b=>{b.classList.toggle("on",b.dataset.f===S.fmt);b.onclick=()=>{S.fmt=b.dataset.f;$$("#fmt button").forEach(x=>x.classList.toggle("on",x===b));save();draw()}});
 $$("#style button").forEach(b=>{b.classList.toggle("on",b.dataset.s===S.style);b.onclick=()=>{S.style=b.dataset.s;$$("#style button").forEach(x=>x.classList.toggle("on",x===b));save();draw()}});
@@ -57,7 +63,7 @@ function draw(){
   if(st==="bold"){g.save();g.translate(0,baseY-330);g.rotate(-6*Math.PI/180);g.fillStyle=big;g.fillRect(-40,0,W+80,300);g.restore()}
   const fs=st==="clean"?260:340;g.font=`italic 900 ${fs}px F1, 'Arial Black', sans-serif`;
   g.save();g.translate(pad,baseY-20);if(st!=="clean")g.rotate(-6*Math.PI/180);
-  g.lineWidth=14;g.strokeStyle="rgba(0,0,0,.55)";g.strokeText(P,0,0);g.fillStyle="#fff";g.fillText(P,0,0);g.restore();
+  if(S.stroke>0){g.lineJoin="round";g.lineWidth=S.stroke*2;g.strokeStyle=S.scol;g.globalAlpha=S.scol==="#000000"?.7:1;g.strokeText(P,0,0);g.globalAlpha=1}g.fillStyle=S.pcol;g.fillText(P,0,0);g.restore();
   let y=baseY+70;g.fillStyle="#fff";
   if(S.event){fit(S.event.toUpperCase(),W-pad*2,64,"italic 900 SZpx F1, 'Arial Black', sans-serif");g.fillText(S.event.toUpperCase(),pad,y);y+=66}
   if(sub){g.font="600 40px Barlow, sans-serif";g.fillStyle="#e6e6ea";g.fillText(sub,pad,y);y+=58}

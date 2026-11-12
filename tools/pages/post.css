@@ -7,3 +7,10 @@
 input[type=range]{padding:0;accent-color:#FF0074;background:none;border:0}
 .tog{display:flex;align-items:center;gap:8px;font-weight:600}
 .tog input{width:auto;accent-color:#FF0074}
+.sw{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:2px 0 4px}
+.sw button,.sw .cust{width:34px;height:34px;border-radius:50%;padding:0;margin:0;border:2px solid #3a3b42;background:var(--c);cursor:pointer;position:relative;display:inline-flex;align-items:center;justify-content:center}
+.sw button.on,.sw .cust.on{border-color:#fff;box-shadow:0 0 0 2px #FF0074}
+.sw .cust{background:conic-gradient(#ff0074,#ffd400,#00be00,#2ea8ff,#ff0074);font-weight:900;color:#fff;text-shadow:0 1px 3px #000;font-size:18px}
+.sw .cust input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer;padding:0;border:0}
+.sw.sm button{width:26px;height:26px}
+.sw.sm .note{margin-right:4px}

@@ -13,6 +13,10 @@
     <div class="seg" id="fmt"><button data-f="story" class="on">Story / TikTok 9:16</button><button data-f="post">Post 4:5</button></div>
     <div class="seg" id="style"><button data-s="splat" class="on">Paint splat</button><button data-s="bold">Bold</button><button data-s="clean">Clean</button></div>
     <div class="stage" id="stage"><canvas id="cv"></canvas><p class="drag" id="dragHint">Drag the photo, text or logo to move them</p></div>
+    <label>Position colour</label>
+    <div class="sw" id="pcol"><button data-c="#ffffff" style="--c:#ffffff" aria-label="White"></button><button data-c="#FF0074" style="--c:#FF0074" aria-label="Pink"></button><button data-c="#00BE00" style="--c:#00BE00" aria-label="Green"></button><button data-c="#FFD400" style="--c:#FFD400" aria-label="Yellow"></button><button data-c="#2EA8FF" style="--c:#2EA8FF" aria-label="Blue"></button><button data-c="#FF6A00" style="--c:#FF6A00" aria-label="Orange"></button><button data-c="#111111" style="--c:#111111" aria-label="Black"></button><label class="cust" aria-label="Pick any colour"><input type="color" id="pcolPick"><span>+</span></label></div>
+    <label for="stroke">Outline <span class="note" id="strokeVal"></span></label><input type="range" id="stroke" min="0" max="30" step="1">
+    <div class="sw sm" id="scol"><span class="note">Outline colour</span><button data-c="#000000" style="--c:#000000" aria-label="Black"></button><button data-c="#ffffff" style="--c:#ffffff" aria-label="White"></button><button data-c="#FF0074" style="--c:#FF0074" aria-label="Pink"></button><button data-c="#00BE00" style="--c:#00BE00" aria-label="Green"></button></div>
     <label for="zoom">Zoom</label><input type="range" id="zoom" min="1" max="3" step="0.01" value="1">
     <label class="tog" id="tagRow" hidden><input type="checkbox" id="hideTag"> Hide the "Made with the USE MORE KERB app" tag <span class="tag">Members</span></label>
     <div class="btns"><button class="btn primary" id="share">Share</button><button class="btn" id="resetPos" type="button">Reset layout</button><button class="btn" id="save">Save image</button></div>
