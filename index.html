@@ -228,6 +228,17 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tile.wide.pm .art{width:50%;max-width:250px}
 .tile.wide.tf .art{width:50%;max-width:250px}
 .tile .tag{z-index:2}
+
+/* glass app tiles: more space, rounder, see-through with blur, no dark slab behind the grid */
+.tiles::before,.nextrow::before{display:none!important}
+.tiles{gap:14px!important}
+.tiles .tile,.tiles.apps .tile{border-radius:26px!important;border:1px solid rgba(255,255,255,.13)!important;
+ background:linear-gradient(160deg,rgba(255,255,255,.11),rgba(255,255,255,.02) 55%),radial-gradient(110% 80% at 100% 0%,color-mix(in srgb,var(--c) 30%,transparent),transparent 65%),rgba(20,21,25,.55)!important;
+ -webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 14px 30px rgba(0,0,0,.5)!important}
+.tiles .tile:not(.wide)::after{background:linear-gradient(transparent,rgba(16,17,20,.75) 60%)!important;border-radius:0 0 26px 26px}
+.tiles .tile.soon{border-style:dashed!important}
+.tiles .tile{padding-top:16px!important;padding-bottom:16px!important;padding-left:16px!important}.tiles .tile:not(.wide){padding-right:16px!important}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -669,7 +680,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794492768";
+const BUILD="1794492828";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;

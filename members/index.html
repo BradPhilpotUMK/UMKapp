@@ -95,6 +95,44 @@ form .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 form .chk{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:14px;color:var(--muted)}
 form .chk input{width:20px;height:20px;flex:none;margin-top:1px;accent-color:#8B6CF0}
 .done{text-align:center;padding:10px 4px}.done b{display:block;font-family:var(--display);font-size:20px;margin-bottom:4px}
+
+/* next race strip in the hero */
+.nxr{display:flex;align-items:center;gap:12px;margin-top:4px;padding:12px;border-radius:14px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08)}
+.nxr .cd{flex:none;text-align:center;min-width:58px}.nxr .cd b{display:block;font-family:var(--display);font-size:28px;line-height:1}.nxr .cd span{font-size:11px;color:#c9c3ee;text-transform:uppercase;letter-spacing:.08em}
+.nxr .in{flex:1;min-width:0}.nxr .in small{display:block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#b9a8ff}.nxr .in b{display:block;font-size:16px;line-height:1.2;margin-top:2px}.nxr .in span{display:block;font-size:13px;color:#d9d4f5;margin-top:2px}
+.cta{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:14px;border-radius:14px;background:#8B6CF0;color:#fff;font-weight:800;font-size:16.5px;text-decoration:none;box-shadow:0 8px 20px rgba(139,108,240,.35)}
+.cta:active{transform:scale(.98)}
+/* who can race chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.chips span{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:14px;font-weight:600}
+.chips span i{font-style:normal;font-size:15px}
+/* collapsible how it works */
+details.how{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin:0 0 14px;overflow:hidden}
+details.how summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:14px 16px;font-weight:700;font-size:16px}
+details.how summary::-webkit-details-marker{display:none}
+details.how summary small{flex:1;color:var(--muted);font-weight:500;font-size:13.5px}
+details.how summary:after{content:"›";font-size:22px;color:var(--muted);transition:transform .2s}
+details.how[open] summary:after{transform:rotate(90deg)}
+details.how .steps{padding:0 16px 8px}
+/* calendar pages */
+.cal{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.pg{position:relative;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--line);box-shadow:0 8px 18px rgba(0,0,0,.35)}
+.pg .mo{background:#8B6CF0;color:#fff;text-align:center;font-weight:800;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;padding:7px 0 6px;position:relative}
+.pg .mo:before,.pg .mo:after{content:"";position:absolute;top:-4px;width:7px;height:12px;border-radius:4px;background:#d8d2f7;box-shadow:0 1px 2px rgba(0,0,0,.4)}
+.pg .mo:before{left:24%}.pg .mo:after{right:24%}
+.pg .dy{text-align:center;padding:10px 0 2px}.pg .dy b{display:block;font-family:var(--display);font-size:44px;line-height:1}.pg .dy span{font-size:12.5px;color:var(--muted);font-weight:600}
+.pg .rd{padding:8px 12px 12px;text-align:center;border-top:1px dashed var(--line);margin-top:8px}
+.pg .rd small{display:block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#b9a8ff}
+.pg .rd b{display:block;font-size:15px;line-height:1.2;margin-top:2px}
+.pg .rd span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.3}
+.pg.prov{border-style:dashed;background:rgba(38,40,46,.55)}.pg.prov .mo{background:#4a4566}
+.pg.next{border:2px solid #8B6CF0;box-shadow:0 0 0 4px rgba(139,108,240,.18),0 10px 22px rgba(0,0,0,.4)}
+.pg .flag{display:inline-block;margin-top:7px;font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:3px 7px;background:#8B6CF0;color:#fff}
+.pg.prov .flag{background:transparent;border:1px solid #6d6690;color:#b4aed6}
+.pg .ics{display:block;margin:0 12px 12px;padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);color:var(--text);font-size:13px;font-weight:700;text-align:center;text-decoration:none}
+.pg .past{opacity:.55}
+#signup{scroll-margin-top:120px}
+.pg .dy .flag{color:#fff;font-size:9.5px}.pg.prov .dy .flag{color:#b4aed6}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -105,30 +143,31 @@ form .chk input{width:20px;height:20px;flex:none;margin-top:1px;accent-color:#8B
   <div class="hero"><span class="tag" id="mStatus">Coming soon · Season 1</span>
     <h2>Race against the Use More Kerb community</h2>
     <p id="mIntro">A championship for members of the channel. Real races, real points, and bragging rights on the channel.</p>
+    <div id="mNext"></div>
   </div>
 
-  <h2 class="sect">Who can race</h2>
-  <div class="card"><b>Members of Team Use More Kerb and above</b><p class="tba" style="margin:4px 0 0">Every Team Use More Kerb member (the £2.99 tier and above) can race. Drivers must be 15 or over. You sign up for each race in the #race-entry channel on the Use More Kerb Discord.</p></div>
+  <h2 class="sect" id="signup">Next race · Sign up</h2>
+  <div class="card su" id="suCard"><p class="tba">Loading the next race…</p></div>
+  <div class="card su" id="adCard" hidden></div>
+  <p class="tba" style="margin:6px 2px 14px;font-size:13px">Questions? Chat in <a id="suChat" href="https://discord.com/channels/1074762004067262596/1569818508253204520" target="_blank" rel="noopener" style="color:#8B6CF0">#race-entry on the Use More Kerb Discord</a>.</p>
 
-  <h2 class="sect">How it works</h2>
-  <div class="card"><ol class="steps" id="mSteps">
+  <h2 class="sect">Who can race</h2>
+  <div class="chips"><span><i>💜</i>Team Use More Kerb members (£2.99+)</span><span><i>🎂</i>Drivers 15 or over</span><span><i>💬</i>Sign up for each race in Discord</span></div>
+
+  <details class="how" id="mHow"><summary>How it works<small>5 steps</small></summary><ol class="steps" id="mSteps">
     <li><span><b>Join Team Use More Kerb</b><small>A YouTube channel membership at £2.99 a month or higher.</small></span></li>
     <li><span><b>Sign up in Discord</b><small>Tap Sign Up on the race in #race-entry, then Enter Driver Details with your racing name and weight in race kit. There are 30 places on the grid; after that you go on the waiting list and move up if someone drops out. The grid and waiting list show here in the app.</small></span></li>
     <li><span><b>Pay for your race</b><small>Check with the championship organisers on Discord for payment details.</small></span></li>
     <li><span><b>Turn up and race</b><small>Practice, qualifying and the final.</small></span></li>
     <li><span><b>Score points, top the table</b><small>Standings update here after every round.</small></span></li>
-  </ol></div>
+  </ol></details>
 
   <h2 class="sect">Calendar</h2>
-  <div class="card" id="mCal"><p class="tba">Dates and venues will be announced soon.</p></div>
+  <div class="cal" id="mCal"><p class="tba">Dates and venues will be announced soon.</p></div>
 
   <h2 class="sect">Standings</h2>
   <div class="card" id="mStand"><p class="tba">The table appears here after round 1.</p></div>
 
-  <h2 class="sect" id="signup">Sign up</h2>
-  <div class="card su" id="suCard"><p class="tba">Loading the next race…</p></div>
-  <div class="card su" id="adCard" hidden></div>
-  <p class="tba" style="margin:6px 2px 14px;font-size:13px">Questions? Chat in <a id="suChat" href="https://discord.com/channels/1074762004067262596/1569818508253204520" target="_blank" rel="noopener" style="color:#8B6CF0">#race-entry on the Use More Kerb Discord</a>.</p>
   <a class="back" href="../">‹ Use More Kerb home</a>
 </div></div>
 <div class="toast" id="toast"></div>
@@ -198,8 +237,22 @@ const Disc={async load(r){Entry.round=r;let L=null;try{const x=await fetch("../d
     $("#suCard").innerHTML=h;$("#suCard").querySelectorAll("[data-ev]").forEach(a=>a.addEventListener("click",()=>gc("members-"+a.dataset.ev,"Members: "+a.dataset.ev)))}};
 (async()=>{try{const r=await fetch("../data/members.json",{cache:"no-cache"});if(!r.ok)return;const M=await r.json();
   if(M.status)$("#mStatus").textContent=M.status;if(M.intro)$("#mIntro").textContent=M.intro;
-  if(Array.isArray(M.steps)&&M.steps.length)$("#mSteps").innerHTML=M.steps.map(s=>`<li><span><b>${esc(s.title)}</b><small>${esc(s.text||"")}</small></span></li>`).join("");
-  if(Array.isArray(M.rounds)&&M.rounds.length)$("#mCal").innerHTML=M.rounds.map((r,i)=>{const d=r.date?dt(r.date):null;return `<div class="rnd"><span class="d"><b>${d?d.getUTCDate():"TBA"}</b><span>${d?MON[d.getUTCMonth()]+" "+String(d.getUTCFullYear()).slice(2):""}</span></span><span><b>${esc(r.location?"Round "+(i+1)+": "+r.location:(r.title||"Round "+(i+1)))}</b><br><small style="color:var(--muted)">${esc(r.track||r.venue||"Venue TBA")}${r.note?" · "+esc(r.note):""}</small></span></div>`}).join("");
+  if(Array.isArray(M.steps)&&M.steps.length){$("#mSteps").innerHTML=M.steps.map(s=>`<li><span><b>${esc(s.title)}</b><small>${esc(s.text||"")}</small></span></li>`).join("");$("#mHow summary small").textContent=M.steps.length+" steps"}
+  {const now=new Date();now.setUTCHours(0,0,0,0);const R=M.rounds||[];
+   const nxt=R.filter(r=>r.date&&dt(r.date)>=now).sort((a,b)=>dt(a.date)-dt(b.date))[0];
+   if(R.length)$("#mCal").innerHTML=R.map((r,i)=>{const d=r.date?dt(r.date):null,past=d&&d<now,isN=r===nxt,prov=!!r.provisional;
+     return `<div class="pg${prov?" prov":""}${isN?" next":""}"><div class="mo">${d?MON[d.getUTCMonth()]+" "+d.getUTCFullYear():"Date TBA"}</div>
+       <div class="dy${past?" past":""}"><b>${d?d.getUTCDate():"?"}</b><span>${d?["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][d.getUTCDay()]:""}${r.time?" · "+esc(r.time):""}</span>${isN?'<br><span class="flag">Next race</span>':prov?'<br><span class="flag">Provisional</span>':""}</div>
+       <div class="rd"><small>Round ${i+1}</small><b>${esc(r.location||r.title||"")}</b><span>${esc(r.track||r.venue||"Venue TBA")}${prov?"":r.price?"<br>"+esc(String(r.price).split(",")[0]):""}</span></div>
+       ${!prov&&d&&!past?`<a class="ics" href="#" data-ics="${i}">＋ Add to calendar</a>`:""}</div>`}).join("");
+   $("#mCal").querySelectorAll("[data-ics]").forEach(a=>a.onclick=e=>{e.preventDefault();const r=R[+a.dataset.ics],ymd=r.date.replace(/-/g,"");
+     let st="DTSTART;VALUE=DATE:"+ymd,en="";const n=dt(r.date);n.setUTCDate(n.getUTCDate()+1);en="DTEND;VALUE=DATE:"+n.toISOString().slice(0,10).replace(/-/g,"");
+     if(r.time){const [h,m]=r.time.split(":");st="DTSTART;TZID=Europe/London:"+ymd+"T"+h.padStart(2,"0")+(m||"00")+"00";const eh=String(Math.min(23,+h+4)).padStart(2,"0");en="DTEND;TZID=Europe/London:"+ymd+"T"+eh+(m||"00")+"00"}
+     const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Use More Kerb//Championship//EN","BEGIN:VEVENT","UID:"+(r.id||ymd)+"@usemorekerb","DTSTAMP:"+new Date().toISOString().replace(/[-:]/g,"").slice(0,15)+"Z",st,en,"SUMMARY:USE MORE KERB Championship "+("Round "+(+a.dataset.ics+1))+(r.location?": "+r.location:""),"LOCATION:"+(r.venue||r.track||"").replace(/,/g,"\\,"),"DESCRIPTION:"+(r.format||"").replace(/,/g,"\\,"),"END:VEVENT","END:VCALENDAR"].join("\r\n");
+     const u=URL.createObjectURL(new Blob([ics],{type:"text/calendar"})),l=document.createElement("a");l.href=u;l.download="UMK-Championship-Round-"+(+a.dataset.ics+1)+".ics";document.body.appendChild(l);l.click();l.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);gc("members-ics","Members: add to calendar")});
+   if(nxt){const d=dt(nxt.date),days=Math.round((d-now)/864e5);
+     $("#mNext").innerHTML=`<div class="nxr"><div class="cd"><b>${days}</b><span>${days===1?"day":"days"} to go</span></div><div class="in"><small>Next race · Round ${R.indexOf(nxt)+1}</small><b>${esc(nxt.location||nxt.title)}</b><span>${DOW[d.getUTCDay()]} ${d.getUTCDate()} ${MON[d.getUTCMonth()]}${nxt.time?" · "+esc(nxt.time):""} · ${esc(nxt.track||nxt.venue||"")}</span></div></div><a class="cta" href="#signup" data-ev="hero-signup">Sign up for Round ${R.indexOf(nxt)+1} ›</a>`;
+     const c=$("#mNext [data-ev]");c.onclick=e=>{e.preventDefault();gc("members-hero-signup","Members: hero sign up");document.getElementById("signup").scrollIntoView({behavior:"smooth",block:"start"})}}}
   if(M.signup&&M.signup.url)$("#suChat").href=M.signup.url;
   {const now=new Date();now.setUTCHours(0,0,0,0);const nx=(M.rounds||[]).filter(r=>r.id&&r.date&&dt(r.date)>=now).sort((a,b)=>dt(a.date)-dt(b.date))[0];
    if(nx){if(M.signup&&M.signup.mode==="discord")Disc.load(nx);else{Entry.round=nx;Entry.load(nx.id)}}else $("#suCard").innerHTML=`<p class="tba">The next race will appear here when it's announced.</p>`}
