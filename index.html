@@ -242,6 +242,10 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tiles .tile.shop{padding:0!important}.tiles .tile.shop .sbar{background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0))!important;padding:16px 16px 6px!important}
 .tiles .tile.shop .shelf img{filter:none!important}
 .tiles .tile.shop{background:radial-gradient(70% 35% at 18% 0%,rgba(255,0,116,.30),transparent 70%),radial-gradient(60% 30% at 90% 0%,rgba(0,190,0,.18),transparent 70%),linear-gradient(180deg,#24121d 0,#120910 18%,#000 30%,#000 100%)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+/* small tiles: keep the picture above the title, whatever the screen width */
+.tiles .tile:not(.wide){min-height:206px!important}
+.tiles .tile:not(.wide) .art{height:clamp(92px,25vw,118px)!important;width:auto!important;max-width:88%!important;top:-6px!important;right:-10px!important}
+.tiles .tile:not(.wide)::after{height:56%!important;background:linear-gradient(transparent,rgba(16,17,20,.88) 45%)!important}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -683,7 +687,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794493068";
+const BUILD="1794493128";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
