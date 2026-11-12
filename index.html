@@ -659,6 +659,7 @@ const IS_APP=matchMedia("(display-mode: standalone)").matches||navigator.standal
 const IS_IOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
 let instEv=null;addEventListener("beforeinstallprompt",e=>{e.preventDefault();instEv=e});
 function instShow(){
+  if(window.UMKInstall){UMKInstall.show();return}
   $("#instTxt").innerHTML=instEv?"One app for the season planner, standings, team manager, setup coach, members championship and store. Works without signal at the track.":IS_IOS?"In Safari, tap <b>Share</b> then <b>Add to Home Screen</b>. One app for everything, and it works without signal at the track.":"Open your browser menu and choose <b>Install app</b> or <b>Add to Home screen</b>.";
   $("#instAct").innerHTML=instEv?'<button class="inst" id="instGo" style="margin:0">Install</button>':"";
   const g=$("#instGo");if(g)g.onclick=async()=>{const e=instEv;instEv=null;$("#inst").classList.remove("on");e.prompt();try{const r=await e.userChoice;gc("install-"+r.outcome)}catch(x){}};
@@ -668,7 +669,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794491914";
+const BUILD="1794492445";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;

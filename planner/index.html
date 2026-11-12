@@ -467,6 +467,10 @@ document.addEventListener("click",ev=>{const a=ev.target.closest&&ev.target.clos
   try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:kind+"-"+host,title:a.getAttribute("aria-label")||a.textContent.trim(),event:true})}catch(e){}
 },true);
 </script>
+<style id="carbon">/* carbon fibre background, with the cards see-through enough to show it */
+html:not([data-skin="pink"]){--surface:rgba(38,40,46,.80);--surface2:rgba(50,53,60,.86)}
+html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,rgba(255,0,116,.10),transparent 60%),radial-gradient(120% 50% at 50% 100%,rgba(0,190,0,.06),transparent 60%),url(../img/carbon.png) 0 0/32px 32px,#0b0b0d}
+</style>
 </head>
 <body>
 <div id="splash" aria-hidden="true"><canvas class="bg" id="splashCv"></canvas><div class="shade"></div><div class="grain"></div>
@@ -639,7 +643,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD="1794491914";
+const BUILD="1794492445";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,
@@ -1660,6 +1664,7 @@ let instEv=null;
 function gcEvent(path,title){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path,title:title||path,event:true})}catch(e){}}
 function instShow(force){
   if(IS_APP)return false;
+  if(window.UMKInstall){if(force)UMKInstall.show();return true}
   if(!force){try{const t=+localStorage.getItem("umk-install-later")||0;if(Date.now()-t<14*864e5)return false}catch(e){}}
   const txt=$("#instTxt"),act=$("#instAct");
   if(instEv){txt.textContent="It opens full screen, loads instantly and works without signal at the track.";

@@ -14,6 +14,7 @@
     trailer: "JAPL-rYNekY"
   };
   var KEY = "umk-pass", D = document, H = D.documentElement, S = D.currentScript;
+  try { var IJ = D.createElement("script"); IJ.src = S.src.replace(/gate\.js(\?.*)?$/, "install.js"); IJ.async = true; D.head.appendChild(IJ); } catch (e) {}
   var NEED = (S && S.getAttribute("data-need")) || "member";
   var base = (function () { try { return new URL(".", S.src).href; } catch (e) { return "/"; } })();
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } }

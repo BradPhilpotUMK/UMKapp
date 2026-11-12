@@ -737,7 +737,7 @@ const IS_IOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform=
 let instEv=null;
 addEventListener("beforeinstallprompt",e=>{e.preventDefault();instEv=e});
 async function doInstall(){if(!instEv)return;const e=instEv;instEv=null;e.prompt();try{const r=await e.userChoice;gc("install-"+r.outcome)}catch(x){}closeSheet()}
-if(!IS_APP){const ib=$("#instBar");ib.hidden=false;ib.onclick=()=>{if(instEv)doInstall();else dataSheet()}}
+if(!IS_APP){const ib=$("#instBar");ib.hidden=false;ib.onclick=()=>{if(window.UMKInstall)UMKInstall.show();else if(instEv)doInstall();else dataSheet()}}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Team manager opened from home screen"),3000);
 if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
 
