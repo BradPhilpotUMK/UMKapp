@@ -1,0 +1,13 @@
+name: Probe region (temporary)
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -sL -A "Mozilla/5.0" "https://www.alpharacehub.com/todays-events" -o t.html; wc -c t.html
+          grep -o -i '[^"<>]\{0,80\}region[^"<>]\{0,80\}' t.html | sort -u | head -30
+          grep -o '<script[^>]*src="[^"]*"' t.html | head
+          for f in $(grep -o 'src="/[^"]*\.js[^"]*"' t.html | sed 's/src="//;s/"$//' | head -5); do echo "--- $f"; curl -sL "https://www.alpharacehub.com$f" | grep -o -i '.\{0,100\}region.\{0,120\}' | head -12; done
+          for q in "?region=GB" "?region=gb" "?country=GB"; do echo "=== $q"; curl -sL -A "Mozilla/5.0" "https://www.alpharacehub.com/todays-events$q" | grep -o 'href="https://www.alpharacehub.com/[a-z0-9]*/event/[0-9]*"' | wc -l; done
+          curl -sL -A "Mozilla/5.0" -b "region=GB" "https://www.alpharacehub.com/todays-events" | grep -o 'href="https://www.alpharacehub.com/[a-z0-9]*/event/[0-9]*"' | wc -l
