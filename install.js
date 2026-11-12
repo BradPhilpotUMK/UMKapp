@@ -115,6 +115,21 @@
     gc("install-shown", "Install prompt shown" + (INAPP ? " (in-app browser)" : ev ? " (one tap)" : IOS ? " (iPhone steps)" : ""));
     return true;
   }
+  /* always-visible "Get the app" button under each page's header, so nobody has to wait for (or remember) the pop-up.
+     Pages with their own install button (#instBar: hub, team manager) keep theirs. */
+  function bar() {
+    if (D.getElementById("instBar") || D.getElementById("umkIbar")) return;
+    var hd = D.querySelector("header.top"); if (!hd || !hd.parentNode) return;
+    var st = D.createElement("style");
+    st.textContent = "#umkIbar{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;box-sizing:border-box;margin:4px 0 12px;padding:12px 14px;border:0;border-radius:14px;background:#FF0074;color:#fff;font:800 15px/1.2 Barlow,system-ui,sans-serif;cursor:pointer;box-shadow:0 6px 18px rgba(255,0,116,.28);-webkit-tap-highlight-color:transparent}" +
+      "#umkIbar svg{flex:none;width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}#umkIbar:active{transform:scale(.98)}";
+    D.head.appendChild(st);
+    var b = D.createElement("button"); b.id = "umkIbar"; b.type = "button";
+    b.innerHTML = PLUS + "<span>" + (INAPP ? "Open in " + (IOS ? "Safari" : "Chrome") + " to get the app" : "Add the app to your Home Screen") + "</span>";
+    b.onclick = function () { gc("install-bar", "Install bar tapped"); show(true); };
+    hd.parentNode.insertBefore(b, hd.nextSibling);
+  }
+  addEventListener("appinstalled", function () { var b = D.getElementById("umkIbar"); if (b) b.remove(); });
   window.UMKInstall = { show: function () { return show(true); }, available: true };
 
   /* pop up once the opening animation and any sign-in screen are out of the way */
@@ -123,6 +138,6 @@
     if (busy && n < 60) { setTimeout(function () { auto(n + 1); }, 500); return; }
     show(false);
   }
-  function start() { if (/[?&]install=1/.test(location.search)) { setTimeout(function () { show(true); }, 900); return; } setTimeout(function () { auto(0); }, 2500); }
+  function start() { bar(); if (/[?&]install=1/.test(location.search)) { setTimeout(function () { show(true); }, 900); return; } setTimeout(function () { auto(0); }, 2500); }
   if (D.readyState === "loading") D.addEventListener("DOMContentLoaded", start); else start();
 })();

@@ -15,6 +15,16 @@
   };
   var KEY = "umk-pass", D = document, H = D.documentElement, S = D.currentScript;
   try { var IJ = D.createElement("script"); IJ.src = S.src.replace(/gate\.js(\?.*)?$/, "install.js"); IJ.async = true; D.head.appendChild(IJ); } catch (e) {}
+  /* page header: no dark box at the top; a full-width frosted bar fades in only once the page is scrolled */
+  try {
+    var HS = D.createElement("style");
+    HS.textContent = "html header.top{background:transparent!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;isolation:isolate}" +
+      "html header.top:before{content:'';position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:rgba(10,10,12,.72);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);opacity:0;transition:opacity .2s;pointer-events:none}" +
+      "html.umk-scrolled header.top:before{opacity:1}";
+    D.head.appendChild(HS);
+    var sc = function (e) { var t = e && e.target && e.target.nodeType === 1 ? e.target : D.scrollingElement || H; if (t !== D.getElementById("scroller") && t !== (D.scrollingElement || H)) return; H.classList.toggle("umk-scrolled", t.scrollTop > 4); };
+    D.addEventListener("scroll", sc, true);
+  } catch (e) {}
   var NEED = (S && S.getAttribute("data-need")) || "member";
   var base = (function () { try { return new URL(".", S.src).href; } catch (e) { return "/"; } })();
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } }
