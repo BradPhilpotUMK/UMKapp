@@ -155,6 +155,9 @@
       '<ul class="get"><li><b>Season Planner</b>: every UK, European and US race in one calendar</li>' +
       '<li><b>Setup Coach</b>: tell it what the kart’s doing, get the fix</li>' +
       '<li><b>Team Manager</b> for endurance teams, staff and payments</li>' +
+      '<li><b>Sponsorship Builder</b>: pitch sponsors properly and avoid the classic mistakes</li>' +
+      '<li><b>Budget Calculator</b>: what a season really costs</li>' +
+      '<li><b>Team Finder</b>: find a team, or drivers for yours</li>' +
       '<li><b>USE MORE KERB Championship</b>: race against the community</li></ul>' +
       '<div class="vid" data-v="' + CFG.trailer + '" role="button" aria-label="Play the Team Use More Kerb members trailer"><img src="https://i.ytimg.com/vi/' + CFG.trailer + '/hqdefault.jpg" alt=""><span class="vplay"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#FF0074"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span></div>' +
       '<a class="btn yt" data-join href="' + CFG.join + '" target="_blank" rel="noopener">Join on YouTube from £2.99 a month</a>' +

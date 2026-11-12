@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<style>html,body{background:#000}</style>
+<script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
+<meta charset="utf-8">
+<script src="../gate.js"></script>
+<meta name="color-scheme" content="dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Use More Kerb Team Finder</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta name="apple-mobile-web-app-title" content="Use More Kerb">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1284x2778.png">
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1179x2556.png">
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1290x2796.png">
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1206x2622.png">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1320x2868.png">
+<link rel="apple-touch-startup-image" media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1080x2340.png">
+<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1260x2736.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Find a team for an endurance or team race, or find drivers for your team.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../hub.css">
+<style>
+:root{--accent:#FF0074;--go:#00BE00}
+body{background:#000 url(../img/camo.png) center/cover no-repeat}
+header.top{position:relative;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+header.top .brand{text-align:center}
+header.top .brand .r{position:relative;justify-content:center;min-height:30px;margin-bottom:8px}
+header.top .brand .r .homechip{position:absolute;left:0;top:50%;transform:translateY(-50%);margin:0}
+header.top .brand .r img{height:16px}
+header.top .brand h1{font-size:clamp(24px,7.4vw,36px);white-space:nowrap;overflow:visible;text-shadow:0 4px 18px rgba(0,0,0,.8)}
+.lead{text-align:center;max-width:36ch;margin:2px auto 18px;color:#c9cad0;font-size:14.5px;line-height:1.5}
+.card{background:rgba(22,22,26,.92);border-color:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 8px 20px rgba(0,0,0,.4)}
+.card h2{font-family:var(--display);font-size:19px;margin:0 0 4px}
+.card .sub{color:var(--muted);font-size:13.5px;margin:0 0 12px}
+label{display:block;font-size:13px;font-weight:600;color:#cfd0d6;margin:10px 0 4px}
+input,select,textarea{width:100%;background:#0d0d10;border:1px solid #34353c;border-radius:10px;padding:10px 11px;font-size:16px;color:var(--text)}
+textarea{min-height:76px;resize:vertical;line-height:1.4}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips label{display:inline-flex;align-items:center;gap:6px;margin:0;padding:8px 11px;border-radius:999px;border:1px solid #3a3b42;background:#121216;font-weight:600;font-size:13.5px;cursor:pointer}
+.chips input{width:auto;margin:0;accent-color:#FF0074}
+.chips label:has(input:checked){border-color:#FF0074;background:rgba(255,0,116,.14)}
+.btn.primary{background:#FF0074;border-color:#FF0074}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:3px 9px}
+.tag.g{background:#00BE00;color:#04150a}
+.note{font-size:13px;color:var(--muted);line-height:1.45}
+.seg{background:rgba(18,18,22,.92)}
+.seg button{font-size:12.5px}
+.seg button.on{background:#FF0074;color:#fff}
+#q{margin:0 0 12px;background:rgba(13,13,16,.95)}
+.list{display:grid;gap:10px;margin-bottom:12px}
+.post{background:rgba(22,22,26,.94);border:1px solid rgba(255,255,255,.1);border-left:4px solid #FF0074;border-radius:14px;padding:12px 14px}
+.post.drivers{border-left-color:#00BE00}
+.post .top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+.post .when{font-size:12.5px;color:var(--muted)}
+.post b{display:block;font-family:var(--display);font-size:17px;line-height:1.2}
+.post .meta{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.post .meta span{font-size:12.5px;background:#121216;border:1px solid #2e2f36;border-radius:999px;padding:3px 9px;color:#dcdde2}
+.post p{margin:0 0 10px;font-size:14px;color:#d0d1d6;white-space:pre-line}
+.post .by{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.post a.btn{padding:7px 12px;font-size:13.5px;background:#5865F2;border-color:#5865F2;color:#fff;text-decoration:none}
+.empty{text-align:center;padding:22px 16px}
+.empty b{display:block;font-family:var(--display);font-size:18px;margin-bottom:6px}
+.out{white-space:pre-wrap;font-family:var(--body);font-size:14.5px;line-height:1.5;background:#0d0d10;border:1px solid #2c2d33;border-radius:12px;padding:12px;margin:0;color:#e9e9ec}
+</style>
+<script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div id="scroller"><div class="wrap">
+  <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Team Finder</h1></div></header>
+  <p class="lead">Need a team for an endurance race, or drivers to fill your team? Post in Discord and it shows up here for every member.</p>
+  <div class="seg" id="kind"><button data-k="all" class="on">All</button><button data-k="team">Drivers seeking a team</button><button data-k="drivers">Teams seeking drivers</button></div>
+  <input id="q" type="search" placeholder="Search event, track or class" aria-label="Search listings">
+  <div id="list" class="list"><p class="note" style="text-align:center;margin:20px 0">Loading…</p></div>
+
+  <section class="card how">
+    <h2>Post a listing</h2>
+    <p class="sub">Post in <b>#team-finder</b> on the Use More Kerb Discord using this layout. It appears here within about 15 minutes.</p>
+    <pre class="out" id="tpl">Looking for: team
+Event: Daytona 24 Hours
+Date: 29/05/2027
+Class: Rental
+Weight: 78kg
+Notes: Raced the 24H twice, can do night stints</pre>
+    <div class="btns"><button class="btn" id="cpTpl">Copy layout</button><a class="btn primary" id="openDc" target="_blank" rel="noopener">Open #team-finder ›</a></div>
+    <p class="note">Use <b>Looking for: drivers</b> if you're a team with seats to fill. Delete your Discord message once you're sorted and it disappears here too. Listings drop off after the event date.</p>
+  </section>
+  <section class="card safe">
+    <h2>Stay safe</h2>
+    <p class="note">Keep chats in the Use More Kerb Discord until you've met the team. Never send money before you've seen a confirmed entry. Under 18? A parent or guardian should do the talking and come along.</p>
+  </section>
+
+  <a class="back" href="../">‹ Use More Kerb home</a>
+</div></div>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2200)}
+function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path,title:title||path,event:true})}catch(e){}}
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+async function copy(t,ok){let done=false;try{await navigator.clipboard.writeText(t);done=true}catch(e){}toast(done?ok:"Couldn't copy, select the text instead")}
+if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
+let D={posts:[]},kind="all";
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const dfmt=s=>{if(!s)return"";const[y,m,d]=s.split("-").map(Number);return d+" "+MON[m-1]+" "+y};
+const ago=s=>{const d=Math.floor((Date.now()-new Date(s))/864e5);return d<1?"today":d===1?"yesterday":d+" days ago"};
+function draw(){
+  const q=$("#q").value.trim().toLowerCase(),P=(D.posts||[]).filter(p=>(kind==="all"||p.kind===kind)&&(!q||[p.event,p.cls,p.details,p.who].join(" ").toLowerCase().includes(q)));
+  if(!D.channel){$("#list").innerHTML=`<div class="card empty"><span class="tag">Coming soon</span><b style="margin-top:10px">Team Finder is nearly ready</b><p class="note">The #team-finder channel is being set up on the Use More Kerb Discord. Listings will appear here as soon as it opens.</p></div>`;return}
+  if(!P.length){$("#list").innerHTML=`<div class="card empty"><b>${(D.posts||[]).length?"Nothing matches that search":"No listings yet"}</b><p class="note">${(D.posts||[]).length?"Try another event or clear the search.":"Be the first: post in #team-finder using the layout below."}</p></div>`;return}
+  $("#list").innerHTML=P.map(p=>`<article class="post ${p.kind}"><div class="top"><span class="tag ${p.kind==="drivers"?"g":""}">${p.kind==="drivers"?"Team seeking drivers":"Driver seeking a team"}</span><span class="when">${esc(ago(p.posted))}</span></div>
+    <b>${esc(p.event||"Any event")}</b><div class="meta">${p.date?`<span>📅 ${esc(dfmt(p.date))}</span>`:""}${p.cls?`<span>${esc(p.cls)}</span>`:""}${p.weight?`<span>${esc(p.weight)}</span>`:""}${p.seats?`<span>${esc(p.seats)} seat${p.seats==="1"?"":"s"}</span>`:""}</div>
+    ${p.details?`<p>${esc(p.details)}</p>`:""}<div class="by"><span>${esc(p.who||"")}</span>${p.link?`<a class="btn" href="${esc(p.link)}" target="_blank" rel="noopener" data-msg>Reply in Discord ›</a>`:""}</div></article>`).join("");
+  $$("[data-msg]").forEach(a=>a.onclick=()=>gc("teams-reply","Team Finder: reply"));
+}
+$$("#kind button").forEach(b=>b.onclick=()=>{kind=b.dataset.k;$$("#kind button").forEach(x=>x.classList.toggle("on",x===b));draw()});
+$("#q").addEventListener("input",draw);
+$("#cpTpl").onclick=()=>copy($("#tpl").textContent,"Layout copied");
+(async()=>{try{const r=await fetch("../data/team-finder.json",{cache:"no-cache"});if(r.ok)D=await r.json()}catch(e){}
+  const a=$("#openDc");if(D.channel&&D.guild)a.href=`https://discord.com/channels/${D.guild}/${D.channel}`;else a.href="https://discord.gg/DZDKW9fWmA";
+  draw()})();
+
+</script>
+</body>
+</html>

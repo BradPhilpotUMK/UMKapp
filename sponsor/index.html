@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<style>html,body{background:#000}</style>
+<script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
+<meta charset="utf-8">
+<script src="../gate.js"></script>
+<meta name="color-scheme" content="dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Use More Kerb Sponsorship Builder</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta name="apple-mobile-web-app-title" content="Use More Kerb">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1284x2778.png">
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1179x2556.png">
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1290x2796.png">
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1206x2622.png">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1320x2868.png">
+<link rel="apple-touch-startup-image" media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1080x2340.png">
+<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1260x2736.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Build a sponsorship proposal that gets read: who to ask, what to offer, and the mistakes to avoid.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../hub.css">
+<style>
+:root{--accent:#FF0074;--go:#00BE00}
+body{background:#000 url(../img/camo.png) center/cover no-repeat}
+header.top{position:relative;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+header.top .brand{text-align:center}
+header.top .brand .r{position:relative;justify-content:center;min-height:30px;margin-bottom:8px}
+header.top .brand .r .homechip{position:absolute;left:0;top:50%;transform:translateY(-50%);margin:0}
+header.top .brand .r img{height:16px}
+header.top .brand h1{font-size:clamp(24px,7.4vw,36px);white-space:nowrap;overflow:visible;text-shadow:0 4px 18px rgba(0,0,0,.8)}
+.lead{text-align:center;max-width:36ch;margin:2px auto 18px;color:#c9cad0;font-size:14.5px;line-height:1.5}
+.card{background:rgba(22,22,26,.92);border-color:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 8px 20px rgba(0,0,0,.4)}
+.card h2{font-family:var(--display);font-size:19px;margin:0 0 4px}
+.card .sub{color:var(--muted);font-size:13.5px;margin:0 0 12px}
+label{display:block;font-size:13px;font-weight:600;color:#cfd0d6;margin:10px 0 4px}
+input,select,textarea{width:100%;background:#0d0d10;border:1px solid #34353c;border-radius:10px;padding:10px 11px;font-size:16px;color:var(--text)}
+textarea{min-height:76px;resize:vertical;line-height:1.4}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips label{display:inline-flex;align-items:center;gap:6px;margin:0;padding:8px 11px;border-radius:999px;border:1px solid #3a3b42;background:#121216;font-weight:600;font-size:13.5px;cursor:pointer}
+.chips input{width:auto;margin:0;accent-color:#FF0074}
+.chips label:has(input:checked){border-color:#FF0074;background:rgba(255,0,116,.14)}
+.btn.primary{background:#FF0074;border-color:#FF0074}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:3px 9px}
+.tag.g{background:#00BE00;color:#04150a}
+.note{font-size:13px;color:var(--muted);line-height:1.45}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 12px}
+.steps button{border:1px solid #33343b;background:rgba(18,18,22,.9);border-radius:10px;padding:9px 4px;font-weight:700;font-size:12.5px;color:var(--muted)}
+.steps button.on{background:#FF0074;border-color:#FF0074;color:#fff}
+label.mini{font-weight:500;color:var(--muted);margin-top:0}
+.ideas{margin-top:14px;padding:12px;border-radius:12px;background:rgba(0,190,0,.08);border:1px solid rgba(0,190,0,.3);font-size:14px}
+.ideas ul{margin:6px 0 0;padding-left:18px;color:#d6d7dc}
+.check ul{list-style:none;margin:0;padding:0}
+.check li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px solid rgba(255,255,255,.06);font-size:14.5px}
+.check li:first-child{border-top:0}
+.check li i{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:900;font-size:13px;margin-top:1px}
+.check li.ok i{background:#00BE00;color:#04150a}.check li.bad i{background:#FF0074;color:#fff}
+.check li small{display:block;color:var(--muted);font-size:13px}
+.score{height:8px;border-radius:99px;background:#22232a;overflow:hidden;margin-top:12px}
+.score i{display:block;height:100%;background:linear-gradient(90deg,#FF0074,#00BE00);transition:width .3s}
+.ph{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.btn.sm{padding:7px 12px;font-size:13.5px}
+.out{white-space:pre-wrap;word-wrap:break-word;font-family:var(--body);font-size:14.5px;line-height:1.5;background:#0d0d10;border:1px solid #2c2d33;border-radius:12px;padding:12px;margin:0;color:#e9e9ec}
+.tips details{border-top:1px solid rgba(255,255,255,.07);padding:10px 0}
+.tips details:first-of-type{border-top:0}
+.tips summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.tips summary::after{content:"+";color:#FF0074;font-weight:900}
+.tips details[open] summary::after{content:"–"}
+.tips p{margin:6px 0 0;color:#c9cad0;font-size:14px}
+@media print{body{background:#fff!important;color:#000}header,.lead,.steps,.pane:not([data-p="4"]),.tips,.back,.btns,.check,.card:has(#outEmail){display:none!important}#scroller{overflow:visible}.card{background:none;border:0;box-shadow:none}.out{background:none;border:0;color:#000;font-size:12pt}.card .sub,.ph button{display:none}}
+</style>
+<script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div id="scroller"><div class="wrap">
+  <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Sponsorship Builder</h1></div></header>
+  <p class="lead">Sponsors back drivers who make it easy to say yes. Fill this in once, and get a proposal and an email you can tailor for each company.</p>
+
+  <div class="steps" id="steps">
+    <button class="on" data-s="1">1 You</button><button data-s="2">2 Offer</button><button data-s="3">3 Company</button><button data-s="4">4 Proposal</button>
+  </div>
+
+  <section class="card pane" data-p="1">
+    <h2>About you</h2><p class="sub">Facts, not adjectives. Numbers beat "passionate and dedicated".</p>
+    <div class="row2"><div><label for="f_name">Your name</label><input id="f_name" autocomplete="name"></div><div><label for="f_age">Age</label><input id="f_age" type="number" inputmode="numeric" min="5" max="80"></div></div>
+    <div class="row2"><div><label for="f_town">Home town</label><input id="f_town" placeholder="e.g. Reading"></div><div><label for="f_class">Class / series</label><input id="f_class" placeholder="e.g. Rotax Junior, BRKC"></div></div>
+    <label for="f_season">What you're racing next season</label><input id="f_season" placeholder="e.g. 8-round club championship + 2 national rounds">
+    <label for="f_results">Best results (one per line)</label><textarea id="f_results" placeholder="2nd, Club Championship 2026&#10;3 race wins, Rowrah 2026"></textarea>
+    <label>Your audience</label>
+    <div class="row2"><div><label for="f_ig" class="mini">Instagram followers</label><input id="f_ig" type="number" inputmode="numeric" min="0"></div><div><label for="f_tt" class="mini">TikTok followers</label><input id="f_tt" type="number" inputmode="numeric" min="0"></div></div>
+    <div class="row2"><div><label for="f_yt" class="mini">YouTube subscribers</label><input id="f_yt" type="number" inputmode="numeric" min="0"></div><div><label for="f_crowd" class="mini">Spectators per meeting (approx)</label><input id="f_crowd" type="number" inputmode="numeric" min="0"></div></div>
+    <label for="f_contact">Contact (email or phone)</label><input id="f_contact" autocomplete="email">
+    <p class="note" id="minorNote" hidden>Under 18? Ask a parent or guardian to send the email and be the contact. Sponsors expect it, and it keeps you safe.</p>
+    <div class="btns"><button class="btn primary" data-go="2">Next: what you offer ›</button></div>
+  </section>
+
+  <section class="card pane" data-p="2" hidden>
+    <h2>What the sponsor gets</h2><p class="sub">The biggest mistake is only asking. Show what they get back.</p>
+    <label>Branding</label>
+    <div class="chips" id="c_brand">
+      <label><input type="checkbox" value="Your logo on the kart (front nose and sidepods)">Kart</label>
+      <label><input type="checkbox" value="Your logo on my race suit">Race suit</label>
+      <label><input type="checkbox" value="Your logo on my helmet">Helmet</label>
+      <label><input type="checkbox" value="Your logo on the team awning / trailer">Awning or trailer</label>
+      <label><input type="checkbox" value="Your logo on team clothing worn in the paddock">Teamwear</label>
+    </div>
+    <label>Content and reach</label>
+    <div class="chips" id="c_content">
+      <label><input type="checkbox" value="A thank-you post after every race weekend, tagging the sponsor">Race-weekend posts</label>
+      <label><input type="checkbox" value="Onboard and highlight videos with the sponsor visible">Videos</label>
+      <label><input type="checkbox" value="Photos of the branded kit for the sponsor's own website and social media">Photos for them</label>
+      <label><input type="checkbox" value="A short report after each round: results, photos and reach">Round reports</label>
+    </div>
+    <label>Something money can't buy</label>
+    <div class="chips" id="c_extra">
+      <label><input type="checkbox" value="A guest day at a race meeting for the sponsor's staff or customers">Race-day guests</label>
+      <label><input type="checkbox" value="A kart experience or track day for their team">Track day</label>
+      <label><input type="checkbox" value="An appearance at their business, school or community event with the kart">Appearances</label>
+      <label><input type="checkbox" value="Trophies and podium photos shared with them first">Podium photos</label>
+    </div>
+    <label for="f_ask">What you're asking for</label>
+    <div class="row2"><div><select id="f_type"><option value="money">Money</option><option value="product">Products or services</option><option value="both">Both</option></select></div><div><input id="f_amount" type="number" inputmode="numeric" min="0" placeholder="£ amount"></div></div>
+    <label for="f_spend">What it pays for</label><input id="f_spend" placeholder="e.g. tyres and entry fees for 4 rounds">
+    <p class="note" id="budgetHint"></p>
+    <div class="btns"><button class="btn" data-go="1">‹ Back</button><button class="btn primary" data-go="3">Next: the company ›</button></div>
+  </section>
+
+  <section class="card pane" data-p="3" hidden>
+    <h2>Who you're asking</h2><p class="sub">One proposal per company. Name a person and say why them.</p>
+    <div class="row2"><div><label for="f_co">Company</label><input id="f_co" placeholder="e.g. Smith's Garage"></div><div><label for="f_person">Person's name</label><input id="f_person" placeholder="e.g. Sarah Smith"></div></div>
+    <label for="f_why">Why them? (their customers, where they are, what links you)</label><textarea id="f_why" placeholder="e.g. Local to my track, their customers are drivers, my dad has used them for 10 years"></textarea>
+    <label for="f_level">Package</label>
+    <select id="f_level"><option value="Supporter">Supporter (small: a product or a little money)</option><option value="Partner" selected>Partner (one season, logo and content)</option><option value="Title partner">Title partner (main name on the kart and kit)</option></select>
+    <div class="ideas"><b>Where to start looking</b><ul>
+      <li>Businesses near your home or your track: garages, builders, trades, gyms, cafés</li>
+      <li>Your parents' and family's employers and suppliers</li>
+      <li>Companies whose customers are drivers or car fans</li>
+      <li>Karting and motorsport brands for products rather than money</li>
+    </ul></div>
+    <div class="btns"><button class="btn" data-go="2">‹ Back</button><button class="btn primary" data-go="4">See my proposal ›</button></div>
+  </section>
+
+  <section class="pane" data-p="4" hidden>
+    <div class="card check"><h2>Proposal check</h2><p class="sub">Fix the red ones before you send it.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
+    <div class="card"><div class="ph"><h2>Email or message</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub">Short. Their name, why them, one clear ask, and a reply that's easy.</p><pre class="out" id="outEmail"></pre></div>
+    <div class="card"><div class="ph"><h2>Proposal</h2><button class="btn sm" id="cpProp">Copy</button></div><p class="sub">Attach this as a one-page PDF with two or three good photos.</p><pre class="out" id="outProp"></pre>
+      <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
+  </section>
+
+  <section class="card tips">
+    <h2>The mistakes that lose sponsors</h2>
+    <details><summary>Sending the same email to everyone</summary><p>"Dear Sir/Madam" goes straight in the bin. Use their name, mention their business, and say why you picked them.</p></details>
+    <details><summary>Only asking, never offering</summary><p>A sponsor is buying something. List exactly what they get: logo places, posts, videos, guest days and reports.</p></details>
+    <details><summary>No numbers</summary><p>Give followers, views, how many people see you race and how many meetings you do. Small honest numbers beat vague big claims.</p></details>
+    <details><summary>No clear ask</summary><p>Say how much, or which product, and what it pays for. "Any support would be great" is easy to ignore.</p></details>
+    <details><summary>Writing an essay</summary><p>Keep the email under 200 words and the proposal to one page. Put the details in the attachment.</p></details>
+    <details><summary>Bad photos, or none</summary><p>Send two or three sharp, well-lit photos of you and the kart. Mock up their logo on the kart if you can.</p></details>
+    <details><summary>Going quiet after the deal</summary><p>Send a report after every round, tag them every time, and say thank you. That's how a sponsor renews next year.</p></details>
+    <details><summary>Giving up after one email</summary><p>Follow up politely after a week, then once more. Many sponsors say yes on the second or third message.</p></details>
+    <details><summary>Starting too big</summary><p>Local businesses say yes far more often than big brands. Start local, build a track record, then go bigger.</p></details>
+  </section>
+
+  <a class="back" href="../">‹ Use More Kerb home</a>
+</div></div>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2200)}
+function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path,title:title||path,event:true})}catch(e){}}
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+async function copy(t,ok){let done=false;try{await navigator.clipboard.writeText(t);done=true}catch(e){}toast(done?ok:"Couldn't copy, select the text instead")}
+if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
+const KEY="umk-sponsor-v1",F=["name","age","town","class","season","results","ig","tt","yt","crowd","contact","type","amount","spend","co","person","why","level"],GROUPS=["c_brand","c_content","c_extra"];
+const S=store.get(KEY,{});
+F.forEach(k=>{const el=$("#f_"+k);if(S[k]!=null)el.value=S[k];el.addEventListener("input",save)});
+GROUPS.forEach(g=>$$("#"+g+" input").forEach(c=>{c.checked=(S[g]||[]).includes(c.value);c.addEventListener("change",save)}));
+const B=store.get("umk-budget-v1",null);
+function save(){F.forEach(k=>S[k]=$("#f_"+k).value.trim());GROUPS.forEach(g=>S[g]=$$("#"+g+" input:checked").map(c=>c.value));store.set(KEY,S);$("#minorNote").hidden=!(+S.age&&+S.age<18);hint()}
+function hint(){const h=$("#budgetHint");if(B&&B.season){h.innerHTML=`Your Budget Calculator says your season costs about <b>£${Math.round(B.season).toLocaleString("en-GB")}</b>. <a href="#" id="useB" style="color:#FF0074">Use part of it</a>`;const u=$("#useB");u.onclick=e=>{e.preventDefault();$("#f_amount").value=Math.round(B.season/4/50)*50;save();toast("Added a quarter of your season budget")}}else h.textContent="Tip: work out your real costs in the Budget Calculator first, then ask for a specific part of it."}
+save();
+function go(n){$$(".pane").forEach(p=>p.hidden=p.dataset.p!=String(n));$$("#steps button").forEach(b=>b.classList.toggle("on",b.dataset.s==String(n)));if(n==4)build();document.getElementById("scroller").scrollTo({top:0,behavior:"smooth"});gc("sponsor-step-"+n,"Sponsorship: step "+n)}
+$$("[data-go]").forEach(b=>b.onclick=()=>go(+b.dataset.go));$$("#steps button").forEach(b=>b.onclick=()=>go(+b.dataset.s));
+const num=v=>(+v||0),fmt=n=>n.toLocaleString("en-GB");
+function reach(){const p=[];if(num(S.ig))p.push(fmt(num(S.ig))+" Instagram followers");if(num(S.tt))p.push(fmt(num(S.tt))+" TikTok followers");if(num(S.yt))p.push(fmt(num(S.yt))+" YouTube subscribers");return p}
+function build(){
+  const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])];
+  const askTxt=S.type==="product"?(S.spend?`products or services for ${S.spend}`:"products or services"):(num(S.amount)?`£${fmt(num(S.amount))}${S.spend?" towards "+S.spend:""}`:(S.spend?"support towards "+S.spend:"support"))+(S.type==="both"?", or products or services instead":"");
+  const r=reach(),hi=results[0];
+  const email=`Subject: ${S.level||"Partner"} opportunity: ${S.co||"[Company]"} x ${S.name||"[Your name]"} karting ${new Date().getFullYear()+1}
+
+Hi ${S.person?S.person.split(" ")[0]:"[name]"},
+
+I'm ${S.name||"[your name]"}${S.age?", "+S.age+",":""} a kart racer from ${S.town||"[town]"} racing ${S.class||"[class]"}${S.season?" ("+S.season+")":""}.${hi?" Most recently: "+hi+".":""}
+
+I'm getting in touch with ${S.co||"[company]"} because ${S.why||"[why them]"}.
+
+I'm looking for ${askTxt}. In return ${S.co||"you"} would get ${offer.length?offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1"):"[what they get]"}${offer.length>3?", plus more in the attached proposal":""}.${r.length?" My racing reaches "+r.join(", ")+".":""}
+
+I've attached a one-page proposal. Could I have 10 minutes on a call next week to talk it through?
+
+Thanks,
+${S.name||"[Your name]"}
+${S.contact||"[contact]"}`;
+  const prop=`${(S.name||"[YOUR NAME]").toUpperCase()}: ${S.level||"Partner"} proposal for ${S.co||"[Company]"}
+
+ABOUT ME
+${S.name||"[Name]"}${S.age?", "+S.age:""}, from ${S.town||"[town]"}. Racing ${S.class||"[class]"}${S.season?": "+S.season:""}.
+${results.length?"\nRESULTS\n"+results.map(x=>"• "+x).join("\n")+"\n":""}
+AUDIENCE
+${r.length?r.map(x=>"• "+x).join("\n"):"• [followers, views]"}${num(S.crowd)?"\n• About "+fmt(num(S.crowd))+" people at each race meeting":""}
+
+WHY ${(S.co||"YOU").toUpperCase()}
+${S.why||"[why this company]"}
+
+WHAT ${(S.co||"YOU").toUpperCase()} GETS
+${offer.length?offer.map(x=>"• "+x).join("\n"):"• [logo places, posts, videos, guest days]"}
+
+THE ASK
+${askTxt.charAt(0).toUpperCase()+askTxt.slice(1)}.
+
+REPORTING
+After every round you'll get results, photos and reach figures, and you'll be tagged in every race-weekend post.
+
+CONTACT
+${S.name||"[Name]"}: ${S.contact||"[email / phone]"}`;
+  $("#outEmail").textContent=email;$("#outProp").textContent=prop;
+  const words=email.split(/\s+/).filter(Boolean).length;
+  const C=[
+    [!!S.co&&!!S.person,"Named the company and a person","No company or person's name: it reads like a mass email."],
+    [(S.why||"").length>15,"Said why you picked them","Say why this company: location, customers, a family link."],
+    [offer.length>=3,"Offering at least three things back",`Only ${offer.length} thing${offer.length==1?"":"s"} offered: add more in step 2.`],
+    [(S.c_extra||[]).length>0,"Included something money can't buy","Add a guest day, track day or appearance: sponsors love those."],
+    [(S.type==="product"&&!!S.spend)||num(S.amount)>0,"A clear, specific ask","No amount or product: say exactly what you need."],
+    [!!S.spend,"Said what the money pays for","Say what it pays for (tyres, entries, engine rebuild)."],
+    [r.length>0||num(S.crowd)>0,"Included real numbers","No audience numbers: add followers or spectators, even small ones."],
+    [results.length>0,"Listed results","Add at least one result or achievement."],
+    [words<=200,`Email is short (${words} words)`,`Email is ${words} words: cut it under 200.`],
+    [!!S.contact,"Easy to reply to","Add an email or phone number."],
+  ];
+  $("#checks").innerHTML=C.map(([ok,y,n])=>`<li class="${ok?"ok":"bad"}"><i>${ok?"✓":"!"}</i><span>${esc(ok?y:n)}</span></li>`).join("")+(+S.age&&+S.age<18?`<li class="bad"><i>!</i><span>You're under 18<small>Have a parent or guardian send it and be the contact.</small></span></li>`:"");
+  $("#scoreBar").style.width=Math.round(C.filter(c=>c[0]).length/C.length*100)+"%";
+}
+$("#cpEmail").onclick=()=>{copy($("#outEmail").textContent,"Email copied");gc("sponsor-copy-email","Sponsorship: copied email")};
+$("#cpProp").onclick=()=>{copy($("#outProp").textContent,"Proposal copied");gc("sponsor-copy-prop","Sponsorship: copied proposal")};
+$("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");window.print()};
+
+</script>
+</body>
+</html>

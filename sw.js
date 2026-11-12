@@ -1,13 +1,13 @@
 /* Season Planner offline support.
    Pages and race data: try the network first (so updates show straight away), fall back to the saved copy when offline.
    Logos, icons and fonts: use the saved copy, refresh it in the background. */
-const CACHE = "umk-planner-v30";
+const CACHE = "umk-planner-v31";
 const CORE = [
   "./", "index.html", "manifest.webmanifest", "version.json",
   "data/races.json", "data/brad.json",
   "gate.js", "brad-logo.png", "img/store-merch.png", "img/camo.png", "img/logo-stacked.png", "img/splat-green.png", "img/splat-pink.png", "img/store-window-2.webp", "img/umk.png", "logos/sponsors/kkc.png", "logos/sponsors/customracewear.png", "favicon.png", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "logo.png",
   "logos/sponsors/helmet28.png", "logos/sponsors/xenduri.png", "fonts/f1.ttf",
-  "team/", "team/index.html", "team/manifest.webmanifest", "team/wm.png", "team/icon-180.png", "team/icon-192.png"
+  "team/", "team/index.html", "sponsor/", "budget/", "teams/", "logos/sponsors/valor.png", "team/manifest.webmanifest", "team/wm.png", "team/icon-180.png", "team/icon-192.png"
 ];
 
 self.addEventListener("install", e => {

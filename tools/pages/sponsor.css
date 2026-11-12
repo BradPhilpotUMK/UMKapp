@@ -1,0 +1,24 @@
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 12px}
+.steps button{border:1px solid #33343b;background:rgba(18,18,22,.9);border-radius:10px;padding:9px 4px;font-weight:700;font-size:12.5px;color:var(--muted)}
+.steps button.on{background:#FF0074;border-color:#FF0074;color:#fff}
+label.mini{font-weight:500;color:var(--muted);margin-top:0}
+.ideas{margin-top:14px;padding:12px;border-radius:12px;background:rgba(0,190,0,.08);border:1px solid rgba(0,190,0,.3);font-size:14px}
+.ideas ul{margin:6px 0 0;padding-left:18px;color:#d6d7dc}
+.check ul{list-style:none;margin:0;padding:0}
+.check li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px solid rgba(255,255,255,.06);font-size:14.5px}
+.check li:first-child{border-top:0}
+.check li i{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:900;font-size:13px;margin-top:1px}
+.check li.ok i{background:#00BE00;color:#04150a}.check li.bad i{background:#FF0074;color:#fff}
+.check li small{display:block;color:var(--muted);font-size:13px}
+.score{height:8px;border-radius:99px;background:#22232a;overflow:hidden;margin-top:12px}
+.score i{display:block;height:100%;background:linear-gradient(90deg,#FF0074,#00BE00);transition:width .3s}
+.ph{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.btn.sm{padding:7px 12px;font-size:13.5px}
+.out{white-space:pre-wrap;word-wrap:break-word;font-family:var(--body);font-size:14.5px;line-height:1.5;background:#0d0d10;border:1px solid #2c2d33;border-radius:12px;padding:12px;margin:0;color:#e9e9ec}
+.tips details{border-top:1px solid rgba(255,255,255,.07);padding:10px 0}
+.tips details:first-of-type{border-top:0}
+.tips summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.tips summary::after{content:"+";color:#FF0074;font-weight:900}
+.tips details[open] summary::after{content:"–"}
+.tips p{margin:6px 0 0;color:#c9cad0;font-size:14px}
+@media print{body{background:#fff!important;color:#000}header,.lead,.steps,.pane:not([data-p="4"]),.tips,.back,.btns,.check,.card:has(#outEmail){display:none!important}#scroller{overflow:visible}.card{background:none;border:0;box-shadow:none}.out{background:none;border:0;color:#000;font-size:12pt}.card .sub,.ph button{display:none}}

@@ -165,7 +165,6 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tsec{position:relative;z-index:1;margin:20px 4px 10px;font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.62);display:flex;align-items:center;gap:10px}
 .tsec::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.22),transparent)}
 .nextrow+.tsec{margin-top:6px}
-.tiles.apps+.tsec{margin-top:44px;margin-bottom:16px}
 .tiles.extras{margin-top:0}
 /* app tiles a touch more 3D: bevelled top light, deeper bottom lip */
 .tiles.apps .tile{background-image:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,0) 38%,rgba(0,0,0,.18)),radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--c) 32%,transparent),transparent 62%);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 1px 0 0 rgba(255,255,255,.05),inset 0 -3px 0 rgba(0,0,0,.4),0 6px 0 -1px color-mix(in srgb,var(--c) 22%,#050506),0 7px 0 -1px rgba(0,0,0,.55),0 14px 26px rgba(0,0,0,.55)}
@@ -212,6 +211,22 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .ytmore a{flex:none;width:150px;text-decoration:none;color:var(--text)}
 .ytmore img{display:block;width:150px;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.1)}
 .ytmore span{display:block;font-size:12.5px;line-height:1.25;margin-top:5px;color:#d6d7dc;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* three distinct zones: apps (camo), more from UMK (pink glass), YouTube (dark screen) */
+.zone{position:relative;z-index:1;margin:44px -8px 14px;padding:4px 10px 12px;border-radius:26px}
+.zone .tiles::before{display:none}
+.zh{display:flex;align-items:center;gap:10px;margin:14px 6px 12px;font-family:var(--display);font-size:20px;font-weight:700;letter-spacing:.01em}
+.zm{background:linear-gradient(180deg,rgba(255,0,116,.20),rgba(40,4,22,.70) 30%,rgba(10,6,9,.85));border:1px solid rgba(255,0,116,.45);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 0 0 1px rgba(0,0,0,.4),0 18px 40px rgba(0,0,0,.55)}
+.zm .zh{color:#fff}.zm .zi{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#FF0074;color:#fff;font-size:16px}
+.zm .tile{background-color:rgba(18,12,16,.88)}
+.zy{background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px),radial-gradient(90% 40% at 50% 0%,rgba(0,190,0,.14),transparent 70%),rgba(6,6,8,.94);border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 0 0 6px rgba(255,255,255,.02),0 18px 40px rgba(0,0,0,.6)}
+.zy .zh{color:#fff}.zy .zyi{width:34px;height:24px;flex:none}
+.zy .ytc{border-color:rgba(255,255,255,.14);background:#0d0d10}
+.tile.soon{cursor:default;filter:grayscale(.85);opacity:.6;background:linear-gradient(120deg,rgba(255,255,255,.05),rgba(255,255,255,0) 55%),#16171b!important;border-style:dashed}
+.tile.soon .tag{background:#3a3b42;color:#e6e6ea}
+.tile.wide .art.valor{width:44%;max-width:230px;height:auto;right:14px;filter:none}
+.tile.wide.tf .art{width:50%;max-width:250px}
+.tile .tag{z-index:2}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -286,8 +301,43 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       </svg>
       <b>Team Manager</b><small>Endurance teams, staff and payments</small></a>
 
+
+    <a class="tile" data-m href="sponsor/" style="--c:#FF0074"><span class="tag">New</span>
+      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
+        <g transform="rotate(-7 120 80)">
+          <rect x="70" y="18" width="100" height="128" rx="10" fill="#f4f4f6"/>
+          <rect x="70" y="18" width="100" height="30" rx="10" fill="#FF0074"/><rect x="70" y="36" width="100" height="12" fill="#FF0074"/>
+          <text x="120" y="40" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" fill="#fff">PROPOSAL</text>
+          <rect x="82" y="58" width="44" height="26" rx="5" fill="none" stroke="#FF0074" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <text x="104" y="75" text-anchor="middle" font-family="Barlow,Arial,sans-serif" font-size="9" font-weight="800" fill="#FF0074">YOUR LOGO</text>
+          <g fill="#c9cad0"><rect x="134" y="60" width="26" height="5" rx="2.5"/><rect x="134" y="70" width="20" height="5" rx="2.5"/><rect x="82" y="96" width="78" height="5" rx="2.5"/><rect x="82" y="106" width="64" height="5" rx="2.5"/><rect x="82" y="116" width="72" height="5" rx="2.5"/></g>
+          <path d="M84 132l7 7 14-15" fill="none" stroke="#00BE00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <circle cx="66" cy="112" r="24" fill="#00BE00"/><circle cx="66" cy="112" r="18" fill="none" stroke="#04150a" stroke-opacity=".35" stroke-width="2"/>
+        <text x="66" y="122" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="26" font-weight="900" fill="#04150a">£</text>
+      </svg>
+      <b>Sponsorship Builder</b><small>Pitch sponsors properly, avoid the classic mistakes</small></a>
+
+    <a class="tile" data-m href="budget/" style="--c:#00BE00"><span class="tag">New</span>
+      <svg class="art" viewBox="0 0 200 170" aria-hidden="true">
+        <g transform="rotate(8 130 80)">
+          <rect x="88" y="14" width="86" height="124" rx="14" fill="#16171b" stroke="#00BE00" stroke-width="3"/>
+          <rect x="99" y="26" width="64" height="26" rx="6" fill="#0b2b12"/>
+          <text x="157" y="45" text-anchor="end" font-family="F1,Arial Black,sans-serif" font-size="15" font-weight="900" fill="#00BE00">£2,340</text>
+          <g fill="#33353d"><rect x="99" y="62" width="17" height="15" rx="4"/><rect x="122" y="62" width="17" height="15" rx="4"/><rect x="99" y="84" width="17" height="15" rx="4"/><rect x="122" y="84" width="17" height="15" rx="4"/><rect x="99" y="106" width="17" height="15" rx="4"/><rect x="122" y="106" width="17" height="15" rx="4"/></g>
+          <rect x="145" y="62" width="17" height="37" rx="4" fill="#FF0074"/><rect x="145" y="106" width="17" height="15" rx="4" fill="#00BE00"/>
+        </g>
+        <g><ellipse cx="62" cy="138" rx="26" ry="8" fill="#b8bac2"/><rect x="36" y="126" width="52" height="12" fill="#d6d8de"/><ellipse cx="62" cy="126" rx="26" ry="8" fill="#eceef2"/>
+        <rect x="36" y="114" width="52" height="12" fill="#d6d8de"/><ellipse cx="62" cy="114" rx="26" ry="8" fill="#f4f5f8"/><rect x="36" y="102" width="52" height="12" fill="#d6d8de"/><ellipse cx="62" cy="102" rx="26" ry="8" fill="#ffffff"/>
+        <text x="62" y="106" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="11" font-weight="900" fill="#9a9ca4">£</text></g>
+      </svg>
+      <b>Budget Calculator</b><small>What a season really costs, per race and per year</small></a>
+
+    <a class="tile wide tf" data-m href="teams/" style="--c:#FF0074"><span class="tag">New</span>
+      <svg class="art" viewBox="0 0 240 150" aria-hidden="true"><defs><linearGradient id="tfs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient></defs><g transform="translate(14 84) scale(1.05)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#00BE00"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><g transform="translate(132 84) scale(1.05)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#f1f0ec"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><g transform="translate(66 70) scale(1.25)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#FF0074"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><circle cx="190" cy="44" r="26" fill="rgba(255,255,255,.08)" stroke="#f1f0ec" stroke-width="7"/><path d="M209 63l22 22" stroke="#f1f0ec" stroke-width="10" stroke-linecap="round"/><path d="M180 44h20M190 34v20" stroke="#FF0074" stroke-width="6" stroke-linecap="round"/></svg>
+      <b>Team Finder</b><small>Find a team for endurance races, or drivers for yours</small></a>
   </nav>
-  <h2 class="tsec">More from Use More Kerb</h2>
+  <section class="zone zm" aria-label="More from Use More Kerb"><h2 class="zh"><span class="zi">✦</span>More from Use More Kerb</h2>
   <nav class="tiles extras" aria-label="More from Use More Kerb">
     <a class="tile wide mc" data-m href="members/" style="--c:#FF0074"><span class="tag">New</span>
       <svg class="art karts" viewBox="0 0 300 190" aria-hidden="true">
@@ -393,6 +443,10 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       </svg>
       <b>USE MORE KERB Championship</b><small>The race series for Team UMK members</small></a>
 
+    <div class="tile wide soon" aria-label="Valor Academy, coming soon"><span class="tag">Coming soon</span>
+      <img class="art valor" src="logos/sponsors/valor.png" alt="" width="520" height="130">
+      <b>Valor Academy</b><small>Driver development with Valor Racing</small></div>
+
     <a class="tile wide shop" href="store/" style="--c:#FF0074">
       <span class="sbar"><span class="stxt"><b>UMK Store</b><small>Merch, race kit and kart parts</small><span class="sbadge">Discount codes inside</span></span><span class="sgo">Shop now ›</span></span>
       <span class="shelf"><img src="img/store-window-2.webp" alt="Use More Kerb tee, jacket and beanie, Zamp helmet, 32Five gloves and steering wheel" width="900" height="465"></span>
@@ -402,7 +456,8 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <img class="art bradart" src="brad-logo.png" alt="" width="240" height="240">
       <b>Where's Brad racing?</b><small>Brad's upcoming races, dates and tracks</small></a>
   </nav>
-  <h2 class="tsec yts">YouTube</h2>
+  </section>
+  <section class="zone zy" aria-label="YouTube"><h2 class="zh"><svg class="zyi" viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#FF0074"/><path d="M45 24 27 14v20z" fill="#fff"/></svg>On the channel</h2>
   <div class="ytc" id="ytCard" hidden>
     <div class="ytv" id="ytV"><img id="ytThumb" alt="" loading="lazy"><span class="ytp" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#FF0074"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span><span class="ytl">Latest video</span></div>
     <div class="ytb"><b id="ytTitle"></b><small id="ytDate"></small>
@@ -410,6 +465,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
     <div class="ytmore" id="ytMore"></div>
   </div>
   <div class="ytc ytpost" id="ytPost" hidden><a class="yph" id="ypLink" target="_blank" rel="noopener"><span class="ytl">Latest post</span><small id="ypWhen"></small></a><p id="ypText"></p><img id="ypImg" alt="" loading="lazy" hidden><a class="ytgo" id="ypGo" target="_blank" rel="noopener">View &amp; comment on YouTube ›</a></div>
+  </section>
   <button class="inst" id="instBar" hidden><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>Add the Use More Kerb app to your Home Screen</button>
   <p class="foot">Made by <a href="https://www.youtube.com/@BradPhilpot" target="_blank" rel="noopener">Brad Philpot · Use More Kerb</a> on YouTube</p>
 </div></div>
@@ -420,7 +476,7 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 try{sessionStorage.setItem("umk-hub","1")}catch(e){}
 function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path,title:title||path,event:true})}catch(e){}}
-document.querySelectorAll(".tile").forEach(t=>t.addEventListener("click",()=>gc("hub-"+t.getAttribute("href").replace(/\W/g,""),"Opened "+t.querySelector("b").textContent)));
+document.querySelectorAll(".tile[href]").forEach(t=>t.addEventListener("click",()=>gc("hub-"+t.getAttribute("href").replace(/\W/g,""),"Opened "+t.querySelector("b").textContent)));
 
 /* ---------- greeting + next races ---------- */
 const dn=s=>{const [y,m,d]=String(s).split("-").map(Number);return Math.floor(Date.UTC(y,m-1,d)/864e5)};
@@ -459,7 +515,7 @@ function applyLocks(){const U=window.UMK;if(!U||!U.on||!U.signedIn||U.member)ret
   document.querySelectorAll(".tile[data-m]").forEach(t=>{t.classList.add("locked");t.setAttribute("aria-label",t.querySelector("b").textContent+" (members only)")});
   const mine=document.querySelector("#nextRow .nxw");if(mine){mine.classList.add("locked");const b=mine.querySelector("#avBtn");if(b)b.remove()}
   if(!document.querySelector(".upbar")){const u=document.createElement("button");u.className="upbar";u.type="button";
-    u.innerHTML="<span><b>Unlock the full app</b><small>Season Planner, Setup Coach, Team Manager and the USE MORE KERB Championship are for channel members</small></span><em>\u203a</em>";
+    u.innerHTML="<span><b>Unlock the full app</b><small>Season Planner, Setup Coach, Team Manager, Sponsorship Builder, Budget Calculator, Team Finder and the USE MORE KERB Championship are for channel members</small></span><em>\u203a</em>";
     u.onclick=()=>U.upgrade();(document.querySelector(".tsec")||document.querySelector(".tiles")).before(u)}}
 document.addEventListener("click",e=>{const t=e.target.closest(".tile.locked,.nxw.locked");if(!t)return;e.preventDefault();e.stopPropagation();window.UMK&&window.UMK.upgrade()},true);
 
@@ -589,7 +645,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794441103";
+const BUILD="1794486080";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<style>html,body{background:#000}</style>
+<script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
+<meta charset="utf-8">
+<script src="../gate.js"></script>
+<meta name="color-scheme" content="dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Use More Kerb Budget Calculator</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta name="apple-mobile-web-app-title" content="Use More Kerb">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="../startup/828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1170x2532.png">
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1284x2778.png">
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1179x2556.png">
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1290x2796.png">
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1206x2622.png">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1320x2868.png">
+<link rel="apple-touch-startup-image" media="(device-width: 360px) and (device-height: 780px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1080x2340.png">
+<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="../startup/1260x2736.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Work out what a karting season really costs, per race and per year.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../hub.css">
+<style>
+:root{--accent:#FF0074;--go:#00BE00}
+body{background:#000 url(../img/camo.png) center/cover no-repeat}
+header.top{position:relative;background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+header.top .brand{text-align:center}
+header.top .brand .r{position:relative;justify-content:center;min-height:30px;margin-bottom:8px}
+header.top .brand .r .homechip{position:absolute;left:0;top:50%;transform:translateY(-50%);margin:0}
+header.top .brand .r img{height:16px}
+header.top .brand h1{font-size:clamp(24px,7.4vw,36px);white-space:nowrap;overflow:visible;text-shadow:0 4px 18px rgba(0,0,0,.8)}
+.lead{text-align:center;max-width:36ch;margin:2px auto 18px;color:#c9cad0;font-size:14.5px;line-height:1.5}
+.card{background:rgba(22,22,26,.92);border-color:rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 8px 20px rgba(0,0,0,.4)}
+.card h2{font-family:var(--display);font-size:19px;margin:0 0 4px}
+.card .sub{color:var(--muted);font-size:13.5px;margin:0 0 12px}
+label{display:block;font-size:13px;font-weight:600;color:#cfd0d6;margin:10px 0 4px}
+input,select,textarea{width:100%;background:#0d0d10;border:1px solid #34353c;border-radius:10px;padding:10px 11px;font-size:16px;color:var(--text)}
+textarea{min-height:76px;resize:vertical;line-height:1.4}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips label{display:inline-flex;align-items:center;gap:6px;margin:0;padding:8px 11px;border-radius:999px;border:1px solid #3a3b42;background:#121216;font-weight:600;font-size:13.5px;cursor:pointer}
+.chips input{width:auto;margin:0;accent-color:#FF0074}
+.chips label:has(input:checked){border-color:#FF0074;background:rgba(255,0,116,.14)}
+.btn.primary{background:#FF0074;border-color:#FF0074}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#FF0074;border-radius:999px;padding:3px 9px}
+.tag.g{background:#00BE00;color:#04150a}
+.note{font-size:13px;color:var(--muted);line-height:1.45}
+.seg{background:rgba(18,18,22,.92)}
+.seg button.on{background:#FF0074;color:#fff}
+.total{text-align:center;border-color:rgba(255,0,116,.45);background:radial-gradient(70% 90% at 50% 0%,rgba(255,0,116,.22),transparent 70%),rgba(16,16,20,.95)}
+.total .tl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#c9cad0;font-weight:700}
+.total>b{display:block;font-family:var(--display);font-size:clamp(40px,12vw,56px);line-height:1.05;margin:4px 0 10px}
+.total .tr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.total .tr span{background:rgba(0,0,0,.35);border-radius:12px;padding:8px}
+.total small{display:block;color:var(--muted);font-size:12px}.total .tr b{font-size:20px}
+.bars{margin-top:14px;text-align:left}
+.bars div{display:grid;grid-template-columns:96px 1fr 64px;align-items:center;gap:8px;font-size:12.5px;margin:5px 0}
+.bars i{display:block;height:9px;border-radius:9px;background:linear-gradient(90deg,#FF0074,#00BE00)}
+.bars em{font-style:normal;text-align:right;color:#d6d7dc}
+.grp{border-top:1px solid rgba(255,255,255,.07);padding-top:10px;margin-top:12px}
+.grp:first-child{border-top:0;margin-top:0;padding-top:0}
+.grp h3{font-family:var(--display);font-size:16px;margin:0 0 2px;display:flex;justify-content:space-between}
+.grp h3 em{font-style:normal;color:#00BE00;font-family:var(--body);font-size:14px;font-weight:700}
+.it{display:grid;grid-template-columns:1fr 92px;gap:8px;align-items:center;margin:7px 0}
+.it span{font-size:14px;color:#dedfe4}.it span small{display:block;color:var(--muted);font-size:12px}
+.it input{padding:8px 9px;text-align:right}
+</style>
+<script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div id="scroller"><div class="wrap">
+  <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Budget Calculator</h1></div></header>
+  <p class="lead">Add up what a season really costs, per race and per year. The figures are examples: change every one to your own.</p>
+  <div class="seg" id="mode"><button data-m="owner" class="on">Owner-driver kart</button><button data-m="rental">Rental / arrive &amp; drive</button></div>
+
+  <section class="card total" id="tot">
+    <span class="tl">Season total</span><b id="tSeason">£0</b>
+    <div class="tr"><span><small>Per race weekend</small><b id="tRace">£0</b></span><span><small>Per month (12)</small><b id="tMonth">£0</b></span></div>
+    <div class="bars" id="bars"></div>
+  </section>
+
+  <section class="card">
+    <h2>Your season</h2>
+    <div class="row2"><div><label for="races">Race weekends</label><input id="races" type="number" inputmode="numeric" min="0"></div><div><label for="tests">Test / practice days</label><input id="tests" type="number" inputmode="numeric" min="0"></div></div>
+  </section>
+
+  <section class="card" id="groups"></section>
+
+  <section class="card">
+    <h2>Use it</h2>
+    <p class="sub">Your total is saved on this phone. The Sponsorship Builder can use it to work out a specific ask.</p>
+    <div class="btns"><a class="btn primary" href="../sponsor/">Open Sponsorship Builder ›</a><button class="btn" id="copy">Copy breakdown</button><button class="btn" id="reset">Reset to examples</button></div>
+  </section>
+
+  <a class="back" href="../">‹ Use More Kerb home</a>
+</div></div>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2200)}
+function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path,title:title||path,event:true})}catch(e){}}
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+async function copy(t,ok){let done=false;try{await navigator.clipboard.writeText(t);done=true}catch(e){}toast(done?ok:"Couldn't copy, select the text instead")}
+if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
+/* each item: [id, label, note, how it scales, owner example £, rental example £]
+   scale: race = per race weekend, test = per test day, rt = per race+test day, year = once a season */
+const G=[
+ ["Entering","#FF0074",[["entry","Race entry fee","per race weekend","race",120,95],["lic","Licence & club membership","per year","year",180,40]]],
+ ["Tyres & fuel","#00BE00",[["tyre","Tyres","per race and test day","rt",170,0],["fuel","Fuel & oil","per race and test day","rt",45,0],["test","Test / practice fee","per test day","test",45,60]]],
+ ["Engine & kart","#FF0074",[["rebuild","Engine rebuilds","per year","year",900,0],["spares","Spares & breakages","per race weekend","race",80,0],["kart","Kart / engine purchase","one-off, this year","year",0,0]]],
+ ["Travel","#00BE00",[["travel","Fuel / train to the track","per race and test day","rt",70,50],["hotel","Hotel","per race weekend","race",90,60],["food","Food","per race and test day","rt",30,25]]],
+ ["Kit","#FF0074",[["kit","Suit, helmet, gloves, boots","per year","year",450,150],["coach","Coaching or team support","per race weekend","race",0,0]]],
+];
+const KEY="umk-budget-v1";
+let S=store.get(KEY,null);
+function defaults(m){const v={mode:m,races:m==="owner"?8:6,tests:m==="owner"?4:2};G.forEach(g=>g[2].forEach(i=>v[i[0]]=m==="owner"?i[4]:i[5]));return v}
+if(!S)S=defaults("owner");
+const fmt=n=>"£"+Math.round(n).toLocaleString("en-GB");
+function draw(){
+  $$("#mode button").forEach(b=>b.classList.toggle("on",b.dataset.m===S.mode));
+  $("#races").value=S.races;$("#tests").value=S.tests;
+  $("#groups").innerHTML=G.map(([t,c,items],gi)=>`<div class="grp"><h3>${t}<em id="g${gi}"></em></h3>${items.map(i=>`<div class="it"><span>${i[1]}<small>${i[2]}</small></span><input type="number" inputmode="decimal" min="0" step="any" data-k="${i[0]}" value="${S[i[0]]??0}" aria-label="${i[1]} in pounds"></div>`).join("")}</div>`).join("");
+  $$("#groups input").forEach(el=>el.addEventListener("input",()=>{S[el.dataset.k]=+el.value||0;calc()}));
+  calc();
+}
+function calc(){
+  const r=+S.races||0,t=+S.tests||0,mult={race:r,test:t,rt:r+t,year:1};let total=0;const per=[];
+  G.forEach(([name,c,items],gi)=>{let s=0;items.forEach(i=>s+=(+S[i[0]]||0)*mult[i[3]]);per.push([name,s]);total+=s;const e=$("#g"+gi);if(e)e.textContent=fmt(s)});
+  $("#tSeason").textContent=fmt(total);$("#tRace").textContent=r?fmt(total/r):"–";$("#tMonth").textContent=fmt(total/12);
+  const mx=Math.max(1,...per.map(p=>p[1]));
+  $("#bars").innerHTML=per.map(([n,v])=>`<div><span>${n}</span><i style="width:${Math.max(2,v/mx*100)}%"></i><em>${fmt(v)}</em></div>`).join("");
+  S.season=total;store.set(KEY,S);
+}
+$("#races").addEventListener("input",e=>{S.races=+e.target.value||0;calc()});
+$("#tests").addEventListener("input",e=>{S.tests=+e.target.value||0;calc()});
+$$("#mode button").forEach(b=>b.onclick=()=>{if(S.mode===b.dataset.m)return;if(confirm("Switch to "+b.textContent+" example figures? Your current numbers will be replaced.")){S=defaults(b.dataset.m);draw();gc("budget-mode-"+S.mode,"Budget: "+S.mode)}});
+$("#reset").onclick=()=>{if(confirm("Reset all figures to the examples?")){S=defaults(S.mode);draw()}};
+$("#copy").onclick=()=>{const r=+S.races||0,lines=[`My ${new Date().getFullYear()+1} karting budget`,`${r} race weekends, ${S.tests} test days`,""];G.forEach(([n,c,items])=>{lines.push(n.toUpperCase());items.forEach(i=>{if(+S[i[0]])lines.push(`  ${i[1]}: £${S[i[0]]} ${i[2]}`)})});lines.push("",`Season total: ${$("#tSeason").textContent} (${$("#tRace").textContent} per race weekend)`);copy(lines.join("\n"),"Breakdown copied");gc("budget-copy","Budget: copied")};
+draw();
+
+</script>
+</body>
+</html>

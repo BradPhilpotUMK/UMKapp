@@ -1,0 +1,85 @@
+  <p class="lead">Sponsors back drivers who make it easy to say yes. Fill this in once, and get a proposal and an email you can tailor for each company.</p>
+
+  <div class="steps" id="steps">
+    <button class="on" data-s="1">1 You</button><button data-s="2">2 Offer</button><button data-s="3">3 Company</button><button data-s="4">4 Proposal</button>
+  </div>
+
+  <section class="card pane" data-p="1">
+    <h2>About you</h2><p class="sub">Facts, not adjectives. Numbers beat "passionate and dedicated".</p>
+    <div class="row2"><div><label for="f_name">Your name</label><input id="f_name" autocomplete="name"></div><div><label for="f_age">Age</label><input id="f_age" type="number" inputmode="numeric" min="5" max="80"></div></div>
+    <div class="row2"><div><label for="f_town">Home town</label><input id="f_town" placeholder="e.g. Reading"></div><div><label for="f_class">Class / series</label><input id="f_class" placeholder="e.g. Rotax Junior, BRKC"></div></div>
+    <label for="f_season">What you're racing next season</label><input id="f_season" placeholder="e.g. 8-round club championship + 2 national rounds">
+    <label for="f_results">Best results (one per line)</label><textarea id="f_results" placeholder="2nd, Club Championship 2026&#10;3 race wins, Rowrah 2026"></textarea>
+    <label>Your audience</label>
+    <div class="row2"><div><label for="f_ig" class="mini">Instagram followers</label><input id="f_ig" type="number" inputmode="numeric" min="0"></div><div><label for="f_tt" class="mini">TikTok followers</label><input id="f_tt" type="number" inputmode="numeric" min="0"></div></div>
+    <div class="row2"><div><label for="f_yt" class="mini">YouTube subscribers</label><input id="f_yt" type="number" inputmode="numeric" min="0"></div><div><label for="f_crowd" class="mini">Spectators per meeting (approx)</label><input id="f_crowd" type="number" inputmode="numeric" min="0"></div></div>
+    <label for="f_contact">Contact (email or phone)</label><input id="f_contact" autocomplete="email">
+    <p class="note" id="minorNote" hidden>Under 18? Ask a parent or guardian to send the email and be the contact. Sponsors expect it, and it keeps you safe.</p>
+    <div class="btns"><button class="btn primary" data-go="2">Next: what you offer ›</button></div>
+  </section>
+
+  <section class="card pane" data-p="2" hidden>
+    <h2>What the sponsor gets</h2><p class="sub">The biggest mistake is only asking. Show what they get back.</p>
+    <label>Branding</label>
+    <div class="chips" id="c_brand">
+      <label><input type="checkbox" value="Your logo on the kart (front nose and sidepods)">Kart</label>
+      <label><input type="checkbox" value="Your logo on my race suit">Race suit</label>
+      <label><input type="checkbox" value="Your logo on my helmet">Helmet</label>
+      <label><input type="checkbox" value="Your logo on the team awning / trailer">Awning or trailer</label>
+      <label><input type="checkbox" value="Your logo on team clothing worn in the paddock">Teamwear</label>
+    </div>
+    <label>Content and reach</label>
+    <div class="chips" id="c_content">
+      <label><input type="checkbox" value="A thank-you post after every race weekend, tagging the sponsor">Race-weekend posts</label>
+      <label><input type="checkbox" value="Onboard and highlight videos with the sponsor visible">Videos</label>
+      <label><input type="checkbox" value="Photos of the branded kit for the sponsor's own website and social media">Photos for them</label>
+      <label><input type="checkbox" value="A short report after each round: results, photos and reach">Round reports</label>
+    </div>
+    <label>Something money can't buy</label>
+    <div class="chips" id="c_extra">
+      <label><input type="checkbox" value="A guest day at a race meeting for the sponsor's staff or customers">Race-day guests</label>
+      <label><input type="checkbox" value="A kart experience or track day for their team">Track day</label>
+      <label><input type="checkbox" value="An appearance at their business, school or community event with the kart">Appearances</label>
+      <label><input type="checkbox" value="Trophies and podium photos shared with them first">Podium photos</label>
+    </div>
+    <label for="f_ask">What you're asking for</label>
+    <div class="row2"><div><select id="f_type"><option value="money">Money</option><option value="product">Products or services</option><option value="both">Both</option></select></div><div><input id="f_amount" type="number" inputmode="numeric" min="0" placeholder="£ amount"></div></div>
+    <label for="f_spend">What it pays for</label><input id="f_spend" placeholder="e.g. tyres and entry fees for 4 rounds">
+    <p class="note" id="budgetHint"></p>
+    <div class="btns"><button class="btn" data-go="1">‹ Back</button><button class="btn primary" data-go="3">Next: the company ›</button></div>
+  </section>
+
+  <section class="card pane" data-p="3" hidden>
+    <h2>Who you're asking</h2><p class="sub">One proposal per company. Name a person and say why them.</p>
+    <div class="row2"><div><label for="f_co">Company</label><input id="f_co" placeholder="e.g. Smith's Garage"></div><div><label for="f_person">Person's name</label><input id="f_person" placeholder="e.g. Sarah Smith"></div></div>
+    <label for="f_why">Why them? (their customers, where they are, what links you)</label><textarea id="f_why" placeholder="e.g. Local to my track, their customers are drivers, my dad has used them for 10 years"></textarea>
+    <label for="f_level">Package</label>
+    <select id="f_level"><option value="Supporter">Supporter (small: a product or a little money)</option><option value="Partner" selected>Partner (one season, logo and content)</option><option value="Title partner">Title partner (main name on the kart and kit)</option></select>
+    <div class="ideas"><b>Where to start looking</b><ul>
+      <li>Businesses near your home or your track: garages, builders, trades, gyms, cafés</li>
+      <li>Your parents' and family's employers and suppliers</li>
+      <li>Companies whose customers are drivers or car fans</li>
+      <li>Karting and motorsport brands for products rather than money</li>
+    </ul></div>
+    <div class="btns"><button class="btn" data-go="2">‹ Back</button><button class="btn primary" data-go="4">See my proposal ›</button></div>
+  </section>
+
+  <section class="pane" data-p="4" hidden>
+    <div class="card check"><h2>Proposal check</h2><p class="sub">Fix the red ones before you send it.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
+    <div class="card"><div class="ph"><h2>Email or message</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub">Short. Their name, why them, one clear ask, and a reply that's easy.</p><pre class="out" id="outEmail"></pre></div>
+    <div class="card"><div class="ph"><h2>Proposal</h2><button class="btn sm" id="cpProp">Copy</button></div><p class="sub">Attach this as a one-page PDF with two or three good photos.</p><pre class="out" id="outProp"></pre>
+      <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
+  </section>
+
+  <section class="card tips">
+    <h2>The mistakes that lose sponsors</h2>
+    <details><summary>Sending the same email to everyone</summary><p>"Dear Sir/Madam" goes straight in the bin. Use their name, mention their business, and say why you picked them.</p></details>
+    <details><summary>Only asking, never offering</summary><p>A sponsor is buying something. List exactly what they get: logo places, posts, videos, guest days and reports.</p></details>
+    <details><summary>No numbers</summary><p>Give followers, views, how many people see you race and how many meetings you do. Small honest numbers beat vague big claims.</p></details>
+    <details><summary>No clear ask</summary><p>Say how much, or which product, and what it pays for. "Any support would be great" is easy to ignore.</p></details>
+    <details><summary>Writing an essay</summary><p>Keep the email under 200 words and the proposal to one page. Put the details in the attachment.</p></details>
+    <details><summary>Bad photos, or none</summary><p>Send two or three sharp, well-lit photos of you and the kart. Mock up their logo on the kart if you can.</p></details>
+    <details><summary>Going quiet after the deal</summary><p>Send a report after every round, tag them every time, and say thank you. That's how a sponsor renews next year.</p></details>
+    <details><summary>Giving up after one email</summary><p>Follow up politely after a week, then once more. Many sponsors say yes on the second or third message.</p></details>
+    <details><summary>Starting too big</summary><p>Local businesses say yes far more often than big brands. Start local, build a track record, then go bigger.</p></details>
+  </section>
