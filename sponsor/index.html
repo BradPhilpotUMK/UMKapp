@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<style>html,body{background:#000}</style>
+<style>html,body{background:#000}
+.mode{display:flex;gap:6px;padding:4px;border-radius:14px;background:var(--surface2,#1c1d22);border:1px solid var(--line,#2a2b31);margin:0 0 14px}
+.mode button{flex:1;border:0;border-radius:10px;padding:10px 8px;background:transparent;color:var(--muted,#9a9ca4);font-weight:800;font-size:14.5px}
+.mode button.on{background:#FF0074;color:#fff}
+body:not(.team) .tm,body.team .dr{display:none!important}
+</style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
 <script src="../gate.js"></script>
@@ -124,7 +129,7 @@ input[type=color]{height:44px;padding:4px}
 <body>
 <div id="scroller"><div class="wrap">
   <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Sponsorship Builder</h1></div></header>
-  <p class="lead">Sponsors back drivers who make it easy to say yes. Build a proposal here, then take it to a real conversation.</p>
+  <p class="lead">Sponsors back drivers and teams who make it easy to say yes. Build a proposal here, then take it to a real conversation.</p>
 
   <section class="card truth">
     <h2>Read this first</h2>
@@ -141,16 +146,19 @@ input[type=color]{height:44px;padding:4px}
   </div>
 
   <section class="card pane" data-p="1">
-    <h2>About you</h2><p class="sub">Facts, not adjectives. Numbers beat "passionate and dedicated".</p>
-    <div class="row2"><div><label for="f_name">Your name</label><input id="f_name" autocomplete="name"></div><div><label for="f_age">Age</label><input id="f_age" type="number" inputmode="numeric" min="5" max="80"></div></div>
-    <div class="row2"><div><label for="f_town">Home town</label><input id="f_town" placeholder="e.g. Reading"></div><div><label for="f_class">Class / series</label><input id="f_class" placeholder="e.g. Rotax Junior, BRKC"></div></div>
-    <label for="f_season">What you're racing next season</label><input id="f_season" placeholder="e.g. 8-round club championship + 2 national rounds">
-    <label for="f_results">Best results (one per line)</label><textarea id="f_results" placeholder="2nd, Club Championship 2026&#10;3 race wins, Rowrah 2026"></textarea>
-    <label>Your audience</label>
+    <div class="mode" id="modeSw" role="tablist" aria-label="Who is asking"><button type="button" data-mode="driver" role="tab">I'm a driver</button><button type="button" data-mode="team" role="tab">We're a team</button><input id="f_mode" type="hidden"></div>
+    <h2><span class="dr">About you</span><span class="tm">About your team</span></h2><p class="sub"><span class="dr">Facts, not adjectives. Numbers beat "passionate and dedicated".</span><span class="tm">One proposal for the whole team. Sponsors like teams: more drivers, more karts, more logos, more content.</span></p>
+    <div class="row2 dr"><div><label for="f_name">Your name</label><input id="f_name" autocomplete="name"></div><div><label for="f_age">Age</label><input id="f_age" type="number" inputmode="numeric" min="5" max="80"></div></div>
+    <div class="tm"><div class="row2"><div><label for="f_team">Team name</label><input id="f_team" placeholder="e.g. Kerb Bandits Racing"></div><div><label for="f_mgr">Team manager</label><input id="f_mgr" autocomplete="name" placeholder="Who sponsors deal with"></div></div>
+    <label for="f_drivers">Drivers (one per line, add an age if you like)</label><textarea id="f_drivers" placeholder="Sam Taylor, 19&#10;Ellie Brooks, 22&#10;Josh Kent, 31"></textarea></div>
+    <div class="row2"><div><label for="f_town"><span class="dr">Home town</span><span class="tm">Team base</span></label><input id="f_town" placeholder="e.g. Reading"></div><div><label for="f_class">Class / series</label><input id="f_class" placeholder="e.g. Rotax Junior, BRKC"></div></div>
+    <label for="f_season"><span class="dr">What you're racing next season</span><span class="tm">What the team is racing next season</span></label><input id="f_season" placeholder="e.g. 8-round club championship + 2 national rounds">
+    <label for="f_results"><span class="dr">Best results</span><span class="tm">Team results</span> (one per line)</label><textarea id="f_results" placeholder="2nd, Club Championship 2026&#10;3 race wins, Rowrah 2026"></textarea>
+    <label><span class="dr">Your audience</span><span class="tm">Team audience (all drivers and team accounts added together)</span></label>
     <div class="row2"><div><label for="f_ig" class="mini">Instagram followers</label><input id="f_ig" type="number" inputmode="numeric" min="0"></div><div><label for="f_tt" class="mini">TikTok followers</label><input id="f_tt" type="number" inputmode="numeric" min="0"></div></div>
     <div class="row2"><div><label for="f_yt" class="mini">YouTube subscribers</label><input id="f_yt" type="number" inputmode="numeric" min="0"></div><div><label for="f_crowd" class="mini">Spectators per meeting (approx)</label><input id="f_crowd" type="number" inputmode="numeric" min="0"></div></div>
-    <label for="f_contact">Contact (email or phone)</label><input id="f_contact" autocomplete="email">
-    <p class="note" id="minorNote" hidden>Under 18? Ask a parent or guardian to send the email and be the contact. Sponsors expect it, and it keeps you safe.</p>
+    <label for="f_contact"><span class="dr">Contact (email or phone)</span><span class="tm">Team manager's email or phone</span></label><input id="f_contact" autocomplete="email">
+    <p class="note" id="minorNote" hidden><span class="dr">Under 18? Ask a parent or guardian to send the email and be the contact. Sponsors expect it, and it keeps you safe.</span><span class="tm">Drivers under 18 on the team? An adult team manager or parent should be the contact and send everything.</span></p>
     <div class="btns"><button class="btn primary" data-go="2">Next: what you offer ›</button></div>
   </section>
 
@@ -244,42 +252,50 @@ function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window
 const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 async function copy(t,ok){let done=false;try{await navigator.clipboard.writeText(t);done=true}catch(e){}toast(done?ok:"Couldn't copy, select the text instead")}
 if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
-const KEY="umk-sponsor-v1",F=["col","name","age","town","class","season","results","ig","tt","yt","crowd","contact","type","amount","spend","co","person","why","level"],GROUPS=["c_brand","c_content","c_extra"];
+const KEY="umk-sponsor-v1",F=["col","mode","name","age","team","mgr","drivers","town","class","season","results","ig","tt","yt","crowd","contact","type","amount","spend","co","person","why","level"],GROUPS=["c_brand","c_content","c_extra"];
 const S=store.get(KEY,{});
 F.forEach(k=>{const el=$("#f_"+k);if(S[k]!=null)el.value=S[k];el.addEventListener("input",save)});
 GROUPS.forEach(g=>$$("#"+g+" input").forEach(c=>{c.checked=(S[g]||[]).includes(c.value);c.addEventListener("change",save)}));
 const B=store.get("umk-budget-v1",null);
-function save(){F.forEach(k=>S[k]=$("#f_"+k).value.trim());GROUPS.forEach(g=>S[g]=$$("#"+g+" input:checked").map(c=>c.value));store.set(KEY,S);$("#minorNote").hidden=!(+S.age&&+S.age<18);hint()}
+const TEAM=()=>S.mode==="team";
+function drivers(){return (S.drivers||"").split("\n").map(x=>x.trim()).filter(Boolean).map(l=>{const m=l.match(/^(.*?)[,\s]+(\d{1,2})\s*$/);return m?{n:m[1].trim(),a:+m[2]}:{n:l,a:0}})}
+function minor(){return TEAM()?drivers().some(d=>d.a&&d.a<18):(+S.age&&+S.age<18)}
+function setMode(m){$("#f_mode").value=m;document.body.classList.toggle("team",m==="team");$$("#modeSw button").forEach(b=>b.classList.toggle("on",b.dataset.mode===m));save()}
+$$("#modeSw button").forEach(b=>b.onclick=()=>{setMode(b.dataset.mode);gc("sponsor-mode-"+b.dataset.mode,"Sponsorship: "+b.dataset.mode+" mode")});
+function save(){F.forEach(k=>S[k]=$("#f_"+k).value.trim());GROUPS.forEach(g=>S[g]=$$("#"+g+" input:checked").map(c=>c.value));store.set(KEY,S);$("#minorNote").hidden=!minor();hint()}
+/* team wording for the "what they get" options */
+function tOffer(x){if(!TEAM())return x;return x.replace("on the kart (front nose and sidepods)","on every team kart (front nose and sidepods)").replace("on my race suit","on every driver's race suit").replace("on my helmet","on our drivers' helmets").replace("on the team awning","on the team awning")}
 function hint(){const h=$("#budgetHint");if(B&&B.season){h.innerHTML=`Your Budget Calculator says your season costs about <b>£${Math.round(B.season).toLocaleString("en-GB")}</b>. <a href="#" id="useB" style="color:#FF0074">Use part of it</a>`;const u=$("#useB");u.onclick=e=>{e.preventDefault();$("#f_amount").value=Math.round(B.season/4/50)*50;save();toast("Added a quarter of your season budget")}}else h.textContent="Tip: work out your real costs in the Budget Calculator first, then ask for a specific part of it."}
+if(!S.mode)S.mode="driver";$("#f_mode").value=S.mode;document.body.classList.toggle("team",S.mode==="team");$$("#modeSw button").forEach(b=>b.classList.toggle("on",b.dataset.mode===S.mode));
 save();
 function go(n){$$(".pane").forEach(p=>p.hidden=p.dataset.p!=String(n));$$("#steps button").forEach(b=>b.classList.toggle("on",b.dataset.s==String(n)));if(n==4)build();document.getElementById("scroller").scrollTo({top:0,behavior:"smooth"});gc("sponsor-step-"+n,"Sponsorship: step "+n)}
 $$("[data-go]").forEach(b=>b.onclick=()=>go(+b.dataset.go));$$("#steps button").forEach(b=>b.onclick=()=>go(+b.dataset.s));
 const num=v=>(+v||0),fmt=n=>n.toLocaleString("en-GB");
 function reach(){const p=[];if(num(S.ig))p.push(fmt(num(S.ig))+" Instagram followers");if(num(S.tt))p.push(fmt(num(S.tt))+" TikTok followers");if(num(S.yt))p.push(fmt(num(S.yt))+" YouTube subscribers");return p}
 let build=function(){
-  const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])];
+  const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])].map(tOffer),T=TEAM(),D=drivers(),who=T?(S.team||"[Team name]"):(S.name||"[Your name]"),sender=T?(S.mgr||"[Team manager]"):(S.name||"[Your name]");
   const askTxt=S.type==="product"?(S.spend?`products or services for ${S.spend}`:"products or services"):(num(S.amount)?`£${fmt(num(S.amount))}${S.spend?" towards "+S.spend:""}`:(S.spend?"support towards "+S.spend:"support"))+(S.type==="both"?", or products or services instead":"");
   const r=reach(),hi=results[0];
-  const email=`Subject: Meeting about ${S.co||"[Company]"} x ${S.name||"[Your name]"} karting ${new Date().getFullYear()+1}
+  const email=`Subject: Meeting about ${S.co||"[Company]"} x ${who} karting ${new Date().getFullYear()+1}
 
 Hi ${S.person?S.person.split(" ")[0]:"[name]"},
 
-Thanks for speaking to me today. As promised, a quick summary: I'm ${S.name||"[your name]"}${S.age?", "+S.age+",":""} a kart racer from ${S.town||"[town]"} racing ${S.class||"[class]"}${S.season?" ("+S.season+")":""}.${hi?" Most recently: "+hi+".":""}
+Thanks for speaking to me today. As promised, a quick summary: ${T?`I manage ${S.team||"[team name]"}, a kart racing team from ${S.town||"[base]"} racing ${S.class||"[class]"}${S.season?" ("+S.season+")":""}${D.length?`, with ${D.length} driver${D.length==1?"":"s"}: ${D.map(d=>d.n).join(", ").replace(/, ([^,]*)$/," and $1")}`:""}.`:`I'm ${S.name||"[your name]"}${S.age?", "+S.age+",":""} a kart racer from ${S.town||"[town]"} racing ${S.class||"[class]"}${S.season?" ("+S.season+")":""}.`}${hi?" Most recently: "+hi+".":""}
 
-I'm getting in touch with ${S.co||"[company]"} because ${S.why||"[why them]"}.
+${T?"We're":"I'm"} getting in touch with ${S.co||"[company]"} because ${S.why||"[why them]"}.
 
-I'm looking for ${askTxt}. In return ${S.co||"you"} would get ${offer.length?offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1"):"[what they get]"}${offer.length>3?", plus more in the attached proposal":""}.${r.length?" My racing reaches "+r.join(", ")+".":""}
+${T?"We're":"I'm"} looking for ${askTxt}. In return ${S.co||"you"} would get ${offer.length?offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1"):"[what they get]"}${offer.length>3?", plus more in the attached proposal":""}.${r.length?(T?" Our team reaches ":" My racing reaches ")+r.join(", ")+".":""}
 
-I'd love 15 minutes to come in and show you the proposal in person (and the kart, if that's useful). Would [day] at [time] work?
+I'd love 15 minutes to come in and show you the proposal in person (and ${T?"the karts":"the kart"}, if that's useful). Would [day] at [time] work?
 
 Thanks,
-${S.name||"[Your name]"}
+${sender}${T?"\n"+(S.team||"[Team name]"):""}
 ${S.contact||"[contact]"}`;
-  const prop=`${(S.name||"[YOUR NAME]").toUpperCase()}: ${S.level||"Partner"} proposal for ${S.co||"[Company]"}
+  const prop=`${who.toUpperCase()}: ${S.level||"Partner"} proposal for ${S.co||"[Company]"}
 
-ABOUT ME
-${S.name||"[Name]"}${S.age?", "+S.age:""}, from ${S.town||"[town]"}. Racing ${S.class||"[class]"}${S.season?": "+S.season:""}.
-${results.length?"\nRESULTS\n"+results.map(x=>"• "+x).join("\n")+"\n":""}
+${T?"ABOUT THE TEAM":"ABOUT ME"}
+${T?`${S.team||"[Team name]"}, based in ${S.town||"[base]"}. Racing ${S.class||"[class]"}${S.season?": "+S.season:""}.`:`${S.name||"[Name]"}${S.age?", "+S.age:""}, from ${S.town||"[town]"}. Racing ${S.class||"[class]"}${S.season?": "+S.season:""}.`}
+${T&&D.length?"\nDRIVERS\n"+D.map(d=>"• "+d.n+(d.a?", "+d.a:"")).join("\n")+"\n":""}${results.length?"\nRESULTS\n"+results.map(x=>"• "+x).join("\n")+"\n":""}
 AUDIENCE
 ${r.length?r.map(x=>"• "+x).join("\n"):"• [followers, views]"}${num(S.crowd)?"\n• About "+fmt(num(S.crowd))+" people at each race meeting":""}
 
@@ -296,7 +312,7 @@ REPORTING
 After every round you'll get results, photos and reach figures, and you'll be tagged in every race-weekend post.
 
 CONTACT
-${S.name||"[Name]"}: ${S.contact||"[email / phone]"}`;
+${T?(S.mgr||"[Team manager]")+", "+(S.team||"[Team name]"):(S.name||"[Name]")}: ${S.contact||"[email / phone]"}`;
   $("#outEmail").textContent=email;$("#outProp").textContent=prop;
   const words=email.split(/\s+/).filter(Boolean).length;
   const C=[
@@ -308,10 +324,11 @@ ${S.name||"[Name]"}: ${S.contact||"[email / phone]"}`;
     [!!S.spend,"Said what the money pays for","Say what it pays for (tyres, entries, engine rebuild)."],
     [r.length>0||num(S.crowd)>0,"Included real numbers","No audience numbers: add followers or spectators, even small ones."],
     [results.length>0,"Listed results","Add at least one result or achievement."],
+    ...(T?[[D.length>0,`Listed the team's ${D.length} driver${D.length==1?"":"s"}`,"List your drivers: sponsors want to know who they're backing."],[!!S.team&&!!S.mgr,"Team name and manager given","Add the team name and who the sponsor deals with."]]:[]),
     [words<=200,`Email is short (${words} words)`,`Email is ${words} words: cut it under 200.`],
     [!!S.contact,"Easy to reply to","Add an email or phone number."],
   ];
-  $("#checks").innerHTML=C.map(([ok,y,n])=>`<li class="${ok?"ok":"bad"}"><i>${ok?"✓":"!"}</i><span>${esc(ok?y:n)}</span></li>`).join("")+(+S.age&&+S.age<18?`<li class="bad"><i>!</i><span>You're under 18<small>Have a parent or guardian send it and be the contact.</small></span></li>`:"");
+  $("#checks").innerHTML=C.map(([ok,y,n])=>`<li class="${ok?"ok":"bad"}"><i>${ok?"✓":"!"}</i><span>${esc(ok?y:n)}</span></li>`).join("")+(minor()?`<li class="bad"><i>!</i><span>${T?"Some drivers are under 18":"You're under 18"}<small>${T?"An adult team manager or parent should send it and be the contact.":"Have a parent or guardian send it and be the contact."}</small></span></li>`:"");
   $("#scoreBar").style.width=Math.round(C.filter(c=>c[0]).length/C.length*100)+"%";
 }
 $("#cpEmail").onclick=()=>{copy($("#outEmail").textContent,"Email copied");gc("sponsor-copy-email","Sponsorship: copied email")};
@@ -328,19 +345,19 @@ $("#logoIn").onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.logo=a
 $$("[data-ph]").forEach(inp=>inp.onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.ph[+inp.dataset.ph]=await shrink(f,1400);saveImg();upTiles();docDraw();gc("sponsor-photo","Sponsorship: added photo")});
 $("#clearImg").onclick=()=>{IM={logo:"",ph:["","",""]};saveImg();upTiles();docDraw()};
 function docDraw(){
-  const results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])],num=v=>(+v||0),f=n=>n.toLocaleString("en-GB");
+  const T=TEAM(),D=drivers(),results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])].map(tOffer),num=v=>(+v||0),f=n=>n.toLocaleString("en-GB");
   const stats=[[num(S.ig),"Instagram followers"],[num(S.tt),"TikTok followers"],[num(S.yt),"YouTube subscribers"],[num(S.crowd),"spectators per meeting"]].filter(x=>x[0]);
   const ask=S.type==="product"?("Products or services"+(S.spend?" for "+S.spend:"")):(num(S.amount)?"£"+f(num(S.amount)):"Support")+(S.spend?" towards "+S.spend:"")+(S.type==="both"?" (or products instead)":"");
   const hero=IM.ph[0]||IM.ph[1]||IM.ph[2],pics=IM.ph.filter((p,i)=>p&&p!==hero);
   $("#doc").style.setProperty("--ac",S.col||"#FF0074");
-  $("#doc").innerHTML=`<div class="hero" style="${hero?`background-image:url(${hero})`:""}">${IM.logo?`<img class="lg ${IM.tone==="light"?"onDark":""}" src="${IM.logo}" alt="">`:""}<small>${esc(S.level||"Partner")} proposal for ${esc(S.co||"[Company]")}</small><h3>${esc(S.name||"[Your name]")}</h3><p>${esc([S.class,S.town].filter(Boolean).join(" · "))}</p></div><div class="bar"></div>
-  <div class="body"><div class="cols"><div><h4>About me</h4><p style="margin:0">${esc(S.name||"[Name]")}${S.age?", "+esc(S.age):""}, from ${esc(S.town||"[town]")}. Racing ${esc(S.class||"[class]")}${S.season?": "+esc(S.season):""}.</p>
+  $("#doc").innerHTML=`<div class="hero" style="${hero?`background-image:url(${hero})`:""}">${IM.logo?`<img class="lg ${IM.tone==="light"?"onDark":""}" src="${IM.logo}" alt="">`:""}<small>${esc(S.level||"Partner")} proposal for ${esc(S.co||"[Company]")}</small><h3>${esc(T?(S.team||"[Team name]"):(S.name||"[Your name]"))}</h3><p>${esc([S.class,S.town].filter(Boolean).join(" · "))}</p></div><div class="bar"></div>
+  <div class="body"><div class="cols"><div>${T?`<h4>About the team</h4><p style="margin:0">${esc(S.team||"[Team name]")}, based in ${esc(S.town||"[base]")}. Racing ${esc(S.class||"[class]")}${S.season?": "+esc(S.season):""}.</p>${D.length?`<h4>Drivers</h4><ul>${D.map(d=>`<li>${esc(d.n)}${d.a?", "+d.a:""}</li>`).join("")}</ul>`:""}`:`<h4>About me</h4><p style="margin:0">${esc(S.name||"[Name]")}${S.age?", "+esc(S.age):""}, from ${esc(S.town||"[town]")}. Racing ${esc(S.class||"[class]")}${S.season?": "+esc(S.season):""}.</p>`}
   ${results.length?`<h4>Results</h4><ul>${results.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:""}<h4>Why ${esc(S.co||"you")}</h4><p style="margin:0">${esc(S.why||"[why this company]")}</p></div>
   <div>${stats.length?`<h4>Audience</h4><div class="stats">${stats.map(s=>`<div class="stat"><b>${f(s[0])}</b><span>${s[1]}</span></div>`).join("")}</div>`:""}
   <h4>What you get</h4><ul class="gets">${(offer.length?offer:["[logo places, posts, videos, guest days]"]).map(o=>`<li>${esc(o)}</li>`).join("")}</ul></div></div>
   <div class="ask"><h4>The ask</h4><p>${esc(ask)}</p></div>
   ${pics.length?`<div class="pics">${pics.slice(0,2).map(p=>`<div style="background-image:url(${p})"></div>`).join("")}</div>`:""}
-  <div class="foot"><span>After every round: results, photos and reach figures, and a tag in every race-weekend post.</span><span><b>${esc(S.name||"")}</b><br>${esc(S.contact||"")}</span></div></div>`;
+  <div class="foot"><span>After every round: results, photos and reach figures, and a tag in every race-weekend post.</span><span><b>${esc(T?[S.mgr,S.team].filter(Boolean).join(", "):(S.name||""))}</b><br>${esc(S.contact||"")}</span></div></div>`;
 }
 const _build=build;build=function(){_build();docDraw()};
 $("#f_col").addEventListener("input",docDraw);upTiles();
