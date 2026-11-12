@@ -7,10 +7,10 @@
 <script src="../gate.js"></script>
 <meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Use More Kerb Setup Coach</title>
+<title>Use More Kerb Race Coach</title>
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" type="image/png" href="../favicon.png">
-<meta name="apple-mobile-web-app-title" content="Setup Coach">
+<meta name="apple-mobile-web-app-title" content="Race Coach">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/640x1136.png">
 <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="startup/750x1334.png">
@@ -174,7 +174,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 
 <div id="scroller"><div class="wrap">
   <header class="top">
-    <div class="brand"><div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img style="margin:0" src="../team/wm.png" alt="Use More Kerb"></div><h1><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M26.5 5.5a8 8 0 0 0-9.8 10.2L5.6 26.8a3.6 3.6 0 0 0 5.1 5.1l11.1-11.1A8 8 0 0 0 32 11l-4.8 4.8-4.4-1.2-1.2-4.4z" fill="#3BD16F"/><circle cx="8.2" cy="29.3" r="1.5" fill="#121614"/></svg><span>Setup coach</span></h1></div>
+    <div class="brand"><div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img style="margin:0" src="../team/wm.png" alt="Use More Kerb"></div><h1><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M26.5 5.5a8 8 0 0 0-9.8 10.2L5.6 26.8a3.6 3.6 0 0 0 5.1 5.1l11.1-11.1A8 8 0 0 0 32 11l-4.8 4.8-4.4-1.2-1.2-4.4z" fill="#3BD16F"/><circle cx="8.2" cy="29.3" r="1.5" fill="#121614"/></svg><span>Race coach</span></h1></div>
     <div class="mode" role="group" aria-label="Kart type"><button data-mode="owner" class="on">Owner</button><button data-mode="rental">Rental</button></div>
   </header>
 
@@ -278,7 +278,7 @@ function search(text,via){
   lastQ=text;
   const r=findFixes(text);
   ST.hist=[text].concat(ST.hist.filter(h=>h!==text)).slice(0,6);save();
-  gc(via==="voice"?"ask-voice":"ask-text","Asked the setup coach");
+  gc(via==="voice"?"ask-voice":"ask-text","Asked the race coach");
   const top=r.slice(0,1),rest=r.slice(1).filter(x=>x.s>=3&&x.s>=top[0].s*0.5).slice(0,3);
   let html="";
   if(top.length){

@@ -18,7 +18,7 @@ Both apps share `sw.js` for offline use and `fonts/f1.ttf`.
 
 Tap the flag next to the logo to switch between UK, Europe and USA. The Europe version reads `data/races-eu.json` and the USA version reads `data/races-us.json` (same shape as `data/races.json`) and keeps its own saved calendar on the device. Weekends, clashes, booking and shop work the same; "Where's Brad racing?" is UK only.
 
-## Setup coach
+## Race coach
 
 `setup/` is a kart troubleshooting app. Drivers describe a problem by text or voice and get driving and setup fixes from the guide in `setup/guide.js` (works offline). A Rental toggle hides setup advice. "Ask the AI" calls the Netlify function `netlify/functions/coach.mjs`, which needs an `ANTHROPIC_API_KEY` environment variable on Netlify (optional: `COACH_MODEL`, `COACH_DAILY_LIMIT`). It only works on the Netlify address, not GitHub Pages.
 
@@ -33,7 +33,7 @@ Tap the flag next to the logo to switch between UK, Europe and USA. The Europe v
 
 Everyone signs in with Discord and must be in the Use More Kerb Discord server. `gate.js` loads first on every page.
 - **Free to anyone signed in:** the home screen, Where's Brad racing? (`brad/`), Standings and the Store (pages load `gate.js` with `data-need="any"`).
-- **Members only** (the YouTube Member role, or anyone on `DISCORD_EXTRA_USER_IDS`): Season Planner, Setup Coach, Team Manager and the Members' Championship. Non-members see these greyed out with a padlock, and tapping one shows the "Unlock the full app" sheet (trailer, Join on YouTube, and "I'm a member, check again").
+- **Members only** (the YouTube Member role, or anyone on `DISCORD_EXTRA_USER_IDS`): Season Planner, Race Coach, Team Manager and the Members' Championship. Non-members see these greyed out with a padlock, and tapping one shows the "Unlock the full app" sheet (trailer, Join on YouTube, and "I'm a member, check again").
 
 The pass is issued by `netlify/functions/discord-auth.mjs` and lasts 90 days. Open any page with `?gatetest=1` to test the lock in one browser while it's switched off for everyone.
 

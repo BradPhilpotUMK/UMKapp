@@ -1,9 +1,9 @@
-/* Setup Coach AI answers. Runs on Netlify only.
+/* Race Coach AI answers. Runs on Netlify only.
    Needs the environment variable ANTHROPIC_API_KEY (Netlify: Site configuration > Environment variables).
    Optional: COACH_MODEL (defaults to claude-haiku-5-5), COACH_DAILY_LIMIT (questions per visitor per day, default 20). */
 const hits = new Map(); // best-effort per-visitor limit (resets when Netlify restarts the function)
 
-const SYSTEM = `You are the Use More Kerb Setup Coach, an expert kart racing driver and engineer helping UK and European karters.
+const SYSTEM = `You are the Use More Kerb Race Coach, an expert kart racing driver and engineer helping UK and European karters.
 Answer the driver's problem concisely for a phone screen. Use these sections with short bullet points:
 ## Most likely cause
 ## Fix it with your driving

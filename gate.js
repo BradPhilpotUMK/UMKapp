@@ -1,7 +1,7 @@
 /* Sign-in and members' lock for the Use More Kerb app.
    Load it first thing in <head> on every page:
      <script src="gate.js" data-need="any"></script>     open to anyone signed in (hub, store, standings, Where's Brad racing)
-     <script src="gate.js"></script>                     members only (planner, setup coach, team manager, members)
+     <script src="gate.js"></script>                     members only (planner, race coach, team manager, members)
    Signing in needs a Discord account in the Use More Kerb server. Members (the YouTube Member role) unlock everything.
    Sign-in is checked by netlify/functions/discord-auth.mjs. Pages can call window.UMK.upgrade() to show the
    "become a member" sheet, and read window.UMK.member. */
@@ -164,7 +164,7 @@
       '<h1>Unlock the full app</h1>' +
       '<p>Become a Team Use More Kerb channel member to unlock every tool:</p>' +
       '<ul class="get"><li><b>Season Planner</b>: every UK, European and US race in one calendar</li>' +
-      '<li><b>Setup Coach</b>: tell it what the kart’s doing, get the fix</li>' +
+      '<li><b>Race Coach</b>: driving and setup fixes, tell it what the kart’s doing</li>' +
       '<li><b>Team Manager</b> for endurance teams, staff and payments</li>' +
       '<li><b>Sponsorship Builder</b>: pitch sponsors properly and avoid the classic mistakes</li>' +
       '<li><b>Budget Calculator</b>: what a season really costs</li>' +

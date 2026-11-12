@@ -29,7 +29,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="description" content="The Use More Kerb app: season planner, championship standings, team manager, setup coach, the members championship and the store.">
+<meta name="description" content="The Use More Kerb app: season planner, championship standings, team manager, race coach, the members championship and the store.">
 <meta name="theme-color" content="#000000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -240,7 +240,8 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tiles .tile.soon{border-style:dashed!important}
 .tiles .tile{padding-top:16px!important;padding-bottom:16px!important;padding-left:16px!important}.tiles .tile:not(.wide){padding-right:16px!important}
 .tiles .tile.shop{padding:0!important}.tiles .tile.shop .sbar{background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0))!important;padding:16px 16px 6px!important}
-.tiles .tile.shop .shelf img{filter:none!important;-webkit-mask-image:linear-gradient(180deg,transparent,#000 24%,#000 82%,transparent);mask-image:linear-gradient(180deg,transparent,#000 24%,#000 82%,transparent)}
+.tiles .tile.shop .shelf img{filter:none!important}
+.tiles .tile.shop{background:radial-gradient(70% 35% at 18% 0%,rgba(255,0,116,.30),transparent 70%),radial-gradient(60% 30% at 90% 0%,rgba(0,190,0,.18),transparent 70%),linear-gradient(180deg,#24121d 0,#120910 18%,#000 30%,#000 100%)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -287,7 +288,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
         </g>
         <path d="M182 106a14 14 0 0 0-17 17l-32 32a6 6 0 0 0 8.5 8.5l32-32a14 14 0 0 0 17-17l-8 8-7.5-2-2-7.5z" fill="#00BE00"/>
       </svg>
-      <b>Setup Coach</b><small>Tell it what the kart's doing, get the fix</small></a>
+      <b>Race Coach</b><small>Driving and setup fixes: tell it what the kart's doing</small></a>
 
     <a class="tile" href="standings/" style="--c:#00BE00">
       <svg class="art" style="width:100%;max-width:240px;right:-12px;top:-14px" viewBox="0 0 200 170" aria-hidden="true"><g transform="translate(-22 -14) scale(.82)">
@@ -551,7 +552,7 @@ function applyLocks(){const U=window.UMK;if(!U||!U.on||!U.signedIn||U.member)ret
   document.querySelectorAll(".tile[data-m]").forEach(t=>{t.classList.add("locked");t.setAttribute("aria-label",t.querySelector("b").textContent+" (members only)")});
   const mine=document.querySelector("#nextRow .nxw");if(mine){mine.classList.add("locked");const b=mine.querySelector("#avBtn");if(b)b.remove()}
   if(!document.querySelector(".upbar")){const u=document.createElement("button");u.className="upbar";u.type="button";
-    u.innerHTML="<span><b>Unlock the full app</b><small>Season Planner, Setup Coach, Team Manager, Sponsorship Builder, Budget Calculator, Team Finder and the USE MORE KERB Championship are for channel members</small></span><em>\u203a</em>";
+    u.innerHTML="<span><b>Unlock the full app</b><small>Season Planner, Race Coach, Team Manager, Sponsorship Builder, Budget Calculator, Team Finder and the USE MORE KERB Championship are for channel members</small></span><em>\u203a</em>";
     u.onclick=()=>U.upgrade();(document.querySelector(".tsec")||document.querySelector(".tiles")).before(u)}}
 document.addEventListener("click",e=>{const t=e.target.closest(".tile.locked,.nxw.locked");if(!t)return;e.preventDefault();e.stopPropagation();window.UMK&&window.UMK.upgrade()},true);
 
@@ -673,7 +674,7 @@ const IS_IOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform=
 let instEv=null;addEventListener("beforeinstallprompt",e=>{e.preventDefault();instEv=e});
 function instShow(){
   if(window.UMKInstall){UMKInstall.show();return}
-  $("#instTxt").innerHTML=instEv?"One app for the season planner, standings, team manager, setup coach, members championship and store. Works without signal at the track.":IS_IOS?"In Safari, tap <b>Share</b> then <b>Add to Home Screen</b>. One app for everything, and it works without signal at the track.":"Open your browser menu and choose <b>Install app</b> or <b>Add to Home screen</b>.";
+  $("#instTxt").innerHTML=instEv?"One app for the season planner, standings, team manager, race coach, members championship and store. Works without signal at the track.":IS_IOS?"In Safari, tap <b>Share</b> then <b>Add to Home Screen</b>. One app for everything, and it works without signal at the track.":"Open your browser menu and choose <b>Install app</b> or <b>Add to Home screen</b>.";
   $("#instAct").innerHTML=instEv?'<button class="inst" id="instGo" style="margin:0">Install</button>':"";
   const g=$("#instGo");if(g)g.onclick=async()=>{const e=instEv;instEv=null;$("#inst").classList.remove("on");e.prompt();try{const r=await e.userChoice;gc("install-"+r.outcome)}catch(x){}};
   $("#inst").classList.add("on")}
@@ -682,7 +683,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794493008";
+const BUILD="1794493068";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;

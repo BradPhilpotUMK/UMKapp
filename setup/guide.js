@@ -1,4 +1,4 @@
-/* Use More Kerb Setup Coach: troubleshooting guide.
+/* Use More Kerb Race Coach: troubleshooting guide.
    Each problem: what's happening, driving fixes (owner and rental), setup changes (owner karts, in the order to try them)
    and quick checks. "kw" holds the words and phrases people use for it; "ph" is the part of the corner.
    Setup advice is general CIK-style sprint kart practice: chassis makers differ, so change one thing at a time and
