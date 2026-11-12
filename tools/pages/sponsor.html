@@ -1,4 +1,14 @@
-  <p class="lead">Sponsors back drivers who make it easy to say yes. Fill this in once, and get a proposal and an email you can tailor for each company.</p>
+  <p class="lead">Sponsors back drivers who make it easy to say yes. Build a proposal here, then take it to a real conversation.</p>
+
+  <section class="card truth">
+    <h2>Read this first</h2>
+    <p><b>Sponsorship deals are won face to face.</b> The proposals that work are the ones delivered in person, at a meeting you've arranged with the person who actually decides where the company's money goes.</p>
+    <p>Emailed proposals on their own are almost always ignored. Use this as a tool for that conversation, not something to send off blind:</p>
+    <ol><li><b>Find the decision-maker.</b> The owner, the managing director or the marketing manager. Not the info@ inbox.</li>
+    <li><b>Phone or visit to book a meeting.</b> Use the short message below to follow up and confirm it.</li>
+    <li><b>Take the proposal with you,</b> printed and on your phone. Talk them through it, show the kart if you can.</li>
+    <li><b>Follow up within a couple of days</b> with the PDF and a thank-you.</li></ol>
+  </section>
 
   <div class="steps" id="steps">
     <button class="on" data-s="1">1 You</button><button data-s="2">2 Offer</button><button data-s="3">3 Company</button><button data-s="4">4 Proposal</button>
@@ -66,13 +76,26 @@
 
   <section class="pane" data-p="4" hidden>
     <div class="card check"><h2>Proposal check</h2><p class="sub">Fix the red ones before you send it.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
-    <div class="card"><div class="ph"><h2>Email or message</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub">Short. Their name, why them, one clear ask, and a reply that's easy.</p><pre class="out" id="outEmail"></pre></div>
-    <div class="card"><div class="ph"><h2>Proposal</h2><button class="btn sm" id="cpProp">Copy</button></div><p class="sub">Attach this as a one-page PDF with two or three good photos.</p><pre class="out" id="outProp"></pre>
+    <div class="card"><div class="ph"><h2>Message to book a meeting</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub">Send this after you've phoned or called in, to confirm a time. It asks for a meeting, not a decision.</p><pre class="out" id="outEmail"></pre></div>
+    <div class="card"><h2>Make it look the part</h2><p class="sub">Add your logo and up to three photos. They're placed into the proposal for you.</p>
+      <div class="ups">
+        <label class="up" id="upLogo"><input type="file" accept="image/*" id="logoIn" hidden><span>Your logo</span></label>
+        <label class="up" id="upP0"><input type="file" accept="image/*" data-ph="0" hidden><span>Main photo</span></label>
+        <label class="up" id="upP1"><input type="file" accept="image/*" data-ph="1" hidden><span>Photo 2</span></label>
+        <label class="up" id="upP2"><input type="file" accept="image/*" data-ph="2" hidden><span>Photo 3</span></label>
+      </div>
+      <div class="row2"><div><label for="f_col">Accent colour</label><input type="color" id="f_col" value="#FF0074"></div><div><label>&nbsp;</label><button class="btn" id="clearImg" type="button" style="width:100%">Remove pictures</button></div></div>
+    </div>
+    <div class="card"><div class="ph"><h2>Proposal preview</h2><button class="btn sm" id="cpProp">Copy text</button></div><p class="sub">Print it to take to the meeting, or save it as a PDF to send afterwards.</p>
+      <div class="docwrap"><div class="doc" id="doc"></div></div>
+      <pre class="out" id="outProp" hidden></pre>
       <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
   </section>
 
   <section class="card tips">
     <h2>The mistakes that lose sponsors</h2>
+    <details open><summary>Relying on email</summary><p>Almost every cold sponsorship email is ignored. Phone, or walk in, ask who makes marketing decisions, and book a meeting with them. Bring the proposal to that meeting.</p></details>
+    <details><summary>Talking to the wrong person</summary><p>Reception and general inboxes can't say yes. Find the owner, managing director or marketing manager and get in front of them.</p></details>
     <details><summary>Sending the same email to everyone</summary><p>"Dear Sir/Madam" goes straight in the bin. Use their name, mention their business, and say why you picked them.</p></details>
     <details><summary>Only asking, never offering</summary><p>A sponsor is buying something. List exactly what they get: logo places, posts, videos, guest days and reports.</p></details>
     <details><summary>No numbers</summary><p>Give followers, views, how many people see you race and how many meetings you do. Small honest numbers beat vague big claims.</p></details>

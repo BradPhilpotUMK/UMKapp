@@ -85,14 +85,56 @@ label.mini{font-weight:500;color:var(--muted);margin-top:0}
 .tips summary::after{content:"+";color:#FF0074;font-weight:900}
 .tips details[open] summary::after{content:"–"}
 .tips p{margin:6px 0 0;color:#c9cad0;font-size:14px}
-@media print{body{background:#fff!important;color:#000}header,.lead,.steps,.pane:not([data-p="4"]),.tips,.back,.btns,.check,.card:has(#outEmail){display:none!important}#scroller{overflow:visible}.card{background:none;border:0;box-shadow:none}.out{background:none;border:0;color:#000;font-size:12pt}.card .sub,.ph button{display:none}}
+.truth{border-color:rgba(0,190,0,.45);background:linear-gradient(180deg,rgba(0,190,0,.12),rgba(16,16,20,.95) 60%)}
+.truth p{margin:6px 0;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth ol{margin:8px 0 0;padding-left:20px;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth li{margin:4px 0}
+.ups{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.up{display:flex;align-items:flex-end;justify-content:center;aspect-ratio:1;margin:0;border:2px dashed #3a3b42;border-radius:12px;background:#0d0d10 center/cover no-repeat;cursor:pointer;overflow:hidden;font-size:11.5px;font-weight:700;color:#cfd0d6;text-align:center}
+.up span{background:rgba(0,0,0,.6);width:100%;padding:4px 2px}
+.up.has{border-style:solid;border-color:var(--ac,#FF0074)}
+#upLogo{background-size:contain;background-color:#fff}
+input[type=color]{height:44px;padding:4px}
+.docwrap{border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+.doc{--ac:#FF0074;background:#fff;color:#16171b;font-family:var(--body);font-size:11px;line-height:1.45}
+.doc .hero{position:relative;min-height:180px;background:#16171b center/cover no-repeat;color:#fff;padding:18px;display:flex;flex-direction:column;justify-content:flex-end}
+.doc .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.8))}
+.doc .hero>*{position:relative}
+.doc .hero .lg{position:absolute;top:14px;right:14px;max-width:30%;max-height:60px;background:#fff;border-radius:8px;padding:6px}
+.doc .hero .lg.onDark{background:rgba(0,0,0,.45)}
+.doc .hero small{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:9px;color:#fff;opacity:.9}
+.doc .hero h3{font-family:var(--display);font-size:28px;line-height:1;margin:4px 0}
+.doc .hero p{margin:0;font-size:12px;opacity:.95}
+.doc .bar{height:6px;background:var(--ac)}
+.doc .body{padding:16px 18px}
+.doc .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+.doc h4{font-family:var(--display);font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--ac);margin:12px 0 4px}
+.doc .cols>div>h4:first-child{margin-top:0}
+.doc ul{margin:0;padding-left:15px}.doc li{margin:2px 0}
+.doc .stats{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.doc .stat{background:#f2f2f4;border-radius:8px;padding:7px 8px}.doc .stat b{display:block;font-family:var(--display);font-size:18px;color:#16171b}.doc .stat span{font-size:9.5px;color:#55565c}
+.doc .gets li::marker{color:var(--ac)}
+.doc .ask{margin-top:12px;border-radius:10px;background:var(--ac);color:#fff;padding:10px 12px}.doc .ask h4{color:#fff;margin:0 0 2px}.doc .ask p{margin:0;font-size:13px;font-weight:700}
+.doc .pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.doc .pics div{aspect-ratio:4/3;border-radius:8px;background:#ddd center/cover no-repeat}
+.doc .foot{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #e3e3e6;margin-top:12px;padding-top:8px;font-size:10px;color:#55565c}
+@page{size:A4;margin:0}
+#printDoc{display:none}
+@media print{html,body{background:#fff!important;height:auto!important;overflow:visible!important;display:block!important}body>*:not(#printDoc){display:none!important}#printDoc{display:block;width:210mm;height:297mm;overflow:hidden;font-size:12pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}#printDoc .hero{min-height:92mm;padding:12mm}#printDoc .hero h3{font-size:36pt}#printDoc .hero .lg{max-height:22mm;top:9mm;right:9mm}#printDoc .body{padding:8mm 12mm}#printDoc .ask p{font-size:15pt}#printDoc .pics div{aspect-ratio:auto;height:52mm}}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <div id="scroller"><div class="wrap">
   <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Sponsorship Builder</h1></div></header>
-  <p class="lead">Sponsors back drivers who make it easy to say yes. Fill this in once, and get a proposal and an email you can tailor for each company.</p>
+  <p class="lead">Sponsors back drivers who make it easy to say yes. Build a proposal here, then take it to a real conversation.</p>
+
+  <section class="card truth">
+    <h2>Read this first</h2>
+    <p><b>Sponsorship deals are won face to face.</b> The proposals that work are the ones delivered in person, at a meeting you've arranged with the person who actually decides where the company's money goes.</p>
+    <p>Emailed proposals on their own are almost always ignored. Use this as a tool for that conversation, not something to send off blind:</p>
+    <ol><li><b>Find the decision-maker.</b> The owner, the managing director or the marketing manager. Not the info@ inbox.</li>
+    <li><b>Phone or visit to book a meeting.</b> Use the short message below to follow up and confirm it.</li>
+    <li><b>Take the proposal with you,</b> printed and on your phone. Talk them through it, show the kart if you can.</li>
+    <li><b>Follow up within a couple of days</b> with the PDF and a thank-you.</li></ol>
+  </section>
 
   <div class="steps" id="steps">
     <button class="on" data-s="1">1 You</button><button data-s="2">2 Offer</button><button data-s="3">3 Company</button><button data-s="4">4 Proposal</button>
@@ -160,13 +202,26 @@ label.mini{font-weight:500;color:var(--muted);margin-top:0}
 
   <section class="pane" data-p="4" hidden>
     <div class="card check"><h2>Proposal check</h2><p class="sub">Fix the red ones before you send it.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
-    <div class="card"><div class="ph"><h2>Email or message</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub">Short. Their name, why them, one clear ask, and a reply that's easy.</p><pre class="out" id="outEmail"></pre></div>
-    <div class="card"><div class="ph"><h2>Proposal</h2><button class="btn sm" id="cpProp">Copy</button></div><p class="sub">Attach this as a one-page PDF with two or three good photos.</p><pre class="out" id="outProp"></pre>
+    <div class="card"><div class="ph"><h2>Message to book a meeting</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub">Send this after you've phoned or called in, to confirm a time. It asks for a meeting, not a decision.</p><pre class="out" id="outEmail"></pre></div>
+    <div class="card"><h2>Make it look the part</h2><p class="sub">Add your logo and up to three photos. They're placed into the proposal for you.</p>
+      <div class="ups">
+        <label class="up" id="upLogo"><input type="file" accept="image/*" id="logoIn" hidden><span>Your logo</span></label>
+        <label class="up" id="upP0"><input type="file" accept="image/*" data-ph="0" hidden><span>Main photo</span></label>
+        <label class="up" id="upP1"><input type="file" accept="image/*" data-ph="1" hidden><span>Photo 2</span></label>
+        <label class="up" id="upP2"><input type="file" accept="image/*" data-ph="2" hidden><span>Photo 3</span></label>
+      </div>
+      <div class="row2"><div><label for="f_col">Accent colour</label><input type="color" id="f_col" value="#FF0074"></div><div><label>&nbsp;</label><button class="btn" id="clearImg" type="button" style="width:100%">Remove pictures</button></div></div>
+    </div>
+    <div class="card"><div class="ph"><h2>Proposal preview</h2><button class="btn sm" id="cpProp">Copy text</button></div><p class="sub">Print it to take to the meeting, or save it as a PDF to send afterwards.</p>
+      <div class="docwrap"><div class="doc" id="doc"></div></div>
+      <pre class="out" id="outProp" hidden></pre>
       <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
   </section>
 
   <section class="card tips">
     <h2>The mistakes that lose sponsors</h2>
+    <details open><summary>Relying on email</summary><p>Almost every cold sponsorship email is ignored. Phone, or walk in, ask who makes marketing decisions, and book a meeting with them. Bring the proposal to that meeting.</p></details>
+    <details><summary>Talking to the wrong person</summary><p>Reception and general inboxes can't say yes. Find the owner, managing director or marketing manager and get in front of them.</p></details>
     <details><summary>Sending the same email to everyone</summary><p>"Dear Sir/Madam" goes straight in the bin. Use their name, mention their business, and say why you picked them.</p></details>
     <details><summary>Only asking, never offering</summary><p>A sponsor is buying something. List exactly what they get: logo places, posts, videos, guest days and reports.</p></details>
     <details><summary>No numbers</summary><p>Give followers, views, how many people see you race and how many meetings you do. Small honest numbers beat vague big claims.</p></details>
@@ -189,7 +244,7 @@ function gc(path,title){try{window.goatcounter&&window.goatcounter.count&&window
 const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 async function copy(t,ok){let done=false;try{await navigator.clipboard.writeText(t);done=true}catch(e){}toast(done?ok:"Couldn't copy, select the text instead")}
 if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
-const KEY="umk-sponsor-v1",F=["name","age","town","class","season","results","ig","tt","yt","crowd","contact","type","amount","spend","co","person","why","level"],GROUPS=["c_brand","c_content","c_extra"];
+const KEY="umk-sponsor-v1",F=["col","name","age","town","class","season","results","ig","tt","yt","crowd","contact","type","amount","spend","co","person","why","level"],GROUPS=["c_brand","c_content","c_extra"];
 const S=store.get(KEY,{});
 F.forEach(k=>{const el=$("#f_"+k);if(S[k]!=null)el.value=S[k];el.addEventListener("input",save)});
 GROUPS.forEach(g=>$$("#"+g+" input").forEach(c=>{c.checked=(S[g]||[]).includes(c.value);c.addEventListener("change",save)}));
@@ -201,21 +256,21 @@ function go(n){$$(".pane").forEach(p=>p.hidden=p.dataset.p!=String(n));$$("#step
 $$("[data-go]").forEach(b=>b.onclick=()=>go(+b.dataset.go));$$("#steps button").forEach(b=>b.onclick=()=>go(+b.dataset.s));
 const num=v=>(+v||0),fmt=n=>n.toLocaleString("en-GB");
 function reach(){const p=[];if(num(S.ig))p.push(fmt(num(S.ig))+" Instagram followers");if(num(S.tt))p.push(fmt(num(S.tt))+" TikTok followers");if(num(S.yt))p.push(fmt(num(S.yt))+" YouTube subscribers");return p}
-function build(){
+let build=function(){
   const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])];
   const askTxt=S.type==="product"?(S.spend?`products or services for ${S.spend}`:"products or services"):(num(S.amount)?`£${fmt(num(S.amount))}${S.spend?" towards "+S.spend:""}`:(S.spend?"support towards "+S.spend:"support"))+(S.type==="both"?", or products or services instead":"");
   const r=reach(),hi=results[0];
-  const email=`Subject: ${S.level||"Partner"} opportunity: ${S.co||"[Company]"} x ${S.name||"[Your name]"} karting ${new Date().getFullYear()+1}
+  const email=`Subject: Meeting about ${S.co||"[Company]"} x ${S.name||"[Your name]"} karting ${new Date().getFullYear()+1}
 
 Hi ${S.person?S.person.split(" ")[0]:"[name]"},
 
-I'm ${S.name||"[your name]"}${S.age?", "+S.age+",":""} a kart racer from ${S.town||"[town]"} racing ${S.class||"[class]"}${S.season?" ("+S.season+")":""}.${hi?" Most recently: "+hi+".":""}
+Thanks for speaking to me today. As promised, a quick summary: I'm ${S.name||"[your name]"}${S.age?", "+S.age+",":""} a kart racer from ${S.town||"[town]"} racing ${S.class||"[class]"}${S.season?" ("+S.season+")":""}.${hi?" Most recently: "+hi+".":""}
 
 I'm getting in touch with ${S.co||"[company]"} because ${S.why||"[why them]"}.
 
 I'm looking for ${askTxt}. In return ${S.co||"you"} would get ${offer.length?offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1"):"[what they get]"}${offer.length>3?", plus more in the attached proposal":""}.${r.length?" My racing reaches "+r.join(", ")+".":""}
 
-I've attached a one-page proposal. Could I have 10 minutes on a call next week to talk it through?
+I'd love 15 minutes to come in and show you the proposal in person (and the kart, if that's useful). Would [day] at [time] work?
 
 Thanks,
 ${S.name||"[Your name]"}
@@ -262,6 +317,36 @@ ${S.name||"[Name]"}: ${S.contact||"[email / phone]"}`;
 $("#cpEmail").onclick=()=>{copy($("#outEmail").textContent,"Email copied");gc("sponsor-copy-email","Sponsorship: copied email")};
 $("#cpProp").onclick=()=>{copy($("#outProp").textContent,"Proposal copied");gc("sponsor-copy-prop","Sponsorship: copied proposal")};
 $("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");window.print()};
+
+/* pictures for the proposal: downsized and kept on this phone */
+const IMGK="umk-sponsor-img-v1";let IM=store.get(IMGK,{logo:"",ph:["","",""]});
+function shrink(file,max){return new Promise(res=>{const r=new FileReader();r.onload=()=>{const i=new Image();i.onload=()=>{const k=Math.min(1,max/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=Math.round(i.width*k);c.height=Math.round(i.height*k);const x=c.getContext("2d");x.drawImage(i,0,0,c.width,c.height);res(c.toDataURL(file.type==="image/png"?"image/png":"image/jpeg",.82))};i.onerror=()=>res("");i.src=r.result};r.readAsDataURL(file)})}
+function saveImg(){try{localStorage.setItem(IMGK,JSON.stringify(IM))}catch(e){toast("Pictures are too big to keep on this phone, but they're in your proposal for now")}}
+function upTiles(){const set=(el,u)=>{el.style.backgroundImage=u?`url(${u})`:"";el.classList.toggle("has",!!u)};set($("#upLogo"),IM.logo);[0,1,2].forEach(i=>set($("#upP"+i),IM.ph[i]))}
+function logoTone(u){return new Promise(res=>{const i=new Image();i.onload=()=>{const c=document.createElement("canvas");c.width=c.height=40;const x=c.getContext("2d");x.drawImage(i,0,0,40,40);const d=x.getImageData(0,0,40,40).data;let L=0,n=0;for(let k=0;k<d.length;k+=4)if(d[k+3]>128){L+=.3*d[k]+.59*d[k+1]+.11*d[k+2];n++}res(n&&L/n>150?"light":"dark")};i.onerror=()=>res("dark");i.src=u})}
+$("#logoIn").onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.logo=await shrink(f,600);IM.tone=await logoTone(IM.logo);saveImg();upTiles();docDraw()};
+$$("[data-ph]").forEach(inp=>inp.onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.ph[+inp.dataset.ph]=await shrink(f,1400);saveImg();upTiles();docDraw();gc("sponsor-photo","Sponsorship: added photo")});
+$("#clearImg").onclick=()=>{IM={logo:"",ph:["","",""]};saveImg();upTiles();docDraw()};
+function docDraw(){
+  const results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])],num=v=>(+v||0),f=n=>n.toLocaleString("en-GB");
+  const stats=[[num(S.ig),"Instagram followers"],[num(S.tt),"TikTok followers"],[num(S.yt),"YouTube subscribers"],[num(S.crowd),"spectators per meeting"]].filter(x=>x[0]);
+  const ask=S.type==="product"?("Products or services"+(S.spend?" for "+S.spend:"")):(num(S.amount)?"£"+f(num(S.amount)):"Support")+(S.spend?" towards "+S.spend:"")+(S.type==="both"?" (or products instead)":"");
+  const hero=IM.ph[0]||IM.ph[1]||IM.ph[2],pics=IM.ph.filter((p,i)=>p&&p!==hero);
+  $("#doc").style.setProperty("--ac",S.col||"#FF0074");
+  $("#doc").innerHTML=`<div class="hero" style="${hero?`background-image:url(${hero})`:""}">${IM.logo?`<img class="lg ${IM.tone==="light"?"onDark":""}" src="${IM.logo}" alt="">`:""}<small>${esc(S.level||"Partner")} proposal for ${esc(S.co||"[Company]")}</small><h3>${esc(S.name||"[Your name]")}</h3><p>${esc([S.class,S.town].filter(Boolean).join(" · "))}</p></div><div class="bar"></div>
+  <div class="body"><div class="cols"><div><h4>About me</h4><p style="margin:0">${esc(S.name||"[Name]")}${S.age?", "+esc(S.age):""}, from ${esc(S.town||"[town]")}. Racing ${esc(S.class||"[class]")}${S.season?": "+esc(S.season):""}.</p>
+  ${results.length?`<h4>Results</h4><ul>${results.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:""}<h4>Why ${esc(S.co||"you")}</h4><p style="margin:0">${esc(S.why||"[why this company]")}</p></div>
+  <div>${stats.length?`<h4>Audience</h4><div class="stats">${stats.map(s=>`<div class="stat"><b>${f(s[0])}</b><span>${s[1]}</span></div>`).join("")}</div>`:""}
+  <h4>What you get</h4><ul class="gets">${(offer.length?offer:["[logo places, posts, videos, guest days]"]).map(o=>`<li>${esc(o)}</li>`).join("")}</ul></div></div>
+  <div class="ask"><h4>The ask</h4><p>${esc(ask)}</p></div>
+  ${pics.length?`<div class="pics">${pics.slice(0,2).map(p=>`<div style="background-image:url(${p})"></div>`).join("")}</div>`:""}
+  <div class="foot"><span>After every round: results, photos and reach figures, and a tag in every race-weekend post.</span><span><b>${esc(S.name||"")}</b><br>${esc(S.contact||"")}</span></div></div>`;
+}
+const _build=build;build=function(){_build();docDraw()};
+$("#f_col").addEventListener("input",docDraw);upTiles();
+
+addEventListener("beforeprint",()=>{let pd=document.getElementById("printDoc");if(!pd){pd=document.createElement("div");pd.id="printDoc";document.body.appendChild(pd)}pd.className="doc";pd.style.cssText=$("#doc").style.cssText;pd.innerHTML=$("#doc").innerHTML});
+$("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");dispatchEvent(new Event("beforeprint"));window.print()};
 
 </script>
 </body>
