@@ -1,6 +1,7 @@
 /* Sign-in and members' lock for the Use More Kerb app.
    Load it first thing in <head> on every page:
      <script src="gate.js" data-need="any"></script>     open to anyone signed in (hub, store, standings, Where's Brad racing)
+     <script src="gate.js" data-need="public"></script>  open to everyone, no sign-in needed (Live Timing)
      <script src="gate.js"></script>                     members only (planner, race coach, team manager, members)
    Signing in needs a Discord account in the Use More Kerb server. Members (the YouTube Member role) unlock everything.
    Sign-in is checked by netlify/functions/discord-auth.mjs. Pages can call window.UMK.upgrade() to show the
@@ -189,6 +190,7 @@
   }
 
   if (!ON) return;
+  if (NEED === "public") return; /* open to everyone, no sign-in (Live Timing) */
 
   /* ---------- signed in ---------- */
   if (P) {
