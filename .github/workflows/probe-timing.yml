@@ -5,6 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -sL -A "Mozilla/5.0" "https://www.alpharacehub.com/todays-events" -o t.html
-          grep -o -i '<[^>]*\(GB\|hx-\|data-region\|setregion\|SetRegion\)[^>]*>' t.html | head -30
-          grep -o 'href="https://www.alpharacehub.com/[a-z0-9]*/event/[0-9]*"' t.html
+          for f in /js/navbar.js /js/site.js; do curl -sL "https://www.alpharacehub.com$f" | grep -o '.\{0,300\}selectCountry.\{0,500\}' | head -3; done
