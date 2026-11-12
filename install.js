@@ -83,7 +83,8 @@
       var go = IOS ? "x-safari-" + url : "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;S.browser_fallback_url=" + encodeURIComponent(url) + ";end";
       html = head("You're in another app's browser, which can't add apps to your home screen.") +
         '<a class="go" id="umkIgo" href="' + go + '">' + (IOS ? "Open in Safari" : "Open in your browser") + '</a>' +
-        '<p style="color:#a4a5ad;font-size:13px;margin:10px 0 0;text-align:center">If nothing happens, tap ' + '<span class="ic d">' + DOTS + '</span> and choose <b>Open in ' + (IOS ? "Safari" : "browser") + '</b>.</p>';
+        '<button class="no" id="umkIcopy" type="button" style="color:#fff;font-weight:700">Copy link instead</button>' +
+        '<p style="color:#a4a5ad;font-size:13px;margin:6px 0 0;text-align:center">If the button does nothing, tap ' + '<span class="ic d">' + DOTS + '</span> and choose <b>Open in ' + (IOS ? "Safari" : "browser") + '</b>, or copy the link and paste it into ' + (IOS ? "Safari" : "your browser") + '.</p>';
     } else if (ev) {
       html = head("One tap and it's on your home screen.") + '<button class="go" id="umkIgo">Install the app</button>';
     } else if (IOS) {
@@ -116,6 +117,9 @@
     var g = D.getElementById("umkIgo");
     if (g && ev) g.onclick = function () { var e = ev; ev = null; close(); e.prompt(); e.userChoice.then(function (r) { gc("install-" + r.outcome, "Install prompt: " + r.outcome); }).catch(function () {}); };
     else if (g) g.onclick = function () { gc("install-openbrowser", "Install prompt: open in browser"); };
+    var cp = D.getElementById("umkIcopy");
+    if (cp) cp.onclick = function () { var u = location.href.split("#")[0]; if (!/[?&]install=1/.test(u)) u += (u.indexOf("?") < 0 ? "?" : "&") + "install=1"; var done = function () { cp.textContent = "Link copied. Paste it into " + (IOS ? "Safari" : "your browser"); };
+      try { navigator.clipboard.writeText(u).then(done, function () { prompt("Copy this link:", u); }); } catch (e) { prompt("Copy this link:", u); } gc("install-copylink", "Install prompt: copy link"); };
     gc("install-shown", "Install prompt shown" + (INAPP ? " (in-app browser)" : ev ? " (one tap)" : IOS ? " (iPhone steps)" : ""));
     return true;
   }
