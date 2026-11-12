@@ -49,7 +49,7 @@
 html{height:100%;overflow:hidden;background:var(--bg)}
 body{margin:0;height:100%;height:100dvh;overflow:hidden;display:flex;flex-direction:column;background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.4;-webkit-tap-highlight-color:transparent}
 html.ios-app body{height:100vh}
-@media (display-mode: standalone){body{height:100vh}}
+
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;cursor:pointer}
 #scroller{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
@@ -702,7 +702,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794493788";
+const BUILD="1794493848";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
