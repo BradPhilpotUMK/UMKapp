@@ -26,6 +26,15 @@
     var sc = function (e) { var t = e && e.target && e.target.nodeType === 1 ? e.target : D.scrollingElement || H; if (t !== D.getElementById("scroller") && t !== (D.scrollingElement || H)) return; H.classList.toggle("umk-scrolled", t.scrollTop > 4); };
     D.addEventListener("scroll", sc, true);
   } catch (e) {}
+  /* Android: size the page to the space the phone really gives us, so bottom tab bars never sit under the system buttons */
+  try {
+    if (/android/i.test(navigator.userAgent) || /android/i.test((navigator.userAgentData && navigator.userAgentData.platform) || "")) {
+      var fitH = function () { if (D.body) D.body.style.height = window.innerHeight + "px"; };
+      addEventListener("resize", fitH); if (window.visualViewport) visualViewport.addEventListener("resize", fitH);
+      if (D.readyState === "loading") D.addEventListener("DOMContentLoaded", fitH); else fitH();
+      addEventListener("pageshow", fitH); addEventListener("orientationchange", function () { setTimeout(fitH, 300); });
+    }
+  } catch (e) {}
   var NEED = (S && S.getAttribute("data-need")) || "member";
   var base = (function () { try { return new URL(".", S.src).href; } catch (e) { return "/"; } })();
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } }
