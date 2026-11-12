@@ -1,11 +1,13 @@
 # Members' Championship: copy the Discord sign-ups (#race-entry) and racing names (#race-form-logs)
-# into data/members-entries.json every 10 minutes. Only commits when the lists change.
+# into data/members-entries.json every 3 minutes. Only commits when the lists change.
+# GitHub often skips or delays scheduled starts, so each run stays on for about 5h45m and checks every 3 minutes;
+# the hourly schedule starts the next one (it waits in the queue until the current run ends). Free: the repo is public.
 # Needs the repository secret DISCORD_BOT_TOKEN (Settings > Secrets and variables > Actions).
 name: Discord sign-ups
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "7 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,21 +20,40 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
-      - name: Read the sign-ups from Discord
+      - name: Check Discord every 3 minutes for about 5h45m
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: |
-          python3 tools/discord_entries.py
-          python3 tools/team_finder.py
-      - name: Publish if anything changed
-        run: |
-          if git diff --quiet -- data/members-entries.json data/team-finder.json; then exit 0; fi
           git config user.name "Claude"
           git config user.email "noreply@anthropic.com"
-          git add data/members-entries.json data/team-finder.json
-          git commit -m "Discord: update championship sign-ups and Team Finder"
-          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
-          exit 1
+          end=$(( $(date +%s) + 345*60 ))
+          same() { python3 - "$1" <<'PY'
+          import json, subprocess, sys
+          f = sys.argv[1]
+          try: old = json.loads(subprocess.run(["git", "show", "HEAD:" + f], capture_output=True, text=True).stdout or "{}")
+          except Exception: old = {}
+          new = json.load(open(f))
+          for d in (old, new): d.pop("updated", None)
+          sys.exit(0 if old == new else 1)
+          PY
+          }
+          while :; do
+            git pull -q --rebase origin main || true
+            python3 tools/discord_entries.py || echo "sign-ups check failed, trying again next time"
+            python3 tools/team_finder.py || echo "team finder check failed, trying again next time"
+            changed=""
+            for f in data/members-entries.json data/team-finder.json; do
+              if [ -f "$f" ] && ! same "$f"; then changed="$changed $f"; else git checkout -q -- "$f" 2>/dev/null || true; fi
+            done
+            if [ -n "$changed" ]; then
+              git add $changed
+              git commit -q -m "Discord: update championship sign-ups and Team Finder"
+              for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+              echo "published:$changed"
+            fi
+            [ $(date +%s) -ge $end ] && break
+            sleep 180
+          done

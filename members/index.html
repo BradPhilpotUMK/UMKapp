@@ -233,7 +233,7 @@ const Disc={async load(r){Entry.round=r;let L=null;try{const x=await fetch("../d
     if(grid.length)h+=`<h3>On the grid</h3><ol class="names">${grid.map((n,i)=>`<li><span>${i+1}</span>${esc(n)}</li>`).join("")}</ol>`;
     else h+=`<p class="tba" style="margin-top:12px">${e?"No one's signed up yet. Be the first!":"The grid will show here shortly after sign-ups open."}</p>`;
     if(wl.length)h+=`<h3>Waiting list</h3><ol class="names">${wl.map((n,i)=>`<li><span>${i+1}</span>${esc(n)}</li>`).join("")}</ol>`;
-    if(L&&L.updated){const u=new Date(L.updated);h+=`<p class="tba" style="margin:12px 2px 0;font-size:13px">Updated from Discord ${u.toLocaleString("en-GB",{weekday:"short",hour:"2-digit",minute:"2-digit"})}. New sign-ups can take up to about 15 minutes to show here.</p>`}
+    if(L&&L.updated){const u=new Date(L.updated);h+=`<p class="tba" style="margin:12px 2px 0;font-size:13px">List last changed ${u.toLocaleString("en-GB",{weekday:"short",hour:"2-digit",minute:"2-digit"})}. New sign-ups show here within about 5 minutes of being accepted.</p>`}
     $("#suCard").innerHTML=h;$("#suCard").querySelectorAll("[data-ev]").forEach(a=>a.addEventListener("click",()=>gc("members-"+a.dataset.ev,"Members: "+a.dataset.ev)))}};
 (async()=>{try{const r=await fetch("../data/members.json",{cache:"no-cache"});if(!r.ok)return;const M=await r.json();
   if(M.status)$("#mStatus").textContent=M.status;if(M.intro)$("#mIntro").textContent=M.intro;
