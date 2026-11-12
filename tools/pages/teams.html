@@ -3,17 +3,17 @@
   <input id="q" type="search" placeholder="Search event, track or class" aria-label="Search listings">
   <div id="list" class="list"><p class="note" style="text-align:center;margin:20px 0">Loading…</p></div>
 
-  <section class="card how">
+  <section class="card how" id="post">
     <h2>Post a listing</h2>
-    <p class="sub">Post in <b>#team-finder</b> on the Use More Kerb Discord using this layout. It appears here within about 15 minutes.</p>
-    <pre class="out" id="tpl">Looking for: team
-Event: Daytona 24 Hours
-Date: 29/05/2027
-Class: Rental
-Weight: 78kg
-Notes: Raced the 24H twice, can do night stints</pre>
-    <div class="btns"><button class="btn" id="cpTpl">Copy layout</button><a class="btn primary" id="openDc" target="_blank" rel="noopener">Open #team-finder ›</a></div>
-    <p class="note">Use <b>Looking for: drivers</b> if you're a team with seats to fill. Delete your Discord message once you're sorted and it disappears here too. Listings drop off after the event date.</p>
+    <p class="sub">Fill this in, tap the button, then paste into <b>#team-finder</b> on Discord. It shows up here shortly after.</p>
+    <div class="seg" id="pk"><button data-k="team" class="on">I need a team</button><button data-k="drivers">My team needs drivers</button></div>
+    <label for="p_event">Event</label><input id="p_event" maxlength="60" placeholder="e.g. Daytona 24 Hours">
+    <div class="row2"><div><label for="p_date">Date</label><input id="p_date" type="date"></div><div><label for="p_cls">Class</label><input id="p_cls" maxlength="30" placeholder="e.g. Rental, X30"></div></div>
+    <div class="row2"><div id="wWrap"><label for="p_weight">Your weight in kit (kg)</label><input id="p_weight" type="number" inputmode="decimal" min="25" max="200"></div><div id="sWrap" hidden><label for="p_seats">Seats to fill</label><input id="p_seats" type="number" inputmode="numeric" min="1" max="12"></div><div><label for="p_where">Based near</label><input id="p_where" maxlength="30" placeholder="e.g. Leeds"></div></div>
+    <label for="p_notes">About you / the team</label><textarea id="p_notes" maxlength="300" placeholder="e.g. Raced the 24H twice, happy doing night stints"></textarea>
+    <pre class="out" id="tpl"></pre>
+    <div class="btns"><button class="btn primary" id="postGo">Copy &amp; open #team-finder ›</button></div>
+    <p class="note">Delete your Discord message once you're sorted and it disappears here too. Listings drop off after the event date.</p>
   </section>
   <section class="card safe">
     <h2>Stay safe</h2>
