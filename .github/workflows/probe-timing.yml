@@ -1,8 +1,0 @@
-name: Probe region (temporary)
-on: workflow_dispatch
-jobs:
-  probe:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          for f in /js/navbar.js /js/site.js; do curl -sL "https://www.alpharacehub.com$f" | grep -o '.\{0,300\}selectCountry.\{0,500\}' | head -3; done
