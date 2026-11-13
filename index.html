@@ -1,7 +1,13 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<style>html,body{background:#000}</style>
+<style>html,body{background:#000}.tiles.apps{grid-template-columns:repeat(6,1fr)!important;gap:10px!important}
+.tiles.apps .tile{grid-column:span 2}.tiles.apps .tile.wide{grid-column:1/-1}
+.tiles.apps .tile:not(.wide){padding:10px!important;border-radius:20px!important}
+.tiles.apps .tile:not(.wide) b{font-size:clamp(12.5px,3.5vw,16px);line-height:1.08;overflow-wrap:normal;hyphens:manual}
+.tiles.apps .tile:not(.wide) .tag{top:8px;left:8px;font-size:8.5px;padding:2px 6px;letter-spacing:.05em}
+.tiles.apps .tile:not(.wide) .art{padding:14px 0 4px!important}
+</style>
 <script>if(navigator.standalone===true){document.documentElement.classList.add("ios-app");try{document.documentElement.style.setProperty("--cy",(Math.max(screen.height,screen.width)/2)+"px")}catch(e){}}try{if(sessionStorage.getItem("umk-hub-intro")!=="1"){document.documentElement.classList.add("intro");setTimeout(function(){document.documentElement.classList.remove("intro")},6000)}}catch(e){}</script>
 <meta charset="utf-8">
 <script src="gate.js" data-need="any"></script>
@@ -307,6 +313,20 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
         </svg>
       </svg>
       <b>Track Guides</b><small>Layouts, target laps and onboards</small></a>
+    <a class="tile wide lt" href="timing/" style="--c:#FF2D55"><span class="tag">New</span>
+      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
+        <rect x="38" y="14" width="186" height="122" rx="16" fill="#121317" stroke="#FF2D55" stroke-width="3"/>
+        <circle cx="58" cy="32" r="5" fill="#FF2D55"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></circle>
+        <text x="70" y="37" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" fill="#FF2D55">LIVE</text>
+        <g font-family="F1,Arial Black,sans-serif" font-weight="900" font-size="13">
+          <rect x="50" y="48" width="162" height="22" rx="5" fill="#00BE00" opacity=".18"/>
+          <text x="58" y="64" fill="#00BE00">1</text><text x="76" y="64" fill="#fff">K. 27</text><text x="204" y="64" fill="#00BE00" text-anchor="end">42.318</text>
+          <text x="58" y="90" fill="#9a9ca4">2</text><text x="76" y="90" fill="#fff">B. 7</text><text x="204" y="90" fill="#cfd1d6" text-anchor="end">+0.214</text>
+          <text x="58" y="116" fill="#9a9ca4">3</text><text x="76" y="116" fill="#fff">M. 13</text><text x="204" y="116" fill="#cfd1d6" text-anchor="end">+0.902</text>
+        </g>
+        <g transform="translate(30 104) scale(.85)"><circle r="22" fill="#FF2D55"/><circle r="15" fill="#fff"/><path d="M0-10V0l7 5" stroke="#FF2D55" stroke-width="3.5" fill="none" stroke-linecap="round"/><rect x="-4" y="-30" width="8" height="7" rx="2" fill="#FF2D55"/></g>
+      </svg>
+      <b>Live Timing</b><small>Live lap times from 150+ UK tracks, clubs and championships</small></a>
     <a class="tile pm" href="post/" style="--c:#00BE00"><span class="tag">New · Free</span>
       <svg class="art" viewBox="27.3 -9.7 190.3 173.4" aria-hidden="true">
         <g transform="translate(-30 0)"><defs><clipPath id="pmc"><rect x="118" y="8" width="78" height="138" rx="10"/></clipPath>
@@ -328,20 +348,6 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
         <g transform="translate(70 104) rotate(-14)"><rect width="34" height="26" rx="5" fill="#f1f0ec"/><rect x="11" y="-4" width="12" height="6" rx="2" fill="#f1f0ec"/><circle cx="17" cy="13" r="8" fill="#0b0b0e"/><circle cx="17" cy="13" r="4.5" fill="#FF0074"/></g>
 </g></svg>
       <b>Race Post Maker</b><small>Race posts for Instagram and TikTok</small></a>
-    <a class="tile wide lt" href="timing/" style="--c:#FF2D55"><span class="tag">New</span>
-      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
-        <rect x="38" y="14" width="186" height="122" rx="16" fill="#121317" stroke="#FF2D55" stroke-width="3"/>
-        <circle cx="58" cy="32" r="5" fill="#FF2D55"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></circle>
-        <text x="70" y="37" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" fill="#FF2D55">LIVE</text>
-        <g font-family="F1,Arial Black,sans-serif" font-weight="900" font-size="13">
-          <rect x="50" y="48" width="162" height="22" rx="5" fill="#00BE00" opacity=".18"/>
-          <text x="58" y="64" fill="#00BE00">1</text><text x="76" y="64" fill="#fff">K. 27</text><text x="204" y="64" fill="#00BE00" text-anchor="end">42.318</text>
-          <text x="58" y="90" fill="#9a9ca4">2</text><text x="76" y="90" fill="#fff">B. 7</text><text x="204" y="90" fill="#cfd1d6" text-anchor="end">+0.214</text>
-          <text x="58" y="116" fill="#9a9ca4">3</text><text x="76" y="116" fill="#fff">M. 13</text><text x="204" y="116" fill="#cfd1d6" text-anchor="end">+0.902</text>
-        </g>
-        <g transform="translate(30 104) scale(.85)"><circle r="22" fill="#FF2D55"/><circle r="15" fill="#fff"/><path d="M0-10V0l7 5" stroke="#FF2D55" stroke-width="3.5" fill="none" stroke-linecap="round"/><rect x="-4" y="-30" width="8" height="7" rx="2" fill="#FF2D55"/></g>
-      </svg>
-      <b>Live Timing</b><small>Live lap times from 150+ UK tracks, clubs and championships</small></a>
     <a class="tile" href="standings/" style="--c:#00BE00">
       <svg class="art" style="width:100%;max-width:240px;right:-12px;top:-14px" viewBox="-8.2 -14.9 146.3 149.5" aria-hidden="true"><g transform="translate(-22 -14) scale(.82)">
         <g fill="#FF0074" opacity=".8"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
@@ -384,7 +390,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
         <circle cx="66" cy="112" r="24" fill="#00BE00"/><circle cx="66" cy="112" r="18" fill="none" stroke="#04150a" stroke-opacity=".35" stroke-width="2"/>
         <text x="66" y="122" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="26" font-weight="900" fill="#04150a">£</text>
       </svg>
-      <b>Sponsorship Builder</b><small>Pitch sponsors the right way</small></a>
+      <b>Sponsor&shy;ship Builder</b><small>Pitch sponsors the right way</small></a>
 
     <a class="tile" data-m href="budget/" style="--c:#00BE00"><span class="tag">New</span>
       <svg class="art" viewBox="25.7 -1.5 167.3 157.7" aria-hidden="true">
@@ -400,10 +406,10 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
         <text x="62" y="106" text-anchor="middle" font-family="F1,Arial Black,sans-serif" font-size="11" font-weight="900" fill="#9a9ca4">£</text></g>
       </svg>
       <b>Budget Calculator</b><small>What a season really costs</small></a>
-
-    <a class="tile wide tf" data-m href="teams/" style="--c:#FF0074"><span class="tag">New</span>
-      <svg class="art" viewBox="0 0 240 150" aria-hidden="true"><defs><linearGradient id="tfs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient></defs><g transform="translate(14 84) scale(1.05)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#00BE00"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><g transform="translate(132 84) scale(1.05)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#f1f0ec"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><g transform="translate(66 70) scale(1.25)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#FF0074"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><circle cx="190" cy="44" r="26" fill="rgba(255,255,255,.08)" stroke="#f1f0ec" stroke-width="7"/><path d="M209 63l22 22" stroke="#f1f0ec" stroke-width="10" stroke-linecap="round"/><path d="M180 44h20M190 34v20" stroke="#FF0074" stroke-width="6" stroke-linecap="round"/></svg>
+    <a class="tile tf" data-m href="teams/" style="--c:#FF0074"><span class="tag">New</span>
+      <svg class="art" viewBox="-1.2 2.8 247.4 148.9" aria-hidden="true"><defs><linearGradient id="tfs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient></defs><g transform="translate(14 84) scale(1.05)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#00BE00"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><g transform="translate(132 84) scale(1.05)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#f1f0ec"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><g transform="translate(66 70) scale(1.25)"><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="#FF0074"/><path d="M0 26C0 11 12 0 28 0C44 0 56 11 56 26L56 40C56 46 52 50 46 50L12 50C5 50 0 45 0 38Z" fill="url(#tfs)"/><path d="M20 20C30 16 48 16 56 20L56 34C47 37 31 37 22 34C17 30 16 23 20 20Z" fill="#0d0d12"/><path d="M24 22C33 19 46 19 54 22" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="44" width="48" height="6" rx="3" fill="#0b0b0e"/></g><circle cx="190" cy="44" r="26" fill="rgba(255,255,255,.08)" stroke="#f1f0ec" stroke-width="7"/><path d="M209 63l22 22" stroke="#f1f0ec" stroke-width="10" stroke-linecap="round"/><path d="M180 44h20M190 34v20" stroke="#FF0074" stroke-width="6" stroke-linecap="round"/></svg>
       <b>Team Finder</b><small>Find a team for endurance races, or drivers for yours</small></a>
+
   </nav>
   <section class="zone zm" aria-label="More from Use More Kerb"><h2 class="zh"><span class="zi">✦</span>More from Use More Kerb</h2>
   <nav class="tiles extras" aria-label="More from Use More Kerb">
@@ -714,7 +720,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794602902";
+const BUILD="1794603076";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
