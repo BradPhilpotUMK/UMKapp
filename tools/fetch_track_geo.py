@@ -13,7 +13,7 @@ for k, (lat, lon, r) in TRACKS.items():
     if only and k not in only: continue
     q = f'[out:json][timeout:90];(way(around:{r},{lat},{lon})["highway"="raceway"]["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"]["sport"="karting"];);out tags geom;'
     data = urllib.parse.urlencode({"data": q}).encode()
-    for url in ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]:
+    for url in ["https://overpass.private.coffee/api/interpreter", "https://overpass-api.de/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]:
         try:
             req = urllib.request.Request(url, data=data, headers={"User-Agent": "UseMoreKerb-TrackGuides/1.0 (github.com/BradPhilpotUMK/UMKapp)"})
             res = json.load(urllib.request.urlopen(req, timeout=90)); break
