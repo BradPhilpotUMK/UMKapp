@@ -1,3 +1,4 @@
+import time
 """Fetch kart track outlines from OpenStreetMap (Overpass API) for the Track Guides.
 Data (c) OpenStreetMap contributors, ODbL. Writes data/track-geo-raw.json."""
 import json, urllib.request, urllib.parse, sys
@@ -6,20 +7,20 @@ TRACKS = {
   "daytona-milton-keynes": (52.0446, -0.7836, 700),
   "buckmore-park": (51.3363, 0.4980, 700),
   "whilton-mill": (52.2810, -1.0790, 3000),
-  "pf-international": (53.0020, -0.6800, 4000),
+  "pf-international": (53.0385, -0.6612, 900),
   "shenington": (52.0800, -1.4680, 3000),
   "rowrah": (54.5480, -3.4500, 3000),
-  "clay-pigeon": (50.7950, -2.5750, 3000),
+  "clay-pigeon": (50.8050, -2.5700, 5000),
   "rye-house": (51.7690, 0.0090, 2000),
-  "lydd": (50.9580, 0.9200, 4000),
+  "lydd": (50.9350, 0.9082, 2500),
   "llandow": (51.4340, -3.4930, 3000),
-  "fulbeck": (53.0440, -0.6250, 4000),
+  "fulbeck": (53.0453, -0.6560, 600),
   "kimbolton": (52.3080, -0.3880, 3000),
-  "warden-law": (54.8450, -1.4530, 3000),
+  "warden-law": (54.8485, -1.4231, 2000),
   "larkhall": (55.7350, -3.9580, 3000),
   "glan-y-gors": (53.0300, -3.5600, 6000),
   "teesside": (54.5750, -1.1800, 4000),
-  "three-sisters": (53.5230, -2.6720, 3000),
+  "three-sisters": (53.4985, -2.6450, 2500),
   "daytona-sandown-park": (51.3720, -0.3580, 2500),
   "daytona-tamworth": (52.6300, -1.6900, 5000),
 }
@@ -34,15 +35,17 @@ def ask(url, data):
 def fetch(k, lat, lon, r):
     q = f'[out:json][timeout:60];(way(around:{r},{lat},{lon})["highway"="raceway"]["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"]["sport"="karting"];way(around:{r},{lat},{lon})["highway"="raceway"][!"sport"];);out tags geom;'
     data = urllib.parse.urlencode({"data": q}).encode()
-    with ThreadPoolExecutor(len(MIRRORS)) as ex:  # race every mirror, first good answer wins
+    ex = ThreadPoolExecutor(len(MIRRORS))  # race every mirror, first good answer wins
+    if True:
         futs = {ex.submit(ask, u, data): u for u in MIRRORS}
         for f in as_completed(futs):
-            try: return f.result()
+            try:
+                r_ = f.result(); ex.shutdown(wait=False, cancel_futures=True); return r_
             except Exception as e: print(k, futs[f], "failed", e, file=sys.stderr)
     return None
 for k, (lat, lon, r) in TRACKS.items():
     if only and k not in only: continue
-    res = fetch(k, lat, lon, r)
+    time.sleep(6); res = fetch(k, lat, lon, r)
     if res is None: print("==", k, "ALL MIRRORS FAILED"); continue
     els = [{"id": e["id"], "tags": e.get("tags", {}), "geom": [[round(p["lat"], 7), round(p["lon"], 7)] for p in e.get("geometry", [])]} for e in res.get("elements", []) if e.get("type") == "way"]
     out[k] = els
