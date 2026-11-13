@@ -2,13 +2,16 @@
 Data (c) OpenStreetMap contributors, ODbL. Writes data/track-geo-raw.json."""
 import json, urllib.request, urllib.parse, sys
 TRACKS = {
-  "kart-silverstone": (52.0786, -1.0170, 1800),
+  "kart-silverstone": (52.0733, -1.0147, 2500),
   "daytona-milton-keynes": (52.0446, -0.7836, 700),
   "buckmore-park": (51.3363, 0.4980, 700),
 }
-out = {}
+try: out = json.load(open("data/track-geo-raw.json"))
+except Exception: out = {}
+only = sys.argv[1:]
 for k, (lat, lon, r) in TRACKS.items():
-    q = f'[out:json][timeout:60];(way(around:{r},{lat},{lon})["highway"="raceway"];way(around:{r},{lat},{lon})["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"];);out tags geom;'
+    if only and k not in only: continue
+    q = f'[out:json][timeout:90];(way(around:{r},{lat},{lon})["highway"="raceway"]["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"]["sport"="karting"];);out tags geom;'
     data = urllib.parse.urlencode({"data": q}).encode()
     for url in ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]:
         try:
