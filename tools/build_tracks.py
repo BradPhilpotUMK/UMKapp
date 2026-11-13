@@ -7,6 +7,8 @@ RAW = json.load(open("data/track-geo-raw.json"))
 LAY = json.load(open("data/track-layouts.json"))
 SRC = open("tools/fetch_track_geo.py").read()
 CENTRE = {k: (float(a), float(b), float(r)) for k, a, b, r in re.findall(r'"([a-z-]+)": \(([-\d.]+), ([-\d.]+), (\d+)\)', SRC)}
+ONLY = {"buckmore-park": [92128535]}  # other OSM ways there are not the kart track
+RADIUS = {"pf-international": 450}
 MUST = {("kart-silverstone", "Grand Prix"): ("Bridge", "Priory")}
 def hav(a, b):
     R = 6371000; p1, p2 = math.radians(a[0]), math.radians(b[0]); dp = p2 - p1; dl = math.radians(b[1] - a[1])
@@ -57,9 +59,9 @@ def cycles(ways, cap=400000):
     return out, [e[2] for e in edges], steps[0] > cap
 res = {}
 for k, els in RAW.items():
-    lat0, lon0, r = CENTRE.get(k, (None, None, 1e9))
+    lat0, lon0, r = CENTRE.get(k, (None, None, 1e9)); r = RADIUS.get(k, r)
     near = lambda e: lat0 is None or min(hav(p, (lat0, lon0)) for p in e["geom"]) < r
-    kart = [e for e in els if len(e["geom"]) > 1 and near(e) and (e["tags"].get("sport") == "karting")]
+    kart = [e for e in els if len(e["geom"]) > 1 and near(e) and (e["tags"].get("sport") == "karting") and (k not in ONLY or e["id"] in ONLY[k])]
     if not kart: print(k, "NO KART WAYS"); continue
     loops, net, capped = cycles(kart)
     lays = [l for l in LAY if l["track"] == k]
