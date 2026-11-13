@@ -245,7 +245,8 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
 .tiles .tile.shop{background:radial-gradient(70% 35% at 18% 0%,rgba(255,0,116,.30),transparent 70%),radial-gradient(60% 30% at 90% 0%,rgba(0,190,0,.18),transparent 70%),linear-gradient(180deg,#24121d 0,#120910 18%,#000 30%,#000 100%)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 /* small tiles: keep the picture above the title, whatever the screen width */
 .tiles .tile:not(.wide){min-height:206px!important}
-.tiles .tile:not(.wide) .art{height:clamp(92px,25vw,118px)!important;width:auto!important;max-width:88%!important;top:-6px!important;right:-10px!important}
+.tiles .tile:not(.wide) .art{position:relative!important;top:auto!important;right:auto!important;transform:none!important;display:block;height:clamp(88px,25vw,108px)!important;width:100%!important;max-width:none!important;margin:4px 0 auto!important;padding-bottom:10px;flex:none;overflow:visible}
+.tiles .tile:not(.wide) .tag{top:12px;right:auto;left:12px}
 .tiles .tile:not(.wide)::after{height:56%!important;background:linear-gradient(transparent,rgba(16,17,20,.88) 45%)!important}
 .tiles .tile.valor{background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,0) 45%),#050506!important;border-color:rgba(255,255,255,.14)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 14px 30px rgba(0,0,0,.6)!important}
 </style>
@@ -711,7 +712,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794601548";
+const BUILD="1794602416";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
