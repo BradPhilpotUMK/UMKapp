@@ -33,7 +33,7 @@ def ask(url, data):
     req = urllib.request.Request(url, data=data, headers={"User-Agent": "UseMoreKerb-TrackGuides/1.0 (github.com/BradPhilpotUMK/UMKapp)"})
     return json.load(urllib.request.urlopen(req, timeout=75))
 def fetch(k, lat, lon, r):
-    q = f'[out:json][timeout:60];(way(around:{r},{lat},{lon})["highway"="raceway"]["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"]["sport"="karting"];way(around:{r},{lat},{lon})["highway"="raceway"][!"sport"];);out tags geom;'
+    q = f'[out:json][timeout:60];(way(around:{r},{lat},{lon})["highway"="raceway"]["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"]["sport"="karting"];);out tags geom;'
     data = urllib.parse.urlencode({"data": q}).encode()
     ex = ThreadPoolExecutor(len(MIRRORS))  # race every mirror, first good answer wins
     if True:
