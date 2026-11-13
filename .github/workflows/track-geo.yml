@@ -1,0 +1,12 @@
+name: Fetch track outlines (manual)
+on: workflow_dispatch
+permissions: { contents: write }
+jobs:
+  geo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/fetch_track_geo.py
+      - run: |
+          git config user.name "Claude"; git config user.email "noreply@anthropic.com"
+          git add data/track-geo-raw.json && git commit -m "Track outlines from OpenStreetMap" && git pull --rebase -q origin main && git push -q origin HEAD:main || true
