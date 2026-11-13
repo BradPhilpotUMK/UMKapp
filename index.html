@@ -7,7 +7,11 @@
 .tiles.apps .tile:not(.wide) b{font-size:clamp(12.5px,3.5vw,16px);line-height:1.08;overflow-wrap:normal;hyphens:manual}
 .tiles.apps .tile:not(.wide) .tag{top:8px;left:8px;font-size:8.5px;padding:2px 6px;letter-spacing:.05em}
 .tiles.apps .tile:not(.wide) .art{padding:14px 0 4px!important}
-.zone.zm{margin-top:64px!important}
+.zone.zm{margin-top:0!important}
+.sdiv{display:flex;align-items:center;gap:12px;margin:30px 4px 26px}
+.sdiv i{flex:1;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#FF0074 60%,#FF0074)}
+.sdiv i:last-child{background:linear-gradient(270deg,transparent,#00BE00 60%,#00BE00)}
+.sdiv span{flex:none;width:64px;height:14px;border-radius:3px;background:conic-gradient(#fff 25%,#111 0 50%,#fff 0 75%,#111 0) 0 0/14px 14px;box-shadow:0 0 0 1px rgba(255,255,255,.25),0 4px 12px rgba(0,0,0,.5);transform:skewX(-14deg)}
 </style>
 <script>if(navigator.standalone===true){document.documentElement.classList.add("ios-app");try{document.documentElement.style.setProperty("--cy",(Math.max(screen.height,screen.width)/2)+"px")}catch(e){}}try{if(sessionStorage.getItem("umk-hub-intro")!=="1"){document.documentElement.classList.add("intro");setTimeout(function(){document.documentElement.classList.remove("intro")},6000)}}catch(e){}</script>
 <meta charset="utf-8">
@@ -412,6 +416,7 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       <b>Live Timing</b><small>Live lap times from 150+ UK tracks, clubs and championships</small></a>
 
   </nav>
+  <div class="sdiv" aria-hidden="true"><i></i><span></span><i></i></div>
   <section class="zone zm" aria-label="More from Use More Kerb"><h2 class="zh"><span class="zi">✦</span>More from Use More Kerb</h2>
   <nav class="tiles extras" aria-label="More from Use More Kerb">
     <a class="tile wide mc" data-m href="members/" style="--c:#FF0074"><span class="tag">New</span>
@@ -721,7 +726,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794603365";
+const BUILD="1794603918";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
