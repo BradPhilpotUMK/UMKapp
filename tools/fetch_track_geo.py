@@ -26,19 +26,27 @@ TRACKS = {
 try: out = json.load(open("data/track-geo-raw.json"))
 except Exception: out = {}
 only = sys.argv[1:]
+from concurrent.futures import ThreadPoolExecutor, as_completed
+MIRRORS = ["https://overpass.private.coffee/api/interpreter", "https://overpass-api.de/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
+def ask(url, data):
+    req = urllib.request.Request(url, data=data, headers={"User-Agent": "UseMoreKerb-TrackGuides/1.0 (github.com/BradPhilpotUMK/UMKapp)"})
+    return json.load(urllib.request.urlopen(req, timeout=75))
+def fetch(k, lat, lon, r):
+    q = f'[out:json][timeout:60];(way(around:{r},{lat},{lon})["highway"="raceway"]["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"]["sport"="karting"];way(around:{r},{lat},{lon})["highway"="raceway"][!"sport"];);out tags geom;'
+    data = urllib.parse.urlencode({"data": q}).encode()
+    with ThreadPoolExecutor(len(MIRRORS)) as ex:  # race every mirror, first good answer wins
+        futs = {ex.submit(ask, u, data): u for u in MIRRORS}
+        for f in as_completed(futs):
+            try: return f.result()
+            except Exception as e: print(k, futs[f], "failed", e, file=sys.stderr)
+    return None
 for k, (lat, lon, r) in TRACKS.items():
     if only and k not in only: continue
-    import time; time.sleep(4)
-    q = f'[out:json][timeout:90];(way(around:{r},{lat},{lon})["highway"="raceway"]["sport"="karting"];way(around:{r},{lat},{lon})["leisure"="track"]["sport"="karting"];);out tags geom;'
-    data = urllib.parse.urlencode({"data": q}).encode()
-    for url in ["https://overpass.private.coffee/api/interpreter", "https://overpass-api.de/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]:
-        try:
-            req = urllib.request.Request(url, data=data, headers={"User-Agent": "UseMoreKerb-TrackGuides/1.0 (github.com/BradPhilpotUMK/UMKapp)"})
-            res = json.load(urllib.request.urlopen(req, timeout=90)); break
-        except Exception as e:
-            print(k, url, "failed", e, file=sys.stderr); res = {"elements": []}
+    res = fetch(k, lat, lon, r)
+    if res is None: print("==", k, "ALL MIRRORS FAILED"); continue
     els = [{"id": e["id"], "tags": e.get("tags", {}), "geom": [[round(p["lat"], 7), round(p["lon"], 7)] for p in e.get("geometry", [])]} for e in res.get("elements", []) if e.get("type") == "way"]
     out[k] = els
-    print("==", k, len(els))
+    print("==", k, len(els), flush=True)
     for e in els: print("  ", e["id"], len(e["geom"]), json.dumps(e["tags"])[:200])
+    json.dump(out, open("data/track-geo-raw.json", "w"), separators=(",", ":"))
 json.dump(out, open("data/track-geo-raw.json", "w"), separators=(",", ":"))

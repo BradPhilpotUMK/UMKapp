@@ -1,0 +1,604 @@
+[
+ {
+  "track": "kart-silverstone",
+  "layout": "Grand Prix",
+  "m": 1377,
+  "corners": 18,
+  "record": "1:16.1",
+  "record_note": "EKS rental record",
+  "owner": null,
+  "rental": "1:18.0",
+  "sources": [
+   "kart.silverstone.co.uk",
+   "EKS lap records"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "International",
+  "m": 932,
+  "corners": 12,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "56.5",
+  "sources": [
+   "kart.silverstone.co.uk",
+   "EKS hotlap 55.416"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "Indy",
+  "m": 950,
+  "corners": 14,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "55.9",
+  "sources": [
+   "kart.silverstone.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "National",
+  "m": 520,
+  "corners": 8,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "30.6",
+  "sources": [
+   "kart.silverstone.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "Village",
+  "m": 447,
+  "corners": 6,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "26.3",
+  "sources": [
+   "kart.silverstone.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "daytona-milton-keynes",
+  "layout": "International",
+  "m": 1360,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "1:00.5",
+  "rental": "1:17.5",
+  "sources": [
+   "daytona.co.uk (1,360m)",
+   "Brad KZ lap 55.784"
+  ],
+  "check": "DMAX target ~1:06 to check"
+ },
+ {
+  "track": "daytona-milton-keynes",
+  "layout": "National",
+  "m": null,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "sources": [
+   "Wikipedia (Daytona Motorsport)"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "daytona-milton-keynes",
+  "layout": "North",
+  "m": 375,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "18.3",
+  "rental": "22.1",
+  "sources": [
+   "Wikipedia (Daytona Motorsport)"
+  ],
+  "check": "juniors"
+ },
+ {
+  "track": "buckmore-park",
+  "layout": "International (full)",
+  "m": 1200,
+  "corners": 12,
+  "record": "48.0",
+  "record_note": "all-time, weak source",
+  "owner": "58.5",
+  "rental": "1:10.6",
+  "sources": [
+   "Club100",
+   "yumping"
+  ],
+  "check": "kartdirectory says 1,000m: check"
+ },
+ {
+  "track": "buckmore-park",
+  "layout": "National",
+  "m": 600,
+  "corners": 6,
+  "record": null,
+  "record_note": "",
+  "owner": "29.3",
+  "rental": "35.3",
+  "sources": [
+   "kartdirectory"
+  ],
+  "check": ""
+ },
+ {
+  "track": "buckmore-park",
+  "layout": "Club",
+  "m": 400,
+  "corners": 6,
+  "record": null,
+  "record_note": "",
+  "owner": "19.5",
+  "rental": "23.5",
+  "sources": [
+   "kartdirectory"
+  ],
+  "check": ""
+ },
+ {
+  "track": "whilton-mill",
+  "layout": "International",
+  "m": 1200,
+  "corners": null,
+  "record": "59.3",
+  "record_note": "",
+  "owner": "1:01.1",
+  "rental": "1:10.6",
+  "sources": [
+   "whiltonmill.co.uk",
+   "totalkarting"
+  ],
+  "check": "59.3 record looks slow for 1,200m: check class"
+ },
+ {
+  "track": "whilton-mill",
+  "layout": "National",
+  "m": 960,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "46.8",
+  "rental": "56.5",
+  "sources": [
+   "whiltonmill.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "whilton-mill",
+  "layout": "Mill",
+  "m": 450,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "22.0",
+  "rental": "26.5",
+  "sources": [
+   "whiltonmill.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "pf-international",
+  "layout": "International",
+  "m": 1382,
+  "corners": 15,
+  "record": "56.5",
+  "record_note": "BKC record",
+  "owner": "58.2",
+  "rental": "1:21.3",
+  "sources": [
+   "BKC",
+   "Wikipedia"
+  ],
+  "check": ""
+ },
+ {
+  "track": "pf-international",
+  "layout": "National",
+  "m": null,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "sources": [
+   "Wikipedia"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "shenington",
+  "layout": "Direct drive",
+  "m": 1018,
+  "corners": 11,
+  "record": "39.9",
+  "record_note": "BKC record",
+  "owner": "41.1",
+  "rental": "no public rental",
+  "sources": [
+   "BKC",
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "shenington",
+  "layout": "Gearbox",
+  "m": 1211,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "59.1",
+  "rental": "no public rental",
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "rowrah",
+  "layout": "Full circuit",
+  "m": 1030,
+  "corners": 12,
+  "record": null,
+  "record_note": "",
+  "owner": "50.2",
+  "rental": "no public rental",
+  "sources": [
+   "51gt3 (weak)"
+  ],
+  "check": "length weak"
+ },
+ {
+  "track": "clay-pigeon",
+  "layout": "Full circuit",
+  "m": 815,
+  "corners": 12,
+  "record": "34.0",
+  "record_note": "BKC record",
+  "owner": "35.0",
+  "rental": "47.9",
+  "sources": [
+   "BKC",
+   "Alpha"
+  ],
+  "check": ""
+ },
+ {
+  "track": "rye-house",
+  "layout": "Full circuit",
+  "m": 900,
+  "corners": 8,
+  "record": "41.2",
+  "record_note": "",
+  "owner": "42.5",
+  "rental": "52.9",
+  "sources": [
+   "totalkarting",
+   "Alpha says 950m"
+  ],
+  "check": "900 vs 950m"
+ },
+ {
+  "track": "lydd",
+  "layout": "International",
+  "m": 1040,
+  "corners": 10,
+  "record": "35.6",
+  "record_note": "",
+  "owner": "36.7",
+  "rental": "1:01.2",
+  "sources": [
+   "lyddkartcircuit.com",
+   "totalkarting"
+  ],
+  "check": "35.6 record too fast for 1,040m: check (maybe 1,240m?)"
+ },
+ {
+  "track": "lydd",
+  "layout": "Junior",
+  "m": 500,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "24.4",
+  "rental": "29.4",
+  "sources": [
+   "geronigo"
+  ],
+  "check": "juniors"
+ },
+ {
+  "track": "llandow",
+  "layout": "Full circuit",
+  "m": 1050,
+  "corners": 9,
+  "record": null,
+  "record_note": "",
+  "owner": "51.2",
+  "rental": "1:01.8",
+  "sources": [
+   "llandow.com"
+  ],
+  "check": ""
+ },
+ {
+  "track": "fulbeck",
+  "layout": "Full circuit",
+  "m": 930,
+  "corners": 10,
+  "record": null,
+  "record_note": "",
+  "owner": "45.4",
+  "rental": "no public rental",
+  "sources": [
+   "BKC",
+   "Brad GX-UK 56.99 P1 Jan 2024"
+  ],
+  "check": "TKZ 54.90 listed: check"
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Circuit 1",
+  "m": 990,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "48.3",
+  "rental": "no public rental",
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Circuit 2",
+  "m": 1050,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "51.2",
+  "rental": "no public rental",
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Circuit 3",
+  "m": 1083,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "52.8",
+  "rental": "no public rental",
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kimbolton",
+  "layout": "BKC",
+  "m": 999,
+  "corners": 7,
+  "record": "46.1",
+  "record_note": "BKC record",
+  "owner": "47.4",
+  "rental": "no public rental",
+  "sources": [
+   "BKC"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Gearbox",
+  "m": 958,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "46.7",
+  "rental": "no public rental",
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "warden-law",
+  "layout": "National",
+  "m": 1200,
+  "corners": 14,
+  "record": null,
+  "record_note": "",
+  "owner": "58.5",
+  "rental": "1:10.6",
+  "sources": [
+   "BKC",
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "warden-law",
+  "layout": "Junior",
+  "m": 350,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "17.1",
+  "rental": "20.6",
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": "juniors"
+ },
+ {
+  "track": "larkhall",
+  "layout": "Full (extended)",
+  "m": 1140,
+  "corners": 12,
+  "record": null,
+  "record_note": "",
+  "owner": "55.6",
+  "rental": "1:07.1",
+  "sources": [
+   "BKC"
+  ],
+  "check": "BKC record 29.19 is from old 852m layout"
+ },
+ {
+  "track": "larkhall",
+  "layout": "Short (original)",
+  "m": 852,
+  "corners": null,
+  "record": "29.2",
+  "record_note": "BKC (old layout)",
+  "owner": "41.6",
+  "rental": "50.1",
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "glan-y-gors",
+  "layout": "Full circuit",
+  "m": 1100,
+  "corners": 11,
+  "record": "53.8",
+  "record_note": "BKC record",
+  "owner": "55.5",
+  "rental": "1:04.7",
+  "sources": [
+   "BKC",
+   "totalkarting says 40.62"
+  ],
+  "check": "record conflict"
+ },
+ {
+  "track": "teesside",
+  "layout": "International",
+  "m": 2100,
+  "corners": 19,
+  "record": "1:29.0",
+  "record_note": "weak source",
+  "owner": "1:42.4",
+  "rental": "2:03.5",
+  "sources": [
+   "teessidekarting.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "teesside",
+  "layout": "National",
+  "m": null,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "sources": [
+   "teessidekarting.co.uk"
+  ],
+  "check": "length missing; 2 more layouts"
+ },
+ {
+  "track": "three-sisters",
+  "layout": "Full circuit",
+  "m": 1500,
+  "corners": null,
+  "record": "50.0",
+  "record_note": "weak source",
+  "owner": "1:13.2",
+  "rental": "1:28.2",
+  "sources": [
+   "yumping"
+  ],
+  "check": "50s for 1,500m looks wrong"
+ },
+ {
+  "track": "daytona-sandown-park",
+  "layout": "Grand Prix",
+  "m": 900,
+  "corners": 9,
+  "record": null,
+  "record_note": "",
+  "owner": "43.9",
+  "rental": "52.9",
+  "sources": [
+   "daytona.co.uk",
+   "Racing Dean DMAX 47.1"
+  ],
+  "check": ""
+ },
+ {
+  "track": "daytona-sandown-park",
+  "layout": "Alternate",
+  "m": null,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "sources": [
+   "daytona.co.uk SuperChamps"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "daytona-sandown-park",
+  "layout": "Indy",
+  "m": null,
+  "corners": 5,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "sources": [
+   "Wikipedia"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "daytona-tamworth",
+  "layout": "International",
+  "m": 1000,
+  "corners": 12,
+  "record": null,
+  "record_note": "",
+  "owner": "48.8",
+  "rental": "58.8",
+  "sources": [
+   "daytona.co.uk (new Feb 2026)"
+  ],
+  "check": ""
+ }
+]
