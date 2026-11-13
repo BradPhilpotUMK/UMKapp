@@ -12,6 +12,8 @@
 .sdiv i{flex:1;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#FF0074 60%,#FF0074)}
 .sdiv i:last-child{background:linear-gradient(270deg,transparent,#00BE00 60%,#00BE00)}
 .sdiv span{flex:none;width:64px;height:14px;border-radius:3px;background:conic-gradient(#fff 25%,#111 0 50%,#fff 0 75%,#111 0) 0 0/14px 14px;box-shadow:0 0 0 1px rgba(255,255,255,.25),0 4px 12px rgba(0,0,0,.5);transform:skewX(-14deg)}
+#bgfx{transition:opacity .35s ease,filter .35s ease}
+html.dim #bgfx{opacity:.2;filter:saturate(.55) brightness(.8);transition:opacity 1.6s ease,filter 1.6s ease}
 </style>
 <script>if(navigator.standalone===true){document.documentElement.classList.add("ios-app");try{document.documentElement.style.setProperty("--cy",(Math.max(screen.height,screen.width)/2)+"px")}catch(e){}}try{if(sessionStorage.getItem("umk-hub-intro")!=="1"){document.documentElement.classList.add("intro");setTimeout(function(){document.documentElement.classList.remove("intro")},6000)}}catch(e){}</script>
 <meta charset="utf-8">
@@ -726,7 +728,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794604091";
+const BUILD="1794604204";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
@@ -741,6 +743,20 @@ document.addEventListener("visibilitychange",()=>{
   if(document.visibilityState==="hidden"&&newer){try{sessionStorage.setItem("umk-upd",newer)}catch(e){}location.reload()}
   else if(document.visibilityState==="visible")checkUpdate(true)});
 if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+
+/* ---------- calm the background once the home page has been on screen for 2s; brighten again when an app is opened ---------- */
+(function(){const H=document.documentElement;let t=0,armed=false;
+  const ready=()=>{const sp=document.getElementById("splash");return !sp||sp.classList.contains("out")||sp.style.display==="none"};
+  const arm=()=>{clearTimeout(t);H.classList.remove("dim");t=setTimeout(()=>{if(!document.hidden)H.classList.add("dim")},2000)};
+  const wait=setInterval(()=>{if(ready()){clearInterval(wait);armed=true;arm()}},150);
+  document.addEventListener("click",e=>{const a=e.target.closest("a.tile,a.nx");if(!a||!H.classList.contains("dim"))return;
+    H.classList.remove("dim");clearTimeout(t);
+    if(a.target==="_blank"||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute("data-locked")||a.classList.contains("locked"))return;
+    const href=a.getAttribute("href");if(!href||href.startsWith("#"))return;
+    e.preventDefault();setTimeout(()=>{location.href=a.href},320)},true);
+  addEventListener("pageshow",e=>{if(e.persisted&&armed)arm()});
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden&&armed&&!H.classList.contains("dim"))arm()});
+})();
 </script>
 </body>
 </html>
