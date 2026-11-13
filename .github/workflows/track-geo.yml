@@ -12,4 +12,4 @@ jobs:
       - run: python3 tools/fetch_track_geo.py ${{ github.event.inputs.only }}
       - run: |
           git config user.name "Claude"; git config user.email "noreply@anthropic.com"
-          git add data/track-geo-raw.json && git commit -m "Track outlines from OpenStreetMap" && git pull --rebase -q origin main && git push -q origin HEAD:main || true
+          git add data/track-geo-raw.json && git commit -m "Track outlines from OpenStreetMap" && git pull --rebase -q origin ${{ github.ref_name }} && git push -q origin HEAD:${{ github.ref_name }} || true

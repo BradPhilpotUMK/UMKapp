@@ -1,0 +1,665 @@
+[
+ {
+  "track": "kart-silverstone",
+  "layout": "Grand Prix",
+  "m": 1377,
+  "corners": 18,
+  "record": "1:16.1",
+  "record_note": "EKS rental record",
+  "owner": null,
+  "rental": "1:17.0",
+  "rent": true,
+  "sources": [
+   "kart.silverstone.co.uk",
+   "EKS lap records",
+   "YouTube onboards: rental 1:15.4 near-fastest in 8h race"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "International",
+  "m": 932,
+  "corners": 12,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "54.5",
+  "rent": true,
+  "sources": [
+   "kart.silverstone.co.uk",
+   "EKS hotlap 55.416",
+   "YouTube onboards: rental record 53.007"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "Indy",
+  "m": 950,
+  "corners": 14,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "kart.silverstone.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "National",
+  "m": 520,
+  "corners": 8,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "kart.silverstone.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kart-silverstone",
+  "layout": "Village",
+  "m": 447,
+  "corners": 6,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "kart.silverstone.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "daytona-milton-keynes",
+  "layout": "International",
+  "m": 1360,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "1:00.5",
+  "rental": "1:06.0",
+  "rent": true,
+  "sources": [
+   "daytona.co.uk (1,360m)",
+   "Brad KZ lap 55.784",
+   "YouTube onboards: DMAX laps 1:04.4-1:05.6"
+  ],
+  "check": ""
+ },
+ {
+  "track": "daytona-milton-keynes",
+  "layout": "National",
+  "m": null,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "Wikipedia (Daytona Motorsport)"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "daytona-milton-keynes",
+  "layout": "North",
+  "m": 375,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "Wikipedia (Daytona Motorsport)"
+  ],
+  "check": "juniors"
+ },
+ {
+  "track": "buckmore-park",
+  "layout": "International (full)",
+  "m": 1200,
+  "corners": 12,
+  "record": "48.0",
+  "record_note": "all-time, weak source",
+  "owner": "44.0",
+  "rental": "49.5",
+  "rent": true,
+  "sources": [
+   "Club100",
+   "yumping",
+   "YouTube onboards: Sodi RT10 48.56 (near record), Club 100 45.6"
+  ],
+  "check": "kartdirectory says 1,000m: check"
+ },
+ {
+  "track": "buckmore-park",
+  "layout": "National",
+  "m": 600,
+  "corners": 6,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "kartdirectory"
+  ],
+  "check": ""
+ },
+ {
+  "track": "buckmore-park",
+  "layout": "Club",
+  "m": 400,
+  "corners": 6,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "kartdirectory"
+  ],
+  "check": ""
+ },
+ {
+  "track": "whilton-mill",
+  "layout": "International",
+  "m": 1200,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "47.0",
+  "rental": "1:00.0",
+  "rent": true,
+  "sources": [
+   "whiltonmill.co.uk",
+   "totalkarting",
+   "YouTube onboards: Club 100 57.4-59.8 in races; Rotax laps ~46-47: layout to check"
+  ],
+  "check": "Club 100 and Rotax times disagree: check which layout"
+ },
+ {
+  "track": "whilton-mill",
+  "layout": "National",
+  "m": 960,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "whiltonmill.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "whilton-mill",
+  "layout": "Mill",
+  "m": 450,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "whiltonmill.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "pf-international",
+  "layout": "International",
+  "m": 1382,
+  "corners": 15,
+  "record": "56.5",
+  "record_note": "BKC record",
+  "owner": "58.2",
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "BKC",
+   "Wikipedia"
+  ],
+  "check": ""
+ },
+ {
+  "track": "pf-international",
+  "layout": "National",
+  "m": 1040,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "BKC (1,040m)",
+   "Wikipedia"
+  ],
+  "check": ""
+ },
+ {
+  "track": "shenington",
+  "layout": "Direct drive",
+  "m": 1018,
+  "corners": 11,
+  "record": "39.9",
+  "record_note": "BKC record",
+  "owner": "41.1",
+  "rental": "no public rental",
+  "rent": false,
+  "sources": [
+   "BKC",
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "shenington",
+  "layout": "Gearbox",
+  "m": 1211,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "no public rental",
+  "rent": false,
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "rowrah",
+  "layout": "Full circuit",
+  "m": 1030,
+  "corners": 12,
+  "record": null,
+  "record_note": "",
+  "owner": "47.0",
+  "rental": "54.0",
+  "rent": true,
+  "sources": [
+   "51gt3 (weak)",
+   "YouTube onboards: Super One Senior Rotax pole 46.3; rental time unknown"
+  ],
+  "check": "length weak"
+ },
+ {
+  "track": "clay-pigeon",
+  "layout": "Full circuit",
+  "m": 815,
+  "corners": 12,
+  "record": "34.0",
+  "record_note": "BKC record",
+  "owner": "35.0",
+  "rental": "44.5",
+  "rent": true,
+  "sources": [
+   "BKC",
+   "Alpha",
+   "YouTube onboards: rental 43.7, Rotax 34.5"
+  ],
+  "check": ""
+ },
+ {
+  "track": "rye-house",
+  "layout": "Full circuit",
+  "m": 900,
+  "corners": 8,
+  "record": "41.2",
+  "record_note": "rental lap record",
+  "owner": "39.5",
+  "rental": "42.5",
+  "rent": true,
+  "sources": [
+   "totalkarting",
+   "Alpha says 950m",
+   "YouTube onboards: rental record 41.23; owner time unknown; new 2026 chicane layout"
+  ],
+  "check": "900 vs 950m"
+ },
+ {
+  "track": "lydd",
+  "layout": "International",
+  "m": 1040,
+  "corners": 10,
+  "record": "35.6",
+  "record_note": "",
+  "owner": "36.7",
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "lyddkartcircuit.com",
+   "totalkarting"
+  ],
+  "check": ""
+ },
+ {
+  "track": "lydd",
+  "layout": "Junior",
+  "m": 500,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "geronigo"
+  ],
+  "check": "juniors"
+ },
+ {
+  "track": "llandow",
+  "layout": "Full circuit",
+  "m": 1050,
+  "corners": 9,
+  "record": null,
+  "record_note": "",
+  "owner": "49.5",
+  "rental": "52.5",
+  "rent": true,
+  "sources": [
+   "llandow.com",
+   "YouTube onboards: Club 100 Junior 51.5"
+  ],
+  "check": ""
+ },
+ {
+  "track": "fulbeck",
+  "layout": "Full circuit",
+  "m": 930,
+  "corners": 10,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "no public rental",
+  "rent": false,
+  "sources": [
+   "BKC",
+   "Brad GX-UK 56.99 P1 Jan 2024"
+  ],
+  "check": "TKZ 54.90 listed: check"
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Circuit 1 (BKC)",
+  "m": 990,
+  "corners": 7,
+  "record": null,
+  "record_note": "",
+  "owner": "41.0",
+  "rental": "no public rental",
+  "rent": false,
+  "sources": [
+   "motorsport-timing",
+   "BKC lists 999m",
+   "YouTube onboards: X30 40.75-40.95"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Circuit 2",
+  "m": 1050,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "no public rental",
+  "rent": false,
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Circuit 3",
+  "m": 1083,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "no public rental",
+  "rent": false,
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "kimbolton",
+  "layout": "Gearbox",
+  "m": 958,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "no public rental",
+  "rent": false,
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "warden-law",
+  "layout": "National",
+  "m": 1200,
+  "corners": 14,
+  "record": null,
+  "record_note": "",
+  "owner": "52.0",
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "BKC",
+   "motorsport-timing",
+   "YouTube onboards: Prokart 55.7; new layout in 2026"
+  ],
+  "check": ""
+ },
+ {
+  "track": "warden-law",
+  "layout": "Junior",
+  "m": 350,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": "juniors"
+ },
+ {
+  "track": "larkhall",
+  "layout": "Full (extended)",
+  "m": 1140,
+  "corners": 12,
+  "record": null,
+  "record_note": "",
+  "owner": "49.5",
+  "rental": "54.0",
+  "rent": true,
+  "sources": [
+   "BKC",
+   "YouTube onboards: rental 52.9 (no boot) / 59.6 (boot config); Senior Rotax 49.7 test"
+  ],
+  "check": "Boot and no-boot configurations exist: check which is which"
+ },
+ {
+  "track": "larkhall",
+  "layout": "Short (original)",
+  "m": 852,
+  "corners": null,
+  "record": "29.2",
+  "record_note": "BKC listing, weak: too fast for this length",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "motorsport-timing"
+  ],
+  "check": ""
+ },
+ {
+  "track": "glan-y-gors",
+  "layout": "Full circuit",
+  "m": 1100,
+  "corners": 11,
+  "record": "53.8",
+  "record_note": "BKC listing, weak: conflicts with 40.62",
+  "owner": "49.0",
+  "rental": "56.5",
+  "rent": true,
+  "sources": [
+   "BKC",
+   "totalkarting says 40.62",
+   "YouTube onboards: rental 55.3 month record; owner time unknown"
+  ],
+  "check": "record conflict"
+ },
+ {
+  "track": "teesside",
+  "layout": "International",
+  "m": 2100,
+  "corners": 19,
+  "record": "1:29.0",
+  "record_note": "weak source",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "teessidekarting.co.uk"
+  ],
+  "check": ""
+ },
+ {
+  "track": "teesside",
+  "layout": "National",
+  "m": 1300,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "teessidekarting.co.uk",
+   "motorsportnetwork (1,300m)"
+  ],
+  "check": "length weak"
+ },
+ {
+  "track": "teesside",
+  "layout": "Clubman",
+  "m": null,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "teessidekarting.co.uk"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "three-sisters",
+  "layout": "Full circuit",
+  "m": 1500,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "51.0",
+  "rent": true,
+  "sources": [
+   "yumping",
+   "YouTube onboards: hot laps 49.9-50.3"
+  ],
+  "check": "1.5km length looks wrong for 50s laps: check"
+ },
+ {
+  "track": "daytona-sandown-park",
+  "layout": "Grand Prix",
+  "m": 900,
+  "corners": 9,
+  "record": "44.7",
+  "record_note": "DMAX record",
+  "owner": null,
+  "rental": "47.5",
+  "rent": true,
+  "sources": [
+   "daytona.co.uk",
+   "Racing Dean DMAX 47.1",
+   "YouTube onboards: DMAX 46.2-46.4, record 44.664"
+  ],
+  "check": ""
+ },
+ {
+  "track": "daytona-sandown-park",
+  "layout": "Alternate",
+  "m": null,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "daytona.co.uk SuperChamps"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "daytona-sandown-park",
+  "layout": "Indy",
+  "m": null,
+  "corners": 5,
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": null,
+  "rent": true,
+  "sources": [
+   "Wikipedia"
+  ],
+  "check": "length missing"
+ },
+ {
+  "track": "daytona-tamworth",
+  "layout": "International",
+  "m": 1000,
+  "corners": 12,
+  "record": "53.8",
+  "record_note": "DMAX, new layout Feb 2026",
+  "owner": null,
+  "rental": "55.5",
+  "rent": true,
+  "sources": [
+   "daytona.co.uk (new Feb 2026)",
+   "YouTube onboards: DMAX 53.845 new layout"
+  ],
+  "check": ""
+ }
+]

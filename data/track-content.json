@@ -1,0 +1,682 @@
+[
+ {
+  "id": "kart-silverstone",
+  "name": "Kart Silverstone",
+  "place": "Silverstone, Northamptonshire",
+  "accent": "#00D25B",
+  "quote": "They're very strict on kerb use here. Don't throw away your best lap by getting a penalty for touching them. Treat them like barriers and work within the space they allow.",
+  "facts": [
+   "Opened in 2026 inside the Silverstone Grand Prix circuit",
+   "Uses Bridge and Priory from the 1991 to 2009 F1 track",
+   "Five layouts from 447 m Village to the full Grand Prix"
+  ],
+  "live": "https://www.alpharacehub.com/silverstone/live",
+  "draft": false,
+  "videos": [
+   {
+    "id": "4NCeigvOoMw",
+    "v": false,
+    "tag": "Junior Rotax \u00b7 BKC pole",
+    "title": "FinlayLinesRacing"
+   },
+   {
+    "id": "P01OGCkVdJE",
+    "v": false,
+    "tag": "Full onboard",
+    "title": "Brad Philpot"
+   },
+   {
+    "id": "uKmbgGnkyMU",
+    "v": false,
+    "tag": "Rental \u00b7 GP 1:15.4",
+    "title": "George Sams"
+   },
+   {
+    "id": "A9l0PYV7TR8",
+    "v": false,
+    "tag": "Rental \u00b7 International 53.0 record",
+    "title": "Jasper Fitzgerald-Woolfe"
+   },
+   {
+    "id": "Wd4_JI8DW0w",
+    "v": true,
+    "tag": "Onboard laps",
+    "title": "Brad Philpot"
+   }
+  ]
+ },
+ {
+  "id": "daytona-milton-keynes",
+  "name": "Daytona Milton Keynes",
+  "place": "Milton Keynes, Buckinghamshire",
+  "accent": "#FF0074",
+  "quote": "This track rewards ultimate tidiness. So don't carry any excess apex speed at the hairpins.",
+  "facts": [
+   "One of the UK's largest outdoor circuits",
+   "Home of the Daytona 24 Hours every May",
+   "SODI 4-stroke and 70 mph DMAX karts"
+  ],
+  "live": "https://speedhive.mylaps.com/organizations/787450",
+  "draft": false,
+  "videos": [
+   {
+    "id": "B2I8WKW06pQ",
+    "v": false,
+    "tag": "KZ \u00b7 all-time lap record",
+    "title": "Brad Philpot"
+   },
+   {
+    "id": "ATTP81TreME",
+    "v": false,
+    "tag": "DMAX \u00b7 1:04.4",
+    "title": "Will Stephenson"
+   },
+   {
+    "id": "MVe6FgOmPpw",
+    "v": false,
+    "tag": "DMAX \u00b7 1:05.6",
+    "title": "KyleSxarrott"
+   },
+   {
+    "id": "dlORscp7zRg",
+    "v": true,
+    "tag": "DMAX hot laps",
+    "title": "Brad Philpot"
+   }
+  ]
+ },
+ {
+  "id": "buckmore-park",
+  "name": "Buckmore Park",
+  "place": "Chatham, Kent",
+  "accent": "#2EA8FF",
+  "quote": "Maintaining a high minimum speed is key here. Don't over slow the kart and make sure you're using the maximum allowed space. This is a track where using more kerb is important.",
+  "facts": [
+   "A UK karting landmark since 1963",
+   "Where Lewis Hamilton and Jenson Button learned their craft",
+   "Home of the Kart Race of Champions (KROC)"
+  ],
+  "live": "https://www.alpharacehub.com/buckmore/live",
+  "draft": false,
+  "videos": [
+   {
+    "id": "bwflTI9MCwY",
+    "v": false,
+    "tag": "Sodi RT10 \u00b7 48.6",
+    "title": "Benjamin Hamilton Racing"
+   },
+   {
+    "id": "g8DaL2z08LY",
+    "v": false,
+    "tag": "Club 100 \u00b7 45.6",
+    "title": "Benjamin Hamilton Racing"
+   },
+   {
+    "id": "4czDwLvr_JQ",
+    "v": false,
+    "tag": "X30",
+    "title": "Kai Askey Racing"
+   }
+  ]
+ },
+ {
+  "id": "whilton-mill",
+  "name": "Whilton Mill",
+  "place": "Daventry, Northamptonshire",
+  "accent": "#F5C542",
+  "quote": "",
+  "facts": [
+   "Three layouts, from the 450m Mill circuit to the full International",
+   "Fast corners, big kerbs and a bumpy surface",
+   "A regular British Kart Championships venue"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "WwH8xWpgFCg",
+    "v": false,
+    "tag": "Senior Rotax hot lap",
+    "title": "Luke Richards"
+   },
+   {
+    "id": "dK7XKtLn9yE",
+    "v": false,
+    "tag": "Club 100 hot lap",
+    "title": "Benjamin Hamilton Racing"
+   },
+   {
+    "id": "SCg5JWaubVo",
+    "v": false,
+    "tag": "Track guide \u00b7 2026 chicane",
+    "title": "Wolemid"
+   }
+  ]
+ },
+ {
+  "id": "pf-international",
+  "name": "PFi",
+  "place": "Brandon, Lincolnshire",
+  "accent": "#7C5CFF",
+  "quote": "",
+  "facts": [
+   "The UK's longest purpose-built outdoor kart track at 1,382m",
+   "The lap goes under a bridge, then back over it",
+   "Home of many British Kart Championship rounds"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "lnAe_t2_m74",
+    "v": false,
+    "tag": "OK \u00b7 FIA Euro",
+    "title": "Roman Stanek"
+   },
+   {
+    "id": "4jYTLfJROzU",
+    "v": false,
+    "tag": "OK Senior",
+    "title": "Fionn McLaughlin"
+   },
+   {
+    "id": "hXUz0zEPBXc",
+    "v": false,
+    "tag": "DMAX",
+    "title": "Dante Dhillon"
+   }
+  ]
+ },
+ {
+  "id": "shenington",
+  "name": "Shenington",
+  "place": "Banbury, Oxfordshire",
+  "accent": "#00C2A8",
+  "quote": "",
+  "facts": [
+   "Racing on the old airfield since 1960",
+   "Separate direct drive (1,018m) and gearbox (1,211m) layouts",
+   "Nigel Mansell raced here as a junior"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "HKJ0QsTG7f4",
+    "v": false,
+    "tag": "X30 \u00b7 BKC",
+    "title": "Thomas Fleming"
+   },
+   {
+    "id": "V8MoigOr4-Y",
+    "v": false,
+    "tag": "KZ2 gearbox",
+    "title": "Hector Sadlowski"
+   }
+  ]
+ },
+ {
+  "id": "rowrah",
+  "name": "Rowrah",
+  "place": "Frizington, Cumbria",
+  "accent": "#FF7A1A",
+  "quote": "",
+  "facts": [
+   "Built in a former quarry in the Lake District",
+   "Home of the Cumbria Kart Racing Club",
+   "Tight, technical and hilly"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "vLMtl4wPClk",
+    "v": false,
+    "tag": "Rotax 177 \u00b7 46.3 Super One",
+    "title": "Oliver Appleby"
+   },
+   {
+    "id": "wiGvpnuTeRk",
+    "v": false,
+    "tag": "Rental hot lap",
+    "title": "Benjamin Hamilton Racing"
+   },
+   {
+    "id": "5IWv6WOt8HI",
+    "v": false,
+    "tag": "NKC lap",
+    "title": "Karting Live TV"
+   }
+  ]
+ },
+ {
+  "id": "clay-pigeon",
+  "name": "Clay Pigeon",
+  "place": "Dorchester, Dorset",
+  "accent": "#2EA8FF",
+  "quote": "",
+  "facts": [
+   "Where Jenson Button started racing",
+   "Fast and flowing, 815m",
+   "The start and finish lines are in different places"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "2I8sGAqzk8E",
+    "v": false,
+    "tag": "Rotax \u00b7 34.5",
+    "title": "Phil M Karting"
+   },
+   {
+    "id": "nt3j3n6GYHc",
+    "v": false,
+    "tag": "DMAX \u00b7 39.8",
+    "title": "Dante Dhillon"
+   },
+   {
+    "id": "F3upho5o2zU",
+    "v": false,
+    "tag": "Rental \u00b7 43.7",
+    "title": "BrakeBias1"
+   }
+  ]
+ },
+ {
+  "id": "rye-house",
+  "name": "Rye House",
+  "place": "Hoddesdon, Hertfordshire",
+  "accent": "#FF0074",
+  "quote": "",
+  "facts": [
+   "One of the UK's first purpose-built kart tracks",
+   "Lewis Hamilton, Jenson Button and Anthony Davidson raced here",
+   "Floodlit for evening racing"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "XlZ5xgU693I",
+    "v": false,
+    "tag": "Rental lap record \u00b7 41.2",
+    "title": "Rye House"
+   },
+   {
+    "id": "S73DFJyIjKc",
+    "v": false,
+    "tag": "Club 100",
+    "title": "Nick Hutch"
+   },
+   {
+    "id": "D4MzZDIzg34",
+    "v": false,
+    "tag": "Junior Rotax \u00b7 2026 double chicane",
+    "title": "vinnie_c_racing"
+   }
+  ]
+ },
+ {
+  "id": "lydd",
+  "name": "Lydd",
+  "place": "Lydd, Kent",
+  "accent": "#00D25B",
+  "quote": "",
+  "facts": [
+   "Known as one of the fastest outdoor tracks in the country",
+   "Long straights where the tow matters",
+   "A separate 500m circuit for juniors"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "-8hqrkfmuRw",
+    "v": false,
+    "tag": "Junior Rotax",
+    "title": "Harry Maynard"
+   },
+   {
+    "id": "1RdJJ4DN5lk",
+    "v": false,
+    "tag": "Club 100",
+    "title": "Racing Dean"
+   }
+  ]
+ },
+ {
+  "id": "llandow",
+  "name": "Llandow",
+  "place": "Cowbridge, Vale of Glamorgan",
+  "accent": "#F5C542",
+  "quote": "",
+  "facts": [
+   "Built on a Second World War airfield",
+   "1,050m kart circuit next to the Llandow car circuit",
+   "Run as the South Wales Karting Centre"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "h6-2YzqOStQ",
+    "v": false,
+    "tag": "Club 100 Junior \u00b7 51.5",
+    "title": "Benjamin Hamilton Racing"
+   },
+   {
+    "id": "sIvS_yHhsso",
+    "v": false,
+    "tag": "Rotax",
+    "title": "Phil M Karting"
+   }
+  ]
+ },
+ {
+  "id": "fulbeck",
+  "name": "Fulbeck",
+  "place": "Grantham, Lincolnshire",
+  "accent": "#7C5CFF",
+  "quote": "",
+  "facts": [
+   "Next door to PFi",
+   "Short, technical and 930m long",
+   "Two hairpins are the main overtaking spots"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "DxPzLPzV344",
+    "v": false,
+    "tag": "Senior Rotax \u00b7 NKC pole",
+    "title": "Kieran Shanks"
+   },
+   {
+    "id": "7qoE-yd4NTs",
+    "v": false,
+    "tag": "Track guide",
+    "title": "Brad Philpot"
+   },
+   {
+    "id": "2zi8zIBjyQg",
+    "v": false,
+    "tag": "KZ2",
+    "title": "Adam Rusling"
+   },
+   {
+    "id": "PmaTfJprRKc",
+    "v": false,
+    "tag": "Club lap",
+    "title": "TB Motorsport 27"
+   }
+  ]
+ },
+ {
+  "id": "kimbolton",
+  "name": "Kimbolton",
+  "place": "Huntingdon, Cambridgeshire",
+  "accent": "#00C2A8",
+  "quote": "",
+  "facts": [
+   "Home of Hunts Kart Racing Club",
+   "Several layouts from 958m to 1,083m",
+   "Built on a wartime B-17 bomber base"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "Oy3kcMLL6PU",
+    "v": false,
+    "tag": "X30 \u00b7 40.95",
+    "title": "Thomas Fleming"
+   },
+   {
+    "id": "PxkidYwJ53c",
+    "v": false,
+    "tag": "Rotax 177",
+    "title": "Dan Walker"
+   },
+   {
+    "id": "f1BovYICkyM",
+    "v": false,
+    "tag": "Junior \u00b7 41.95",
+    "title": "Henry Beaumont"
+   }
+  ]
+ },
+ {
+  "id": "warden-law",
+  "name": "Warden Law",
+  "place": "Sunderland, Tyne and Wear",
+  "accent": "#FF7A1A",
+  "quote": "",
+  "facts": [
+   "1,200m National circuit with 14 turns",
+   "Up to 34 karts on track at once",
+   "A 350m junior circuit too"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "_nluiSNZ2ks",
+    "v": false,
+    "tag": "Senior Rotax \u00b7 UKC",
+    "title": "Louis Harvey"
+   },
+   {
+    "id": "KN7C8_sF1js",
+    "v": false,
+    "tag": "GX-UK",
+    "title": "Brad Philpot"
+   },
+   {
+    "id": "r8Tng7fjWxg",
+    "v": false,
+    "tag": "TKM \u00b7 2026 new layout",
+    "title": "chris whiteside"
+   },
+   {
+    "id": "d1sg1k2ydHo",
+    "v": false,
+    "tag": "Prokart \u00b7 55.7",
+    "title": "Sam Spinnael"
+   }
+  ]
+ },
+ {
+  "id": "larkhall",
+  "name": "Larkhall",
+  "place": "Larkhall, South Lanarkshire",
+  "accent": "#2EA8FF",
+  "quote": "",
+  "facts": [
+   "Scotland's main outdoor kart circuit",
+   "Extended by 273m to 1,140m",
+   "Hairpins and high kerbs"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "4Yje7r6Y7w4",
+    "v": false,
+    "tag": "Senior Rotax",
+    "title": "Alexander Reid"
+   },
+   {
+    "id": "bZjcYfHBelM",
+    "v": false,
+    "tag": "Rental \u00b7 52.9 no boot",
+    "title": "Finlay Mulholland"
+   },
+   {
+    "id": "f_neqaNJrjc",
+    "v": false,
+    "tag": "Rental \u00b7 59.6 boot",
+    "title": "Finlay Mulholland"
+   }
+  ]
+ },
+ {
+  "id": "glan-y-gors",
+  "name": "Glan-y-Gors",
+  "place": "Cerrigydrudion, Conwy",
+  "accent": "#FF0074",
+  "quote": "",
+  "facts": [
+   "Often called Wales's mini Nurburgring",
+   "Big elevation changes, including the drop at Devil's Elbow",
+   "Camping and glamping on site"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "RB9dmdYuVfU",
+    "v": false,
+    "tag": "DMAX",
+    "title": "Dante Dhillon"
+   },
+   {
+    "id": "EXbI4mE9CE4",
+    "v": false,
+    "tag": "Rental \u00b7 55.3",
+    "title": "Stefan Chifan Racing"
+   },
+   {
+    "id": "vXxd0RFWfcU",
+    "v": false,
+    "tag": "Club 100",
+    "title": "Dylan Edwards"
+   }
+  ]
+ },
+ {
+  "id": "teesside",
+  "name": "Teesside",
+  "place": "Middlesbrough, North Yorkshire",
+  "accent": "#00D25B",
+  "quote": "",
+  "facts": [
+   "The longest permanent kart circuit in Europe at 2.1km",
+   "Four main layouts, including the original National circuit",
+   "Home of the British 24 Hour kart race"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "8zKt9XYUK9I",
+    "v": false,
+    "tag": "Owner kart lap",
+    "title": "Oscar Warr Racing"
+   },
+   {
+    "id": "ZO2XAajfucg",
+    "v": false,
+    "tag": "Prokart \u00b7 British 24 Hour",
+    "title": "Henry Treanor"
+   },
+   {
+    "id": "dAc-BfHDo50",
+    "v": false,
+    "tag": "Junior Max \u00b7 44.2",
+    "title": "Brad Allen Racing"
+   }
+  ]
+ },
+ {
+  "id": "three-sisters",
+  "name": "Three Sisters",
+  "place": "Wigan, Greater Manchester",
+  "accent": "#F5C542",
+  "quote": "",
+  "facts": [
+   "Shares the site with the Three Sisters car and bike circuit",
+   "Around 1.5km in its longest form",
+   "Hosts track days, drifting and bike events too"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "O5lUKRh97Rg",
+    "v": false,
+    "tag": "Hot lap \u00b7 49.9",
+    "title": "JA Karting"
+   },
+   {
+    "id": "-EUGiDp-kMY",
+    "v": false,
+    "tag": "BTKC pole \u00b7 50.3",
+    "title": "British Touring Kart Club"
+   }
+  ]
+ },
+ {
+  "id": "daytona-sandown-park",
+  "name": "Daytona Sandown Park",
+  "place": "Esher, Surrey",
+  "accent": "#7C5CFF",
+  "quote": "",
+  "facts": [
+   "Greater London's largest outdoor circuit",
+   "900m Grand Prix layout plus Alternate and Indy versions",
+   "Next to Sandown Park racecourse"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "DtTv-KXj0N0",
+    "v": false,
+    "tag": "DMAX record \u00b7 44.7",
+    "title": "Dante Dhillon"
+   },
+   {
+    "id": "shtqvD6aOn8",
+    "v": false,
+    "tag": "New DMAX \u00b7 46.4",
+    "title": "ieuanracing"
+   },
+   {
+    "id": "fEuS6dXm5eg",
+    "v": false,
+    "tag": "Sodi",
+    "title": "Dante Dhillon"
+   }
+  ]
+ },
+ {
+  "id": "daytona-tamworth",
+  "name": "Daytona Tamworth",
+  "place": "Tamworth, Staffordshire",
+  "accent": "#00C2A8",
+  "quote": "",
+  "facts": [
+   "New 1,000m International layout from February 2026",
+   "12 corners and a famous high-speed straight",
+   "Home of the DMAX-GT"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": [
+   {
+    "id": "oeuWLTxBeT8",
+    "v": false,
+    "tag": "DMAX \u00b7 53.8 new layout",
+    "title": "KyleSxarrott"
+   },
+   {
+    "id": "6UpexN90YtQ",
+    "v": false,
+    "tag": "International layout",
+    "title": "Banatex"
+   }
+  ]
+ }
+]
