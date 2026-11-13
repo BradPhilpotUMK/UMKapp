@@ -297,20 +297,6 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
       </svg>
       <b>Race Coach</b><small>Driving and setup fixes: tell it what the kart's doing</small></a>
 
-    <a class="tile wide lt" href="timing/" style="--c:#FF2D55"><span class="tag">New</span>
-      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
-        <rect x="38" y="14" width="186" height="122" rx="16" fill="#121317" stroke="#FF2D55" stroke-width="3"/>
-        <circle cx="58" cy="32" r="5" fill="#FF2D55"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></circle>
-        <text x="70" y="37" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" fill="#FF2D55">LIVE</text>
-        <g font-family="F1,Arial Black,sans-serif" font-weight="900" font-size="13">
-          <rect x="50" y="48" width="162" height="22" rx="5" fill="#00BE00" opacity=".18"/>
-          <text x="58" y="64" fill="#00BE00">1</text><text x="76" y="64" fill="#fff">K. 27</text><text x="204" y="64" fill="#00BE00" text-anchor="end">42.318</text>
-          <text x="58" y="90" fill="#9a9ca4">2</text><text x="76" y="90" fill="#fff">B. 7</text><text x="204" y="90" fill="#cfd1d6" text-anchor="end">+0.214</text>
-          <text x="58" y="116" fill="#9a9ca4">3</text><text x="76" y="116" fill="#fff">M. 13</text><text x="204" y="116" fill="#cfd1d6" text-anchor="end">+0.902</text>
-        </g>
-        <g transform="translate(30 104) scale(.85)"><circle r="22" fill="#FF2D55"/><circle r="15" fill="#fff"/><path d="M0-10V0l7 5" stroke="#FF2D55" stroke-width="3.5" fill="none" stroke-linecap="round"/><rect x="-4" y="-30" width="8" height="7" rx="2" fill="#FF2D55"/></g>
-      </svg>
-      <b>Live Timing</b><small>Live lap times from 150+ UK tracks, clubs and championships</small></a>
     <a class="tile tg" href="tracks/" style="--c:#F5A623"><span class="tag beta">Beta</span>
       <svg class="art" viewBox="42.2 6.8 155.6 136.5" aria-hidden="true">
         <svg x="22" y="8" width="196" height="134" viewBox="-10 -10 920 805" preserveAspectRatio="xMidYMid meet">
@@ -340,6 +326,20 @@ header.top{background:rgba(0,0,0,.62);-webkit-backdrop-filter:blur(10px);backdro
         <g transform="translate(70 104) rotate(-14)"><rect width="34" height="26" rx="5" fill="#f1f0ec"/><rect x="11" y="-4" width="12" height="6" rx="2" fill="#f1f0ec"/><circle cx="17" cy="13" r="8" fill="#0b0b0e"/><circle cx="17" cy="13" r="4.5" fill="#FF0074"/></g>
 </g></svg>
       <b>Race Post Maker</b><small>Your race photo and result, ready for Instagram and TikTok</small></a>
+    <a class="tile wide lt" href="timing/" style="--c:#FF2D55"><span class="tag">New</span>
+      <svg class="art" viewBox="0 0 240 150" aria-hidden="true">
+        <rect x="38" y="14" width="186" height="122" rx="16" fill="#121317" stroke="#FF2D55" stroke-width="3"/>
+        <circle cx="58" cy="32" r="5" fill="#FF2D55"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></circle>
+        <text x="70" y="37" font-family="F1,Arial Black,sans-serif" font-size="13" font-weight="900" fill="#FF2D55">LIVE</text>
+        <g font-family="F1,Arial Black,sans-serif" font-weight="900" font-size="13">
+          <rect x="50" y="48" width="162" height="22" rx="5" fill="#00BE00" opacity=".18"/>
+          <text x="58" y="64" fill="#00BE00">1</text><text x="76" y="64" fill="#fff">K. 27</text><text x="204" y="64" fill="#00BE00" text-anchor="end">42.318</text>
+          <text x="58" y="90" fill="#9a9ca4">2</text><text x="76" y="90" fill="#fff">B. 7</text><text x="204" y="90" fill="#cfd1d6" text-anchor="end">+0.214</text>
+          <text x="58" y="116" fill="#9a9ca4">3</text><text x="76" y="116" fill="#fff">M. 13</text><text x="204" y="116" fill="#cfd1d6" text-anchor="end">+0.902</text>
+        </g>
+        <g transform="translate(30 104) scale(.85)"><circle r="22" fill="#FF2D55"/><circle r="15" fill="#fff"/><path d="M0-10V0l7 5" stroke="#FF2D55" stroke-width="3.5" fill="none" stroke-linecap="round"/><rect x="-4" y="-30" width="8" height="7" rx="2" fill="#FF2D55"/></g>
+      </svg>
+      <b>Live Timing</b><small>Live lap times from 150+ UK tracks, clubs and championships</small></a>
     <a class="tile" href="standings/" style="--c:#00BE00">
       <svg class="art" style="width:100%;max-width:240px;right:-12px;top:-14px" viewBox="-8.2 -14.9 146.3 149.5" aria-hidden="true"><g transform="translate(-22 -14) scale(.82)">
         <g fill="#FF0074" opacity=".8"><circle cx="40" cy="30" r="3"/><rect x="150" y="18" width="7" height="3" rx="1.5" transform="rotate(30 153 20)"/><circle cx="178" cy="60" r="2.5"/><rect x="60" y="62" width="6" height="3" rx="1.5" transform="rotate(-30 63 63)"/></g>
@@ -712,7 +712,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794602619";
+const BUILD="1794602690";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
