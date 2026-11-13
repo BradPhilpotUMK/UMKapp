@@ -179,7 +179,7 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "46.8",
+  "owner": "48.8",
   "rental": "56.5",
   "sources": [
    "whiltonmill.co.uk"
@@ -193,7 +193,7 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "22.0",
+  "owner": "22.9",
   "rental": "26.5",
   "sources": [
    "whiltonmill.co.uk"
@@ -218,16 +218,17 @@
  {
   "track": "pf-international",
   "layout": "National",
-  "m": null,
+  "m": 1040,
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": null,
-  "rental": null,
+  "owner": "43.8",
+  "rental": "1:01.2",
   "sources": [
+   "BKC (1,040m)",
    "Wikipedia"
   ],
-  "check": "length missing"
+  "check": ""
  },
  {
   "track": "shenington",
@@ -251,7 +252,7 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "59.1",
+  "owner": "48.9",
   "rental": "no public rental",
   "sources": [
    "motorsport-timing"
@@ -308,8 +309,8 @@
   "m": 1040,
   "corners": 10,
   "record": "35.6",
-  "record_note": "",
-  "owner": "36.7",
+  "record_note": "weak: too fast for this length",
+  "owner": "50.7",
   "rental": "1:01.2",
   "sources": [
    "lyddkartcircuit.com",
@@ -362,15 +363,16 @@
  },
  {
   "track": "kimbolton",
-  "layout": "Circuit 1",
+  "layout": "Circuit 1 (BKC)",
   "m": 990,
-  "corners": null,
-  "record": null,
-  "record_note": "",
-  "owner": "48.3",
+  "corners": 7,
+  "record": "46.1",
+  "record_note": "BKC record",
+  "owner": "47.4",
   "rental": "no public rental",
   "sources": [
-   "motorsport-timing"
+   "motorsport-timing",
+   "BKC lists 999m"
   ],
   "check": ""
  },
@@ -381,7 +383,7 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "51.2",
+  "owner": "50.3",
   "rental": "no public rental",
   "sources": [
    "motorsport-timing"
@@ -395,24 +397,10 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "52.8",
+  "owner": "51.9",
   "rental": "no public rental",
   "sources": [
    "motorsport-timing"
-  ],
-  "check": ""
- },
- {
-  "track": "kimbolton",
-  "layout": "BKC",
-  "m": 999,
-  "corners": 7,
-  "record": "46.1",
-  "record_note": "BKC record",
-  "owner": "47.4",
-  "rental": "no public rental",
-  "sources": [
-   "BKC"
   ],
   "check": ""
  },
@@ -423,7 +411,7 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "46.7",
+  "owner": "45.9",
   "rental": "no public rental",
   "sources": [
    "motorsport-timing"
@@ -479,7 +467,7 @@
   "m": 852,
   "corners": null,
   "record": "29.2",
-  "record_note": "BKC (old layout)",
+  "record_note": "BKC listing, weak: too fast for this length",
   "owner": "41.6",
   "rental": "50.1",
   "sources": [
@@ -519,6 +507,21 @@
  {
   "track": "teesside",
   "layout": "National",
+  "m": 1300,
+  "corners": null,
+  "record": null,
+  "record_note": "",
+  "owner": "1:03.4",
+  "rental": "1:16.5",
+  "sources": [
+   "teessidekarting.co.uk",
+   "motorsportnetwork (1,300m)"
+  ],
+  "check": "length weak"
+ },
+ {
+  "track": "teesside",
+  "layout": "Clubman",
   "m": null,
   "corners": null,
   "record": null,
@@ -528,7 +531,7 @@
   "sources": [
    "teessidekarting.co.uk"
   ],
-  "check": "length missing; 2 more layouts"
+  "check": "length missing"
  },
  {
   "track": "three-sisters",

@@ -1,0 +1,389 @@
+[
+ {
+  "id": "kart-silverstone",
+  "name": "Kart Silverstone",
+  "place": "Silverstone, Northamptonshire",
+  "accent": "#00D25B",
+  "quote": "They're very strict on kerb use here. Don't throw away your best lap by getting a penalty for touching them. Treat them like barriers and work within the space they allow.",
+  "facts": [
+   "Opened in 2026 inside the Silverstone Grand Prix circuit",
+   "Uses Bridge and Priory from the 1991 to 2009 F1 track",
+   "Five layouts from 447 m Village to the full Grand Prix"
+  ],
+  "live": "https://www.alpharacehub.com/silverstone/live",
+  "draft": false,
+  "videos": [
+   {
+    "id": "P01OGCkVdJE",
+    "v": false,
+    "tag": "Full onboard",
+    "title": "I Raced Silverstone's NEW Kart Track!"
+   },
+   {
+    "id": "Wd4_JI8DW0w",
+    "v": true,
+    "tag": "Short",
+    "title": "Onboard laps"
+   },
+   {
+    "id": "DGB4E_sgGSU",
+    "v": false,
+    "tag": "Race",
+    "title": "The Silverstone Invitational, full GP track"
+   },
+   {
+    "id": "XpUaMWf1LFA",
+    "v": true,
+    "tag": "Short",
+    "title": "Silverstone slipstreaming"
+   },
+   {
+    "id": "mN1cMoOBTDM",
+    "v": false,
+    "tag": "24 Hours",
+    "title": "We hired an F1 driver for the Silverstone 24 Hours"
+   }
+  ]
+ },
+ {
+  "id": "daytona-milton-keynes",
+  "name": "Daytona Milton Keynes",
+  "place": "Milton Keynes, Buckinghamshire",
+  "accent": "#FF0074",
+  "quote": "This track rewards ultimate tidiness. So don't carry any excess apex speed at the hairpins.",
+  "facts": [
+   "One of the UK's largest outdoor circuits",
+   "Home of the Daytona 24 Hours every May",
+   "SODI 4-stroke and 70 mph DMAX karts"
+  ],
+  "live": "https://speedhive.mylaps.com/organizations/787450",
+  "draft": false,
+  "videos": [
+   {
+    "id": "dlORscp7zRg",
+    "v": true,
+    "tag": "Short",
+    "title": "DMAX hot laps"
+   },
+   {
+    "id": "B2I8WKW06pQ",
+    "v": false,
+    "tag": "Lap record",
+    "title": "I DESTROYED the Daytona lap record"
+   },
+   {
+    "id": "DWdKDbEfW3I",
+    "v": true,
+    "tag": "Short",
+    "title": "SODI rental karts in the damp"
+   },
+   {
+    "id": "aJEzHbrbeRU",
+    "v": false,
+    "tag": "24 Hours",
+    "title": "Can we WIN the Daytona 24 Hours again?"
+   },
+   {
+    "id": "Yt9MV67OsII",
+    "v": false,
+    "tag": "24 Hours",
+    "title": "How to WIN the Daytona 24 Hour kart race"
+   }
+  ]
+ },
+ {
+  "id": "buckmore-park",
+  "name": "Buckmore Park",
+  "place": "Chatham, Kent",
+  "accent": "#2EA8FF",
+  "quote": "Maintaining a high minimum speed is key here. Don't over slow the kart and make sure you're using the maximum allowed space. This is a track where using more kerb is important.",
+  "facts": [
+   "A UK karting landmark since 1963",
+   "Where Lewis Hamilton and Jenson Button learned their craft",
+   "Home of the Kart Race of Champions (KROC)"
+  ],
+  "live": "https://www.alpharacehub.com/buckmore/live",
+  "draft": false,
+  "videos": [
+   {
+    "id": "hOj1_iHBJIU",
+    "v": true,
+    "tag": "Short",
+    "title": "Can I reclaim the race lead?"
+   },
+   {
+    "id": "vDaPJsl67_w",
+    "v": false,
+    "tag": "Race",
+    "title": "I battled a UK karting champion to the last corner"
+   },
+   {
+    "id": "wuGIdNr4jns",
+    "v": true,
+    "tag": "Short",
+    "title": "Can I take the GX-UK heat win?"
+   },
+   {
+    "id": "U7UoiERF2pI",
+    "v": false,
+    "tag": "Race",
+    "title": "Can I reclaim my Kart Race of Champions title?"
+   }
+  ]
+ },
+ {
+  "id": "whilton-mill",
+  "name": "Whilton Mill",
+  "place": "Daventry, Northamptonshire",
+  "accent": "#F5C542",
+  "quote": "",
+  "facts": [
+   "Three layouts, from the 450m Mill circuit to the full International",
+   "Fast corners, big kerbs and a bumpy surface",
+   "A regular British Kart Championships venue"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "pf-international",
+  "name": "PFi",
+  "place": "Brandon, Lincolnshire",
+  "accent": "#7C5CFF",
+  "quote": "",
+  "facts": [
+   "The UK's longest purpose-built outdoor kart track at 1,382m",
+   "The lap goes under a bridge, then back over it",
+   "Home of many British Kart Championship rounds"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "shenington",
+  "name": "Shenington",
+  "place": "Banbury, Oxfordshire",
+  "accent": "#00C2A8",
+  "quote": "",
+  "facts": [
+   "Racing on the old airfield since 1960",
+   "Separate direct drive (1,018m) and gearbox (1,211m) layouts",
+   "Nigel Mansell raced here as a junior"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "rowrah",
+  "name": "Rowrah",
+  "place": "Frizington, Cumbria",
+  "accent": "#FF7A1A",
+  "quote": "",
+  "facts": [
+   "Built in a former quarry in the Lake District",
+   "Home of the Cumbria Kart Racing Club",
+   "Tight, technical and hilly"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "clay-pigeon",
+  "name": "Clay Pigeon",
+  "place": "Dorchester, Dorset",
+  "accent": "#2EA8FF",
+  "quote": "",
+  "facts": [
+   "Where Jenson Button started racing",
+   "Fast and flowing, 815m",
+   "The start and finish lines are in different places"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "rye-house",
+  "name": "Rye House",
+  "place": "Hoddesdon, Hertfordshire",
+  "accent": "#FF0074",
+  "quote": "",
+  "facts": [
+   "One of the UK's first purpose-built kart tracks",
+   "Lewis Hamilton, Jenson Button and Anthony Davidson raced here",
+   "Floodlit for evening racing"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "lydd",
+  "name": "Lydd",
+  "place": "Lydd, Kent",
+  "accent": "#00D25B",
+  "quote": "",
+  "facts": [
+   "Known as one of the fastest outdoor tracks in the country",
+   "Long straights where the tow matters",
+   "A separate 500m circuit for juniors"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "llandow",
+  "name": "Llandow",
+  "place": "Cowbridge, Vale of Glamorgan",
+  "accent": "#F5C542",
+  "quote": "",
+  "facts": [
+   "Built on a Second World War airfield",
+   "1,050m kart circuit next to the Llandow car circuit",
+   "Run as the South Wales Karting Centre"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "fulbeck",
+  "name": "Fulbeck",
+  "place": "Grantham, Lincolnshire",
+  "accent": "#7C5CFF",
+  "quote": "",
+  "facts": [
+   "Next door to PFi",
+   "Short, technical and 930m long",
+   "Two hairpins are the main overtaking spots"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "kimbolton",
+  "name": "Kimbolton",
+  "place": "Huntingdon, Cambridgeshire",
+  "accent": "#00C2A8",
+  "quote": "",
+  "facts": [
+   "Home of Hunts Kart Racing Club",
+   "Several layouts from 958m to 1,083m",
+   "Built on a wartime B-17 bomber base"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "warden-law",
+  "name": "Warden Law",
+  "place": "Sunderland, Tyne and Wear",
+  "accent": "#FF7A1A",
+  "quote": "",
+  "facts": [
+   "1,200m National circuit with 14 turns",
+   "Up to 34 karts on track at once",
+   "A 350m junior circuit too"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "larkhall",
+  "name": "Larkhall",
+  "place": "Larkhall, South Lanarkshire",
+  "accent": "#2EA8FF",
+  "quote": "",
+  "facts": [
+   "Scotland's main outdoor kart circuit",
+   "Extended by 273m to 1,140m",
+   "Hairpins and high kerbs"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "glan-y-gors",
+  "name": "Glan-y-Gors",
+  "place": "Cerrigydrudion, Conwy",
+  "accent": "#FF0074",
+  "quote": "",
+  "facts": [
+   "Often called Wales's mini Nurburgring",
+   "Big elevation changes, including the drop at Devil's Elbow",
+   "Camping and glamping on site"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "teesside",
+  "name": "Teesside",
+  "place": "Middlesbrough, North Yorkshire",
+  "accent": "#00D25B",
+  "quote": "",
+  "facts": [
+   "The longest permanent kart circuit in Europe at 2.1km",
+   "Four main layouts, including the original National circuit",
+   "Home of the British 24 Hour kart race"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "three-sisters",
+  "name": "Three Sisters",
+  "place": "Wigan, Greater Manchester",
+  "accent": "#F5C542",
+  "quote": "",
+  "facts": [
+   "Shares the site with the Three Sisters car and bike circuit",
+   "Around 1.5km in its longest form",
+   "Hosts track days, drifting and bike events too"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "daytona-sandown-park",
+  "name": "Daytona Sandown Park",
+  "place": "Esher, Surrey",
+  "accent": "#7C5CFF",
+  "quote": "",
+  "facts": [
+   "Greater London's largest outdoor circuit",
+   "900m Grand Prix layout plus Alternate and Indy versions",
+   "Next to Sandown Park racecourse"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ },
+ {
+  "id": "daytona-tamworth",
+  "name": "Daytona Tamworth",
+  "place": "Tamworth, Staffordshire",
+  "accent": "#00C2A8",
+  "quote": "",
+  "facts": [
+   "New 1,000m International layout from February 2026",
+   "12 corners and a famous high-speed straight",
+   "Home of the DMAX-GT"
+  ],
+  "live": "../timing/",
+  "draft": true,
+  "videos": []
+ }
+]

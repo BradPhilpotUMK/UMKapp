@@ -23,28 +23,28 @@ L=[ # track id, layout, metres, corners, record(s), record note, rental?, overri
 ("whilton-mill","National",960,None,None,"",R,{},["whiltonmill.co.uk"],""),
 ("whilton-mill","Mill",450,None,None,"",R,{},["whiltonmill.co.uk"],""),
 ("pf-international","International",1382,15,56.49,"BKC record",R,{},["BKC","Wikipedia"],""),
-("pf-international","National",None,None,None,"",R,{},["Wikipedia"],"length missing"),
+("pf-international","National",1040,None,None,"",R,{},["BKC (1,040m)","Wikipedia"],""),
 ("shenington","Direct drive",1018,11,39.94,"BKC record",False,{},["BKC","motorsport-timing"],""),
 ("shenington","Gearbox",1211,None,None,"",False,{},["motorsport-timing"],""),
 ("rowrah","Full circuit",1030,12,None,"",False,{},["51gt3 (weak)"],"length weak"),
 ("clay-pigeon","Full circuit",815,12,34.00,"BKC record",R,{},["BKC","Alpha"],""),
 ("rye-house","Full circuit",900,8,41.23,"",R,{},["totalkarting","Alpha says 950m"],"900 vs 950m"),
-("lydd","International",1040,10,35.61,"",R,{},["lyddkartcircuit.com","totalkarting"],"35.6 record too fast for 1,040m: check (maybe 1,240m?)"),
+("lydd","International",1040,10,35.61,"weak: too fast for this length",R,{},["lyddkartcircuit.com","totalkarting"],"35.6 record too fast for 1,040m: check (maybe 1,240m?)"),
 ("lydd","Junior",500,None,None,"",R,{},["geronigo"],"juniors"),
 ("llandow","Full circuit",1050,9,None,"",R,{},["llandow.com"],""),
 ("fulbeck","Full circuit",930,10,None,"",False,{},["BKC","Brad GX-UK 56.99 P1 Jan 2024"],"TKZ 54.90 listed: check"),
-("kimbolton","Circuit 1",990,None,None,"",False,{},["motorsport-timing"],""),
+("kimbolton","Circuit 1 (BKC)",990,7,46.06,"BKC record",False,{},["motorsport-timing","BKC lists 999m"],""),
 ("kimbolton","Circuit 2",1050,None,None,"",False,{},["motorsport-timing"],""),
 ("kimbolton","Circuit 3",1083,None,None,"",False,{},["motorsport-timing"],""),
-("kimbolton","BKC",999,7,46.06,"BKC record",False,{},["BKC"],""),
 ("kimbolton","Gearbox",958,None,None,"",False,{},["motorsport-timing"],""),
 ("warden-law","National",1200,14,None,"",R,{},["BKC","motorsport-timing"],""),
 ("warden-law","Junior",350,None,None,"",R,{},["motorsport-timing"],"juniors"),
 ("larkhall","Full (extended)",1140,12,None,"",R,{},["BKC"],"BKC record 29.19 is from old 852m layout"),
-("larkhall","Short (original)",852,None,29.19,"BKC (old layout)",R,{},["motorsport-timing"],""),
+("larkhall","Short (original)",852,None,29.19,"BKC listing, weak: too fast for this length",R,{},["motorsport-timing"],""),
 ("glan-y-gors","Full circuit",1100,11,53.84,"BKC record",R,{},["BKC","totalkarting says 40.62"],"record conflict"),
 ("teesside","International",2100,19,89.0,"weak source",R,{},["teessidekarting.co.uk"],""),
-("teesside","National",None,None,None,"",R,{},["teessidekarting.co.uk"],"length missing; 2 more layouts"),
+("teesside","National",1300,None,None,"",R,{},["teessidekarting.co.uk","motorsportnetwork (1,300m)"],"length weak"),
+("teesside","Clubman",None,None,None,"",R,{},["teessidekarting.co.uk"],"length missing"),
 ("three-sisters","Full circuit",1500,None,50.0,"weak source",R,{},["yumping"],"50s for 1,500m looks wrong"),
 ("daytona-sandown-park","Grand Prix",900,9,None,"",R,{},["daytona.co.uk","Racing Dean DMAX 47.1"],""),
 ("daytona-sandown-park","Alternate",None,None,None,"",R,{},["daytona.co.uk SuperChamps"],"length missing"),
@@ -52,8 +52,12 @@ L=[ # track id, layout, metres, corners, record(s), record note, rental?, overri
 ("daytona-tamworth","International",1000,12,None,"",R,{},["daytona.co.uk (new Feb 2026)"],""),
 ]
 out=[]
+good=lambda rec,rn: rec and "weak" not in rn and "old" not in rn
+ANCH={}  # track -> metres per second of a good owner lap, from its best-sourced record
+for tid,name,m,c,rec,rn,*_ in L:
+    if good(rec,rn) and m and tid not in ANCH: ANCH[tid]=m/(rec*1.03)
 for tid,name,m,c,rec,rn,rent,ov,src,flag in L:
-    owner=rec*1.03 if rec and "weak" not in rn and "old" not in rn else (m/20.5 if m else None)
+    owner=rec*1.03 if good(rec,rn) else (m/ANCH.get(tid,20.5) if m else None)
     rental=(m/17.0 if m else None) if rent else None
     owner=ov.get("owner",owner); rental=ov.get("rental",rental)
     out.append(dict(track=tid,layout=name,m=m,corners=c,record=fmt(rec),record_note=rn,
