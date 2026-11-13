@@ -7,10 +7,12 @@
   "record": "1:16.1",
   "record_note": "EKS rental record",
   "owner": null,
-  "rental": "1:18.0",
+  "rental": "1:17.0",
+  "rent": true,
   "sources": [
    "kart.silverstone.co.uk",
-   "EKS lap records"
+   "EKS lap records",
+   "YouTube onboards: rental 1:15.4 near-fastest in 8h race"
   ],
   "check": ""
  },
@@ -22,10 +24,12 @@
   "record": null,
   "record_note": "",
   "owner": null,
-  "rental": "56.5",
+  "rental": "54.5",
+  "rent": true,
   "sources": [
    "kart.silverstone.co.uk",
-   "EKS hotlap 55.416"
+   "EKS hotlap 55.416",
+   "YouTube onboards: rental record 53.007"
   ],
   "check": ""
  },
@@ -37,7 +41,8 @@
   "record": null,
   "record_note": "",
   "owner": null,
-  "rental": "55.9",
+  "rental": null,
+  "rent": true,
   "sources": [
    "kart.silverstone.co.uk"
   ],
@@ -51,7 +56,8 @@
   "record": null,
   "record_note": "",
   "owner": null,
-  "rental": "30.6",
+  "rental": null,
+  "rent": true,
   "sources": [
    "kart.silverstone.co.uk"
   ],
@@ -65,7 +71,8 @@
   "record": null,
   "record_note": "",
   "owner": null,
-  "rental": "26.3",
+  "rental": null,
+  "rent": true,
   "sources": [
    "kart.silverstone.co.uk"
   ],
@@ -79,12 +86,14 @@
   "record": null,
   "record_note": "",
   "owner": "1:00.5",
-  "rental": "1:17.5",
+  "rental": "1:06.0",
+  "rent": true,
   "sources": [
    "daytona.co.uk (1,360m)",
-   "Brad KZ lap 55.784"
+   "Brad KZ lap 55.784",
+   "YouTube onboards: DMAX laps 1:04.4-1:05.6"
   ],
-  "check": "DMAX target ~1:06 to check"
+  "check": ""
  },
  {
   "track": "daytona-milton-keynes",
@@ -95,6 +104,7 @@
   "record_note": "",
   "owner": null,
   "rental": null,
+  "rent": true,
   "sources": [
    "Wikipedia (Daytona Motorsport)"
   ],
@@ -107,8 +117,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "18.3",
-  "rental": "22.1",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "Wikipedia (Daytona Motorsport)"
   ],
@@ -121,11 +132,13 @@
   "corners": 12,
   "record": "48.0",
   "record_note": "all-time, weak source",
-  "owner": "58.5",
-  "rental": "1:10.6",
+  "owner": "44.0",
+  "rental": "49.5",
+  "rent": true,
   "sources": [
    "Club100",
-   "yumping"
+   "yumping",
+   "YouTube onboards: Sodi RT10 48.56 (near record), Club 100 45.6"
   ],
   "check": "kartdirectory says 1,000m: check"
  },
@@ -136,8 +149,9 @@
   "corners": 6,
   "record": null,
   "record_note": "",
-  "owner": "29.3",
-  "rental": "35.3",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "kartdirectory"
   ],
@@ -150,8 +164,9 @@
   "corners": 6,
   "record": null,
   "record_note": "",
-  "owner": "19.5",
-  "rental": "23.5",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "kartdirectory"
   ],
@@ -162,15 +177,17 @@
   "layout": "International",
   "m": 1200,
   "corners": null,
-  "record": "59.3",
+  "record": null,
   "record_note": "",
-  "owner": "1:01.1",
-  "rental": "1:10.6",
+  "owner": "47.0",
+  "rental": "1:00.0",
+  "rent": true,
   "sources": [
    "whiltonmill.co.uk",
-   "totalkarting"
+   "totalkarting",
+   "YouTube onboards: Club 100 57.4-59.8 in races; Rotax laps ~46-47: layout to check"
   ],
-  "check": "59.3 record looks slow for 1,200m: check class"
+  "check": "Club 100 and Rotax times disagree: check which layout"
  },
  {
   "track": "whilton-mill",
@@ -179,8 +196,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "48.8",
-  "rental": "56.5",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "whiltonmill.co.uk"
   ],
@@ -193,8 +211,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "22.9",
-  "rental": "26.5",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "whiltonmill.co.uk"
   ],
@@ -208,7 +227,8 @@
   "record": "56.5",
   "record_note": "BKC record",
   "owner": "58.2",
-  "rental": "1:21.3",
+  "rental": null,
+  "rent": true,
   "sources": [
    "BKC",
    "Wikipedia"
@@ -222,8 +242,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "43.8",
-  "rental": "1:01.2",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "BKC (1,040m)",
    "Wikipedia"
@@ -239,6 +260,7 @@
   "record_note": "BKC record",
   "owner": "41.1",
   "rental": "no public rental",
+  "rent": false,
   "sources": [
    "BKC",
    "motorsport-timing"
@@ -252,8 +274,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "48.9",
+  "owner": null,
   "rental": "no public rental",
+  "rent": false,
   "sources": [
    "motorsport-timing"
   ],
@@ -266,10 +289,12 @@
   "corners": 12,
   "record": null,
   "record_note": "",
-  "owner": "50.2",
-  "rental": "no public rental",
+  "owner": "47.0",
+  "rental": "54.0",
+  "rent": true,
   "sources": [
-   "51gt3 (weak)"
+   "51gt3 (weak)",
+   "YouTube onboards: Super One Senior Rotax pole 46.3; rental time unknown"
   ],
   "check": "length weak"
  },
@@ -281,10 +306,12 @@
   "record": "34.0",
   "record_note": "BKC record",
   "owner": "35.0",
-  "rental": "47.9",
+  "rental": "44.5",
+  "rent": true,
   "sources": [
    "BKC",
-   "Alpha"
+   "Alpha",
+   "YouTube onboards: rental 43.7, Rotax 34.5"
   ],
   "check": ""
  },
@@ -294,12 +321,14 @@
   "m": 900,
   "corners": 8,
   "record": "41.2",
-  "record_note": "",
-  "owner": "42.5",
-  "rental": "52.9",
+  "record_note": "rental lap record",
+  "owner": "39.5",
+  "rental": "42.5",
+  "rent": true,
   "sources": [
    "totalkarting",
-   "Alpha says 950m"
+   "Alpha says 950m",
+   "YouTube onboards: rental record 41.23; owner time unknown; new 2026 chicane layout"
   ],
   "check": "900 vs 950m"
  },
@@ -309,14 +338,15 @@
   "m": 1040,
   "corners": 10,
   "record": "35.6",
-  "record_note": "weak: too fast for this length",
-  "owner": "50.7",
-  "rental": "1:01.2",
+  "record_note": "",
+  "owner": "36.7",
+  "rental": null,
+  "rent": true,
   "sources": [
    "lyddkartcircuit.com",
    "totalkarting"
   ],
-  "check": "35.6 record too fast for 1,040m: check (maybe 1,240m?)"
+  "check": ""
  },
  {
   "track": "lydd",
@@ -325,8 +355,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "24.4",
-  "rental": "29.4",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "geronigo"
   ],
@@ -339,10 +370,12 @@
   "corners": 9,
   "record": null,
   "record_note": "",
-  "owner": "51.2",
-  "rental": "1:01.8",
+  "owner": "49.5",
+  "rental": "52.5",
+  "rent": true,
   "sources": [
-   "llandow.com"
+   "llandow.com",
+   "YouTube onboards: Club 100 Junior 51.5"
   ],
   "check": ""
  },
@@ -353,8 +386,9 @@
   "corners": 10,
   "record": null,
   "record_note": "",
-  "owner": "45.4",
+  "owner": null,
   "rental": "no public rental",
+  "rent": false,
   "sources": [
    "BKC",
    "Brad GX-UK 56.99 P1 Jan 2024"
@@ -366,13 +400,15 @@
   "layout": "Circuit 1 (BKC)",
   "m": 990,
   "corners": 7,
-  "record": "46.1",
-  "record_note": "BKC record",
-  "owner": "47.4",
+  "record": null,
+  "record_note": "",
+  "owner": "41.0",
   "rental": "no public rental",
+  "rent": false,
   "sources": [
    "motorsport-timing",
-   "BKC lists 999m"
+   "BKC lists 999m",
+   "YouTube onboards: X30 40.75-40.95"
   ],
   "check": ""
  },
@@ -383,8 +419,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "50.3",
+  "owner": null,
   "rental": "no public rental",
+  "rent": false,
   "sources": [
    "motorsport-timing"
   ],
@@ -397,8 +434,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "51.9",
+  "owner": null,
   "rental": "no public rental",
+  "rent": false,
   "sources": [
    "motorsport-timing"
   ],
@@ -411,8 +449,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "45.9",
+  "owner": null,
   "rental": "no public rental",
+  "rent": false,
   "sources": [
    "motorsport-timing"
   ],
@@ -425,11 +464,13 @@
   "corners": 14,
   "record": null,
   "record_note": "",
-  "owner": "58.5",
-  "rental": "1:10.6",
+  "owner": "52.0",
+  "rental": null,
+  "rent": true,
   "sources": [
    "BKC",
-   "motorsport-timing"
+   "motorsport-timing",
+   "YouTube onboards: Prokart 55.7; new layout in 2026"
   ],
   "check": ""
  },
@@ -440,8 +481,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "17.1",
-  "rental": "20.6",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "motorsport-timing"
   ],
@@ -454,12 +496,14 @@
   "corners": 12,
   "record": null,
   "record_note": "",
-  "owner": "55.6",
-  "rental": "1:07.1",
+  "owner": "49.5",
+  "rental": "54.0",
+  "rent": true,
   "sources": [
-   "BKC"
+   "BKC",
+   "YouTube onboards: rental 52.9 (no boot) / 59.6 (boot config); Senior Rotax 49.7 test"
   ],
-  "check": "BKC record 29.19 is from old 852m layout"
+  "check": "Boot and no-boot configurations exist: check which is which"
  },
  {
   "track": "larkhall",
@@ -468,8 +512,9 @@
   "corners": null,
   "record": "29.2",
   "record_note": "BKC listing, weak: too fast for this length",
-  "owner": "41.6",
-  "rental": "50.1",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "motorsport-timing"
   ],
@@ -481,12 +526,14 @@
   "m": 1100,
   "corners": 11,
   "record": "53.8",
-  "record_note": "BKC record",
-  "owner": "55.5",
-  "rental": "1:04.7",
+  "record_note": "BKC listing, weak: conflicts with 40.62",
+  "owner": "49.0",
+  "rental": "56.5",
+  "rent": true,
   "sources": [
    "BKC",
-   "totalkarting says 40.62"
+   "totalkarting says 40.62",
+   "YouTube onboards: rental 55.3 month record; owner time unknown"
   ],
   "check": "record conflict"
  },
@@ -497,8 +544,9 @@
   "corners": 19,
   "record": "1:29.0",
   "record_note": "weak source",
-  "owner": "1:42.4",
-  "rental": "2:03.5",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "teessidekarting.co.uk"
   ],
@@ -511,8 +559,9 @@
   "corners": null,
   "record": null,
   "record_note": "",
-  "owner": "1:03.4",
-  "rental": "1:16.5",
+  "owner": null,
+  "rental": null,
+  "rent": true,
   "sources": [
    "teessidekarting.co.uk",
    "motorsportnetwork (1,300m)"
@@ -528,6 +577,7 @@
   "record_note": "",
   "owner": null,
   "rental": null,
+  "rent": true,
   "sources": [
    "teessidekarting.co.uk"
   ],
@@ -538,27 +588,31 @@
   "layout": "Full circuit",
   "m": 1500,
   "corners": null,
-  "record": "50.0",
-  "record_note": "weak source",
-  "owner": "1:13.2",
-  "rental": "1:28.2",
+  "record": null,
+  "record_note": "",
+  "owner": null,
+  "rental": "51.0",
+  "rent": true,
   "sources": [
-   "yumping"
+   "yumping",
+   "YouTube onboards: hot laps 49.9-50.3"
   ],
-  "check": "50s for 1,500m looks wrong"
+  "check": "1.5km length looks wrong for 50s laps: check"
  },
  {
   "track": "daytona-sandown-park",
   "layout": "Grand Prix",
   "m": 900,
   "corners": 9,
-  "record": null,
-  "record_note": "",
-  "owner": "43.9",
-  "rental": "52.9",
+  "record": "44.7",
+  "record_note": "DMAX record",
+  "owner": null,
+  "rental": "47.5",
+  "rent": true,
   "sources": [
    "daytona.co.uk",
-   "Racing Dean DMAX 47.1"
+   "Racing Dean DMAX 47.1",
+   "YouTube onboards: DMAX 46.2-46.4, record 44.664"
   ],
   "check": ""
  },
@@ -571,6 +625,7 @@
   "record_note": "",
   "owner": null,
   "rental": null,
+  "rent": true,
   "sources": [
    "daytona.co.uk SuperChamps"
   ],
@@ -585,6 +640,7 @@
   "record_note": "",
   "owner": null,
   "rental": null,
+  "rent": true,
   "sources": [
    "Wikipedia"
   ],
@@ -595,12 +651,14 @@
   "layout": "International",
   "m": 1000,
   "corners": 12,
-  "record": null,
-  "record_note": "",
-  "owner": "48.8",
-  "rental": "58.8",
+  "record": "53.8",
+  "record_note": "DMAX, new layout Feb 2026",
+  "owner": null,
+  "rental": "55.5",
+  "rent": true,
   "sources": [
-   "daytona.co.uk (new Feb 2026)"
+   "daytona.co.uk (new Feb 2026)",
+   "YouTube onboards: DMAX 53.845 new layout"
   ],
   "check": ""
  }

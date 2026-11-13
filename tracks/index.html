@@ -104,6 +104,7 @@ h3.sec{font-family:var(--display);font-size:19px;margin:18px 2px 10px}
 .sl .lab em{flex:none;font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--acc);color:#fff;border-radius:6px;padding:4px 7px}
 .sl .lab span{color:#fff;font-weight:800;font-size:13.5px;text-shadow:0 2px 8px rgba(0,0,0,.9);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sl.h .lab{bottom:14px}
+.car.allh .sl{height:auto}.car.allh .sl .fr{position:relative;left:auto;top:auto;transform:none;margin:10px 10px 74px;width:auto}.car.allh .sl .lab{flex-direction:column;align-items:flex-start;gap:5px;bottom:12px}.car.allh .sl .lab span{max-width:100%}
 .dots{display:flex;justify-content:center;gap:7px;margin:10px 0 2px}
 .dots button{width:8px;height:8px;border-radius:99px;border:0;padding:0;background:rgba(255,255,255,.25);transition:width .25s,background .25s}
 .dots button.on{width:22px;background:var(--acc)}
@@ -166,7 +167,7 @@ function page(t){const i=T.indexOf(t),prev=T[(i+T.length-1)%T.length],next=T[(i+
   <section class="tgt" id="tgt"></section>
   <section class="brad"><img src="brad.jpg" alt="Brad Philpot"><div><blockquote>${t.quote?esc(t.quote):"My one thing to remember at "+esc(t.name)+" is coming soon."}</blockquote><cite>Brad Philpot${t.draft?'<span class="draft">Draft</span>':""}</cite></div></section>
   ${hv?`<h3 class="sec">Onboard laps <small style="font-family:var(--body);font-size:13px;color:#8d9099;font-weight:600">${hv} videos</small></h3>
-  <div class="car" id="car">${t.videos.map((v,k)=>`<div class="sl ${v.v?"v":"h"}" data-k="${k}"><div class="bk" style="background-image:url(https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg)"></div><div class="fr"><button type="button" data-play="${k}" style="background-image:url(https://i.ytimg.com/vi/${esc(v.id)}/maxresdefault.jpg)" aria-label="Play ${esc(v.title)}"><span class="play"></span></button></div><div class="lab"><em>${esc(v.tag)}</em><span>${esc(v.title)}</span></div></div>`).join("")}</div>
+  <div class="car${t.videos.some(v=>v.v)?"":" allh"}" id="car">${t.videos.map((v,k)=>`<div class="sl ${v.v?"v":"h"}" data-k="${k}"><div class="bk" style="background-image:url(https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg)"></div><div class="fr"><button type="button" data-play="${k}" style="background-image:url(https://i.ytimg.com/vi/${esc(v.id)}/maxresdefault.jpg)" aria-label="Play ${esc(v.title)}"><span class="play"></span></button></div><div class="lab"><em>${esc(v.tag)}</em><span>Onboard by ${esc(v.title)}</span></div></div>`).join("")}</div>
   ${hv>1?`<div class="dots" id="dots">${t.videos.map((v,k)=>`<button type="button" data-dot="${k}" aria-label="Video ${k+1}"${k?"":' class="on"'}></button>`).join("")}</div><p class="swipe">Swipe for more onboards</p>`:""}`:`<div class="soon">Onboard laps for ${esc(t.name)} are on the way.</div>`}
   <div class="acts${hv?"":" one"}"><a class="p" href="${esc(t.live)}" ${/^https?:/.test(t.live)?'target="_blank" rel="noopener"':""} data-ev="live"><i></i>Live timing</a>${hv?`<a id="ytl" href="https://www.youtube.com/watch?v=${esc(t.videos[0].id)}" target="_blank" rel="noopener" data-ev="yt">Watch on YouTube</a>`:""}</div>
   <h3 class="sec">Need to know</h3><ul class="facts">${t.facts.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>
@@ -175,10 +176,10 @@ function page(t){const i=T.indexOf(t),prev=T[(i+T.length-1)%T.length],next=T[(i+
   const show=(k,anim)=>{li=k;const l=t.layouts[k]||{};$("#mapw").innerHTML=svg(t,k,"map",true);$("#lname").textContent=(l.n||"")+(t.layouts.length>1?" layout":"");
     $$("#lays button").forEach(b=>b.classList.toggle("on",+b.dataset.l===k));
     $("#stats").innerHTML=`<div class="stat"><b>${fm(l.m)}</b><span>Length</span></div><div class="stat"><b>${l.c||"TBC"}</b><span>Corners</span></div><div class="stat"><b>${t.layouts.length}</b><span>Layout${t.layouts.length>1?"s":""}</span></div>`;
-    const rental=l.ren&&l.ren!=="no public rental";
+    const tt=(lab,val,txt,none)=>`<div class="tt"><small>${lab}</small><b>${val?esc(val):none?"–":"TBC"}</b><span>${val?txt:none?none:"Target coming soon"}</span></div>`;
     $("#tgt").innerHTML=`<h3 class="sec">Target lap times${l.chk||t.draft?'<span class="draft">Draft</span>':""}</h3><div class="tg">
-      <div class="tt"><small>Rental kart</small><b>${rental?esc(l.ren):"–"}</b><span>${rental?"A quick lap in the adult arrive and drive kart":"No public arrive and drive"}</span></div>
-      <div class="tt"><small>Owner driver</small><b>${l.own?esc(l.own):"–"}</b><span>${l.own?"A competitive club lap in a senior two-stroke":"Not raced by owner drivers yet"}</span></div></div>
+      ${tt("Rental kart",l.rent?l.ren:null,"A quick lap in the adult arrive and drive kart",l.rent?"":"No public arrive and drive")}
+      ${tt("Owner driver",l.own,"A competitive club lap in a senior two-stroke","")}</div>
       ${l.rec?`<p class="rec">Lap record ${esc(l.rec)}${l.recn?" ("+esc(l.recn)+")":""}</p>`:""}${l.d?"":`<p class="rec">Map of this layout coming soon.</p>`}`;
     if(anim!==false)$$(".draw").forEach(p=>{const L=Math.ceil(p.getTotalLength());p.style.setProperty("--L",L)});else $$(".draw").forEach(p=>p.classList.remove("draw"));};
   show(li);
