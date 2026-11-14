@@ -206,10 +206,11 @@
 
   /* ---------- signed in ---------- */
   if (P) {
-    if (navigator.onLine !== false && Date.now() - (P.checked || 0) > 864e5) {
+    /* passes from before the move to Cloudflare (no w flag) are checked straight away, so old ones get swapped for new ones */
+    if (navigator.onLine !== false && (!P.w || Date.now() - (P.checked || 0) > 864e5)) {
       fetch(api + "?verify=" + encodeURIComponent(P.t), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (r) {
         if (r && r.ok === false) { ls(KEY, null); location.reload(); }
-        else if (r && r.ok) { P.checked = Date.now(); ls(KEY, JSON.stringify(P)); }
+        else if (r && r.ok) { P.checked = Date.now(); P.w = 1; ls(KEY, JSON.stringify(P)); }
       }).catch(function () {});
     }
     if (NEED === "member" && !P.m) { H.classList.add("umk-locked"); sheet("page"); }
