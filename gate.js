@@ -4,12 +4,12 @@
      <script src="gate.js" data-need="public"></script>  open to everyone, no sign-in needed (Live Timing)
      <script src="gate.js"></script>                     members only (planner, race coach, team manager, members)
    Signing in needs a Discord account in the Use More Kerb server. Members (the YouTube Member role) unlock everything.
-   Sign-in is checked by netlify/functions/discord-auth.mjs. Pages can call window.UMK.upgrade() to show the
+   Sign-in is checked by the Cloudflare Worker in worker/src/index.js. Pages can call window.UMK.upgrade() to show the
    "become a member" sheet, and read window.UMK.member. */
 (function () {
   var CFG = {
     enabled: true,
-    netlify: "https://umkseasonplanner.netlify.app",   /* the Netlify address (used when the app is opened from GitHub Pages) */
+    api: "https://umk-api.bradleyphilpotid.workers.dev",   /* the app's service on Cloudflare Workers (worker/ folder) */
     discordInvite: "https://discord.gg/DZDKW9fWmA",     /* invite link to the Use More Kerb Discord server */
     join: "https://www.youtube.com/@BradPhilpot/join",
     trailer: "JAPL-rYNekY"
@@ -60,7 +60,7 @@
   var tq = location.search.match(/[?&]gatetest=([01])/);
   if (tq) ls("umk-gate-test", tq[1] === "1" ? "1" : null);
   var ON = CFG.enabled || ls("umk-gate-test") === "1";
-  var api = (!/netlify\.app$|^localhost$/.test(location.hostname) && CFG.netlify ? CFG.netlify.replace(/\/$/, "") : location.origin) + "/.netlify/functions/discord-auth";
+  var api = CFG.api.replace(/\/$/, "") + "/discord-auth";
 
   var P = ON ? pass() : { m: true };
   var UMK = window.UMK = { on: ON, signedIn: !!P, member: !!(P && P.m), upgrade: function () { sheet("modal"); }, signIn: function () { signIn(); },
@@ -135,8 +135,6 @@
     ls("umk-sid", sid);
     track("gate-signin", "Gate: sign in with Discord");
     var here = location.href.split("#")[0];
-    /* on usemorekerb.com, come back via the old GitHub address: it forwards to usemorekerb.com and keeps the sign-in pass */
-    if (/(^|\.)usemorekerb\.com$/.test(location.hostname)) here = "https://bradphilpotumk.github.io/UMKapp" + location.pathname + location.search;
     var url = api + "?start=1&sid=" + sid + "&ret=" + encodeURIComponent(here);
     sayFn("Waiting for Discord… finish signing in, then come back here.");
     startPolling();

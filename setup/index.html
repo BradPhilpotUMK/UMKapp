@@ -307,7 +307,7 @@ async function askAI(){
   const out=$("#aiText"),btn=$("#aiGo");if(!lastQ)return;
   out.hidden=false;out.textContent="Thinking…";btn.disabled=true;gc("ask-ai","Asked the AI coach");
   try{
-    const r=await fetch("/.netlify/functions/coach",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:lastQ.slice(0,600),mode:ST.mode,conditions:ST.conds})});
+    const r=await fetch(((window.UMK&&UMK.fn)||"https://umk-api.bradleyphilpotid.workers.dev/")+"coach",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:lastQ.slice(0,600),mode:ST.mode,conditions:ST.conds})});
     if([404,405,501].includes(r.status)){out.innerHTML=`<span style="color:var(--muted)">AI answers aren't switched on yet. The guide above covers the most common problems.</span>`;return}
     const d=await r.json().catch(()=>({}));
     if(!r.ok||!d.answer){out.innerHTML=`<span style="color:var(--muted)">${esc(d.error||"Couldn't get an answer right now. Try again in a moment.")}</span>`;return}

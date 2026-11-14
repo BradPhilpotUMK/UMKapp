@@ -1,4 +1,4 @@
-/* Keeps each signed-in person's app data saved against their Discord sign-in (netlify/functions/sync.mjs),
+/* Keeps each signed-in person's app data saved against their Discord sign-in (the Cloudflare Worker, worker/src/index.js),
    so their Season Planner, Team Manager, favourites and settings follow them to any phone or browser.
    Loaded by gate.js on every page. Only the keys below are saved; nothing else leaves the phone. */
 (function () {
