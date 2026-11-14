@@ -1,9 +1,9 @@
-# Home page YouTube section: latest long-form video (no Shorts) into data/youtube.json every hour.
+# Home page YouTube section: latest long-form video (no Shorts) into data/youtube.json every 20 minutes (GitHub often delays or skips scheduled runs).
 name: YouTube latest video
 
 on:
   schedule:
-    - cron: "23 * * * *"
+    - cron: "8,28,48 * * * *"
   workflow_dispatch:
 
 permissions:
