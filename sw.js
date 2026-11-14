@@ -1,7 +1,7 @@
 /* Season Planner offline support.
    Pages and race data: try the network first (so updates show straight away), fall back to the saved copy when offline.
    Logos, icons and fonts: use the saved copy, refresh it in the background. */
-const CACHE = "umk-planner-v80";
+const CACHE = "umk-planner-v81";
 const CORE = [
   "./", "index.html", "manifest.webmanifest", "version.json",
   "data/races.json", "data/brad.json",
@@ -72,7 +72,7 @@ self.addEventListener("fetch", e => {
       e.respondWith(page(req, key)); return;
     }
     /* race data, sign-ups, YouTube etc: always try the network first (the site lives under /season-planner/ on GitHub Pages) */
-    if (/(^|\/)version\.json$/.test(p) || /(^|\/)data\//.test(p)) { e.respondWith(fresh(req, url.pathname.slice(1))); return; }
+    if (/(^|\/)version\.json$/.test(p) || /(^|\/)data\//.test(p) || /(^|\/)(install|gate|sync)\.js$/.test(p)) { e.respondWith(fresh(req, url.pathname.slice(1))); return; }
     e.respondWith(saved(req));
     return;
   }

@@ -101,12 +101,13 @@
       else if (SAFARI_V >= 26 && topBar()) {
         /* address bar at the top (e.g. opened from an old home-screen icon): Share sits in the bar at the bottom */
         html = head("Three taps and it's on your home screen.");
-        html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> (bottom of the screen)") + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>";
+        html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> in the bar at the bottom") + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>" +
+          '<p style="color:#a4a5ad;font-size:13px;margin:8px 0 0;text-align:center">No Add to Home Screen option? Tap the compass button to open this in Safari, then try again.</p>';
         top = true; pt = "down-share";
       }
       else if (SAFARI_V >= 26) {
         html = head("Four taps and it's on your home screen.");
-        html += '<div class="ol"><div class="li"><i></i><span>Tap <span class="ic d">' + DOTS + '</span> (bottom right)</span></div>' + shareStep + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>";
+        html += '<div class="ol"><div class="li"><i></i><span>Tap <span class="ic d">' + DOTS + '</span> (bottom right). See <b>Share</b> at the bottom instead? Tap that and skip to step 3</span></div>' + shareStep + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>";
         top = true; pt = "down-right";
       } else {
         html = head("Three taps and it's on your home screen.");
