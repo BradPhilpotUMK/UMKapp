@@ -301,7 +301,7 @@ function search(text,via){
   $("#results").innerHTML=html;$("#home").hidden=true;
   $("#results").scrollIntoView({behavior:"smooth",block:"start"});
 }
-const AI_ON=false; /* Ask the AI switched off until Netlify credits are sorted; set true to bring it back */
+const AI_ON=true; /* AI answers come free from Cloudflare Workers AI via the worker */
 function aiBox(){if(!AI_ON)return "";return `<div class="ai" id="aiBox"><div class="row"><b>Not quite right?<small>Ask the AI coach about your exact situation${ST.mode==="rental"?" (driving only)":""}.</small></b><button class="btn" id="aiGo">Ask the AI</button></div><div class="aitext" id="aiText" hidden></div></div>`}
 async function askAI(){
   const out=$("#aiText"),btn=$("#aiGo");if(!lastQ)return;
