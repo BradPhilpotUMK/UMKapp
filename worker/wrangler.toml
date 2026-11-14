@@ -4,6 +4,7 @@ name = "umk-api"
 main = "src/index.js"
 compatibility_date = "2026-11-01"
 workers_dev = true
+preview_urls = false
 
 [vars]
 DISCORD_CLIENT_ID = "1570175134843801721"
@@ -13,7 +14,11 @@ DISCORD_ROLE_IDS = "1412754896733737032,1412754896733737033,1412754896733737034,
 DISCORD_EXTRA_USER_IDS = "692509650058346506"
 ALLOWED_HOSTS = "usemorekerb.com,www.usemorekerb.com,bradphilpotumk.github.io"
 PASS_DAYS = "180"
-COACH_DAILY_LIMIT = "20"
+COACH_DAILY_LIMIT = "10"
+COACH_DAILY_TOTAL = "150"
+
+[ai]
+binding = "AI"
 
 [[d1_databases]]
 binding = "DB"

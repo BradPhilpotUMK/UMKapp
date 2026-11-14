@@ -6,7 +6,7 @@
    Storage: the D1 database bound as DB (tables are created automatically).
    Secrets (Cloudflare: Workers & Pages > umk-api > Settings > Variables and secrets):
      DISCORD_CLIENT_SECRET  only if the Discord app isn't a Public Client
-     ANTHROPIC_API_KEY      optional, for AI answers in Race Coach
+     ANTHROPIC_API_KEY      optional; without it Race Coach uses Cloudflare's free Workers AI
    The pass signing key is made automatically the first time and kept in the database. */
 
 const enc = new TextEncoder();
@@ -151,25 +151,37 @@ Answer the driver's problem concisely for a phone screen. Use these sections wit
 Use general CIK-style sprint kart principles (track width, ride height, caster, camber, Ackermann, toe, seat position, axle stiffness, hub length, tyre pressures, torsion bars, gearing, carburation).
 If the driver is in a RENTAL kart, leave out the setup section entirely and focus on driving technique, body position, lines, braking and momentum.
 Never invent specific numbers you are unsure of. If a problem could be a safety issue (brakes, steering, seizing engine, bent parts), say to stop and check the kart first.
-Stay on karting. No preamble.`;
+Stay on karting. No preamble. Use British English. Never use em dashes.`;
 async function coach(req, env, origin) {
   if (req.method !== "POST") return json({ error: "POST only" }, 405, origin);
-  if (!env.ANTHROPIC_API_KEY) return json({ error: "AI answers aren't switched on yet." }, 503, origin);
+  if (!env.ANTHROPIC_API_KEY && !env.AI) return json({ error: "AI answers aren't switched on yet." }, 503, origin);
   let body; try { body = await req.json(); } catch { return json({ error: "Bad request" }, 400, origin); }
   const qn = String(body.question || "").trim().slice(0, 600);
   if (qn.length < 4) return json({ error: "Describe the problem in a few words." }, 400, origin);
   const ip = req.headers.get("cf-connecting-ip") || "?", day = new Date().toISOString().slice(0, 10), k = "coach/" + ip + "/" + day;
   const n = ((await kvGet(env, k)) || 0) + 1;
+  const all = "coach/all/" + day, total = ((await kvGet(env, all)) || 0) + 1;
+  if (total > (Number(env.COACH_DAILY_TOTAL) || 150)) return json({ error: "The AI coach has answered all it can for today. The guide still works, and the AI is back tomorrow." }, 429, origin);
   if (n > (Number(env.COACH_DAILY_LIMIT) || 20)) return json({ error: "You've reached today's limit for AI answers. The guide still works." }, 429, origin);
-  await kvSet(env, k, n, 864e5);
+  await kvSet(env, k, n, 864e5); await kvSet(env, all, total, 864e5);
   const rental = body.mode === "rental";
   const conds = Array.isArray(body.conditions) ? body.conditions.filter(c => ["dry", "wet", "cold", "hot"].includes(c)) : [];
   const user = `Kart: ${rental ? "RENTAL kart (driving advice only, no setup)" : "owner kart"}.` + (conds.length ? ` Conditions: ${conds.join(", ")}.` : "") + `\nProblem: ${qn}`;
+  const tidy = t => String(t || "").replace(/<think>[\s\S]*?<\/think>/g, "").replace(/\u2014/g, ", ").trim();
+  if (!env.ANTHROPIC_API_KEY) {
+    /* free: Cloudflare Workers AI (10,000 free units a day; on the free plan it simply stops for the day if that runs out) */
+    try {
+      const out = await env.AI.run(env.COACH_FREE_MODEL || "@cf/google/gemma-4-26b-a4b-it", { messages: [{ role: "system", content: COACH_SYSTEM }, { role: "user", content: user }], max_tokens: 700, temperature: 0.4 });
+      const answer = tidy(out && (out.response || (out.choices && out.choices[0] && out.choices[0].message && out.choices[0].message.content)));
+      if (!answer) return json({ error: "The AI coach is unavailable right now." }, 502, origin);
+      return json({ answer }, 200, origin);
+    } catch (e) { return json({ error: "The AI coach is busy right now. The guide still works.", detail: String(e && e.message || e).slice(0, 160) }, 502, origin); }
+  }
   try {
     const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST", headers: { "content-type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
       body: JSON.stringify({ model: env.COACH_MODEL || "claude-haiku-5-5", max_tokens: 700, system: COACH_SYSTEM, messages: [{ role: "user", content: user }] }) });
     const d = await r.json(); if (!r.ok) return json({ error: "The AI coach is unavailable right now." }, 502, origin);
-    return json({ answer: (d.content || []).filter(c => c.type === "text").map(c => c.text).join("\n").trim() }, 200, origin);
+    return json({ answer: tidy((d.content || []).filter(c => c.type === "text").map(c => c.text).join("\n")) }, 200, origin);
   } catch { return json({ error: "The AI coach is unavailable right now." }, 502, origin); }
 }
 
