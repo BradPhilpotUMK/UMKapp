@@ -1,0 +1,22 @@
+# One-off helper: prints the Discord server's owner and role IDs (not secret) so the sign-in service knows which roles are members.
+name: Discord info
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          T: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          def get(p):
+              r = urllib.request.Request("https://discord.com/api/v10" + p, headers={"Authorization": "Bot " + os.environ["T"], "User-Agent": "UMK-app (github.com/BradPhilpotUMK/UMKapp, 1.0)"})
+              return json.load(urllib.request.urlopen(r, timeout=20))
+          g = get("/guilds/1074762004067262596")
+          print("OWNER", g.get("owner_id"), g.get("name"))
+          for r in sorted(g.get("roles", []), key=lambda r: -r["position"]):
+              print("ROLE", r["id"], r["position"], "managed" if r.get("managed") else "", r.get("tags") or "", r["name"])
+          app = get("/oauth2/applications/@me")
+          print("APP", app.get("id"), app.get("name"), "public_client=", app.get("bot_public"), app.get("flags"))
+          PY
