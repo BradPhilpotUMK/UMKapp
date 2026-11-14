@@ -65,6 +65,8 @@
   var P = ON ? pass() : { m: true };
   var UMK = window.UMK = { on: ON, signedIn: !!P, member: !!(P && P.m), upgrade: function () { sheet("modal"); }, signIn: function () { signIn(); },
     fn: api.replace(/discord-auth$/, ""), token: P && P.t ? P.t : "" };
+  /* save this person's app data against their Discord sign-in (sync.js) */
+  if (UMK.token) try { var SJ = D.createElement("script"); SJ.src = S.src.replace(/gate\.js(\?.*)?$/, "sync.js"); SJ.async = true; D.head.appendChild(SJ); } catch (e) {}
 
   /* ---------- styles ---------- */
   var css = D.createElement("style");

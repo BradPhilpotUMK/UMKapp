@@ -9,6 +9,17 @@
 <meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Use More Kerb Season Planner</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Use More Kerb">
+<meta property="og:title" content="Use More Kerb Season Planner">
+<meta property="og:description" content="Plan your karting season: UK club rounds, rental championships, free weekends and clashes.">
+<meta property="og:url" content="https://usemorekerb.com/planner/">
+<meta property="og:image" content="https://usemorekerb.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://usemorekerb.com/og.jpg">
+
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="apple-mobile-web-app-title" content="Season Planner">
@@ -469,7 +480,7 @@ document.addEventListener("click",ev=>{const a=ev.target.closest&&ev.target.clos
 </script>
 <style id="carbon">/* carbon fibre background, with the cards see-through enough to show it */
 html:not([data-skin="pink"]){--surface:rgba(38,40,46,.80);--surface2:rgba(50,53,60,.86)}
-html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,rgba(255,0,116,.10),transparent 60%),radial-gradient(120% 50% at 50% 100%,rgba(0,190,0,.06),transparent 60%),url(../img/carbon.png) 0 0/32px 32px,#0b0b0d}
+html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,rgba(255,0,116,.10),transparent 60%),radial-gradient(120% 50% at 50% 100%,rgba(0,190,0,.06),transparent 60%),linear-gradient(115deg,rgba(255,255,255,.06),rgba(255,255,255,0) 38%,rgba(255,255,255,.035) 68%,rgba(255,255,255,0) 85%),url(../img/carbon-weave.png) 0 0/22px 22px,#0b0b0d}
 </style>
 </head>
 <body>
@@ -643,7 +654,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD="1794682955";
+const BUILD="1794683929";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,

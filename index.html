@@ -21,6 +21,17 @@ html.dim #bgfx{opacity:.2;filter:saturate(.55) brightness(.8);transition:opacity
 <meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Use More Kerb</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Use More Kerb">
+<meta property="og:title" content="Use More Kerb: free karting tools from Brad Philpot">
+<meta property="og:description" content="The Use More Kerb app: season planner, championship standings, team manager, race coach, the members championship and the store.">
+<meta property="og:url" content="https://usemorekerb.com/">
+<meta property="og:image" content="https://usemorekerb.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://usemorekerb.com/og.jpg">
+
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="apple-mobile-web-app-title" content="Use More Kerb">
@@ -728,7 +739,7 @@ if(!IS_APP){$("#instBar").hidden=false;$("#instBar").onclick=instShow}
 if(IS_APP)setTimeout(()=>gc("open-as-app","Opened from home screen"),3000);
 
 /* ---------- pick up new versions: check when the app opens or comes back to the front ---------- */
-const BUILD="1794682955";
+const BUILD="1794683929";
 /* a newer version has been saved in the background: switch to it when the app is next put away,
    or straight away when it comes back to the front (iPhone apps often resume instead of reopening) */
 let newer=false;
