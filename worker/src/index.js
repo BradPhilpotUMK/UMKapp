@@ -171,11 +171,14 @@ async function coach(req, env, origin) {
   if (!env.ANTHROPIC_API_KEY) {
     /* free: Cloudflare Workers AI (10,000 free units a day; on the free plan it simply stops for the day if that runs out) */
     try {
-      const out = await env.AI.run(env.COACH_FREE_MODEL || "@cf/google/gemma-4-26b-a4b-it", { messages: [{ role: "system", content: COACH_SYSTEM }, { role: "user", content: user }], max_tokens: 700, temperature: 0.4 });
+      const TRY = { g: "@cf/google/gemma-4-26b-a4b-it", z: "@cf/zai-org/glm-4.7-flash", n: "@cf/nvidia/nemotron-3-120b-a12b", o: "@cf/openai/gpt-oss-20b", l: "@cf/meta/llama-3.3-70b-instruct-fp8-fast" };
+      const model = TRY[new URL(req.url).searchParams.get("m")] || env.COACH_FREE_MODEL || TRY.g;
+      const out = await env.AI.run(model, { messages: [{ role: "system", content: COACH_SYSTEM }, { role: "user", content: user }], max_tokens: 900, temperature: 0.4 });
       const msg = out && out.choices && out.choices[0] && out.choices[0].message;
-      const answer = tidy(out && (typeof out.response === "string" ? out.response : (out.response && JSON.stringify(out.response))) || (msg && (msg.content || msg.reasoning_content)));
+      let answer2 = ""; const answer = tidy(out && (typeof out.response === "string" ? out.response : (out.response && JSON.stringify(out.response))) || (msg && (msg.content || msg.reasoning_content)));
+      if (answer && /## Most likely cause/.test(answer)) { const i = answer.lastIndexOf("## Most likely cause"); if (i > 0) answer2 = answer.slice(i); }
       if (!answer) return json({ error: "The AI coach is unavailable right now.", detail: JSON.stringify(out).slice(0, 300) }, 502, origin);
-      return json({ answer }, 200, origin);
+      return json({ answer: answer2 || answer }, 200, origin);
     } catch (e) { return json({ error: "The AI coach is busy right now. The guide still works.", detail: String(e && e.message || e).slice(0, 160) }, 502, origin); }
   }
   try {
