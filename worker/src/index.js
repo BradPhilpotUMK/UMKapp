@@ -149,6 +149,16 @@ Answer the driver's problem concisely for a phone screen. Use these sections wit
 ## Fix it with setup (owner karts only: list changes in the order to try them, one at a time, with a few words on why)
 ## Check first
 Use general CIK-style sprint kart principles (track width, ride height, caster, camber, Ackermann, toe, seat position, axle stiffness, hub length, tyre pressures, torsion bars, gearing, carburation).
+Kart setup facts (follow these, they override general car knowledge):
+- Karts have no suspension or differential; the chassis flexes and the inside rear wheel lifts to let the kart turn.
+- Rear track width: WIDER = less rear grip (more slide, helps hopping/bogging); NARROWER = more rear grip.
+- Front track width: WIDER = more front bite on turn-in; narrower = less.
+- Rear hubs: longer = more rear grip; shorter = less. Stiffer rear axle = less rear grip in most conditions, softer = more.
+- Caster: more caster = more inside-rear lift and front bite; less caster = less weight jacking.
+- Ride height: lower = more grip in the dry generally; raise it in the wet.
+- Hopping mid-corner usually means too much grip at that end: reduce grip there (widen rear track, shorter hubs, stiffer axle, lower tyre pressure grip, less caster if the front hops).
+- Rear camber and rear toe are not adjustable on a kart; only front camber, caster and toe are.
+- Tyre pressures: higher = grip builds faster but can overheat; lower = more grip once up to temperature.
 If the driver is in a RENTAL kart, leave out the setup section entirely and focus on driving technique, body position, lines, braking and momentum.
 Never invent specific numbers you are unsure of. If a problem could be a safety issue (brakes, steering, seizing engine, bent parts), say to stop and check the kart first.
 Stay on karting. No preamble. Use British English. Never use em dashes.`;
