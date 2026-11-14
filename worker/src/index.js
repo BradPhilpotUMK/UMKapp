@@ -172,8 +172,9 @@ async function coach(req, env, origin) {
     /* free: Cloudflare Workers AI (10,000 free units a day; on the free plan it simply stops for the day if that runs out) */
     try {
       const out = await env.AI.run(env.COACH_FREE_MODEL || "@cf/google/gemma-4-26b-a4b-it", { messages: [{ role: "system", content: COACH_SYSTEM }, { role: "user", content: user }], max_tokens: 700, temperature: 0.4 });
-      const answer = tidy(out && (out.response || (out.choices && out.choices[0] && out.choices[0].message && out.choices[0].message.content)));
-      if (!answer) return json({ error: "The AI coach is unavailable right now." }, 502, origin);
+      const msg = out && out.choices && out.choices[0] && out.choices[0].message;
+      const answer = tidy(out && (typeof out.response === "string" ? out.response : (out.response && JSON.stringify(out.response))) || (msg && (msg.content || msg.reasoning_content)));
+      if (!answer) return json({ error: "The AI coach is unavailable right now.", detail: JSON.stringify(out).slice(0, 300) }, 502, origin);
       return json({ answer }, 200, origin);
     } catch (e) { return json({ error: "The AI coach is busy right now. The guide still works.", detail: String(e && e.message || e).slice(0, 160) }, 502, origin); }
   }
