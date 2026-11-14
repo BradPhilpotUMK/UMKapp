@@ -67,10 +67,16 @@
     var up = where.indexOf("up") === 0;
     p.innerHTML = '<svg viewBox="0 0 24 24" style="transform:rotate(' + (up ? 180 : 0) + 'deg)"><path d="M12 22 3 11h6V2h6v9h6z"/></svg>';
     if (up) { p.style.top = "calc(6px + env(safe-area-inset-top,0px))"; } else { p.style.bottom = "calc(4px + env(safe-area-inset-bottom,0px))"; }
-    if (where.indexOf("right") > 0) p.style.right = "14px"; else p.style.left = "calc(50% - 23px)";
+    if (where === "down-share") p.style.left = "calc(63.2% - 23px)";
+    else if (where.indexOf("right") > 0) p.style.right = "14px"; else p.style.left = "calc(50% - 23px)";
     return p;
   }
 
+  /* Safari 26 normally puts the address bar at the bottom and lets the page run under the status bar.
+     When the address bar is at the top instead, the top safe area is zero. */
+  function topBar() {
+    try { var t = D.createElement("div"); t.style.cssText = "position:fixed;top:0;height:env(safe-area-inset-top,0px);width:1px;visibility:hidden"; D.body.appendChild(t); var h = t.offsetHeight; t.remove(); return h === 0; } catch (e) { return false; }
+  }
   function show(force) {
     if (!force) {
       if (!MOBILE) return false;
@@ -92,6 +98,12 @@
       var addStep = '<div class="li"><i></i><span>Tap <span class="ic p">' + PLUS + '</span> <b>Add to Home Screen</b></span></div><div class="li"><i></i><span>Tap <b>Add</b> (top right)</span></div>';
       if (CRIOS) { html = head("Three taps and it's on your home screen."); html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> (top right, by the address)") + addStep + "</div>"; top = false; pt = "up-right"; }
       else if (IPAD) { html = head("Three taps and it's on your home screen."); html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> (top right)") + addStep + "</div>"; pt = "up-right"; }
+      else if (SAFARI_V >= 26 && topBar()) {
+        /* address bar at the top (e.g. opened from an old home-screen icon): Share sits in the bar at the bottom */
+        html = head("Three taps and it's on your home screen.");
+        html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> (bottom of the screen)") + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>";
+        top = true; pt = "down-share";
+      }
       else if (SAFARI_V >= 26) {
         html = head("Four taps and it's on your home screen.");
         html += '<div class="ol"><div class="li"><i></i><span>Tap <span class="ic d">' + DOTS + '</span> (bottom right)</span></div>' + shareStep + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>";
