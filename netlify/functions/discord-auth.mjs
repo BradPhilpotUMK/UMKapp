@@ -12,7 +12,7 @@
      UMK_PASS_SECRET         any long random text (keeps passes from being forged)
    Optional:
      DISCORD_EXTRA_USER_IDS  Discord user IDs always let in (e.g. Brad, moderators), comma separated
-     UMK_ALLOWED_HOSTS       other sites allowed to use this sign-in, default "bradphilpotumk.github.io"
+     UMK_ALLOWED_HOSTS       other sites allowed to use this sign-in, default "bradphilpotumk.github.io, usemorekerb.com, www.usemorekerb.com"
      UMK_PASS_DAYS           how long a pass lasts before signing in again, default 90
 
    Discord redirect URL to register: https://<your-netlify-site>/.netlify/functions/discord-auth */
@@ -44,7 +44,7 @@ function okReturn(ret, self) {
     if (u.protocol !== "https:" && u.hostname !== "localhost") return false;
     if (u.origin === self.origin) return true;
     const hosts = list("UMK_ALLOWED_HOSTS");
-    return (hosts.length ? hosts : ["bradphilpotumk.github.io"]).includes(u.hostname);
+    return (hosts.length ? hosts : ["bradphilpotumk.github.io", "usemorekerb.com", "www.usemorekerb.com"]).includes(u.hostname);
   } catch { return false; }
 }
 
