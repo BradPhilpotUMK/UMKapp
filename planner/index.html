@@ -480,7 +480,7 @@ document.addEventListener("click",ev=>{const a=ev.target.closest&&ev.target.clos
 </script>
 <style id="carbon">/* carbon fibre background, with the cards see-through enough to show it */
 html:not([data-skin="pink"]){--surface:rgba(38,40,46,.80);--surface2:rgba(50,53,60,.86)}
-html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,rgba(255,0,116,.10),transparent 60%),radial-gradient(120% 50% at 50% 100%,rgba(0,190,0,.06),transparent 60%),linear-gradient(115deg,rgba(255,255,255,.06),rgba(255,255,255,0) 38%,rgba(255,255,255,.035) 68%,rgba(255,255,255,0) 85%),url(../img/carbon-weave.png) 0 0/22px 22px,#0b0b0d}
+html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,rgba(255,0,116,.10),transparent 60%),radial-gradient(120% 50% at 50% 100%,rgba(0,190,0,.06),transparent 60%),linear-gradient(115deg,rgba(255,255,255,.03),rgba(255,255,255,0) 38%,rgba(255,255,255,.018) 68%,rgba(255,255,255,0) 85%),linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,.66)),url(../img/carbon-weave.png) 0 0/22px 22px,#0b0b0d}
 </style>
 </head>
 <body>
@@ -654,7 +654,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD= "1794694729";
+const BUILD= "1794695656";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,
