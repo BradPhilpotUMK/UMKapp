@@ -44,6 +44,10 @@
     "#umkI .go{display:block;width:100%;margin:14px 0 0;padding:15px;border:0;border-radius:14px;background:#FF0074;color:#fff;font:800 17px Barlow,system-ui,sans-serif;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 6px 18px rgba(255,0,116,.35)}" +
     "#umkI .no{display:block;width:100%;margin:8px 0 0;padding:10px;border:0;background:none;color:#a4a5ad;font:600 14px Barlow,system-ui,sans-serif;cursor:pointer}" +
     "#umkI .why{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 4px}#umkI .why span{font-size:12px;font-weight:700;background:rgba(0,190,0,.16);color:#7dff7d;border-radius:999px;padding:4px 9px}" +
+    "#umkI .zn{position:fixed;z-index:2147483001;right:10px;width:min(58%,300px);bottom:calc(2px + env(safe-area-inset-bottom,0px));pointer-events:none;display:flex;flex-direction:column;align-items:center;text-align:center}" +
+    "#umkI .zn b{font:800 14px/1.2 system-ui,-apple-system,sans-serif;color:#fff;background:#FF0074;padding:7px 12px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.6)}" +
+    "#umkI .zn svg{width:38px;height:38px;fill:#FF0074;margin:4px 0 2px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.7));animation:umkIb 1s ease-in-out infinite}" +
+    "#umkI .zn span{display:block;width:100%;height:6px;border-radius:6px;background:#FF0074;box-shadow:0 0 14px #FF0074}" +
     "#umkI .pt{position:fixed;z-index:2147483001;width:46px;height:46px;pointer-events:none;animation:umkIb 1s ease-in-out infinite}#umkI .pt svg{width:100%;height:100%;fill:#FF0074;filter:drop-shadow(0 2px 6px rgba(0,0,0,.7))}" +
     "@keyframes umkIf{from{opacity:0}}@keyframes umkIu{from{transform:translateY(100%)}}@keyframes umkId{from{transform:translateY(-100%)}}" +
     "@keyframes umkIb{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}";
@@ -62,6 +66,12 @@
       '<div class="why"><span>Free</span><span>Opens full screen</span><span>Works with no signal at the track</span></div>';
   }
   function pointer(where) {
+    if (where === "zone") {
+      /* a highlighted strip over the bottom-right buttons, wherever they are, with a bouncing arrow */
+      var z = D.createElement("div"); z.className = "zn";
+      z.innerHTML = '<b>Tap Share or ' + '\u00b7\u00b7\u00b7' + ' down here</b><svg viewBox="0 0 24 24"><path d="M12 22 3 11h6V2h6v9h6z"/></svg><span></span>';
+      return z;
+    }
     /* arrow pointing at the browser button to press: "down-right", "down-centre", "up-right" */
     var p = D.createElement("div"); p.className = "pt";
     var up = where.indexOf("up") === 0;
@@ -72,11 +82,6 @@
     return p;
   }
 
-  /* Safari 26 normally puts the address bar at the bottom and lets the page run under the status bar.
-     When the address bar is at the top instead, the top safe area is zero. */
-  function topBar() {
-    try { var t = D.createElement("div"); t.style.cssText = "position:fixed;top:0;height:env(safe-area-inset-top,0px);width:1px;visibility:hidden"; D.body.appendChild(t); var h = t.offsetHeight; t.remove(); return h === 0; } catch (e) { return false; }
-  }
   function show(force) {
     if (!force) {
       if (!MOBILE) return false;
@@ -98,17 +103,12 @@
       var addStep = '<div class="li"><i></i><span>Tap <span class="ic p">' + PLUS + '</span> <b>Add to Home Screen</b></span></div><div class="li"><i></i><span>Tap <b>Add</b> (top right)</span></div>';
       if (CRIOS) { html = head("Three taps and it's on your home screen."); html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> (top right, by the address)") + addStep + "</div>"; top = false; pt = "up-right"; }
       else if (IPAD) { html = head("Three taps and it's on your home screen."); html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> (top right)") + addStep + "</div>"; pt = "up-right"; }
-      else if (SAFARI_V >= 26 && topBar()) {
-        /* address bar at the top (e.g. opened from an old home-screen icon): Share sits in the bar at the bottom */
-        html = head("Three taps and it's on your home screen.");
-        html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> in the bar at the bottom") + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>" +
-          '<p style="color:#a4a5ad;font-size:13px;margin:8px 0 0;text-align:center">No Add to Home Screen option? Tap the compass button to open this in Safari, then try again.</p>';
-        top = true; pt = "down-share";
-      }
       else if (SAFARI_V >= 26) {
-        html = head("Four taps and it's on your home screen.");
-        html += '<div class="ol"><div class="li"><i></i><span>Tap <span class="ic d">' + DOTS + '</span> (bottom right). See <b>Share</b> at the bottom instead? Tap that and skip to step 3</span></div>' + shareStep + addStep.replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>";
-        top = true; pt = "down-right";
+        /* Safari's bottom bar differs (normal Safari shows ···, a page opened from another app shows Share and a compass), so the steps cover both */
+        html = head("Add it to your home screen in a few taps.");
+        html += '<div class="ol"><div class="li"><i></i><span>Tap <span class="ic">' + SHARE + '</span> <b>Share</b> in the bottom right. Can\'t see it? Tap <span class="ic d">' + DOTS + '</span> first, then <b>Share</b></span></div>' +
+          addStep.replace("<b>Add to Home Screen</b>", "<b>Add to Home Screen</b> (scroll down if you need to)").replace("Tap <b>Add</b>", "Leave <b>Open as Web App</b> on, tap <b>Add</b>") + "</div>";
+        top = true; pt = "zone";
       } else {
         html = head("Three taps and it's on your home screen.");
         html += '<div class="ol">' + shareStep.replace("<b>Share</b>", "<b>Share</b> (bottom of the screen)") + addStep.replace("<b>Add to Home Screen</b>", "<b>Add to Home Screen</b> (scroll down a little)") + "</div>";
