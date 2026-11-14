@@ -60,7 +60,7 @@
   var tq = location.search.match(/[?&]gatetest=([01])/);
   if (tq) ls("umk-gate-test", tq[1] === "1" ? "1" : null);
   var ON = CFG.enabled || ls("umk-gate-test") === "1";
-  var api = (/github\.io$/.test(location.hostname) && CFG.netlify ? CFG.netlify.replace(/\/$/, "") : location.origin) + "/.netlify/functions/discord-auth";
+  var api = (!/netlify\.app$|^localhost$/.test(location.hostname) && CFG.netlify ? CFG.netlify.replace(/\/$/, "") : location.origin) + "/.netlify/functions/discord-auth";
 
   var P = ON ? pass() : { m: true };
   var UMK = window.UMK = { on: ON, signedIn: !!P, member: !!(P && P.m), upgrade: function () { sheet("modal"); }, signIn: function () { signIn(); },
@@ -132,7 +132,10 @@
     sid = Array.prototype.map.call(a, function (b) { return ("0" + b.toString(16)).slice(-2); }).join("");
     ls("umk-sid", sid);
     track("gate-signin", "Gate: sign in with Discord");
-    var url = api + "?start=1&sid=" + sid + "&ret=" + encodeURIComponent(location.href.split("#")[0]);
+    var here = location.href.split("#")[0];
+    /* on usemorekerb.com, come back via the old GitHub address: it forwards to usemorekerb.com and keeps the sign-in pass */
+    if (/(^|\.)usemorekerb\.com$/.test(location.hostname)) here = "https://bradphilpotumk.github.io/UMKapp" + location.pathname + location.search;
+    var url = api + "?start=1&sid=" + sid + "&ret=" + encodeURIComponent(here);
     sayFn("Waiting for Discord… finish signing in, then come back here.");
     startPolling();
     var w = null; try { w = window.open(url, "_blank"); } catch (e) {}
