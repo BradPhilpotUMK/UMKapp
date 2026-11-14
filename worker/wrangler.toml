@@ -1,0 +1,24 @@
+# Use More Kerb app service on Cloudflare Workers (free plan). Cloudflare builds and publishes it
+# from this folder whenever it changes on GitHub (Workers Builds, root directory "worker").
+name = "umk-api"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[vars]
+DISCORD_CLIENT_ID = "1570175134843801721"
+DISCORD_GUILD_ID = "1074762004067262596"
+# member roles: YouTube Member, Team UMK, Team UMK Legends, Early Access, manual assignment; plus Brad Philpot, admins and moderators
+DISCORD_ROLE_IDS = "1412754896733737032,1412754896733737033,1412754896733737034,1488979938601341058,1452577385210843237,1336354744020504657,1331650047770628156,1518037941996228668,1445178501199036537,1502473092134342747"
+DISCORD_EXTRA_USER_IDS = "692509650058346506"
+ALLOWED_HOSTS = "usemorekerb.com,www.usemorekerb.com,bradphilpotumk.github.io"
+PASS_DAYS = "180"
+COACH_DAILY_LIMIT = "20"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "umk"
+database_id = "7d025894-fd5a-4971-a128-afcbda9cb4af"
+
+[triggers]
+crons = ["17 4 * * *"]
