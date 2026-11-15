@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Latest long-form video on Brad's channel (no Shorts) for the home page YouTube section.
 Reads the channel's long-form uploads feed (playlist UULF + channel id) and writes data/youtube.json.
-Runs from .github/workflows/youtube.yml every hour. No API key needed."""
-import json, os, re, urllib.request
+Runs from .github/workflows/youtube.yml every 20 minutes. No API key needed."""
+import json, os, re, sys, time, urllib.request
 from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 
@@ -12,7 +12,20 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
 
 req = urllib.request.Request(FEED, headers={"User-Agent": "UMK-app (github.com/BradPhilpotUMK/season-planner)"})
-root = ET.fromstring(urllib.request.urlopen(req, timeout=20).read())
+def fetch_feed():
+    """YouTube's feed now and then answers 404 or times out for a few minutes. Try a few times; if it's still down,
+    keep the current data and exit quietly, unless the data is over two days old (then fail so it gets noticed)."""
+    for i in range(4):
+        try: return urllib.request.urlopen(req, timeout=20).read()
+        except Exception as e:
+            print("feed attempt", i + 1, "failed:", e); time.sleep(15)
+    try:
+        old = json.load(open(OUT)).get("updated", "")
+        age = (datetime.now(timezone.utc) - datetime.fromisoformat(old.replace("Z", "+00:00"))).total_seconds()
+    except Exception: age = 1e9
+    if age > 2 * 86400: raise SystemExit("YouTube feed has been unreachable for over two days")
+    print("YouTube feed unreachable right now; keeping the current data"); sys.exit(0)
+root = ET.fromstring(fetch_feed())
 videos = []
 for e in root.findall("a:entry", NS)[:6]:
     videos.append({"id": e.findtext("yt:videoId", namespaces=NS), "title": e.findtext("a:title", namespaces=NS),
