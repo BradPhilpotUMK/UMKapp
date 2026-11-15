@@ -12,38 +12,62 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
 
 req = urllib.request.Request(FEED, headers={"User-Agent": "UMK-app (github.com/BradPhilpotUMK/season-planner)"})
-def fetch_feed():
-    """YouTube's feed now and then answers 404 or times out for a few minutes. Try a few times; if it's still down,
-    keep the current data and exit quietly, unless the data is over two days old (then fail so it gets noticed)."""
-    for i in range(4):
-        try: return urllib.request.urlopen(req, timeout=20).read()
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+      "Accept-Language": "en-GB,en;q=0.9", "Cookie": "CONSENT=YES+1; SOCS=CAI"}
+
+def page_data(tab):
+    r = urllib.request.Request("https://www.youtube.com/channel/" + CHANNEL + "/" + tab + "?hl=en&gl=GB", headers=UA)
+    html = urllib.request.urlopen(r, timeout=20).read().decode("utf-8", "replace")
+    m = re.search(r"var ytInitialData = (\{.*?\});</script>", html, re.S) or re.search(r'ytInitialData"\] = (\{.*?\});', html, re.S)
+    return json.loads(m.group(1))
+
+def find(o, key, out):
+    if isinstance(o, dict):
+        if key in o: out.append(o[key]); return out
+        for v in o.values(): find(v, key, out)
+    elif isinstance(o, list):
+        for v in o: find(v, key, out)
+    return out
+
+def from_feed():
+    """YouTube's RSS feed (sometimes down for hours; it answers 404 then)."""
+    for i in range(2):
+        try:
+            root = ET.fromstring(urllib.request.urlopen(req, timeout=20).read())
+            return [{"id": e.findtext("yt:videoId", namespaces=NS), "title": e.findtext("a:title", namespaces=NS),
+                     "published": e.findtext("a:published", namespaces=NS)} for e in root.findall("a:entry", NS)[:6]]
         except Exception as e:
-            print("feed attempt", i + 1, "failed:", e); time.sleep(15)
+            print("feed attempt", i + 1, "failed:", e); time.sleep(10)
+    return []
+
+def from_videos_tab(old_videos):
+    """Fallback: the channel's Videos tab (long-form only). Dates come as 'x days ago', so known videos keep their exact date."""
     try:
-        old = json.load(open(OUT)).get("updated", "")
-        age = (datetime.now(timezone.utc) - datetime.fromisoformat(old.replace("Z", "+00:00"))).total_seconds()
-    except Exception: age = 1e9
-    if age > 2 * 86400: raise SystemExit("YouTube feed has been unreachable for over two days")
-    print("YouTube feed unreachable right now; keeping the current data"); sys.exit(0)
-root = ET.fromstring(fetch_feed())
-videos = []
-for e in root.findall("a:entry", NS)[:6]:
-    videos.append({"id": e.findtext("yt:videoId", namespaces=NS), "title": e.findtext("a:title", namespaces=NS),
-                   "published": e.findtext("a:published", namespaces=NS)})
-if not videos: raise SystemExit("feed had no videos")
+        known = {v["id"]: v.get("published") for v in old_videos or []}
+        out = []
+        for v in find(page_data("videos"), "videoRenderer", [])[:6]:
+            vid = v.get("videoId"); title = "".join(x.get("text", "") for x in (v.get("title") or {}).get("runs", []))
+            pub = known.get(vid)
+            if not pub:
+                ago = ((v.get("publishedTimeText") or {}).get("simpleText") or "").lower()
+                m = re.match(r"(?:streamed )?(\d+) (second|minute|hour|day|week|month|year)", ago)
+                secs = {"second": 1, "minute": 60, "hour": 3600, "day": 86400, "week": 604800, "month": 2592000, "year": 31536000}
+                t = time.time() - (int(m.group(1)) * secs[m.group(2)] if m else 0)
+                pub = datetime.fromtimestamp(t, timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+00:00")
+            if vid and title: out.append({"id": vid, "title": title, "published": pub})
+        return out
+    except Exception as e:
+        print("Videos tab not read:", e); return []
+
 old = {}
 try: old = json.load(open(OUT))
 except Exception: pass
-
+videos = from_feed() or from_videos_tab(old.get("videos")) or old.get("videos") or []
+if not videos: raise SystemExit("no videos found anywhere")
 def latest_post():
     """Newest public community post from the channel's Posts tab (best effort: keeps the last one if YouTube changes its page)."""
     try:
-        r = urllib.request.Request("https://www.youtube.com/channel/" + CHANNEL + "/posts?hl=en&gl=GB",
-            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
-                     "Accept-Language": "en-GB,en;q=0.9", "Cookie": "CONSENT=YES+1; SOCS=CAI"})
-        html = urllib.request.urlopen(r, timeout=20).read().decode("utf-8", "replace")
-        m = re.search(r"var ytInitialData = (\{.*?\});</script>", html, re.S) or re.search(r'ytInitialData"\] = (\{.*?\});', html, re.S)
-        data = json.loads(m.group(1))
+        data = page_data("posts")
         found = []
         def walk(o):
             if isinstance(o, dict):
