@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T06:09Z",
+ "updated": "2026-11-15T20:50Z",
  "series": [
   {
    "id": "access-karting",
@@ -1160,6 +1160,17 @@
    "book": "https://teessidemotorsports.co.uk/winter-enduro-2026-27-race-all-winter-at-teesside-motorsports/",
    "phone": "01642 231117",
    "logoUrl": "logos/teesside-winter-enduro.png"
+  },
+  {
+   "id": "gx-uk-clubman",
+   "name": "GX-UK Clubman",
+   "venue": "UK, multiple venues",
+   "kind": "national",
+   "color": "#7B4FE0",
+   "short": "GX-UK",
+   "logoUrl": "logos/gx-uk-clubman.png",
+   "note": "2027 calendar from the official GX-UK Clubman graphic (Junior and Senior)",
+   "book": "https://accesskarting.alphatiming.co.uk/championships"
   }
  ],
  "events": [
@@ -4861,6 +4872,78 @@
    "location": "Red Lodge Karting, Bury St Edmunds",
    "kind": "race",
    "source": "https://www.redlodgekarting.com/formula270"
+  },
+  {
+   "id": "gx-uk-clubman-2027-01-30-test-day",
+   "seriesId": "gx-uk-clubman",
+   "title": "Test day",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "location": "Fulbeck",
+   "kind": "test"
+  },
+  {
+   "id": "gx-uk-clubman-2027-03-20-cm",
+   "seriesId": "gx-uk-clubman",
+   "title": "CM",
+   "start": "2027-03-20",
+   "end": "2027-03-21",
+   "location": "Fulbeck",
+   "kind": "race"
+  },
+  {
+   "id": "gx-uk-clubman-2027-04-23-round-1",
+   "seriesId": "gx-uk-clubman",
+   "title": "Round 1",
+   "start": "2027-04-23",
+   "end": "2027-04-24",
+   "location": "Clay Pigeon",
+   "kind": "race"
+  },
+  {
+   "id": "gx-uk-clubman-2027-05-15-round-2",
+   "seriesId": "gx-uk-clubman",
+   "title": "Round 2",
+   "start": "2027-05-15",
+   "end": "2027-05-16",
+   "location": "Hooton",
+   "kind": "race"
+  },
+  {
+   "id": "gx-uk-clubman-2027-06-19-round-3",
+   "seriesId": "gx-uk-clubman",
+   "title": "Round 3",
+   "start": "2027-06-19",
+   "end": "2027-06-20",
+   "location": "Fulbeck",
+   "kind": "race"
+  },
+  {
+   "id": "gx-uk-clubman-2027-08-27-round-4",
+   "seriesId": "gx-uk-clubman",
+   "title": "Round 4",
+   "start": "2027-08-27",
+   "end": "2027-08-28",
+   "location": "Clay Pigeon",
+   "kind": "race"
+  },
+  {
+   "id": "gx-uk-clubman-2027-09-18-round-5",
+   "seriesId": "gx-uk-clubman",
+   "title": "Round 5",
+   "start": "2027-09-18",
+   "end": "2027-09-19",
+   "location": "Fulbeck",
+   "kind": "race"
+  },
+  {
+   "id": "gx-uk-clubman-2027-10-09-round-6",
+   "seriesId": "gx-uk-clubman",
+   "title": "Round 6",
+   "start": "2027-10-09",
+   "end": "2027-10-10",
+   "location": "Hooton",
+   "kind": "race"
   }
  ],
  "restore": [
