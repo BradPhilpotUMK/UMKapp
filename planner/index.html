@@ -655,7 +655,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD= "1794825277";
+const BUILD= "1794840549";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,
@@ -899,7 +899,7 @@ function renderTop(){
   if(n){
     const ns=ser(n.seriesId),multi=(n.end||n.start)!==n.start;
     const when=fmt(n.start,{weekday:"short",day:"numeric",month:"short"})+(multi?" to "+fmt(n.end,{weekday:"short",day:"numeric",month:"short"}):"");
-    const where=[ns&&ns.name!==n.title?ns.name:"",n.location||ns?.venue||""].filter(Boolean).map(esc).join(", ");
+    const where=[...new Set([ns&&ns.name!==n.title?ns.name:"",n.location||ns?.venue||""].filter(Boolean))].map(esc).join(", ");
     $("#next").innerHTML=`<div class="cd" data-ev="${n.id}"><div class="cd-top">${evBadge(n,38)}<div class="t"><span class="lbl">Next race</span><b>${esc(n.title)}</b><small>${when}${where?", "+where:""}</small></div></div><div id="cdBox"></div></div>`;
     tickCountdown();
   }else $("#next").innerHTML=`<b>No races ticked yet</b><span>See Weekends</span>`;

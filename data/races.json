@@ -541,7 +541,7 @@
    "note": "Season 2 rounds to Jan 2027 + Race of Champions; 2027 calendar not published (24 Hours under its own series)",
    "book": "https://daytona.co.uk/locations/milton-keynes/",
    "phone": "0330 332 7870",
-   "logoUrl": "logos/daytona-milton-keynes-24-hours.png"
+   "logoUrl": "logos/daytona.png"
   },
   {
    "id": "daytona-sandown-park",
@@ -553,7 +553,7 @@
    "checked": 1793599755234,
    "book": "https://daytona.co.uk/locations/sandown-park/",
    "phone": "0330 332 7870",
-   "logoUrl": "logos/daytona-milton-keynes-24-hours.png",
+   "logoUrl": "logos/daytona.png",
    "note": "Season 2 rounds to Jan 2027; 2027 calendar not published"
   },
   {
@@ -567,7 +567,7 @@
    "note": "Season 2 rounds to Jan 2027; 2027 season 1 not published",
    "book": "https://daytona.co.uk/locations/tamworth/",
    "phone": "0330 332 7870",
-   "logoUrl": "logos/daytona-milton-keynes-24-hours.png"
+   "logoUrl": "logos/daytona.png"
   },
   {
    "id": "brighton-karting",
