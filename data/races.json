@@ -1171,6 +1171,17 @@
    "logoUrl": "logos/gx-uk-clubman.png",
    "note": "2027 calendar from the official GX-UK Clubman graphic (Junior and Senior)",
    "book": "https://accesskarting.alphatiming.co.uk/championships"
+  },
+  {
+   "id": "british-superkart-club",
+   "name": "British Superkart Club",
+   "venue": "UK, multiple circuits",
+   "kind": "national",
+   "color": "#1E5BFF",
+   "short": "BSC",
+   "logoUrl": "logos/british-superkart-club.png",
+   "note": "Provisional 2027 calendar from BSC (Silverstone GP date TBC)",
+   "book": "https://www.britishsuperkart.club"
   }
  ],
  "events": [
@@ -4944,6 +4955,96 @@
    "end": "2027-10-10",
    "location": "Hooton",
    "kind": "race"
+  },
+  {
+   "id": "british-superkart-club-2027-03-06-test-day",
+   "seriesId": "british-superkart-club",
+   "title": "Test day",
+   "start": "2027-03-06",
+   "end": "2027-03-06",
+   "location": "Silverstone National",
+   "kind": "test",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-03-26-round-1",
+   "seriesId": "british-superkart-club",
+   "title": "Round 1",
+   "start": "2027-03-26",
+   "end": "2027-03-27",
+   "location": "Oulton Park International",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-05-15-round-2",
+   "seriesId": "british-superkart-club",
+   "title": "Round 2",
+   "start": "2027-05-15",
+   "end": "2027-05-16",
+   "location": "Donington Park National",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-05-22-round-3",
+   "seriesId": "british-superkart-club",
+   "title": "Round 3",
+   "start": "2027-05-22",
+   "end": "2027-05-23",
+   "location": "Anglesey Coastal",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-06-12-round-4",
+   "seriesId": "british-superkart-club",
+   "title": "Round 4",
+   "start": "2027-06-12",
+   "end": "2027-06-13",
+   "location": "Silverstone National",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-07-03-round-5",
+   "seriesId": "british-superkart-club",
+   "title": "Round 5",
+   "start": "2027-07-03",
+   "end": "2027-07-04",
+   "location": "Brands Hatch Indy",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-07-24-round-6",
+   "seriesId": "british-superkart-club",
+   "title": "Round 6",
+   "start": "2027-07-24",
+   "end": "2027-07-25",
+   "location": "Snetterton 300",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-08-21-round-7",
+   "seriesId": "british-superkart-club",
+   "title": "Round 7",
+   "start": "2027-08-21",
+   "end": "2027-08-22",
+   "location": "Donington Park National",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "british-superkart-club-2027-10-23-round-8--date-tbc-",
+   "seriesId": "british-superkart-club",
+   "title": "Round 8 (date TBC)",
+   "start": "2027-10-23",
+   "end": "2027-10-24",
+   "location": "Silverstone Grand Prix",
+   "kind": "race",
+   "source": "https://www.britishsuperkart.club"
   }
  ],
  "restore": [
