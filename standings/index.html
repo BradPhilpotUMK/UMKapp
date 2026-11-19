@@ -2,6 +2,10 @@
 <html lang="en-GB">
 <head>
 <style>html,body{background:#000}.part{margin:8px 2px 0;color:var(--muted);font-size:13px;line-height:1.35}
+.alpha{display:flex;align-items:center;gap:12px;margin:0 0 14px;padding:10px 14px 10px 10px;border-radius:14px;background:rgba(22,22,26,.92);border:1px solid rgba(255,255,255,.1);color:#e6e6ea;text-decoration:none;font:600 14.5px/1.2 Barlow,system-ui,sans-serif}
+.alpha .alogo{flex:none;display:flex;align-items:center;background:#fff;border-radius:10px;padding:7px 10px}
+.alpha .alogo img{height:26px;width:auto;display:block}
+.alpha b{color:#fff;font-weight:800}.alpha i{margin-left:auto;font-style:normal;color:#25A9E0;font-weight:800}
 </style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
@@ -85,6 +89,7 @@ html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,
 <body>
 <div id="scroller"><div class="wrap">
   <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Standings</h1></div></header>
+  <a class="alpha" href="https://www.alphatiming.co.uk/" target="_blank" rel="noopener"><span class="alogo"><img src="../img/alpha-timing.svg" alt="Alpha Timing"></span><span>Results provided by <b>Alpha Timing</b></span><i>↗</i></a>
 
   <div class="seg" id="cats"><button class="on" data-c="uk-national">UK owner</button><button data-c="uk-rental">UK rental</button><button data-c="international">International</button></div>
   <input class="search" id="q" placeholder="Search a championship, class or driver" autocomplete="off" enterkeyhint="search">
