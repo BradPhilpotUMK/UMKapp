@@ -94,6 +94,9 @@ html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,
 </div></div>
 <div class="toast" id="toast"></div>
 <script>
+/* name the timing company a results link goes out to, so it's clear the full results are on their site */
+function prov(u){try{const h=new URL(u).hostname;if(/alpharacehub\.com$|alphatiming\.co\.uk$/.test(h))return"Alpha Timing";if(/tsl-timing\.com$/.test(h))return"TSL Timing";if(/apex-timing\.com$/.test(h))return"Apex Timing";if(/race-?result/.test(h))return"Raceresult";return""}catch(e){return""}}
+
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2200)}
@@ -110,8 +113,8 @@ function render(){
       <div class="body">${c.classes.length?`<div class="cls">${c.classes.map((x,i)=>`<button data-cl="${c.id}|${i}" class="${x===k?"on":""}">${esc(x.name)}</button>`).join("")}</div>
       <table><tr><th>Pos</th><th>Driver</th><th style="text-align:right">${k.rows.some(r=>r.points!=null)?"Pts":""}</th></tr>${k.rows.map(r=>`<tr><td class="p">${r.pos}</td><td>${esc(r.driver)}${r.team?`<small>${esc(r.team)}</small>`:""}</td><td class="n">${r.points??""}</td></tr>`).join("")}</table>
       ${k.rows.length<3?`<p class="part">${k.rows.length===1?"Only the winner has been published so far.":"Only the top "+k.rows.length+" have been published so far."} Check the official site for the full results.</p>`:""}
-      <div class="meta"><span>${esc(k.status||c.status||"")}</span>${(()=>{const social=/instagram\.com|facebook\.com|tiktok\.com|x\.com|twitter\.com/i.test(k.source||"");const u=(!k.source||social||k.rows.length<3)&&c.url?c.url:k.source;return u?`<a href="${esc(u)}" target="_blank" rel="noopener">${u===c.url&&(u!==k.source||k.rows.length<3)?"Official site":"Full results"} ›</a>`:""})()}</div>`
-      :`<p class="none">${esc(c.note||"Standings coming soon.")}</p>${c.url?`<div class="meta"><span></span><a href="${esc(c.url)}" target="_blank" rel="noopener">Official site ›</a></div>`:""}`}</div></div>`}).join(""):`<p class="none">No championships match.</p>`;
+      <div class="meta"><span>${esc(k.status||c.status||"")}</span>${(()=>{const social=/instagram\.com|facebook\.com|tiktok\.com|x\.com|twitter\.com/i.test(k.source||"");const u=(!k.source||social||k.rows.length<3)&&c.url?c.url:k.source;return u?`<a href="${esc(u)}" target="_blank" rel="noopener">${u===c.url&&(u!==k.source||k.rows.length<3)?"Official site":"Full results"+(prov(u)?" on "+prov(u):"")} ↗</a>`:""})()}</div>`
+      :`<p class="none">${esc(c.note||"Standings coming soon.")}</p>${c.url?`<div class="meta"><span></span><a href="${esc(c.url)}" target="_blank" rel="noopener">Official site ↗</a></div>`:""}`}</div></div>`}).join(""):`<p class="none">No championships match.</p>`;
 }
 document.addEventListener("click",e=>{const t=e.target.closest("[data-c],[data-ch],[data-cl]");if(!t)return;const d=t.dataset;
   if(d.c){cat=d.c;openId=null;$("#q").value="";document.querySelectorAll("#cats button").forEach(b=>b.classList.toggle("on",b===t));render();return}
