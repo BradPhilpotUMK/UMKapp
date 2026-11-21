@@ -655,7 +655,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD= "1795093779";
+const BUILD= "1795274171";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,
@@ -1446,7 +1446,7 @@ function eventForm(e,preset){
   ${e?bookHtml(e):""}
   ${clashWith.length?`<p class="note" style="color:var(--kerb)">Clashes with ${clashWith.map(x=>esc(x.title)).join(", ")}</p>`:""}
   <label class="f" for="fT">Title</label><input type="text" id="fT" value="${esc(ev.title)}" placeholder="Round 1, Whilton Mill">
-  <div class="two"><div><label class="f" for="fS">Series</label><select id="fS"><option value="">None</option>${S.series.map(s=>`<option value="${s.id}"${s.id===ev.seriesId?" selected":""}>${esc(s.name)}</option>`).join("")}</select></div>
+  <div class="two"><div><label class="f" for="fS">Series</label><select id="fS"><option value="">None</option>${[...S.series].sort((a,b)=>String(a.name).replace(/^the\s+/i,"").localeCompare(String(b.name).replace(/^the\s+/i,""),"en",{sensitivity:"base",numeric:true})).map(s=>`<option value="${s.id}"${s.id===ev.seriesId?" selected":""}>${esc(s.name)}</option>`).join("")}</select></div>
   <div><label class="f" for="fK">Type</label><select id="fK">${Object.entries(KINDS).map(([k,v])=>`<option value="${k}"${k===ev.kind?" selected":""}>${v}</option>`).join("")}</select></div></div>
   <div class="two"><div><label class="f" for="fA">Starts</label><input type="date" id="fA" value="${esc(ev.start)}"></div><div><label class="f" for="fB">Ends</label><input type="date" id="fB" value="${esc(ev.end||ev.start)}"></div></div>
   <label class="f" for="fL">Where</label><input type="text" id="fL" value="${esc(ev.location)}" placeholder="Circuit or venue">
