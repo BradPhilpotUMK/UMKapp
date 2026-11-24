@@ -289,6 +289,8 @@ html.ios-app body{height:100vh}
 .inst p svg{width:16px;height:16px;vertical-align:-3px;margin:0 2px;stroke:var(--text);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .inst .ia{display:flex;gap:8px;margin-top:10px}
 .inst .x{margin-left:auto;background:none;border:0;color:var(--muted);font-size:22px;line-height:1;padding:0 2px;cursor:pointer;align-self:flex-start}
+.toast.act{pointer-events:auto;display:flex;align-items:center;gap:10px}.toast button{border:none;background:none;color:var(--kerb,#FF0074);font:inherit;font-weight:800;padding:2px 4px;cursor:pointer}
+.rmrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line)}
 .toast{position:fixed;left:50%;bottom:calc(104px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--text);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:14px;z-index:60;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 /* brand */
@@ -512,6 +514,7 @@ html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,
     <div id="months"></div>
     <h2 class="sect">Your data</h2>
     <div class="card"><p style="margin-top:0">Your calendar is saved on this device. Save a backup now and then, and use it to move your calendar to a new phone.</p><div class="row"><button class="btn" data-backup="1">Save backup</button><button class="btn" data-restore="1">Restore backup</button></div></div>
+    <div id="removedBox"></div>
   </section>
 
   <section class="panel" id="p-week">
@@ -655,7 +658,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD= "1795274171";
+const BUILD= "1795507047";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,
@@ -800,8 +803,9 @@ async function loadMaster(){
 }
 function migrateRental(){if(S.migRental)return;S.migRental=true;
   S.series.forEach(s=>{if(!s.master&&(s.kind==="mine"||!s.kind)&&/\b(rental|hire)\b/i.test(s.name))setSeriesKind(s,"rental")})}
+let lastM=null;
 function applyMaster(M){migrateRental();
-  if(!M||!Array.isArray(M.series)||!Array.isArray(M.events))return;
+  if(!M||!Array.isArray(M.series)||!Array.isArray(M.events))return;lastM=M;
   if(Array.isArray(M.restore)){S.restored=S.restored||[];M.restore.forEach(id=>{if(!S.restored.includes(id)){S.removed=(S.removed||[]).filter(x=>x!==id);S.restored.push(id)}})}
   const rm=new Set(S.removed||[]);
   M.series.forEach(ms=>{if(rm.has(ms.id))return;
@@ -872,7 +876,7 @@ function computeClashes(){
 /* ---------- render ---------- */
 function rangeMonths(){const out=[];const y=now.getFullYear(),m=now.getMonth();for(let i=0;i<13;i++){const d=new Date(Date.UTC(y,m+i,1));out.push([d.getUTCFullYear(),d.getUTCMonth()])}return out}
 
-function render(){renderTop();renderMonths();renderWeekends();renderClashes();renderSeries()}
+function render(){renderTop();renderMonths();renderWeekends();renderClashes();renderSeries();renderRemoved()}
 
 /* Live countdown to the next race you're doing (counts to 8am on the first day) */
 let cdTarget=null,cdTimer=null;
@@ -1415,7 +1419,12 @@ function shopHtml(){const wm=document.querySelector("#brand img.wm");
 function shopSheet(){openSheet(`<h2>Shop</h2><p class="note" style="margin:0 0 14px">Grab some Use More Kerb merch, or kit yourself out at Helmet28. Thanks for supporting the channel.</p>${shopHtml()}`)}
 function openSheet(html){$("#sheetBody").innerHTML=html;$("#scrim").classList.add("on");$("#sheet").classList.add("on")}
 function closeSheet(){sheetCtl?.abort();sheetCtl=null;$("#scrim").classList.remove("on");$("#sheet").classList.remove("on")}
-function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2200)}
+function toast(t,act,fn){const el=$("#toast");el.textContent=t;el.classList.toggle("act",!!fn);if(fn){const b=document.createElement("button");b.textContent=act;b.onclick=()=>{el.classList.remove("on");fn()};el.append(" ",b)}el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),fn?6000:2200)}
+/* bring back a shared series someone removed: take it off the removed list and add it again from the latest race list */
+function restoreSeries(id){S.removed=(S.removed||[]).filter(x=>x!==id);if(lastM)applyMaster(lastM);save();render();const s=ser(id);toast(s?s.name+" is back":"Series restored")}
+function renderRemoved(){const box=$("#removedBox");if(!box)return;const names=new Map((lastM?.series||[]).map(x=>[x.id,x.name]));const ids=(S.removed||[]).filter(id=>names.has(id));
+  box.innerHTML=ids.length?`<div class="card"><p style="margin-top:0"><b>Series you've removed</b><br><span class="hint">Removed one by mistake? Bring it back with all its dates.</span></p>${ids.map(id=>`<div class="rmrow"><span>${esc(names.get(id))}</span><button class="btn" data-unremove="${esc(id)}">Bring back</button></div>`).join("")}</div>`:"";
+  box.querySelectorAll("[data-unremove]").forEach(b=>b.onclick=()=>restoreSeries(b.dataset.unremove))}
 
 /* ---------- booking: a link and/or phone number from the event, else its series ---------- */
 function okUrl(u){u=String(u||"").trim();if(!u)return "";if(!/^https?:\/\//i.test(u))u="https://"+u;try{const x=new URL(u);return /^https?:$/.test(x.protocol)?x.href:""}catch(e){return ""}}
@@ -1664,7 +1673,7 @@ document.addEventListener("click",ev=>{
     const n=S.events.filter(e=>e.seriesId===s.id).length;
     openSheet(`<h2>Remove ${esc(s.name)}?</h2><p class="hint">${n?`This also deletes its ${n} event${n>1?"s":""}.`:"It has no events."}</p><div class="actions"><button class="btn" id="no">Keep it</button><button class="btn primary" style="background:var(--kerb);border-color:var(--kerb)" id="yes">Remove series</button></div>`);
     $("#no").onclick=closeSheet;
-    $("#yes").onclick=()=>{if(s.master&&!S.removed.includes(s.id))S.removed.push(s.id);S.series=S.series.filter(x=>x.id!==s.id);S.events=S.events.filter(e=>e.seriesId!==s.id);S.hidden=S.hidden.filter(h=>h!==s.id);save();render();closeSheet();toast("Series removed")};
+    $("#yes").onclick=()=>{if(s.master&&!S.removed.includes(s.id))S.removed.push(s.id);S.series=S.series.filter(x=>x.id!==s.id);S.events=S.events.filter(e=>e.seriesId!==s.id);S.hidden=S.hidden.filter(h=>h!==s.id);save();render();closeSheet();if(s.master)toast("Series removed","Undo",()=>restoreSeries(s.id));else toast("Series removed")};
   }
 });
 $("#addBtn").onclick=()=>eventForm(null);
