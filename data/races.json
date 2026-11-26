@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T20:50Z",
+ "updated": "2026-11-26T10:49Z",
  "series": [
   {
    "id": "access-karting",
@@ -7,9 +7,9 @@
    "venue": "UK, multiple venues",
    "kind": "national",
    "color": "#3BD16F",
-   "checked": 1793599755234,
+   "checked": 1795690146027,
    "logoUrl": "logos/access-karting.png",
-   "note": "2027 championships open on AlphaTiming; stored 2027 dates not re-confirmed on public pages",
+   "note": "2027 calendar out; stored dates not re-confirmed on public pages",
    "book": "https://accesskarting.alphatiming.co.uk/championships"
   },
   {
@@ -19,10 +19,10 @@
    "kind": "national",
    "color": "#F2A93B",
    "short": "NKC",
-   "checked": 1793599755234,
+   "checked": 1795690146027,
    "logoUrl": "logos/national-kart-cup.png",
    "book": "https://nkc.alphatiming.co.uk/register/events",
-   "note": "NKC site says 2027 info to follow; stored 2027 dates not re-confirmed"
+   "note": "2027 calendar published on kartcup.co.uk"
   },
   {
    "id": "rmc-ukc",
@@ -31,8 +31,8 @@
    "kind": "national",
    "color": "#3BB3E0",
    "short": "UKC",
-   "checked": 1793599755234,
-   "note": "2027 dates not published yet ('getting ready for 2027')",
+   "checked": 1795690146027,
+   "note": "2027 calendar published (AlphaTiming)",
    "logoUrl": "logos/rmc-ukc.png",
    "book": "https://ukc.alphatiming.co.uk/championships"
   },
@@ -43,8 +43,8 @@
    "kind": "club",
    "color": "#8B6CF0",
    "short": "RHPK",
-   "checked": 1793599755234,
-   "note": "R9 7 Nov confirmed; 2027 dates not published yet",
+   "checked": 1795690146027,
+   "note": "2027 dates not published yet",
    "logoUrl": "logos/rye-house-prokart-endurance.png",
    "book": "https://rhpk.co.uk/",
    "phone": "01992 460895"
@@ -55,7 +55,7 @@
    "venue": "Whilton Mill, Northamptonshire",
    "kind": "club",
    "color": "#E040C8",
-   "checked": 1793599755234,
+   "checked": 1795690146027,
    "note": "2027 calendar published (AlphaTiming)",
    "book": "https://wmkc.alphatiming.co.uk/users/sign_in",
    "logoUrl": "logos/whilton-mill-kart-club.png"
@@ -66,7 +66,7 @@
    "venue": "Shenington, Oxfordshire",
    "kind": "club",
    "color": "#3BD16F",
-   "checked": 1793599755234,
+   "checked": 1795690146027,
    "note": "2027 club rounds plus other events at the track",
    "book": "http://sheningtonkrc.co.uk/",
    "logoUrl": "logos/shenington-kart-racing-club.png"
@@ -295,8 +295,8 @@
    "venue": "National championship",
    "kind": "national",
    "color": "#3D52E0",
-   "checked": 1792995590857,
-   "note": "2027 calendar from superoneseries.com",
+   "checked": 1795690146027,
+   "note": "2027 calendar confirmed in Super One 2027 regulations",
    "logoUrl": "logos/super-one-series.png",
    "brand": "#3D52E0",
    "book": "https://superone.alphatiming.co.uk/users/sign_in",
@@ -343,7 +343,7 @@
    "kind": "club",
    "color": "#2F6BFF",
    "short": "TWS",
-   "checked": 1792995590857,
+   "checked": 1795690146027,
    "note": "Bambino to Senior, two stroke and four stroke",
    "book": "https://teessidemotorsports.co.uk/the-winter-series-2026/",
    "phone": "01642 231117",
@@ -1170,7 +1170,8 @@
    "short": "GX-UK",
    "logoUrl": "logos/gx-uk-clubman.png",
    "note": "2027 calendar from the official GX-UK Clubman graphic (Junior and Senior)",
-   "book": "https://accesskarting.alphatiming.co.uk/championships"
+   "book": "https://accesskarting.alphatiming.co.uk/championships",
+   "checked": 1795690146027
   },
   {
    "id": "british-superkart-club",
@@ -1181,7 +1182,8 @@
    "short": "BSC",
    "logoUrl": "logos/british-superkart-club.png",
    "note": "Provisional 2027 calendar from BSC (Silverstone GP date TBC)",
-   "book": "https://www.britishsuperkart.club"
+   "book": "https://www.britishsuperkart.club",
+   "checked": 1795690146027
   }
  ],
  "events": [
@@ -5225,6 +5227,76 @@
    "location": "Shenington Kart Club, Banbury",
    "kind": "race",
    "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "rmc-ukc-2027-03-06-winter-trophy",
+   "seriesId": "rmc-ukc",
+   "title": "Winter Trophy",
+   "start": "2027-03-06",
+   "end": "2027-03-07",
+   "location": "Whilton Mill, Daventry",
+   "kind": "race",
+   "source": "https://www.alpharacehub.com/ukc"
+  },
+  {
+   "id": "rmc-ukc-2027-04-03-round-1",
+   "seriesId": "rmc-ukc",
+   "title": "Round 1",
+   "start": "2027-04-03",
+   "end": "2027-04-04",
+   "location": "Whilton Mill, Daventry",
+   "kind": "race",
+   "source": "https://www.alpharacehub.com/ukc"
+  },
+  {
+   "id": "rmc-ukc-2027-05-08-round-2",
+   "seriesId": "rmc-ukc",
+   "title": "Round 2",
+   "start": "2027-05-08",
+   "end": "2027-05-09",
+   "location": "Warden Law, Sunderland",
+   "kind": "race",
+   "source": "https://www.alpharacehub.com/ukc"
+  },
+  {
+   "id": "rmc-ukc-2027-06-05-round-3",
+   "seriesId": "rmc-ukc",
+   "title": "Round 3",
+   "start": "2027-06-05",
+   "end": "2027-06-06",
+   "location": "Glan y Gors, North Wales",
+   "kind": "race",
+   "source": "https://www.alpharacehub.com/ukc"
+  },
+  {
+   "id": "rmc-ukc-2027-07-24-round-4",
+   "seriesId": "rmc-ukc",
+   "title": "Round 4",
+   "start": "2027-07-24",
+   "end": "2027-07-25",
+   "location": "Rowrah, Cumbria",
+   "kind": "race",
+   "source": "https://www.alpharacehub.com/ukc"
+  },
+  {
+   "id": "rmc-ukc-2027-08-21-rounds-5---6",
+   "seriesId": "rmc-ukc",
+   "title": "Rounds 5 & 6",
+   "start": "2027-08-21",
+   "end": "2027-08-22",
+   "location": "Kart Silverstone, Towcester",
+   "kind": "race",
+   "source": "https://www.alpharacehub.com/ukc"
+  },
+  {
+   "id": "whilton-mill-kart-club-2027-12-18-christmas-cracker",
+   "seriesId": "whilton-mill-kart-club",
+   "title": "Christmas Cracker",
+   "start": "2027-12-18",
+   "end": "2027-12-19",
+   "location": "Whilton Mill, Daventry",
+   "kind": "race",
+   "source": "https://www.alpharacehub.com/wmkc"
   }
  ],
  "restore": [
