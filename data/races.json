@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T10:49Z",
+ "updated": "2026-11-26T10:50Z",
  "series": [
   {
    "id": "access-karting",
@@ -77,7 +77,7 @@
    "venue": "PFi, Lincolnshire",
    "kind": "club",
    "color": "#F2A93B",
-   "checked": 1793599755234,
+   "checked": 1795690249204,
    "note": "2027 calendar published",
    "book": "https://www.trakentries.co.uk/clubclone/club.asp?C=14",
    "logoUrl": "logos/trent-valley-kart-club.png"
@@ -88,8 +88,8 @@
    "venue": "Fulbeck, Lincolnshire",
    "kind": "club",
    "color": "#3BB3E0",
-   "checked": 1793599755234,
-   "note": "R9 22 Nov confirmed; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "2027 dates not published yet",
    "book": "https://fkc.alphatiming.co.uk/users/sign_in",
    "logoUrl": "logos/fulbeck-kart-club.png"
   },
@@ -99,8 +99,8 @@
    "venue": "Kimbolton, Cambridgeshire",
    "kind": "club",
    "color": "#8B6CF0",
-   "checked": 1793599755234,
-   "note": "R9 & R10 confirmed; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "2027 calendar published (Motorsport Timing)",
    "book": "https://hkrc.co.uk/hkrc-calendar/"
   },
   {
@@ -109,8 +109,8 @@
    "venue": "Rye House, Hertfordshire",
    "kind": "club",
    "color": "#F26B3A",
-   "checked": 1793599755234,
-   "note": "No upcoming events on AlphaTiming; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "2027 dates not published yet",
    "book": "https://rhkc.alphatiming.co.uk/register/events",
    "phone": "01992 460895",
    "logoUrl": "logos/rye-house-kart-racing-club.png"
@@ -121,8 +121,8 @@
    "venue": "Buckmore Park, Kent",
    "kind": "club",
    "color": "#22C3B0",
-   "checked": 1793599755234,
-   "note": "Run by Champions Kart Club; Winter Cup confirmed; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "Run by Champions Kart Club; 5-round 2027 championship announced, dates not published in text yet",
    "book": "https://www.kartacademy.co.uk/champions-kart-club/",
    "logoUrl": "logos/buckmore-park-kart-club.png"
   },
@@ -132,8 +132,8 @@
    "venue": "Bayford Meadows, Kent",
    "kind": "club",
    "color": "#D9D23A",
-   "checked": 1793599755234,
-   "note": "R9 confirmed; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "2027 dates not published yet",
    "book": "https://bmkr.alphatiming.co.uk/users/sign_in",
    "logoUrl": "logos/bayford-meadows-kart-club.png"
   },
@@ -143,8 +143,8 @@
    "venue": "Lydd, Kent",
    "kind": "club",
    "color": "#FF5C8A",
-   "checked": 1793599755234,
-   "note": "R7 & Christmas Bash confirmed; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "2027 calendar published",
    "book": "https://lyddkartcircuit.com/owner-driver/",
    "phone": "01797 321747",
    "logoUrl": "logos/lydd-kart-club.png"
@@ -155,8 +155,8 @@
    "venue": "Forest Edge, Hampshire",
    "kind": "club",
    "color": "#4C7DFF",
-   "checked": 1793599755234,
-   "note": "2026 season ended with R9 on 1 Nov; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "2027 calendar published",
    "book": "https://fekc.alphatiming.co.uk/users/sign_in"
   },
   {
@@ -165,8 +165,8 @@
    "venue": "Clay Pigeon, Dorset",
    "kind": "club",
    "color": "#E040C8",
-   "checked": 1793599755234,
-   "note": "R9 8 Nov confirmed; 2027 dates not published yet",
+   "checked": 1795690249204,
+   "note": "2027 calendar published (AlphaTiming)",
    "book": "http://www.claypigeonkartclub.com"
   },
   {
@@ -175,7 +175,7 @@
    "venue": "Ellough Park, Suffolk",
    "kind": "club",
    "color": "#3BD16F",
-   "checked": 1793599755234,
+   "checked": 1795690249204,
    "note": "Only owner-driver test days; Iron League is hire-kart (under Ellough Park rental); 2027 not published",
    "book": "https://www.elloughpark.co.uk/owner-drivers",
    "phone": "01502 717718",
@@ -2816,16 +2816,6 @@
    "source": "https://www.dunkeswellraceway.co.uk/events/list"
   },
   {
-   "id": "lydd-kart-club-2026-12-13-christmas-bash",
-   "seriesId": "lydd-kart-club",
-   "title": "Christmas Bash",
-   "start": "2026-12-13",
-   "end": "2026-12-13",
-   "location": "Lydd Kart Circuit",
-   "kind": "race",
-   "source": "https://lyddkartcircuit.com/owner-driver/"
-  },
-  {
    "id": "daytona-sandown-park-2026-12-13-superchamps-round-5",
    "seriesId": "daytona-sandown-park",
    "title": "SuperChamps Round 5",
@@ -5297,6 +5287,426 @@
    "location": "Whilton Mill, Daventry",
    "kind": "race",
    "source": "https://www.alpharacehub.com/wmkc"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-01-10-round-1",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 1",
+   "start": "2027-01-10",
+   "end": "2027-01-10",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-02-14-round-2",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 2",
+   "start": "2027-02-14",
+   "end": "2027-02-14",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-03-14-round-3",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 3",
+   "start": "2027-03-14",
+   "end": "2027-03-14",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-04-10-rounds-4---5",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Rounds 4 & 5",
+   "start": "2027-04-10",
+   "end": "2027-04-11",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-05-09-round-6",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 6",
+   "start": "2027-05-09",
+   "end": "2027-05-09",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-06-13-round-7",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 7",
+   "start": "2027-06-13",
+   "end": "2027-06-13",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-07-10-kimbolton-festival",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Kimbolton Festival",
+   "start": "2027-07-10",
+   "end": "2027-07-11",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-09-12-round-9",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 9",
+   "start": "2027-09-12",
+   "end": "2027-09-12",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-10-10-round-10",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 10",
+   "start": "2027-10-10",
+   "end": "2027-10-10",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-11-14-round-11",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 11",
+   "start": "2027-11-14",
+   "end": "2027-11-14",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "hunts-kart-racing-club-2027-12-12-round-12",
+   "seriesId": "hunts-kart-racing-club",
+   "title": "Round 12",
+   "start": "2027-12-12",
+   "end": "2027-12-12",
+   "location": "Kimbolton",
+   "kind": "race",
+   "source": "https://www.motorsport-timing.co.uk/calendar"
+  },
+  {
+   "id": "lydd-kart-club-2026-12-13-christmas-cracker",
+   "seriesId": "lydd-kart-club",
+   "title": "Christmas Cracker",
+   "start": "2026-12-13",
+   "end": "2026-12-13",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-01-10-new-year-warm-up",
+   "seriesId": "lydd-kart-club",
+   "title": "New Year Warm Up",
+   "start": "2027-01-10",
+   "end": "2027-01-10",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-02-14-round-1",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 1",
+   "start": "2027-02-14",
+   "end": "2027-02-14",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-03-14-round-2",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 2",
+   "start": "2027-03-14",
+   "end": "2027-03-14",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-04-11-round-3",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 3",
+   "start": "2027-04-11",
+   "end": "2027-04-11",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-05-09-round-4",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 4",
+   "start": "2027-05-09",
+   "end": "2027-05-09",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-06-13-round-5",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 5",
+   "start": "2027-06-13",
+   "end": "2027-06-13",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-07-11-round-6",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 6",
+   "start": "2027-07-11",
+   "end": "2027-07-11",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-09-12-round-7",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 7",
+   "start": "2027-09-12",
+   "end": "2027-09-12",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-10-10-round-8",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 8",
+   "start": "2027-10-10",
+   "end": "2027-10-10",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-11-14-round-9",
+   "seriesId": "lydd-kart-club",
+   "title": "Round 9",
+   "start": "2027-11-14",
+   "end": "2027-11-14",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "lydd-kart-club-2027-12-12-christmas-cracker",
+   "seriesId": "lydd-kart-club",
+   "title": "Christmas Cracker",
+   "start": "2027-12-12",
+   "end": "2027-12-12",
+   "location": "Lydd Kart Circuit",
+   "kind": "race",
+   "source": "https://lyddkartcircuit.com/owner-driver"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-03-07-round-1",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 1",
+   "start": "2027-03-07",
+   "end": "2027-03-07",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-04-04-round-2",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 2",
+   "start": "2027-04-04",
+   "end": "2027-04-04",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-05-02-round-3",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 3",
+   "start": "2027-05-02",
+   "end": "2027-05-02",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-06-06-round-4",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 4",
+   "start": "2027-06-06",
+   "end": "2027-06-06",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-07-04-round-5",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 5",
+   "start": "2027-07-04",
+   "end": "2027-07-04",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-08-01-round-6",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 6",
+   "start": "2027-08-01",
+   "end": "2027-08-01",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-09-04-southern-championshi",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Southern Championships & Round 7",
+   "start": "2027-09-04",
+   "end": "2027-09-05",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-10-03-round-8",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 8",
+   "start": "2027-10-03",
+   "end": "2027-10-03",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "forest-edge-kart-club-2027-11-07-round-9",
+   "seriesId": "forest-edge-kart-club",
+   "title": "Round 9",
+   "start": "2027-11-07",
+   "end": "2027-11-07",
+   "location": "Forest Edge, Barton Stacey",
+   "kind": "race",
+   "source": "https://fekc.co.uk/calendar.html"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-02-14-round-1",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 1",
+   "start": "2027-02-14",
+   "end": "2027-02-14",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-03-14-round-2",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 2",
+   "start": "2027-03-14",
+   "end": "2027-03-14",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-04-11-round-3",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 3",
+   "start": "2027-04-11",
+   "end": "2027-04-11",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-05-09-round-4--wessex-chal",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 4 (Wessex Challenge)",
+   "start": "2027-05-09",
+   "end": "2027-05-09",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-06-13-round-5",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 5",
+   "start": "2027-06-13",
+   "end": "2027-06-13",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-07-11-round-6",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 6",
+   "start": "2027-07-11",
+   "end": "2027-07-11",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-08-08-round-7",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 7",
+   "start": "2027-08-08",
+   "end": "2027-08-08",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-09-12-round-8",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 8",
+   "start": "2027-09-12",
+   "end": "2027-09-12",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-10-10-round-9",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 9",
+   "start": "2027-10-10",
+   "end": "2027-10-10",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
+  },
+  {
+   "id": "clay-pigeon-kart-club-2027-11-14-round-10--season-fin",
+   "seriesId": "clay-pigeon-kart-club",
+   "title": "Round 10 (Season Finale)",
+   "start": "2027-11-14",
+   "end": "2027-11-14",
+   "location": "Clay Pigeon, Dorset",
+   "kind": "race",
+   "source": "https://cpkc.alphatiming.co.uk/entrylist"
   }
  ],
  "restore": [
