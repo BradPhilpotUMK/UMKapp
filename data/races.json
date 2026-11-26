@@ -67,7 +67,7 @@
    "kind": "club",
    "color": "#3BD16F",
    "checked": 1793599755234,
-   "note": "Round 10 14-15 Nov confirmed; 2027 dates not published yet",
+   "note": "2027 club rounds plus other events at the track",
    "book": "http://sheningtonkrc.co.uk/",
    "logoUrl": "logos/shenington-kart-racing-club.png"
   },
@@ -5045,6 +5045,186 @@
    "location": "Silverstone Grand Prix",
    "kind": "race",
    "source": "https://www.britishsuperkart.club"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-01-17-round-1",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 1",
+   "start": "2027-01-17",
+   "end": "2027-01-17",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-02-21-round-2",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 2",
+   "start": "2027-02-21",
+   "end": "2027-02-21",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-03-21-round-3",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 3",
+   "start": "2027-03-21",
+   "end": "2027-03-21",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-04-18-round-4",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 4",
+   "start": "2027-04-18",
+   "end": "2027-04-18",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-05-16-round-5",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 5",
+   "start": "2027-05-16",
+   "end": "2027-05-16",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-06-20-round-6",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 6",
+   "start": "2027-06-20",
+   "end": "2027-06-20",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-07-17-round-7--superprix-",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 7 (SuperPrix)",
+   "start": "2027-07-17",
+   "end": "2027-07-18",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-09-19-round-8",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 8",
+   "start": "2027-09-19",
+   "end": "2027-09-19",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-10-17-round-9",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 9",
+   "start": "2027-10-17",
+   "end": "2027-10-17",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-11-21-round-10--final-",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Round 10 (Final)",
+   "start": "2027-11-21",
+   "end": "2027-11-21",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-02-06-club100-cadet---juni",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Club100 Cadet & Junior North",
+   "start": "2027-02-06",
+   "end": "2027-02-07",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-02-27-uk-kart-series-round",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "UK Kart Series Round 1",
+   "start": "2027-02-27",
+   "end": "2027-02-28",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-04-03-retro-kart-champions",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "Retro Kart Championship",
+   "start": "2027-04-03",
+   "end": "2027-04-04",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "shenington-kart-racing-club-2027-05-21-the-kart-championshi",
+   "seriesId": "shenington-kart-racing-club",
+   "title": "The Kart Championship R3 (provisional)",
+   "start": "2027-05-21",
+   "end": "2027-05-23",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "fat-karting-league-uk-2027-03-27-regional-round-1",
+   "seriesId": "fat-karting-league-uk",
+   "title": "Regional Round 1",
+   "start": "2027-03-27",
+   "end": "2027-03-28",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "fat-karting-league-uk-2027-05-08-regional-round-3",
+   "seriesId": "fat-karting-league-uk",
+   "title": "Regional Round 3",
+   "start": "2027-05-08",
+   "end": "2027-05-09",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "fat-karting-league-uk-2027-06-12-regional-round-5",
+   "seriesId": "fat-karting-league-uk",
+   "title": "Regional Round 5",
+   "start": "2027-06-12",
+   "end": "2027-06-13",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
+  },
+  {
+   "id": "fat-karting-league-uk-2027-10-23-regional-round-9",
+   "seriesId": "fat-karting-league-uk",
+   "title": "Regional Round 9",
+   "start": "2027-10-23",
+   "end": "2027-10-24",
+   "location": "Shenington Kart Club, Banbury",
+   "kind": "race",
+   "source": "https://www.shenington.co.uk"
   }
  ],
  "restore": [
