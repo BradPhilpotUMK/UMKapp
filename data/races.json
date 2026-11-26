@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T10:50Z",
+ "updated": "2026-11-26T10:51Z",
  "series": [
   {
    "id": "access-karting",
@@ -187,7 +187,7 @@
    "venue": "Hooton Park, Cheshire",
    "kind": "club",
    "color": "#F2A93B",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "No upcoming events on AlphaTiming; 2027 not published",
    "book": "https://chkrc.alphatiming.co.uk/register/events"
   },
@@ -197,7 +197,7 @@
    "venue": "Three Sisters, Wigan",
    "kind": "club",
    "color": "#3BB3E0",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "Only O/D test days listed; 3S120 Team Enduro is rental (under Three Sisters rental)",
    "book": "https://threesisterscircuit.co.uk/adults/owner-driver",
    "phone": "01942 719030",
@@ -209,7 +209,7 @@
    "venue": "Warden Law, Sunderland",
    "kind": "club",
    "color": "#8B6CF0",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "No SDKC race calendar found; Warden Law calendar lists no SDKC meetings Nov-Dec; 2027 not published",
    "book": "https://kartingnortheast.com/",
    "phone": "0191 521 4050"
@@ -220,7 +220,7 @@
    "venue": "Rowrah, Cumbria",
    "kind": "club",
    "color": "#F26B3A",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "O Plate 29 Nov confirmed; 2027 dates not published yet",
    "book": "https://ckrc.alphatiming.co.uk/register/msa",
    "logoUrl": "logos/cumbria-kart-racing-club.png"
@@ -231,7 +231,7 @@
    "venue": "Glan y Gors, Wales",
    "kind": "club",
    "color": "#22C3B0",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "Dragon KC lists only test days; no club race meetings",
    "book": "https://gygkarting.com/dragon-kart-club-dkc",
    "logoUrl": "logos/glan-y-gors-kart-club.png"
@@ -242,7 +242,7 @@
    "venue": "Llandow, Wales",
    "kind": "club",
    "color": "#D9D23A",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "Only practice days listed; no club race meetings found",
    "book": "https://llandow.alphatiming.co.uk/",
    "phone": "01446 796460"
@@ -253,8 +253,8 @@
    "venue": "Larkhall Circuit International, Larkhall",
    "kind": "club",
    "color": "#FF5C8A",
-   "checked": 1793599755234,
-   "note": "WSKC Autumn Series RD3 22 Nov per MSUK permit list; 2027 dates not published yet",
+   "checked": 1795690306607,
+   "note": "WSKC 2026 season ended with Autumn Series RD3 (22 Nov); 2027 dates not published yet",
    "book": "https://members.wskc.co.uk/register/",
    "logoUrl": "logos/larkhall-kart-club-racing.png"
   },
@@ -264,7 +264,7 @@
    "venue": "Lochgelly, Fife",
    "kind": "club",
    "color": "#4C7DFF",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "Now Scottish Karting Academy; races at ESKC meetings, no own dates found",
    "book": "https://www.eskc.net/",
    "logoUrl": "logos/fife-kart-club.png"
@@ -275,7 +275,7 @@
    "venue": "Golspie, Highlands",
    "kind": "club",
    "color": "#E040C8",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "No NSKC upcoming events listed; 2027 not published",
    "book": "https://www.nskc.co.uk/"
   },
@@ -285,7 +285,7 @@
    "venue": "Nutts Corner, Northern Ireland",
    "kind": "club",
    "color": "#3BD16F",
-   "checked": 1793599755234,
+   "checked": 1795690306607,
    "note": "Ulster KC 2026 rounds ended 31 Oct; 2027 dates not published yet",
    "book": "https://www.ulsterkarting.club/"
   },
