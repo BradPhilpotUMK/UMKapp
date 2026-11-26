@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T10:51Z",
+ "updated": "2026-11-26T10:52Z",
  "series": [
   {
    "id": "access-karting",
@@ -308,8 +308,8 @@
    "venue": "National championship",
    "kind": "national",
    "color": "#3BB3E0",
-   "checked": 1793599755234,
-   "note": "2027 calendar published (Motorsport Timing)",
+   "checked": 1795690331249,
+   "note": "2027 calendar published (britishkartchampionships.org)",
    "logoUrl": "logos/wera-tools-british-kart-championships.png",
    "book": "https://britishkartchampionships.org/events"
   },
@@ -319,8 +319,8 @@
    "venue": "National event",
    "kind": "national",
    "color": "#8B6CF0",
-   "checked": 1793599755234,
-   "note": "2027 date published (TVKC calendar)",
+   "checked": 1795690331249,
+   "note": "2027 date published (TVKC / Motorsport Timing)",
    "logoUrl": "logos/kartmasters-british-grand-prix.png",
    "book": "https://tvkc.co.uk/race-calendar"
   },
@@ -330,8 +330,8 @@
    "venue": "Teesside Autodrome, Middlesbrough",
    "kind": "club",
    "color": "#F26B3A",
-   "checked": 1793599755234,
-   "note": "2026 sprint season ended Oct; winter events under own series; 2027 sprint dates not published",
+   "checked": 1795690331249,
+   "note": "2027 NRG Owner Sprint calendar announced but dates not published yet; winter events under own series",
    "book": "https://teessidemotorsports.co.uk/karting/owner-driver/owner-driver-dates",
    "phone": "01642 231117",
    "logoUrl": "logos/teesside-autodrome-karting.png"
