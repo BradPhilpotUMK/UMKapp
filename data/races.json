@@ -1194,7 +1194,8 @@
    "short": "DAY END",
    "logoUrl": "logos/daytona.png",
    "note": "2027 calendar from Daytona Motorsport",
-   "book": "https://www.daytona.co.uk"
+   "book": "https://www.daytona.co.uk",
+   "checked": 1795788995196
   },
   {
    "id": "jamie-chadwick-series",
@@ -1205,7 +1206,8 @@
    "short": "JCS",
    "logoUrl": "logos/daytona.png",
    "note": "2027 calendar from Daytona Motorsport",
-   "book": "https://www.daytona.co.uk"
+   "book": "https://www.daytona.co.uk",
+   "checked": 1795788995196
   },
   {
    "id": "daytona-dmax-tour",
@@ -1216,7 +1218,8 @@
    "short": "DMAX",
    "logoUrl": "logos/daytona.png",
    "note": "2027 calendar from Daytona Motorsport",
-   "book": "https://www.daytona.co.uk"
+   "book": "https://www.daytona.co.uk",
+   "checked": 1795788995196
   }
  ],
  "events": [

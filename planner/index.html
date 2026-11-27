@@ -3,6 +3,11 @@
 <head>
 <base href="../">
 <style>html,body{background:#000}.opt small b.trk{color:var(--text,#F1F0EC);font-weight:700}
+.psearch{position:relative;margin:4px 0 12px}.psearch svg{position:absolute;left:14px;top:50%;width:19px;height:19px;transform:translateY(-50%);fill:none;stroke:var(--muted,#a4a5ad);stroke-width:2.2;stroke-linecap:round;pointer-events:none}
+.psearch input{width:100%;box-sizing:border-box;padding:13px 14px 13px 42px;border-radius:14px;border:1px solid var(--line,#2c2d33);background:rgba(20,20,24,.92);color:var(--text,#F1F0EC);font:inherit;font-size:16px}
+.psearch input:focus{outline:none;border-color:var(--kerb,#FF0074)}
+.panel.searching .hint,.panel.searching .addseries,.panel.searching .addclub,.panel.searching [id$="Scan"],.panel.searching .suggest{display:none}
+.nomatch{color:var(--muted,#a4a5ad);text-align:center;margin:18px 0}
 </style>
 <script>if(navigator.standalone===true)document.documentElement.classList.add("ios-app")</script>
 <meta charset="utf-8">
@@ -524,6 +529,8 @@ html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,
   </section>
 
   <section class="panel" id="p-rental">
+    <div class="psearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" data-filter="rentList,trackList" placeholder="Search championships and tracks" autocomplete="off" enterkeyhint="search"></div>
+    <p class="nomatch" hidden>Nothing matches that. Try a track, town or championship name.</p>
     <h2 class="sect" style="margin-top:6px">Championships and endurance races</h2>
     <p class="hint">The main UK and European rental and arrive-and-drive championships and endurance races. Tap one to see its rounds and tick the ones you'll race. They also show up in Weekends.</p>
     <div class="addseries">
@@ -545,6 +552,8 @@ html:not([data-skin="pink"]) body{background:radial-gradient(120% 60% at 50% 0%,
   </section>
 
   <section class="panel" id="p-series">
+    <div class="psearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" data-filter="seriesList,natList,clubList" placeholder="Search clubs and championships" autocomplete="off" enterkeyhint="search"></div>
+    <p class="nomatch" hidden>Nothing matches that. Try a club, circuit or town name.</p>
     <p class="hint">Add the series you're racing, then add their dates with Add date. UK club, rental and track dates fill in automatically.</p>
     <div class="addseries">
       <input type="text" id="newSeries" placeholder="Series name, e.g. GX-UK Seniors" autocomplete="off">
@@ -658,7 +667,7 @@ function setRegion(c){if(!REGIONS[c]||c===REGION.code)return;try{localStorage.se
 const LS=REGION.ls;
 const SUGGEST=REGION.suggest;
 const WEB=true;
-const BUILD= "1795507047";
+const BUILD= "1795788970";
 /* Load the newest version: phones may keep an old saved copy of the page */
 (async()=>{try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=(await r.json()).build;
   /* a newer version is out: swap to it quietly the next time the app goes into the background,
@@ -876,7 +885,15 @@ function computeClashes(){
 /* ---------- render ---------- */
 function rangeMonths(){const out=[];const y=now.getFullYear(),m=now.getMonth();for(let i=0;i<13;i++){const d=new Date(Date.UTC(y,m+i,1));out.push([d.getUTCFullYear(),d.getUTCMonth()])}return out}
 
-function render(){renderTop();renderMonths();renderWeekends();renderClashes();renderSeries();renderRemoved()}
+/* search box on the Rental and Owner tabs: hides cards that don't match, and headings whose lists end up empty */
+function applySearch(){document.querySelectorAll(".psearch input").forEach(inp=>{const panel=inp.closest(".panel"),q=inp.value.trim().toLowerCase(),words=q.split(/\s+/).filter(Boolean);let shown=0;
+  panel.classList.toggle("searching",!!q);
+  inp.dataset.filter.split(",").forEach(id=>{const list=document.getElementById(id);if(!list)return;let n=0;
+    [...list.children].forEach(c=>{const ok=!q||words.every(w=>c.textContent.toLowerCase().includes(w));c.style.display=ok?"":"none";if(ok)n++});
+    shown+=n;let h=list.previousElementSibling;while(h&&h.tagName!=="H2")h=h.previousElementSibling;if(h)h.style.display=q&&!n?"none":""});
+  const nm=panel.querySelector(".nomatch");if(nm)nm.hidden=!q||shown>0})}
+document.addEventListener("input",e=>{if(e.target.matches(".psearch input"))applySearch()});
+function render(){renderTop();renderMonths();renderWeekends();renderClashes();renderSeries();renderRemoved();applySearch()}
 
 /* Live countdown to the next race you're doing (counts to 8am on the first day) */
 let cdTarget=null,cdTimer=null;
