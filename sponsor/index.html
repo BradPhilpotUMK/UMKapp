@@ -165,6 +165,8 @@ body.sheet-open{overflow:hidden}
 .itiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
 .itiles span{display:flex;flex-direction:column;gap:4px;background:#121216;border:1px solid rgba(0,190,0,.3);border-radius:14px;padding:10px;font-size:13.5px;font-weight:700;color:#e6e6ea;line-height:1.25}
 .itiles em{font-style:normal;font-size:24px}
+.nexthead{margin:22px 4px 10px}.nexthead h2{font-family:var(--display);font-size:24px;margin:0;color:#fff}.nexthead p{margin:4px 0 0;color:#b9bac1;font-size:14px}
+.nsn{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#FF0074;color:#fff;font-size:16px;margin-right:8px;vertical-align:2px}
 .fup{border-color:rgba(0,190,0,.45)}
 .tile.t4{grid-column:1/-1;display:flex;width:100%;flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 16px;margin:0;background:linear-gradient(110deg,#3a2a00,#151004 75%);border:1px solid rgba(255,184,0,.5)}
 .tile.t4 .ic{margin:0;width:48px;height:48px;flex:none}.tile.t4 b{margin:0;font-size:17px}.tile.t4 small{display:block}.tile.t4>b+small{margin-top:2px}
@@ -327,8 +329,10 @@ input[type=color]{height:44px;padding:4px}
 
   <section class="pane" data-p="4" hidden>
     <div class="card check"><h2>Proposal check</h2><p class="sub pill">🚦 Fix the red ones first.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
-    <div class="card"><div class="ph"><h2>Message to book a meeting</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub pill">📍 Send after you've popped in, to lock in a time.</p><pre class="out" id="outEmail"></pre></div>
-    <div class="card fup"><div class="ph"><h2>Follow-up email</h2><button class="btn sm" id="cpFollow">Copy</button></div><p class="sub pill">⏱ Send within 24 hours of the meeting, with your proposal PDF attached.</p><pre class="out" id="outFollow"></pre></div>
+    <div class="card"><div class="ph"><h2>Proposal preview</h2><button class="btn sm" id="cpProp">Copy text</button></div><p class="sub pill">🖨 Print it for the meeting, save the PDF for the follow-up.</p>
+      <div class="docwrap"><div class="doc" id="doc"></div></div>
+      <pre class="out" id="outProp" hidden></pre>
+      <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
     <div class="card"><h2>Make it look the part</h2><p class="sub pill">📸 Add your logo and up to 3 photos.</p>
       <div class="ups">
         <label class="up" id="upLogo"><input type="file" accept="image/*" id="logoIn" hidden><span>Your logo</span></label>
@@ -338,10 +342,9 @@ input[type=color]{height:44px;padding:4px}
       </div>
       <div class="row2"><div><label for="f_col">Accent colour</label><input type="color" id="f_col" value="#FF0074"></div><div><label>&nbsp;</label><button class="btn" id="clearImg" type="button" style="width:100%">Remove pictures</button></div></div>
     </div>
-    <div class="card"><div class="ph"><h2>Proposal preview</h2><button class="btn sm" id="cpProp">Copy text</button></div><p class="sub pill">🖨 Print it for the meeting, save the PDF for the follow-up.</p>
-      <div class="docwrap"><div class="doc" id="doc"></div></div>
-      <pre class="out" id="outProp" hidden></pre>
-      <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
+    <div class="nexthead"><h2>Next steps</h2><p>Copy these when you need them. They fill in from your answers.</p></div>
+    <div class="card"><div class="ph"><h2><span class="nsn">1</span>Message to book the meeting</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub pill">📍 Send after you've popped in, to lock in a time.</p><pre class="out" id="outEmail"></pre></div>
+    <div class="card fup"><div class="ph"><h2><span class="nsn">2</span>Follow-up email</h2><button class="btn sm" id="cpFollow">Copy</button></div><p class="sub pill">⏱ Send within 24 hours of the meeting, with your proposal PDF attached.</p><pre class="out" id="outFollow"></pre></div>
   </section>
 
   <div class="sheet" id="mistakesSheet" hidden><div class="sh-card" role="dialog" aria-modal="true" aria-labelledby="mistT">
@@ -407,7 +410,7 @@ ${T?"We're":"I'm"} getting in touch with ${S.co||"[company]"} because ${S.why||"
 
 ${T?"We're":"I'm"} looking for ${askTxt}. In return ${S.co||"you"} would get ${offer.length?offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1"):"[what they get]"}${offer.length>3?", plus more in the attached proposal":""}.${r.length?(T?" Our team reaches ":" My racing reaches ")+r.join(", ")+".":""}
 
-I'd love 15 minutes to come in and show you the proposal in person (and ${T?"the karts":"the kart"}, if that's useful). Would [day] at [time] work?
+I'd love 15 minutes to come in and show you the proposal in person. Would [day] at [time] work?
 
 Thanks,
 ${sender}${T?"\n"+(S.team||"[Team name]"):""}
@@ -456,7 +459,7 @@ ${S.contact||"[contact]"}`;
   const C=[
     [!!S.co&&!!S.person,"Named the company and a person","No company or person's name: it reads like a mass email."],
     [(S.why||"").length>15,"Said why you picked them","Say why this company: location, customers, a family link."],
-    [offer.length>=3,"Offering at least three things back",`Only ${offer.length} thing${offer.length==1?"":"s"} offered: add more in step 2.`],
+    [offer.length>=3,"Offering at least three things back",offer.length?`Only ${offer.length} thing${offer.length==1?"":"s"} offered: add more in step 2.`:"Nothing offered yet: pick what they get in step 2."],
     [(S.c_extra||[]).length>0,"Included something money can't buy","Add a guest day, track day or appearance: sponsors love those."],
     [(S.type==="product"&&!!S.spend)||num(S.amount)>0,"A clear, specific ask","No amount or product: say exactly what you need."],
     [!!S.spend,"Said what the money pays for","Say what it pays for (tyres, entries, engine rebuild)."],
