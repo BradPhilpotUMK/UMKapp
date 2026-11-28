@@ -217,7 +217,58 @@ input[type=color]{height:44px;padding:4px}
 .doc .foot{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #e3e3e6;margin-top:12px;padding-top:8px;font-size:10px;color:#55565c}
 @page{size:A4;margin:0}
 #printDoc{display:none}
-@media print{html,body{background:#fff!important;height:auto!important;overflow:visible!important;display:block!important}body>*:not(#printDoc){display:none!important}#printDoc{display:block;width:210mm;height:297mm;overflow:hidden;font-size:12pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}#printDoc .hero{min-height:92mm;padding:12mm}#printDoc .hero h3{font-size:36pt}#printDoc .hero .lg{max-height:22mm;top:9mm;right:9mm}#printDoc .body{padding:8mm 12mm}#printDoc .ask p{font-size:15pt}#printDoc .pics div{aspect-ratio:auto;height:52mm}}
+
+.pkwrap{margin-top:14px}
+.pktog{display:flex;gap:12px;align-items:flex-start;background:#18181d;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:12px;cursor:pointer}
+.pktog input{padding:0;min-height:0;width:22px!important;height:22px;flex:none;margin-top:2px;accent-color:#FF0074}.pktog b{display:block;color:#fff;font-size:15px}.pktog small{display:block;color:#a8a9b0;font-size:13px;margin-top:2px;line-height:1.35}
+#pkTiers{display:grid;gap:10px;margin-top:10px}
+.pkt{background:#141418;border:1px solid rgba(255,255,255,.08);border-top:3px solid var(--tc);border-radius:14px;padding:10px 12px}
+.pkh{display:flex;align-items:center;gap:6px;margin-bottom:8px}.pkh b{color:var(--tc);font-size:16px;letter-spacing:.06em;text-transform:uppercase;margin-right:auto}.pkh span{color:#fff;font-weight:800}
+.pkh input{width:110px;padding:8px 10px;border-radius:10px}
+.pkc{display:flex;flex-wrap:wrap;gap:6px}.pkc label{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;background:#1d1d23;border:1px solid #303139;border-radius:999px;padding:6px 10px;margin:0;cursor:pointer;color:#cfd0d6}
+.pkc label:has(input:checked){background:color-mix(in srgb,var(--tc) 22%,#1d1d23);border-color:var(--tc);color:#fff}.pkc input{accent-color:var(--tc);margin:0;width:16px!important;height:16px;flex:none;padding:0;min-height:0}.pkc label{line-height:1.2;text-align:left}
+.modesw{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 12px}
+.modesw button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;padding:12px;border-radius:16px;border:1px solid #33343b;background:rgba(18,18,22,.92);color:#cfd0d6;font-family:inherit;cursor:pointer}
+.modesw button b{font-size:15px;color:#fff}.modesw button small{font-size:12px;opacity:.8}
+.modesw button.on{background:linear-gradient(160deg,#FF0074,#c2005a);border-color:#FF0074;color:#fff;box-shadow:0 6px 16px rgba(255,0,116,.3)}
+.deckwrap{display:grid;gap:10px}
+.deck .sl{position:relative;container-type:inline-size;aspect-ratio:297/210;background:#0a0d14;color:#e9ecf2;border-radius:10px;overflow:hidden;font-family:Barlow,system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+.deck .si{position:absolute;inset:0 0 9cqw 0;padding:5cqw 5cqw 0}
+.deck .sf{position:absolute;left:5cqw;right:5cqw;bottom:2.6cqw;display:flex;justify-content:space-between;border-top:.15cqw solid rgba(255,255,255,.14);padding-top:1.6cqw;font-size:1.35cqw;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#9aa3b5}
+.deck .k{margin:0 0 .6cqw;font-size:1.45cqw;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ac)}
+.deck h1{font-family:var(--display);font-size:6.4cqw;line-height:1;margin:.6cqw 0 1.4cqw;color:#fff}
+.deck h2{font-family:var(--display);font-size:4.4cqw;line-height:1.05;margin:0 0 2.2cqw;color:#fff}
+.deck h3{font-size:2cqw;margin:1.6cqw 0 .8cqw;color:var(--ac)}.deck h4{font-size:1.5cqw;margin:0 0 .6cqw;color:var(--ac);text-transform:uppercase;letter-spacing:.1em}
+.deck p{margin:0;text-align:left}.deck .mut{color:#9aa3b5;font-size:1.6cqw;margin-top:.4cqw}
+.deck .cover .si{padding:0;inset:0 0 9cqw 0}
+.deck .cv{display:grid;grid-template-columns:1fr 1fr;height:100%}
+.deck .cvl{position:relative;padding:5cqw;display:flex;flex-direction:column;justify-content:center;z-index:1}
+.deck .dlg{position:absolute;top:4cqw;left:5cqw;max-width:14cqw;max-height:6cqw;background:#fff;border-radius:.8cqw;padding:.6cqw}
+.deck .champ{font-size:2.6cqw;font-weight:800;color:#fff}
+.deck .ab{font-size:1.6cqw;line-height:1.45;color:#cdd3de;margin-top:1.6cqw;max-width:40cqw}
+.deck .tg{margin-top:2.4cqw}.deck .tg b{display:block;font-family:var(--display);font-size:6cqw;line-height:1;color:#fff}.deck .tg span{display:block;margin-top:.6cqw;font-size:1.4cqw;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+.deck .cvr{background:#1a2030 center/cover no-repeat;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%);display:grid;place-items:center}
+.deck .cvr span{color:#7f8899;font-size:1.6cqw;max-width:60%;text-align:center}
+.deck .g2{display:grid;grid-template-columns:1.05fr 1fr;gap:3.5cqw}
+.deck .lead{text-align:left;max-width:none;margin:0;font-size:1.9cqw;line-height:1.4;color:#d7dce5}
+.deck .ft{margin:0 0 1.4cqw}.deck .ft b{display:block;font-size:1.9cqw;color:#fff}.deck .ft span{display:block;font-size:1.45cqw;color:#aab2c2;line-height:1.35;margin-top:.2cqw}
+.deck .sts{display:grid;grid-template-columns:1fr 1fr;gap:1.2cqw;margin-bottom:1.6cqw}
+.deck .sts div{background:#141b2b;border-left:.4cqw solid var(--ac);padding:1.4cqw}.deck .sts b{display:block;font-family:var(--display);font-size:3.4cqw;line-height:1;color:#fff}.deck .sts span{display:block;font-size:1.3cqw;color:#aab2c2;margin-top:.4cqw}
+.deck .rs ul{margin:0;padding-left:2cqw;font-size:1.5cqw;color:#d7dce5;line-height:1.4}.deck .rs{margin-bottom:1.6cqw}
+.deck [class^="ph"]{display:grid;gap:1cqw}.deck .ph1{grid-template-columns:1fr}.deck .ph2{grid-template-columns:1fr 1fr}
+.deck [class^="ph"] div{aspect-ratio:16/10;border-radius:.6cqw;background:#222 center/cover no-repeat}
+.deck .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6cqw}
+.deck .tier{background:#141b2b;border-top:.4cqw solid var(--tc);padding:1.8cqw}
+.deck .tn{font-size:1.6cqw;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--tc)}.deck .tp{display:block;font-family:var(--display);font-size:4cqw;color:#fff;margin:.6cqw 0 1cqw;padding-bottom:1cqw;border-bottom:.15cqw solid rgba(255,255,255,.12)}
+.deck .tier ul,.deck .big{margin:0;padding-left:1.8cqw;font-size:1.4cqw;line-height:1.4;color:#d7dce5}.deck .tier li,.deck .big li{margin-bottom:.4cqw}.deck .tier li::marker,.deck .big li::marker{color:var(--tc,var(--ac))}
+.deck .big{font-size:1.8cqw}
+.deck .askb{background:var(--ac);border-radius:1cqw;padding:2.4cqw}.deck .askb span{display:block;font-size:1.4cqw;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85)}.deck .askb b{display:block;font-size:2.8cqw;color:#fff;margin-top:.6cqw;line-height:1.2}
+.deck .ik{font-size:1.35cqw;color:#aab2c2;margin-top:1.4cqw}
+.deck .ct{position:absolute;left:5cqw;right:5cqw;bottom:1.2cqw;display:flex;align-items:center;justify-content:space-between;background:#16203a;padding:1.6cqw 2cqw;border-radius:.6cqw}
+.deck .ct h3{margin:0 0 .4cqw;color:#fff;font-size:2.2cqw}.deck .ct p{font-size:1.6cqw;font-weight:800;color:#fff}.deck .ct img{max-height:5cqw;max-width:14cqw;background:#fff;border-radius:.6cqw;padding:.5cqw}
+.deck .ty p{font-size:1.9cqw;line-height:1.5;color:#d7dce5;max-width:68cqw;margin-bottom:1.6cqw}.deck .ty .sig b{color:#fff;font-size:2.2cqw}.deck .ty .sig span{color:#9aa3b5;font-size:1.5cqw}
+@media print{#printDoc.printdeck{width:297mm;height:auto;overflow:visible}#printDoc.printdeck .sl{width:297mm;height:210mm;aspect-ratio:auto;border-radius:0;box-shadow:none;break-after:page;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}#printDoc.printdeck .sl:last-child{break-after:auto;page-break-after:auto}}
+@media print{html,body{background:#fff!important;height:auto!important;overflow:visible!important;display:block!important}body>*:not(#printDoc){display:none!important}#printDoc{display:block;width:210mm;height:297mm;overflow:hidden;}#printDoc.doc{font-size:12pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}#printDoc .hero{min-height:92mm;padding:12mm}#printDoc .hero h3{font-size:36pt}#printDoc .hero .lg{max-height:22mm;top:9mm;right:9mm}#printDoc .body{padding:8mm 12mm}#printDoc .ask p{font-size:15pt}#printDoc .pics div{aspect-ratio:auto;height:52mm}}
 </style>
 <script data-goatcounter="https://usemorekerb.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -330,6 +381,10 @@ input[type=color]{height:44px;padding:4px}
     <div class="row2"><div><select id="f_type"><option value="money">Money</option><option value="product">Products or services</option><option value="both">Both</option></select></div><div><input id="f_amount" type="number" inputmode="numeric" min="0" placeholder="£ amount"></div></div>
     <label for="f_spend">What it pays for</label><input id="f_spend" placeholder="e.g. tyres and entry fees for 4 rounds">
     <p class="note" id="budgetHint"></p>
+    <div class="pkwrap">
+      <label class="pktog"><input type="checkbox" id="pkOn"><span><b>Offer Gold, Silver and Bronze packages</b><small>Goes in your sponsorship deck. Lets a sponsor pick a level that suits their budget.</small></span></label>
+      <div id="pkTiers" hidden></div>
+    </div>
     <div class="btns"><button class="btn" data-go="1">‹ Back</button><button class="btn primary" data-go="3">Next: the company ›</button></div>
   </section>
 
@@ -350,8 +405,10 @@ input[type=color]{height:44px;padding:4px}
 
   <section class="pane" data-p="4" hidden>
     <div class="card check"><h2>Proposal check</h2><p class="sub pill">🚦 Fix the red ones first.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
-    <div class="card"><div class="ph"><h2>Proposal preview</h2><button class="btn sm" id="cpProp">Copy text</button></div><p class="sub pill">🖨 Print it for the meeting, save the PDF for the follow-up.</p>
-      <div class="docwrap"><div class="doc" id="doc"></div></div>
+    <div class="modesw" role="tablist"><button class="on" data-mode="deck" role="tab"><b>Sponsorship deck</b><small>4 pages · show it in the meeting</small></button><button data-mode="one" role="tab"><b>One-page proposal</b><small>A quick summary to leave behind</small></button></div>
+    <div class="card"><div class="ph"><h2 id="prevH">Your deck</h2><button class="btn sm" id="cpProp" hidden>Copy text</button></div><p class="sub pill" id="prevTip">📊 Swipe through it on your phone in the meeting, or print it in landscape.</p>
+      <div class="deckwrap" id="deckwrap"><div class="deck" id="deck"></div></div>
+      <div class="docwrap" hidden><div class="doc" id="doc"></div></div>
       <pre class="out" id="outProp" hidden></pre>
       <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
     
@@ -565,7 +622,76 @@ function docDraw(){
 const _build=build;build=function(){_build();docDraw()};
 $("#f_col").addEventListener("input",docDraw);upTiles();
 
-addEventListener("beforeprint",()=>{let pd=document.getElementById("printDoc");if(!pd){pd=document.createElement("div");pd.id="printDoc";document.body.appendChild(pd)}pd.className="doc";pd.style.cssText=$("#doc").style.cssText;pd.innerHTML=$("#doc").innerHTML});
+
+/* ===== packages (Gold / Silver / Bronze) ===== */
+const TIERS=[["Gold","#E9B949"],["Silver","#B9C3D0"],["Bronze","#D08A5B"]];
+function chosenRaw(){return [...(S.c_extra||[]),...(S.c_content||[]),...(S.c_brand||[])]}
+function pkDefaults(){const a=+S.amount||0,r=chosenRaw(),br=r.filter(k=>(S.c_brand||[]).includes(k)),ct=r.filter(k=>(S.c_content||[]).includes(k)),ex=r.filter(k=>(S.c_extra||[]).includes(k));
+  const rnd=v=>v?Math.max(100,Math.round(v/250)*250):"";
+  return {on:false,tiers:[{p:a||"",i:r},{p:rnd(a/2),i:[...ex.slice(1),...ct,...br.slice(0,3)]},{p:rnd(a/5),i:[...ct.slice(0,2),...br.slice(0,1),...ex.slice(-1)]}]}}
+function pkGet(){if(!S.pk)S.pk=pkDefaults();return S.pk}
+function pkSave(){store.set(KEY,S)}
+function pkDraw(){const P=pkGet(),box=$("#pkTiers");$("#pkOn").checked=!!P.on;box.hidden=!P.on;if(!P.on)return;const r=chosenRaw();
+  if(!r.length){box.innerHTML=`<p class="note">Tick what the sponsor gets above first, then share it out between the packages.</p>`;return}
+  box.innerHTML=TIERS.map(([n,c],t)=>{const T=P.tiers[t];T.i=(T.i||[]).filter(k=>r.includes(k));return `<div class="pkt" style="--tc:${c}"><div class="pkh"><b>${n}</b><span>£</span><input type="number" inputmode="numeric" min="0" data-tp="${t}" value="${esc(String(T.p||""))}" placeholder="amount"></div><div class="pkc">${r.map(k=>`<label><input type="checkbox" data-ti="${t}" value="${esc(k)}"${T.i.includes(k)?" checked":""}>${esc((OFFER_SHORT[k]||["",k])[1])}</label>`).join("")}</div></div>`}).join("")+`<p class="note">Tap to choose what each package includes. Gold should get the most.</p>`;
+  box.querySelectorAll("[data-tp]").forEach(i=>i.oninput=()=>{P.tiers[+i.dataset.tp].p=i.value.trim();pkSave()});
+  box.querySelectorAll("[data-ti]").forEach(i=>i.onchange=()=>{const T=P.tiers[+i.dataset.ti],order=chosenRaw();T.i=order.filter(k=>k===i.value?i.checked:T.i.includes(k));pkSave()})}
+$("#pkOn").onchange=e=>{const P=pkGet();P.on=e.target.checked;if(P.on&&!P.tiers[0].p&&+S.amount){Object.assign(P,pkDefaults(),{on:true})}pkSave();pkDraw()};
+GROUPS.forEach(g=>$$("#"+g+" input").forEach(c=>c.addEventListener("change",()=>{const P=pkGet();if(P.on&&c.checked)P.tiers[0].i=[...new Set([...P.tiers[0].i,c.value])];pkDraw()})));
+pkDraw();
+
+/* ===== deck ===== */
+let MODE=store.get("umk-sponsor-mode","deck");
+function setMode(m){MODE=m;store.set("umk-sponsor-mode",m);$$(".modesw button").forEach(b=>b.classList.toggle("on",b.dataset.mode===m));
+  $("#deckwrap").hidden=m!=="deck";$(".docwrap").hidden=m==="deck";$("#cpProp").hidden=m==="deck";
+  $("#prevH").textContent=m==="deck"?"Your deck":"One-page proposal";
+  $("#prevTip").textContent=m==="deck"?"📊 Show it on your phone or tablet in the meeting, or print it in landscape.":"🖨 Print it to leave behind, and attach the PDF to your follow-up.";
+  $("#print").textContent=m==="deck"?"Save deck as PDF / print":"Save as PDF / print"}
+$$(".modesw button").forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
+const DESC={
+ "A guest day at a race meeting for the sponsor's staff or customers":["Trackside hospitality","Bring your staff or best customers to a race meeting and take them behind the scenes in the paddock."],
+ "A kart experience or track day for their team":["A karting day for your team","Your staff or clients get out on track and race each other. A great team or customer day out."],
+ "An appearance at their business, school or community event with the kart":["Appearances at your events","I'll come to your showroom, open days or community events in race kit and talk to your customers."],
+ "Trophies and podium photos shared with them first":["First look at the podiums","My trophy and podium photos go to you first, ready to share with your customers."],
+ "Trophies and podium photos shared with you first":["First look at the podiums","My trophy and podium photos go to you first, ready to share with your customers."],
+ "Introductions to drivers and families in the paddock who need what you sell, with a tracked offer":["New customers from the paddock","I'll introduce you to drivers and families who need what you sell, with an offer we can track."],
+ "Introductions to other businesses at the track you could work with":["Business introductions","I'll introduce you to suppliers and businesses at the track you could work with."],
+ "Onboard and highlight videos with the sponsor visible":["Video content","Onboard and highlight videos with your brand on show, yours to use."],
+ "Photos of the branded kit for the sponsor's own website and social media":["Photos you can use","Pictures of your brand at the races for your website, emails and social media."],
+ "A thank-you post after every race weekend, tagging the sponsor":["Shout-outs every race weekend","A thank-you post after every round, tagging you."],
+ "A short report after each round: results, photos and reach":["A report after every round","Results, photos and how many people saw your brand."]};
+function deckDraw(){const T=TEAM(),D=drivers(),num=v=>(+v||0),f=n=>n.toLocaleString("en-GB"),raw=chosenRaw(),P=pkGet();
+  const yr=((S.season||"").match(/20\d\d/)||[String(new Date().getFullYear()+(new Date().getMonth()>7?1:0))])[0];
+  const who=T?(S.team||"[Team name]"):(S.name||"[Your name]"),foot=T?(S.team||"[Team name]"):(S.name||"[Your name]");
+  const stats=[[num(S.yt),"YouTube subscribers"],[num(S.ig),"Instagram followers"],[num(S.tt),"TikTok followers"],[num(S.crowd),"spectators per meeting"]].filter(x=>x[0]);
+  const photos=IM.ph.filter(Boolean),hero=photos[0],more=photos.slice(1);
+  const pg=(n,inner,cls="")=>`<section class="sl ${cls}"><div class="si">${inner}</div><div class="sf"><span>${esc(foot)}</span><span>${yr} / 0${n} of 04</span></div></section>`;
+  const about=T?`${esc(S.team||"[Team name]")} is a karting team from ${esc(S.town||"[town]")}${D.length?` with ${D.length} driver${D.length>1?"s":""}`:""}, racing ${esc(S.class||"[class]")}.`:`I'm ${S.age?`a ${esc(S.age)}-year-old`:"a"} racing driver from ${esc(S.town||"[town]")}, racing ${esc(S.class||"[class]")}.`;
+  const target=num(S.amount)&&S.type!=="product"?`£${f(num(S.amount))}`:"";
+  /* 1 cover */
+  const s1=pg(1,`<div class="cv"><div class="cvl">${IM.logo?`<img class="dlg" src="${IM.logo}" alt="">`:""}<p class="k">${yr} sponsorship proposal${S.co?` for ${esc(S.co)}`:""}</p><h1>${esc(who)}</h1><p class="champ">${esc(S.season||S.class||"")}</p><p class="mut">${esc([S.season?S.class:"",S.town].filter(Boolean).join("  /  "))}</p><p class="ab">${about}</p>${target?`<div class="tg"><b>${target}</b><span>Season target${S.spend?": "+esc(S.spend):""}</span></div>`:""}</div><div class="cvr" style="${hero?`background-image:url(${hero})`:""}">${hero?"":`<span>Add a photo of you in race kit in step 1</span>`}</div></div>`,"cover");
+  /* 2 programme */
+  const feats=raw.filter(k=>DESC[k]).slice(0,4);
+  const s2=pg(2,`<p class="k">The ${yr} programme</p><h2>Your business at the races</h2><div class="g2"><div><p class="lead">${T?"We're":"I'm"} racing ${esc(S.class||"[class]")}${S.season?` in ${esc(S.season)}`:""}${target?`, and ${T?"we're":"I'm"} looking for ${target} to help fund the season`:""}.</p><h3>What ${T?"we":"I"} can do for your business</h3>${feats.length?feats.map(k=>`<div class="ft"><b>${esc(DESC[k][0])}</b><span>${esc(T?DESC[k][1].replace(/\bI'll\b/g,"We'll").replace(/\bMy\b/g,"Our").replace(/\bmy\b/g,"our").replace(/\bI\b/g,"we"):DESC[k][1])}</span></div>`).join(""):`<p class="mut">Pick what the sponsor gets in step 2.</p>`}</div><div>${stats.length?`<div class="sts">${stats.slice(0,4).map(x=>`<div><b>${f(x[0])}</b><span>${x[1]}</span></div>`).join("")}</div>`:""}${(S.results||"").trim()?`<div class="rs"><h4>Results</h4><ul>${(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean).slice(0,4).map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>`:""}${more.length?`<div class="ph${more.length}">${more.map(p=>`<div style="background-image:url(${p})"></div>`).join("")}</div>`:""}</div></div>`);
+  /* 3 packages */
+  const short=k=>(OFFER_SHORT[k]||["",k])[1],brandList=a=>{const b=a.filter(k=>(S.c_brand||[]).includes(k));return b.length?`<li>Your logo on ${T?"our":"my"} ${b.map(k=>short(k).toLowerCase()).join(", ").replace(/, ([^,]*)$/," and $1")}</li>`:""};
+  const items=a=>a.filter(k=>!(S.c_brand||[]).includes(k)).map(k=>`<li>${esc(short(k))}</li>`).join("")+brandList(a);
+  const contact=`<div class="ct"><div><h3>Discuss a partnership</h3><p>${esc(S.contact||"[email or phone]")}</p></div>${IM.logo?`<img src="${IM.logo}" alt="">`:""}</div>`;
+  let s3;
+  if(P.on&&raw.length){s3=pg(3,`<p class="k">${yr} sponsorship packages</p><h2>Gold, Silver &amp; Bronze</h2><div class="tiers">${TIERS.map(([n,c],t)=>{const X=P.tiers[t];return `<div class="tier" style="--tc:${c}"><p class="tn">${n}</p><b class="tp">${num(X.p)?"£"+f(num(X.p)):"£ –"}</b><ul>${items(X.i||[])}</ul></div>`}).join("")}</div>${S.type==="both"||S.type==="product"?`<p class="ik"><b>In-kind support:</b> you can also back the season with products or by paying directly for things like tyres, fuel or entry fees.</p>`:""}${contact}`,"pk")}
+  else{const ask=S.type==="product"?("Products or services"+(S.spend?" for "+S.spend:"")):(target||"Support")+(S.spend?" towards "+S.spend:"");
+    s3=pg(3,`<p class="k">What you get</p><h2>The partnership</h2><div class="g2"><div><ul class="big">${items(raw)||"<li>Pick what the sponsor gets in step 2</li>"}</ul></div><div><div class="askb"><span>${T?"What we're looking for":"What I'm looking for"}</span><b>${esc(ask)}</b></div></div></div>${contact}`,"pk")}
+  /* 4 thanks */
+  const s4=pg(4,`<p class="k">${yr} sponsorship proposal</p><h2>Thank you for your time</h2><div class="ty"><p>Thank you for taking the time to read ${T?"our":"my"} sponsorship proposal${S.co?`, and for considering ${esc(S.co)} being part of ${T?"our":"my"} ${yr} season`:""}.</p><p>${P.on?"These packages are examples of how we could work together. ":""}${T?"We'd":"I'd"} be happy to put something together that suits your business, your budget and what you'd like to get out of the partnership.</p><p>If you're interested in getting involved at any level, or would just like an informal chat, ${T?"we'd":"I'd"} love to hear from you.</p><p class="sig">Thanks again,<br><b>${esc(T?[S.mgr,S.team].filter(Boolean).join(", "):(S.name||"[Your name]"))}</b><br><span>${esc(S.contact||"")}</span></p></div>`,"end");
+  const d=$("#deck");d.style.setProperty("--ac",S.col||"#FF0074");d.innerHTML=s1+s2+s3+s4}
+const _b2=build;build=function(){_b2();deckDraw();pkDraw()};
+$("#f_col").addEventListener("input",deckDraw);
+setMode(MODE);
+
+addEventListener("beforeprint",()=>{let pd=document.getElementById("printDoc");if(!pd){pd=document.createElement("div");pd.id="printDoc";document.body.appendChild(pd)}
+  let ps=document.getElementById("pgSize");if(!ps){ps=document.createElement("style");ps.id="pgSize";document.head.appendChild(ps)}
+  if(MODE==="deck"){pd.className="deck printdeck";pd.style.cssText=$("#deck").style.cssText;pd.innerHTML=$("#deck").innerHTML;ps.textContent="@page{size:A4 landscape;margin:0}"}
+  else{pd.className="doc";pd.style.cssText=$("#doc").style.cssText;pd.innerHTML=$("#doc").innerHTML;ps.textContent="@page{size:A4 portrait;margin:0}"}});
 $("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");dispatchEvent(new Event("beforeprint"));window.print()};
 
 </script>
