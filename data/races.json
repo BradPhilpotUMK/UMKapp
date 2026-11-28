@@ -601,8 +601,8 @@
    "kind": "rtrack",
    "color": "#F2A93B",
    "short": "KS",
-   "checked": 1793599755234,
-   "note": "Championship R7 29 Nov; 2027 dates not published yet",
+   "checked": 1795881854354,
+   "note": "2027 Weekend Championship: 8 Sunday rounds, layouts TBC",
    "book": "https://www.kart.silverstone.co.uk/championships",
    "logoUrl": "logos/kart-silverstone.png"
   },
@@ -6503,6 +6503,94 @@
    "location": "Daytona Tamworth",
    "kind": "race",
    "source": "https://www.instagram.com/daytonamsport/"
+  },
+  {
+   "id": "kart-silverstone-2027-02-28-weekend-championship-r1",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R1",
+   "start": "2027-02-28",
+   "end": "2027-02-28",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
+  },
+  {
+   "id": "kart-silverstone-2027-03-28-weekend-championship-r2",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R2",
+   "start": "2027-03-28",
+   "end": "2027-03-28",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
+  },
+  {
+   "id": "kart-silverstone-2027-04-18-weekend-championship-r3",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R3",
+   "start": "2027-04-18",
+   "end": "2027-04-18",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
+  },
+  {
+   "id": "kart-silverstone-2027-05-02-weekend-championship-r4",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R4",
+   "start": "2027-05-02",
+   "end": "2027-05-02",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
+  },
+  {
+   "id": "kart-silverstone-2027-07-18-weekend-championship-r5",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R5",
+   "start": "2027-07-18",
+   "end": "2027-07-18",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
+  },
+  {
+   "id": "kart-silverstone-2027-09-12-weekend-championship-r6",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R6",
+   "start": "2027-09-12",
+   "end": "2027-09-12",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
+  },
+  {
+   "id": "kart-silverstone-2027-10-03-weekend-championship-r7",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R7",
+   "start": "2027-10-03",
+   "end": "2027-10-03",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
+  },
+  {
+   "id": "kart-silverstone-2027-11-14-weekend-championship-r8",
+   "seriesId": "kart-silverstone",
+   "title": "Weekend Championship R8",
+   "start": "2027-11-14",
+   "end": "2027-11-14",
+   "location": "Kart Silverstone",
+   "kind": "race",
+   "source": "https://www.kart.silverstone.co.uk/championships",
+   "note": "Layout TBC"
   }
  ],
  "restore": [
