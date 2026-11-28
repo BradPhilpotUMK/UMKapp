@@ -427,7 +427,7 @@ $$("[data-go]").filter(b=>/^\d$/.test(b.dataset.go)).forEach(b=>b.onclick=()=>go
 const num=v=>(+v||0),fmt=n=>n.toLocaleString("en-GB");
 function reach(){const p=[];if(num(S.ig))p.push(fmt(num(S.ig))+" Instagram followers");if(num(S.tt))p.push(fmt(num(S.tt))+" TikTok followers");if(num(S.yt))p.push(fmt(num(S.yt))+" YouTube subscribers");return p}
 let build=function(){
-  const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),rawOffer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])],offer=rawOffer.map(tOffer),offerN=rawOffer.map(nOffer),T=TEAM(),D=drivers(),who=T?(S.team||"[Team name]"):(S.name||"[Your name]"),sender=T?(S.mgr||"[Team manager]"):(S.name||"[Your name]");
+  const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),rawOffer=[...(S.c_extra||[]),...(S.c_content||[]),...(S.c_brand||[])],offer=rawOffer.map(tOffer),offerN=rawOffer.map(nOffer),T=TEAM(),D=drivers(),who=T?(S.team||"[Team name]"):(S.name||"[Your name]"),sender=T?(S.mgr||"[Team manager]"):(S.name||"[Your name]");
   const askTxt=S.type==="product"?(S.spend?`products or services for ${S.spend}`:"products or services"):(num(S.amount)?`£${fmt(num(S.amount))}${S.spend?" towards "+S.spend:""}`:(S.spend?"support towards "+S.spend:"support"))+(S.type==="both"?", or products or services instead":"");
   const r=reach(),hi=results[0];
   const email=`Subject: Meeting about ${S.co||"[Company]"} x ${who} karting ${new Date().getFullYear()+1}
@@ -524,7 +524,7 @@ $("#logoIn").onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.logo=a
 $$("[data-ph]").forEach(inp=>inp.onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.ph[+inp.dataset.ph]=await shrink(f,1400);saveImg();upTiles();docDraw();gc("sponsor-photo","Sponsorship: added photo")});
 $("#clearImg").onclick=()=>{IM={logo:"",ph:["","",""]};saveImg();upTiles();docDraw()};
 function docDraw(){
-  const T=TEAM(),D=drivers(),results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),rawOffer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])],offer=rawOffer.map(tOffer),offerN=rawOffer.map(nOffer),num=v=>(+v||0),f=n=>n.toLocaleString("en-GB");
+  const T=TEAM(),D=drivers(),results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),rawOffer=[...(S.c_extra||[]),...(S.c_content||[]),...(S.c_brand||[])],offer=rawOffer.map(tOffer),offerN=rawOffer.map(nOffer),num=v=>(+v||0),f=n=>n.toLocaleString("en-GB");
   const stats=[[num(S.ig),"Instagram followers"],[num(S.tt),"TikTok followers"],[num(S.yt),"YouTube subscribers"],[num(S.crowd),"spectators per meeting"]].filter(x=>x[0]);
   const ask=S.type==="product"?("Products or services"+(S.spend?" for "+S.spend:"")):(num(S.amount)?"£"+f(num(S.amount)):"Support")+(S.spend?" towards "+S.spend:"")+(S.type==="both"?" (or products instead)":"");
   const hero=IM.ph[0]||IM.ph[1]||IM.ph[2],pics=IM.ph.filter((p,i)=>p&&p!==hero);
