@@ -162,7 +162,7 @@ body.sheet-open{overflow:hidden}
 .itiles span{display:flex;flex-direction:column;gap:4px;background:#121216;border:1px solid rgba(0,190,0,.3);border-radius:14px;padding:10px;font-size:13.5px;font-weight:700;color:#e6e6ea;line-height:1.25}
 .itiles em{font-style:normal;font-size:24px}
 .fup{border-color:rgba(0,190,0,.45)}
-.tile.t4{display:flex;width:100%;flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 16px;margin:4px 0 16px;background:linear-gradient(110deg,#3a2a00,#151004 75%);border:1px solid rgba(255,184,0,.5)}
+.tile.t4{grid-column:1/-1;display:flex;width:100%;flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 16px;margin:0;background:linear-gradient(110deg,#3a2a00,#151004 75%);border:1px solid rgba(255,184,0,.5)}
 .tile.t4 .ic{margin:0;width:48px;height:48px;flex:none}.tile.t4 b{margin:0;font-size:17px}.tile.t4 small{display:block}.tile.t4>b+small{margin-top:2px}
 .tile.t4 i{margin-left:auto;font-style:normal;font-size:28px;font-weight:800;color:#FFB800}
 .tile.t4{flex-wrap:nowrap}.tile.t4 .tx{display:flex;flex-direction:column}
@@ -211,6 +211,7 @@ input[type=color]{height:44px;padding:4px}
   <div class="tiles">
     <button class="tile t1" type="button" data-open="howSheet"><span class="ic"><svg viewBox="0 0 64 64"><path d="M4 10h34a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H18l-9 8v-8H4z" fill="#FF0074"/><path d="M60 26H30a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h16l9 8v-8h5z" fill="#fff"/><circle cx="34" cy="41" r="2.6" fill="#16070f"/><circle cx="42" cy="41" r="2.6" fill="#16070f"/><circle cx="50" cy="41" r="2.6" fill="#16070f"/></svg></span><b>How deals really happen</b><small>4 moves · 1 min</small></button>
     <button class="tile t2" type="button" data-open="caseSheet"><span class="ic"><svg viewBox="0 0 64 64"><circle cx="30" cy="34" r="24" fill="#00BE00"/><circle cx="30" cy="34" r="16" fill="#0b0b0d"/><circle cx="30" cy="34" r="8" fill="#00BE00"/><path d="M30 34L54 10" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M48 6l8 0-2 8z" fill="#fff"/></svg></span><b>What sponsors want</b><small><span class="tag">Real sponsor</span></small></button>
+  <button class="tile t4" type="button" data-open="mistakesSheet"><span class="ic"><svg viewBox="0 0 64 64"><path d="M32 4L62 58H2z" fill="#FFB800"/><path d="M32 22v18" stroke="#1a1200" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="49" r="3.6" fill="#1a1200"/></svg></span><span class="tx"><b>11 mistakes that lose sponsors</b><small>Tap to check you're not making them</small></span><i>›</i></button>
     <button class="tile t3" type="button" data-go="steps"><span class="ic"><svg viewBox="0 0 64 64"><path d="M40 6c10 0 18 8 18 18L34 48 16 30z" fill="#fff"/><circle cx="41" cy="23" r="6" fill="#FF0074"/><path d="M16 30l-8 2 8-14 12-2zm18 18l-2 8 14-8 2-12z" fill="#FF0074"/><path d="M18 46c-4 0-8 4-10 12 8-2 12-6 12-10z" fill="#FFB800"/></svg></span><b>Build my proposal</b><small>4 quick steps</small><i>›</i></button>
   </div>
 
@@ -337,7 +338,6 @@ input[type=color]{height:44px;padding:4px}
       <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
   </section>
 
-  <button class="tile t4" type="button" data-open="mistakesSheet"><span class="ic"><svg viewBox="0 0 64 64"><path d="M32 4L62 58H2z" fill="#FFB800"/><path d="M32 22v18" stroke="#1a1200" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="49" r="3.6" fill="#1a1200"/></svg></span><span class="tx"><b>11 mistakes that lose sponsors</b><small>Tap to check you're not making them</small></span><i>›</i></button>
   <div class="sheet" id="mistakesSheet" hidden><div class="sh-card" role="dialog" aria-modal="true" aria-labelledby="mistT">
     <button class="sh-x" type="button" aria-label="Close">✕</button>
     <h2 id="mistT">Mistakes that lose sponsors</h2>
