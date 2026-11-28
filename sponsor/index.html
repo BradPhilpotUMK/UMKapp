@@ -205,6 +205,12 @@ input[type=color]{height:44px;padding:4px}
 .doc ul{margin:0;padding-left:15px}.doc li{margin:2px 0}
 .doc .stats{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .doc .stat{background:#f2f2f4;border-radius:8px;padding:7px 8px}.doc .stat b{display:block;font-family:var(--display);font-size:18px;color:#16171b}.doc .stat span{font-size:9.5px;color:#55565c}
+.doc .gets3{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.doc .gbox{background:#f4f4f6;border-radius:10px;padding:9px 10px;border-top:3px solid var(--ac)}
+.doc .gbox h5{margin:0 0 5px;font-family:var(--display);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:#16171b}
+.doc .gbox ul{padding-left:13px;font-size:10.5px;line-height:1.35}.doc .gbox li{margin:0 0 3px}.doc .gbox li::marker{color:var(--ac)}
+.doc .gbox .tags{display:flex;flex-wrap:wrap;gap:4px}.doc .gbox .tags span{background:#fff;border:1px solid #dedee3;border-radius:999px;padding:2px 8px;font-size:10px;font-weight:700}
+.doc .cols .ask{margin-top:10px}
 .doc .gets li::marker{color:var(--ac)}
 .doc .ask{margin-top:12px;border-radius:10px;background:var(--ac);color:#fff;padding:10px 12px}.doc .ask h4{color:#fff;margin:0 0 2px}.doc .ask p{margin:0;font-size:13px;font-weight:700}
 .doc .pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.doc .pics div{aspect-ratio:4/3;border-radius:8px;background:#ddd center/cover no-repeat}
@@ -414,6 +420,21 @@ const OFFER_TXT={
  "Introductions to drivers and families in the paddock who need what you sell, with a tracked offer":["I'll introduce you to drivers and families in the paddock who need what you sell, with an offer we can track","We'll introduce you to drivers and families in the paddock who need what you sell, with an offer we can track"],
  "Introductions to other businesses at the track you could work with":["I'll introduce you to other businesses at the track you could work with","We'll introduce you to other businesses at the track you could work with"]};
 function tOffer(x){const t=OFFER_TXT[x];return t?t[TEAM()?1:0]:x}
+/* short labels for the one-page proposal, grouped so any number of ticks fits neatly */
+const OFFER_SHORT={
+ "Your logo on the kart (front nose and sidepods)":["b","Kart"],"Your logo on my race suit":["b","Race suit"],"Your logo on my helmet":["b","Helmet"],
+ "Your logo on the team awning / trailer":["b","Awning & trailer"],"Your logo on team clothing worn in the paddock":["b","Teamwear"],
+ "A thank-you post after every race weekend, tagging the sponsor":["c","A thank-you post tagging you after every race weekend"],
+ "Onboard and highlight videos with the sponsor visible":["c","Onboard and highlight videos with your brand on show"],
+ "Photos of the branded kit for the sponsor's own website and social media":["c","Photos for your website and social media"],
+ "A short report after each round: results, photos and reach":["c","A short report after every round"],
+ "A guest day at a race meeting for the sponsor's staff or customers":["e","Race-day guest passes for your staff or customers"],
+ "A kart experience or track day for their team":["e","A track day for your team"],
+ "An appearance at their business, school or community event with the kart":["e","Visits to your business or events, in race kit"],
+ "Trophies and podium photos shared with them first":["e","Podium photos shared with you first"],
+ "Trophies and podium photos shared with you first":["e","Podium photos shared with you first"],
+ "Introductions to drivers and families in the paddock who need what you sell, with a tracked offer":["e","Introductions to paddock customers, with a tracked offer"],
+ "Introductions to other businesses at the track you could work with":["e","Introductions to businesses at the track"]};
 /* the same offers as a phrase that fits "you would get ..." in the emails */
 const OFFER_NOUN={"An appearance at their business, school or community event with the kart":"a visit to your business or community events with race kit",
  "Introductions to drivers and families in the paddock who need what you sell, with a tracked offer":"introductions to drivers and families in the paddock who need what you sell",
@@ -533,8 +554,11 @@ function docDraw(){
   <div class="body"><div class="cols"><div>${T?`<h4>About the team</h4><p style="margin:0">${esc(S.team||"[Team name]")}, based in ${esc(S.town||"[base]")}. Racing ${esc(S.class||"[class]")}${S.season?": "+esc(S.season):""}.</p>${D.length?`<h4>Drivers</h4><ul>${D.map(d=>`<li>${esc(d.n)}${d.a?", "+d.a:""}</li>`).join("")}</ul>`:""}`:`<h4>About me</h4><p style="margin:0">${esc(S.name||"[Name]")}${S.age?", "+esc(S.age):""}, from ${esc(S.town||"[town]")}. Racing ${esc(S.class||"[class]")}${S.season?": "+esc(S.season):""}.</p>`}
   ${results.length?`<h4>Results</h4><ul>${results.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:""}<h4>Why ${esc(S.co||"you")}</h4><p style="margin:0">${esc(S.why||"[why this company]")}</p></div>
   <div>${stats.length?`<h4>Audience</h4><div class="stats">${stats.map(s=>`<div class="stat"><b>${f(s[0])}</b><span>${s[1]}</span></div>`).join("")}</div>`:""}
-  <h4>What you get</h4><ul class="gets">${(offer.length?offer:["[logo places, posts, videos, guest days]"]).map(o=>`<li>${esc(o)}</li>`).join("")}</ul></div></div>
-  <div class="ask"><h4>${TEAM()?"What we're looking for":"What I'm looking for"}</h4><p>${esc(ask)}</p></div>
+  <div class="ask"><h4>${T?"What we're looking for":"What I'm looking for"}</h4><p>${esc(ask)}</p></div></div></div>
+  ${(()=>{const g={e:[],c:[],b:[]};rawOffer.forEach(k=>{const v=OFFER_SHORT[k];if(v)g[v[0]].push(v[1])});
+    if(!rawOffer.length)return `<h4>What you get</h4><p style="margin:0">[guest days, content, logo places]</p>`;
+    const box=(t,arr,cls)=>arr.length?`<div class="gbox ${cls}"><h5>${t}</h5>${cls==="b"?`<div class="tags">${arr.map(a=>`<span>${esc(a)}</span>`).join("")}</div>`:`<ul>${arr.map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`}</div>`:"";
+    return `<h4>What you get</h4><div class="gets3">${box("Money can't buy",g.e,"e")}${box("Content for you",g.c,"c")}${box("Your logo on "+(T?"our":"my"),g.b,"b")}</div>`})()}
   ${pics.length?`<div class="pics">${pics.slice(0,2).map(p=>`<div style="background-image:url(${p})"></div>`).join("")}</div>`:""}
   <div class="foot"><span>After every round: results, photos and reach figures, and a tag in every race-weekend post.</span><span><b>${esc(T?[S.mgr,S.team].filter(Boolean).join(", "):(S.name||""))}</b><br>${esc(S.contact||"")}</span></div></div>`;
 }
