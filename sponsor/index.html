@@ -159,7 +159,7 @@ body.sheet-open{overflow:hidden}
 .steps button svg{width:26px;height:26px;fill:currentColor}.steps button b{font-size:12.5px;font-weight:800}
 .steps button i{position:absolute;top:5px;right:7px;font-style:normal;font-size:10.5px;font-weight:800;opacity:.7}
 .steps button.on{background:linear-gradient(160deg,#FF0074,#c2005a);border-color:#FF0074;color:#fff;box-shadow:0 6px 16px rgba(255,0,116,.35)}
-.card.f2f{border:2px solid #FF0074;background:rgba(255,0,116,.1)}.card.f2f h2{margin:0 0 8px;color:#fff}.card.f2f p{margin:0 0 8px;color:#e9ecf2;font-size:15px;line-height:1.45}.card.f2f p:last-child{margin:0}
+.sh-card.f2f{border-color:#FF0074;border-width:2px}.sh-card.f2f h2{margin:4px 0 12px}
 .sub.pill{display:block;margin:0 0 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:8px 12px;color:#e6e6ea;font-size:14px;font-weight:600}
 .chips label{padding:11px 14px;font-size:14.5px;border-radius:14px;font-weight:700}
 .chips label:has(input:checked){box-shadow:0 0 0 2px rgba(255,0,116,.35)}
@@ -406,7 +406,6 @@ input[type=color]{height:44px;padding:4px}
 
   <section class="pane" data-p="4" hidden>
     <div class="card check"><h2>Proposal check</h2><p class="sub pill">🚦 Fix the red ones first.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
-    <div class="card f2f" role="note"><h2>⚠️ For face-to-face meetings only</h2><p>This deck is a prop to talk through <b>in person</b> with the one person who can say yes, usually the owner or marketing manager.</p><p><b>It will not work if you email it out, post it through doors or send it to lots of businesses.</b> Get the meeting first, then use it.</p></div>
     <div class="modesw" role="tablist"><button class="on" data-mode="deck" role="tab"><b>Sponsorship deck</b><small>4 pages · show it in the meeting</small></button><button data-mode="one" role="tab"><b>One-page proposal</b><small>A quick summary to leave behind</small></button></div>
     <div class="card"><div class="ph"><h2 id="prevH">Your deck</h2><button class="btn sm" id="cpProp" hidden>Copy text</button></div><p class="sub pill" id="prevTip">🤝 Only for use in a face-to-face meeting. Swipe through it on your phone or print it in landscape.</p>
       <div class="deckwrap" id="deckwrap"><div class="deck" id="deck"></div></div>
@@ -418,6 +417,15 @@ input[type=color]{height:44px;padding:4px}
     <div class="card"><div class="ph"><h2><span class="nsn">1</span>Message to book the meeting</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub pill">📍 Send after you've popped in, to lock in a time.</p><pre class="out" id="outEmail"></pre></div>
     <div class="card fup"><div class="ph"><h2><span class="nsn">2</span>Follow-up email</h2><button class="btn sm" id="cpFollow">Copy</button></div><p class="sub pill">⏱ Send within 24 hours of the meeting, with your proposal PDF attached.</p><pre class="out" id="outFollow"></pre></div>
   </section>
+
+  <div class="sheet" id="f2fSheet" hidden><div class="sh-card f2f" role="dialog" aria-modal="true" aria-labelledby="f2fT">
+    <button class="sh-x" type="button" aria-label="Close">✕</button>
+    <h2 id="f2fT">⚠️ For face-to-face meetings only</h2>
+    <p class="big">This is a prop to talk through <b>in person</b> with the one person who can say yes, usually the owner or marketing manager.</p>
+    <p class="big"><b>It will not work if you email it out, post it through doors or send it to lots of businesses.</b> Get the meeting first, then use it.</p>
+    <button class="btn primary wide" type="button" id="f2fOk">Got it, save my PDF</button>
+    <button class="btn wide" type="button" id="f2fNo">Not yet, I'll book the meeting first</button>
+  </div></div>
 
   <div class="sheet" id="mistakesSheet" hidden><div class="sh-card" role="dialog" aria-modal="true" aria-labelledby="mistT">
     <button class="sh-x" type="button" aria-label="Close">✕</button>
@@ -718,17 +726,26 @@ async function makePdf(){
   }finally{stage.remove()}
   return pdf.output("blob");
 }
-$("#print").onclick=async()=>{
+let pdfJob=null;
+function pdfName(){return (($("#f_co")&&$("#f_co").value)||"Sponsorship").replace(/[^\w\- ]+/g,"").trim().replace(/\s+/g,"-")+(MODE==="deck"?"-deck":"-proposal")+".pdf"}
+$("#print").onclick=()=>{
   gc("sponsor-print","Sponsorship: print");
-  const b=$("#print"),lbl=b.textContent;b.disabled=true;b.textContent="Making your PDF…";
+  pdfJob=makePdf().catch(e=>{console.error(e);return null});   /* start building while they read the pop-up */
+  const ok=$("#f2fOk");ok.onclick=f2fSave;ok.disabled=false;ok.textContent="Got it, save my PDF";const sh=$("#f2fSheet");sh.hidden=false;document.body.classList.add("sheet-open")};
+$("#f2fNo").onclick=()=>{$("#f2fSheet").hidden=true;document.body.classList.remove("sheet-open");gc("sponsor-print-notyet","Sponsorship: not yet")};
+const f2fSave=async()=>{
+  const b=$("#f2fOk"),lbl="Got it, save my PDF";b.disabled=true;b.textContent="Making your PDF…";
   try{
-    const blob=await makePdf();
-    const nm=(($("#f_co")&&$("#f_co").value)||"Sponsorship").replace(/[^\w\- ]+/g,"").trim().replace(/\s+/g,"-")+(MODE==="deck"?"-deck":"-proposal")+".pdf";
-    const file=new File([blob],nm,{type:"application/pdf"});
-    if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:nm})}catch(e){if(e.name!=="AbortError")throw e}}
+    const blob=await pdfJob;if(!blob)throw new Error("pdf failed");
+    const nm=pdfName(),file=new File([blob],nm,{type:"application/pdf"});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){
+      try{await navigator.share({files:[file],title:nm})}
+      catch(e){if(e.name==="NotAllowedError"){b.disabled=false;b.textContent="PDF ready, tap to save";b.onclick=async()=>{try{await navigator.share({files:[file],title:nm})}catch(_){}};return}if(e.name!=="AbortError")throw e}}
     else{const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=nm;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),60000)}
-  }catch(e){console.error(e);toast("Couldn't make the PDF, opening print instead");dispatchEvent(new Event("beforeprint"));window.print()}
-  finally{b.disabled=false;b.textContent=lbl}};
+    $("#f2fSheet").hidden=true;document.body.classList.remove("sheet-open");
+  }catch(e){console.error(e);$("#f2fSheet").hidden=true;document.body.classList.remove("sheet-open");toast("Couldn't make the PDF, opening print instead");dispatchEvent(new Event("beforeprint"));window.print()}
+  finally{if(b.textContent==="Making your PDF…"){b.disabled=false;b.textContent=lbl}}};
+$("#f2fOk").onclick=f2fSave;
 
 </script>
 <script>
