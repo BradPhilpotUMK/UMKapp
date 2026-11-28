@@ -433,7 +433,7 @@ ${S.why||"[why this company]"}
 WHAT ${(S.co||"YOU").toUpperCase()} GETS
 ${offer.length?offer.map(x=>"• "+x).join("\n"):"• [logo places, posts, videos, guest days]"}
 
-THE ASK
+${T?"WHAT WE'RE LOOKING FOR":"WHAT I'M LOOKING FOR"}
 ${askTxt.charAt(0).toUpperCase()+askTxt.slice(1)}.
 
 REPORTING
@@ -508,7 +508,7 @@ function docDraw(){
   ${results.length?`<h4>Results</h4><ul>${results.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:""}<h4>Why ${esc(S.co||"you")}</h4><p style="margin:0">${esc(S.why||"[why this company]")}</p></div>
   <div>${stats.length?`<h4>Audience</h4><div class="stats">${stats.map(s=>`<div class="stat"><b>${f(s[0])}</b><span>${s[1]}</span></div>`).join("")}</div>`:""}
   <h4>What you get</h4><ul class="gets">${(offer.length?offer:["[logo places, posts, videos, guest days]"]).map(o=>`<li>${esc(o)}</li>`).join("")}</ul></div></div>
-  <div class="ask"><h4>The ask</h4><p>${esc(ask)}</p></div>
+  <div class="ask"><h4>${TEAM()?"What we're looking for":"What I'm looking for"}</h4><p>${esc(ask)}</p></div>
   ${pics.length?`<div class="pics">${pics.slice(0,2).map(p=>`<div style="background-image:url(${p})"></div>`).join("")}</div>`:""}
   <div class="foot"><span>After every round: results, photos and reach figures, and a tag in every race-weekend post.</span><span><b>${esc(T?[S.mgr,S.team].filter(Boolean).join(", "):(S.name||""))}</b><br>${esc(S.contact||"")}</span></div></div>`;
 }
