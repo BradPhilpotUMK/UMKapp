@@ -101,6 +101,16 @@ label.mini{font-weight:500;color:var(--muted);margin-top:0}
 .tips summary::after{content:"+";color:#FF0074;font-weight:900}
 .tips details[open] summary::after{content:"–"}
 .tips p{margin:6px 0 0;color:#c9cad0;font-size:14px}
+.case{border-color:rgba(255,0,116,.45);background:linear-gradient(180deg,rgba(255,0,116,.12),rgba(16,16,20,.95) 55%)}
+.case .kicker{margin:0 0 4px;font:800 11.5px/1 Barlow,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#FF5FA8}
+.case .intro,.case p{font-size:14.5px;color:#dedfe4;line-height:1.5;margin:6px 0}
+.case blockquote{margin:10px 0;padding:10px 14px;border-left:3px solid #FF0074;background:rgba(255,255,255,.04);border-radius:0 10px 10px 0;font-style:italic;color:#fff;font-size:15px;line-height:1.45}
+.case summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;margin:6px 0 2px;padding:9px 14px;border-radius:12px;background:rgba(255,0,116,.16);border:1px solid rgba(255,0,116,.45);font-weight:800;color:#fff;font-size:14px}
+.case summary::-webkit-details-marker{display:none}.case summary::after{content:"▾";transition:transform .2s}.case details[open] summary::after{transform:rotate(180deg)}
+.case .qs{margin:12px 0 4px;padding-left:22px;font-size:14.5px;color:#dedfe4;line-height:1.5}.case .qs li{margin:0 0 10px}.case .qs b{color:#fff;display:block;margin-bottom:2px}
+.case h3{margin:14px 0 4px;font-size:15.5px;color:#fff}
+.case .take{background:rgba(0,190,0,.1);border:1px solid rgba(0,190,0,.35);border-radius:12px;padding:10px 12px}
+.case .src{font-size:12.5px;color:#9a9ba3;margin-top:10px}
 .truth{border-color:rgba(0,190,0,.45);background:linear-gradient(180deg,rgba(0,190,0,.12),rgba(16,16,20,.95) 60%)}
 .truth p{margin:6px 0;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth ol{margin:8px 0 0;padding-left:20px;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth li{margin:4px 0}
 .ups{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
@@ -150,6 +160,31 @@ input[type=color]{height:44px;padding:4px}
     <li><b>Phone or visit to book a meeting.</b> Use the short message below to follow up and confirm it.</li>
     <li><b>Take the proposal with you,</b> printed and on your phone. Talk them through it, show the kart if you can.</li>
     <li><b>Follow up within a couple of days</b> with the PDF and a thank-you.</li></ol>
+  </section>
+
+
+  <section class="card case">
+    <p class="kicker">Case study · A real sponsor speaks</p>
+    <h2>What Used Kart Shop wants to hear</h2>
+    <p class="intro">Used Kart Shop gets plenty of sponsorship requests. Here's what they told drivers they actually want to know before backing anyone. Their six questions work for almost any business you approach.</p>
+    <blockquote>"If you came to me and asked Used Kart Shop to sponsor your racing, I'd want to know what my backing would do for you, and what you could bring to my business."</blockquote>
+    <details>
+      <summary><span>Read their six questions</span></summary>
+      <ol class="qs">
+        <li><b>Can you bring new customers to Used Kart Shop?</b> Who could you introduce me to, and what are they likely to need? If you know five drivers looking for Rotax parts or help getting a kart race-ready, tell me. If we run an offer together, I'd want to track the enquiries and sales it brings in.</li>
+        <li><b>Can you give my customers a good day out?</b> Could you host some of my customers at a race, introduce them to your team and show them around the paddock? Or could you use your connections to organise a karting afternoon where they race each other? Tell me where, how many people you can host and what it would cost.</li>
+        <li><b>Can you get Used Kart Shop seen beyond your own channels?</b> Could you get my logo on a championship livestream or in the official programme, or get us a mention in the organiser's YouTube highlights? I'd want to know what the organiser has confirmed, where the brand will appear and who's likely to see it.</li>
+        <li><b>What would my backing help you achieve?</b> If you're a young driver from our area, I'd like to know what my support would make possible. Is it your first club season, or a step up to national racing? Could you also bring your kart or race car to Used Kart Shop events across the year, such as showroom open days, so my customers can meet you and see what I'm backing?</li>
+        <li><b>Can you give me photos or videos I can use?</b> Could you send me photos or a short video showing one of our products in use on a race weekend? Tell me what you'd make, when I'd get it, and whether I could use it on the Used Kart Shop website, in emails or on social media.</li>
+        <li><b>Can you introduce me to a business I could work with?</b> Say you introduce me to a major supplier at the track and that relationship turns into profitable business for Used Kart Shop. As an example, I might agree to put 10% of the profit from that introduction towards your racing: £5,000 of agreed profit would mean £500 in sponsorship. I'd agree with you upfront how we'd calculate the profit and how long the arrangement would run.</li>
+      </ol>
+      <h3>Stickers aren't enough</h3>
+      <p>"If I back you, you have to add value to my business directly and generate more business. I see plenty of proposals offering stickers on the kart, live TV coverage and brand awareness, but watch a live feed and you'll often struggle to pick out half the karts, let alone read them. It's an old-school approach that wore out years ago."</p>
+      <h3>The real question</h3>
+      <p>"When you approach me, tell me what you can deliver and why it matters to Used Kart Shop. For me, the real question is simple: if I sponsor you, how much more business could my sponsorship money bring in?"</p>
+      <p class="take"><b>How to use this here:</b> in step 2, pick offers that answer these questions (customer introductions, hospitality, content they can use), and in step 3 say exactly why they matter to that company.</p>
+    </details>
+    <p class="src">Adapted from a public post by <b>Used Kart Shop</b>, lightly edited for clarity.</p>
   </section>
 
   <div class="steps" id="steps">
