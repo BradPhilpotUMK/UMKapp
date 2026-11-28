@@ -167,6 +167,10 @@ body.sheet-open{overflow:hidden}
 .itiles em{font-style:normal;font-size:24px}
 .nexthead{margin:22px 4px 10px}.nexthead h2{font-family:var(--display);font-size:24px;margin:0;color:#fff}.nexthead p{margin:4px 0 0;color:#b9bac1;font-size:14px}
 .nsn{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#FF0074;color:#fff;font-size:16px;margin-right:8px;vertical-align:2px}
+#checks li.fix{cursor:pointer;border-radius:12px;transition:background .15s}#checks li.fix:active{background:rgba(255,0,116,.12)}
+#checks li.fix>b{margin-left:auto;flex:none;align-self:center;font-size:12.5px;font-weight:800;color:#fff;background:#FF0074;border-radius:999px;padding:5px 10px}
+@keyframes flashF{0%,100%{box-shadow:0 0 0 0 rgba(255,0,116,0)}25%,75%{box-shadow:0 0 0 4px rgba(255,0,116,.75)}}
+.flash{animation:flashF 1.4s ease 2;border-radius:12px}
 .fup{border-color:rgba(0,190,0,.45)}
 .tile.t4{grid-column:1/-1;display:flex;width:100%;flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 16px;margin:0;background:linear-gradient(110deg,#3a2a00,#151004 75%);border:1px solid rgba(255,184,0,.5)}
 .tile.t4 .ic{margin:0;width:48px;height:48px;flex:none}.tile.t4 b{margin:0;font-size:17px}.tile.t4 small{display:block}.tile.t4>b+small{margin-top:2px}
@@ -457,21 +461,28 @@ ${S.contact||"[contact]"}`;
   $("#outEmail").textContent=email;$("#outProp").textContent=prop;$("#outFollow").textContent=follow;
   const words=email.split(/\s+/).filter(Boolean).length;
   const C=[
-    [!!S.co&&!!S.person,"Named the company and a person","No company or person's name: it reads like a mass email."],
-    [(S.why||"").length>15,"Said why you picked them","Say why this company: location, customers, a family link."],
-    [offer.length>=3,"Offering at least three things back",offer.length?`Only ${offer.length} thing${offer.length==1?"":"s"} offered: add more in step 2.`:"Nothing offered yet: pick what they get in step 2."],
-    [(S.c_extra||[]).length>0,"Included something money can't buy","Add a guest day, track day or appearance: sponsors love those."],
-    [(S.type==="product"&&!!S.spend)||num(S.amount)>0,"A clear, specific ask","No amount or product: say exactly what you need."],
-    [!!S.spend,"Said what the money pays for","Say what it pays for (tyres, entries, engine rebuild)."],
-    [r.length>0||num(S.crowd)>0,"Included real numbers","No audience numbers: add followers or spectators, even small ones."],
-    [results.length>0,"Listed results","Add at least one result or achievement."],
-    ...(T?[[D.length>0,`Listed the team's ${D.length} driver${D.length==1?"":"s"}`,"List your drivers: sponsors want to know who they're backing."],[!!S.team&&!!S.mgr,"Team name and manager given","Add the team name and who the sponsor deals with."]]:[]),
-    [words<=200,`Email is short (${words} words)`,`Email is ${words} words: cut it under 200.`],
-    [!!S.contact,"Easy to reply to","Add an email or phone number."],
+    [!!S.co&&!!S.person,"Named the company and a person","No company or person's name: it reads like a mass email.",3,S.co?"f_person":"f_co"],
+    [(S.why||"").length>15,"Said why you picked them","Say why this company: location, customers, a family link.",3,"f_why"],
+    [offer.length>=3,"Offering at least three things back",offer.length?`Only ${offer.length} thing${offer.length==1?"":"s"} offered: add more in step 2.`:"Nothing offered yet: pick what they get in step 2.",2,"c_brand"],
+    [(S.c_extra||[]).length>0,"Included something money can't buy","Add a guest day, track day or appearance: sponsors love those.",2,"c_extra"],
+    [(S.type==="product"&&!!S.spend)||num(S.amount)>0,"A clear, specific ask","No amount or product: say exactly what you need.",2,"f_amount"],
+    [!!S.spend,"Said what the money pays for","Say what it pays for (tyres, entries, engine rebuild).",2,"f_spend"],
+    [r.length>0||num(S.crowd)>0,"Included real numbers","No audience numbers: add followers or spectators, even small ones.",1,"f_ig"],
+    [results.length>0,"Listed results","Add at least one result or achievement.",1,"f_results"],
+    ...(T?[[D.length>0,`Listed the team's ${D.length} driver${D.length==1?"":"s"}`,"List your drivers: sponsors want to know who they're backing.",1,"f_drivers"],[!!S.team&&!!S.mgr,"Team name and manager given","Add the team name and who the sponsor deals with.",1,S.team?"f_mgr":"f_team"]]:[]),
+    [words<=200,`Email is short (${words} words)`,`Email is ${words} words: cut it under 200. Shorten your answers to "Why them?" and results.`,3,"f_why"],
+    [!!S.contact,"Easy to reply to","Add an email or phone number.",1,"f_contact"],
   ];
-  $("#checks").innerHTML=C.map(([ok,y,n])=>`<li class="${ok?"ok":"bad"}"><i>${ok?"✓":"!"}</i><span>${esc(ok?y:n)}</span></li>`).join("")+(minor()?`<li class="bad"><i>!</i><span>${T?"Some drivers are under 18":"You're under 18"}<small>${T?"An adult team manager or parent should send it and be the contact.":"Have a parent or guardian send it and be the contact."}</small></span></li>`:"");
+  $("#checks").innerHTML=C.map(([ok,y,n,st,f])=>ok?`<li class="ok"><i>✓</i><span>${esc(y)}</span></li>`:`<li class="bad fix" role="button" tabindex="0" data-fs="${st}" data-ff="${f}"><i>!</i><span>${esc(n)}</span><b>Fix ›</b></li>`).join("")+(minor()?`<li class="bad fix" role="button" tabindex="0" data-fs="1" data-ff="f_contact"><i>!</i><span>${T?"Some drivers are under 18":"You're under 18"}<small>${T?"An adult team manager or parent should send it and be the contact.":"Have a parent or guardian send it and be the contact."}</small></span></li>`:"");
   $("#scoreBar").style.width=Math.round(C.filter(c=>c[0]).length/C.length*100)+"%";
 }
+/* tapping a red item in the check jumps to the step and field that fixes it */
+function jumpFix(li){const st=+li.dataset.fs,f=document.getElementById(li.dataset.ff);go(st);
+  setTimeout(()=>{if(!f)return;const t=f.closest(".chips")?f:f;t.scrollIntoView({behavior:"smooth",block:"center"});
+    const box=f.closest(".chips")||f;box.classList.remove("flash");void box.offsetWidth;box.classList.add("flash");
+    if(/^(INPUT|TEXTAREA|SELECT)$/.test(f.tagName))setTimeout(()=>{try{f.focus({preventScroll:true})}catch(e){}},450)},380)}
+document.addEventListener("click",e=>{const li=e.target.closest("#checks li.fix");if(li)jumpFix(li)});
+document.addEventListener("keydown",e=>{const li=e.target.closest&&e.target.closest("#checks li.fix");if(li&&(e.key==="Enter"||e.key===" ")){e.preventDefault();jumpFix(li)}});
 $("#cpFollow").onclick=()=>{copy($("#outFollow").textContent,"Follow-up email copied");gc("sponsor-copy-follow","Sponsorship: copied follow-up")};
 $("#cpEmail").onclick=()=>{copy($("#outEmail").textContent,"Email copied");gc("sponsor-copy-email","Sponsorship: copied email")};
 $("#cpProp").onclick=()=>{copy($("#outProp").textContent,"Proposal copied");gc("sponsor-copy-prop","Sponsorship: copied proposal")};
