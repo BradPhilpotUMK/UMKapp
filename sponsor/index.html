@@ -692,7 +692,41 @@ addEventListener("beforeprint",()=>{let pd=document.getElementById("printDoc");i
   let ps=document.getElementById("pgSize");if(!ps){ps=document.createElement("style");ps.id="pgSize";document.head.appendChild(ps)}
   if(MODE==="deck"){pd.className="deck printdeck";pd.style.cssText=$("#deck").style.cssText;pd.innerHTML=$("#deck").innerHTML;ps.textContent="@page{size:A4 landscape;margin:0}"}
   else{pd.className="doc";pd.style.cssText=$("#doc").style.cssText;pd.innerHTML=$("#doc").innerHTML;ps.textContent="@page{size:A4 portrait;margin:0}"}});
-$("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");dispatchEvent(new Event("beforeprint"));window.print()};
+/* Save as PDF: build the PDF in the page and hand it to the share sheet / download.
+   window.print() does nothing in an iPhone home-screen app (and some in-app browsers), so we don't rely on it. */
+function loadJs(src){return new Promise((ok,no)=>{if(document.querySelector('script[src="'+src+'"]'))return ok();const s=document.createElement("script");s.src=src;s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
+async function makePdf(){
+  await Promise.all([loadJs("lib/html2canvas.min.js"),loadJs("lib/jspdf.umd.min.js")]);
+  if(document.fonts&&document.fonts.ready)await document.fonts.ready;
+  const deck=MODE==="deck",W=deck?1123:794,H=deck?794:1123;
+  const {jsPDF}=window.jspdf;const pdf=new jsPDF({orientation:deck?"landscape":"portrait",unit:"mm",format:"a4"});
+  const pw=deck?297:210,ph=deck?210:297;
+  const stage=document.createElement("div");stage.style.cssText="position:fixed;left:-30000px;top:0;width:"+W+"px;pointer-events:none";
+  const src=deck?$("#deck"):$("#doc");const wrap=document.createElement("div");wrap.className=deck?"deck":"doc";wrap.style.cssText=src.style.cssText;stage.appendChild(wrap);document.body.appendChild(stage);
+  try{
+    const pages=deck?[...src.querySelectorAll(".sl")]:[src];
+    for(let i=0;i<pages.length;i++){
+      wrap.innerHTML="";const el=deck?pages[i].cloneNode(true):document.createElement("div");
+      if(deck){el.style.cssText+=";width:"+W+"px;height:"+H+"px;aspect-ratio:auto;border-radius:0;box-shadow:none"}else{el.innerHTML=src.innerHTML;el.style.cssText="width:"+W+"px;min-height:"+H+"px;background:#fff"}
+      wrap.appendChild(el);
+      const c=await html2canvas(el,{scale:2,useCORS:true,backgroundColor:deck?"#0a0d14":"#ffffff",width:W,height:H,windowWidth:W});
+      if(i)pdf.addPage("a4",deck?"landscape":"portrait");
+      pdf.addImage(c.toDataURL("image/jpeg",.92),"JPEG",0,0,pw,ph);
+    }
+  }finally{stage.remove()}
+  return pdf.output("blob");
+}
+$("#print").onclick=async()=>{
+  gc("sponsor-print","Sponsorship: print");
+  const b=$("#print"),lbl=b.textContent;b.disabled=true;b.textContent="Making your PDF…";
+  try{
+    const blob=await makePdf();
+    const nm=(($("#f_co")&&$("#f_co").value)||"Sponsorship").replace(/[^\w\- ]+/g,"").trim().replace(/\s+/g,"-")+(MODE==="deck"?"-deck":"-proposal")+".pdf";
+    const file=new File([blob],nm,{type:"application/pdf"});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:nm})}catch(e){if(e.name!=="AbortError")throw e}}
+    else{const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=nm;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),60000)}
+  }catch(e){console.error(e);toast("Couldn't make the PDF, opening print instead");dispatchEvent(new Event("beforeprint"));window.print()}
+  finally{b.disabled=false;b.textContent=lbl}};
 
 </script>
 <script>
