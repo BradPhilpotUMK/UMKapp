@@ -111,6 +111,45 @@ label.mini{font-weight:500;color:var(--muted);margin-top:0}
 .case h3{margin:14px 0 4px;font-size:15.5px;color:#fff}
 .case .take{background:rgba(0,190,0,.1);border:1px solid rgba(0,190,0,.35);border-radius:12px;padding:10px 12px}
 .case .src{font-size:12.5px;color:#9a9ba3;margin-top:10px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:4px 0 16px}
+.tile{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;border:0;border-radius:20px;padding:14px 14px 13px;color:#fff;cursor:pointer;font-family:inherit;min-height:148px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.12);transition:transform .15s}
+.tile:active{transform:scale(.97)}
+.tile .ic{width:58px;height:58px;margin-bottom:auto}.tile .ic svg{width:100%;height:100%}
+.tile b{font-family:var(--display);font-size:17px;line-height:1.1;margin-top:10px}.tile small{font-size:12.5px;opacity:.85;font-weight:600}
+.tile.t1{background:linear-gradient(150deg,#3a0a22,#16070f 70%);border:1px solid rgba(255,0,116,.5)}
+.tile.t2{background:linear-gradient(150deg,#0b3a12,#08140a 70%);border:1px solid rgba(0,190,0,.5)}
+.tile.t3{grid-column:1/-1;flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 18px;background:linear-gradient(100deg,#FF0074,#c2005a);border:0}
+.tile.t3 .ic{margin:0;width:52px;height:52px}.tile.t3 b{margin:0;font-size:20px}.tile.t3 small{display:none}.tile.t3 i{margin-left:auto;font-style:normal;font-size:30px;font-weight:800}
+@media(min-width:420px){.tile.t3 small{display:inline;margin-left:6px}}
+.tile .tag{display:inline-block;margin-right:4px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#00BE00;color:#04210a;padding:4px 8px;border-radius:999px}
+.sheet{position:fixed;inset:0;z-index:2147482000;background:rgba(0,0,0,.72);display:flex;align-items:flex-end;justify-content:center;animation:shIn .2s ease}
+.sheet[hidden]{display:none}
+@keyframes shIn{from{opacity:0}to{opacity:1}}@keyframes shUp{from{transform:translateY(40px)}to{transform:none}}
+.sh-card{position:relative;width:100%;max-width:560px;max-height:88vh;overflow:auto;-webkit-overflow-scrolling:touch;background:#121216;border:1px solid rgba(255,255,255,.12);border-bottom:0;border-radius:24px 24px 0 0;padding:22px 18px calc(22px + env(safe-area-inset-bottom,0px));animation:shUp .25s ease;color:#e6e6ea}
+.sh-card h2{font-family:var(--display);font-size:24px;margin:4px 0 8px;color:#fff}
+.sh-x{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.1);color:#fff;font-size:16px;cursor:pointer}
+.sh-ic{display:block;width:64px;height:64px}.sh-ic svg{width:100%;height:100%}
+.sh-card .big{font-size:17px;line-height:1.4;margin:0 0 14px}.sh-card .big b{color:#FF5FA8}
+.moves{display:grid;gap:10px;margin-bottom:16px}
+.mv{display:flex;gap:12px;align-items:flex-start;background:#1b1b20;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:12px}
+.mv>span{flex:none;width:36px;height:36px;border-radius:12px;background:#FF0074;color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:20px}
+.mv b{display:block;color:#fff;font-size:16px}.mv small{display:block;color:#b9bac1;font-size:13.5px;line-height:1.4;margin-top:2px}
+.btn.wide{width:100%;padding:15px;font-size:16px;border-radius:14px;margin-top:6px}
+.sh-card .kicker{margin:0;font:800 11.5px/1 Barlow,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#5fe36b}
+.sh-card blockquote{margin:6px 0 12px;padding:12px 14px;border-left:4px solid #00BE00;background:rgba(0,190,0,.08);border-radius:0 12px 12px 0;font-size:16px;line-height:1.4;color:#fff;font-weight:600}
+.tapnote{font-size:12.5px;color:#8f9098;margin:0 0 6px}
+.qcards{display:grid;gap:8px;margin-bottom:14px}
+.qcards details{background:#1b1b20;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+.qcards summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:12px;font-weight:800;color:#fff;font-size:15px;line-height:1.25}
+.qcards summary::-webkit-details-marker{display:none}.qcards summary::after{content:"+";margin-left:auto;font-size:22px;color:#5fe36b;flex:none}
+.qcards details[open] summary::after{content:"–"}.qcards details[open]{border-color:rgba(0,190,0,.45)}
+.qcards .n{flex:none;width:32px;height:32px;border-radius:10px;background:#00BE00;color:#04210a;display:grid;place-items:center;font-family:var(--display);font-size:17px}
+.qcards details p{margin:0;padding:0 14px 14px 56px;font-size:14px;line-height:1.5;color:#cfd0d6}
+.callout{border-radius:16px;padding:12px 14px;margin-bottom:10px}.callout b{display:block;font-size:15.5px;color:#fff;margin-bottom:3px}.callout p{margin:0;font-size:14px;line-height:1.45;color:#dcdde2}
+.callout.no{background:rgba(255,0,116,.1);border:1px solid rgba(255,0,116,.4)}.callout.no b::before{content:"✕  ";color:#FF5FA8}
+.callout.yes{background:rgba(0,190,0,.1);border:1px solid rgba(0,190,0,.4)}.callout.yes b::before{content:"✓  ";color:#5fe36b}
+.sh-card .take{font-size:13.5px;color:#cfd0d6;margin:4px 0}.sh-card .src{font-size:12px;color:#8f9098;margin:6px 0 8px}
+body.sheet-open{overflow:hidden}
 .truth{border-color:rgba(0,190,0,.45);background:linear-gradient(180deg,rgba(0,190,0,.12),rgba(16,16,20,.95) 60%)}
 .truth p{margin:6px 0;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth ol{margin:8px 0 0;padding-left:20px;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth li{margin:4px 0}
 .ups{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
@@ -150,42 +189,48 @@ input[type=color]{height:44px;padding:4px}
 <body>
 <div id="scroller"><div class="wrap">
   <header class="top"><div class="brand"><div class="r"><a class="homechip" href="../" aria-label="Use More Kerb home"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Home</a><img src="../team/wm.png" alt="Use More Kerb"></div><h1>Sponsorship Builder</h1></div></header>
-  <p class="lead">Sponsors back drivers and teams who make it easy to say yes. Build a proposal here, then take it to a real conversation.</p>
+  <p class="lead">Get a business to back your racing. Tap a card to learn the secrets, then build your proposal.</p>
 
-  <section class="card truth">
-    <h2>Read this first</h2>
-    <p><b>Sponsorship deals are won face to face.</b> The proposals that work are the ones delivered in person, at a meeting you've arranged with the person who actually decides where the company's money goes.</p>
-    <p>Emailed proposals on their own are almost always ignored. Use this as a tool for that conversation, not something to send off blind:</p>
-    <ol><li><b>Find the decision-maker.</b> The owner, the managing director or the marketing manager. Not the info@ inbox.</li>
-    <li><b>Phone or visit to book a meeting.</b> Use the short message below to follow up and confirm it.</li>
-    <li><b>Take the proposal with you,</b> printed and on your phone. Talk them through it, show the kart if you can.</li>
-    <li><b>Follow up within a couple of days</b> with the PDF and a thank-you.</li></ol>
-  </section>
+  <div class="tiles">
+    <button class="tile t1" type="button" data-open="howSheet"><span class="ic"><svg viewBox="0 0 64 64"><path d="M4 10h34a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H18l-9 8v-8H4z" fill="#FF0074"/><path d="M60 26H30a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h16l9 8v-8h5z" fill="#fff"/><circle cx="34" cy="41" r="2.6" fill="#16070f"/><circle cx="42" cy="41" r="2.6" fill="#16070f"/><circle cx="50" cy="41" r="2.6" fill="#16070f"/></svg></span><b>How deals really happen</b><small>4 moves · 1 min</small></button>
+    <button class="tile t2" type="button" data-open="caseSheet"><span class="ic"><svg viewBox="0 0 64 64"><circle cx="30" cy="34" r="24" fill="#00BE00"/><circle cx="30" cy="34" r="16" fill="#0b0b0d"/><circle cx="30" cy="34" r="8" fill="#00BE00"/><path d="M30 34L54 10" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M48 6l8 0-2 8z" fill="#fff"/></svg></span><b>What sponsors want</b><small><span class="tag">Real sponsor</span></small></button>
+    <button class="tile t3" type="button" data-go="steps"><span class="ic"><svg viewBox="0 0 64 64"><path d="M40 6c10 0 18 8 18 18L34 48 16 30z" fill="#fff"/><circle cx="41" cy="23" r="6" fill="#FF0074"/><path d="M16 30l-8 2 8-14 12-2zm18 18l-2 8 14-8 2-12z" fill="#FF0074"/><path d="M18 46c-4 0-8 4-10 12 8-2 12-6 12-10z" fill="#FFB800"/></svg></span><b>Build my proposal</b><small>4 quick steps</small><i>›</i></button>
+  </div>
 
+  <div class="sheet" id="howSheet" hidden><div class="sh-card" role="dialog" aria-modal="true" aria-labelledby="howT">
+    <button class="sh-x" type="button" aria-label="Close">✕</button>
+    <span class="sh-ic"><svg viewBox="0 0 64 64"><path d="M4 10h34a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H18l-9 8v-8H4z" fill="#FF0074"/><path d="M60 26H30a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h16l9 8v-8h5z" fill="#fff"/><circle cx="34" cy="41" r="2.6" fill="#16070f"/><circle cx="42" cy="41" r="2.6" fill="#16070f"/><circle cx="50" cy="41" r="2.6" fill="#16070f"/></svg></span>
+    <h2 id="howT">How deals really happen</h2>
+    <p class="big">Deals are won <b>face to face</b>. Emailing a proposal on its own almost never works.</p>
+    <div class="moves">
+      <div class="mv"><span>1</span><div><b>Find the boss</b><small>The owner, managing director or marketing manager. Not the info@ inbox.</small></div></div>
+      <div class="mv"><span>2</span><div><b>Phone or pop in</b><small>Book a meeting. Use the short message this tool writes to confirm it.</small></div></div>
+      <div class="mv"><span>3</span><div><b>Show up with it</b><small>Proposal printed and on your phone. Talk them through it, bring the kart if you can.</small></div></div>
+      <div class="mv"><span>4</span><div><b>Follow up fast</b><small>Within a couple of days: send the PDF and say thank you.</small></div></div>
+    </div>
+    <button class="btn primary wide" type="button" data-go="steps">Build my proposal ›</button>
+  </div></div>
 
-  <section class="card case">
-    <p class="kicker">Case study · A real sponsor speaks</p>
-    <h2>What Used Kart Shop wants to hear</h2>
-    <p class="intro">Used Kart Shop gets plenty of sponsorship requests. Here's what they told drivers they actually want to know before backing anyone. Their six questions work for almost any business you approach.</p>
-    <blockquote>"If you came to me and asked Used Kart Shop to sponsor your racing, I'd want to know what my backing would do for you, and what you could bring to my business."</blockquote>
-    <details>
-      <summary><span>Read their six questions</span></summary>
-      <ol class="qs">
-        <li><b>Can you bring new customers to Used Kart Shop?</b> Who could you introduce me to, and what are they likely to need? If you know five drivers looking for Rotax parts or help getting a kart race-ready, tell me. If we run an offer together, I'd want to track the enquiries and sales it brings in.</li>
-        <li><b>Can you give my customers a good day out?</b> Could you host some of my customers at a race, introduce them to your team and show them around the paddock? Or could you use your connections to organise a karting afternoon where they race each other? Tell me where, how many people you can host and what it would cost.</li>
-        <li><b>Can you get Used Kart Shop seen beyond your own channels?</b> Could you get my logo on a championship livestream or in the official programme, or get us a mention in the organiser's YouTube highlights? I'd want to know what the organiser has confirmed, where the brand will appear and who's likely to see it.</li>
-        <li><b>What would my backing help you achieve?</b> If you're a young driver from our area, I'd like to know what my support would make possible. Is it your first club season, or a step up to national racing? Could you also bring your kart or race car to Used Kart Shop events across the year, such as showroom open days, so my customers can meet you and see what I'm backing?</li>
-        <li><b>Can you give me photos or videos I can use?</b> Could you send me photos or a short video showing one of our products in use on a race weekend? Tell me what you'd make, when I'd get it, and whether I could use it on the Used Kart Shop website, in emails or on social media.</li>
-        <li><b>Can you introduce me to a business I could work with?</b> Say you introduce me to a major supplier at the track and that relationship turns into profitable business for Used Kart Shop. As an example, I might agree to put 10% of the profit from that introduction towards your racing: £5,000 of agreed profit would mean £500 in sponsorship. I'd agree with you upfront how we'd calculate the profit and how long the arrangement would run.</li>
-      </ol>
-      <h3>Stickers aren't enough</h3>
-      <p>"If I back you, you have to add value to my business directly and generate more business. I see plenty of proposals offering stickers on the kart, live TV coverage and brand awareness, but watch a live feed and you'll often struggle to pick out half the karts, let alone read them. It's an old-school approach that wore out years ago."</p>
-      <h3>The real question</h3>
-      <p>"When you approach me, tell me what you can deliver and why it matters to Used Kart Shop. For me, the real question is simple: if I sponsor you, how much more business could my sponsorship money bring in?"</p>
-      <p class="take"><b>How to use this here:</b> in step 2, pick offers that answer these questions (customer introductions, hospitality, content they can use), and in step 3 say exactly why they matter to that company.</p>
-    </details>
+  <div class="sheet" id="caseSheet" hidden><div class="sh-card" role="dialog" aria-modal="true" aria-labelledby="caseT">
+    <button class="sh-x" type="button" aria-label="Close">✕</button>
+    <p class="kicker">Real sponsor · Used Kart Shop</p>
+    <h2 id="caseT">What sponsors want</h2>
+    <blockquote>"I'd want to know what my backing would do for you, and what you could bring to my business."</blockquote>
+    <p class="tapnote">Tap each question to open it</p>
+    <div class="qcards">
+      <details><summary><span class="n">1</span>Can you bring me new customers?</summary><p>Who could you introduce me to, and what are they likely to need? If you know five drivers looking for Rotax parts or help getting a kart race-ready, tell me. If we run an offer together, I'd want to track the enquiries and sales it brings in.</p></details>
+      <details><summary><span class="n">2</span>Can you give my customers a good day out?</summary><p>Could you host some of my customers at a race, introduce them to your team and show them around the paddock? Or could you use your connections to organise a karting afternoon where they race each other? Tell me where, how many people you can host and what it would cost.</p></details>
+      <details><summary><span class="n">3</span>Can you get me seen beyond your own channels?</summary><p>Could you get my logo on a championship livestream or in the official programme, or get us a mention in the organiser's YouTube highlights? I'd want to know what the organiser has confirmed, where the brand will appear and who's likely to see it.</p></details>
+      <details><summary><span class="n">4</span>What would my backing help you achieve?</summary><p>If you're a young driver from our area, I'd like to know what my support would make possible. Is it your first club season, or a step up to national racing? Could you also bring your kart or race car to my events across the year, such as showroom open days, so my customers can meet you and see what I'm backing?</p></details>
+      <details><summary><span class="n">5</span>Can you give me photos or videos I can use?</summary><p>Could you send me photos or a short video showing one of our products in use on a race weekend? Tell me what you'd make, when I'd get it, and whether I could use it on my website, in emails or on social media.</p></details>
+      <details><summary><span class="n">6</span>Can you introduce me to a business I could work with?</summary><p>Say you introduce me to a major supplier at the track and that relationship turns into profitable business. I might agree to put 10% of the profit from that introduction towards your racing: £5,000 of agreed profit would mean £500 in sponsorship. We'd agree upfront how to calculate the profit and how long it runs.</p></details>
+    </div>
+    <div class="callout no"><b>Stickers aren't enough</b><p>"Watch a live feed and you'll often struggle to pick out half the karts, let alone read them. It's an old-school approach that wore out years ago."</p></div>
+    <div class="callout yes"><b>The real question</b><p>"If I sponsor you, how much more business could my sponsorship money bring in?"</p></div>
+    <p class="take">Use this in step 2: pick offers that answer these questions. In step 3, say why they matter to that company.</p>
     <p class="src">Adapted from a public post by <b>Used Kart Shop</b>, lightly edited for clarity.</p>
-  </section>
+    <button class="btn primary wide" type="button" data-go="steps">Build my proposal ›</button>
+  </div></div>
 
   <div class="steps" id="steps">
     <button class="on" data-s="1">1 You</button><button data-s="2">2 Offer</button><button data-s="3">3 Company</button><button data-s="4">4 Proposal</button>
@@ -411,6 +456,15 @@ $("#f_col").addEventListener("input",docDraw);upTiles();
 addEventListener("beforeprint",()=>{let pd=document.getElementById("printDoc");if(!pd){pd=document.createElement("div");pd.id="printDoc";document.body.appendChild(pd)}pd.className="doc";pd.style.cssText=$("#doc").style.cssText;pd.innerHTML=$("#doc").innerHTML});
 $("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");dispatchEvent(new Event("beforeprint"));window.print()};
 
+</script>
+<script>
+/* info cards at the top: open a bottom sheet, or jump to the builder */
+(function(){const open=id=>{const sh=document.getElementById(id);if(!sh)return;sh.hidden=false;document.body.classList.add("sheet-open");sh.querySelector(".sh-card").scrollTop=0};
+const close=()=>{document.querySelectorAll(".sheet").forEach(x=>x.hidden=true);document.body.classList.remove("sheet-open")};
+document.addEventListener("click",e=>{const o=e.target.closest("[data-open]");if(o){open(o.dataset.open);return}
+  const g=e.target.closest("[data-go]");if(g){close();const t=document.getElementById(g.dataset.go);if(t)setTimeout(()=>t.scrollIntoView({behavior:"smooth",block:"start"}),60);return}
+  if(e.target.closest(".sh-x")||e.target.classList.contains("sheet"))close()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});})();
 </script>
 </body>
 </html>
