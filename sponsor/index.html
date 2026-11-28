@@ -395,7 +395,30 @@ function setMode(m){$("#f_mode").value=m;document.body.classList.toggle("team",m
 $$("#modeSw button").forEach(b=>b.onclick=()=>{setMode(b.dataset.mode);gc("sponsor-mode-"+b.dataset.mode,"Sponsorship: "+b.dataset.mode+" mode")});
 function save(){F.forEach(k=>S[k]=$("#f_"+k).value.trim());GROUPS.forEach(g=>S[g]=$$("#"+g+" input:checked").map(c=>c.value));store.set(KEY,S);$("#minorNote").hidden=!minor();hint()}
 /* team wording for the "what they get" options */
-function tOffer(x){if(!TEAM())return x;return x.replace("on the kart (front nose and sidepods)","on every team kart (front nose and sidepods)").replace("on my race suit","on every driver's race suit").replace("on my helmet","on our drivers' helmets").replace("on the team awning","on the team awning")}
+/* offers are stored by their original wording; this turns them into first-person lines spoken to the sponsor ("I"/"my", or "we"/"our" for a team) */
+const OFFER_TXT={
+ "Your logo on the kart (front nose and sidepods)":["Your logo on my kart (front nose and sidepods)","Your logo on every team kart (front nose and sidepods)"],
+ "Your logo on my race suit":["Your logo on my race suit","Your logo on every driver's race suit"],
+ "Your logo on my helmet":["Your logo on my helmet","Your logo on our drivers' helmets"],
+ "Your logo on the team awning / trailer":["Your logo on my awning or trailer","Your logo on our team awning and trailer"],
+ "Your logo on team clothing worn in the paddock":["Your logo on the clothing my team wears in the paddock","Your logo on our team clothing in the paddock"],
+ "A thank-you post after every race weekend, tagging the sponsor":["A thank-you post from me after every race weekend, tagging you","A thank-you post from us after every race weekend, tagging you"],
+ "Onboard and highlight videos with the sponsor visible":["Onboard and highlight videos with your brand on show","Onboard and highlight videos with your brand on show"],
+ "Photos of the branded kit for the sponsor's own website and social media":["Photos of my branded kit for your website and social media","Photos of our branded kit for your website and social media"],
+ "A short report after each round: results, photos and reach":["A short report from me after each round: results, photos and reach","A short report from us after each round: results, photos and reach"],
+ "A guest day at a race meeting for the sponsor's staff or customers":["A guest day at one of my race meetings for your staff or customers","A guest day at one of our race meetings for your staff or customers"],
+ "A kart experience or track day for their team":["A kart experience or track day for your team","A kart experience or track day for your team"],
+ "An appearance at their business, school or community event with the kart":["I'll come to your business or community events with my helmet and race kit","We'll come to your business or community events with our helmets and race kit"],
+ "Trophies and podium photos shared with you first":["My trophies and podium photos shared with you first","Our trophies and podium photos shared with you first"],
+ "Trophies and podium photos shared with them first":["My trophies and podium photos shared with you first","Our trophies and podium photos shared with you first"],
+ "Introductions to drivers and families in the paddock who need what you sell, with a tracked offer":["I'll introduce you to drivers and families in the paddock who need what you sell, with an offer we can track","We'll introduce you to drivers and families in the paddock who need what you sell, with an offer we can track"],
+ "Introductions to other businesses at the track you could work with":["I'll introduce you to other businesses at the track you could work with","We'll introduce you to other businesses at the track you could work with"]};
+function tOffer(x){const t=OFFER_TXT[x];return t?t[TEAM()?1:0]:x}
+/* the same offers as a phrase that fits "you would get ..." in the emails */
+const OFFER_NOUN={"An appearance at their business, school or community event with the kart":"a visit to your business or community events with race kit",
+ "Introductions to drivers and families in the paddock who need what you sell, with a tracked offer":"introductions to drivers and families in the paddock who need what you sell",
+ "Introductions to other businesses at the track you could work with":"introductions to other businesses at the track you could work with"};
+function nOffer(x){return OFFER_NOUN[x]||(t=>t.charAt(0).toLowerCase()+t.slice(1))(tOffer(x))}
 function hint(){const h=$("#budgetHint");if(B&&B.season){h.innerHTML=`Your Budget Calculator says your season costs about <b>£${Math.round(B.season).toLocaleString("en-GB")}</b>. <a href="#" id="useB" style="color:#FF0074">Use part of it</a>`;const u=$("#useB");u.onclick=e=>{e.preventDefault();$("#f_amount").value=Math.round(B.season/4/50)*50;save();toast("Added a quarter of your season budget")}}else h.textContent="Tip: work out your real costs in the Budget Calculator first, then ask for a specific part of it."}
 if(!S.mode)S.mode="driver";$("#f_mode").value=S.mode;document.body.classList.toggle("team",S.mode==="team");$$("#modeSw button").forEach(b=>b.classList.toggle("on",b.dataset.mode===S.mode));
 save();
@@ -404,7 +427,7 @@ $$("[data-go]").filter(b=>/^\d$/.test(b.dataset.go)).forEach(b=>b.onclick=()=>go
 const num=v=>(+v||0),fmt=n=>n.toLocaleString("en-GB");
 function reach(){const p=[];if(num(S.ig))p.push(fmt(num(S.ig))+" Instagram followers");if(num(S.tt))p.push(fmt(num(S.tt))+" TikTok followers");if(num(S.yt))p.push(fmt(num(S.yt))+" YouTube subscribers");return p}
 let build=function(){
-  const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])].map(tOffer),T=TEAM(),D=drivers(),who=T?(S.team||"[Team name]"):(S.name||"[Your name]"),sender=T?(S.mgr||"[Team manager]"):(S.name||"[Your name]");
+  const first=(S.name||"").split(" ")[0]||"I",results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),rawOffer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])],offer=rawOffer.map(tOffer),offerN=rawOffer.map(nOffer),T=TEAM(),D=drivers(),who=T?(S.team||"[Team name]"):(S.name||"[Your name]"),sender=T?(S.mgr||"[Team manager]"):(S.name||"[Your name]");
   const askTxt=S.type==="product"?(S.spend?`products or services for ${S.spend}`:"products or services"):(num(S.amount)?`£${fmt(num(S.amount))}${S.spend?" towards "+S.spend:""}`:(S.spend?"support towards "+S.spend:"support"))+(S.type==="both"?", or products or services instead":"");
   const r=reach(),hi=results[0];
   const email=`Subject: Meeting about ${S.co||"[Company]"} x ${who} karting ${new Date().getFullYear()+1}
@@ -415,7 +438,7 @@ Thanks for speaking to me today. As promised, a quick summary: ${T?`I manage ${S
 
 ${T?"We're":"I'm"} getting in touch with ${S.co||"[company]"} because ${S.why||"[why them]"}.
 
-${T?"We're":"I'm"} looking for ${askTxt}. In return ${S.co||"you"} would get ${offer.length?offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1"):"[what they get]"}${offer.length>3?", plus more in the attached proposal":""}.${r.length?(T?" Our team reaches ":" My racing reaches ")+r.join(", ")+".":""}
+${T?"We're":"I'm"} looking for ${askTxt}. In return ${S.co||"you"} would get ${offerN.length?offerN.slice(0,3).join(", ").replace(/, ([^,]*)$/," and $1"):"[what they get]"}${offer.length>3?", plus more in the attached proposal":""}.${r.length?(T?" Our team reaches ":" My racing reaches ")+r.join(", ")+".":""}
 
 I'd love 15 minutes to come in and show you the proposal in person. Would [day] at [time] work?
 
@@ -444,7 +467,7 @@ After every round you'll get results, photos and reach figures, and you'll be ta
 
 CONTACT
 ${T?(S.mgr||"[Team manager]")+", "+(S.team||"[Team name]"):(S.name||"[Name]")}: ${S.contact||"[email / phone]"}`;
-  const top3=offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1");
+  const top3=offerN.slice(0,3).join(", ").replace(/, ([^,]*)$/," and $1");
   const follow=`Subject: Thank you, and our proposal for ${S.co||"[Company]"}
 
 Hi ${S.person?S.person.split(" ")[0]:"[name]"},
@@ -501,7 +524,7 @@ $("#logoIn").onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.logo=a
 $$("[data-ph]").forEach(inp=>inp.onchange=async e=>{const f=e.target.files[0];if(!f)return;IM.ph[+inp.dataset.ph]=await shrink(f,1400);saveImg();upTiles();docDraw();gc("sponsor-photo","Sponsorship: added photo")});
 $("#clearImg").onclick=()=>{IM={logo:"",ph:["","",""]};saveImg();upTiles();docDraw()};
 function docDraw(){
-  const T=TEAM(),D=drivers(),results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),offer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])].map(tOffer),num=v=>(+v||0),f=n=>n.toLocaleString("en-GB");
+  const T=TEAM(),D=drivers(),results=(S.results||"").split("\n").map(x=>x.trim()).filter(Boolean),rawOffer=[...(S.c_brand||[]),...(S.c_content||[]),...(S.c_extra||[])],offer=rawOffer.map(tOffer),offerN=rawOffer.map(nOffer),num=v=>(+v||0),f=n=>n.toLocaleString("en-GB");
   const stats=[[num(S.ig),"Instagram followers"],[num(S.tt),"TikTok followers"],[num(S.yt),"YouTube subscribers"],[num(S.crowd),"spectators per meeting"]].filter(x=>x[0]);
   const ask=S.type==="product"?("Products or services"+(S.spend?" for "+S.spend:"")):(num(S.amount)?"£"+f(num(S.amount)):"Support")+(S.spend?" towards "+S.spend:"")+(S.type==="both"?" (or products instead)":"");
   const hero=IM.ph[0]||IM.ph[1]||IM.ph[2],pics=IM.ph.filter((p,i)=>p&&p!==hero);
