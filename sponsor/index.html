@@ -150,6 +150,23 @@ label.mini{font-weight:500;color:var(--muted);margin-top:0}
 .callout.yes{background:rgba(0,190,0,.1);border:1px solid rgba(0,190,0,.4)}.callout.yes b::before{content:"✓  ";color:#5fe36b}
 .sh-card .take{font-size:13.5px;color:#cfd0d6;margin:4px 0}.sh-card .src{font-size:12px;color:#8f9098;margin:6px 0 8px}
 body.sheet-open{overflow:hidden}
+.steps{gap:8px;margin:0 0 14px}
+.steps button{position:relative;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px 9px;border-radius:16px;border:1px solid #33343b;background:rgba(18,18,22,.92);color:#9a9ca4;font-family:inherit}
+.steps button svg{width:26px;height:26px;fill:currentColor}.steps button b{font-size:12.5px;font-weight:800}
+.steps button i{position:absolute;top:5px;right:7px;font-style:normal;font-size:10.5px;font-weight:800;opacity:.7}
+.steps button.on{background:linear-gradient(160deg,#FF0074,#c2005a);border-color:#FF0074;color:#fff;box-shadow:0 6px 16px rgba(255,0,116,.35)}
+.sub.pill{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:8px 12px;color:#e6e6ea;font-size:14px;font-weight:600}
+.chips label{padding:11px 14px;font-size:14.5px;border-radius:14px;font-weight:700}
+.chips label:has(input:checked){box-shadow:0 0 0 2px rgba(255,0,116,.35)}
+.itiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.itiles span{display:flex;flex-direction:column;gap:4px;background:#121216;border:1px solid rgba(0,190,0,.3);border-radius:14px;padding:10px;font-size:13.5px;font-weight:700;color:#e6e6ea;line-height:1.25}
+.itiles em{font-style:normal;font-size:24px}
+.fup{border-color:rgba(0,190,0,.45)}
+.tile.t4{display:flex;width:100%;flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 16px;margin:4px 0 16px;background:linear-gradient(110deg,#3a2a00,#151004 75%);border:1px solid rgba(255,184,0,.5)}
+.tile.t4 .ic{margin:0;width:48px;height:48px;flex:none}.tile.t4 b{margin:0;font-size:17px}.tile.t4 small{display:block}.tile.t4>b+small{margin-top:2px}
+.tile.t4 i{margin-left:auto;font-style:normal;font-size:28px;font-weight:800;color:#FFB800}
+.tile.t4{flex-wrap:nowrap}.tile.t4 .tx{display:flex;flex-direction:column}
+.qcards.mist summary::after{color:#FFB800}.qcards.mist details[open]{border-color:rgba(255,184,0,.5)}.qcards.mist details p{padding-left:14px}
 .truth{border-color:rgba(0,190,0,.45);background:linear-gradient(180deg,rgba(0,190,0,.12),rgba(16,16,20,.95) 60%)}
 .truth p{margin:6px 0;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth ol{margin:8px 0 0;padding-left:20px;font-size:14.5px;color:#dedfe4;line-height:1.5}.truth li{margin:4px 0}
 .ups{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
@@ -203,10 +220,10 @@ input[type=color]{height:44px;padding:4px}
     <h2 id="howT">How deals really happen</h2>
     <p class="big">Deals are won <b>face to face</b>. Emailing a proposal on its own almost never works.</p>
     <div class="moves">
-      <div class="mv"><span>1</span><div><b>Find the boss</b><small>The owner, managing director or marketing manager. Not the info@ inbox.</small></div></div>
+      <div class="mv"><span>1</span><div><b>Find the boss</b><small>The owner, managing director or marketing manager. Not the receptionist or other junior staff.</small></div></div>
       <div class="mv"><span>2</span><div><b>Phone or pop in</b><small>Book a meeting. Use the short message this tool writes to confirm it.</small></div></div>
-      <div class="mv"><span>3</span><div><b>Show up with it</b><small>Proposal printed and on your phone. Talk them through it, bring the kart if you can.</small></div></div>
-      <div class="mv"><span>4</span><div><b>Follow up fast</b><small>Within a couple of days: send the PDF and say thank you.</small></div></div>
+      <div class="mv"><span>3</span><div><b>Show up with it</b><small>Proposal printed and on your phone. Talk them through it, and bring a prop like your helmet.</small></div></div>
+      <div class="mv"><span>4</span><div><b>Follow up fast</b><small>Within 24 hours: send the PDF and a thank-you. This tool writes the follow-up email for you.</small></div></div>
     </div>
     <button class="btn primary wide" type="button" data-go="steps">Build my proposal ›</button>
   </div></div>
@@ -233,12 +250,12 @@ input[type=color]{height:44px;padding:4px}
   </div></div>
 
   <div class="steps" id="steps">
-    <button class="on" data-s="1">1 You</button><button data-s="2">2 Offer</button><button data-s="3">3 Company</button><button data-s="4">4 Proposal</button>
+    <button class="on" data-s="1"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.2"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg><b>You</b><i>1</i></button><button data-s="2"><svg viewBox="0 0 24 24"><path d="M3 10h18v4H3z"/><path d="M5 14h14v7H5z"/><path d="M12 10v11" stroke="#000" stroke-width="1.6"/><path d="M12 10C9 10 6 9 7 6.5S11 7 12 10c1-3 4-6 5-3.5S15 10 12 10z"/></svg><b>Offer</b><i>2</i></button><button data-s="3"><svg viewBox="0 0 24 24"><path d="M3 21V9l6-4v4l6-4v4l6-4v16z"/><path d="M7 14h2v3H7zm5 0h2v3h-2zm5 0h2v3h-2z" fill="#000"/></svg><b>Company</b><i>3</i></button><button data-s="4"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M9 12h8M9 15.5h8M9 19h5" stroke="#000" stroke-width="1.8"/></svg><b>Proposal</b><i>4</i></button>
   </div>
 
   <section class="card pane" data-p="1">
     <div class="mode" id="modeSw" role="tablist" aria-label="Who is asking"><button type="button" data-mode="driver" role="tab">I'm a driver</button><button type="button" data-mode="team" role="tab">We're a team</button><input id="f_mode" type="hidden"></div>
-    <h2><span class="dr">About you</span><span class="tm">About your team</span></h2><p class="sub"><span class="dr">Facts, not adjectives. Numbers beat "passionate and dedicated".</span><span class="tm">One proposal for the whole team. Sponsors like teams: more drivers, more karts, more logos, more content.</span></p>
+    <h2><span class="dr">About you</span><span class="tm">About your team</span></h2><p class="sub pill"><span class="dr">💡 Facts beat fancy words. Numbers win.</span><span class="tm">💡 Sponsors love teams: more karts, more logos, more content.</span></p>
     <div class="row2 dr"><div><label for="f_name">Your name</label><input id="f_name" autocomplete="name"></div><div><label for="f_age">Age</label><input id="f_age" type="number" inputmode="numeric" min="5" max="80"></div></div>
     <div class="tm"><div class="row2"><div><label for="f_team">Team name</label><input id="f_team" placeholder="e.g. Kerb Bandits Racing"></div><div><label for="f_mgr">Team manager</label><input id="f_mgr" autocomplete="name" placeholder="Who sponsors deal with"></div></div>
     <label for="f_drivers">Drivers (one per line, add an age if you like)</label><textarea id="f_drivers" placeholder="Sam Taylor, 19&#10;Ellie Brooks, 22&#10;Josh Kent, 31"></textarea></div>
@@ -254,7 +271,7 @@ input[type=color]{height:44px;padding:4px}
   </section>
 
   <section class="card pane" data-p="2" hidden>
-    <h2>What the sponsor gets</h2><p class="sub">The biggest mistake is only asking. Show what they get back.</p>
+    <h2>What the sponsor gets</h2><p class="sub pill">💡 Don't just ask. Tap everything you can give back.</p>
     <label>Branding</label>
     <div class="chips" id="c_brand">
       <label><input type="checkbox" value="Your logo on the kart (front nose and sidepods)">Kart</label>
@@ -276,6 +293,8 @@ input[type=color]{height:44px;padding:4px}
       <label><input type="checkbox" value="A kart experience or track day for their team">Track day</label>
       <label><input type="checkbox" value="An appearance at their business, school or community event with the kart">Appearances</label>
       <label><input type="checkbox" value="Trophies and podium photos shared with them first">Podium photos</label>
+      <label><input type="checkbox" value="Introductions to drivers and families in the paddock who need what you sell, with a tracked offer">Bring them customers</label>
+      <label><input type="checkbox" value="Introductions to other businesses at the track you could work with">Business intros</label>
     </div>
     <label for="f_ask">What you're asking for</label>
     <div class="row2"><div><select id="f_type"><option value="money">Money</option><option value="product">Products or services</option><option value="both">Both</option></select></div><div><input id="f_amount" type="number" inputmode="numeric" min="0" placeholder="£ amount"></div></div>
@@ -285,24 +304,25 @@ input[type=color]{height:44px;padding:4px}
   </section>
 
   <section class="card pane" data-p="3" hidden>
-    <h2>Who you're asking</h2><p class="sub">One proposal per company. Name a person and say why them.</p>
+    <h2>Who you're asking</h2><p class="sub pill">💡 One company, one real person, one good reason.</p>
     <div class="row2"><div><label for="f_co">Company</label><input id="f_co" placeholder="e.g. Smith's Garage"></div><div><label for="f_person">Person's name</label><input id="f_person" placeholder="e.g. Sarah Smith"></div></div>
     <label for="f_why">Why them? (their customers, where they are, what links you)</label><textarea id="f_why" placeholder="e.g. Local to my track, their customers are drivers, my dad has used them for 10 years"></textarea>
     <label for="f_level">Package</label>
     <select id="f_level"><option value="Supporter">Supporter (small: a product or a little money)</option><option value="Partner" selected>Partner (one season, logo and content)</option><option value="Title partner">Title partner (main name on the kart and kit)</option></select>
-    <div class="ideas"><b>Where to start looking</b><ul>
-      <li>Businesses near your home or your track: garages, builders, trades, gyms, cafés</li>
-      <li>Your parents' and family's employers and suppliers</li>
-      <li>Companies whose customers are drivers or car fans</li>
-      <li>Karting and motorsport brands for products rather than money</li>
-    </ul></div>
+    <div class="ideas"><b>Where to start looking</b><div class="itiles">
+      <span><em>🔧</em>Local garages, trades, gyms, cafés</span>
+      <span><em>👪</em>Family's employers and suppliers</span>
+      <span><em>🚗</em>Firms whose customers love cars</span>
+      <span><em>🏁</em>Karting brands, for products</span>
+    </div></div>
     <div class="btns"><button class="btn" data-go="2">‹ Back</button><button class="btn primary" data-go="4">See my proposal ›</button></div>
   </section>
 
   <section class="pane" data-p="4" hidden>
-    <div class="card check"><h2>Proposal check</h2><p class="sub">Fix the red ones before you send it.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
-    <div class="card"><div class="ph"><h2>Message to book a meeting</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub">Send this after you've phoned or called in, to confirm a time. It asks for a meeting, not a decision.</p><pre class="out" id="outEmail"></pre></div>
-    <div class="card"><h2>Make it look the part</h2><p class="sub">Add your logo and up to three photos. They're placed into the proposal for you.</p>
+    <div class="card check"><h2>Proposal check</h2><p class="sub pill">🚦 Fix the red ones first.</p><ul id="checks"></ul><div class="score"><i id="scoreBar"></i></div></div>
+    <div class="card"><div class="ph"><h2>Message to book a meeting</h2><button class="btn sm" id="cpEmail">Copy</button></div><p class="sub pill">📞 Send after you've phoned or popped in, to lock in a time.</p><pre class="out" id="outEmail"></pre></div>
+    <div class="card fup"><div class="ph"><h2>Follow-up email</h2><button class="btn sm" id="cpFollow">Copy</button></div><p class="sub pill">⏱ Send within 24 hours of the meeting, with your proposal PDF attached.</p><pre class="out" id="outFollow"></pre></div>
+    <div class="card"><h2>Make it look the part</h2><p class="sub pill">📸 Add your logo and up to 3 photos.</p>
       <div class="ups">
         <label class="up" id="upLogo"><input type="file" accept="image/*" id="logoIn" hidden><span>Your logo</span></label>
         <label class="up" id="upP0"><input type="file" accept="image/*" data-ph="0" hidden><span>Main photo</span></label>
@@ -311,15 +331,18 @@ input[type=color]{height:44px;padding:4px}
       </div>
       <div class="row2"><div><label for="f_col">Accent colour</label><input type="color" id="f_col" value="#FF0074"></div><div><label>&nbsp;</label><button class="btn" id="clearImg" type="button" style="width:100%">Remove pictures</button></div></div>
     </div>
-    <div class="card"><div class="ph"><h2>Proposal preview</h2><button class="btn sm" id="cpProp">Copy text</button></div><p class="sub">Print it to take to the meeting, or save it as a PDF to send afterwards.</p>
+    <div class="card"><div class="ph"><h2>Proposal preview</h2><button class="btn sm" id="cpProp">Copy text</button></div><p class="sub pill">🖨 Print it for the meeting, save the PDF for the follow-up.</p>
       <div class="docwrap"><div class="doc" id="doc"></div></div>
       <pre class="out" id="outProp" hidden></pre>
       <div class="btns"><button class="btn primary" id="print">Save as PDF / print</button><button class="btn" data-go="1">Edit answers</button></div></div>
   </section>
 
-  <section class="card tips">
-    <h2>The mistakes that lose sponsors</h2>
-    <details open><summary>Relying on email</summary><p>Almost every cold sponsorship email is ignored. Phone, or walk in, ask who makes marketing decisions, and book a meeting with them. Bring the proposal to that meeting.</p></details>
+  <button class="tile t4" type="button" data-open="mistakesSheet"><span class="ic"><svg viewBox="0 0 64 64"><path d="M32 4L62 58H2z" fill="#FFB800"/><path d="M32 22v18" stroke="#1a1200" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="49" r="3.6" fill="#1a1200"/></svg></span><span class="tx"><b>11 mistakes that lose sponsors</b><small>Tap to check you're not making them</small></span><i>›</i></button>
+  <div class="sheet" id="mistakesSheet" hidden><div class="sh-card" role="dialog" aria-modal="true" aria-labelledby="mistT">
+    <button class="sh-x" type="button" aria-label="Close">✕</button>
+    <h2 id="mistT">Mistakes that lose sponsors</h2>
+    <p class="tapnote">Tap one to see the fix</p>
+    <div class="qcards mist"><details><summary>Relying on email</summary><p>Almost every cold sponsorship email is ignored. Phone, or walk in, ask who makes marketing decisions, and book a meeting with them. Bring the proposal to that meeting.</p></details>
     <details><summary>Talking to the wrong person</summary><p>Reception and general inboxes can't say yes. Find the owner, managing director or marketing manager and get in front of them.</p></details>
     <details><summary>Sending the same email to everyone</summary><p>"Dear Sir/Madam" goes straight in the bin. Use their name, mention their business, and say why you picked them.</p></details>
     <details><summary>Only asking, never offering</summary><p>A sponsor is buying something. List exactly what they get: logo places, posts, videos, guest days and reports.</p></details>
@@ -329,8 +352,9 @@ input[type=color]{height:44px;padding:4px}
     <details><summary>Bad photos, or none</summary><p>Send two or three sharp, well-lit photos of you and the kart. Mock up their logo on the kart if you can.</p></details>
     <details><summary>Going quiet after the deal</summary><p>Send a report after every round, tag them every time, and say thank you. That's how a sponsor renews next year.</p></details>
     <details><summary>Giving up after one email</summary><p>Follow up politely after a week, then once more. Many sponsors say yes on the second or third message.</p></details>
-    <details><summary>Starting too big</summary><p>Local businesses say yes far more often than big brands. Start local, build a track record, then go bigger.</p></details>
-  </section>
+    <details><summary>Starting too big</summary><p>Local businesses say yes far more often than big brands. Start local, build a track record, then go bigger.</p></details></div>
+    <button class="btn primary wide" type="button" data-go="steps">Back to my proposal ›</button>
+  </div></div>
 
   <a class="back" href="../">‹ Use More Kerb home</a>
 </div></div>
@@ -360,7 +384,7 @@ function hint(){const h=$("#budgetHint");if(B&&B.season){h.innerHTML=`Your Budge
 if(!S.mode)S.mode="driver";$("#f_mode").value=S.mode;document.body.classList.toggle("team",S.mode==="team");$$("#modeSw button").forEach(b=>b.classList.toggle("on",b.dataset.mode===S.mode));
 save();
 function go(n){$$(".pane").forEach(p=>p.hidden=p.dataset.p!=String(n));$$("#steps button").forEach(b=>b.classList.toggle("on",b.dataset.s==String(n)));if(n==4)build();document.getElementById("scroller").scrollTo({top:0,behavior:"smooth"});gc("sponsor-step-"+n,"Sponsorship: step "+n)}
-$$("[data-go]").forEach(b=>b.onclick=()=>go(+b.dataset.go));$$("#steps button").forEach(b=>b.onclick=()=>go(+b.dataset.s));
+$$("[data-go]").filter(b=>/^\d$/.test(b.dataset.go)).forEach(b=>b.onclick=()=>go(+b.dataset.go));$$("#steps button").forEach(b=>b.onclick=()=>go(+b.dataset.s));
 const num=v=>(+v||0),fmt=n=>n.toLocaleString("en-GB");
 function reach(){const p=[];if(num(S.ig))p.push(fmt(num(S.ig))+" Instagram followers");if(num(S.tt))p.push(fmt(num(S.tt))+" TikTok followers");if(num(S.yt))p.push(fmt(num(S.yt))+" YouTube subscribers");return p}
 let build=function(){
@@ -404,7 +428,24 @@ After every round you'll get results, photos and reach figures, and you'll be ta
 
 CONTACT
 ${T?(S.mgr||"[Team manager]")+", "+(S.team||"[Team name]"):(S.name||"[Name]")}: ${S.contact||"[email / phone]"}`;
-  $("#outEmail").textContent=email;$("#outProp").textContent=prop;
+  const top3=offer.slice(0,3).map(x=>x.charAt(0).toLowerCase()+x.slice(1)).join(", ").replace(/, ([^,]*)$/," and $1");
+  const follow=`Subject: Thank you, and our proposal for ${S.co||"[Company]"}
+
+Hi ${S.person?S.person.split(" ")[0]:"[name]"},
+
+Thank you for meeting ${T?"us":"me"} today and for your time. I really enjoyed talking it through.
+
+As promised, I've attached the proposal. A quick recap:
+• ${T?"We're":"I'm"} asking for ${askTxt}.
+• In return, ${S.co||"you"} would get ${top3||"[what they get]"}${offer.length>3?", plus everything else in the proposal":""}.
+${S.season?`• It covers ${S.season}.
+`:""}
+If you have any questions, or would like anything changed, just let me know. Would it be OK to give you a quick call on [day] to see what you think?
+
+Thanks again,
+${sender}${T?"\n"+(S.team||"[Team name]"):""}
+${S.contact||"[contact]"}`;
+  $("#outEmail").textContent=email;$("#outProp").textContent=prop;$("#outFollow").textContent=follow;
   const words=email.split(/\s+/).filter(Boolean).length;
   const C=[
     [!!S.co&&!!S.person,"Named the company and a person","No company or person's name: it reads like a mass email."],
@@ -422,6 +463,7 @@ ${T?(S.mgr||"[Team manager]")+", "+(S.team||"[Team name]"):(S.name||"[Name]")}: 
   $("#checks").innerHTML=C.map(([ok,y,n])=>`<li class="${ok?"ok":"bad"}"><i>${ok?"✓":"!"}</i><span>${esc(ok?y:n)}</span></li>`).join("")+(minor()?`<li class="bad"><i>!</i><span>${T?"Some drivers are under 18":"You're under 18"}<small>${T?"An adult team manager or parent should send it and be the contact.":"Have a parent or guardian send it and be the contact."}</small></span></li>`:"");
   $("#scoreBar").style.width=Math.round(C.filter(c=>c[0]).length/C.length*100)+"%";
 }
+$("#cpFollow").onclick=()=>{copy($("#outFollow").textContent,"Follow-up email copied");gc("sponsor-copy-follow","Sponsorship: copied follow-up")};
 $("#cpEmail").onclick=()=>{copy($("#outEmail").textContent,"Email copied");gc("sponsor-copy-email","Sponsorship: copied email")};
 $("#cpProp").onclick=()=>{copy($("#outProp").textContent,"Proposal copied");gc("sponsor-copy-prop","Sponsorship: copied proposal")};
 $("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");window.print()};
@@ -462,7 +504,7 @@ $("#print").onclick=()=>{gc("sponsor-print","Sponsorship: print");dispatchEvent(
 (function(){const open=id=>{const sh=document.getElementById(id);if(!sh)return;sh.hidden=false;document.body.classList.add("sheet-open");sh.querySelector(".sh-card").scrollTop=0};
 const close=()=>{document.querySelectorAll(".sheet").forEach(x=>x.hidden=true);document.body.classList.remove("sheet-open")};
 document.addEventListener("click",e=>{const o=e.target.closest("[data-open]");if(o){open(o.dataset.open);return}
-  const g=e.target.closest("[data-go]");if(g){close();const t=document.getElementById(g.dataset.go);if(t)setTimeout(()=>t.scrollIntoView({behavior:"smooth",block:"start"}),60);return}
+  const g=e.target.closest("[data-go]");if(g&&!/^\d$/.test(g.dataset.go)){close();const t=document.getElementById(g.dataset.go);if(t)setTimeout(()=>t.scrollIntoView({behavior:"smooth",block:"start"}),60);return}
   if(e.target.closest(".sh-x")||e.target.classList.contains("sheet"))close()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});})();
 </script>
